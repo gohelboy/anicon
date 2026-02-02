@@ -46,22 +46,22 @@ function IconDetailContent({
   const commandUrl = `${REGISTRY_BASE}/${icon.name}.json`;
 
   return (
-    <div className="mx-auto max-w-2xl pb-8">
+    <div className="mx-auto w-full max-w-2xl px-4 pb-8 sm:px-6" style={{ paddingBottom: "max(2rem, env(safe-area-inset-bottom))" }}>
       <DrawerHeader>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start sm:gap-6">
-          <div className="flex shrink-0 items-center justify-center rounded-none border border-[var(--card-border)] bg-black/20 p-4">
+          <div className="flex shrink-0 items-center justify-center rounded-none border border-[var(--card-border)] bg-black/20 p-3 sm:p-4">
             <span style={{ color: iconColor }}>
-              <IconComponent size={64} />
+              <IconComponent size={56} />
             </span>
           </div>
           <div className="min-w-0 flex-1 text-center sm:text-left">
-            <DrawerTitle className="text-xl text-white">
-              <code className="text-[var(--accent)]">{icon.name}</code>
+            <DrawerTitle className="text-lg text-white sm:text-xl">
+              <code className="text-[var(--accent)] break-all">{icon.name}</code>
             </DrawerTitle>
-            <DrawerDescription className="mt-2 text-[var(--muted-foreground)]">
+            <DrawerDescription className="mt-2 text-sm text-[var(--muted-foreground)] sm:text-base">
               {icon.description}
             </DrawerDescription>
-            <div className="mt-3 flex flex-wrap gap-1.5">
+            <div className="mt-3 flex flex-wrap justify-center gap-1.5 sm:justify-start">
               {icon.tags.map((tag) => (
                 <span
                   key={tag}
@@ -74,10 +74,10 @@ function IconDetailContent({
           </div>
         </div>
       </DrawerHeader>
-      <div className="mt-6">
+      <div className="mt-4 sm:mt-6">
         <InstallCommandBlock
           commandUrl={commandUrl}
-          className="w-[42rem] max-w-full"
+          className="w-full max-w-[42rem]"
           showFootnote={true}
         />
       </div>

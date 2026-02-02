@@ -9,14 +9,14 @@ export function LandingInstall() {
   return (
     <section
       id="install"
-      className="scroll-mt-24 border-t border-[var(--card-border)] py-24"
+      className="scroll-mt-24 border-t border-[var(--card-border)] py-16 sm:py-24"
     >
-      <div className="mx-auto max-w-5xl px-6">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white">
+          <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
             One command to add any icon
           </h2>
-          <p className="mt-3 text-[var(--muted-foreground)]">
+          <p className="mt-3 text-sm text-[var(--muted-foreground)] sm:text-base">
             From a project with shadcn and{" "}
             <code className="rounded bg-white/5 px-1.5 py-0.5 text-sm">
               components.json
@@ -24,10 +24,10 @@ export function LandingInstall() {
             , run:
           </p>
         </div>
-        <div className="mt-10 flex justify-center">
+        <div className="mt-8 flex justify-center sm:mt-10">
           <InstallCommandBlock
             commandUrl={DEFAULT_ICON_URL}
-            className="w-[42rem] max-w-full"
+            className="w-full max-w-[42rem]"
             showFootnote={false}
           />
         </div>

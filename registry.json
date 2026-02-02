@@ -1,14 +1,16 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "anicon",
-  "homepage": "https://github.com/your-username/anicon",
+  "homepage": "https://github.com/gohelboy/anicon",
   "items": [
     {
       "name": "icon-heart",
       "type": "registry:component",
       "title": "Animated Heart",
       "description": "Heart icon with hover and tap animation using Motion.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-heart/icon-heart.tsx",
@@ -21,7 +23,9 @@
       "type": "registry:component",
       "title": "Animated Sparkle",
       "description": "Sparkle icon with hover and tap animation using Motion.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-sparkle/icon-sparkle.tsx",
@@ -34,7 +38,9 @@
       "type": "registry:component",
       "title": "Animated Arrow Right",
       "description": "Arrow right icon with hover slide and tap animation.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-arrow-right/icon-arrow-right.tsx",
@@ -47,7 +53,9 @@
       "type": "registry:component",
       "title": "Animated Arrow Left",
       "description": "Arrow left icon with hover slide and tap animation.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-arrow-left/icon-arrow-left.tsx",
@@ -60,7 +68,9 @@
       "type": "registry:component",
       "title": "Animated Arrow Up",
       "description": "Arrow up icon with hover slide and tap animation.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-arrow-up/icon-arrow-up.tsx",
@@ -73,7 +83,9 @@
       "type": "registry:component",
       "title": "Animated Arrow Down",
       "description": "Arrow down icon with hover slide and tap animation.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-arrow-down/icon-arrow-down.tsx",
@@ -86,7 +98,9 @@
       "type": "registry:component",
       "title": "Animated Chevron Right",
       "description": "Chevron right icon with hover slide and tap animation.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-chevron-right/icon-chevron-right.tsx",
@@ -99,7 +113,9 @@
       "type": "registry:component",
       "title": "Animated Chevron Left",
       "description": "Chevron left icon with hover slide and tap animation.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-chevron-left/icon-chevron-left.tsx",
@@ -112,7 +128,9 @@
       "type": "registry:component",
       "title": "Animated Chevron Up",
       "description": "Chevron up icon with hover slide and tap animation.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-chevron-up/icon-chevron-up.tsx",
@@ -125,7 +143,9 @@
       "type": "registry:component",
       "title": "Animated Chevron Down",
       "description": "Chevron down icon with hover slide and tap animation.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-chevron-down/icon-chevron-down.tsx",

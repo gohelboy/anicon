@@ -1,14 +1,16 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "anicon",
-  "homepage": "https://github.com/your-username/anicon",
+  "homepage": "https://github.com/gohelboy/anicon",
   "items": [
     {
       "name": "icon-heart",
       "type": "registry:component",
       "title": "Animated Heart",
       "description": "Heart icon with hover and tap animation using Motion.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-heart/icon-heart.tsx",
@@ -21,7 +23,9 @@
       "type": "registry:component",
       "title": "Animated Sparkle",
       "description": "Sparkle icon with hover and tap animation using Motion.",
-      "dependencies": ["motion"],
+      "dependencies": [
+        "motion"
+      ],
       "files": [
         {
           "path": "registry/default/icon-sparkle/icon-sparkle.tsx",

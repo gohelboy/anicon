@@ -18,21 +18,21 @@ export function LandingFeatures() {
   ];
 
   return (
-    <section className="border-t border-[var(--card-border)] py-24">
-      <div className="mx-auto max-w-5xl px-6">
+    <section className="border-t border-[var(--card-border)] py-16 sm:py-24">
+      <div className="mx-auto max-w-5xl px-4 sm:px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-white">
+          <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">
             Why Anicon
           </h2>
-          <p className="mt-3 text-[var(--muted-foreground)]">
+          <p className="mt-3 text-sm text-[var(--muted-foreground)] sm:text-base">
             Lightweight, flexible, and familiar if you already use shadcn.
           </p>
         </div>
-        <div className="mt-12 grid gap-8 sm:grid-cols-3">
+        <div className="mt-8 grid gap-6 sm:mt-12 sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map(({ title, description }) => (
             <div
               key={title}
-              className="rounded-none border border-[var(--card-border)] bg-[var(--card)] p-6"
+              className="rounded-none border border-[var(--card-border)] bg-[var(--card)] p-5 sm:p-6"
             >
               <h3 className="font-semibold text-white">{title}</h3>
               <p className="mt-2 text-sm text-[var(--muted-foreground)]">

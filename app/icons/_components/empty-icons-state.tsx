@@ -6,7 +6,7 @@ export interface EmptyIconsStateProps {
 
 export function EmptyIconsState({ onClearSearch }: EmptyIconsStateProps) {
   return (
-    <div className="flex flex-col items-center justify-center rounded-none border border-dashed border-[var(--card-border)] bg-[var(--card)]/50 py-20 text-center">
+    <div className="flex flex-col items-center justify-center rounded-none border border-dashed border-[var(--card-border)] bg-[var(--card)]/50 px-4 py-12 text-center sm:py-20">
       <div className="mb-4 rounded-none border border-[var(--card-border)] bg-black/20 p-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@ export function EmptyIconsState({ onClearSearch }: EmptyIconsStateProps) {
       <button
         type="button"
         onClick={onClearSearch}
-        className="mt-4 rounded-none border border-[var(--accent)] bg-[var(--accent)] px-4 py-2 text-sm font-bold text-zinc-900 transition hover:bg-yellow-400"
+        className="mt-4 min-h-[44px] min-w-[44px] rounded-none border border-[var(--accent)] bg-[var(--accent)] px-4 py-2 text-sm font-bold text-zinc-900 transition hover:bg-yellow-400"
       >
         Clear search
       </button>

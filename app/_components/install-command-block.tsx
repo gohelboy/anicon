@@ -38,8 +38,8 @@ export function InstallCommandBlock({
     <div
       className={`overflow-hidden rounded-none border border-[var(--card-border)] bg-[var(--card)] ${className}`.trim()}
     >
-      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--card-border)] px-4 py-3">
-        <div className="flex items-center gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--card-border)] px-3 py-2 sm:px-4 sm:py-3">
+        <div className="flex items-center gap-2" aria-hidden>
           <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
           <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
           <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
@@ -50,7 +50,7 @@ export function InstallCommandBlock({
               key={pm}
               type="button"
               onClick={() => setPackageManager(pm)}
-              className={`rounded-none px-3 py-1.5 text-xs font-medium transition ${
+              className={`min-h-[36px] rounded-none px-2 py-1.5 text-xs font-medium transition sm:min-h-[44px] sm:px-3 ${
                 packageManager === pm
                   ? "bg-[var(--accent)] text-zinc-900"
                   : "text-[var(--muted-foreground)] hover:bg-white/10 hover:text-white"
@@ -63,16 +63,16 @@ export function InstallCommandBlock({
         <button
           type="button"
           onClick={copyToClipboard}
-          className="rounded-none border border-[var(--card-border)] bg-white/5 px-3 py-1.5 text-xs font-medium text-[var(--muted-foreground)] transition hover:bg-white/10 hover:text-white"
+          className="min-h-[36px] rounded-none border border-[var(--card-border)] bg-white/5 px-2 py-1.5 text-xs font-medium text-[var(--muted-foreground)] transition hover:bg-white/10 hover:text-white sm:min-h-[44px] sm:px-3"
         >
           {copied ? "Copied!" : "Copy"}
         </button>
       </div>
-      <pre className="install-code overflow-x-auto p-6 text-sm leading-relaxed text-[var(--muted-foreground)]">
-        <code>{command}</code>
+      <pre className="install-code overflow-x-auto p-4 text-sm leading-relaxed text-[var(--muted-foreground)] sm:p-6">
+        <code className="break-all">{command}</code>
       </pre>
       {showFootnote && (
-        <p className="px-4 pb-4 pt-2 text-sm text-[var(--muted-foreground)]">
+        <p className="px-3 pb-4 pt-2 text-sm text-[var(--muted-foreground)] sm:px-4">
           The CLI copies the component and adds{" "}
           <code className="rounded bg-white/5 px-1.5 py-0.5">motion</code> if
           needed.

@@ -14,9 +14,9 @@ export function IconsSearchBar({
   onIconColorChange,
 }: IconsSearchBarProps) {
   return (
-    <div className="mt-8 flex gap-2">
-      <div className="relative flex-1">
-        <span className="pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-[var(--muted-foreground)]">
+    <div className="mt-6 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-2">
+      <div className="relative flex-1 min-w-0">
+        <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted-foreground)] sm:left-4" aria-hidden>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"
@@ -34,17 +34,18 @@ export function IconsSearchBar({
         </span>
         <input
           type="search"
-          placeholder="Search icons by name, description, or tag..."
+          placeholder="Search icons..."
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
-          className="w-full rounded-none border border-[var(--card-border)] bg-[var(--card)] py-3 pl-12 pr-4 text-white placeholder:text-[var(--muted-foreground)] focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)]"
+          className="w-full min-h-[44px] rounded-none border border-[var(--card-border)] bg-[var(--card)] py-3 pl-10 pr-10 text-base text-white placeholder:text-[var(--muted-foreground)] focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)] sm:pl-12 sm:pr-12"
           aria-label="Search icons"
+          autoComplete="off"
         />
         {search && (
           <button
             type="button"
             onClick={() => onSearchChange("")}
-            className="absolute right-3 top-1/2 -translate-y-1/2 rounded-none px-2 py-1 text-sm text-[var(--muted-foreground)] hover:text-white"
+            className="absolute right-2 top-1/2 -translate-y-1/2 min-h-[36px] min-w-[44px] flex items-center justify-center rounded-none px-2 text-sm text-[var(--muted-foreground)] hover:text-white sm:right-3"
             aria-label="Clear search"
           >
             Clear
@@ -53,7 +54,7 @@ export function IconsSearchBar({
       </div>
       <label
         title="Icon color"
-        className="relative flex w-11 shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-none border border-[var(--card-border)] bg-[var(--card)] hover:border-zinc-500 focus-within:ring-2 focus-within:ring-[var(--accent)] focus-within:ring-offset-2 focus-within:ring-offset-[var(--background)]"
+        className="relative flex h-11 min-h-[44px] w-11 min-w-[44px] shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-none border border-[var(--card-border)] bg-[var(--card)] hover:border-zinc-500 focus-within:ring-2 focus-within:ring-[var(--accent)] focus-within:ring-offset-2 focus-within:ring-offset-[var(--background)]"
       >
         <input
           type="color"

@@ -25,13 +25,13 @@ export default function IconsPage() {
   return (
     <div className="min-h-screen">
       <LandingNav />
-      <main className="pt-24 pb-20">
-        <section className="border-b border-(--card-border) px-6 pb-16 pt-8">
+      <main className="pt-24 pb-16 sm:pb-20">
+        <section className="border-b border-(--card-border) px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-8">
           <div className="mx-auto max-w-4xl">
-            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
               Icons
             </h1>
-            <p className="mt-3 text-lg text-(--muted-foreground)">
+            <p className="mt-2 text-base text-(--muted-foreground) sm:mt-3 sm:text-lg">
               Browse and search animated icons. Hover or tap to see Motion
               animations.
             </p>
@@ -44,15 +44,15 @@ export default function IconsPage() {
           </div>
         </section>
 
-        <section className="px-6 py-12">
+        <section className="px-4 py-8 sm:px-6 sm:py-12">
           <div className="mx-auto max-w-6xl">
             {filteredIcons.length > 0 ? (
               <>
-                <p className="mb-6 text-sm text-(--muted-foreground)">
+                <p className="mb-4 text-sm text-(--muted-foreground) sm:mb-6">
                   {filteredIcons.length} icon
                   {filteredIcons.length !== 1 ? "s" : ""}
                 </p>
-                <div className="grid gap-4 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-8">
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-8">
                   {filteredIcons.map((icon) => (
                     <IconCardButton
                       key={icon.name}

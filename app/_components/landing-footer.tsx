@@ -1,8 +1,8 @@
 export function LandingFooter() {
   return (
-    <footer className="border-t border-[var(--card-border)] py-12">
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-6 sm:flex-row">
-        <p className="text-sm text-[var(--muted-foreground)]">
+    <footer className="border-t border-[var(--card-border)] py-8 sm:py-12">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-4 px-4 sm:flex-row sm:px-6">
+        <p className="text-center text-sm text-[var(--muted-foreground)] sm:text-left">
           Anicon — animated icons via shadcn registry. Powered by{" "}
           <a
             href="https://motion.dev"
@@ -14,12 +14,12 @@ export function LandingFooter() {
           </a>
           .
         </p>
-        <div className="flex gap-6 text-sm text-[var(--muted-foreground)]">
+        <div className="flex gap-4 sm:gap-6 text-sm text-[var(--muted-foreground)]">
           <a
-            href="https://github.com"
+            href="https://github.com/gohelboy/anicon"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition hover:text-white"
+            className="min-h-[44px] min-w-[44px] flex items-center justify-center transition hover:text-white"
           >
             GitHub
           </a>

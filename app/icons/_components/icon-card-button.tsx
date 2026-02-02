@@ -1,5 +1,6 @@
 "use client";
 
+import { memo } from "react";
 import type { IconEntry } from "@/app/_data/icons";
 
 export interface IconCardButtonProps {
@@ -8,7 +9,7 @@ export interface IconCardButtonProps {
   onClick: () => void;
 }
 
-export function IconCardButton({
+function IconCardButtonComponent({
   icon,
   iconColor,
   onClick,
@@ -18,11 +19,16 @@ export function IconCardButton({
     <button
       type="button"
       onClick={onClick}
-      className="aspect-square flex items-center justify-center rounded-none border border-(--card-border) bg-(--card) p-3 transition hover:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-(--accent) focus:ring-offset-2 focus:ring-offset-(--background)"
+      className="aspect-square flex min-h-[44px] min-w-[44px] items-center justify-center rounded-none border border-(--card-border) bg-(--card) p-2 transition hover:border-zinc-700 focus:outline-none focus:ring-2 focus:ring-(--accent) focus:ring-offset-2 focus:ring-offset-(--background) sm:p-3"
     >
-      <span style={{ color: iconColor }}>
-        <IconComponent size={40} />
+      <span
+        style={{ color: iconColor }}
+        className="flex items-center justify-center"
+      >
+        <IconComponent size={28} />
       </span>
     </button>
   );
 }
+
+export const IconCardButton = memo(IconCardButtonComponent);
