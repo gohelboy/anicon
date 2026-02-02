@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-sparkle",
+  "title": "Animated Sparkle",
+  "description": "Sparkle icon with hover and tap animation using Motion.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-sparkle/icon-sparkle.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion } from \"motion/react\";\r\n\r\nexport interface IconSparkleProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n}\r\n\r\nexport function IconSparkle({ size = 24, ...props }: IconSparkleProps) {\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth=\"2\"\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      whileHover={{ scale: 1.15, rotate: 12 }}\r\n      whileTap={{ scale: 0.9 }}\r\n      transition={{ type: \"spring\", stiffness: 400, damping: 17 }}\r\n      {...props}\r\n    >\r\n      <path d=\"m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:component"
+}
