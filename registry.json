@@ -152,6 +152,66 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-home",
+      "type": "registry:component",
+      "title": "Animated Home",
+      "description": "Home icon with playful roof and door animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-home/icon-home.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu",
+      "type": "registry:component",
+      "title": "Animated Menu",
+      "description": "Menu icon with staggered line motion on hover.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu/icon-menu.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-compass",
+      "type": "registry:component",
+      "title": "Animated Compass",
+      "description": "Compass icon with rotating needle and pulse ring.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-compass/icon-compass.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-map-pin",
+      "type": "registry:component",
+      "title": "Animated Map Pin",
+      "description": "Map pin icon with lift and pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-map-pin/icon-map-pin.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

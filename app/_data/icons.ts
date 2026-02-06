@@ -6,7 +6,11 @@ import { IconChevronDown } from "@/registry/default/icon-chevron-down/icon-chevr
 import { IconChevronLeft } from "@/registry/default/icon-chevron-left/icon-chevron-left";
 import { IconChevronRight } from "@/registry/default/icon-chevron-right/icon-chevron-right";
 import { IconChevronUp } from "@/registry/default/icon-chevron-up/icon-chevron-up";
+import { IconCompass } from "@/registry/default/icon-compass/icon-compass";
 import { IconHeart } from "@/registry/default/icon-heart/icon-heart";
+import { IconHome } from "@/registry/default/icon-home/icon-home";
+import { IconMapPin } from "@/registry/default/icon-map-pin/icon-map-pin";
+import { IconMenu } from "@/registry/default/icon-menu/icon-menu";
 import { IconSparkle } from "@/registry/default/icon-sparkle/icon-sparkle";
 
 export const iconsRegistry = [
@@ -79,6 +83,34 @@ export const iconsRegistry = [
     color: "text-white",
     description: "Chevron down with hover slide and tap animation",
     tags: ["chevron", "down", "collapse", "expand", "direction"],
+  },
+  {
+    name: "icon-home",
+    component: IconHome,
+    color: "text-sky-400",
+    description: "Home icon with a playful roof lift and door bounce",
+    tags: ["home", "navigation", "house", "dashboard"],
+  },
+  {
+    name: "icon-menu",
+    component: IconMenu,
+    color: "text-white",
+    description: "Menu icon with staggered line slides",
+    tags: ["menu", "navigation", "hamburger", "list"],
+  },
+  {
+    name: "icon-compass",
+    component: IconCompass,
+    color: "text-emerald-400",
+    description: "Compass icon with rotating needle and ring pulse",
+    tags: ["compass", "navigation", "direction", "explore"],
+  },
+  {
+    name: "icon-map-pin",
+    component: IconMapPin,
+    color: "text-rose-400",
+    description: "Map pin with lift and pulse ripple",
+    tags: ["map", "pin", "navigation", "location"],
   },
 ] as const;
 
