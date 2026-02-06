@@ -22,6 +22,18 @@ export function LandingNav() {
           >
             Install
           </a>
+          <a
+            href="https://github.com/gohelboy/anicon"
+            className="min-h-[44px] min-w-[44px] flex items-center justify-center px-2 transition hover:text-white"
+            aria-label="Anicon GitHub stars"
+          >
+            <img
+              src="https://img.shields.io/github/stars/gohelboy/anicon?style=social"
+              alt="GitHub stars"
+              className="h-5"
+              loading="lazy"
+            />
+          </a>
         </nav>
       </div>
     </header>
