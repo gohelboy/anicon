@@ -19,6 +19,306 @@
       ]
     },
     {
+      "name": "icon-a-arrow-down",
+      "type": "registry:component",
+      "title": "Animated A Arrow Down",
+      "description": "Letter A icon with a bouncing down arrow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-a-arrow-down/icon-a-arrow-down.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-a-arrow-up",
+      "type": "registry:component",
+      "title": "Animated A Arrow Up",
+      "description": "Letter A icon with a floating up arrow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-a-arrow-up/icon-a-arrow-up.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-a-large-small",
+      "type": "registry:component",
+      "title": "Animated A Large Small",
+      "description": "Large/small A icon with subtle scaling motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-a-large-small/icon-a-large-small.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-accessibility",
+      "type": "registry:component",
+      "title": "Animated Accessibility",
+      "description": "Accessibility icon with a gentle pose sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-accessibility/icon-accessibility.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-activity",
+      "type": "registry:component",
+      "title": "Animated Activity",
+      "description": "Activity pulse icon with animated stroke drift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-activity/icon-activity.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-activity-square",
+      "type": "registry:component",
+      "title": "Animated Activity Square",
+      "description": "Activity square icon with pulsing sparkline.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-activity-square/icon-activity-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-air-vent",
+      "type": "registry:component",
+      "title": "Animated Air Vent",
+      "description": "Air vent icon with shifting airflow lines.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-air-vent/icon-air-vent.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-airplay",
+      "type": "registry:component",
+      "title": "Animated Airplay",
+      "description": "Airplay icon with a popping cast triangle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-airplay/icon-airplay.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-check",
+      "type": "registry:component",
+      "title": "Animated Alarm Check",
+      "description": "Alarm clock with a checkmark draw animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-check/icon-alarm-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-clock",
+      "type": "registry:component",
+      "title": "Animated Alarm Clock",
+      "description": "Alarm clock icon with ticking hands.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-clock/icon-alarm-clock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-clock-check",
+      "type": "registry:component",
+      "title": "Animated Alarm Clock Check",
+      "description": "Alarm clock icon with a checkmark draw.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-clock-check/icon-alarm-clock-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-clock-minus",
+      "type": "registry:component",
+      "title": "Animated Alarm Clock Minus",
+      "description": "Alarm clock icon with a minus indicator.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-clock-minus/icon-alarm-clock-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-clock-off",
+      "type": "registry:component",
+      "title": "Animated Alarm Clock Off",
+      "description": "Alarm clock icon with a disabled strike.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-clock-off/icon-alarm-clock-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-clock-plus",
+      "type": "registry:component",
+      "title": "Animated Alarm Clock Plus",
+      "description": "Alarm clock icon with a plus indicator.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-clock-plus/icon-alarm-clock-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-minus",
+      "type": "registry:component",
+      "title": "Animated Alarm Minus",
+      "description": "Alarm clock minus variant with motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-minus/icon-alarm-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-plus",
+      "type": "registry:component",
+      "title": "Animated Alarm Plus",
+      "description": "Alarm clock plus variant with motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-plus/icon-alarm-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-smoke",
+      "type": "registry:component",
+      "title": "Animated Alarm Smoke",
+      "description": "Alarm smoke icon with drifting trails.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-smoke/icon-alarm-smoke.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-album",
+      "type": "registry:component",
+      "title": "Animated Album",
+      "description": "Album icon with subtle fold motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-album/icon-album.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alert-circle",
+      "type": "registry:component",
+      "title": "Animated Alert Circle",
+      "description": "Alert circle icon with pulsing mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alert-circle/icon-alert-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alert-octagon",
+      "type": "registry:component",
+      "title": "Animated Alert Octagon",
+      "description": "Alert octagon icon with bouncing mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alert-octagon/icon-alert-octagon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-sparkle",
       "type": "registry:component",
       "title": "Animated Sparkle",
@@ -149,6 +449,171 @@
       "files": [
         {
           "path": "registry/default/icon-chevron-down/icon-chevron-down.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-home",
+      "type": "registry:component",
+      "title": "Animated Home",
+      "description": "Home icon with playful roof and door animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-home/icon-home.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu",
+      "type": "registry:component",
+      "title": "Animated Menu",
+      "description": "Menu icon with staggered line motion on hover.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu/icon-menu.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-bento",
+      "type": "registry:component",
+      "title": "Animated Menu Bento",
+      "description": "Bento menu icon with soft tile pops.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-bento/icon-menu-bento.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-dots",
+      "type": "registry:component",
+      "title": "Animated Menu Dots",
+      "description": "Horizontal menu dots with playful bounce motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-dots/icon-menu-dots.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-dots-vertical",
+      "type": "registry:component",
+      "title": "Animated Menu Dots Vertical",
+      "description": "Vertical menu dots with subtle sway motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-dots-vertical/icon-menu-dots-vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-grid",
+      "type": "registry:component",
+      "title": "Animated Menu Grid",
+      "description": "Grid menu icon with staggered tile motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-grid/icon-menu-grid.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-list",
+      "type": "registry:component",
+      "title": "Animated Menu List",
+      "description": "List menu icon with animated bullets and lines.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-list/icon-menu-list.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-sliders",
+      "type": "registry:component",
+      "title": "Animated Menu Sliders",
+      "description": "Slider menu icon with animated knobs.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-sliders/icon-menu-sliders.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-tabs",
+      "type": "registry:component",
+      "title": "Animated Menu Tabs",
+      "description": "Tabbed menu icon with stacked bar motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-tabs/icon-menu-tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock",
+      "type": "registry:component",
+      "title": "Animated Clock",
+      "description": "Clock icon with ticking hand motion and subtle pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock/icon-clock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-map-pin",
+      "type": "registry:component",
+      "title": "Animated Map Pin",
+      "description": "Map pin icon with lift and pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-map-pin/icon-map-pin.tsx",
           "type": "registry:component"
         }
       ]

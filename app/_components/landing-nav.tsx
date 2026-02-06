@@ -1,4 +1,25 @@
-export function LandingNav() {
+const GITHUB_REPO = "gohelboy/anicon";
+
+async function getGithubStars(): Promise<number | null> {
+  try {
+    const response = await fetch(`https://api.github.com/repos/${GITHUB_REPO}`, {
+      next: { revalidate: 3600 },
+      headers: {
+        Accept: "application/vnd.github+json",
+      },
+    });
+
+    if (!response.ok) return null;
+    const data = (await response.json()) as { stargazers_count?: number };
+    return typeof data.stargazers_count === "number" ? data.stargazers_count : null;
+  } catch {
+    return null;
+  }
+}
+
+export async function LandingNav() {
+  const stars = await getGithubStars();
+  const starsLabel = stars === null ? "GitHub stars" : `${stars.toLocaleString()} stars`;
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-[var(--background)]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4 sm:px-6">
@@ -21,6 +42,14 @@ export function LandingNav() {
             className="min-h-[44px] min-w-[44px] flex items-center justify-center px-2 transition hover:text-white"
           >
             Install
+          </a>
+          <a
+            href={`https://github.com/${GITHUB_REPO}`}
+            className="min-h-[44px] min-w-[44px] flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white transition hover:border-white/30 hover:bg-white/10"
+            aria-label="Anicon GitHub stars"
+          >
+            <span aria-hidden="true">★</span>
+            <span>{starsLabel}</span>
           </a>
         </nav>
       </div>
