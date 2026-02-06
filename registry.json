@@ -184,16 +184,16 @@
       ]
     },
     {
-      "name": "icon-compass",
+      "name": "icon-clock",
       "type": "registry:component",
-      "title": "Animated Compass",
-      "description": "Compass icon with rotating needle and pulse ring.",
+      "title": "Animated Clock",
+      "description": "Clock icon with ticking hand motion and subtle pulse.",
       "dependencies": [
         "motion"
       ],
       "files": [
         {
-          "path": "registry/default/icon-compass/icon-compass.tsx",
+          "path": "registry/default/icon-clock/icon-clock.tsx",
           "type": "registry:component"
         }
       ]

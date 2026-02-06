@@ -2,28 +2,30 @@
 
 import { motion } from "framer-motion";
 
-export interface IconCompassProps extends React.SVGProps<SVGSVGElement> {
+export interface IconClockProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
 }
 
 const ringVariants = {
-  rest: { scale: 1 },
-  hover: { scale: 1.04 },
+  rest: { scale: 1, opacity: 1 },
+  hover: { scale: 1.04, opacity: 0.95 },
   tap: { scale: 0.96 },
 };
 
-const needleVariants = {
+const minuteHandVariants = {
   rest: { rotate: 0 },
-  hover: { rotate: 35 },
-  tap: { rotate: -15, scale: 0.95 },
+  hover: { rotate: 40 },
+  tap: { rotate: -20 },
 };
 
-export function IconCompass({
-  size = 24,
-  className,
-  ...props
-}: IconCompassProps) {
+const hourHandVariants = {
+  rest: { rotate: 0 },
+  hover: { rotate: 20 },
+  tap: { rotate: -10 },
+};
+
+export function IconClock({ size = 24, className, ...props }: IconClockProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -46,16 +48,24 @@ export function IconCompass({
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      transition={{ type: "spring", stiffness: 320, damping: 16 }}
+      transition={{ type: "spring", stiffness: 360, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
       <motion.circle cx="12" cy="12" r="9" variants={ringVariants} />
-      <motion.g variants={needleVariants} style={{ originX: "50%", originY: "50%" }}>
-        <path d="m12 7 3 6-6 3 3-9z" fill="currentColor" stroke="none" />
-        <path d="m12 7 3 6-6 3" />
+      <motion.g
+        variants={hourHandVariants}
+        style={{ originX: "50%", originY: "50%" }}
+      >
+        <path d="M12 12V9" />
       </motion.g>
-      <circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none" />
+      <motion.g
+        variants={minuteHandVariants}
+        style={{ originX: "50%", originY: "50%" }}
+      >
+        <path d="M12 12L15 13.5" />
+      </motion.g>
+      <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
     </motion.svg>
   );
 }

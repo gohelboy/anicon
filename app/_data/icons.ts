@@ -6,7 +6,7 @@ import { IconChevronDown } from "@/registry/default/icon-chevron-down/icon-chevr
 import { IconChevronLeft } from "@/registry/default/icon-chevron-left/icon-chevron-left";
 import { IconChevronRight } from "@/registry/default/icon-chevron-right/icon-chevron-right";
 import { IconChevronUp } from "@/registry/default/icon-chevron-up/icon-chevron-up";
-import { IconCompass } from "@/registry/default/icon-compass/icon-compass";
+import { IconClock } from "@/registry/default/icon-clock/icon-clock";
 import { IconHeart } from "@/registry/default/icon-heart/icon-heart";
 import { IconHome } from "@/registry/default/icon-home/icon-home";
 import { IconMapPin } from "@/registry/default/icon-map-pin/icon-map-pin";
@@ -99,11 +99,11 @@ export const iconsRegistry = [
     tags: ["menu", "navigation", "hamburger", "list"],
   },
   {
-    name: "icon-compass",
-    component: IconCompass,
+    name: "icon-clock",
+    component: IconClock,
     color: "text-emerald-400",
-    description: "Compass icon with rotating needle and ring pulse",
-    tags: ["compass", "navigation", "direction", "explore"],
+    description: "Clock icon with ticking hands and gentle ring pulse",
+    tags: ["clock", "time", "schedule", "navigation"],
   },
   {
     name: "icon-map-pin",
