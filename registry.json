@@ -169,6 +169,156 @@
       ]
     },
     {
+      "name": "icon-alarm-clock-check",
+      "type": "registry:component",
+      "title": "Animated Alarm Clock Check",
+      "description": "Alarm clock icon with a checkmark draw.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-clock-check/icon-alarm-clock-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-clock-minus",
+      "type": "registry:component",
+      "title": "Animated Alarm Clock Minus",
+      "description": "Alarm clock icon with a minus indicator.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-clock-minus/icon-alarm-clock-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-clock-off",
+      "type": "registry:component",
+      "title": "Animated Alarm Clock Off",
+      "description": "Alarm clock icon with a disabled strike.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-clock-off/icon-alarm-clock-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-clock-plus",
+      "type": "registry:component",
+      "title": "Animated Alarm Clock Plus",
+      "description": "Alarm clock icon with a plus indicator.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-clock-plus/icon-alarm-clock-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-minus",
+      "type": "registry:component",
+      "title": "Animated Alarm Minus",
+      "description": "Alarm clock minus variant with motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-minus/icon-alarm-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-plus",
+      "type": "registry:component",
+      "title": "Animated Alarm Plus",
+      "description": "Alarm clock plus variant with motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-plus/icon-alarm-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-smoke",
+      "type": "registry:component",
+      "title": "Animated Alarm Smoke",
+      "description": "Alarm smoke icon with drifting trails.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-smoke/icon-alarm-smoke.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-album",
+      "type": "registry:component",
+      "title": "Animated Album",
+      "description": "Album icon with subtle fold motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-album/icon-album.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alert-circle",
+      "type": "registry:component",
+      "title": "Animated Alert Circle",
+      "description": "Alert circle icon with pulsing mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alert-circle/icon-alert-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alert-octagon",
+      "type": "registry:component",
+      "title": "Animated Alert Octagon",
+      "description": "Alert octagon icon with bouncing mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alert-octagon/icon-alert-octagon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-sparkle",
       "type": "registry:component",
       "title": "Animated Sparkle",

@@ -12,6 +12,16 @@ import { IconAirVent } from "@/registry/default/icon-air-vent/icon-air-vent";
 import { IconAirplay } from "@/registry/default/icon-airplay/icon-airplay";
 import { IconAlarmCheck } from "@/registry/default/icon-alarm-check/icon-alarm-check";
 import { IconAlarmClock } from "@/registry/default/icon-alarm-clock/icon-alarm-clock";
+import { IconAlarmClockCheck } from "@/registry/default/icon-alarm-clock-check/icon-alarm-clock-check";
+import { IconAlarmClockMinus } from "@/registry/default/icon-alarm-clock-minus/icon-alarm-clock-minus";
+import { IconAlarmClockOff } from "@/registry/default/icon-alarm-clock-off/icon-alarm-clock-off";
+import { IconAlarmClockPlus } from "@/registry/default/icon-alarm-clock-plus/icon-alarm-clock-plus";
+import { IconAlarmMinus } from "@/registry/default/icon-alarm-minus/icon-alarm-minus";
+import { IconAlarmPlus } from "@/registry/default/icon-alarm-plus/icon-alarm-plus";
+import { IconAlarmSmoke } from "@/registry/default/icon-alarm-smoke/icon-alarm-smoke";
+import { IconAlbum } from "@/registry/default/icon-album/icon-album";
+import { IconAlertCircle } from "@/registry/default/icon-alert-circle/icon-alert-circle";
+import { IconAlertOctagon } from "@/registry/default/icon-alert-octagon/icon-alert-octagon";
 import { IconChevronDown } from "@/registry/default/icon-chevron-down/icon-chevron-down";
 import { IconChevronLeft } from "@/registry/default/icon-chevron-left/icon-chevron-left";
 import { IconChevronRight } from "@/registry/default/icon-chevron-right/icon-chevron-right";
@@ -107,6 +117,76 @@ export const iconsRegistry = [
     color: "text-amber-400",
     description: "Alarm clock with ticking hands",
     tags: ["alarm", "clock", "time"],
+  },
+  {
+    name: "icon-alarm-clock-check",
+    component: IconAlarmClockCheck,
+    color: "text-amber-400",
+    description: "Alarm clock with a checkmark draw",
+    tags: ["alarm", "clock", "check", "time"],
+  },
+  {
+    name: "icon-alarm-clock-minus",
+    component: IconAlarmClockMinus,
+    color: "text-amber-400",
+    description: "Alarm clock with a minus indicator",
+    tags: ["alarm", "clock", "minus", "time"],
+  },
+  {
+    name: "icon-alarm-clock-off",
+    component: IconAlarmClockOff,
+    color: "text-amber-400",
+    description: "Alarm clock with a disabled strike",
+    tags: ["alarm", "clock", "off", "mute"],
+  },
+  {
+    name: "icon-alarm-clock-plus",
+    component: IconAlarmClockPlus,
+    color: "text-amber-400",
+    description: "Alarm clock with a plus indicator",
+    tags: ["alarm", "clock", "plus", "time"],
+  },
+  {
+    name: "icon-alarm-minus",
+    component: IconAlarmMinus,
+    color: "text-amber-400",
+    description: "Alarm clock minus variant",
+    tags: ["alarm", "clock", "minus", "time"],
+  },
+  {
+    name: "icon-alarm-plus",
+    component: IconAlarmPlus,
+    color: "text-amber-400",
+    description: "Alarm clock plus variant",
+    tags: ["alarm", "clock", "plus", "time"],
+  },
+  {
+    name: "icon-alarm-smoke",
+    component: IconAlarmSmoke,
+    color: "text-orange-300",
+    description: "Alarm smoke icon with drifting trails",
+    tags: ["alarm", "smoke", "alert", "safety"],
+  },
+  {
+    name: "icon-album",
+    component: IconAlbum,
+    color: "text-white",
+    description: "Album icon with folding highlight",
+    tags: ["album", "music", "media"],
+  },
+  {
+    name: "icon-alert-circle",
+    component: IconAlertCircle,
+    color: "text-rose-400",
+    description: "Alert circle with pulsing mark",
+    tags: ["alert", "warning", "circle"],
+  },
+  {
+    name: "icon-alert-octagon",
+    component: IconAlertOctagon,
+    color: "text-rose-400",
+    description: "Alert octagon with bouncing mark",
+    tags: ["alert", "warning", "octagon"],
   },
   {
     name: "icon-sparkle",
