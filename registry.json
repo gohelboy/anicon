@@ -184,6 +184,66 @@
       ]
     },
     {
+      "name": "icon-menu-dots",
+      "type": "registry:component",
+      "title": "Animated Menu Dots",
+      "description": "Horizontal menu dots with playful bounce motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-dots/icon-menu-dots.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-dots-vertical",
+      "type": "registry:component",
+      "title": "Animated Menu Dots Vertical",
+      "description": "Vertical menu dots with subtle sway motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-dots-vertical/icon-menu-dots-vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-grid",
+      "type": "registry:component",
+      "title": "Animated Menu Grid",
+      "description": "Grid menu icon with staggered tile motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-grid/icon-menu-grid.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-sliders",
+      "type": "registry:component",
+      "title": "Animated Menu Sliders",
+      "description": "Slider menu icon with animated knobs.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-sliders/icon-menu-sliders.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-clock",
       "type": "registry:component",
       "title": "Animated Clock",

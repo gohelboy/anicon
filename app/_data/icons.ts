@@ -11,6 +11,10 @@ import { IconHeart } from "@/registry/default/icon-heart/icon-heart";
 import { IconHome } from "@/registry/default/icon-home/icon-home";
 import { IconMapPin } from "@/registry/default/icon-map-pin/icon-map-pin";
 import { IconMenu } from "@/registry/default/icon-menu/icon-menu";
+import { IconMenuDots } from "@/registry/default/icon-menu-dots/icon-menu-dots";
+import { IconMenuDotsVertical } from "@/registry/default/icon-menu-dots-vertical/icon-menu-dots-vertical";
+import { IconMenuGrid } from "@/registry/default/icon-menu-grid/icon-menu-grid";
+import { IconMenuSliders } from "@/registry/default/icon-menu-sliders/icon-menu-sliders";
 import { IconSparkle } from "@/registry/default/icon-sparkle/icon-sparkle";
 
 export const iconsRegistry = [
@@ -97,6 +101,34 @@ export const iconsRegistry = [
     color: "text-white",
     description: "Menu icon with staggered line slides",
     tags: ["menu", "navigation", "hamburger", "list"],
+  },
+  {
+    name: "icon-menu-dots",
+    component: IconMenuDots,
+    color: "text-white",
+    description: "Horizontal menu dots with a playful bounce",
+    tags: ["menu", "dots", "more", "overflow", "navigation"],
+  },
+  {
+    name: "icon-menu-dots-vertical",
+    component: IconMenuDotsVertical,
+    color: "text-white",
+    description: "Vertical menu dots with a subtle sway",
+    tags: ["menu", "dots", "more", "overflow", "navigation"],
+  },
+  {
+    name: "icon-menu-grid",
+    component: IconMenuGrid,
+    color: "text-white",
+    description: "Grid menu with staggered tile motion",
+    tags: ["menu", "grid", "apps", "navigation"],
+  },
+  {
+    name: "icon-menu-sliders",
+    component: IconMenuSliders,
+    color: "text-white",
+    description: "Slider menu with animated knobs",
+    tags: ["menu", "sliders", "settings", "controls"],
   },
   {
     name: "icon-clock",
