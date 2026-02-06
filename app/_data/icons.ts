@@ -11,10 +11,13 @@ import { IconHeart } from "@/registry/default/icon-heart/icon-heart";
 import { IconHome } from "@/registry/default/icon-home/icon-home";
 import { IconMapPin } from "@/registry/default/icon-map-pin/icon-map-pin";
 import { IconMenu } from "@/registry/default/icon-menu/icon-menu";
+import { IconMenuBento } from "@/registry/default/icon-menu-bento/icon-menu-bento";
 import { IconMenuDots } from "@/registry/default/icon-menu-dots/icon-menu-dots";
 import { IconMenuDotsVertical } from "@/registry/default/icon-menu-dots-vertical/icon-menu-dots-vertical";
 import { IconMenuGrid } from "@/registry/default/icon-menu-grid/icon-menu-grid";
+import { IconMenuList } from "@/registry/default/icon-menu-list/icon-menu-list";
 import { IconMenuSliders } from "@/registry/default/icon-menu-sliders/icon-menu-sliders";
+import { IconMenuTabs } from "@/registry/default/icon-menu-tabs/icon-menu-tabs";
 import { IconSparkle } from "@/registry/default/icon-sparkle/icon-sparkle";
 
 export const iconsRegistry = [
@@ -103,6 +106,13 @@ export const iconsRegistry = [
     tags: ["menu", "navigation", "hamburger", "list"],
   },
   {
+    name: "icon-menu-bento",
+    component: IconMenuBento,
+    color: "text-white",
+    description: "Bento menu tiles with a soft pop animation",
+    tags: ["menu", "bento", "grid", "apps", "navigation"],
+  },
+  {
     name: "icon-menu-dots",
     component: IconMenuDots,
     color: "text-white",
@@ -124,11 +134,25 @@ export const iconsRegistry = [
     tags: ["menu", "grid", "apps", "navigation"],
   },
   {
+    name: "icon-menu-list",
+    component: IconMenuList,
+    color: "text-white",
+    description: "List menu with animated bullets and lines",
+    tags: ["menu", "list", "items", "navigation"],
+  },
+  {
     name: "icon-menu-sliders",
     component: IconMenuSliders,
     color: "text-white",
     description: "Slider menu with animated knobs",
     tags: ["menu", "sliders", "settings", "controls"],
+  },
+  {
+    name: "icon-menu-tabs",
+    component: IconMenuTabs,
+    color: "text-white",
+    description: "Tabbed menu with stacked bars",
+    tags: ["menu", "tabs", "navigation", "list"],
   },
   {
     name: "icon-clock",

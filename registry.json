@@ -184,6 +184,21 @@
       ]
     },
     {
+      "name": "icon-menu-bento",
+      "type": "registry:component",
+      "title": "Animated Menu Bento",
+      "description": "Bento menu icon with soft tile pops.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-bento/icon-menu-bento.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-menu-dots",
       "type": "registry:component",
       "title": "Animated Menu Dots",
@@ -229,6 +244,21 @@
       ]
     },
     {
+      "name": "icon-menu-list",
+      "type": "registry:component",
+      "title": "Animated Menu List",
+      "description": "List menu icon with animated bullets and lines.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-list/icon-menu-list.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-menu-sliders",
       "type": "registry:component",
       "title": "Animated Menu Sliders",
@@ -239,6 +269,21 @@
       "files": [
         {
           "path": "registry/default/icon-menu-sliders/icon-menu-sliders.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-menu-tabs",
+      "type": "registry:component",
+      "title": "Animated Menu Tabs",
+      "description": "Tabbed menu icon with stacked bar motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-menu-tabs/icon-menu-tabs.tsx",
           "type": "registry:component"
         }
       ]
