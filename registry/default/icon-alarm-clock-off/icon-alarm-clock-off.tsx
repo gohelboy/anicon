@@ -14,9 +14,9 @@ const slashVariants = {
 };
 
 const ringVariants = {
-  rest: { scale: 1 },
-  hover: { scale: 0.98 },
-  tap: { scale: 0.96 },
+  rest: { scale: 1, opacity: 1 },
+  hover: { scale: 0.98, opacity: 0.8 },
+  tap: { scale: 0.96, opacity: 0.9 },
 };
 
 export function IconAlarmClockOff({

@@ -9,20 +9,20 @@ export interface IconClockProps extends React.SVGProps<SVGSVGElement> {
 
 const ringVariants = {
   rest: { scale: 1, opacity: 1 },
-  hover: { scale: 1.04, opacity: 0.95 },
-  tap: { scale: 0.96 },
+  hover: { scale: 1.02, opacity: 0.9 },
+  tap: { scale: 0.97 },
 };
 
 const minuteHandVariants = {
   rest: { rotate: 0 },
-  hover: { rotate: 40 },
-  tap: { rotate: -20 },
+  hover: { rotate: 90 },
+  tap: { rotate: -30 },
 };
 
 const hourHandVariants = {
   rest: { rotate: 0 },
-  hover: { rotate: 20 },
-  tap: { rotate: -10 },
+  hover: { rotate: 30 },
+  tap: { rotate: -15 },
 };
 
 export function IconClock({ size = 24, className, ...props }: IconClockProps) {

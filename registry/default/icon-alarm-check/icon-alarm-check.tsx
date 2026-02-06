@@ -9,14 +9,14 @@ export interface IconAlarmCheckProps extends React.SVGProps<SVGSVGElement> {
 
 const bellVariants = {
   rest: { rotate: 0 },
-  hover: { rotate: -6 },
-  tap: { rotate: 6, scale: 0.98 },
+  hover: { rotate: -4 },
+  tap: { rotate: 4, scale: 0.98 },
 };
 
 const checkVariants = {
-  rest: { strokeDashoffset: 0 },
-  hover: { strokeDashoffset: 6 },
-  tap: { strokeDashoffset: 2 },
+  rest: { pathLength: 1 },
+  hover: { pathLength: 0.8 },
+  tap: { pathLength: 0.9 },
 };
 
 export function IconAlarmCheck({
@@ -57,7 +57,7 @@ export function IconAlarmCheck({
       </motion.g>
       <path d="M6.38 18.7 4 21" />
       <path d="M17.64 18.67 20 21" />
-      <motion.path d="m9 13 2 2 4-4" variants={checkVariants} strokeDasharray="10" />
+      <motion.path d="m9 13 2 2 4-4" variants={checkVariants} />
     </motion.svg>
   );
 }
