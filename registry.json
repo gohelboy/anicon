@@ -19,6 +19,156 @@
       ]
     },
     {
+      "name": "icon-a-arrow-down",
+      "type": "registry:component",
+      "title": "Animated A Arrow Down",
+      "description": "Letter A icon with a bouncing down arrow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-a-arrow-down/icon-a-arrow-down.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-a-arrow-up",
+      "type": "registry:component",
+      "title": "Animated A Arrow Up",
+      "description": "Letter A icon with a floating up arrow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-a-arrow-up/icon-a-arrow-up.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-a-large-small",
+      "type": "registry:component",
+      "title": "Animated A Large Small",
+      "description": "Large/small A icon with subtle scaling motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-a-large-small/icon-a-large-small.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-accessibility",
+      "type": "registry:component",
+      "title": "Animated Accessibility",
+      "description": "Accessibility icon with a gentle pose sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-accessibility/icon-accessibility.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-activity",
+      "type": "registry:component",
+      "title": "Animated Activity",
+      "description": "Activity pulse icon with animated stroke drift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-activity/icon-activity.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-activity-square",
+      "type": "registry:component",
+      "title": "Animated Activity Square",
+      "description": "Activity square icon with pulsing sparkline.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-activity-square/icon-activity-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-air-vent",
+      "type": "registry:component",
+      "title": "Animated Air Vent",
+      "description": "Air vent icon with shifting airflow lines.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-air-vent/icon-air-vent.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-airplay",
+      "type": "registry:component",
+      "title": "Animated Airplay",
+      "description": "Airplay icon with a popping cast triangle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-airplay/icon-airplay.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-check",
+      "type": "registry:component",
+      "title": "Animated Alarm Check",
+      "description": "Alarm clock with a checkmark draw animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-check/icon-alarm-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alarm-clock",
+      "type": "registry:component",
+      "title": "Animated Alarm Clock",
+      "description": "Alarm clock icon with ticking hands.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alarm-clock/icon-alarm-clock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-sparkle",
       "type": "registry:component",
       "title": "Animated Sparkle",

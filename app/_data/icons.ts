@@ -2,6 +2,16 @@ import { IconArrowDown } from "@/registry/default/icon-arrow-down/icon-arrow-dow
 import { IconArrowLeft } from "@/registry/default/icon-arrow-left/icon-arrow-left";
 import { IconArrowRight } from "@/registry/default/icon-arrow-right/icon-arrow-right";
 import { IconArrowUp } from "@/registry/default/icon-arrow-up/icon-arrow-up";
+import { IconAArrowDown } from "@/registry/default/icon-a-arrow-down/icon-a-arrow-down";
+import { IconAArrowUp } from "@/registry/default/icon-a-arrow-up/icon-a-arrow-up";
+import { IconALargeSmall } from "@/registry/default/icon-a-large-small/icon-a-large-small";
+import { IconAccessibility } from "@/registry/default/icon-accessibility/icon-accessibility";
+import { IconActivity } from "@/registry/default/icon-activity/icon-activity";
+import { IconActivitySquare } from "@/registry/default/icon-activity-square/icon-activity-square";
+import { IconAirVent } from "@/registry/default/icon-air-vent/icon-air-vent";
+import { IconAirplay } from "@/registry/default/icon-airplay/icon-airplay";
+import { IconAlarmCheck } from "@/registry/default/icon-alarm-check/icon-alarm-check";
+import { IconAlarmClock } from "@/registry/default/icon-alarm-clock/icon-alarm-clock";
 import { IconChevronDown } from "@/registry/default/icon-chevron-down/icon-chevron-down";
 import { IconChevronLeft } from "@/registry/default/icon-chevron-left/icon-chevron-left";
 import { IconChevronRight } from "@/registry/default/icon-chevron-right/icon-chevron-right";
@@ -27,6 +37,76 @@ export const iconsRegistry = [
     color: "text-rose-500",
     description: "Heart with hover and tap scale animation",
     tags: ["heart", "love", "like", "favorite"],
+  },
+  {
+    name: "icon-a-arrow-down",
+    component: IconAArrowDown,
+    color: "text-white",
+    description: "Letter A with a bouncing down arrow",
+    tags: ["a", "arrow", "down", "typography"],
+  },
+  {
+    name: "icon-a-arrow-up",
+    component: IconAArrowUp,
+    color: "text-white",
+    description: "Letter A with a floating up arrow",
+    tags: ["a", "arrow", "up", "typography"],
+  },
+  {
+    name: "icon-a-large-small",
+    component: IconALargeSmall,
+    color: "text-white",
+    description: "Large and small A with size-shift animation",
+    tags: ["a", "typography", "scale", "text"],
+  },
+  {
+    name: "icon-accessibility",
+    component: IconAccessibility,
+    color: "text-sky-400",
+    description: "Accessibility icon with a gentle pose sway",
+    tags: ["accessibility", "person", "motion"],
+  },
+  {
+    name: "icon-activity",
+    component: IconActivity,
+    color: "text-emerald-400",
+    description: "Activity pulse with animated stroke drift",
+    tags: ["activity", "pulse", "health", "wave"],
+  },
+  {
+    name: "icon-activity-square",
+    component: IconActivitySquare,
+    color: "text-emerald-400",
+    description: "Activity square with pulsing sparkline",
+    tags: ["activity", "square", "pulse", "health"],
+  },
+  {
+    name: "icon-air-vent",
+    component: IconAirVent,
+    color: "text-sky-300",
+    description: "Air vent with shifting airflow lines",
+    tags: ["air", "vent", "wind", "cooling"],
+  },
+  {
+    name: "icon-airplay",
+    component: IconAirplay,
+    color: "text-white",
+    description: "Airplay icon with a popping cast triangle",
+    tags: ["airplay", "cast", "stream", "screen"],
+  },
+  {
+    name: "icon-alarm-check",
+    component: IconAlarmCheck,
+    color: "text-amber-400",
+    description: "Alarm clock with a checkmark draw",
+    tags: ["alarm", "clock", "check", "time"],
+  },
+  {
+    name: "icon-alarm-clock",
+    component: IconAlarmClock,
+    color: "text-amber-400",
+    description: "Alarm clock with ticking hands",
+    tags: ["alarm", "clock", "time"],
   },
   {
     name: "icon-sparkle",
