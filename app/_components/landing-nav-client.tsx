@@ -1,6 +1,8 @@
+"use client";
+
 const GITHUB_REPO = "gohelboy/anicon";
 
-export function LandingNav() {
+export function LandingNavClient() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/5 bg-[var(--background)]/80 backdrop-blur-xl">
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-4 sm:px-6">
