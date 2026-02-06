@@ -14,9 +14,9 @@ const bellVariants = {
 };
 
 const plusVariants = {
-  rest: { scale: 1 },
-  hover: { scale: 1.08 },
-  tap: { scale: 0.95 },
+  rest: { scale: 1, y: 0 },
+  hover: { scale: 1.12, y: -0.5 },
+  tap: { scale: 0.94, y: 0.5 },
 };
 
 export function IconAlarmPlus({ size = 24, className, ...props }: IconAlarmPlusProps) {

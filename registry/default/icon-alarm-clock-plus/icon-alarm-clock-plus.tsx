@@ -14,9 +14,9 @@ const bellVariants = {
 };
 
 const plusVariants = {
-  rest: { scale: 1 },
-  hover: { scale: 1.08 },
-  tap: { scale: 0.95 },
+  rest: { scale: 1, rotate: 0 },
+  hover: { scale: 1.1, rotate: 6 },
+  tap: { scale: 0.94, rotate: -6 },
 };
 
 export function IconAlarmClockPlus({

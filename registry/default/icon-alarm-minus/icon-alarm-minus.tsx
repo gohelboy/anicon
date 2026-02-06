@@ -14,9 +14,9 @@ const bellVariants = {
 };
 
 const minusVariants = {
-  rest: { scaleX: 1 },
-  hover: { scaleX: 1.1 },
-  tap: { scaleX: 0.95 },
+  rest: { scaleX: 1, x: 0 },
+  hover: { scaleX: 1.15, x: -0.5 },
+  tap: { scaleX: 0.9, x: 0.5 },
 };
 
 export function IconAlarmMinus({ size = 24, className, ...props }: IconAlarmMinusProps) {

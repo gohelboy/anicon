@@ -29,10 +29,10 @@ export function LandingNavClient() {
           <a
             href={`https://github.com/${GITHUB_REPO}`}
             className="min-h-[44px] min-w-[44px] flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-semibold text-white transition hover:border-white/30 hover:bg-white/10"
-            aria-label="Anicon GitHub stars"
+            aria-label="Anicon GitHub repository"
           >
             <span aria-hidden="true">★</span>
-            <span>GitHub stars</span>
+            <span>GitHub</span>
           </a>
         </nav>
       </div>

@@ -9,14 +9,20 @@ export interface IconAlarmClockProps extends React.SVGProps<SVGSVGElement> {
 
 const bellVariants = {
   rest: { rotate: 0 },
-  hover: { rotate: -5 },
-  tap: { rotate: 5, scale: 0.98 },
+  hover: { rotate: -10 },
+  tap: { rotate: 10, scale: 0.96 },
 };
 
 const handsVariants = {
   rest: { rotate: 0 },
-  hover: { rotate: 25 },
-  tap: { rotate: -15 },
+  hover: { rotate: 45 },
+  tap: { rotate: -20 },
+};
+
+const ringVariants = {
+  rest: { scale: 1 },
+  hover: { scale: 1.03 },
+  tap: { scale: 0.97 },
 };
 
 export function IconAlarmClock({
@@ -51,7 +57,7 @@ export function IconAlarmClock({
       {...rest}
     >
       <motion.g variants={bellVariants} style={{ originX: "50%", originY: "20%" }}>
-        <circle cx="12" cy="13" r="8" />
+        <motion.circle cx="12" cy="13" r="8" variants={ringVariants} />
         <path d="M5 3 2 6" />
         <path d="m22 6-3-3" />
       </motion.g>
