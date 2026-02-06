@@ -139,21 +139,6 @@
       ]
     },
     {
-      "name": "icon-alarm-check",
-      "type": "registry:component",
-      "title": "Animated Alarm Check",
-      "description": "Alarm clock with a checkmark draw animation.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-alarm-check/icon-alarm-check.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
       "name": "icon-alarm-clock",
       "type": "registry:component",
       "title": "Animated Alarm Clock",
@@ -229,36 +214,6 @@
       ]
     },
     {
-      "name": "icon-alarm-minus",
-      "type": "registry:component",
-      "title": "Animated Alarm Minus",
-      "description": "Alarm clock minus variant with motion.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-alarm-minus/icon-alarm-minus.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-alarm-plus",
-      "type": "registry:component",
-      "title": "Animated Alarm Plus",
-      "description": "Alarm clock plus variant with motion.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-alarm-plus/icon-alarm-plus.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
       "name": "icon-alarm-smoke",
       "type": "registry:component",
       "title": "Animated Alarm Smoke",
@@ -314,6 +269,306 @@
       "files": [
         {
           "path": "registry/default/icon-alert-octagon/icon-alert-octagon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-alert-triangle",
+      "type": "registry:component",
+      "title": "Animated Alert Triangle",
+      "description": "Alert triangle with a lively warning mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-alert-triangle/icon-alert-triangle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-center",
+      "type": "registry:component",
+      "title": "Animated Align Center",
+      "description": "Align center icon with gentle bounce motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-center/icon-align-center.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-center-horizontal",
+      "type": "registry:component",
+      "title": "Animated Align Center Horizontal",
+      "description": "Align center horizontal icon with shifting guides.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-center-horizontal/icon-align-center-horizontal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-center-vertical",
+      "type": "registry:component",
+      "title": "Animated Align Center Vertical",
+      "description": "Align center vertical icon with vertical glide.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-center-vertical/icon-align-center-vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-end-horizontal",
+      "type": "registry:component",
+      "title": "Animated Align End Horizontal",
+      "description": "Align end horizontal icon with slide emphasis.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-end-horizontal/icon-align-end-horizontal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-end-vertical",
+      "type": "registry:component",
+      "title": "Animated Align End Vertical",
+      "description": "Align end vertical icon with drop motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-end-vertical/icon-align-end-vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-horizontal-distribute-center",
+      "type": "registry:component",
+      "title": "Animated Align Horizontal Distribute Center",
+      "description": "Distribute center icon with a horizontal nudge.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-horizontal-distribute-center/icon-align-horizontal-distribute-center.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-horizontal-distribute-end",
+      "type": "registry:component",
+      "title": "Animated Align Horizontal Distribute End",
+      "description": "Distribute end icon with a horizontal push.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-horizontal-distribute-end/icon-align-horizontal-distribute-end.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-horizontal-distribute-start",
+      "type": "registry:component",
+      "title": "Animated Align Horizontal Distribute Start",
+      "description": "Distribute start icon with a horizontal pull.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-horizontal-distribute-start/icon-align-horizontal-distribute-start.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-horizontal-justify-center",
+      "type": "registry:component",
+      "title": "Animated Align Horizontal Justify Center",
+      "description": "Justify center icon with a guided shift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-horizontal-justify-center/icon-align-horizontal-justify-center.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-horizontal-justify-end",
+      "type": "registry:component",
+      "title": "Animated Align Horizontal Justify End",
+      "description": "Justify end icon with a guided shift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-horizontal-justify-end/icon-align-horizontal-justify-end.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-horizontal-justify-start",
+      "type": "registry:component",
+      "title": "Animated Align Horizontal Justify Start",
+      "description": "Justify start icon with a guided shift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-horizontal-justify-start/icon-align-horizontal-justify-start.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-horizontal-space-around",
+      "type": "registry:component",
+      "title": "Animated Align Horizontal Space Around",
+      "description": "Space-around icon with subtle horizontal drift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-horizontal-space-around/icon-align-horizontal-space-around.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-horizontal-space-between",
+      "type": "registry:component",
+      "title": "Animated Align Horizontal Space Between",
+      "description": "Space-between icon with subtle horizontal drift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-horizontal-space-between/icon-align-horizontal-space-between.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-justify",
+      "type": "registry:component",
+      "title": "Animated Align Justify",
+      "description": "Justified bars with a soft settle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-justify/icon-align-justify.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-left",
+      "type": "registry:component",
+      "title": "Animated Align Left",
+      "description": "Align left bars with a left pull.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-left/icon-align-left.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-right",
+      "type": "registry:component",
+      "title": "Animated Align Right",
+      "description": "Align right bars with a right push.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-right/icon-align-right.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-start-horizontal",
+      "type": "registry:component",
+      "title": "Animated Align Start Horizontal",
+      "description": "Align start horizontal icon with slide emphasis.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-start-horizontal/icon-align-start-horizontal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-start-vertical",
+      "type": "registry:component",
+      "title": "Animated Align Start Vertical",
+      "description": "Align start vertical icon with rise motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-start-vertical/icon-align-start-vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-vertical-distribute-center",
+      "type": "registry:component",
+      "title": "Animated Align Vertical Distribute Center",
+      "description": "Distribute vertical center with a lift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-vertical-distribute-center/icon-align-vertical-distribute-center.tsx",
           "type": "registry:component"
         }
       ]

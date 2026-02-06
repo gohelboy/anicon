@@ -10,18 +10,35 @@ import { IconActivity } from "@/registry/default/icon-activity/icon-activity";
 import { IconActivitySquare } from "@/registry/default/icon-activity-square/icon-activity-square";
 import { IconAirVent } from "@/registry/default/icon-air-vent/icon-air-vent";
 import { IconAirplay } from "@/registry/default/icon-airplay/icon-airplay";
-import { IconAlarmCheck } from "@/registry/default/icon-alarm-check/icon-alarm-check";
 import { IconAlarmClock } from "@/registry/default/icon-alarm-clock/icon-alarm-clock";
 import { IconAlarmClockCheck } from "@/registry/default/icon-alarm-clock-check/icon-alarm-clock-check";
 import { IconAlarmClockMinus } from "@/registry/default/icon-alarm-clock-minus/icon-alarm-clock-minus";
 import { IconAlarmClockOff } from "@/registry/default/icon-alarm-clock-off/icon-alarm-clock-off";
 import { IconAlarmClockPlus } from "@/registry/default/icon-alarm-clock-plus/icon-alarm-clock-plus";
-import { IconAlarmMinus } from "@/registry/default/icon-alarm-minus/icon-alarm-minus";
-import { IconAlarmPlus } from "@/registry/default/icon-alarm-plus/icon-alarm-plus";
 import { IconAlarmSmoke } from "@/registry/default/icon-alarm-smoke/icon-alarm-smoke";
 import { IconAlbum } from "@/registry/default/icon-album/icon-album";
 import { IconAlertCircle } from "@/registry/default/icon-alert-circle/icon-alert-circle";
 import { IconAlertOctagon } from "@/registry/default/icon-alert-octagon/icon-alert-octagon";
+import { IconAlertTriangle } from "@/registry/default/icon-alert-triangle/icon-alert-triangle";
+import { IconAlignCenter } from "@/registry/default/icon-align-center/icon-align-center";
+import { IconAlignCenterHorizontal } from "@/registry/default/icon-align-center-horizontal/icon-align-center-horizontal";
+import { IconAlignCenterVertical } from "@/registry/default/icon-align-center-vertical/icon-align-center-vertical";
+import { IconAlignEndHorizontal } from "@/registry/default/icon-align-end-horizontal/icon-align-end-horizontal";
+import { IconAlignEndVertical } from "@/registry/default/icon-align-end-vertical/icon-align-end-vertical";
+import { IconAlignHorizontalDistributeCenter } from "@/registry/default/icon-align-horizontal-distribute-center/icon-align-horizontal-distribute-center";
+import { IconAlignHorizontalDistributeEnd } from "@/registry/default/icon-align-horizontal-distribute-end/icon-align-horizontal-distribute-end";
+import { IconAlignHorizontalDistributeStart } from "@/registry/default/icon-align-horizontal-distribute-start/icon-align-horizontal-distribute-start";
+import { IconAlignHorizontalJustifyCenter } from "@/registry/default/icon-align-horizontal-justify-center/icon-align-horizontal-justify-center";
+import { IconAlignHorizontalJustifyEnd } from "@/registry/default/icon-align-horizontal-justify-end/icon-align-horizontal-justify-end";
+import { IconAlignHorizontalJustifyStart } from "@/registry/default/icon-align-horizontal-justify-start/icon-align-horizontal-justify-start";
+import { IconAlignHorizontalSpaceAround } from "@/registry/default/icon-align-horizontal-space-around/icon-align-horizontal-space-around";
+import { IconAlignHorizontalSpaceBetween } from "@/registry/default/icon-align-horizontal-space-between/icon-align-horizontal-space-between";
+import { IconAlignJustify } from "@/registry/default/icon-align-justify/icon-align-justify";
+import { IconAlignLeft } from "@/registry/default/icon-align-left/icon-align-left";
+import { IconAlignRight } from "@/registry/default/icon-align-right/icon-align-right";
+import { IconAlignStartHorizontal } from "@/registry/default/icon-align-start-horizontal/icon-align-start-horizontal";
+import { IconAlignStartVertical } from "@/registry/default/icon-align-start-vertical/icon-align-start-vertical";
+import { IconAlignVerticalDistributeCenter } from "@/registry/default/icon-align-vertical-distribute-center/icon-align-vertical-distribute-center";
 import { IconChevronDown } from "@/registry/default/icon-chevron-down/icon-chevron-down";
 import { IconChevronLeft } from "@/registry/default/icon-chevron-left/icon-chevron-left";
 import { IconChevronRight } from "@/registry/default/icon-chevron-right/icon-chevron-right";
@@ -105,13 +122,6 @@ export const iconsRegistry = [
     tags: ["airplay", "cast", "stream", "screen"],
   },
   {
-    name: "icon-alarm-check",
-    component: IconAlarmCheck,
-    color: "text-amber-400",
-    description: "Alarm clock with a checkmark draw",
-    tags: ["alarm", "clock", "check", "time"],
-  },
-  {
     name: "icon-alarm-clock",
     component: IconAlarmClock,
     color: "text-amber-400",
@@ -147,20 +157,6 @@ export const iconsRegistry = [
     tags: ["alarm", "clock", "plus", "time"],
   },
   {
-    name: "icon-alarm-minus",
-    component: IconAlarmMinus,
-    color: "text-amber-400",
-    description: "Alarm clock minus variant",
-    tags: ["alarm", "clock", "minus", "time"],
-  },
-  {
-    name: "icon-alarm-plus",
-    component: IconAlarmPlus,
-    color: "text-amber-400",
-    description: "Alarm clock plus variant",
-    tags: ["alarm", "clock", "plus", "time"],
-  },
-  {
     name: "icon-alarm-smoke",
     component: IconAlarmSmoke,
     color: "text-orange-300",
@@ -187,6 +183,146 @@ export const iconsRegistry = [
     color: "text-rose-400",
     description: "Alert octagon with bouncing mark",
     tags: ["alert", "warning", "octagon"],
+  },
+  {
+    name: "icon-alert-triangle",
+    component: IconAlertTriangle,
+    color: "text-rose-400",
+    description: "Alert triangle with lively warning mark",
+    tags: ["alert", "warning", "triangle"],
+  },
+  {
+    name: "icon-align-center",
+    component: IconAlignCenter,
+    color: "text-sky-300",
+    description: "Align center bars with a gentle bounce",
+    tags: ["align", "center", "text", "layout"],
+  },
+  {
+    name: "icon-align-center-horizontal",
+    component: IconAlignCenterHorizontal,
+    color: "text-sky-300",
+    description: "Align center horizontal icon with shifting guides",
+    tags: ["align", "center", "horizontal", "layout"],
+  },
+  {
+    name: "icon-align-center-vertical",
+    component: IconAlignCenterVertical,
+    color: "text-sky-300",
+    description: "Align center vertical icon with vertical glide",
+    tags: ["align", "center", "vertical", "layout"],
+  },
+  {
+    name: "icon-align-end-horizontal",
+    component: IconAlignEndHorizontal,
+    color: "text-sky-300",
+    description: "Align end horizontal icon with slide emphasis",
+    tags: ["align", "end", "horizontal", "layout"],
+  },
+  {
+    name: "icon-align-end-vertical",
+    component: IconAlignEndVertical,
+    color: "text-sky-300",
+    description: "Align end vertical icon with drop motion",
+    tags: ["align", "end", "vertical", "layout"],
+  },
+  {
+    name: "icon-align-horizontal-distribute-center",
+    component: IconAlignHorizontalDistributeCenter,
+    color: "text-sky-300",
+    description: "Distribute center with a horizontal nudge",
+    tags: ["align", "distribute", "center", "horizontal"],
+  },
+  {
+    name: "icon-align-horizontal-distribute-end",
+    component: IconAlignHorizontalDistributeEnd,
+    color: "text-sky-300",
+    description: "Distribute end with a horizontal push",
+    tags: ["align", "distribute", "end", "horizontal"],
+  },
+  {
+    name: "icon-align-horizontal-distribute-start",
+    component: IconAlignHorizontalDistributeStart,
+    color: "text-sky-300",
+    description: "Distribute start with a horizontal pull",
+    tags: ["align", "distribute", "start", "horizontal"],
+  },
+  {
+    name: "icon-align-horizontal-justify-center",
+    component: IconAlignHorizontalJustifyCenter,
+    color: "text-sky-300",
+    description: "Justify center with a guided shift",
+    tags: ["align", "justify", "center", "horizontal"],
+  },
+  {
+    name: "icon-align-horizontal-justify-end",
+    component: IconAlignHorizontalJustifyEnd,
+    color: "text-sky-300",
+    description: "Justify end with a guided shift",
+    tags: ["align", "justify", "end", "horizontal"],
+  },
+  {
+    name: "icon-align-horizontal-justify-start",
+    component: IconAlignHorizontalJustifyStart,
+    color: "text-sky-300",
+    description: "Justify start with a guided shift",
+    tags: ["align", "justify", "start", "horizontal"],
+  },
+  {
+    name: "icon-align-horizontal-space-around",
+    component: IconAlignHorizontalSpaceAround,
+    color: "text-sky-300",
+    description: "Space around with subtle horizontal drift",
+    tags: ["align", "space", "around", "horizontal"],
+  },
+  {
+    name: "icon-align-horizontal-space-between",
+    component: IconAlignHorizontalSpaceBetween,
+    color: "text-sky-300",
+    description: "Space between with subtle horizontal drift",
+    tags: ["align", "space", "between", "horizontal"],
+  },
+  {
+    name: "icon-align-justify",
+    component: IconAlignJustify,
+    color: "text-sky-300",
+    description: "Justified bars with a soft settle",
+    tags: ["align", "justify", "text", "layout"],
+  },
+  {
+    name: "icon-align-left",
+    component: IconAlignLeft,
+    color: "text-sky-300",
+    description: "Align left bars with a left pull",
+    tags: ["align", "left", "text", "layout"],
+  },
+  {
+    name: "icon-align-right",
+    component: IconAlignRight,
+    color: "text-sky-300",
+    description: "Align right bars with a right push",
+    tags: ["align", "right", "text", "layout"],
+  },
+  {
+    name: "icon-align-start-horizontal",
+    component: IconAlignStartHorizontal,
+    color: "text-sky-300",
+    description: "Align start horizontal icon with slide emphasis",
+    tags: ["align", "start", "horizontal", "layout"],
+  },
+  {
+    name: "icon-align-start-vertical",
+    component: IconAlignStartVertical,
+    color: "text-sky-300",
+    description: "Align start vertical icon with rise motion",
+    tags: ["align", "start", "vertical", "layout"],
+  },
+  {
+    name: "icon-align-vertical-distribute-center",
+    component: IconAlignVerticalDistributeCenter,
+    color: "text-sky-300",
+    description: "Distribute vertical center with a lift",
+    tags: ["align", "distribute", "center", "vertical"],
   },
   {
     name: "icon-sparkle",
