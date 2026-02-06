@@ -7,10 +7,22 @@ export interface IconAlignCenterProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
 }
 
-const groupVariants = {
-  rest: { x: 0, y: 0 },
-  hover: { x: 0, y: -1 },
-  tap: { x: 0, y: 1 },
+const topVariants = {
+  rest: { scaleX: 0.9, y: 0 },
+  hover: { scaleX: 0.8, y: 1 },
+  tap: { scaleX: 0.95, y: -1 },
+};
+
+const midVariants = {
+  rest: { scaleX: 1 },
+  hover: { scaleX: 1.08 },
+  tap: { scaleX: 0.94 },
+};
+
+const bottomVariants = {
+  rest: { scaleX: 0.9, y: 0 },
+  hover: { scaleX: 0.8, y: -1 },
+  tap: { scaleX: 0.95, y: 1 },
 };
 
 export function IconAlignCenter({ size = 24, className, ...props }: IconAlignCenterProps) {
@@ -36,15 +48,13 @@ export function IconAlignCenter({ size = 24, className, ...props }: IconAlignCen
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      transition={{ type: "spring", stiffness: 360, damping: 18 }}
+      transition={{ type: "spring", stiffness: 300, damping: 16 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={groupVariants}>
-        <path d="M17 12H7" key="16if0g" />
-        <path d="M19 18H5" key="18s9l3" />
-        <path d="M21 6H3" key="1jwq7v" />
-      </motion.g>
+      <motion.path d="M21 6H3" variants={topVariants} style={{ originX: "50%", originY: "50%" }} />
+      <motion.path d="M17 12H7" variants={midVariants} style={{ originX: "50%", originY: "50%" }} />
+      <motion.path d="M19 18H5" variants={bottomVariants} style={{ originX: "50%", originY: "50%" }} />
     </motion.svg>
   );
 }

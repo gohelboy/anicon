@@ -7,10 +7,22 @@ export interface IconAlignJustifyProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
 }
 
-const groupVariants = {
-  rest: { x: 0, y: 0 },
-  hover: { x: 0, y: 1 },
-  tap: { x: 0, y: -1 },
+const lineVariants = {
+  rest: { scaleX: 1, y: 0 },
+  hover: { scaleX: 1.08, y: 0 },
+  tap: { scaleX: 0.95, y: 0 },
+};
+
+const topVariants = {
+  rest: { y: 0 },
+  hover: { y: -0.8 },
+  tap: { y: 0.8 },
+};
+
+const bottomVariants = {
+  rest: { y: 0 },
+  hover: { y: 0.8 },
+  tap: { y: -0.8 },
 };
 
 export function IconAlignJustify({ size = 24, className, ...props }: IconAlignJustifyProps) {
@@ -36,15 +48,13 @@ export function IconAlignJustify({ size = 24, className, ...props }: IconAlignJu
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      transition={{ type: "spring", stiffness: 360, damping: 18 }}
+      transition={{ type: "spring", stiffness: 300, damping: 16 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={groupVariants}>
-        <path d="M3 12h18" key="1i2n21" />
-        <path d="M3 18h18" key="1h113x" />
-        <path d="M3 6h18" key="d0wm0j" />
-      </motion.g>
+      <motion.path d="M3 6h18" variants={topVariants} style={{ originX: "50%", originY: "50%" }} />
+      <motion.path d="M3 12h18" variants={lineVariants} style={{ originX: "50%", originY: "50%" }} />
+      <motion.path d="M3 18h18" variants={bottomVariants} style={{ originX: "50%", originY: "50%" }} />
     </motion.svg>
   );
 }

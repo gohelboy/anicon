@@ -7,10 +7,10 @@ export interface IconAlignLeftProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
 }
 
-const groupVariants = {
-  rest: { x: 0, y: 0 },
-  hover: { x: -1, y: 0 },
-  tap: { x: 1, y: 0 },
+const lineVariants = {
+  rest: { x: 0, scaleX: 1 },
+  hover: { x: -1.5, scaleX: 0.95 },
+  tap: { x: 1, scaleX: 1.02 },
 };
 
 export function IconAlignLeft({ size = 24, className, ...props }: IconAlignLeftProps) {
@@ -36,15 +36,13 @@ export function IconAlignLeft({ size = 24, className, ...props }: IconAlignLeftP
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      transition={{ type: "spring", stiffness: 360, damping: 18 }}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={groupVariants}>
-        <path d="M15 12H3" key="6jk70r" />
-        <path d="M17 18H3" key="1amg6g" />
-        <path d="M21 6H3" key="1jwq7v" />
-      </motion.g>
+      <motion.path d="M21 6H3" variants={lineVariants} style={{ originX: 0, originY: "50%" }} />
+      <motion.path d="M15 12H3" variants={lineVariants} style={{ originX: 0, originY: "50%" }} />
+      <motion.path d="M17 18H3" variants={lineVariants} style={{ originX: 0, originY: "50%" }} />
     </motion.svg>
   );
 }

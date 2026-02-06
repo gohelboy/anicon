@@ -7,13 +7,29 @@ export interface IconAlignHorizontalSpaceBetweenProps extends React.SVGProps<SVG
   size?: number;
 }
 
-const groupVariants = {
-  rest: { x: 0, y: 0 },
-  hover: { x: 1, y: 0 },
-  tap: { x: -1, y: 0 },
+const leftVariants = {
+  rest: { x: 0 },
+  hover: { x: -1.5 },
+  tap: { x: 1 },
 };
 
-export function IconAlignHorizontalSpaceBetween({ size = 24, className, ...props }: IconAlignHorizontalSpaceBetweenProps) {
+const rightVariants = {
+  rest: { x: 0 },
+  hover: { x: 1.5 },
+  tap: { x: -1 },
+};
+
+const guideVariants = {
+  rest: { opacity: 0.6 },
+  hover: { opacity: 1 },
+  tap: { opacity: 0.5 },
+};
+
+export function IconAlignHorizontalSpaceBetween({
+  size = 24,
+  className,
+  ...props
+}: IconAlignHorizontalSpaceBetweenProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -36,16 +52,14 @@ export function IconAlignHorizontalSpaceBetween({ size = 24, className, ...props
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      transition={{ type: "spring", stiffness: 360, damping: 18 }}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={groupVariants}>
-        <rect width="6" height="14" x="3" y="5" rx="2" key="j77dae" />
-        <rect width="6" height="10" x="15" y="7" rx="2" key="bq30hj" />
-        <path d="M3 2v20" key="1d2pfg" />
-        <path d="M21 2v20" key="p059bm" />
-      </motion.g>
+      <motion.rect width="6" height="14" x="3" y="5" rx="2" variants={leftVariants} />
+      <motion.rect width="6" height="10" x="15" y="7" rx="2" variants={rightVariants} />
+      <motion.path d="M3 2v20" variants={guideVariants} />
+      <motion.path d="M21 2v20" variants={guideVariants} />
     </motion.svg>
   );
 }

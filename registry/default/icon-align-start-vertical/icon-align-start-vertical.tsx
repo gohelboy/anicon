@@ -7,10 +7,16 @@ export interface IconAlignStartVerticalProps extends React.SVGProps<SVGSVGElemen
   size?: number;
 }
 
-const groupVariants = {
-  rest: { x: 0, y: 0 },
-  hover: { x: 0, y: -1 },
-  tap: { x: 0, y: 1 },
+const blockVariants = {
+  rest: { y: 0 },
+  hover: { y: -1.5 },
+  tap: { y: 1 },
+};
+
+const guideVariants = {
+  rest: { opacity: 0.7 },
+  hover: { opacity: 1 },
+  tap: { opacity: 0.6 },
 };
 
 export function IconAlignStartVertical({ size = 24, className, ...props }: IconAlignStartVerticalProps) {
@@ -36,15 +42,13 @@ export function IconAlignStartVertical({ size = 24, className, ...props }: IconA
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      transition={{ type: "spring", stiffness: 360, damping: 18 }}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={groupVariants}>
-        <rect width="9" height="6" x="6" y="14" rx="2" key="lpm2y7" />
-        <rect width="16" height="6" x="6" y="4" rx="2" key="rdj6ps" />
-        <path d="M2 2v20" key="1ivd8o" />
-      </motion.g>
+      <motion.rect width="9" height="6" x="6" y="14" rx="2" variants={blockVariants} />
+      <motion.rect width="16" height="6" x="6" y="4" rx="2" variants={blockVariants} />
+      <motion.path d="M2 2v20" variants={guideVariants} />
     </motion.svg>
   );
 }

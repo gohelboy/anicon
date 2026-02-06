@@ -7,13 +7,29 @@ export interface IconAlignHorizontalJustifyCenterProps extends React.SVGProps<SV
   size?: number;
 }
 
-const groupVariants = {
-  rest: { x: 0, y: 0 },
-  hover: { x: 1, y: 0 },
-  tap: { x: -1, y: 0 },
+const leftVariants = {
+  rest: { x: 0 },
+  hover: { x: 2 },
+  tap: { x: -1 },
 };
 
-export function IconAlignHorizontalJustifyCenter({ size = 24, className, ...props }: IconAlignHorizontalJustifyCenterProps) {
+const rightVariants = {
+  rest: { x: 0 },
+  hover: { x: -2 },
+  tap: { x: 1 },
+};
+
+const guideVariants = {
+  rest: { opacity: 0.6 },
+  hover: { opacity: 1 },
+  tap: { opacity: 0.5 },
+};
+
+export function IconAlignHorizontalJustifyCenter({
+  size = 24,
+  className,
+  ...props
+}: IconAlignHorizontalJustifyCenterProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -36,15 +52,13 @@ export function IconAlignHorizontalJustifyCenter({ size = 24, className, ...prop
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      transition={{ type: "spring", stiffness: 360, damping: 18 }}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={groupVariants}>
-        <rect width="6" height="14" x="2" y="5" rx="2" key="dy24zr" />
-        <rect width="6" height="10" x="16" y="7" rx="2" key="13zkjt" />
-        <path d="M12 2v20" key="t6zp3m" />
-      </motion.g>
+      <motion.rect width="6" height="14" x="2" y="5" rx="2" variants={leftVariants} />
+      <motion.rect width="6" height="10" x="16" y="7" rx="2" variants={rightVariants} />
+      <motion.path d="M12 2v20" variants={guideVariants} />
     </motion.svg>
   );
 }

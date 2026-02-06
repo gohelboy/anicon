@@ -7,13 +7,23 @@ export interface IconAlignHorizontalSpaceAroundProps extends React.SVGProps<SVGS
   size?: number;
 }
 
-const groupVariants = {
-  rest: { x: 0, y: 0 },
-  hover: { x: 1, y: 0 },
-  tap: { x: -1, y: 0 },
+const blockVariants = {
+  rest: { scaleX: 1 },
+  hover: { scaleX: 0.9 },
+  tap: { scaleX: 1.05 },
 };
 
-export function IconAlignHorizontalSpaceAround({ size = 24, className, ...props }: IconAlignHorizontalSpaceAroundProps) {
+const guideVariants = {
+  rest: { opacity: 0.6 },
+  hover: { opacity: 1 },
+  tap: { opacity: 0.5 },
+};
+
+export function IconAlignHorizontalSpaceAround({
+  size = 24,
+  className,
+  ...props
+}: IconAlignHorizontalSpaceAroundProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -36,15 +46,21 @@ export function IconAlignHorizontalSpaceAround({ size = 24, className, ...props 
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      transition={{ type: "spring", stiffness: 360, damping: 18 }}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={groupVariants}>
-        <rect width="6" height="10" x="9" y="7" rx="2" key="yn7j0q" />
-        <path d="M4 22V2" key="tsjzd3" />
-        <path d="M20 22V2" key="1bnhr8" />
-      </motion.g>
+      <motion.rect
+        width="6"
+        height="10"
+        x="9"
+        y="7"
+        rx="2"
+        variants={blockVariants}
+        style={{ originX: "50%", originY: "50%" }}
+      />
+      <motion.path d="M4 22V2" variants={guideVariants} />
+      <motion.path d="M20 22V2" variants={guideVariants} />
     </motion.svg>
   );
 }

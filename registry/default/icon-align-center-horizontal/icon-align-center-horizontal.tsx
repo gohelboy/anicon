@@ -7,13 +7,29 @@ export interface IconAlignCenterHorizontalProps extends React.SVGProps<SVGSVGEle
   size?: number;
 }
 
-const groupVariants = {
-  rest: { x: 0, y: 0 },
-  hover: { x: 1, y: 0 },
-  tap: { x: -1, y: 0 },
+const guideVariants = {
+  rest: { scaleX: 1 },
+  hover: { scaleX: 1.08 },
+  tap: { scaleX: 0.95 },
 };
 
-export function IconAlignCenterHorizontal({ size = 24, className, ...props }: IconAlignCenterHorizontalProps) {
+const leftVariants = {
+  rest: { x: 0 },
+  hover: { x: 1.5 },
+  tap: { x: -1 },
+};
+
+const rightVariants = {
+  rest: { x: 0 },
+  hover: { x: -1.5 },
+  tap: { x: 1 },
+};
+
+export function IconAlignCenterHorizontal({
+  size = 24,
+  className,
+  ...props
+}: IconAlignCenterHorizontalProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -36,16 +52,22 @@ export function IconAlignCenterHorizontal({ size = 24, className, ...props }: Ic
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      transition={{ type: "spring", stiffness: 360, damping: 18 }}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={groupVariants}>
-        <path d="M2 12h20" key="9i4pu4" />
-        <path d="M10 16v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-4" key="11f1s0" />
-        <path d="M10 8V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v4" key="t14dx9" />
-        <path d="M20 16v1a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-1" key="1w07xs" />
-        <path d="M14 8V7c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v1" key="1apec2" />
+      <motion.path
+        d="M2 12h20"
+        variants={guideVariants}
+        style={{ originX: "50%", originY: "50%" }}
+      />
+      <motion.g variants={leftVariants}>
+        <path d="M10 16v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-4" />
+        <path d="M10 8V4a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v4" />
+      </motion.g>
+      <motion.g variants={rightVariants}>
+        <path d="M20 16v1a2 2 0 0 1-2 2h-2a2 2 0 0 1-2-2v-1" />
+        <path d="M14 8V7c0-1.1.9-2 2-2h2a2 2 0 0 1 2 2v1" />
       </motion.g>
     </motion.svg>
   );

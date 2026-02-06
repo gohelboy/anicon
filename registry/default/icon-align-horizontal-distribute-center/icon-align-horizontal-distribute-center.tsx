@@ -7,13 +7,29 @@ export interface IconAlignHorizontalDistributeCenterProps extends React.SVGProps
   size?: number;
 }
 
-const groupVariants = {
-  rest: { x: 0, y: 0 },
-  hover: { x: 1, y: 0 },
-  tap: { x: -1, y: 0 },
+const leftVariants = {
+  rest: { x: 0 },
+  hover: { x: 1.5 },
+  tap: { x: -1 },
 };
 
-export function IconAlignHorizontalDistributeCenter({ size = 24, className, ...props }: IconAlignHorizontalDistributeCenterProps) {
+const rightVariants = {
+  rest: { x: 0 },
+  hover: { x: -1.5 },
+  tap: { x: 1 },
+};
+
+const guideVariants = {
+  rest: { opacity: 0.6 },
+  hover: { opacity: 1 },
+  tap: { opacity: 0.5 },
+};
+
+export function IconAlignHorizontalDistributeCenter({
+  size = 24,
+  className,
+  ...props
+}: IconAlignHorizontalDistributeCenterProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -36,18 +52,16 @@ export function IconAlignHorizontalDistributeCenter({ size = 24, className, ...p
       initial="rest"
       whileHover="hover"
       whileTap="tap"
-      transition={{ type: "spring", stiffness: 360, damping: 18 }}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={groupVariants}>
-        <rect width="6" height="14" x="4" y="5" rx="2" key="1wwnby" />
-        <rect width="6" height="10" x="14" y="7" rx="2" key="1fe6j6" />
-        <path d="M17 22v-5" key="4b6g73" />
-        <path d="M17 7V2" key="hnrr36" />
-        <path d="M7 22v-3" key="1r4jpn" />
-        <path d="M7 5V2" key="liy1u9" />
-      </motion.g>
+      <motion.rect width="6" height="14" x="4" y="5" rx="2" variants={leftVariants} />
+      <motion.rect width="6" height="10" x="14" y="7" rx="2" variants={rightVariants} />
+      <motion.path d="M17 22v-5" variants={guideVariants} />
+      <motion.path d="M17 7V2" variants={guideVariants} />
+      <motion.path d="M7 22v-3" variants={guideVariants} />
+      <motion.path d="M7 5V2" variants={guideVariants} />
     </motion.svg>
   );
 }
