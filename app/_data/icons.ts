@@ -201,6 +201,16 @@ import { IconKey } from "@/registry/default/icon-key/icon-key";
 import { IconBriefcase } from "@/registry/default/icon-briefcase/icon-briefcase";
 import { IconLayout } from "@/registry/default/icon-layout/icon-layout";
 import { IconPalette } from "@/registry/default/icon-palette/icon-palette";
+// Batch 3 Premium Icons
+import { IconGlobe } from "@/registry/default/icon-globe/icon-globe";
+import { IconMusic } from "@/registry/default/icon-music/icon-music";
+import { IconMonitor } from "@/registry/default/icon-monitor/icon-monitor";
+import { IconSmartphone } from "@/registry/default/icon-smartphone/icon-smartphone";
+import { IconTablet } from "@/registry/default/icon-tablet/icon-tablet";
+import { IconCreditCard } from "@/registry/default/icon-credit-card/icon-credit-card";
+import { IconShoppingBag } from "@/registry/default/icon-shopping-bag/icon-shopping-bag";
+import { IconCompass } from "@/registry/default/icon-compass/icon-compass";
+import { IconHardDrive } from "@/registry/default/icon-hard-drive/icon-hard-drive";
 
 export const iconsRegistry = [
   {
@@ -1211,13 +1221,6 @@ export const iconsRegistry = [
     description: "Clock icon with ticking hands and gentle ring pulse",
     tags: ["clock", "time", "schedule", "navigation"],
   },
-  {
-    name: "icon-map-pin",
-    component: IconMapPin,
-    color: "text-rose-400",
-    description: "Map pin with lift and pulse ripple",
-    tags: ["map", "pin", "navigation", "location"],
-  },
   // Essential Action Icons
   {
     name: "icon-trash",
@@ -1581,6 +1584,77 @@ export const iconsRegistry = [
     color: "text-white",
     description: "Palette with playful dot-pulsing animation",
     tags: ["palette", "color", "design", "art"],
+  },
+  // Batch 3 Premium Icons
+  {
+    name: "icon-globe",
+    component: IconGlobe,
+    color: "text-blue-400",
+    description: "Globe with world-spin animation",
+    tags: ["globe", "world", "earth", "network"],
+  },
+  {
+    name: "icon-music",
+    component: IconMusic,
+    color: "text-purple-400",
+    description: "Musical note with floating bounce animation",
+    tags: ["music", "note", "audio", "sound"],
+  },
+  {
+    name: "icon-monitor",
+    component: IconMonitor,
+    color: "text-slate-100",
+    description: "Monitor with screen wake-up glow animation",
+    tags: ["monitor", "screen", "computer", "display"],
+  },
+  {
+    name: "icon-smartphone",
+    component: IconSmartphone,
+    color: "text-slate-100",
+    description: "Smartphone with notification vibration animation",
+    tags: ["smartphone", "mobile", "phone", "device"],
+  },
+  {
+    name: "icon-tablet",
+    component: IconTablet,
+    color: "text-slate-100",
+    description: "Tablet with screen brightness pulse animation",
+    tags: ["tablet", "ipad", "device", "mobile"],
+  },
+  {
+    name: "icon-credit-card",
+    component: IconCreditCard,
+    color: "text-emerald-400",
+    description: "Credit card with payment slide and chip glow animation",
+    tags: ["credit-card", "card", "payment", "bank", "money"],
+  },
+  {
+    name: "icon-shopping-bag",
+    component: IconShoppingBag,
+    color: "text-amber-600",
+    description: "Shopping bag with natural swing animation",
+    tags: ["shopping-bag", "bag", "shop", "ecommerce", "cart"],
+  },
+  {
+    name: "icon-map-pin",
+    component: IconMapPin,
+    color: "text-rose-500",
+    description: "Map pin with drop and bounce animation",
+    tags: ["map-pin", "pin", "location", "map", "gps"],
+  },
+  {
+    name: "icon-compass",
+    component: IconCompass,
+    color: "text-blue-500",
+    description: "Compass with needle search animation",
+    tags: ["compass", "navigation", "map", "north"],
+  },
+  {
+    name: "icon-hard-drive",
+    component: IconHardDrive,
+    color: "text-slate-300",
+    description: "Hard drive with activity LED animation",
+    tags: ["hard-drive", "storage", "disk", "server", "data"],
   },
 ] as const;
 

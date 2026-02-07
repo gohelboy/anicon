@@ -2,30 +2,30 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconMusicProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const noteVariants: Variants = {
+  rest: { y: 0, rotate: 0 },
   hover: {
     y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+    rotate: [0, -5, 5, 0],
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
     },
   },
 };
 
-export function IconMapPin({
+export function IconMusic({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconMusicProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +43,14 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
+      variants={noteVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <path d="M9 18V5l12-2v13" />
+      <circle cx="6" cy="18" r="3" />
+      <circle cx="18" cy="16" r="3" />
     </motion.svg>
   );
 }

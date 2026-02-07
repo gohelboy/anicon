@@ -2,30 +2,41 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconMonitorProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const screenVariants: Variants = {
+  rest: { opacity: 1, scale: 1 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+    scale: 1.02,
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      type: "spring",
+      stiffness: 400,
+      damping: 17,
     },
   },
 };
 
-export function IconMapPin({
+const glowVariants: Variants = {
+  rest: { opacity: 0 },
+  hover: {
+    opacity: [0, 0.2, 0],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconMonitor({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconMonitorProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +54,31 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <motion.rect 
+        width="20" 
+        height="14" 
+        x="2" 
+        y="3" 
+        rx="2" 
+        variants={screenVariants}
+      />
+      {/* Screen Glow */}
+      <motion.rect 
+        width="16" 
+        height="10" 
+        x="4" 
+        y="5" 
+        rx="1" 
+        fill="currentColor"
+        variants={glowVariants}
+        stroke="none"
+      />
+      <path d="M8 21h8" />
+      <path d="M12 17v4" />
     </motion.svg>
   );
 }

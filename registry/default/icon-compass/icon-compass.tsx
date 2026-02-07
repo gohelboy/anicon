@@ -2,30 +2,28 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCompassProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const needleVariants: Variants = {
+  rest: { rotate: 0 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+    rotate: [0, 360, 315],
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      duration: 1.2,
+      ease: "easeInOut",
     },
   },
 };
 
-export function IconMapPin({
+export function IconCompass({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconCompassProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +41,16 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <circle cx="12" cy="12" r="10" />
+      <motion.polygon 
+        points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76" 
+        variants={needleVariants}
+        style={{ originX: "12px", originY: "12px" }}
+      />
     </motion.svg>
   );
 }

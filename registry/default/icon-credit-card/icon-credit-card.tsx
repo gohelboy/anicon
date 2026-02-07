@@ -2,30 +2,42 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCreditCardProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const cardVariants: Variants = {
+  rest: { x: 0, scale: 1 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+    x: 2,
+    scale: 1.02,
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      type: "spring",
+      stiffness: 400,
+      damping: 17,
     },
   },
 };
 
-export function IconMapPin({
+const chipVariants: Variants = {
+  rest: { opacity: 0.5 },
+  hover: {
+    opacity: [0.5, 1, 0.5],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconCreditCard({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconCreditCardProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +55,24 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
+      variants={cardVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <rect width="20" height="14" x="2" y="5" rx="2" />
+      <line x1="2" x2="22" y1="10" y2="10" />
+      {/* Chip detail */}
+      <motion.rect 
+        x="5" 
+        y="14" 
+        width="4" 
+        height="3" 
+        rx="0.5" 
+        fill="currentColor"
+        variants={chipVariants}
+        stroke="none"
+      />
     </motion.svg>
   );
 }

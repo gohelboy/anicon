@@ -2164,21 +2164,6 @@
       ]
     },
     {
-      "name": "icon-map-pin",
-      "type": "registry:component",
-      "title": "Animated Map Pin",
-      "description": "Map pin icon with lift and pulse animation.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-map-pin/icon-map-pin.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
       "name": "icon-trash",
       "type": "registry:component",
       "title": "Animated Trash",
@@ -2939,6 +2924,156 @@
       "files": [
         {
           "path": "registry/default/icon-palette/icon-palette.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-globe",
+      "type": "registry:component",
+      "title": "Animated Globe",
+      "description": "Globe icon with world-spin animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-globe/icon-globe.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-music",
+      "type": "registry:component",
+      "title": "Animated Music",
+      "description": "Musical note with floating bounce animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-music/icon-music.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-monitor",
+      "type": "registry:component",
+      "title": "Animated Monitor",
+      "description": "Monitor icon with screen wake-up glow animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-monitor/icon-monitor.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-smartphone",
+      "type": "registry:component",
+      "title": "Animated Smartphone",
+      "description": "Smartphone icon with notification vibration animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-smartphone/icon-smartphone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-tablet",
+      "type": "registry:component",
+      "title": "Animated Tablet",
+      "description": "Tablet icon with screen brightness pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-tablet/icon-tablet.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-credit-card",
+      "type": "registry:component",
+      "title": "Animated Credit Card",
+      "description": "Credit card with payment slide and chip glow animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-credit-card/icon-credit-card.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shopping-bag",
+      "type": "registry:component",
+      "title": "Animated Shopping Bag",
+      "description": "Shopping bag with natural swing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shopping-bag/icon-shopping-bag.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-map-pin",
+      "type": "registry:component",
+      "title": "Animated Map Pin",
+      "description": "Map pin icon with drop and bounce animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-map-pin/icon-map-pin.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-compass",
+      "type": "registry:component",
+      "title": "Animated Compass",
+      "description": "Compass icon with needle search animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-compass/icon-compass.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hard-drive",
+      "type": "registry:component",
+      "title": "Animated Hard Drive",
+      "description": "Hard drive icon with activity LED animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hard-drive/icon-hard-drive.tsx",
           "type": "registry:component"
         }
       ]

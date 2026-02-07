@@ -2,30 +2,41 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconTabletProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const deviceVariants: Variants = {
+  rest: { scale: 1 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+    scale: 1.02,
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      type: "spring",
+      stiffness: 400,
+      damping: 17,
     },
   },
 };
 
-export function IconMapPin({
+const screenPulse: Variants = {
+  rest: { opacity: 0 },
+  hover: {
+    opacity: [0, 0.15, 0],
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconTablet({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconTabletProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +54,24 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
+      variants={deviceVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <rect width="16" height="20" x="4" y="2" rx="2" ry="2" />
+      {/* Internal screen pulse */}
+      <motion.rect 
+        width="12" 
+        height="14" 
+        x="6" 
+        y="4" 
+        rx="1" 
+        fill="currentColor"
+        variants={screenPulse}
+        stroke="none"
+      />
+      <path d="M12 18h.01" />
     </motion.svg>
   );
 }

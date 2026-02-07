@@ -2,30 +2,42 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconHardDriveProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const driveVariants: Variants = {
+  rest: { scale: 1 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+    scale: 1.01,
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      type: "spring",
+      stiffness: 400,
+      damping: 10,
     },
   },
 };
 
-export function IconMapPin({
+const ledVariants: Variants = {
+  rest: { opacity: 0.4 },
+  hover: (i: number) => ({
+    opacity: [0.4, 1, 0.4],
+    transition: {
+      duration: 0.8,
+      repeat: Infinity,
+      delay: i * 0.4,
+      ease: "easeInOut",
+    },
+  }),
+};
+
+export function IconHardDrive({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconHardDriveProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +55,14 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
+      variants={driveVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <rect width="20" height="8" x="2" y="12" rx="2" />
+      <motion.line x1="6" x2="6" y1="16" y2="16" variants={ledVariants} custom={0} />
+      <motion.line x1="10" x2="10" y1="16" y2="16" variants={ledVariants} custom={1} />
     </motion.svg>
   );
 }
