@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { IconCardButton } from "./_components/icon-card-button";
-import { LandingNav } from "../_components/landing-nav";
+import { LandingNavClient } from "../_components/landing-nav-client";
 import type { IconEntry } from "../_data/icons";
 import { EmptyIconsState } from "./_components/empty-icons-state";
 import { IconDetailDrawer } from "./_components/icon-detail-drawer";
@@ -24,7 +24,7 @@ export default function IconsPage() {
 
   return (
     <div className="min-h-screen">
-      <LandingNav />
+      <LandingNavClient />
       <main className="pt-24 pb-16 sm:pb-20">
         <section className="border-b border-(--card-border) px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-8">
           <div className="mx-auto max-w-4xl">
