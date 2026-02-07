@@ -6,12 +6,14 @@ import type { IconEntry } from "@/app/_data/icons";
 export interface IconCardButtonProps {
   icon: IconEntry;
   iconColor: string;
+  strokeWidth: number;
   onClick: () => void;
 }
 
 function IconCardButtonComponent({
   icon,
   iconColor,
+  strokeWidth,
   onClick,
 }: IconCardButtonProps) {
   const IconComponent = icon.component;
@@ -25,7 +27,7 @@ function IconCardButtonComponent({
         style={{ color: iconColor }}
         className="flex items-center justify-center"
       >
-        <IconComponent size={40} />
+        <IconComponent size={40} strokeWidth={strokeWidth} />
       </span>
     </button>
   );

@@ -16,6 +16,7 @@ export interface IconDetailDrawerProps {
   onOpenChange: (open: boolean) => void;
   selectedIcon: IconEntry | null;
   iconColor: string;
+  strokeWidth: number;
 }
 
 export function IconDetailDrawer({
@@ -23,12 +24,17 @@ export function IconDetailDrawer({
   onOpenChange,
   selectedIcon,
   iconColor,
+  strokeWidth,
 }: IconDetailDrawerProps) {
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
       <DrawerContent className="border-[var(--card-border)] bg-[var(--card)] text-white">
         {selectedIcon && (
-          <IconDetailContent icon={selectedIcon} iconColor={iconColor} />
+          <IconDetailContent
+            icon={selectedIcon}
+            iconColor={iconColor}
+            strokeWidth={strokeWidth}
+          />
         )}
       </DrawerContent>
     </Drawer>
@@ -38,20 +44,25 @@ export function IconDetailDrawer({
 function IconDetailContent({
   icon,
   iconColor,
+  strokeWidth,
 }: {
   icon: IconEntry;
   iconColor: string;
+  strokeWidth: number;
 }) {
   const IconComponent = icon.component;
   const commandUrl = `${REGISTRY_BASE}/${icon.name}.json`;
 
   return (
-    <div className="mx-auto w-full max-w-2xl px-4 pb-8 sm:px-6" style={{ paddingBottom: "max(2rem, env(safe-area-inset-bottom))" }}>
+    <div
+      className="mx-auto w-full max-w-2xl px-4 pb-8 sm:px-6"
+      style={{ paddingBottom: "max(2rem, env(safe-area-inset-bottom))" }}
+    >
       <DrawerHeader>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start sm:gap-6">
           <div className="flex shrink-0 items-center justify-center rounded-none border border-[var(--card-border)] bg-black/20 p-3 sm:p-4">
             <span style={{ color: iconColor }}>
-              <IconComponent size={56} />
+              <IconComponent size={56} strokeWidth={strokeWidth} />
             </span>
           </div>
           <div className="min-w-0 flex-1 text-center sm:text-left">

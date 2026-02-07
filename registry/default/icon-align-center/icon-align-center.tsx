@@ -1,10 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconAlignCenterProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const topVariants = {
@@ -25,7 +27,7 @@ const bottomVariants = {
   tap: { scaleX: 0.95, y: 1 },
 };
 
-export function IconAlignCenter({ size = 24, className, ...props }: IconAlignCenterProps) {
+export function IconAlignCenter({ size = 24, strokeWidth = 2, className, ...props }: IconAlignCenterProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -34,6 +36,7 @@ export function IconAlignCenter({ size = 24, className, ...props }: IconAlignCen
     onDragEnd,
     ...rest
   } = props;
+  const prefersReducedMotion = useReducedMotion();
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -42,12 +45,12 @@ export function IconAlignCenter({ size = 24, className, ...props }: IconAlignCen
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial="rest"
-      whileHover="hover"
-      whileTap="tap"
+      initial={prefersReducedMotion ? false : "rest"}
+      whileHover={prefersReducedMotion ? undefined : "hover"}
+      whileTap={prefersReducedMotion ? undefined : "tap"}
       transition={{ type: "spring", stiffness: 300, damping: 16 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}

@@ -6,6 +6,7 @@ const MAX_LANDING_ICONS = 8;
 
 export function IconsShowcase() {
   const icons = iconsRegistry.slice(0, MAX_LANDING_ICONS);
+
   return (
     <section
       id="icons"
@@ -17,10 +18,10 @@ export function IconsShowcase() {
             Icons in the registry
           </h2>
           <p className="mt-3 text-sm text-[var(--muted-foreground)] sm:text-base">
-            Hover or tap to see Motion animations. Add any icon with one
-            command.
+            Hover or tap to see Motion animations. Add any icon with one command.
           </p>
         </div>
+
         <div
           className="mt-8 gap-4 sm:mt-12 sm:gap-6"
           style={{
@@ -28,7 +29,7 @@ export function IconsShowcase() {
             gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
           }}
         >
-          {icons.map(({ name, component: Icon, color, description }) => (
+          {icons.map(({ name, component: Icon, color }) => (
             <div
               key={name}
               className="icon-card flex flex-col items-center gap-4 rounded-none border border-[var(--card-border)] bg-[var(--card)] p-6 sm:p-8"
