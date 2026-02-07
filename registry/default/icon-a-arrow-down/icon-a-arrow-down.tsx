@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconAArrowDownProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -26,6 +26,7 @@ export function IconAArrowDown({
     onDragEnd,
     ...rest
   } = props;
+  const prefersReducedMotion = useReducedMotion();
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -37,9 +38,9 @@ export function IconAArrowDown({
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial="rest"
-      whileHover="hover"
-      whileTap="tap"
+      initial={prefersReducedMotion ? false : "rest"}
+      whileHover={prefersReducedMotion ? undefined : "hover"}
+      whileTap={prefersReducedMotion ? undefined : "tap"}
       transition={{ type: "spring", stiffness: 420, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}

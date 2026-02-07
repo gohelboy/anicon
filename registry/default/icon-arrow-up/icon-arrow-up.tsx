@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconArrowUpProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -20,6 +20,7 @@ export function IconArrowUp({
     onDragEnd,
     ...rest
   } = props;
+  const prefersReducedMotion = useReducedMotion();
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
