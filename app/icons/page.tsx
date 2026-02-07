@@ -1,13 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { IconCardButton } from "./_components/icon-card-button";
-import { LandingNavClient } from "../_components/landing-nav-client";
-import type { IconEntry } from "../_data/icons";
+import { LandingNav } from "../_components/landing-nav";
+import { iconsRegistry, type IconEntry } from "../_data/icons";
 import { EmptyIconsState } from "./_components/empty-icons-state";
+import { IconCardButton } from "./_components/icon-card-button";
 import { IconDetailDrawer } from "./_components/icon-detail-drawer";
 import { IconsSearchBar } from "./_components/icons-search-bar";
-import { useFilteredIcons } from "./_hooks/use-filtered-icons";
 
 export default function IconsPage() {
   const [search, setSearch] = useState("");
@@ -16,8 +15,6 @@ export default function IconsPage() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [selectedIcon, setSelectedIcon] = useState<IconEntry | null>(null);
 
-  const filteredIcons = useFilteredIcons(search);
-
   const openIconDetail = (icon: IconEntry) => {
     setSelectedIcon(icon);
     setDrawerOpen(true);
@@ -25,8 +22,8 @@ export default function IconsPage() {
 
   return (
     <div className="min-h-screen">
-      <LandingNavClient />
-      <main className="pt-16 pb-16 sm:pb-20">
+      <LandingNav />
+      <main className="pt-24 pb-16 sm:pb-20">
         <section className="border-b border-(--card-border) px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-8">
           <div className="mx-auto max-w-4xl pt-8">
             <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
@@ -49,14 +46,13 @@ export default function IconsPage() {
 
         <section className="px-4 py-8 sm:px-6 sm:py-12">
           <div className="mx-auto max-w-6xl">
-            {filteredIcons.length > 0 ? (
+            {iconsRegistry.length > 0 ? (
               <>
                 <p className="mb-4 text-sm text-(--muted-foreground) sm:mb-6">
-                  {filteredIcons.length} icon
-                  {filteredIcons.length !== 1 ? "s" : ""}
+                  {iconsRegistry.length} icons
                 </p>
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-8">
-                  {filteredIcons.map((icon) => (
+                  {iconsRegistry.map((icon) => (
                     <IconCardButton
                       key={icon.name}
                       icon={icon}

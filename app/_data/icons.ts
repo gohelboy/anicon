@@ -39,6 +39,16 @@ import { IconAlignRight } from "@/registry/default/icon-align-right/icon-align-r
 import { IconAlignStartHorizontal } from "@/registry/default/icon-align-start-horizontal/icon-align-start-horizontal";
 import { IconAlignStartVertical } from "@/registry/default/icon-align-start-vertical/icon-align-start-vertical";
 import { IconAlignVerticalDistributeCenter } from "@/registry/default/icon-align-vertical-distribute-center/icon-align-vertical-distribute-center";
+import { IconAlignVerticalDistributeEnd } from "@/registry/default/icon-align-vertical-distribute-end/icon-align-vertical-distribute-end";
+import { IconAlignVerticalDistributeStart } from "@/registry/default/icon-align-vertical-distribute-start/icon-align-vertical-distribute-start";
+import { IconAlignVerticalJustifyCenter } from "@/registry/default/icon-align-vertical-justify-center/icon-align-vertical-justify-center";
+import { IconAlignVerticalJustifyEnd } from "@/registry/default/icon-align-vertical-justify-end/icon-align-vertical-justify-end";
+import { IconAlignVerticalJustifyStart } from "@/registry/default/icon-align-vertical-justify-start/icon-align-vertical-justify-start";
+import { IconAlignVerticalSpaceAround } from "@/registry/default/icon-align-vertical-space-around/icon-align-vertical-space-around";
+import { IconAlignVerticalSpaceBetween } from "@/registry/default/icon-align-vertical-space-between/icon-align-vertical-space-between";
+import { IconAmbulance } from "@/registry/default/icon-ambulance/icon-ambulance";
+import { IconAmpersand } from "@/registry/default/icon-ampersand/icon-ampersand";
+import { IconAmpersands } from "@/registry/default/icon-ampersands/icon-ampersands";
 import { IconChevronDown } from "@/registry/default/icon-chevron-down/icon-chevron-down";
 import { IconChevronLeft } from "@/registry/default/icon-chevron-left/icon-chevron-left";
 import { IconChevronRight } from "@/registry/default/icon-chevron-right/icon-chevron-right";
@@ -323,6 +333,76 @@ export const iconsRegistry = [
     color: "text-sky-300",
     description: "Distribute vertical center with a lift",
     tags: ["align", "distribute", "center", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-distribute-end",
+    component: IconAlignVerticalDistributeEnd,
+    color: "text-sky-300",
+    description: "Distribute to the bottom guide with a gentle drop",
+    tags: ["align", "distribute", "end", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-distribute-start",
+    component: IconAlignVerticalDistributeStart,
+    color: "text-sky-300",
+    description: "Distribute to the top guide with a gentle lift",
+    tags: ["align", "distribute", "start", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-justify-center",
+    component: IconAlignVerticalJustifyCenter,
+    color: "text-sky-300",
+    description: "Justify vertical center with converging blocks",
+    tags: ["align", "justify", "center", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-justify-end",
+    component: IconAlignVerticalJustifyEnd,
+    color: "text-sky-300",
+    description: "Justify vertical end with blocks dropping down",
+    tags: ["align", "justify", "end", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-justify-start",
+    component: IconAlignVerticalJustifyStart,
+    color: "text-sky-300",
+    description: "Justify vertical start with blocks lifting up",
+    tags: ["align", "justify", "start", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-space-around",
+    component: IconAlignVerticalSpaceAround,
+    color: "text-sky-300",
+    description: "Space around with balanced vertical padding",
+    tags: ["align", "space", "around", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-space-between",
+    component: IconAlignVerticalSpaceBetween,
+    color: "text-sky-300",
+    description: "Space between with top and bottom spread",
+    tags: ["align", "space", "between", "vertical"],
+  },
+  {
+    name: "icon-ambulance",
+    component: IconAmbulance,
+    color: "text-red-400",
+    description: "Ambulance with pulsing medical cross and rolling wheels",
+    tags: ["ambulance", "medical", "health", "emergency"],
+  },
+  {
+    name: "icon-ampersand",
+    component: IconAmpersand,
+    color: "text-white",
+    description: "Ampersand with a lively stroke emphasis",
+    tags: ["ampersand", "and", "typography"],
+  },
+  {
+    name: "icon-ampersands",
+    component: IconAmpersands,
+    color: "text-white",
+    description: "Double ampersands with mirrored motion",
+    tags: ["ampersands", "and", "typography"],
   },
   {
     name: "icon-sparkle",

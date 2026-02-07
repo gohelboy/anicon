@@ -574,6 +574,156 @@
       ]
     },
     {
+      "name": "icon-align-vertical-distribute-end",
+      "type": "registry:component",
+      "title": "Animated Align Vertical Distribute End",
+      "description": "Distribute end icon with a gentle drop.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-vertical-distribute-end/icon-align-vertical-distribute-end.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-vertical-distribute-start",
+      "type": "registry:component",
+      "title": "Animated Align Vertical Distribute Start",
+      "description": "Distribute start icon with a gentle lift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-vertical-distribute-start/icon-align-vertical-distribute-start.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-vertical-justify-center",
+      "type": "registry:component",
+      "title": "Animated Align Vertical Justify Center",
+      "description": "Justify center icon with converging blocks.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-vertical-justify-center/icon-align-vertical-justify-center.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-vertical-justify-end",
+      "type": "registry:component",
+      "title": "Animated Align Vertical Justify End",
+      "description": "Justify end icon with blocks dropping down.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-vertical-justify-end/icon-align-vertical-justify-end.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-vertical-justify-start",
+      "type": "registry:component",
+      "title": "Animated Align Vertical Justify Start",
+      "description": "Justify start icon with blocks lifting up.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-vertical-justify-start/icon-align-vertical-justify-start.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-vertical-space-around",
+      "type": "registry:component",
+      "title": "Animated Align Vertical Space Around",
+      "description": "Space-around icon with balanced vertical padding.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-vertical-space-around/icon-align-vertical-space-around.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-align-vertical-space-between",
+      "type": "registry:component",
+      "title": "Animated Align Vertical Space Between",
+      "description": "Space-between icon with top and bottom spread.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-align-vertical-space-between/icon-align-vertical-space-between.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ambulance",
+      "type": "registry:component",
+      "title": "Animated Ambulance",
+      "description": "Ambulance icon with pulsing medical cross and rolling wheels.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ambulance/icon-ambulance.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ampersand",
+      "type": "registry:component",
+      "title": "Animated Ampersand",
+      "description": "Ampersand icon with a lively stroke emphasis.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ampersand/icon-ampersand.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ampersands",
+      "type": "registry:component",
+      "title": "Animated Ampersands",
+      "description": "Double ampersands with mirrored motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ampersands/icon-ampersands.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-sparkle",
       "type": "registry:component",
       "title": "Animated Sparkle",
