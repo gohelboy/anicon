@@ -2,29 +2,31 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconAnchorProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCoffeeProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const anchorVariants: Variants = {
-  rest: { rotate: 0 },
-  hover: {
-    rotate: [0, -10, 10, 0],
+const steamVariants: Variants = {
+  rest: { y: 0, opacity: 1 },
+  hover: (i: number) => ({
+    y: [0, -4, -8],
+    opacity: [0, 1, 0],
     transition: {
-      duration: 2,
+      duration: 1.5,
       repeat: Infinity,
-      ease: "easeInOut",
+      delay: i * 0.4,
+      ease: "linear",
     },
-  },
+  }),
 };
 
-export function IconAnchor({
+export function IconCoffee({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconAnchorProps) {
+}: IconCoffeeProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -42,15 +44,18 @@ export function IconAnchor({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={anchorVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originX: "12px", originY: "5px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M12 7V2" />
-      <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
-      <circle cx="12" cy="5" r="3" />
-      <path d="M12 22V12" />
+      {/* Cup - No vibration as requested */}
+      <path d="M17 11h.3a3.7 3.7 0 1 1 0 7.4h-.3" />
+      <path d="M2 11h15a2 2 0 0 1 2 2v2a5 5 0 0 1-5 5H4a2 2 0 0 1-2-2Z" />
+      
+      {/* Steam lines */}
+      <motion.path d="M6 2v4" variants={steamVariants} custom={0} />
+      <motion.path d="M10 2v4" variants={steamVariants} custom={1} />
+      <motion.path d="M14 2v4" variants={steamVariants} custom={2} />
     </motion.svg>
   );
 }

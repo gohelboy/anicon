@@ -2,29 +2,43 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconAnchorProps extends React.SVGProps<SVGSVGElement> {
+export interface IconBookOpenProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const anchorVariants: Variants = {
-  rest: { rotate: 0 },
+const leftVariants: Variants = {
+  rest: { rotateY: 0 },
   hover: {
-    rotate: [0, -10, 10, 0],
+    rotateY: -20,
     transition: {
-      duration: 2,
+      duration: 1,
       repeat: Infinity,
+      repeatType: "reverse",
       ease: "easeInOut",
     },
   },
 };
 
-export function IconAnchor({
+const rightVariants: Variants = {
+  rest: { rotateY: 0 },
+  hover: {
+    rotateY: 20,
+    transition: {
+      duration: 1,
+      repeat: Infinity,
+      repeatType: "reverse",
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconBookOpen({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconAnchorProps) {
+}: IconBookOpenProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -42,15 +56,20 @@ export function IconAnchor({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={anchorVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originX: "12px", originY: "5px" }}
+      style={{ overflow: "visible", perspective: "1000px" }}
       {...restOptions}
     >
-      <path d="M12 7V2" />
-      <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
-      <circle cx="12" cy="5" r="3" />
-      <path d="M12 22V12" />
+      <motion.path 
+        d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" 
+        variants={leftVariants}
+        style={{ originX: "12px" }}
+      />
+      <motion.path 
+        d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" 
+        variants={rightVariants}
+        style={{ originX: "12px" }}
+      />
     </motion.svg>
   );
 }

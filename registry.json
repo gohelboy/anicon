@@ -7,7 +7,7 @@
       "name": "icon-heart",
       "type": "registry:component",
       "title": "Animated Heart",
-      "description": "Heart icon with hover and tap animation using Motion.",
+      "description": "Heart with hover and tap scale animation.",
       "dependencies": [
         "motion"
       ],
@@ -22,7 +22,7 @@
       "name": "icon-a-arrow-down",
       "type": "registry:component",
       "title": "Animated A Arrow Down",
-      "description": "Letter A icon with a bouncing down arrow.",
+      "description": "Letter A with a bouncing down arrow.",
       "dependencies": [
         "motion"
       ],
@@ -37,7 +37,7 @@
       "name": "icon-a-arrow-up",
       "type": "registry:component",
       "title": "Animated A Arrow Up",
-      "description": "Letter A icon with a floating up arrow.",
+      "description": "Letter A with a floating up arrow.",
       "dependencies": [
         "motion"
       ],
@@ -52,7 +52,7 @@
       "name": "icon-a-large-small",
       "type": "registry:component",
       "title": "Animated A Large Small",
-      "description": "Large/small A icon with subtle scaling motion.",
+      "description": "Large and small A with size-shift animation.",
       "dependencies": [
         "motion"
       ],
@@ -82,7 +82,7 @@
       "name": "icon-activity",
       "type": "registry:component",
       "title": "Animated Activity",
-      "description": "Activity pulse icon with animated stroke drift.",
+      "description": "Activity pulse with animated stroke drift.",
       "dependencies": [
         "motion"
       ],
@@ -97,7 +97,7 @@
       "name": "icon-activity-square",
       "type": "registry:component",
       "title": "Animated Activity Square",
-      "description": "Activity square icon with pulsing sparkline.",
+      "description": "Activity square with pulsing sparkline.",
       "dependencies": [
         "motion"
       ],
@@ -112,7 +112,7 @@
       "name": "icon-air-vent",
       "type": "registry:component",
       "title": "Animated Air Vent",
-      "description": "Air vent icon with shifting airflow lines.",
+      "description": "Air vent with shifting airflow lines.",
       "dependencies": [
         "motion"
       ],
@@ -142,7 +142,7 @@
       "name": "icon-amphora",
       "type": "registry:component",
       "title": "Animated Amphora",
-      "description": "Amphora icon with a gentle ceramic sway.",
+      "description": "Amphora with a gentle ceramic sway.",
       "dependencies": [
         "motion"
       ],
@@ -154,1150 +154,10 @@
       ]
     },
     {
-      "name": "icon-anchor",
-      "type": "registry:component",
-      "title": "Animated Anchor",
-      "description": "Anchor icon with a weighted drop motion.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-anchor/icon-anchor.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-angry",
-      "type": "registry:component",
-      "title": "Animated Angry",
-      "description": "Angry face icon with tense brows and frown.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-angry/icon-angry.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-annoyed",
-      "type": "registry:component",
-      "title": "Animated Annoyed",
-      "description": "Annoyed face icon with a flat mouth drift.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-annoyed/icon-annoyed.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-antenna",
-      "type": "registry:component",
-      "title": "Animated Antenna",
-      "description": "Antenna icon with a pulsing signal beam.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-antenna/icon-antenna.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-anvil",
-      "type": "registry:component",
-      "title": "Animated Anvil",
-      "description": "Anvil icon with a heavy strike bounce.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-anvil/icon-anvil.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-aperture",
-      "type": "registry:component",
-      "title": "Animated Aperture",
-      "description": "Aperture icon with a shutter twist.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-aperture/icon-aperture.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-app-window",
-      "type": "registry:component",
-      "title": "Animated App Window",
-      "description": "App window icon with a sliding title bar.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-app-window/icon-app-window.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-app-window-mac",
-      "type": "registry:component",
-      "title": "Animated App Window Mac",
-      "description": "Mac window icon with bouncing control dots.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-app-window-mac/icon-app-window-mac.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-apple",
-      "type": "registry:component",
-      "title": "Animated Apple",
-      "description": "Apple icon with a subtle stem tilt.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-apple/icon-apple.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-archive",
-      "type": "registry:component",
-      "title": "Animated Archive",
-      "description": "Archive box icon with a lifting lid.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-archive/icon-archive.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-archive-restore",
-      "type": "registry:component",
-      "title": "Animated Archive Restore",
-      "description": "Archive restore icon with an upward arrow.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-archive-restore/icon-archive-restore.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-archive-x",
-      "type": "registry:component",
-      "title": "Animated Archive X",
-      "description": "Archive icon with a rotating X mark.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-archive-x/icon-archive-x.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-area-chart",
-      "type": "registry:component",
-      "title": "Animated Area Chart",
-      "description": "Area chart icon with a rising fill.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-area-chart/icon-area-chart.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-armchair",
-      "type": "registry:component",
-      "title": "Animated Armchair",
-      "description": "Armchair icon with a soft cushion bounce.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-armchair/icon-armchair.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-big-down",
-      "type": "registry:component",
-      "title": "Animated Arrow Big Down",
-      "description": "Big down arrow with a strong drop.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-big-down/icon-arrow-big-down.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-big-down-dash",
-      "type": "registry:component",
-      "title": "Animated Arrow Big Down Dash",
-      "description": "Big down arrow with a pulsing dash.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-big-down-dash/icon-arrow-big-down-dash.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-big-left",
-      "type": "registry:component",
-      "title": "Animated Arrow Big Left",
-      "description": "Big left arrow with a strong slide.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-big-left/icon-arrow-big-left.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-big-left-dash",
-      "type": "registry:component",
-      "title": "Animated Arrow Big Left Dash",
-      "description": "Big left arrow with a pulsing dash.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-big-left-dash/icon-arrow-big-left-dash.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-big-right",
-      "type": "registry:component",
-      "title": "Animated Arrow Big Right",
-      "description": "Big right arrow with a strong slide.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-big-right/icon-arrow-big-right.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-big-right-dash",
-      "type": "registry:component",
-      "title": "Animated Arrow Big Right Dash",
-      "description": "Big right arrow with a pulsing dash.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-big-right-dash/icon-arrow-big-right-dash.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-big-up",
-      "type": "registry:component",
-      "title": "Animated Arrow Big Up",
-      "description": "Big up arrow with a strong lift.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-big-up/icon-arrow-big-up.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-big-up-dash",
-      "type": "registry:component",
-      "title": "Animated Arrow Big Up Dash",
-      "description": "Big up arrow with a pulsing dash.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-big-up-dash/icon-arrow-big-up-dash.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-0-1",
-      "type": "registry:component",
-      "title": "Animated Arrow Down 0-1",
-      "description": "Arrow down icon with 0-1 sorting motion.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-0-1/icon-arrow-down-0-1.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-01",
-      "type": "registry:component",
-      "title": "Animated Arrow Down 01",
-      "description": "Arrow down icon with 01 sorting motion.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-01/icon-arrow-down-01.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-1-0",
-      "type": "registry:component",
-      "title": "Animated Arrow Down 1-0",
-      "description": "Arrow down icon with 1-0 sorting motion.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-1-0/icon-arrow-down-1-0.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-10",
-      "type": "registry:component",
-      "title": "Animated Arrow Down 10",
-      "description": "Arrow down icon with 10 sorting motion.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-10/icon-arrow-down-10.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-a-z",
-      "type": "registry:component",
-      "title": "Animated Arrow Down A-Z",
-      "description": "Arrow down icon with A-Z sorting motion.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-a-z/icon-arrow-down-a-z.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-az",
-      "type": "registry:component",
-      "title": "Animated Arrow Down AZ",
-      "description": "Arrow down icon with AZ sorting motion.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-az/icon-arrow-down-az.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-circle",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Circle",
-      "description": "Arrow down icon inside a pulsing circle.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-circle/icon-arrow-down-circle.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-from-line",
-      "type": "registry:component",
-      "title": "Animated Arrow Down From Line",
-      "description": "Arrow down icon dropping from a header line.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-from-line/icon-arrow-down-from-line.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-left",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Left",
-      "description": "Arrow down left icon with diagonal slide.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-left/icon-arrow-down-left.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-left-from-circle",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Left From Circle",
-      "description": "Arrow down left icon leaving a circle.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-left-from-circle/icon-arrow-down-left-from-circle.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-left-from-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Left From Square",
-      "description": "Arrow down left icon leaving a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-left-from-square/icon-arrow-down-left-from-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-left-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Left Square",
-      "description": "Arrow down left icon inside a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-left-square/icon-arrow-down-left-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-narrow-wide",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Narrow Wide",
-      "description": "Arrow down icon with narrow-to-wide bars.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-narrow-wide/icon-arrow-down-narrow-wide.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-right",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Right",
-      "description": "Arrow down right icon with diagonal slide.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-right/icon-arrow-down-right.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-right-from-circle",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Right From Circle",
-      "description": "Arrow down right icon leaving a circle.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-right-from-circle/icon-arrow-down-right-from-circle.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-right-from-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Right From Square",
-      "description": "Arrow down right icon leaving a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-right-from-square/icon-arrow-down-right-from-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-right-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Right Square",
-      "description": "Arrow down right icon inside a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-right-square/icon-arrow-down-right-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Square",
-      "description": "Arrow down icon inside a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-square/icon-arrow-down-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-to-dot",
-      "type": "registry:component",
-      "title": "Animated Arrow Down To Dot",
-      "description": "Arrow down icon pointing to a dot.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-to-dot/icon-arrow-down-to-dot.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-to-line",
-      "type": "registry:component",
-      "title": "Animated Arrow Down To Line",
-      "description": "Arrow down icon pointing to a line.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-to-line/icon-arrow-down-to-line.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-up",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Up",
-      "description": "Opposing arrows pointing down and up.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-up/icon-arrow-down-up.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-wide-narrow",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Wide Narrow",
-      "description": "Arrow down icon with wide-to-narrow bars.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-wide-narrow/icon-arrow-down-wide-narrow.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-z-a",
-      "type": "registry:component",
-      "title": "Animated Arrow Down Z A",
-      "description": "Sort Z to A arrow down icon.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-z-a/icon-arrow-down-z-a.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-down-za",
-      "type": "registry:component",
-      "title": "Animated Arrow Down ZA",
-      "description": "Compact Z to A arrow down icon.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-down-za/icon-arrow-down-za.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-left-circle",
-      "type": "registry:component",
-      "title": "Animated Arrow Left Circle",
-      "description": "Arrow left icon inside a circle.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-left-circle/icon-arrow-left-circle.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-left-from-line",
-      "type": "registry:component",
-      "title": "Animated Arrow Left From Line",
-      "description": "Arrow left icon leaving a vertical line.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-left-from-line/icon-arrow-left-from-line.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-left-right",
-      "type": "registry:component",
-      "title": "Animated Arrow Left Right",
-      "description": "Two-way arrows pointing left and right.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-left-right/icon-arrow-left-right.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-left-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Left Square",
-      "description": "Arrow left icon inside a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-left-square/icon-arrow-left-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-left-to-line",
-      "type": "registry:component",
-      "title": "Animated Arrow Left To Line",
-      "description": "Arrow left icon pointing to a vertical line.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-left-to-line/icon-arrow-left-to-line.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-right-circle",
-      "type": "registry:component",
-      "title": "Animated Arrow Right Circle",
-      "description": "Arrow right icon inside a circle.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-right-circle/icon-arrow-right-circle.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-right-from-line",
-      "type": "registry:component",
-      "title": "Animated Arrow Right From Line",
-      "description": "Arrow right icon leaving a vertical line.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-right-from-line/icon-arrow-right-from-line.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-right-left",
-      "type": "registry:component",
-      "title": "Animated Arrow Right Left",
-      "description": "Two-way arrows pointing right and left.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-right-left/icon-arrow-right-left.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-right-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Right Square",
-      "description": "Arrow right icon inside a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-right-square/icon-arrow-right-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-right-to-line",
-      "type": "registry:component",
-      "title": "Animated Arrow Right To Line",
-      "description": "Arrow right icon pointing to a vertical line.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-right-to-line/icon-arrow-right-to-line.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-0-1",
-      "type": "registry:component",
-      "title": "Animated Arrow Up 0-1",
-      "description": "Arrow up icon with 0-1 sorting indicator.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-0-1/icon-arrow-up-0-1.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-01",
-      "type": "registry:component",
-      "title": "Animated Arrow Up 01",
-      "description": "Compact arrow up icon with 0-1 sorting indicator.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-01/icon-arrow-up-01.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-1-0",
-      "type": "registry:component",
-      "title": "Animated Arrow Up 1-0",
-      "description": "Arrow up icon with 1-0 sorting indicator.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-1-0/icon-arrow-up-1-0.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-10",
-      "type": "registry:component",
-      "title": "Animated Arrow Up 10",
-      "description": "Compact arrow up icon with 1-0 sorting indicator.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-10/icon-arrow-up-10.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-a-z",
-      "type": "registry:component",
-      "title": "Animated Arrow Up A-Z",
-      "description": "Arrow up icon with A-Z sorting indicator.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-a-z/icon-arrow-up-a-z.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-az",
-      "type": "registry:component",
-      "title": "Animated Arrow Up AZ",
-      "description": "Compact arrow up icon with A-Z sorting indicator.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-az/icon-arrow-up-az.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-circle",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Circle",
-      "description": "Arrow up icon inside a circle.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-circle/icon-arrow-up-circle.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-down",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Down",
-      "description": "Opposing arrows pointing up and down.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-down/icon-arrow-up-down.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-from-dot",
-      "type": "registry:component",
-      "title": "Animated Arrow Up From Dot",
-      "description": "Arrow up icon rising from a dot.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-from-dot/icon-arrow-up-from-dot.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-from-line",
-      "type": "registry:component",
-      "title": "Animated Arrow Up From Line",
-      "description": "Arrow up icon rising from a line.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-from-line/icon-arrow-up-from-line.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-left",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Left",
-      "description": "Arrow up left icon with diagonal emphasis.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-left/icon-arrow-up-left.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-left-from-circle",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Left From Circle",
-      "description": "Arrow up left icon leaving a circle.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-left-from-circle/icon-arrow-up-left-from-circle.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-left-from-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Left From Square",
-      "description": "Arrow up left icon leaving a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-left-from-square/icon-arrow-up-left-from-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-left-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Left Square",
-      "description": "Arrow up left icon inside a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-left-square/icon-arrow-up-left-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-narrow-wide",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Narrow Wide",
-      "description": "Arrow up icon with narrow-to-wide bars.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-narrow-wide/icon-arrow-up-narrow-wide.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-right",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Right",
-      "description": "Arrow up right icon with diagonal emphasis.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-right/icon-arrow-up-right.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-right-from-circle",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Right From Circle",
-      "description": "Arrow up right icon leaving a circle.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-right-from-circle/icon-arrow-up-right-from-circle.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-right-from-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Right From Square",
-      "description": "Arrow up right icon leaving a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-right-from-square/icon-arrow-up-right-from-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-right-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Right Square",
-      "description": "Arrow up right icon inside a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-right-square/icon-arrow-up-right-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-arrow-up-square",
-      "type": "registry:component",
-      "title": "Animated Arrow Up Square",
-      "description": "Arrow up icon inside a square.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-arrow-up-square/icon-arrow-up-square.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
       "name": "icon-alarm-clock",
       "type": "registry:component",
       "title": "Animated Alarm Clock",
-      "description": "Alarm clock icon with ticking hands.",
+      "description": "Alarm clock with ticking hands.",
       "dependencies": [
         "motion"
       ],
@@ -1312,7 +172,7 @@
       "name": "icon-alarm-clock-check",
       "type": "registry:component",
       "title": "Animated Alarm Clock Check",
-      "description": "Alarm clock icon with a checkmark draw.",
+      "description": "Alarm clock with a checkmark draw.",
       "dependencies": [
         "motion"
       ],
@@ -1327,7 +187,7 @@
       "name": "icon-alarm-clock-minus",
       "type": "registry:component",
       "title": "Animated Alarm Clock Minus",
-      "description": "Alarm clock icon with a minus indicator.",
+      "description": "Alarm clock with a minus indicator.",
       "dependencies": [
         "motion"
       ],
@@ -1342,7 +202,7 @@
       "name": "icon-alarm-clock-off",
       "type": "registry:component",
       "title": "Animated Alarm Clock Off",
-      "description": "Alarm clock icon with a disabled strike.",
+      "description": "Alarm clock with a disabled strike.",
       "dependencies": [
         "motion"
       ],
@@ -1357,7 +217,7 @@
       "name": "icon-alarm-clock-plus",
       "type": "registry:component",
       "title": "Animated Alarm Clock Plus",
-      "description": "Alarm clock icon with a plus indicator.",
+      "description": "Alarm clock with a plus indicator.",
       "dependencies": [
         "motion"
       ],
@@ -1384,10 +244,1150 @@
       ]
     },
     {
+      "name": "icon-anchor",
+      "type": "registry:component",
+      "title": "Animated Anchor",
+      "description": "Anchor with nautical swaying animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-anchor/icon-anchor.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-angry",
+      "type": "registry:component",
+      "title": "Animated Angry",
+      "description": "Angry face with tense brows and frown.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-angry/icon-angry.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-annoyed",
+      "type": "registry:component",
+      "title": "Animated Annoyed",
+      "description": "Annoyed face with flat mouth drift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-annoyed/icon-annoyed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-antenna",
+      "type": "registry:component",
+      "title": "Animated Antenna",
+      "description": "Antenna with a pulsing signal beam.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-antenna/icon-antenna.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-anvil",
+      "type": "registry:component",
+      "title": "Animated Anvil",
+      "description": "Anvil with a heavy strike bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-anvil/icon-anvil.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-aperture",
+      "type": "registry:component",
+      "title": "Animated Aperture",
+      "description": "Aperture blades with a shutter twist.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-aperture/icon-aperture.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-app-window",
+      "type": "registry:component",
+      "title": "Animated App Window",
+      "description": "App window with a sliding title bar.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-app-window/icon-app-window.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-app-window-mac",
+      "type": "registry:component",
+      "title": "Animated App Window Mac",
+      "description": "Mac window with bouncing control dots.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-app-window-mac/icon-app-window-mac.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-apple",
+      "type": "registry:component",
+      "title": "Animated Apple",
+      "description": "Apple with a subtle stem tilt.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-apple/icon-apple.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-archive",
+      "type": "registry:component",
+      "title": "Animated Archive",
+      "description": "Archive box with a lifting lid.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-archive/icon-archive.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-archive-restore",
+      "type": "registry:component",
+      "title": "Animated Archive Restore",
+      "description": "Archive restore with an upward arrow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-archive-restore/icon-archive-restore.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-archive-x",
+      "type": "registry:component",
+      "title": "Animated Archive X",
+      "description": "Archive with a rotating X mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-archive-x/icon-archive-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-area-chart",
+      "type": "registry:component",
+      "title": "Animated Area Chart",
+      "description": "Area chart with a rising fill.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-area-chart/icon-area-chart.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-armchair",
+      "type": "registry:component",
+      "title": "Animated Armchair",
+      "description": "Armchair with a soft cushion bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-armchair/icon-armchair.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-big-down",
+      "type": "registry:component",
+      "title": "Animated Arrow Big Down",
+      "description": "Big arrow down with a strong drop.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-big-down/icon-arrow-big-down.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-big-down-dash",
+      "type": "registry:component",
+      "title": "Animated Arrow Big Down Dash",
+      "description": "Big arrow down with a pulsing dash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-big-down-dash/icon-arrow-big-down-dash.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-big-left",
+      "type": "registry:component",
+      "title": "Animated Arrow Big Left",
+      "description": "Big arrow left with a strong slide.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-big-left/icon-arrow-big-left.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-big-left-dash",
+      "type": "registry:component",
+      "title": "Animated Arrow Big Left Dash",
+      "description": "Big arrow left with a pulsing dash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-big-left-dash/icon-arrow-big-left-dash.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-big-right",
+      "type": "registry:component",
+      "title": "Animated Arrow Big Right",
+      "description": "Big arrow right with a strong slide.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-big-right/icon-arrow-big-right.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-big-right-dash",
+      "type": "registry:component",
+      "title": "Animated Arrow Big Right Dash",
+      "description": "Big arrow right with a pulsing dash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-big-right-dash/icon-arrow-big-right-dash.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-big-up",
+      "type": "registry:component",
+      "title": "Animated Arrow Big Up",
+      "description": "Big arrow up with a strong lift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-big-up/icon-arrow-big-up.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-big-up-dash",
+      "type": "registry:component",
+      "title": "Animated Arrow Big Up Dash",
+      "description": "Big arrow up with a pulsing dash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-big-up-dash/icon-arrow-big-up-dash.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-0-1",
+      "type": "registry:component",
+      "title": "Animated Arrow Down 0 1",
+      "description": "Arrow down with 0-1 sorting motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-0-1/icon-arrow-down-0-1.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-01",
+      "type": "registry:component",
+      "title": "Animated Arrow Down 01",
+      "description": "Arrow down with 01 sorting motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-01/icon-arrow-down-01.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-1-0",
+      "type": "registry:component",
+      "title": "Animated Arrow Down 1 0",
+      "description": "Arrow down with 1-0 sorting motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-1-0/icon-arrow-down-1-0.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-10",
+      "type": "registry:component",
+      "title": "Animated Arrow Down 10",
+      "description": "Arrow down with 10 sorting motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-10/icon-arrow-down-10.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-a-z",
+      "type": "registry:component",
+      "title": "Animated Arrow Down A Z",
+      "description": "Arrow down with A-Z sorting motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-a-z/icon-arrow-down-a-z.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-az",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Az",
+      "description": "Arrow down with AZ sorting motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-az/icon-arrow-down-az.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-circle",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Circle",
+      "description": "Arrow down inside a pulsing circle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-circle/icon-arrow-down-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-from-line",
+      "type": "registry:component",
+      "title": "Animated Arrow Down From Line",
+      "description": "Arrow dropping from a header line.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-from-line/icon-arrow-down-from-line.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-left",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Left",
+      "description": "Arrow down left with diagonal slide.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-left/icon-arrow-down-left.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-left-from-circle",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Left From Circle",
+      "description": "Arrow leaving a circle down-left.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-left-from-circle/icon-arrow-down-left-from-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-left-from-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Left From Square",
+      "description": "Arrow leaving a square down-left.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-left-from-square/icon-arrow-down-left-from-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-left-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Left Square",
+      "description": "Arrow down-left inside a square.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-left-square/icon-arrow-down-left-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-narrow-wide",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Narrow Wide",
+      "description": "Arrow down with narrow-to-wide bars.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-narrow-wide/icon-arrow-down-narrow-wide.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-right",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Right",
+      "description": "Arrow down right with diagonal slide.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-right/icon-arrow-down-right.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-right-from-circle",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Right From Circle",
+      "description": "Arrow leaving a circle down-right.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-right-from-circle/icon-arrow-down-right-from-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-right-from-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Right From Square",
+      "description": "Arrow leaving a square down-right.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-right-from-square/icon-arrow-down-right-from-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-right-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Right Square",
+      "description": "Arrow down-right inside a square.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-right-square/icon-arrow-down-right-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Square",
+      "description": "Arrow down inside a square.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-square/icon-arrow-down-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-to-dot",
+      "type": "registry:component",
+      "title": "Animated Arrow Down To Dot",
+      "description": "Arrow down pointing to a dot.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-to-dot/icon-arrow-down-to-dot.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-to-line",
+      "type": "registry:component",
+      "title": "Animated Arrow Down To Line",
+      "description": "Arrow down pointing to a line.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-to-line/icon-arrow-down-to-line.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-up",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Up",
+      "description": "Opposing up and down arrows.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-up/icon-arrow-down-up.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-wide-narrow",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Wide Narrow",
+      "description": "Arrow down with wide-to-narrow bars.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-wide-narrow/icon-arrow-down-wide-narrow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-z-a",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Z A",
+      "description": "Sort Z to A with a down arrow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-z-a/icon-arrow-down-z-a.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-down-za",
+      "type": "registry:component",
+      "title": "Animated Arrow Down Za",
+      "description": "Compact Z to A sort arrow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-down-za/icon-arrow-down-za.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-left-circle",
+      "type": "registry:component",
+      "title": "Animated Arrow Left Circle",
+      "description": "Arrow left inside a circle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-left-circle/icon-arrow-left-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-left-from-line",
+      "type": "registry:component",
+      "title": "Animated Arrow Left From Line",
+      "description": "Arrow left leaving a vertical line.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-left-from-line/icon-arrow-left-from-line.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-left-right",
+      "type": "registry:component",
+      "title": "Animated Arrow Left Right",
+      "description": "Two-way arrows left and right.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-left-right/icon-arrow-left-right.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-left-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Left Square",
+      "description": "Arrow left inside a square.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-left-square/icon-arrow-left-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-left-to-line",
+      "type": "registry:component",
+      "title": "Animated Arrow Left To Line",
+      "description": "Arrow left pointing to a line.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-left-to-line/icon-arrow-left-to-line.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-right-circle",
+      "type": "registry:component",
+      "title": "Animated Arrow Right Circle",
+      "description": "Arrow right inside a circle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-right-circle/icon-arrow-right-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-right-from-line",
+      "type": "registry:component",
+      "title": "Animated Arrow Right From Line",
+      "description": "Arrow right leaving a vertical line.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-right-from-line/icon-arrow-right-from-line.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-right-left",
+      "type": "registry:component",
+      "title": "Animated Arrow Right Left",
+      "description": "Two-way arrows right and left.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-right-left/icon-arrow-right-left.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-right-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Right Square",
+      "description": "Arrow right inside a square.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-right-square/icon-arrow-right-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-right-to-line",
+      "type": "registry:component",
+      "title": "Animated Arrow Right To Line",
+      "description": "Arrow right pointing to a line.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-right-to-line/icon-arrow-right-to-line.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-0-1",
+      "type": "registry:component",
+      "title": "Animated Arrow Up 0 1",
+      "description": "Arrow up with 0 to 1 sort indicator.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-0-1/icon-arrow-up-0-1.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-01",
+      "type": "registry:component",
+      "title": "Animated Arrow Up 01",
+      "description": "Compact arrow up 0-1 sort icon.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-01/icon-arrow-up-01.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-1-0",
+      "type": "registry:component",
+      "title": "Animated Arrow Up 1 0",
+      "description": "Arrow up with 1 to 0 sort indicator.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-1-0/icon-arrow-up-1-0.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-10",
+      "type": "registry:component",
+      "title": "Animated Arrow Up 10",
+      "description": "Compact arrow up 1-0 sort icon.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-10/icon-arrow-up-10.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-a-z",
+      "type": "registry:component",
+      "title": "Animated Arrow Up A Z",
+      "description": "Arrow up with A to Z sort indicator.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-a-z/icon-arrow-up-a-z.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-az",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Az",
+      "description": "Compact arrow up A-Z sort icon.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-az/icon-arrow-up-az.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-circle",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Circle",
+      "description": "Arrow up inside a circle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-circle/icon-arrow-up-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-down",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Down",
+      "description": "Opposing up and down arrows.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-down/icon-arrow-up-down.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-from-dot",
+      "type": "registry:component",
+      "title": "Animated Arrow Up From Dot",
+      "description": "Arrow lifting from a dot.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-from-dot/icon-arrow-up-from-dot.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-from-line",
+      "type": "registry:component",
+      "title": "Animated Arrow Up From Line",
+      "description": "Arrow rising from a line.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-from-line/icon-arrow-up-from-line.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-left",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Left",
+      "description": "Arrow up left with diagonal slide.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-left/icon-arrow-up-left.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-left-from-circle",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Left From Circle",
+      "description": "Arrow leaving a circle up-left.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-left-from-circle/icon-arrow-up-left-from-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-left-from-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Left From Square",
+      "description": "Arrow leaving a square up-left.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-left-from-square/icon-arrow-up-left-from-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-left-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Left Square",
+      "description": "Arrow up-left inside a square.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-left-square/icon-arrow-up-left-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-narrow-wide",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Narrow Wide",
+      "description": "Arrow up with narrow-to-wide bars.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-narrow-wide/icon-arrow-up-narrow-wide.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-right",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Right",
+      "description": "Arrow up right with diagonal slide.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-right/icon-arrow-up-right.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-right-from-circle",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Right From Circle",
+      "description": "Arrow leaving a circle up-right.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-right-from-circle/icon-arrow-up-right-from-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-right-from-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Right From Square",
+      "description": "Arrow leaving a square up-right.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-right-from-square/icon-arrow-up-right-from-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-right-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Right Square",
+      "description": "Arrow up-right inside a square.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-right-square/icon-arrow-up-right-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-arrow-up-square",
+      "type": "registry:component",
+      "title": "Animated Arrow Up Square",
+      "description": "Arrow up inside a square.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-arrow-up-square/icon-arrow-up-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-album",
       "type": "registry:component",
       "title": "Animated Album",
-      "description": "Album icon with subtle fold motion.",
+      "description": "Album icon with folding highlight.",
       "dependencies": [
         "motion"
       ],
@@ -1402,7 +1402,7 @@
       "name": "icon-alert-circle",
       "type": "registry:component",
       "title": "Animated Alert Circle",
-      "description": "Alert circle icon with pulsing mark.",
+      "description": "Alert circle with pulsing mark.",
       "dependencies": [
         "motion"
       ],
@@ -1417,7 +1417,7 @@
       "name": "icon-alert-octagon",
       "type": "registry:component",
       "title": "Animated Alert Octagon",
-      "description": "Alert octagon icon with bouncing mark.",
+      "description": "Alert octagon with bouncing mark.",
       "dependencies": [
         "motion"
       ],
@@ -1432,7 +1432,7 @@
       "name": "icon-alert-triangle",
       "type": "registry:component",
       "title": "Animated Alert Triangle",
-      "description": "Alert triangle with a lively warning mark.",
+      "description": "Alert triangle with lively warning mark.",
       "dependencies": [
         "motion"
       ],
@@ -1447,7 +1447,7 @@
       "name": "icon-align-center",
       "type": "registry:component",
       "title": "Animated Align Center",
-      "description": "Align center icon with gentle bounce motion.",
+      "description": "Align center bars with a gentle bounce.",
       "dependencies": [
         "motion"
       ],
@@ -1522,7 +1522,7 @@
       "name": "icon-align-horizontal-distribute-center",
       "type": "registry:component",
       "title": "Animated Align Horizontal Distribute Center",
-      "description": "Distribute center icon with a horizontal nudge.",
+      "description": "Distribute center with a horizontal nudge.",
       "dependencies": [
         "motion"
       ],
@@ -1537,7 +1537,7 @@
       "name": "icon-align-horizontal-distribute-end",
       "type": "registry:component",
       "title": "Animated Align Horizontal Distribute End",
-      "description": "Distribute end icon with a horizontal push.",
+      "description": "Distribute end with a horizontal push.",
       "dependencies": [
         "motion"
       ],
@@ -1552,7 +1552,7 @@
       "name": "icon-align-horizontal-distribute-start",
       "type": "registry:component",
       "title": "Animated Align Horizontal Distribute Start",
-      "description": "Distribute start icon with a horizontal pull.",
+      "description": "Distribute start with a horizontal pull.",
       "dependencies": [
         "motion"
       ],
@@ -1567,7 +1567,7 @@
       "name": "icon-align-horizontal-justify-center",
       "type": "registry:component",
       "title": "Animated Align Horizontal Justify Center",
-      "description": "Justify center icon with a guided shift.",
+      "description": "Justify center with a guided shift.",
       "dependencies": [
         "motion"
       ],
@@ -1582,7 +1582,7 @@
       "name": "icon-align-horizontal-justify-end",
       "type": "registry:component",
       "title": "Animated Align Horizontal Justify End",
-      "description": "Justify end icon with a guided shift.",
+      "description": "Justify end with a guided shift.",
       "dependencies": [
         "motion"
       ],
@@ -1597,7 +1597,7 @@
       "name": "icon-align-horizontal-justify-start",
       "type": "registry:component",
       "title": "Animated Align Horizontal Justify Start",
-      "description": "Justify start icon with a guided shift.",
+      "description": "Justify start with a guided shift.",
       "dependencies": [
         "motion"
       ],
@@ -1612,7 +1612,7 @@
       "name": "icon-align-horizontal-space-around",
       "type": "registry:component",
       "title": "Animated Align Horizontal Space Around",
-      "description": "Space-around icon with subtle horizontal drift.",
+      "description": "Space around with subtle horizontal drift.",
       "dependencies": [
         "motion"
       ],
@@ -1627,7 +1627,7 @@
       "name": "icon-align-horizontal-space-between",
       "type": "registry:component",
       "title": "Animated Align Horizontal Space Between",
-      "description": "Space-between icon with subtle horizontal drift.",
+      "description": "Space between with subtle horizontal drift.",
       "dependencies": [
         "motion"
       ],
@@ -1732,7 +1732,7 @@
       "name": "icon-align-vertical-distribute-end",
       "type": "registry:component",
       "title": "Animated Align Vertical Distribute End",
-      "description": "Distribute end icon with a gentle drop.",
+      "description": "Distribute to the bottom guide with a gentle drop.",
       "dependencies": [
         "motion"
       ],
@@ -1747,7 +1747,7 @@
       "name": "icon-align-vertical-distribute-start",
       "type": "registry:component",
       "title": "Animated Align Vertical Distribute Start",
-      "description": "Distribute start icon with a gentle lift.",
+      "description": "Distribute to the top guide with a gentle lift.",
       "dependencies": [
         "motion"
       ],
@@ -1762,7 +1762,7 @@
       "name": "icon-align-vertical-justify-center",
       "type": "registry:component",
       "title": "Animated Align Vertical Justify Center",
-      "description": "Justify center icon with converging blocks.",
+      "description": "Justify vertical center with converging blocks.",
       "dependencies": [
         "motion"
       ],
@@ -1777,7 +1777,7 @@
       "name": "icon-align-vertical-justify-end",
       "type": "registry:component",
       "title": "Animated Align Vertical Justify End",
-      "description": "Justify end icon with blocks dropping down.",
+      "description": "Justify vertical end with blocks dropping down.",
       "dependencies": [
         "motion"
       ],
@@ -1792,7 +1792,7 @@
       "name": "icon-align-vertical-justify-start",
       "type": "registry:component",
       "title": "Animated Align Vertical Justify Start",
-      "description": "Justify start icon with blocks lifting up.",
+      "description": "Justify vertical start with blocks lifting up.",
       "dependencies": [
         "motion"
       ],
@@ -1807,7 +1807,7 @@
       "name": "icon-align-vertical-space-around",
       "type": "registry:component",
       "title": "Animated Align Vertical Space Around",
-      "description": "Space-around icon with balanced vertical padding.",
+      "description": "Space around with balanced vertical padding.",
       "dependencies": [
         "motion"
       ],
@@ -1822,7 +1822,7 @@
       "name": "icon-align-vertical-space-between",
       "type": "registry:component",
       "title": "Animated Align Vertical Space Between",
-      "description": "Space-between icon with top and bottom spread.",
+      "description": "Space between with top and bottom spread.",
       "dependencies": [
         "motion"
       ],
@@ -1837,7 +1837,7 @@
       "name": "icon-ambulance",
       "type": "registry:component",
       "title": "Animated Ambulance",
-      "description": "Ambulance icon with pulsing medical cross and rolling wheels.",
+      "description": "Ambulance with pulsing medical cross and rolling wheels.",
       "dependencies": [
         "motion"
       ],
@@ -1852,7 +1852,7 @@
       "name": "icon-ampersand",
       "type": "registry:component",
       "title": "Animated Ampersand",
-      "description": "Ampersand icon with a lively stroke emphasis.",
+      "description": "Ampersand with a lively stroke emphasis.",
       "dependencies": [
         "motion"
       ],
@@ -1882,7 +1882,7 @@
       "name": "icon-sparkle",
       "type": "registry:component",
       "title": "Animated Sparkle",
-      "description": "Sparkle icon with hover and tap animation using Motion.",
+      "description": "Sparkle with scale and rotate on interaction.",
       "dependencies": [
         "motion"
       ],
@@ -1897,7 +1897,7 @@
       "name": "icon-arrow-right",
       "type": "registry:component",
       "title": "Animated Arrow Right",
-      "description": "Arrow right icon with hover slide and tap animation.",
+      "description": "Arrow right with hover slide and tap animation.",
       "dependencies": [
         "motion"
       ],
@@ -1912,7 +1912,7 @@
       "name": "icon-arrow-left",
       "type": "registry:component",
       "title": "Animated Arrow Left",
-      "description": "Arrow left icon with hover slide and tap animation.",
+      "description": "Arrow left with hover slide and tap animation.",
       "dependencies": [
         "motion"
       ],
@@ -1927,7 +1927,7 @@
       "name": "icon-arrow-up",
       "type": "registry:component",
       "title": "Animated Arrow Up",
-      "description": "Arrow up icon with hover slide and tap animation.",
+      "description": "Arrow up with hover slide and tap animation.",
       "dependencies": [
         "motion"
       ],
@@ -1942,7 +1942,7 @@
       "name": "icon-arrow-down",
       "type": "registry:component",
       "title": "Animated Arrow Down",
-      "description": "Arrow down icon with hover slide and tap animation.",
+      "description": "Arrow down with hover slide and tap animation.",
       "dependencies": [
         "motion"
       ],
@@ -1957,7 +1957,7 @@
       "name": "icon-chevron-right",
       "type": "registry:component",
       "title": "Animated Chevron Right",
-      "description": "Chevron right icon with hover slide and tap animation.",
+      "description": "Chevron right with hover slide and tap animation.",
       "dependencies": [
         "motion"
       ],
@@ -1972,7 +1972,7 @@
       "name": "icon-chevron-left",
       "type": "registry:component",
       "title": "Animated Chevron Left",
-      "description": "Chevron left icon with hover slide and tap animation.",
+      "description": "Chevron left with hover slide and tap animation.",
       "dependencies": [
         "motion"
       ],
@@ -1987,7 +1987,7 @@
       "name": "icon-chevron-up",
       "type": "registry:component",
       "title": "Animated Chevron Up",
-      "description": "Chevron up icon with hover slide and tap animation.",
+      "description": "Chevron up with hover slide and tap animation.",
       "dependencies": [
         "motion"
       ],
@@ -2002,7 +2002,7 @@
       "name": "icon-chevron-down",
       "type": "registry:component",
       "title": "Animated Chevron Down",
-      "description": "Chevron down icon with hover slide and tap animation.",
+      "description": "Chevron down with hover slide and tap animation.",
       "dependencies": [
         "motion"
       ],
@@ -2017,7 +2017,7 @@
       "name": "icon-home",
       "type": "registry:component",
       "title": "Animated Home",
-      "description": "Home icon with playful roof and door animation.",
+      "description": "Home icon with a playful roof lift and door bounce.",
       "dependencies": [
         "motion"
       ],
@@ -2032,7 +2032,7 @@
       "name": "icon-menu",
       "type": "registry:component",
       "title": "Animated Menu",
-      "description": "Menu icon with staggered line motion on hover.",
+      "description": "Menu icon with staggered line slides.",
       "dependencies": [
         "motion"
       ],
@@ -2047,7 +2047,7 @@
       "name": "icon-menu-bento",
       "type": "registry:component",
       "title": "Animated Menu Bento",
-      "description": "Bento menu icon with soft tile pops.",
+      "description": "Bento menu tiles with a soft pop animation.",
       "dependencies": [
         "motion"
       ],
@@ -2062,7 +2062,7 @@
       "name": "icon-menu-dots",
       "type": "registry:component",
       "title": "Animated Menu Dots",
-      "description": "Horizontal menu dots with playful bounce motion.",
+      "description": "Horizontal menu dots with a playful bounce.",
       "dependencies": [
         "motion"
       ],
@@ -2077,7 +2077,7 @@
       "name": "icon-menu-dots-vertical",
       "type": "registry:component",
       "title": "Animated Menu Dots Vertical",
-      "description": "Vertical menu dots with subtle sway motion.",
+      "description": "Vertical menu dots with a subtle sway.",
       "dependencies": [
         "motion"
       ],
@@ -2092,7 +2092,7 @@
       "name": "icon-menu-grid",
       "type": "registry:component",
       "title": "Animated Menu Grid",
-      "description": "Grid menu icon with staggered tile motion.",
+      "description": "Grid menu with staggered tile motion.",
       "dependencies": [
         "motion"
       ],
@@ -2107,7 +2107,7 @@
       "name": "icon-menu-list",
       "type": "registry:component",
       "title": "Animated Menu List",
-      "description": "List menu icon with animated bullets and lines.",
+      "description": "List menu with animated bullets and lines.",
       "dependencies": [
         "motion"
       ],
@@ -2122,7 +2122,7 @@
       "name": "icon-menu-sliders",
       "type": "registry:component",
       "title": "Animated Menu Sliders",
-      "description": "Slider menu icon with animated knobs.",
+      "description": "Slider menu with animated knobs.",
       "dependencies": [
         "motion"
       ],
@@ -2137,7 +2137,7 @@
       "name": "icon-menu-tabs",
       "type": "registry:component",
       "title": "Animated Menu Tabs",
-      "description": "Tabbed menu icon with stacked bar motion.",
+      "description": "Tabbed menu with stacked bars.",
       "dependencies": [
         "motion"
       ],
@@ -2152,7 +2152,7 @@
       "name": "icon-clock",
       "type": "registry:component",
       "title": "Animated Clock",
-      "description": "Clock icon with ticking hand motion and subtle pulse.",
+      "description": "Clock icon with ticking hands and gentle ring pulse.",
       "dependencies": [
         "motion"
       ],
@@ -2167,7 +2167,7 @@
       "name": "icon-trash",
       "type": "registry:component",
       "title": "Animated Trash",
-      "description": "Trash icon with lid lifting animation.",
+      "description": "Trash can with lid lifting animation.",
       "dependencies": [
         "motion"
       ],
@@ -2182,7 +2182,7 @@
       "name": "icon-edit",
       "type": "registry:component",
       "title": "Animated Edit",
-      "description": "Edit pencil icon with writing tilt motion.",
+      "description": "Edit pencil with writing tilt motion.",
       "dependencies": [
         "motion"
       ],
@@ -2197,7 +2197,7 @@
       "name": "icon-check",
       "type": "registry:component",
       "title": "Animated Check",
-      "description": "Check icon with stroke draw animation.",
+      "description": "Checkmark with stroke draw animation.",
       "dependencies": [
         "motion"
       ],
@@ -2212,7 +2212,7 @@
       "name": "icon-x",
       "type": "registry:component",
       "title": "Animated X",
-      "description": "X/close icon with 90-degree rotation.",
+      "description": "X mark with 90-degree rotation.",
       "dependencies": [
         "motion"
       ],
@@ -2227,7 +2227,7 @@
       "name": "icon-copy",
       "type": "registry:component",
       "title": "Animated Copy",
-      "description": "Copy icon with sheets separating on hover.",
+      "description": "Copy sheets separating on hover.",
       "dependencies": [
         "motion"
       ],
@@ -2242,7 +2242,7 @@
       "name": "icon-plus",
       "type": "registry:component",
       "title": "Animated Plus",
-      "description": "Plus icon with scale and rotate animation.",
+      "description": "Plus sign with scale and rotate.",
       "dependencies": [
         "motion"
       ],
@@ -2257,7 +2257,7 @@
       "name": "icon-minus",
       "type": "registry:component",
       "title": "Animated Minus",
-      "description": "Minus icon with contracting animation.",
+      "description": "Minus sign with contracting animation.",
       "dependencies": [
         "motion"
       ],
@@ -2272,7 +2272,7 @@
       "name": "icon-search",
       "type": "registry:component",
       "title": "Animated Search",
-      "description": "Search magnifying glass with zoom pulse.",
+      "description": "Magnifying glass with zoom pulse.",
       "dependencies": [
         "motion"
       ],
@@ -2287,7 +2287,7 @@
       "name": "icon-settings",
       "type": "registry:component",
       "title": "Animated Settings",
-      "description": "Settings gear rotating on hover.",
+      "description": "Gear rotating 45 degrees on hover.",
       "dependencies": [
         "motion"
       ],
@@ -2302,7 +2302,7 @@
       "name": "icon-mail",
       "type": "registry:component",
       "title": "Animated Mail",
-      "description": "Mail envelope with flap opening animation.",
+      "description": "Envelope with flap opening animation.",
       "dependencies": [
         "motion"
       ],
@@ -2317,7 +2317,7 @@
       "name": "icon-bell",
       "type": "registry:component",
       "title": "Animated Bell",
-      "description": "Bell icon with ringing shake animation.",
+      "description": "Bell with ringing shake animation.",
       "dependencies": [
         "motion"
       ],
@@ -2332,7 +2332,7 @@
       "name": "icon-send",
       "type": "registry:component",
       "title": "Animated Send",
-      "description": "Send/paper plane launching diagonally.",
+      "description": "Paper plane launching diagonally.",
       "dependencies": [
         "motion"
       ],
@@ -2347,7 +2347,7 @@
       "name": "icon-download",
       "type": "registry:component",
       "title": "Animated Download",
-      "description": "Download arrow dropping into tray.",
+      "description": "Arrow dropping into download tray.",
       "dependencies": [
         "motion"
       ],
@@ -2362,7 +2362,7 @@
       "name": "icon-upload",
       "type": "registry:component",
       "title": "Animated Upload",
-      "description": "Upload arrow rising from tray.",
+      "description": "Arrow rising from upload tray.",
       "dependencies": [
         "motion"
       ],
@@ -2407,7 +2407,7 @@
       "name": "icon-eye",
       "type": "registry:component",
       "title": "Animated Eye",
-      "description": "Eye icon with realistic blink animation.",
+      "description": "Eye with realistic blink animation.",
       "dependencies": [
         "motion"
       ],
@@ -2422,7 +2422,7 @@
       "name": "icon-lock",
       "type": "registry:component",
       "title": "Animated Lock",
-      "description": "Lock icon with shackle lifting open.",
+      "description": "Lock with shackle lifting open.",
       "dependencies": [
         "motion"
       ],
@@ -2437,7 +2437,7 @@
       "name": "icon-unlock",
       "type": "registry:component",
       "title": "Animated Unlock",
-      "description": "Unlock icon with shackle dropping closed.",
+      "description": "Unlock with shackle dropping closed.",
       "dependencies": [
         "motion"
       ],
@@ -2452,7 +2452,7 @@
       "name": "icon-star",
       "type": "registry:component",
       "title": "Animated Star",
-      "description": "Star icon with scale and rotate animation.",
+      "description": "Star with scale and rotate animation.",
       "dependencies": [
         "motion"
       ],
@@ -2467,7 +2467,7 @@
       "name": "icon-loader",
       "type": "registry:component",
       "title": "Animated Loader",
-      "description": "Loader/spinner with continuous rotation.",
+      "description": "Loader with continuous rotation.",
       "dependencies": [
         "motion"
       ],
@@ -2482,7 +2482,7 @@
       "name": "icon-folder",
       "type": "registry:component",
       "title": "Animated Folder",
-      "description": "Folder icon with opening flap and document.",
+      "description": "Folder with flap opening and document peeking animation.",
       "dependencies": [
         "motion"
       ],
@@ -2497,7 +2497,7 @@
       "name": "icon-file",
       "type": "registry:component",
       "title": "Animated File",
-      "description": "File icon with lift and fold animation.",
+      "description": "File with lift-up and corner fold animation.",
       "dependencies": [
         "motion"
       ],
@@ -2511,7 +2511,7 @@
     {
       "name": "icon-refresh-cw",
       "type": "registry:component",
-      "title": "Animated Refresh",
+      "title": "Animated Refresh Cw",
       "description": "Refresh icon with clockwise rotation.",
       "dependencies": [
         "motion"
@@ -2526,8 +2526,8 @@
     {
       "name": "icon-volume-2",
       "type": "registry:component",
-      "title": "Animated Volume",
-      "description": "Speaker icon with pulsing sound waves.",
+      "title": "Animated Volume 2",
+      "description": "Speaker with pulsing sound waves.",
       "dependencies": [
         "motion"
       ],
@@ -2541,8 +2541,8 @@
     {
       "name": "icon-wifi",
       "type": "registry:component",
-      "title": "Animated WiFi",
-      "description": "WiFi icon with radiating signal waves.",
+      "title": "Animated Wifi",
+      "description": "WiFi signal with radiating ripples.",
       "dependencies": [
         "motion"
       ],
@@ -2557,7 +2557,7 @@
       "name": "icon-calendar",
       "type": "registry:component",
       "title": "Animated Calendar",
-      "description": "Calendar icon with page flip animation.",
+      "description": "Calendar with page-flipping animation.",
       "dependencies": [
         "motion"
       ],
@@ -2572,7 +2572,7 @@
       "name": "icon-camera",
       "type": "registry:component",
       "title": "Animated Camera",
-      "description": "Camera icon with shutter flash animation.",
+      "description": "Camera with shutter and flash animation.",
       "dependencies": [
         "motion"
       ],
@@ -2586,8 +2586,8 @@
     {
       "name": "icon-mic",
       "type": "registry:component",
-      "title": "Animated Microphone",
-      "description": "Microphone icon with pulsing audio waves.",
+      "title": "Animated Mic",
+      "description": "Microphone with pulsing audio waves.",
       "dependencies": [
         "motion"
       ],
@@ -2602,7 +2602,7 @@
       "name": "icon-power",
       "type": "registry:component",
       "title": "Animated Power",
-      "description": "Power button icon with glow effect.",
+      "description": "Power button with on/off glow effect.",
       "dependencies": [
         "motion"
       ],
@@ -2617,7 +2617,7 @@
       "name": "icon-terminal",
       "type": "registry:component",
       "title": "Animated Terminal",
-      "description": "Terminal icon with blinking cursor.",
+      "description": "Terminal with blinking cursor and prompt shift.",
       "dependencies": [
         "motion"
       ],
@@ -2632,7 +2632,7 @@
       "name": "icon-share",
       "type": "registry:component",
       "title": "Animated Share",
-      "description": "Share icon with spreading nodes animation.",
+      "description": "Share icon with nodes spreading outward.",
       "dependencies": [
         "motion"
       ],
@@ -2647,7 +2647,7 @@
       "name": "icon-bookmark",
       "type": "registry:component",
       "title": "Animated Bookmark",
-      "description": "Bookmark icon with fold-down animation.",
+      "description": "Bookmark that folds down like on a page.",
       "dependencies": [
         "motion"
       ],
@@ -2662,7 +2662,7 @@
       "name": "icon-zap",
       "type": "registry:component",
       "title": "Animated Zap",
-      "description": "Zap icon with electric flash effect.",
+      "description": "Lightning bolt with electric flash effect.",
       "dependencies": [
         "motion"
       ],
@@ -2677,7 +2677,7 @@
       "name": "icon-user",
       "type": "registry:component",
       "title": "Animated User",
-      "description": "User icon with head nod animation.",
+      "description": "User icon with friendly head nod animation.",
       "dependencies": [
         "motion"
       ],
@@ -2692,7 +2692,7 @@
       "name": "icon-log-in",
       "type": "registry:component",
       "title": "Animated Log In",
-      "description": "Log in icon with arrow sliding into door.",
+      "description": "Log in with arrow sliding through door.",
       "dependencies": [
         "motion"
       ],
@@ -2707,7 +2707,7 @@
       "name": "icon-log-out",
       "type": "registry:component",
       "title": "Animated Log Out",
-      "description": "Log out icon with arrow sliding out of door.",
+      "description": "Log out with arrow exiting through door.",
       "dependencies": [
         "motion"
       ],
@@ -2722,7 +2722,7 @@
       "name": "icon-shopping-cart",
       "type": "registry:component",
       "title": "Animated Shopping Cart",
-      "description": "Shopping cart icon with rolling wheels.",
+      "description": "Shopping cart rolling with spinning wheels.",
       "dependencies": [
         "motion"
       ],
@@ -2737,7 +2737,7 @@
       "name": "icon-gift",
       "type": "registry:component",
       "title": "Animated Gift",
-      "description": "Gift icon with shaking box and lifting lid.",
+      "description": "Gift box box that shakes and lid lifts.",
       "dependencies": [
         "motion"
       ],
@@ -2752,7 +2752,7 @@
       "name": "icon-cloud",
       "type": "registry:component",
       "title": "Animated Cloud",
-      "description": "Cloud icon with gentle float animation.",
+      "description": "Cloud that floats gently like in the sky.",
       "dependencies": [
         "motion"
       ],
@@ -2767,7 +2767,7 @@
       "name": "icon-sun",
       "type": "registry:component",
       "title": "Animated Sun",
-      "description": "Sun icon with rotation and pulsing rays.",
+      "description": "Sun rotating with radiating ray pulses.",
       "dependencies": [
         "motion"
       ],
@@ -2782,7 +2782,7 @@
       "name": "icon-heart-handshake",
       "type": "registry:component",
       "title": "Animated Heart Handshake",
-      "description": "Heart handshake icon with pulsing and squeeze animation.",
+      "description": "Heart with pulsing and handshake animation.",
       "dependencies": [
         "motion"
       ],
@@ -2797,7 +2797,7 @@
       "name": "icon-thermometer",
       "type": "registry:component",
       "title": "Animated Thermometer",
-      "description": "Thermometer icon with rising temperature animation.",
+      "description": "Thermometer with rising temperature animation.",
       "dependencies": [
         "motion"
       ],
@@ -2812,7 +2812,7 @@
       "name": "icon-mouse-pointer-2",
       "type": "registry:component",
       "title": "Animated Mouse Pointer 2",
-      "description": "Mouse pointer icon with depth-click animation.",
+      "description": "Mouse pointer with depth-click animation.",
       "dependencies": [
         "motion"
       ],
@@ -2827,7 +2827,7 @@
       "name": "icon-layers",
       "type": "registry:component",
       "title": "Animated Layers",
-      "description": "Layers icon with vertical separation animation.",
+      "description": "Layers with vertical separation animation.",
       "dependencies": [
         "motion"
       ],
@@ -2842,7 +2842,7 @@
       "name": "icon-database",
       "type": "registry:component",
       "title": "Animated Database",
-      "description": "Database icon with infrastructure pulse animation.",
+      "description": "Database with infrastructure pulse animation.",
       "dependencies": [
         "motion"
       ],
@@ -2857,7 +2857,7 @@
       "name": "icon-shield-check",
       "type": "registry:component",
       "title": "Animated Shield Check",
-      "description": "Shield check icon with secure drawing animation.",
+      "description": "Shield with secure check-draw animation.",
       "dependencies": [
         "motion"
       ],
@@ -2872,7 +2872,7 @@
       "name": "icon-key",
       "type": "registry:component",
       "title": "Animated Key",
-      "description": "Key icon with unlocking rotation animation.",
+      "description": "Key with unlocking rotation animation.",
       "dependencies": [
         "motion"
       ],
@@ -2887,7 +2887,7 @@
       "name": "icon-briefcase",
       "type": "registry:component",
       "title": "Animated Briefcase",
-      "description": "Briefcase icon with handle lift and bag shift animation.",
+      "description": "Briefcase with handle lift and bag shift animation.",
       "dependencies": [
         "motion"
       ],
@@ -2902,7 +2902,7 @@
       "name": "icon-layout",
       "type": "registry:component",
       "title": "Animated Layout",
-      "description": "Layout icon with masonry shifting animation.",
+      "description": "Layout with masonry shifting animation.",
       "dependencies": [
         "motion"
       ],
@@ -2917,7 +2917,7 @@
       "name": "icon-palette",
       "type": "registry:component",
       "title": "Animated Palette",
-      "description": "Palette icon with playful dot pulsing animation.",
+      "description": "Palette with playful dot-pulsing animation.",
       "dependencies": [
         "motion"
       ],
@@ -2932,7 +2932,7 @@
       "name": "icon-globe",
       "type": "registry:component",
       "title": "Animated Globe",
-      "description": "Globe icon with world-spin animation.",
+      "description": "Globe with world-spin animation.",
       "dependencies": [
         "motion"
       ],
@@ -2962,7 +2962,7 @@
       "name": "icon-monitor",
       "type": "registry:component",
       "title": "Animated Monitor",
-      "description": "Monitor icon with screen wake-up glow animation.",
+      "description": "Monitor with screen wake-up glow animation.",
       "dependencies": [
         "motion"
       ],
@@ -2977,7 +2977,7 @@
       "name": "icon-smartphone",
       "type": "registry:component",
       "title": "Animated Smartphone",
-      "description": "Smartphone icon with notification vibration animation.",
+      "description": "Smartphone with notification vibration animation.",
       "dependencies": [
         "motion"
       ],
@@ -2992,7 +2992,7 @@
       "name": "icon-tablet",
       "type": "registry:component",
       "title": "Animated Tablet",
-      "description": "Tablet icon with screen brightness pulse animation.",
+      "description": "Tablet with screen brightness pulse animation.",
       "dependencies": [
         "motion"
       ],
@@ -3037,7 +3037,7 @@
       "name": "icon-map-pin",
       "type": "registry:component",
       "title": "Animated Map Pin",
-      "description": "Map pin icon with drop and bounce animation.",
+      "description": "Map pin with drop and bounce animation.",
       "dependencies": [
         "motion"
       ],
@@ -3052,7 +3052,7 @@
       "name": "icon-compass",
       "type": "registry:component",
       "title": "Animated Compass",
-      "description": "Compass icon with needle search animation.",
+      "description": "Compass with needle search animation.",
       "dependencies": [
         "motion"
       ],
@@ -3067,7 +3067,7 @@
       "name": "icon-hard-drive",
       "type": "registry:component",
       "title": "Animated Hard Drive",
-      "description": "Hard drive icon with activity LED animation.",
+      "description": "Hard drive with activity LED animation.",
       "dependencies": [
         "motion"
       ],
@@ -3082,7 +3082,7 @@
       "name": "icon-battery-charging",
       "type": "registry:component",
       "title": "Animated Battery Charging",
-      "description": "Battery charging icon with pulsing bolt animation.",
+      "description": "Battery charging with pulsing bolt animation.",
       "dependencies": [
         "motion"
       ],
@@ -3097,7 +3097,7 @@
       "name": "icon-cloud-rain",
       "type": "registry:component",
       "title": "Animated Cloud Rain",
-      "description": "Cloud rain icon with sequential raindrop animation.",
+      "description": "Cloud rain with sequential raindrop animation.",
       "dependencies": [
         "motion"
       ],
@@ -3112,7 +3112,7 @@
       "name": "icon-cloud-lightning",
       "type": "registry:component",
       "title": "Animated Cloud Lightning",
-      "description": "Cloud lightning icon with realistic flash animation.",
+      "description": "Cloud lightning with realistic flash animation.",
       "dependencies": [
         "motion"
       ],
@@ -3127,7 +3127,7 @@
       "name": "icon-snowflake",
       "type": "registry:component",
       "title": "Animated Snowflake",
-      "description": "Snowflake icon with slow rotation animation.",
+      "description": "Snowflake with slow rotation animation.",
       "dependencies": [
         "motion"
       ],
@@ -3142,7 +3142,7 @@
       "name": "icon-flame",
       "type": "registry:component",
       "title": "Animated Flame",
-      "description": "Flame icon with flickering scale animation.",
+      "description": "Flame with flickering scale animation.",
       "dependencies": [
         "motion"
       ],
@@ -3157,7 +3157,7 @@
       "name": "icon-plane",
       "type": "registry:component",
       "title": "Animated Plane",
-      "description": "Plane icon with takeoff flight animation.",
+      "description": "Plane with takeoff flight animation.",
       "dependencies": [
         "motion"
       ],
@@ -3201,8 +3201,8 @@
     {
       "name": "icon-cpu",
       "type": "registry:component",
-      "title": "Animated CPU",
-      "description": "CPU icon with processing circuitry animation.",
+      "title": "Animated Cpu",
+      "description": "CPU with processing circuitry animation.",
       "dependencies": [
         "motion"
       ],
@@ -3217,7 +3217,7 @@
       "name": "icon-server",
       "type": "registry:component",
       "title": "Animated Server",
-      "description": "Server icon with blinking activity LED animation.",
+      "description": "Server with blinking activity LED animation.",
       "dependencies": [
         "motion"
       ],
@@ -3247,7 +3247,7 @@
       "name": "icon-smile",
       "type": "registry:component",
       "title": "Animated Smile",
-      "description": "Smile icon with mouth-drawing animation.",
+      "description": "Smile with mouth-drawing animation.",
       "dependencies": [
         "motion"
       ],
@@ -3269,6 +3269,96 @@
       "files": [
         {
           "path": "registry/default/icon-frown/icon-frown.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-award",
+      "type": "registry:component",
+      "title": "Animated Award",
+      "description": "Award with victory pulse and shine animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-award/icon-award.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-beaker",
+      "type": "registry:component",
+      "title": "Animated Beaker",
+      "description": "Beaker with liquid rippling and bubbling animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-beaker/icon-beaker.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-book-open",
+      "type": "registry:component",
+      "title": "Animated Book Open",
+      "description": "Book open with realistic page-flipping animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-book-open/icon-book-open.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-coffee",
+      "type": "registry:component",
+      "title": "Animated Coffee",
+      "description": "Coffee with rising steam and gentle cup vibration.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-coffee/icon-coffee.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-scissors",
+      "type": "registry:component",
+      "title": "Animated Scissors",
+      "description": "Scissors with precise cutting blade rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-scissors/icon-scissors.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-umbrella",
+      "type": "registry:component",
+      "title": "Animated Umbrella",
+      "description": "Umbrella with expanding canopy animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-umbrella/icon-umbrella.tsx",
           "type": "registry:component"
         }
       ]

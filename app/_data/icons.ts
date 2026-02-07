@@ -225,6 +225,13 @@ import { IconServer } from "@/registry/default/icon-server/icon-server";
 import { IconBot } from "@/registry/default/icon-bot/icon-bot";
 import { IconSmile } from "@/registry/default/icon-smile/icon-smile";
 import { IconFrown } from "@/registry/default/icon-frown/icon-frown";
+// Batch 5 Premium Icons
+import { IconAward } from "@/registry/default/icon-award/icon-award";
+import { IconBeaker } from "@/registry/default/icon-beaker/icon-beaker";
+import { IconBookOpen } from "@/registry/default/icon-book-open/icon-book-open";
+import { IconCoffee } from "@/registry/default/icon-coffee/icon-coffee";
+import { IconScissors } from "@/registry/default/icon-scissors/icon-scissors";
+import { IconUmbrella } from "@/registry/default/icon-umbrella/icon-umbrella";
 
 export const iconsRegistry = [
   {
@@ -342,9 +349,9 @@ export const iconsRegistry = [
   {
     name: "icon-anchor",
     component: IconAnchor,
-    color: "text-sky-400",
-    description: "Anchor with a weighted drop motion",
-    tags: ["anchor", "marine", "sea", "ship"],
+    color: "text-blue-200",
+    description: "Anchor with nautical swaying animation",
+    tags: ["anchor", "nautical", "sea", "ship"],
   },
   {
     name: "icon-angry",
@@ -1758,9 +1765,52 @@ export const iconsRegistry = [
   {
     name: "icon-frown",
     component: IconFrown,
-    color: "text-slate-400",
+    color: "text-rose-400",
     description: "Frown with subtle rotation and mouth-shift",
     tags: ["frown", "sad", "face", "emote"],
+  },
+  // Batch 5 Premium Icons
+  {
+    name: "icon-award",
+    component: IconAward,
+    color: "text-amber-300",
+    description: "Award with victory pulse and shine animation",
+    tags: ["award", "medal", "trophy", "success"],
+  },
+  {
+    name: "icon-beaker",
+    component: IconBeaker,
+    color: "text-emerald-300",
+    description: "Beaker with liquid rippling and bubbling animation",
+    tags: ["beaker", "science", "lab", "experiment"],
+  },
+  {
+    name: "icon-book-open",
+    component: IconBookOpen,
+    color: "text-amber-200",
+    description: "Book open with realistic page-flipping animation",
+    tags: ["book", "reading", "education", "knowledge"],
+  },
+  {
+    name: "icon-coffee",
+    component: IconCoffee,
+    color: "text-amber-800",
+    description: "Coffee with rising steam and gentle cup vibration",
+    tags: ["coffee", "cup", "drink", "warmth"],
+  },
+  {
+    name: "icon-scissors",
+    component: IconScissors,
+    color: "text-slate-200",
+    description: "Scissors with precise cutting blade rotation",
+    tags: ["scissors", "cut", "tool", "craft"],
+  },
+  {
+    name: "icon-umbrella",
+    component: IconUmbrella,
+    color: "text-rose-300",
+    description: "Umbrella with expanding canopy animation",
+    tags: ["umbrella", "weather", "rain", "shelter"],
   },
 ] as const;
 

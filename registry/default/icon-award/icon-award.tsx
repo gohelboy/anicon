@@ -2,29 +2,41 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconAnchorProps extends React.SVGProps<SVGSVGElement> {
+export interface IconAwardProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const anchorVariants: Variants = {
-  rest: { rotate: 0 },
+const awardVariants: Variants = {
+  rest: { scale: 1 },
   hover: {
-    rotate: [0, -10, 10, 0],
+    scale: [1, 1.1, 1],
     transition: {
-      duration: 2,
+      duration: 1.5,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-export function IconAnchor({
+const shineVariants: Variants = {
+  rest: { opacity: 0.5 },
+  hover: {
+    opacity: [0.5, 1, 0.5],
+    transition: {
+      duration: 1,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconAward({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconAnchorProps) {
+}: IconAwardProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -42,15 +54,16 @@ export function IconAnchor({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={anchorVariants}
+      variants={awardVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originX: "12px", originY: "5px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M12 7V2" />
-      <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
-      <circle cx="12" cy="5" r="3" />
-      <path d="M12 22V12" />
+      <circle cx="12" cy="8" r="7" />
+      <motion.polyline 
+        points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" 
+        variants={shineVariants}
+      />
     </motion.svg>
   );
 }
