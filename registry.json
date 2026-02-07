@@ -3077,6 +3077,201 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-battery-charging",
+      "type": "registry:component",
+      "title": "Animated Battery Charging",
+      "description": "Battery charging icon with pulsing bolt animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-battery-charging/icon-battery-charging.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloud-rain",
+      "type": "registry:component",
+      "title": "Animated Cloud Rain",
+      "description": "Cloud rain icon with sequential raindrop animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-rain/icon-cloud-rain.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloud-lightning",
+      "type": "registry:component",
+      "title": "Animated Cloud Lightning",
+      "description": "Cloud lightning icon with realistic flash animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-lightning/icon-cloud-lightning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-snowflake",
+      "type": "registry:component",
+      "title": "Animated Snowflake",
+      "description": "Snowflake icon with slow rotation animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-snowflake/icon-snowflake.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-flame",
+      "type": "registry:component",
+      "title": "Animated Flame",
+      "description": "Flame icon with flickering scale animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-flame/icon-flame.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-plane",
+      "type": "registry:component",
+      "title": "Animated Plane",
+      "description": "Plane icon with takeoff flight animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-plane/icon-plane.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-truck",
+      "type": "registry:component",
+      "title": "Animated Truck",
+      "description": "Truck with driving vibration and wheel rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-truck/icon-truck.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-scan",
+      "type": "registry:component",
+      "title": "Animated Scan",
+      "description": "Scan with corner pulse and horizontal line flicker.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-scan/icon-scan.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cpu",
+      "type": "registry:component",
+      "title": "Animated CPU",
+      "description": "CPU icon with processing circuitry animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cpu/icon-cpu.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-server",
+      "type": "registry:component",
+      "title": "Animated Server",
+      "description": "Server icon with blinking activity LED animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-server/icon-server.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bot",
+      "type": "registry:component",
+      "title": "Animated Bot",
+      "description": "Bot with blinking eyes and head tilt animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bot/icon-bot.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-smile",
+      "type": "registry:component",
+      "title": "Animated Smile",
+      "description": "Smile icon with mouth-drawing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-smile/icon-smile.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-frown",
+      "type": "registry:component",
+      "title": "Animated Frown",
+      "description": "Frown with subtle rotation and mouth-shift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-frown/icon-frown.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

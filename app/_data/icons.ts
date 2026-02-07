@@ -211,6 +211,20 @@ import { IconCreditCard } from "@/registry/default/icon-credit-card/icon-credit-
 import { IconShoppingBag } from "@/registry/default/icon-shopping-bag/icon-shopping-bag";
 import { IconCompass } from "@/registry/default/icon-compass/icon-compass";
 import { IconHardDrive } from "@/registry/default/icon-hard-drive/icon-hard-drive";
+// Batch 4 Premium Icons
+import { IconBatteryCharging } from "@/registry/default/icon-battery-charging/icon-battery-charging";
+import { IconCloudRain } from "@/registry/default/icon-cloud-rain/icon-cloud-rain";
+import { IconCloudLightning } from "@/registry/default/icon-cloud-lightning/icon-cloud-lightning";
+import { IconSnowflake } from "@/registry/default/icon-snowflake/icon-snowflake";
+import { IconFlame } from "@/registry/default/icon-flame/icon-flame";
+import { IconPlane } from "@/registry/default/icon-plane/icon-plane";
+import { IconTruck } from "@/registry/default/icon-truck/icon-truck";
+import { IconScan } from "@/registry/default/icon-scan/icon-scan";
+import { IconCpu } from "@/registry/default/icon-cpu/icon-cpu";
+import { IconServer } from "@/registry/default/icon-server/icon-server";
+import { IconBot } from "@/registry/default/icon-bot/icon-bot";
+import { IconSmile } from "@/registry/default/icon-smile/icon-smile";
+import { IconFrown } from "@/registry/default/icon-frown/icon-frown";
 
 export const iconsRegistry = [
   {
@@ -1655,6 +1669,98 @@ export const iconsRegistry = [
     color: "text-slate-300",
     description: "Hard drive with activity LED animation",
     tags: ["hard-drive", "storage", "disk", "server", "data"],
+  },
+  // Batch 4 Premium Icons
+  {
+    name: "icon-battery-charging",
+    component: IconBatteryCharging,
+    color: "text-emerald-400",
+    description: "Battery charging with pulsing bolt animation",
+    tags: ["battery", "charging", "power", "energy"],
+  },
+  {
+    name: "icon-cloud-rain",
+    component: IconCloudRain,
+    color: "text-sky-400",
+    description: "Cloud rain with sequential raindrop animation",
+    tags: ["cloud", "rain", "weather", "storm"],
+  },
+  {
+    name: "icon-cloud-lightning",
+    component: IconCloudLightning,
+    color: "text-yellow-400",
+    description: "Cloud lightning with realistic flash animation",
+    tags: ["cloud", "lightning", "weather", "storm"],
+  },
+  {
+    name: "icon-snowflake",
+    component: IconSnowflake,
+    color: "text-sky-200",
+    description: "Snowflake with slow rotation animation",
+    tags: ["snowflake", "winter", "cold", "weather"],
+  },
+  {
+    name: "icon-flame",
+    component: IconFlame,
+    color: "text-orange-500",
+    description: "Flame with flickering scale animation",
+    tags: ["flame", "fire", "hot", "burn"],
+  },
+  {
+    name: "icon-plane",
+    component: IconPlane,
+    color: "text-sky-300",
+    description: "Plane with takeoff flight animation",
+    tags: ["plane", "flight", "travel", "transport"],
+  },
+  {
+    name: "icon-truck",
+    component: IconTruck,
+    color: "text-amber-600",
+    description: "Truck with driving vibration and wheel rotation",
+    tags: ["truck", "delivery", "transport", "shipping"],
+  },
+  {
+    name: "icon-scan",
+    component: IconScan,
+    color: "text-sky-400",
+    description: "Scan with corner pulse and horizontal line flicker",
+    tags: ["scan", "qrcode", "barcode", "focus"],
+  },
+  {
+    name: "icon-cpu",
+    component: IconCpu,
+    color: "text-slate-400",
+    description: "CPU with processing circuitry animation",
+    tags: ["cpu", "processor", "chip", "computer"],
+  },
+  {
+    name: "icon-server",
+    component: IconServer,
+    color: "text-slate-300",
+    description: "Server with blinking activity LED animation",
+    tags: ["server", "data", "hosting", "storage"],
+  },
+  {
+    name: "icon-bot",
+    component: IconBot,
+    color: "text-sky-300",
+    description: "Bot with blinking eyes and head tilt animation",
+    tags: ["bot", "ai", "robot", "chat"],
+  },
+  {
+    name: "icon-smile",
+    component: IconSmile,
+    color: "text-amber-400",
+    description: "Smile with mouth-drawing animation",
+    tags: ["smile", "happy", "face", "emote"],
+  },
+  {
+    name: "icon-frown",
+    component: IconFrown,
+    color: "text-slate-400",
+    description: "Frown with subtle rotation and mouth-shift",
+    tags: ["frown", "sad", "face", "emote"],
   },
 ] as const;
 
