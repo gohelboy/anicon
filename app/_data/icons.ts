@@ -41,6 +41,23 @@ import { IconArrowDownRight } from "@/registry/default/icon-arrow-down-right/ico
 import { IconArrowDownRightFromCircle } from "@/registry/default/icon-arrow-down-right-from-circle/icon-arrow-down-right-from-circle";
 import { IconArrowDownRightFromSquare } from "@/registry/default/icon-arrow-down-right-from-square/icon-arrow-down-right-from-square";
 import { IconArrowDownRightSquare } from "@/registry/default/icon-arrow-down-right-square/icon-arrow-down-right-square";
+import { IconArrowDownSquare } from "@/registry/default/icon-arrow-down-square/icon-arrow-down-square";
+import { IconArrowDownToDot } from "@/registry/default/icon-arrow-down-to-dot/icon-arrow-down-to-dot";
+import { IconArrowDownToLine } from "@/registry/default/icon-arrow-down-to-line/icon-arrow-down-to-line";
+import { IconArrowDownUp } from "@/registry/default/icon-arrow-down-up/icon-arrow-down-up";
+import { IconArrowDownWideNarrow } from "@/registry/default/icon-arrow-down-wide-narrow/icon-arrow-down-wide-narrow";
+import { IconArrowDownZA } from "@/registry/default/icon-arrow-down-z-a/icon-arrow-down-z-a";
+import { IconArrowDownZAAlt } from "@/registry/default/icon-arrow-down-za/icon-arrow-down-za";
+import { IconArrowLeftCircle } from "@/registry/default/icon-arrow-left-circle/icon-arrow-left-circle";
+import { IconArrowLeftFromLine } from "@/registry/default/icon-arrow-left-from-line/icon-arrow-left-from-line";
+import { IconArrowLeftRight } from "@/registry/default/icon-arrow-left-right/icon-arrow-left-right";
+import { IconArrowLeftSquare } from "@/registry/default/icon-arrow-left-square/icon-arrow-left-square";
+import { IconArrowLeftToLine } from "@/registry/default/icon-arrow-left-to-line/icon-arrow-left-to-line";
+import { IconArrowRightCircle } from "@/registry/default/icon-arrow-right-circle/icon-arrow-right-circle";
+import { IconArrowRightFromLine } from "@/registry/default/icon-arrow-right-from-line/icon-arrow-right-from-line";
+import { IconArrowRightLeft } from "@/registry/default/icon-arrow-right-left/icon-arrow-right-left";
+import { IconArrowRightSquare } from "@/registry/default/icon-arrow-right-square/icon-arrow-right-square";
+import { IconArrowRightToLine } from "@/registry/default/icon-arrow-right-to-line/icon-arrow-right-to-line";
 import { IconAlarmClock } from "@/registry/default/icon-alarm-clock/icon-alarm-clock";
 import { IconAlarmClockCheck } from "@/registry/default/icon-alarm-clock-check/icon-alarm-clock-check";
 import { IconAlarmClockMinus } from "@/registry/default/icon-alarm-clock-minus/icon-alarm-clock-minus";
@@ -492,6 +509,125 @@ export const iconsRegistry = [
     color: "text-white",
     description: "Arrow down-right inside a square",
     tags: ["arrow", "down-right", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-down-square",
+    component: IconArrowDownSquare,
+    color: "text-white",
+    description: "Arrow down inside a square",
+    tags: ["arrow", "down", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-down-to-dot",
+    component: IconArrowDownToDot,
+    color: "text-white",
+    description: "Arrow down pointing to a dot",
+    tags: ["arrow", "down", "dot", "direction"],
+  },
+  {
+    name: "icon-arrow-down-to-line",
+    component: IconArrowDownToLine,
+    color: "text-white",
+    description: "Arrow down pointing to a line",
+    tags: ["arrow", "down", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-down-up",
+    component: IconArrowDownUp,
+    color: "text-white",
+    description: "Opposing up and down arrows",
+    tags: ["arrow", "up", "down", "swap", "direction"],
+  },
+  {
+    name: "icon-arrow-down-wide-narrow",
+    component: IconArrowDownWideNarrow,
+    color: "text-white",
+    description: "Arrow down with wide-to-narrow bars",
+    tags: ["arrow", "down", "sort", "layout"],
+  },
+  {
+    name: "icon-arrow-down-z-a",
+    component: IconArrowDownZA,
+    color: "text-white",
+    description: "Sort Z to A with a down arrow",
+    tags: ["arrow", "down", "sort", "z-a", "letters"],
+  },
+  {
+    name: "icon-arrow-down-za",
+    component: IconArrowDownZAAlt,
+    color: "text-white",
+    description: "Compact Z to A sort arrow",
+    tags: ["arrow", "down", "sort", "z-a", "letters"],
+  },
+  {
+    name: "icon-arrow-left-circle",
+    component: IconArrowLeftCircle,
+    color: "text-white",
+    description: "Arrow left inside a circle",
+    tags: ["arrow", "left", "circle", "direction"],
+  },
+  {
+    name: "icon-arrow-left-from-line",
+    component: IconArrowLeftFromLine,
+    color: "text-white",
+    description: "Arrow left leaving a vertical line",
+    tags: ["arrow", "left", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-left-right",
+    component: IconArrowLeftRight,
+    color: "text-white",
+    description: "Two-way arrows left and right",
+    tags: ["arrow", "left", "right", "swap", "direction"],
+  },
+  {
+    name: "icon-arrow-left-square",
+    component: IconArrowLeftSquare,
+    color: "text-white",
+    description: "Arrow left inside a square",
+    tags: ["arrow", "left", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-left-to-line",
+    component: IconArrowLeftToLine,
+    color: "text-white",
+    description: "Arrow left pointing to a line",
+    tags: ["arrow", "left", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-right-circle",
+    component: IconArrowRightCircle,
+    color: "text-white",
+    description: "Arrow right inside a circle",
+    tags: ["arrow", "right", "circle", "direction"],
+  },
+  {
+    name: "icon-arrow-right-from-line",
+    component: IconArrowRightFromLine,
+    color: "text-white",
+    description: "Arrow right leaving a vertical line",
+    tags: ["arrow", "right", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-right-left",
+    component: IconArrowRightLeft,
+    color: "text-white",
+    description: "Two-way arrows right and left",
+    tags: ["arrow", "right", "left", "swap", "direction"],
+  },
+  {
+    name: "icon-arrow-right-square",
+    component: IconArrowRightSquare,
+    color: "text-white",
+    description: "Arrow right inside a square",
+    tags: ["arrow", "right", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-right-to-line",
+    component: IconArrowRightToLine,
+    color: "text-white",
+    description: "Arrow right pointing to a line",
+    tags: ["arrow", "right", "line", "direction"],
   },
   {
     name: "icon-album",

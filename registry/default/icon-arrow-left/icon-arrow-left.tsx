@@ -35,8 +35,8 @@ export function IconArrowLeft({
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      whileHover={{ x: -2 }}
-      whileTap={{ scale: 0.95 }}
+      whileHover={prefersReducedMotion ? undefined : { x: -2 }}
+      whileTap={prefersReducedMotion ? undefined : { scale: 0.95 }}
       transition={{ type: "spring", stiffness: 400, damping: 17 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
