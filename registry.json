@@ -139,6 +139,156 @@
       ]
     },
     {
+      "name": "icon-amphora",
+      "type": "registry:component",
+      "title": "Animated Amphora",
+      "description": "Amphora icon with a gentle ceramic sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-amphora/icon-amphora.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-anchor",
+      "type": "registry:component",
+      "title": "Animated Anchor",
+      "description": "Anchor icon with a weighted drop motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-anchor/icon-anchor.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-angry",
+      "type": "registry:component",
+      "title": "Animated Angry",
+      "description": "Angry face icon with tense brows and frown.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-angry/icon-angry.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-annoyed",
+      "type": "registry:component",
+      "title": "Animated Annoyed",
+      "description": "Annoyed face icon with a flat mouth drift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-annoyed/icon-annoyed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-antenna",
+      "type": "registry:component",
+      "title": "Animated Antenna",
+      "description": "Antenna icon with a pulsing signal beam.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-antenna/icon-antenna.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-anvil",
+      "type": "registry:component",
+      "title": "Animated Anvil",
+      "description": "Anvil icon with a heavy strike bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-anvil/icon-anvil.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-aperture",
+      "type": "registry:component",
+      "title": "Animated Aperture",
+      "description": "Aperture icon with a shutter twist.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-aperture/icon-aperture.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-app-window",
+      "type": "registry:component",
+      "title": "Animated App Window",
+      "description": "App window icon with a sliding title bar.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-app-window/icon-app-window.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-app-window-mac",
+      "type": "registry:component",
+      "title": "Animated App Window Mac",
+      "description": "Mac window icon with bouncing control dots.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-app-window-mac/icon-app-window-mac.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-apple",
+      "type": "registry:component",
+      "title": "Animated Apple",
+      "description": "Apple icon with a subtle stem tilt.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-apple/icon-apple.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-alarm-clock",
       "type": "registry:component",
       "title": "Animated Alarm Clock",
