@@ -2492,6 +2492,306 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-folder",
+      "type": "registry:component",
+      "title": "Animated Folder",
+      "description": "Folder icon with opening flap and document.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-folder/icon-folder.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-file",
+      "type": "registry:component",
+      "title": "Animated File",
+      "description": "File icon with lift and fold animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-file/icon-file.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-refresh-cw",
+      "type": "registry:component",
+      "title": "Animated Refresh",
+      "description": "Refresh icon with clockwise rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-refresh-cw/icon-refresh-cw.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-volume-2",
+      "type": "registry:component",
+      "title": "Animated Volume",
+      "description": "Speaker icon with pulsing sound waves.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-volume-2/icon-volume-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-wifi",
+      "type": "registry:component",
+      "title": "Animated WiFi",
+      "description": "WiFi icon with radiating signal waves.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-wifi/icon-wifi.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar",
+      "type": "registry:component",
+      "title": "Animated Calendar",
+      "description": "Calendar icon with page flip animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar/icon-calendar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-camera",
+      "type": "registry:component",
+      "title": "Animated Camera",
+      "description": "Camera icon with shutter flash animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-camera/icon-camera.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-mic",
+      "type": "registry:component",
+      "title": "Animated Microphone",
+      "description": "Microphone icon with pulsing audio waves.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-mic/icon-mic.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-power",
+      "type": "registry:component",
+      "title": "Animated Power",
+      "description": "Power button icon with glow effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-power/icon-power.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-terminal",
+      "type": "registry:component",
+      "title": "Animated Terminal",
+      "description": "Terminal icon with blinking cursor.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-terminal/icon-terminal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-share",
+      "type": "registry:component",
+      "title": "Animated Share",
+      "description": "Share icon with spreading nodes animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-share/icon-share.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bookmark",
+      "type": "registry:component",
+      "title": "Animated Bookmark",
+      "description": "Bookmark icon with fold-down animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bookmark/icon-bookmark.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-zap",
+      "type": "registry:component",
+      "title": "Animated Zap",
+      "description": "Zap icon with electric flash effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-zap/icon-zap.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user",
+      "type": "registry:component",
+      "title": "Animated User",
+      "description": "User icon with head nod animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user/icon-user.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-log-in",
+      "type": "registry:component",
+      "title": "Animated Log In",
+      "description": "Log in icon with arrow sliding into door.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-log-in/icon-log-in.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-log-out",
+      "type": "registry:component",
+      "title": "Animated Log Out",
+      "description": "Log out icon with arrow sliding out of door.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-log-out/icon-log-out.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shopping-cart",
+      "type": "registry:component",
+      "title": "Animated Shopping Cart",
+      "description": "Shopping cart icon with rolling wheels.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shopping-cart/icon-shopping-cart.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-gift",
+      "type": "registry:component",
+      "title": "Animated Gift",
+      "description": "Gift icon with shaking box and lifting lid.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-gift/icon-gift.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloud",
+      "type": "registry:component",
+      "title": "Animated Cloud",
+      "description": "Cloud icon with gentle float animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud/icon-cloud.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sun",
+      "type": "registry:component",
+      "title": "Animated Sun",
+      "description": "Sun icon with rotation and pulsing rays.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sun/icon-sun.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

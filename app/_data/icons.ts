@@ -169,6 +169,27 @@ import { IconLock } from "@/registry/default/icon-lock/icon-lock";
 import { IconUnlock } from "@/registry/default/icon-unlock/icon-unlock";
 import { IconStar } from "@/registry/default/icon-star/icon-star";
 import { IconLoader } from "@/registry/default/icon-loader/icon-loader";
+// Premium Icons
+import { IconFolder } from "@/registry/default/icon-folder/icon-folder";
+import { IconFile } from "@/registry/default/icon-file/icon-file";
+import { IconRefreshCw } from "@/registry/default/icon-refresh-cw/icon-refresh-cw";
+import { IconVolume2 } from "@/registry/default/icon-volume-2/icon-volume-2";
+import { IconWifi } from "@/registry/default/icon-wifi/icon-wifi";
+import { IconCalendar } from "@/registry/default/icon-calendar/icon-calendar";
+import { IconCamera } from "@/registry/default/icon-camera/icon-camera";
+import { IconMic } from "@/registry/default/icon-mic/icon-mic";
+import { IconPower } from "@/registry/default/icon-power/icon-power";
+import { IconTerminal } from "@/registry/default/icon-terminal/icon-terminal";
+import { IconShare } from "@/registry/default/icon-share/icon-share";
+import { IconBookmark } from "@/registry/default/icon-bookmark/icon-bookmark";
+import { IconZap } from "@/registry/default/icon-zap/icon-zap";
+import { IconUser } from "@/registry/default/icon-user/icon-user";
+import { IconLogIn } from "@/registry/default/icon-log-in/icon-log-in";
+import { IconLogOut } from "@/registry/default/icon-log-out/icon-log-out";
+import { IconShoppingCart } from "@/registry/default/icon-shopping-cart/icon-shopping-cart";
+import { IconGift } from "@/registry/default/icon-gift/icon-gift";
+import { IconCloud } from "@/registry/default/icon-cloud/icon-cloud";
+import { IconSun } from "@/registry/default/icon-sun/icon-sun";
 
 export const iconsRegistry = [
   {
@@ -1337,6 +1358,147 @@ export const iconsRegistry = [
     color: "text-sky-400",
     description: "Loader with continuous rotation",
     tags: ["loader", "loading", "spinner", "wait"],
+  },
+  // Premium Icons
+  {
+    name: "icon-folder",
+    component: IconFolder,
+    color: "text-amber-400",
+    description: "Folder with flap opening and document peeking animation",
+    tags: ["folder", "file", "directory", "storage"],
+  },
+  {
+    name: "icon-file",
+    component: IconFile,
+    color: "text-slate-300",
+    description: "File with lift-up and corner fold animation",
+    tags: ["file", "document", "paper"],
+  },
+  {
+    name: "icon-refresh-cw",
+    component: IconRefreshCw,
+    color: "text-emerald-400",
+    description: "Refresh icon with clockwise rotation",
+    tags: ["refresh", "reload", "update", "sync"],
+  },
+  {
+    name: "icon-volume-2",
+    component: IconVolume2,
+    color: "text-slate-200",
+    description: "Speaker with pulsing sound waves",
+    tags: ["volume", "speaker", "audio", "sound"],
+  },
+  {
+    name: "icon-wifi",
+    component: IconWifi,
+    color: "text-sky-400",
+    description: "WiFi signal with radiating ripples",
+    tags: ["wifi", "network", "signal", "internet"],
+  },
+  {
+    name: "icon-calendar",
+    component: IconCalendar,
+    color: "text-rose-400",
+    description: "Calendar with page-flipping animation",
+    tags: ["calendar", "date", "event", "schedule"],
+  },
+  {
+    name: "icon-camera",
+    component: IconCamera,
+    color: "text-slate-300",
+    description: "Camera with shutter and flash animation",
+    tags: ["camera", "photo", "image", "capture"],
+  },
+  {
+    name: "icon-mic",
+    component: IconMic,
+    color: "text-white",
+    description: "Microphone with pulsing audio waves",
+    tags: ["mic", "microphone", "audio", "record"],
+  },
+  {
+    name: "icon-power",
+    component: IconPower,
+    color: "text-rose-500",
+    description: "Power button with on/off glow effect",
+    tags: ["power", "switch", "toggle", "on", "off"],
+  },
+  {
+    name: "icon-terminal",
+    component: IconTerminal,
+    color: "text-emerald-500",
+    description: "Terminal with blinking cursor and prompt shift",
+    tags: ["terminal", "code", "command", "prompt"],
+  },
+  {
+    name: "icon-share",
+    component: IconShare,
+    color: "text-sky-400",
+    description: "Share icon with nodes spreading outward",
+    tags: ["share", "nodes", "network", "social"],
+  },
+  {
+    name: "icon-bookmark",
+    component: IconBookmark,
+    color: "text-amber-400",
+    description: "Bookmark that folds down like on a page",
+    tags: ["bookmark", "favorite", "save"],
+  },
+  {
+    name: "icon-zap",
+    component: IconZap,
+    color: "text-yellow-400",
+    description: "Lightning bolt with electric flash effect",
+    tags: ["zap", "lightning", "energy", "flash", "power"],
+  },
+  {
+    name: "icon-user",
+    component: IconUser,
+    color: "text-slate-300",
+    description: "User icon with friendly head nod animation",
+    tags: ["user", "person", "profile", "account"],
+  },
+  {
+    name: "icon-log-in",
+    component: IconLogIn,
+    color: "text-emerald-400",
+    description: "Log in with arrow sliding through door",
+    tags: ["log-in", "signin", "enter", "door"],
+  },
+  {
+    name: "icon-log-out",
+    component: IconLogOut,
+    color: "text-rose-400",
+    description: "Log out with arrow exiting through door",
+    tags: ["log-out", "signout", "exit", "door"],
+  },
+  {
+    name: "icon-shopping-cart",
+    component: IconShoppingCart,
+    color: "text-slate-200",
+    description: "Shopping cart rolling with spinning wheels",
+    tags: ["cart", "shopping", "ecommerce", "buy"],
+  },
+  {
+    name: "icon-gift",
+    component: IconGift,
+    color: "text-rose-400",
+    description: "Gift box box that shakes and lid lifts",
+    tags: ["gift", "present", "box", "reward", "surprise"],
+  },
+  {
+    name: "icon-cloud",
+    component: IconCloud,
+    color: "text-sky-200",
+    description: "Cloud that floats gently like in the sky",
+    tags: ["cloud", "weather", "float", "sky"],
+  },
+  {
+    name: "icon-sun",
+    component: IconSun,
+    color: "text-amber-400",
+    description: "Sun rotating with radiating ray pulses",
+    tags: ["sun", "weather", "light", "day", "warmth"],
   },
 ] as const;
 
