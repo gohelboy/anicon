@@ -10,12 +10,89 @@ import { IconActivity } from "@/registry/default/icon-activity/icon-activity";
 import { IconActivitySquare } from "@/registry/default/icon-activity-square/icon-activity-square";
 import { IconAirVent } from "@/registry/default/icon-air-vent/icon-air-vent";
 import { IconAirplay } from "@/registry/default/icon-airplay/icon-airplay";
+import { IconAmphora } from "@/registry/default/icon-amphora/icon-amphora";
+import { IconArchive } from "@/registry/default/icon-archive/icon-archive";
+import { IconArchiveRestore } from "@/registry/default/icon-archive-restore/icon-archive-restore";
+import { IconArchiveX } from "@/registry/default/icon-archive-x/icon-archive-x";
+import { IconAreaChart } from "@/registry/default/icon-area-chart/icon-area-chart";
+import { IconArmchair } from "@/registry/default/icon-armchair/icon-armchair";
+import { IconArrowBigDown } from "@/registry/default/icon-arrow-big-down/icon-arrow-big-down";
+import { IconArrowBigDownDash } from "@/registry/default/icon-arrow-big-down-dash/icon-arrow-big-down-dash";
+import { IconArrowBigLeft } from "@/registry/default/icon-arrow-big-left/icon-arrow-big-left";
+import { IconArrowBigLeftDash } from "@/registry/default/icon-arrow-big-left-dash/icon-arrow-big-left-dash";
+import { IconArrowBigRight } from "@/registry/default/icon-arrow-big-right/icon-arrow-big-right";
+import { IconArrowBigRightDash } from "@/registry/default/icon-arrow-big-right-dash/icon-arrow-big-right-dash";
+import { IconArrowBigUp } from "@/registry/default/icon-arrow-big-up/icon-arrow-big-up";
+import { IconArrowBigUpDash } from "@/registry/default/icon-arrow-big-up-dash/icon-arrow-big-up-dash";
+import { IconArrowDown10 } from "@/registry/default/icon-arrow-down-1-0/icon-arrow-down-1-0";
+import { IconArrowDown10Alt } from "@/registry/default/icon-arrow-down-10/icon-arrow-down-10";
+import { IconArrowDownAZ } from "@/registry/default/icon-arrow-down-a-z/icon-arrow-down-a-z";
+import { IconArrowDownAZAlt } from "@/registry/default/icon-arrow-down-az/icon-arrow-down-az";
+import { IconArrowDown01 } from "@/registry/default/icon-arrow-down-0-1/icon-arrow-down-0-1";
+import { IconArrowDown01Alt } from "@/registry/default/icon-arrow-down-01/icon-arrow-down-01";
+import { IconArrowDownCircle } from "@/registry/default/icon-arrow-down-circle/icon-arrow-down-circle";
+import { IconArrowDownFromLine } from "@/registry/default/icon-arrow-down-from-line/icon-arrow-down-from-line";
+import { IconArrowDownLeft } from "@/registry/default/icon-arrow-down-left/icon-arrow-down-left";
+import { IconArrowDownLeftFromCircle } from "@/registry/default/icon-arrow-down-left-from-circle/icon-arrow-down-left-from-circle";
+import { IconArrowDownLeftFromSquare } from "@/registry/default/icon-arrow-down-left-from-square/icon-arrow-down-left-from-square";
+import { IconArrowDownLeftSquare } from "@/registry/default/icon-arrow-down-left-square/icon-arrow-down-left-square";
+import { IconArrowDownNarrowWide } from "@/registry/default/icon-arrow-down-narrow-wide/icon-arrow-down-narrow-wide";
+import { IconArrowDownRight } from "@/registry/default/icon-arrow-down-right/icon-arrow-down-right";
+import { IconArrowDownRightFromCircle } from "@/registry/default/icon-arrow-down-right-from-circle/icon-arrow-down-right-from-circle";
+import { IconArrowDownRightFromSquare } from "@/registry/default/icon-arrow-down-right-from-square/icon-arrow-down-right-from-square";
+import { IconArrowDownRightSquare } from "@/registry/default/icon-arrow-down-right-square/icon-arrow-down-right-square";
+import { IconArrowDownSquare } from "@/registry/default/icon-arrow-down-square/icon-arrow-down-square";
+import { IconArrowDownToDot } from "@/registry/default/icon-arrow-down-to-dot/icon-arrow-down-to-dot";
+import { IconArrowDownToLine } from "@/registry/default/icon-arrow-down-to-line/icon-arrow-down-to-line";
+import { IconArrowDownUp } from "@/registry/default/icon-arrow-down-up/icon-arrow-down-up";
+import { IconArrowDownWideNarrow } from "@/registry/default/icon-arrow-down-wide-narrow/icon-arrow-down-wide-narrow";
+import { IconArrowDownZA } from "@/registry/default/icon-arrow-down-z-a/icon-arrow-down-z-a";
+import { IconArrowDownZAAlt } from "@/registry/default/icon-arrow-down-za/icon-arrow-down-za";
+import { IconArrowLeftCircle } from "@/registry/default/icon-arrow-left-circle/icon-arrow-left-circle";
+import { IconArrowLeftFromLine } from "@/registry/default/icon-arrow-left-from-line/icon-arrow-left-from-line";
+import { IconArrowLeftRight } from "@/registry/default/icon-arrow-left-right/icon-arrow-left-right";
+import { IconArrowLeftSquare } from "@/registry/default/icon-arrow-left-square/icon-arrow-left-square";
+import { IconArrowLeftToLine } from "@/registry/default/icon-arrow-left-to-line/icon-arrow-left-to-line";
+import { IconArrowRightCircle } from "@/registry/default/icon-arrow-right-circle/icon-arrow-right-circle";
+import { IconArrowRightFromLine } from "@/registry/default/icon-arrow-right-from-line/icon-arrow-right-from-line";
+import { IconArrowRightLeft } from "@/registry/default/icon-arrow-right-left/icon-arrow-right-left";
+import { IconArrowRightSquare } from "@/registry/default/icon-arrow-right-square/icon-arrow-right-square";
+import { IconArrowRightToLine } from "@/registry/default/icon-arrow-right-to-line/icon-arrow-right-to-line";
+import { IconArrowUp01 } from "@/registry/default/icon-arrow-up-0-1/icon-arrow-up-0-1";
+import { IconArrowUp01Alt } from "@/registry/default/icon-arrow-up-01/icon-arrow-up-01";
+import { IconArrowUp10 } from "@/registry/default/icon-arrow-up-1-0/icon-arrow-up-1-0";
+import { IconArrowUp10Alt } from "@/registry/default/icon-arrow-up-10/icon-arrow-up-10";
+import { IconArrowUpAZ } from "@/registry/default/icon-arrow-up-a-z/icon-arrow-up-a-z";
+import { IconArrowUpAZAlt } from "@/registry/default/icon-arrow-up-az/icon-arrow-up-az";
+import { IconArrowUpCircle } from "@/registry/default/icon-arrow-up-circle/icon-arrow-up-circle";
+import { IconArrowUpDown } from "@/registry/default/icon-arrow-up-down/icon-arrow-up-down";
+import { IconArrowUpFromDot } from "@/registry/default/icon-arrow-up-from-dot/icon-arrow-up-from-dot";
+import { IconArrowUpFromLine } from "@/registry/default/icon-arrow-up-from-line/icon-arrow-up-from-line";
+import { IconArrowUpLeft } from "@/registry/default/icon-arrow-up-left/icon-arrow-up-left";
+import { IconArrowUpLeftFromCircle } from "@/registry/default/icon-arrow-up-left-from-circle/icon-arrow-up-left-from-circle";
+import { IconArrowUpLeftFromSquare } from "@/registry/default/icon-arrow-up-left-from-square/icon-arrow-up-left-from-square";
+import { IconArrowUpLeftSquare } from "@/registry/default/icon-arrow-up-left-square/icon-arrow-up-left-square";
+import { IconArrowUpNarrowWide } from "@/registry/default/icon-arrow-up-narrow-wide/icon-arrow-up-narrow-wide";
+import { IconArrowUpRight } from "@/registry/default/icon-arrow-up-right/icon-arrow-up-right";
+import { IconArrowUpRightFromCircle } from "@/registry/default/icon-arrow-up-right-from-circle/icon-arrow-up-right-from-circle";
+import { IconArrowUpRightFromSquare } from "@/registry/default/icon-arrow-up-right-from-square/icon-arrow-up-right-from-square";
+import { IconArrowUpRightSquare } from "@/registry/default/icon-arrow-up-right-square/icon-arrow-up-right-square";
+import { IconArrowUpSquare } from "@/registry/default/icon-arrow-up-square/icon-arrow-up-square";
 import { IconAlarmClock } from "@/registry/default/icon-alarm-clock/icon-alarm-clock";
 import { IconAlarmClockCheck } from "@/registry/default/icon-alarm-clock-check/icon-alarm-clock-check";
 import { IconAlarmClockMinus } from "@/registry/default/icon-alarm-clock-minus/icon-alarm-clock-minus";
 import { IconAlarmClockOff } from "@/registry/default/icon-alarm-clock-off/icon-alarm-clock-off";
 import { IconAlarmClockPlus } from "@/registry/default/icon-alarm-clock-plus/icon-alarm-clock-plus";
 import { IconAlarmSmoke } from "@/registry/default/icon-alarm-smoke/icon-alarm-smoke";
+import { IconAnchor } from "@/registry/default/icon-anchor/icon-anchor";
+import { IconAngry } from "@/registry/default/icon-angry/icon-angry";
+import { IconAnnoyed } from "@/registry/default/icon-annoyed/icon-annoyed";
+import { IconAntenna } from "@/registry/default/icon-antenna/icon-antenna";
+import { IconAnvil } from "@/registry/default/icon-anvil/icon-anvil";
+import { IconAperture } from "@/registry/default/icon-aperture/icon-aperture";
+import { IconAppWindow } from "@/registry/default/icon-app-window/icon-app-window";
+import { IconAppWindowMac } from "@/registry/default/icon-app-window-mac/icon-app-window-mac";
+import { IconApple } from "@/registry/default/icon-apple/icon-apple";
 import { IconAlbum } from "@/registry/default/icon-album/icon-album";
 import { IconAlertCircle } from "@/registry/default/icon-alert-circle/icon-alert-circle";
 import { IconAlertOctagon } from "@/registry/default/icon-alert-octagon/icon-alert-octagon";
@@ -39,6 +116,16 @@ import { IconAlignRight } from "@/registry/default/icon-align-right/icon-align-r
 import { IconAlignStartHorizontal } from "@/registry/default/icon-align-start-horizontal/icon-align-start-horizontal";
 import { IconAlignStartVertical } from "@/registry/default/icon-align-start-vertical/icon-align-start-vertical";
 import { IconAlignVerticalDistributeCenter } from "@/registry/default/icon-align-vertical-distribute-center/icon-align-vertical-distribute-center";
+import { IconAlignVerticalDistributeEnd } from "@/registry/default/icon-align-vertical-distribute-end/icon-align-vertical-distribute-end";
+import { IconAlignVerticalDistributeStart } from "@/registry/default/icon-align-vertical-distribute-start/icon-align-vertical-distribute-start";
+import { IconAlignVerticalJustifyCenter } from "@/registry/default/icon-align-vertical-justify-center/icon-align-vertical-justify-center";
+import { IconAlignVerticalJustifyEnd } from "@/registry/default/icon-align-vertical-justify-end/icon-align-vertical-justify-end";
+import { IconAlignVerticalJustifyStart } from "@/registry/default/icon-align-vertical-justify-start/icon-align-vertical-justify-start";
+import { IconAlignVerticalSpaceAround } from "@/registry/default/icon-align-vertical-space-around/icon-align-vertical-space-around";
+import { IconAlignVerticalSpaceBetween } from "@/registry/default/icon-align-vertical-space-between/icon-align-vertical-space-between";
+import { IconAmbulance } from "@/registry/default/icon-ambulance/icon-ambulance";
+import { IconAmpersand } from "@/registry/default/icon-ampersand/icon-ampersand";
+import { IconAmpersands } from "@/registry/default/icon-ampersands/icon-ampersands";
 import { IconChevronDown } from "@/registry/default/icon-chevron-down/icon-chevron-down";
 import { IconChevronLeft } from "@/registry/default/icon-chevron-left/icon-chevron-left";
 import { IconChevronRight } from "@/registry/default/icon-chevron-right/icon-chevron-right";
@@ -122,6 +209,13 @@ export const iconsRegistry = [
     tags: ["airplay", "cast", "stream", "screen"],
   },
   {
+    name: "icon-amphora",
+    component: IconAmphora,
+    color: "text-orange-300",
+    description: "Amphora with a gentle ceramic sway",
+    tags: ["amphora", "vase", "pottery", "history"],
+  },
+  {
     name: "icon-alarm-clock",
     component: IconAlarmClock,
     color: "text-amber-400",
@@ -162,6 +256,538 @@ export const iconsRegistry = [
     color: "text-orange-300",
     description: "Alarm smoke icon with drifting trails",
     tags: ["alarm", "smoke", "alert", "safety"],
+  },
+  {
+    name: "icon-anchor",
+    component: IconAnchor,
+    color: "text-sky-400",
+    description: "Anchor with a weighted drop motion",
+    tags: ["anchor", "marine", "sea", "ship"],
+  },
+  {
+    name: "icon-angry",
+    component: IconAngry,
+    color: "text-rose-400",
+    description: "Angry face with tense brows and frown",
+    tags: ["angry", "emotion", "face", "mood"],
+  },
+  {
+    name: "icon-annoyed",
+    component: IconAnnoyed,
+    color: "text-rose-400",
+    description: "Annoyed face with flat mouth drift",
+    tags: ["annoyed", "emotion", "face", "mood"],
+  },
+  {
+    name: "icon-antenna",
+    component: IconAntenna,
+    color: "text-sky-300",
+    description: "Antenna with a pulsing signal beam",
+    tags: ["antenna", "signal", "broadcast", "wifi"],
+  },
+  {
+    name: "icon-anvil",
+    component: IconAnvil,
+    color: "text-zinc-300",
+    description: "Anvil with a heavy strike bounce",
+    tags: ["anvil", "metal", "forge", "tool"],
+  },
+  {
+    name: "icon-aperture",
+    component: IconAperture,
+    color: "text-white",
+    description: "Aperture blades with a shutter twist",
+    tags: ["aperture", "camera", "photo", "lens"],
+  },
+  {
+    name: "icon-app-window",
+    component: IconAppWindow,
+    color: "text-white",
+    description: "App window with a sliding title bar",
+    tags: ["app", "window", "ui", "layout"],
+  },
+  {
+    name: "icon-app-window-mac",
+    component: IconAppWindowMac,
+    color: "text-white",
+    description: "Mac window with bouncing control dots",
+    tags: ["app", "window", "mac", "ui"],
+  },
+  {
+    name: "icon-apple",
+    component: IconApple,
+    color: "text-emerald-400",
+    description: "Apple with a subtle stem tilt",
+    tags: ["apple", "fruit", "food", "brand"],
+  },
+  {
+    name: "icon-archive",
+    component: IconArchive,
+    color: "text-zinc-300",
+    description: "Archive box with a lifting lid",
+    tags: ["archive", "box", "storage"],
+  },
+  {
+    name: "icon-archive-restore",
+    component: IconArchiveRestore,
+    color: "text-zinc-300",
+    description: "Archive restore with an upward arrow",
+    tags: ["archive", "restore", "upload"],
+  },
+  {
+    name: "icon-archive-x",
+    component: IconArchiveX,
+    color: "text-rose-400",
+    description: "Archive with a rotating X mark",
+    tags: ["archive", "delete", "remove"],
+  },
+  {
+    name: "icon-area-chart",
+    component: IconAreaChart,
+    color: "text-emerald-400",
+    description: "Area chart with a rising fill",
+    tags: ["chart", "area", "analytics"],
+  },
+  {
+    name: "icon-armchair",
+    component: IconArmchair,
+    color: "text-amber-300",
+    description: "Armchair with a soft cushion bounce",
+    tags: ["armchair", "chair", "furniture"],
+  },
+  {
+    name: "icon-arrow-big-down",
+    component: IconArrowBigDown,
+    color: "text-white",
+    description: "Big arrow down with a strong drop",
+    tags: ["arrow", "down", "direction"],
+  },
+  {
+    name: "icon-arrow-big-down-dash",
+    component: IconArrowBigDownDash,
+    color: "text-white",
+    description: "Big arrow down with a pulsing dash",
+    tags: ["arrow", "down", "direction", "dash"],
+  },
+  {
+    name: "icon-arrow-big-left",
+    component: IconArrowBigLeft,
+    color: "text-white",
+    description: "Big arrow left with a strong slide",
+    tags: ["arrow", "left", "direction"],
+  },
+  {
+    name: "icon-arrow-big-left-dash",
+    component: IconArrowBigLeftDash,
+    color: "text-white",
+    description: "Big arrow left with a pulsing dash",
+    tags: ["arrow", "left", "direction", "dash"],
+  },
+  {
+    name: "icon-arrow-big-right",
+    component: IconArrowBigRight,
+    color: "text-white",
+    description: "Big arrow right with a strong slide",
+    tags: ["arrow", "right", "direction"],
+  },
+  {
+    name: "icon-arrow-big-right-dash",
+    component: IconArrowBigRightDash,
+    color: "text-white",
+    description: "Big arrow right with a pulsing dash",
+    tags: ["arrow", "right", "direction", "dash"],
+  },
+  {
+    name: "icon-arrow-big-up",
+    component: IconArrowBigUp,
+    color: "text-white",
+    description: "Big arrow up with a strong lift",
+    tags: ["arrow", "up", "direction"],
+  },
+  {
+    name: "icon-arrow-big-up-dash",
+    component: IconArrowBigUpDash,
+    color: "text-white",
+    description: "Big arrow up with a pulsing dash",
+    tags: ["arrow", "up", "direction", "dash"],
+  },
+  {
+    name: "icon-arrow-down-0-1",
+    component: IconArrowDown01,
+    color: "text-white",
+    description: "Arrow down with 0-1 sorting motion",
+    tags: ["arrow", "down", "sort", "numbers"],
+  },
+  {
+    name: "icon-arrow-down-01",
+    component: IconArrowDown01Alt,
+    color: "text-white",
+    description: "Arrow down with 01 sorting motion",
+    tags: ["arrow", "down", "sort", "numbers"],
+  },
+  {
+    name: "icon-arrow-down-1-0",
+    component: IconArrowDown10,
+    color: "text-white",
+    description: "Arrow down with 1-0 sorting motion",
+    tags: ["arrow", "down", "sort", "numbers"],
+  },
+  {
+    name: "icon-arrow-down-10",
+    component: IconArrowDown10Alt,
+    color: "text-white",
+    description: "Arrow down with 10 sorting motion",
+    tags: ["arrow", "down", "sort", "numbers"],
+  },
+  {
+    name: "icon-arrow-down-a-z",
+    component: IconArrowDownAZ,
+    color: "text-white",
+    description: "Arrow down with A-Z sorting motion",
+    tags: ["arrow", "down", "sort", "letters"],
+  },
+  {
+    name: "icon-arrow-down-az",
+    component: IconArrowDownAZAlt,
+    color: "text-white",
+    description: "Arrow down with AZ sorting motion",
+    tags: ["arrow", "down", "sort", "letters"],
+  },
+  {
+    name: "icon-arrow-down-circle",
+    component: IconArrowDownCircle,
+    color: "text-white",
+    description: "Arrow down inside a pulsing circle",
+    tags: ["arrow", "down", "circle", "direction"],
+  },
+  {
+    name: "icon-arrow-down-from-line",
+    component: IconArrowDownFromLine,
+    color: "text-white",
+    description: "Arrow dropping from a header line",
+    tags: ["arrow", "down", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-down-left",
+    component: IconArrowDownLeft,
+    color: "text-white",
+    description: "Arrow down left with diagonal slide",
+    tags: ["arrow", "down-left", "direction"],
+  },
+  {
+    name: "icon-arrow-down-left-from-circle",
+    component: IconArrowDownLeftFromCircle,
+    color: "text-white",
+    description: "Arrow leaving a circle down-left",
+    tags: ["arrow", "down-left", "circle", "direction"],
+  },
+  {
+    name: "icon-arrow-down-left-from-square",
+    component: IconArrowDownLeftFromSquare,
+    color: "text-white",
+    description: "Arrow leaving a square down-left",
+    tags: ["arrow", "down-left", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-down-left-square",
+    component: IconArrowDownLeftSquare,
+    color: "text-white",
+    description: "Arrow down-left inside a square",
+    tags: ["arrow", "down-left", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-down-narrow-wide",
+    component: IconArrowDownNarrowWide,
+    color: "text-white",
+    description: "Arrow down with narrow-to-wide bars",
+    tags: ["arrow", "down", "sort", "layout"],
+  },
+  {
+    name: "icon-arrow-down-right",
+    component: IconArrowDownRight,
+    color: "text-white",
+    description: "Arrow down right with diagonal slide",
+    tags: ["arrow", "down-right", "direction"],
+  },
+  {
+    name: "icon-arrow-down-right-from-circle",
+    component: IconArrowDownRightFromCircle,
+    color: "text-white",
+    description: "Arrow leaving a circle down-right",
+    tags: ["arrow", "down-right", "circle", "direction"],
+  },
+  {
+    name: "icon-arrow-down-right-from-square",
+    component: IconArrowDownRightFromSquare,
+    color: "text-white",
+    description: "Arrow leaving a square down-right",
+    tags: ["arrow", "down-right", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-down-right-square",
+    component: IconArrowDownRightSquare,
+    color: "text-white",
+    description: "Arrow down-right inside a square",
+    tags: ["arrow", "down-right", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-down-square",
+    component: IconArrowDownSquare,
+    color: "text-white",
+    description: "Arrow down inside a square",
+    tags: ["arrow", "down", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-down-to-dot",
+    component: IconArrowDownToDot,
+    color: "text-white",
+    description: "Arrow down pointing to a dot",
+    tags: ["arrow", "down", "dot", "direction"],
+  },
+  {
+    name: "icon-arrow-down-to-line",
+    component: IconArrowDownToLine,
+    color: "text-white",
+    description: "Arrow down pointing to a line",
+    tags: ["arrow", "down", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-down-up",
+    component: IconArrowDownUp,
+    color: "text-white",
+    description: "Opposing up and down arrows",
+    tags: ["arrow", "up", "down", "swap", "direction"],
+  },
+  {
+    name: "icon-arrow-down-wide-narrow",
+    component: IconArrowDownWideNarrow,
+    color: "text-white",
+    description: "Arrow down with wide-to-narrow bars",
+    tags: ["arrow", "down", "sort", "layout"],
+  },
+  {
+    name: "icon-arrow-down-z-a",
+    component: IconArrowDownZA,
+    color: "text-white",
+    description: "Sort Z to A with a down arrow",
+    tags: ["arrow", "down", "sort", "z-a", "letters"],
+  },
+  {
+    name: "icon-arrow-down-za",
+    component: IconArrowDownZAAlt,
+    color: "text-white",
+    description: "Compact Z to A sort arrow",
+    tags: ["arrow", "down", "sort", "z-a", "letters"],
+  },
+  {
+    name: "icon-arrow-left-circle",
+    component: IconArrowLeftCircle,
+    color: "text-white",
+    description: "Arrow left inside a circle",
+    tags: ["arrow", "left", "circle", "direction"],
+  },
+  {
+    name: "icon-arrow-left-from-line",
+    component: IconArrowLeftFromLine,
+    color: "text-white",
+    description: "Arrow left leaving a vertical line",
+    tags: ["arrow", "left", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-left-right",
+    component: IconArrowLeftRight,
+    color: "text-white",
+    description: "Two-way arrows left and right",
+    tags: ["arrow", "left", "right", "swap", "direction"],
+  },
+  {
+    name: "icon-arrow-left-square",
+    component: IconArrowLeftSquare,
+    color: "text-white",
+    description: "Arrow left inside a square",
+    tags: ["arrow", "left", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-left-to-line",
+    component: IconArrowLeftToLine,
+    color: "text-white",
+    description: "Arrow left pointing to a line",
+    tags: ["arrow", "left", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-right-circle",
+    component: IconArrowRightCircle,
+    color: "text-white",
+    description: "Arrow right inside a circle",
+    tags: ["arrow", "right", "circle", "direction"],
+  },
+  {
+    name: "icon-arrow-right-from-line",
+    component: IconArrowRightFromLine,
+    color: "text-white",
+    description: "Arrow right leaving a vertical line",
+    tags: ["arrow", "right", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-right-left",
+    component: IconArrowRightLeft,
+    color: "text-white",
+    description: "Two-way arrows right and left",
+    tags: ["arrow", "right", "left", "swap", "direction"],
+  },
+  {
+    name: "icon-arrow-right-square",
+    component: IconArrowRightSquare,
+    color: "text-white",
+    description: "Arrow right inside a square",
+    tags: ["arrow", "right", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-right-to-line",
+    component: IconArrowRightToLine,
+    color: "text-white",
+    description: "Arrow right pointing to a line",
+    tags: ["arrow", "right", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-up-0-1",
+    component: IconArrowUp01,
+    color: "text-white",
+    description: "Arrow up with 0 to 1 sort indicator",
+    tags: ["arrow", "up", "sort", "numbers"],
+  },
+  {
+    name: "icon-arrow-up-01",
+    component: IconArrowUp01Alt,
+    color: "text-white",
+    description: "Compact arrow up 0-1 sort icon",
+    tags: ["arrow", "up", "sort", "numbers"],
+  },
+  {
+    name: "icon-arrow-up-1-0",
+    component: IconArrowUp10,
+    color: "text-white",
+    description: "Arrow up with 1 to 0 sort indicator",
+    tags: ["arrow", "up", "sort", "numbers"],
+  },
+  {
+    name: "icon-arrow-up-10",
+    component: IconArrowUp10Alt,
+    color: "text-white",
+    description: "Compact arrow up 1-0 sort icon",
+    tags: ["arrow", "up", "sort", "numbers"],
+  },
+  {
+    name: "icon-arrow-up-a-z",
+    component: IconArrowUpAZ,
+    color: "text-white",
+    description: "Arrow up with A to Z sort indicator",
+    tags: ["arrow", "up", "sort", "letters"],
+  },
+  {
+    name: "icon-arrow-up-az",
+    component: IconArrowUpAZAlt,
+    color: "text-white",
+    description: "Compact arrow up A-Z sort icon",
+    tags: ["arrow", "up", "sort", "letters"],
+  },
+  {
+    name: "icon-arrow-up-circle",
+    component: IconArrowUpCircle,
+    color: "text-white",
+    description: "Arrow up inside a circle",
+    tags: ["arrow", "up", "circle", "direction"],
+  },
+  {
+    name: "icon-arrow-up-down",
+    component: IconArrowUpDown,
+    color: "text-white",
+    description: "Opposing up and down arrows",
+    tags: ["arrow", "up", "down", "swap", "direction"],
+  },
+  {
+    name: "icon-arrow-up-from-dot",
+    component: IconArrowUpFromDot,
+    color: "text-white",
+    description: "Arrow lifting from a dot",
+    tags: ["arrow", "up", "dot", "direction"],
+  },
+  {
+    name: "icon-arrow-up-from-line",
+    component: IconArrowUpFromLine,
+    color: "text-white",
+    description: "Arrow rising from a line",
+    tags: ["arrow", "up", "line", "direction"],
+  },
+  {
+    name: "icon-arrow-up-left",
+    component: IconArrowUpLeft,
+    color: "text-white",
+    description: "Arrow up left with diagonal slide",
+    tags: ["arrow", "up-left", "direction"],
+  },
+  {
+    name: "icon-arrow-up-left-from-circle",
+    component: IconArrowUpLeftFromCircle,
+    color: "text-white",
+    description: "Arrow leaving a circle up-left",
+    tags: ["arrow", "up-left", "circle", "direction"],
+  },
+  {
+    name: "icon-arrow-up-left-from-square",
+    component: IconArrowUpLeftFromSquare,
+    color: "text-white",
+    description: "Arrow leaving a square up-left",
+    tags: ["arrow", "up-left", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-up-left-square",
+    component: IconArrowUpLeftSquare,
+    color: "text-white",
+    description: "Arrow up-left inside a square",
+    tags: ["arrow", "up-left", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-up-narrow-wide",
+    component: IconArrowUpNarrowWide,
+    color: "text-white",
+    description: "Arrow up with narrow-to-wide bars",
+    tags: ["arrow", "up", "sort", "layout"],
+  },
+  {
+    name: "icon-arrow-up-right",
+    component: IconArrowUpRight,
+    color: "text-white",
+    description: "Arrow up right with diagonal slide",
+    tags: ["arrow", "up-right", "direction"],
+  },
+  {
+    name: "icon-arrow-up-right-from-circle",
+    component: IconArrowUpRightFromCircle,
+    color: "text-white",
+    description: "Arrow leaving a circle up-right",
+    tags: ["arrow", "up-right", "circle", "direction"],
+  },
+  {
+    name: "icon-arrow-up-right-from-square",
+    component: IconArrowUpRightFromSquare,
+    color: "text-white",
+    description: "Arrow leaving a square up-right",
+    tags: ["arrow", "up-right", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-up-right-square",
+    component: IconArrowUpRightSquare,
+    color: "text-white",
+    description: "Arrow up-right inside a square",
+    tags: ["arrow", "up-right", "square", "direction"],
+  },
+  {
+    name: "icon-arrow-up-square",
+    component: IconArrowUpSquare,
+    color: "text-white",
+    description: "Arrow up inside a square",
+    tags: ["arrow", "up", "square", "direction"],
   },
   {
     name: "icon-album",
@@ -323,6 +949,76 @@ export const iconsRegistry = [
     color: "text-sky-300",
     description: "Distribute vertical center with a lift",
     tags: ["align", "distribute", "center", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-distribute-end",
+    component: IconAlignVerticalDistributeEnd,
+    color: "text-sky-300",
+    description: "Distribute to the bottom guide with a gentle drop",
+    tags: ["align", "distribute", "end", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-distribute-start",
+    component: IconAlignVerticalDistributeStart,
+    color: "text-sky-300",
+    description: "Distribute to the top guide with a gentle lift",
+    tags: ["align", "distribute", "start", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-justify-center",
+    component: IconAlignVerticalJustifyCenter,
+    color: "text-sky-300",
+    description: "Justify vertical center with converging blocks",
+    tags: ["align", "justify", "center", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-justify-end",
+    component: IconAlignVerticalJustifyEnd,
+    color: "text-sky-300",
+    description: "Justify vertical end with blocks dropping down",
+    tags: ["align", "justify", "end", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-justify-start",
+    component: IconAlignVerticalJustifyStart,
+    color: "text-sky-300",
+    description: "Justify vertical start with blocks lifting up",
+    tags: ["align", "justify", "start", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-space-around",
+    component: IconAlignVerticalSpaceAround,
+    color: "text-sky-300",
+    description: "Space around with balanced vertical padding",
+    tags: ["align", "space", "around", "vertical"],
+  },
+  {
+    name: "icon-align-vertical-space-between",
+    component: IconAlignVerticalSpaceBetween,
+    color: "text-sky-300",
+    description: "Space between with top and bottom spread",
+    tags: ["align", "space", "between", "vertical"],
+  },
+  {
+    name: "icon-ambulance",
+    component: IconAmbulance,
+    color: "text-red-400",
+    description: "Ambulance with pulsing medical cross and rolling wheels",
+    tags: ["ambulance", "medical", "health", "emergency"],
+  },
+  {
+    name: "icon-ampersand",
+    component: IconAmpersand,
+    color: "text-white",
+    description: "Ampersand with a lively stroke emphasis",
+    tags: ["ampersand", "and", "typography"],
+  },
+  {
+    name: "icon-ampersands",
+    component: IconAmpersands,
+    color: "text-white",
+    description: "Double ampersands with mirrored motion",
+    tags: ["ampersands", "and", "typography"],
   },
   {
     name: "icon-sparkle",
