@@ -10,12 +10,22 @@ import { IconActivity } from "@/registry/default/icon-activity/icon-activity";
 import { IconActivitySquare } from "@/registry/default/icon-activity-square/icon-activity-square";
 import { IconAirVent } from "@/registry/default/icon-air-vent/icon-air-vent";
 import { IconAirplay } from "@/registry/default/icon-airplay/icon-airplay";
+import { IconAmphora } from "@/registry/default/icon-amphora/icon-amphora";
 import { IconAlarmClock } from "@/registry/default/icon-alarm-clock/icon-alarm-clock";
 import { IconAlarmClockCheck } from "@/registry/default/icon-alarm-clock-check/icon-alarm-clock-check";
 import { IconAlarmClockMinus } from "@/registry/default/icon-alarm-clock-minus/icon-alarm-clock-minus";
 import { IconAlarmClockOff } from "@/registry/default/icon-alarm-clock-off/icon-alarm-clock-off";
 import { IconAlarmClockPlus } from "@/registry/default/icon-alarm-clock-plus/icon-alarm-clock-plus";
 import { IconAlarmSmoke } from "@/registry/default/icon-alarm-smoke/icon-alarm-smoke";
+import { IconAnchor } from "@/registry/default/icon-anchor/icon-anchor";
+import { IconAngry } from "@/registry/default/icon-angry/icon-angry";
+import { IconAnnoyed } from "@/registry/default/icon-annoyed/icon-annoyed";
+import { IconAntenna } from "@/registry/default/icon-antenna/icon-antenna";
+import { IconAnvil } from "@/registry/default/icon-anvil/icon-anvil";
+import { IconAperture } from "@/registry/default/icon-aperture/icon-aperture";
+import { IconAppWindow } from "@/registry/default/icon-app-window/icon-app-window";
+import { IconAppWindowMac } from "@/registry/default/icon-app-window-mac/icon-app-window-mac";
+import { IconApple } from "@/registry/default/icon-apple/icon-apple";
 import { IconAlbum } from "@/registry/default/icon-album/icon-album";
 import { IconAlertCircle } from "@/registry/default/icon-alert-circle/icon-alert-circle";
 import { IconAlertOctagon } from "@/registry/default/icon-alert-octagon/icon-alert-octagon";
@@ -132,6 +142,13 @@ export const iconsRegistry = [
     tags: ["airplay", "cast", "stream", "screen"],
   },
   {
+    name: "icon-amphora",
+    component: IconAmphora,
+    color: "text-orange-300",
+    description: "Amphora with a gentle ceramic sway",
+    tags: ["amphora", "vase", "pottery", "history"],
+  },
+  {
     name: "icon-alarm-clock",
     component: IconAlarmClock,
     color: "text-amber-400",
@@ -172,6 +189,69 @@ export const iconsRegistry = [
     color: "text-orange-300",
     description: "Alarm smoke icon with drifting trails",
     tags: ["alarm", "smoke", "alert", "safety"],
+  },
+  {
+    name: "icon-anchor",
+    component: IconAnchor,
+    color: "text-sky-400",
+    description: "Anchor with a weighted drop motion",
+    tags: ["anchor", "marine", "sea", "ship"],
+  },
+  {
+    name: "icon-angry",
+    component: IconAngry,
+    color: "text-rose-400",
+    description: "Angry face with tense brows and frown",
+    tags: ["angry", "emotion", "face", "mood"],
+  },
+  {
+    name: "icon-annoyed",
+    component: IconAnnoyed,
+    color: "text-rose-400",
+    description: "Annoyed face with flat mouth drift",
+    tags: ["annoyed", "emotion", "face", "mood"],
+  },
+  {
+    name: "icon-antenna",
+    component: IconAntenna,
+    color: "text-sky-300",
+    description: "Antenna with a pulsing signal beam",
+    tags: ["antenna", "signal", "broadcast", "wifi"],
+  },
+  {
+    name: "icon-anvil",
+    component: IconAnvil,
+    color: "text-zinc-300",
+    description: "Anvil with a heavy strike bounce",
+    tags: ["anvil", "metal", "forge", "tool"],
+  },
+  {
+    name: "icon-aperture",
+    component: IconAperture,
+    color: "text-white",
+    description: "Aperture blades with a shutter twist",
+    tags: ["aperture", "camera", "photo", "lens"],
+  },
+  {
+    name: "icon-app-window",
+    component: IconAppWindow,
+    color: "text-white",
+    description: "App window with a sliding title bar",
+    tags: ["app", "window", "ui", "layout"],
+  },
+  {
+    name: "icon-app-window-mac",
+    component: IconAppWindowMac,
+    color: "text-white",
+    description: "Mac window with bouncing control dots",
+    tags: ["app", "window", "mac", "ui"],
+  },
+  {
+    name: "icon-apple",
+    component: IconApple,
+    color: "text-emerald-400",
+    description: "Apple with a subtle stem tilt",
+    tags: ["apple", "fruit", "food", "brand"],
   },
   {
     name: "icon-album",
