@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconAlarmClockOffProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const slashVariants = {
@@ -21,6 +23,7 @@ const ringVariants = {
 
 export function IconAlarmClockOff({
   size = 24,
+  strokeWidth = 2,
   className,
   ...props
 }: IconAlarmClockOffProps) {
@@ -41,7 +44,7 @@ export function IconAlarmClockOff({
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
       initial={prefersReducedMotion ? false : "rest"}

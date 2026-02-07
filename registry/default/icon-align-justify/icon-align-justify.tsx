@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconAlignJustifyProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const lineVariants = {
@@ -25,7 +27,7 @@ const bottomVariants = {
   tap: { y: -0.8 },
 };
 
-export function IconAlignJustify({ size = 24, className, ...props }: IconAlignJustifyProps) {
+export function IconAlignJustify({ size = 24, strokeWidth = 2, className, ...props }: IconAlignJustifyProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -43,7 +45,7 @@ export function IconAlignJustify({ size = 24, className, ...props }: IconAlignJu
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
       initial={prefersReducedMotion ? false : "rest"}

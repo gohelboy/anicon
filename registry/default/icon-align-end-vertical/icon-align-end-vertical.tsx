@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconAlignEndVerticalProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const blockVariants = {
@@ -19,7 +21,7 @@ const guideVariants = {
   tap: { opacity: 0.6 },
 };
 
-export function IconAlignEndVertical({ size = 24, className, ...props }: IconAlignEndVerticalProps) {
+export function IconAlignEndVertical({ size = 24, strokeWidth = 2, className, ...props }: IconAlignEndVerticalProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -37,7 +39,7 @@ export function IconAlignEndVertical({ size = 24, className, ...props }: IconAli
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
       initial={prefersReducedMotion ? false : "rest"}

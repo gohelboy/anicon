@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconMenuDotsVerticalProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const dotVariants = {
@@ -23,6 +25,7 @@ const dotVariants = {
 
 export function IconMenuDotsVertical({
   size = 24,
+  strokeWidth = 2,
   className,
   ...props
 }: IconMenuDotsVerticalProps) {

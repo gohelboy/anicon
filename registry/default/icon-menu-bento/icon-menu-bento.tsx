@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconMenuBentoProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const tileVariants = {
@@ -23,7 +25,7 @@ const tiles = [
   { x: 5, y: 13, w: 6, h: 6 },
 ];
 
-export function IconMenuBento({ size = 24, className, ...props }: IconMenuBentoProps) {
+export function IconMenuBento({ size = 24, strokeWidth = 2, className, ...props }: IconMenuBentoProps) {
   const {
     onAnimationStart,
     onAnimationEnd,

@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const pinVariants = {
@@ -19,7 +21,7 @@ const pulseVariants = {
   tap: { scale: 0.8, opacity: 0.5 },
 };
 
-export function IconMapPin({ size = 24, className, ...props }: IconMapPinProps) {
+export function IconMapPin({ size = 24, strokeWidth = 2, className, ...props }: IconMapPinProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -37,7 +39,7 @@ export function IconMapPin({ size = 24, className, ...props }: IconMapPinProps) 
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
       initial={prefersReducedMotion ? false : "rest"}
