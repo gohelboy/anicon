@@ -5,6 +5,7 @@ export interface IconsSearchBarProps {
   onSearchChange: (value: string) => void;
   iconColor: string;
   onIconColorChange: (value: string) => void;
+  iconStrokeWidth?: number;
 }
 
 export function IconsSearchBar({
@@ -12,6 +13,7 @@ export function IconsSearchBar({
   onSearchChange,
   iconColor,
   onIconColorChange,
+  iconStrokeWidth = 2,
 }: IconsSearchBarProps) {
   return (
     <div className="mt-6 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-2">
@@ -24,7 +26,7 @@ export function IconsSearchBar({
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="2"
+            strokeWidth={iconStrokeWidth}
             strokeLinecap="round"
             strokeLinejoin="round"
           >
