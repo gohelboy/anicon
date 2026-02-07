@@ -12,6 +12,7 @@ import { useFilteredIcons } from "./_hooks/use-filtered-icons";
 export default function IconsPage() {
   const [search, setSearch] = useState("");
   const [iconColor, setIconColor] = useState("#ffffff");
+  const [stroke, setStroke] = useState(1.5);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [selectedIcon, setSelectedIcon] = useState<IconEntry | null>(null);
 
@@ -25,9 +26,9 @@ export default function IconsPage() {
   return (
     <div className="min-h-screen">
       <LandingNavClient />
-      <main className="pt-24 pb-16 sm:pb-20">
+      <main className="pt-16 pb-16 sm:pb-20">
         <section className="border-b border-(--card-border) px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-8">
-          <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-4xl pt-8">
             <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
               Icons
             </h1>
@@ -40,6 +41,8 @@ export default function IconsPage() {
               onSearchChange={setSearch}
               iconColor={iconColor}
               onIconColorChange={setIconColor}
+              stroke={stroke}
+              onStrokeChange={setStroke}
             />
           </div>
         </section>
@@ -58,6 +61,7 @@ export default function IconsPage() {
                       key={icon.name}
                       icon={icon}
                       iconColor={iconColor}
+                      strokeWidth={stroke}
                       onClick={() => openIconDetail(icon)}
                     />
                   ))}
@@ -67,6 +71,7 @@ export default function IconsPage() {
                   onOpenChange={setDrawerOpen}
                   selectedIcon={selectedIcon}
                   iconColor={iconColor}
+                  strokeWidth={stroke}
                 />
               </>
             ) : (
