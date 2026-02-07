@@ -2177,6 +2177,321 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-trash",
+      "type": "registry:component",
+      "title": "Animated Trash",
+      "description": "Trash icon with lid lifting animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-trash/icon-trash.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-edit",
+      "type": "registry:component",
+      "title": "Animated Edit",
+      "description": "Edit pencil icon with writing tilt motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-edit/icon-edit.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-check",
+      "type": "registry:component",
+      "title": "Animated Check",
+      "description": "Check icon with stroke draw animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-check/icon-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-x",
+      "type": "registry:component",
+      "title": "Animated X",
+      "description": "X/close icon with 90-degree rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-x/icon-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-copy",
+      "type": "registry:component",
+      "title": "Animated Copy",
+      "description": "Copy icon with sheets separating on hover.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-copy/icon-copy.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-plus",
+      "type": "registry:component",
+      "title": "Animated Plus",
+      "description": "Plus icon with scale and rotate animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-plus/icon-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-minus",
+      "type": "registry:component",
+      "title": "Animated Minus",
+      "description": "Minus icon with contracting animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-minus/icon-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-search",
+      "type": "registry:component",
+      "title": "Animated Search",
+      "description": "Search magnifying glass with zoom pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-search/icon-search.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-settings",
+      "type": "registry:component",
+      "title": "Animated Settings",
+      "description": "Settings gear rotating on hover.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-settings/icon-settings.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-mail",
+      "type": "registry:component",
+      "title": "Animated Mail",
+      "description": "Mail envelope with flap opening animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-mail/icon-mail.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bell",
+      "type": "registry:component",
+      "title": "Animated Bell",
+      "description": "Bell icon with ringing shake animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bell/icon-bell.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-send",
+      "type": "registry:component",
+      "title": "Animated Send",
+      "description": "Send/paper plane launching diagonally.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-send/icon-send.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-download",
+      "type": "registry:component",
+      "title": "Animated Download",
+      "description": "Download arrow dropping into tray.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-download/icon-download.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-upload",
+      "type": "registry:component",
+      "title": "Animated Upload",
+      "description": "Upload arrow rising from tray.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-upload/icon-upload.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-play",
+      "type": "registry:component",
+      "title": "Animated Play",
+      "description": "Play triangle with scale up animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-play/icon-play.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pause",
+      "type": "registry:component",
+      "title": "Animated Pause",
+      "description": "Pause bars separating on hover.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pause/icon-pause.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-eye",
+      "type": "registry:component",
+      "title": "Animated Eye",
+      "description": "Eye icon with realistic blink animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-eye/icon-eye.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-lock",
+      "type": "registry:component",
+      "title": "Animated Lock",
+      "description": "Lock icon with shackle lifting open.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-lock/icon-lock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-unlock",
+      "type": "registry:component",
+      "title": "Animated Unlock",
+      "description": "Unlock icon with shackle dropping closed.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-unlock/icon-unlock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-star",
+      "type": "registry:component",
+      "title": "Animated Star",
+      "description": "Star icon with scale and rotate animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-star/icon-star.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-loader",
+      "type": "registry:component",
+      "title": "Animated Loader",
+      "description": "Loader/spinner with continuous rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-loader/icon-loader.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

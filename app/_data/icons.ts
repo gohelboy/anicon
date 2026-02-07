@@ -143,6 +143,32 @@ import { IconMenuList } from "@/registry/default/icon-menu-list/icon-menu-list";
 import { IconMenuSliders } from "@/registry/default/icon-menu-sliders/icon-menu-sliders";
 import { IconMenuTabs } from "@/registry/default/icon-menu-tabs/icon-menu-tabs";
 import { IconSparkle } from "@/registry/default/icon-sparkle/icon-sparkle";
+// Essential Action Icons
+import { IconTrash } from "@/registry/default/icon-trash/icon-trash";
+import { IconEdit } from "@/registry/default/icon-edit/icon-edit";
+import { IconCheck } from "@/registry/default/icon-check/icon-check";
+import { IconX } from "@/registry/default/icon-x/icon-x";
+import { IconCopy } from "@/registry/default/icon-copy/icon-copy";
+import { IconPlus } from "@/registry/default/icon-plus/icon-plus";
+import { IconMinus } from "@/registry/default/icon-minus/icon-minus";
+import { IconSearch } from "@/registry/default/icon-search/icon-search";
+import { IconSettings } from "@/registry/default/icon-settings/icon-settings";
+// Communication Icons
+import { IconMail } from "@/registry/default/icon-mail/icon-mail";
+import { IconBell } from "@/registry/default/icon-bell/icon-bell";
+import { IconSend } from "@/registry/default/icon-send/icon-send";
+// File Icons
+import { IconDownload } from "@/registry/default/icon-download/icon-download";
+import { IconUpload } from "@/registry/default/icon-upload/icon-upload";
+// Media Icons
+import { IconPlay } from "@/registry/default/icon-play/icon-play";
+import { IconPause } from "@/registry/default/icon-pause/icon-pause";
+// UI Icons
+import { IconEye } from "@/registry/default/icon-eye/icon-eye";
+import { IconLock } from "@/registry/default/icon-lock/icon-lock";
+import { IconUnlock } from "@/registry/default/icon-unlock/icon-unlock";
+import { IconStar } from "@/registry/default/icon-star/icon-star";
+import { IconLoader } from "@/registry/default/icon-loader/icon-loader";
 
 export const iconsRegistry = [
   {
@@ -1159,6 +1185,158 @@ export const iconsRegistry = [
     color: "text-rose-400",
     description: "Map pin with lift and pulse ripple",
     tags: ["map", "pin", "navigation", "location"],
+  },
+  // Essential Action Icons
+  {
+    name: "icon-trash",
+    component: IconTrash,
+    color: "text-rose-500",
+    description: "Trash can with lid lifting animation",
+    tags: ["trash", "delete", "remove", "bin", "garbage"],
+  },
+  {
+    name: "icon-edit",
+    component: IconEdit,
+    color: "text-blue-400",
+    description: "Edit pencil with writing tilt motion",
+    tags: ["edit", "pencil", "write", "modify"],
+  },
+  {
+    name: "icon-check",
+    component: IconCheck,
+    color: "text-emerald-400",
+    description: "Checkmark with stroke draw animation",
+    tags: ["check", "done", "complete", "success"],
+  },
+  {
+    name: "icon-x",
+    component: IconX,
+    color: "text-rose-400",
+    description: "X mark with 90-degree rotation",
+    tags: ["x", "close", "cancel", "remove"],
+  },
+  {
+    name: "icon-copy",
+    component: IconCopy,
+    color: "text-white",
+    description: "Copy sheets separating on hover",
+    tags: ["copy", "duplicate", "clipboard"],
+  },
+  {
+    name: "icon-plus",
+    component: IconPlus,
+    color: "text-emerald-400",
+    description: "Plus sign with scale and rotate",
+    tags: ["plus", "add", "new", "create"],
+  },
+  {
+    name: "icon-minus",
+    component: IconMinus,
+    color: "text-rose-400",
+    description: "Minus sign with contracting animation",
+    tags: ["minus", "subtract", "remove", "reduce"],
+  },
+  {
+    name: "icon-search",
+    component: IconSearch,
+    color: "text-white",
+    description: "Magnifying glass with zoom pulse",
+    tags: ["search", "find", "magnify", "lookup"],
+  },
+  {
+    name: "icon-settings",
+    component: IconSettings,
+    color: "text-zinc-300",
+    description: "Gear rotating 45 degrees on hover",
+    tags: ["settings", "gear", "cog", "preferences"],
+  },
+  // Communication Icons
+  {
+    name: "icon-mail",
+    component: IconMail,
+    color: "text-sky-400",
+    description: "Envelope with flap opening animation",
+    tags: ["mail", "email", "message", "envelope"],
+  },
+  {
+    name: "icon-bell",
+    component: IconBell,
+    color: "text-amber-400",
+    description: "Bell with ringing shake animation",
+    tags: ["bell", "notification", "alert", "ring"],
+  },
+  {
+    name: "icon-send",
+    component: IconSend,
+    color: "text-sky-400",
+    description: "Paper plane launching diagonally",
+    tags: ["send", "submit", "message", "share"],
+  },
+  // File Icons
+  {
+    name: "icon-download",
+    component: IconDownload,
+    color: "text-emerald-400",
+    description: "Arrow dropping into download tray",
+    tags: ["download", "save", "get", "arrow"],
+  },
+  {
+    name: "icon-upload",
+    component: IconUpload,
+    color: "text-sky-400",
+    description: "Arrow rising from upload tray",
+    tags: ["upload", "send", "share", "arrow"],
+  },
+  // Media Icons
+  {
+    name: "icon-play",
+    component: IconPlay,
+    color: "text-emerald-400",
+    description: "Play triangle with scale up animation",
+    tags: ["play", "start", "media", "video"],
+  },
+  {
+    name: "icon-pause",
+    component: IconPause,
+    color: "text-amber-400",
+    description: "Pause bars separating on hover",
+    tags: ["pause", "stop", "media", "break"],
+  },
+  // UI Icons
+  {
+    name: "icon-eye",
+    component: IconEye,
+    color: "text-white",
+    description: "Eye with realistic blink animation",
+    tags: ["eye", "view", "visibility", "show"],
+  },
+  {
+    name: "icon-lock",
+    component: IconLock,
+    color: "text-amber-400",
+    description: "Lock with shackle lifting open",
+    tags: ["lock", "secure", "private", "password"],
+  },
+  {
+    name: "icon-unlock",
+    component: IconUnlock,
+    color: "text-emerald-400",
+    description: "Unlock with shackle dropping closed",
+    tags: ["unlock", "open", "access", "password"],
+  },
+  {
+    name: "icon-star",
+    component: IconStar,
+    color: "text-amber-400",
+    description: "Star with scale and rotate animation",
+    tags: ["star", "favorite", "rating", "bookmark"],
+  },
+  {
+    name: "icon-loader",
+    component: IconLoader,
+    color: "text-sky-400",
+    description: "Loader with continuous rotation",
+    tags: ["loader", "loading", "spinner", "wait"],
   },
 ] as const;
 
