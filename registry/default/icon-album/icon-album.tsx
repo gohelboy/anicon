@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconAlbumProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const coverVariants = {
@@ -19,7 +21,7 @@ const foldVariants = {
   tap: { y: 1 },
 };
 
-export function IconAlbum({ size = 24, className, ...props }: IconAlbumProps) {
+export function IconAlbum({ size = 24, strokeWidth = 2, className, ...props }: IconAlbumProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -37,7 +39,7 @@ export function IconAlbum({ size = 24, className, ...props }: IconAlbumProps) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
       initial={prefersReducedMotion ? false : "rest"}

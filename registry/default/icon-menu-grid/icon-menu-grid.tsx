@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconMenuGridProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const cellVariants = {
@@ -33,7 +35,7 @@ const cells = [
   { x: 18, y: 18 },
 ];
 
-export function IconMenuGrid({ size = 24, className, ...props }: IconMenuGridProps) {
+export function IconMenuGrid({ size = 24, strokeWidth = 2, className, ...props }: IconMenuGridProps) {
   const {
     onAnimationStart,
     onAnimationEnd,

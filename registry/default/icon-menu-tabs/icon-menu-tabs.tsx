@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconMenuTabsProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const tabVariants = {
@@ -25,7 +27,7 @@ const tabs = [
   { x: 4, y: 16, w: 12, h: 3 },
 ];
 
-export function IconMenuTabs({ size = 24, className, ...props }: IconMenuTabsProps) {
+export function IconMenuTabs({ size = 24, strokeWidth = 2, className, ...props }: IconMenuTabsProps) {
   const {
     onAnimationStart,
     onAnimationEnd,

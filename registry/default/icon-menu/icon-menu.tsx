@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconMenuProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const lineVariants = {
@@ -21,7 +23,7 @@ const lineVariants = {
   tap: { scaleX: 0.92 },
 };
 
-export function IconMenu({ size = 24, className, ...props }: IconMenuProps) {
+export function IconMenu({ size = 24, strokeWidth = 2, className, ...props }: IconMenuProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -39,7 +41,7 @@ export function IconMenu({ size = 24, className, ...props }: IconMenuProps) {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
       initial={prefersReducedMotion ? false : "rest"}

@@ -5,6 +5,8 @@ import { motion, useReducedMotion } from "framer-motion";
 export interface IconAccessibilityProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
+  strokeWidth?: number;
 }
 
 const poseVariants = {
@@ -15,6 +17,7 @@ const poseVariants = {
 
 export function IconAccessibility({
   size = 24,
+  strokeWidth = 2,
   className,
   ...props
 }: IconAccessibilityProps) {
@@ -35,7 +38,7 @@ export function IconAccessibility({
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
-      strokeWidth="2"
+      strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
       initial={prefersReducedMotion ? false : "rest"}
