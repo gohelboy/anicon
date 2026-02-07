@@ -2,31 +2,39 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconUploadProps extends React.SVGProps<SVGSVGElement> {
+  /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const arrowVariants: Variants = {
+  rest: { y: 0 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
-    transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
-    },
+    y: -3,
+    transition: { type: "spring", stiffness: 400, damping: 17 },
+  },
+  tap: {
+    y: -5,
+    transition: { type: "spring", stiffness: 400, damping: 17 },
   },
 };
 
-export function IconMapPin({
+export function IconUpload({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
+}: IconUploadProps) {
+  const {
+    onAnimationStart,
+    onAnimationEnd,
+    onDragStart,
+    onDrag,
+    onDragEnd,
+    ...rest
+  } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -43,13 +51,16 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
-      {...restOptions}
+      {...rest}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      {/* Upload tray - static */}
+      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+      {/* Arrow - animated */}
+      <motion.g variants={arrowVariants}>
+        <polyline points="17 8 12 3 7 8" />
+        <line x1="12" x2="12" y1="3" y2="15" />
+      </motion.g>
     </motion.svg>
   );
 }

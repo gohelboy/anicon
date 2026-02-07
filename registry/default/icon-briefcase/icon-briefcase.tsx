@@ -2,31 +2,35 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconBriefcaseProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const handleVariants: Variants = {
+  rest: { y: 0 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
-    transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
-    },
+    y: -2,
+    transition: { type: "spring", stiffness: 400, damping: 17 },
   },
 };
 
-export function IconMapPin({
+const bagVariants: Variants = {
+  rest: { rotate: 0, scale: 1 },
+  hover: {
+    rotate: [0, -2, 2, 0],
+    scale: 1.02,
+    transition: { duration: 0.4 },
+  },
+};
+
+export function IconBriefcase({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
+}: IconBriefcaseProps) {
+  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -43,13 +47,12 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
-      {...restOptions}
+      style={{ overflow: "visible" }}
+      {...rest}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <motion.rect width="20" height="14" x="2" y="7" rx="2" variants={bagVariants} style={{ originX: "50%", originY: "100%" }} />
+      <motion.path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" variants={handleVariants} />
     </motion.svg>
   );
 }

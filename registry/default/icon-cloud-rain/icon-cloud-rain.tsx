@@ -2,30 +2,31 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCloudRainProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
-  hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+const rainVariants: Variants = {
+  rest: { y: 0, opacity: 1 },
+  hover: (i: number) => ({
+    y: [0, 4, 0],
+    opacity: [1, 0.4, 1],
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      duration: 1,
+      repeat: Infinity,
+      delay: i * 0.2,
+      ease: "easeInOut",
     },
-  },
+  }),
 };
 
-export function IconMapPin({
+export function IconCloudRain({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconCloudRainProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +44,14 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+      <motion.path d="M16 14v6" variants={rainVariants} custom={0} />
+      <motion.path d="M8 14v6" variants={rainVariants} custom={1} />
+      <motion.path d="M12 16v6" variants={rainVariants} custom={2} />
     </motion.svg>
   );
 }

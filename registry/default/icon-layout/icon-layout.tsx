@@ -2,30 +2,30 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconLayoutProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
-  hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+const sectionVariants: Variants = {
+  rest: { opacity: 1 },
+  hover: (i: number) => ({
+    opacity: [1, 0.4, 1],
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      duration: 1.5,
+      repeat: Infinity,
+      delay: i * 0.3,
+      ease: "easeInOut",
     },
-  },
+  }),
 };
 
-export function IconMapPin({
+export function IconLayout({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconLayoutProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +43,14 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      {/* Official Lucide Layout Path */}
+      <rect width="18" height="18" x="3" y="3" rx="2" />
+      <motion.path d="M3 9h18" variants={sectionVariants} custom={0} />
+      <motion.path d="M9 21V9" variants={sectionVariants} custom={1} />
     </motion.svg>
   );
 }

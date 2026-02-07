@@ -2,30 +2,43 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconBatteryChargingProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const boltVariants: Variants = {
+  rest: { opacity: 1, scale: 1 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+    opacity: [1, 0.5, 1],
+    scale: [1, 1.2, 1],
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      duration: 0.8,
+      repeat: Infinity,
+      ease: "easeInOut",
     },
   },
 };
 
-export function IconMapPin({
+const barVariants: Variants = {
+  rest: { scaleX: 1 },
+  hover: (i: number) => ({
+    scaleX: [0, 1],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      delay: i * 0.2,
+      ease: "easeInOut",
+    },
+  }),
+};
+
+export function IconBatteryCharging({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconBatteryChargingProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +56,20 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      {/* Battery Shell */}
+      <path d="M15 7h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2h-1" />
+      <path d="M6 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+      
+      {/* Charging Bolt */}
+      <motion.path 
+        d="M11 7l-3 5h4l-3 5" 
+        variants={boltVariants} 
+        style={{ originX: "10px", originY: "12px" }}
+      />
     </motion.svg>
   );
 }

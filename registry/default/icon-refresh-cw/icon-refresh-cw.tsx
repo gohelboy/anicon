@@ -2,31 +2,31 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconRefreshCwProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+// Full rotation like refreshing
+const refreshVariants: Variants = {
+  rest: { rotate: 0 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
-    transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
-    },
+    rotate: 360,
+    transition: { duration: 0.6, ease: "easeInOut" },
+  },
+  tap: {
+    rotate: 720,
+    transition: { duration: 0.8, ease: "easeInOut" },
   },
 };
 
-export function IconMapPin({
+export function IconRefreshCw({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
+}: IconRefreshCwProps) {
+  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -40,16 +40,18 @@ export function IconMapPin({
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
+      variants={refreshVariants}
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
-      {...restOptions}
+      style={{ overflow: "visible" }}
+      {...rest}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+      <path d="M21 3v5h-5" />
+      <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+      <path d="M8 16H3v5" />
     </motion.svg>
   );
 }

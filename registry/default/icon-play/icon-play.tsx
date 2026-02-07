@@ -2,31 +2,39 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconPlayProps extends React.SVGProps<SVGSVGElement> {
+  /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const playVariants: Variants = {
+  rest: { scale: 1 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
-    transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
-    },
+    scale: 1.15,
+    transition: { type: "spring", stiffness: 400, damping: 17 },
+  },
+  tap: {
+    scale: 0.9,
+    transition: { type: "spring", stiffness: 400, damping: 17 },
   },
 };
 
-export function IconMapPin({
+export function IconPlay({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
+}: IconPlayProps) {
+  const {
+    onAnimationStart,
+    onAnimationEnd,
+    onDragStart,
+    onDrag,
+    onDragEnd,
+    ...rest
+  } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -40,16 +48,14 @@ export function IconMapPin({
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
+      variants={playVariants}
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
-      {...restOptions}
+      {...rest}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <polygon points="6 3 20 12 6 21 6 3" />
     </motion.svg>
   );
 }

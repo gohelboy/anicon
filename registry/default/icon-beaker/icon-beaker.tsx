@@ -2,30 +2,44 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconBeakerProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const liquidVariants: Variants = {
+  rest: { y: 0 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+    y: [0, -2, 0],
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut",
     },
   },
 };
 
-export function IconMapPin({
+const bubbleVariants: Variants = {
+  rest: { scale: 0, opacity: 0 },
+  hover: (i: number) => ({
+    scale: [0, 1, 0.5],
+    opacity: [0, 1, 0],
+    y: [0, -8],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      delay: i * 0.5,
+      ease: "easeOut",
+    },
+  }),
+};
+
+export function IconBeaker({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconBeakerProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +57,17 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <path d="M4.5 3h15" />
+      <path d="M6 3v16a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V3" />
+      <motion.path d="M6 14h12" variants={liquidVariants} />
+      
+      {/* Bubbles */}
+      <motion.circle cx="9" cy="12" r="1" fill="currentColor" variants={bubbleVariants} custom={0} />
+      <motion.circle cx="15" cy="11" r="1" fill="currentColor" variants={bubbleVariants} custom={1} />
     </motion.svg>
   );
 }

@@ -2,30 +2,42 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconBotProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const botVariants: Variants = {
+  rest: { rotate: 0, y: 0 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+    rotate: [0, -5, 5, 0],
+    y: [0, -2, 0],
     transition: {
       duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      ease: "easeInOut",
     },
   },
 };
 
-export function IconMapPin({
+const eyeVariants: Variants = {
+  rest: { scaleY: 1 },
+  hover: {
+    scaleY: [1, 0.1, 1],
+    transition: {
+      duration: 0.4,
+      repeat: Infinity,
+      repeatDelay: 2,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconBot({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
+}: IconBotProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -43,13 +55,18 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
+      variants={botVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
+      style={{ overflow: "visible", originY: "20px" }}
       {...restOptions}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <path d="M12 8V4H8" />
+      <rect width="16" height="12" x="4" y="8" rx="2" />
+      <path d="M2 14h2" />
+      <path d="M20 14h2" />
+      {/* Eyes */}
+      <motion.path d="M15 13v2" variants={eyeVariants} style={{ originY: "14px" }} />
+      <motion.path d="M9 13v2" variants={eyeVariants} style={{ originY: "14px" }} />
     </motion.svg>
   );
 }

@@ -2,31 +2,30 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconKeyProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
+const keyVariants: Variants = {
+  rest: { rotate: 0 },
   hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
-    transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
-    },
+    rotate: -45,
+    transition: { type: "spring", stiffness: 300, damping: 15 },
+  },
+  tap: {
+    rotate: -60,
+    transition: { type: "spring", stiffness: 300, damping: 10 },
   },
 };
 
-export function IconMapPin({
+export function IconKey({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
+}: IconKeyProps) {
+  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -43,13 +42,12 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
+      variants={keyVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
-      {...restOptions}
+      style={{ originX: "20%", originY: "80%", overflow: "visible" }}
+      {...rest}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <path d="m21 2-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0 3 3L22 7l-3-3L15.5 7.5z" />
     </motion.svg>
   );
 }

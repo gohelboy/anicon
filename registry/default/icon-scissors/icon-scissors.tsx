@@ -2,29 +2,41 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconAnchorProps extends React.SVGProps<SVGSVGElement> {
+export interface IconScissorsProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const anchorVariants: Variants = {
+const topVariants: Variants = {
   rest: { rotate: 0 },
   hover: {
-    rotate: [0, -10, 10, 0],
+    rotate: [0, -15, 0],
     transition: {
-      duration: 2,
+      duration: 0.5,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-export function IconAnchor({
+const bottomVariants: Variants = {
+  rest: { rotate: 0 },
+  hover: {
+    rotate: [0, 15, 0],
+    transition: {
+      duration: 0.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconScissors({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconAnchorProps) {
+}: IconScissorsProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -42,15 +54,27 @@ export function IconAnchor({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={anchorVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originX: "12px", originY: "5px" }}
+      style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <path d="M12 7V2" />
-      <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
-      <circle cx="12" cy="5" r="3" />
-      <path d="M12 22V12" />
+      <circle cx="6" cy="6" r="3" />
+      <circle cx="6" cy="18" r="3" />
+      <motion.line 
+        x1="20" x2="8.12" y1="4" y2="15.88" 
+        variants={bottomVariants} 
+        style={{ originX: "9px", originY: "12px" }}
+      />
+      <motion.line 
+        x1="14.47" x2="20" y1="14.48" y2="20" 
+        variants={topVariants} 
+        style={{ originX: "9px", originY: "12px" }}
+      />
+      <motion.line 
+        x1="8.12" x2="12" y1="8.12" y2="12" 
+        variants={topVariants} 
+        style={{ originX: "9px", originY: "12px" }}
+      />
     </motion.svg>
   );
 }

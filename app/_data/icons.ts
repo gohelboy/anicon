@@ -143,6 +143,95 @@ import { IconMenuList } from "@/registry/default/icon-menu-list/icon-menu-list";
 import { IconMenuSliders } from "@/registry/default/icon-menu-sliders/icon-menu-sliders";
 import { IconMenuTabs } from "@/registry/default/icon-menu-tabs/icon-menu-tabs";
 import { IconSparkle } from "@/registry/default/icon-sparkle/icon-sparkle";
+// Essential Action Icons
+import { IconTrash } from "@/registry/default/icon-trash/icon-trash";
+import { IconEdit } from "@/registry/default/icon-edit/icon-edit";
+import { IconCheck } from "@/registry/default/icon-check/icon-check";
+import { IconX } from "@/registry/default/icon-x/icon-x";
+import { IconCopy } from "@/registry/default/icon-copy/icon-copy";
+import { IconPlus } from "@/registry/default/icon-plus/icon-plus";
+import { IconMinus } from "@/registry/default/icon-minus/icon-minus";
+import { IconSearch } from "@/registry/default/icon-search/icon-search";
+import { IconSettings } from "@/registry/default/icon-settings/icon-settings";
+// Communication Icons
+import { IconMail } from "@/registry/default/icon-mail/icon-mail";
+import { IconBell } from "@/registry/default/icon-bell/icon-bell";
+import { IconSend } from "@/registry/default/icon-send/icon-send";
+// File Icons
+import { IconDownload } from "@/registry/default/icon-download/icon-download";
+import { IconUpload } from "@/registry/default/icon-upload/icon-upload";
+// Media Icons
+import { IconPlay } from "@/registry/default/icon-play/icon-play";
+import { IconPause } from "@/registry/default/icon-pause/icon-pause";
+// UI Icons
+import { IconEye } from "@/registry/default/icon-eye/icon-eye";
+import { IconLock } from "@/registry/default/icon-lock/icon-lock";
+import { IconUnlock } from "@/registry/default/icon-unlock/icon-unlock";
+import { IconStar } from "@/registry/default/icon-star/icon-star";
+import { IconLoader } from "@/registry/default/icon-loader/icon-loader";
+// Premium Icons
+import { IconFolder } from "@/registry/default/icon-folder/icon-folder";
+import { IconFile } from "@/registry/default/icon-file/icon-file";
+import { IconRefreshCw } from "@/registry/default/icon-refresh-cw/icon-refresh-cw";
+import { IconVolume2 } from "@/registry/default/icon-volume-2/icon-volume-2";
+import { IconWifi } from "@/registry/default/icon-wifi/icon-wifi";
+import { IconCalendar } from "@/registry/default/icon-calendar/icon-calendar";
+import { IconCamera } from "@/registry/default/icon-camera/icon-camera";
+import { IconMic } from "@/registry/default/icon-mic/icon-mic";
+import { IconPower } from "@/registry/default/icon-power/icon-power";
+import { IconTerminal } from "@/registry/default/icon-terminal/icon-terminal";
+import { IconShare } from "@/registry/default/icon-share/icon-share";
+import { IconBookmark } from "@/registry/default/icon-bookmark/icon-bookmark";
+import { IconZap } from "@/registry/default/icon-zap/icon-zap";
+import { IconUser } from "@/registry/default/icon-user/icon-user";
+import { IconLogIn } from "@/registry/default/icon-log-in/icon-log-in";
+import { IconLogOut } from "@/registry/default/icon-log-out/icon-log-out";
+import { IconShoppingCart } from "@/registry/default/icon-shopping-cart/icon-shopping-cart";
+import { IconGift } from "@/registry/default/icon-gift/icon-gift";
+import { IconCloud } from "@/registry/default/icon-cloud/icon-cloud";
+import { IconSun } from "@/registry/default/icon-sun/icon-sun";
+// Premium Icons Expansion
+import { IconHeartHandshake } from "@/registry/default/icon-heart-handshake/icon-heart-handshake";
+import { IconThermometer } from "@/registry/default/icon-thermometer/icon-thermometer";
+import { IconMousePointer2 } from "@/registry/default/icon-mouse-pointer-2/icon-mouse-pointer-2";
+import { IconLayers } from "@/registry/default/icon-layers/icon-layers";
+import { IconDatabase } from "@/registry/default/icon-database/icon-database";
+import { IconShieldCheck } from "@/registry/default/icon-shield-check/icon-shield-check";
+import { IconKey } from "@/registry/default/icon-key/icon-key";
+import { IconBriefcase } from "@/registry/default/icon-briefcase/icon-briefcase";
+import { IconLayout } from "@/registry/default/icon-layout/icon-layout";
+import { IconPalette } from "@/registry/default/icon-palette/icon-palette";
+// Batch 3 Premium Icons
+import { IconGlobe } from "@/registry/default/icon-globe/icon-globe";
+import { IconMusic } from "@/registry/default/icon-music/icon-music";
+import { IconMonitor } from "@/registry/default/icon-monitor/icon-monitor";
+import { IconSmartphone } from "@/registry/default/icon-smartphone/icon-smartphone";
+import { IconTablet } from "@/registry/default/icon-tablet/icon-tablet";
+import { IconCreditCard } from "@/registry/default/icon-credit-card/icon-credit-card";
+import { IconShoppingBag } from "@/registry/default/icon-shopping-bag/icon-shopping-bag";
+import { IconCompass } from "@/registry/default/icon-compass/icon-compass";
+import { IconHardDrive } from "@/registry/default/icon-hard-drive/icon-hard-drive";
+// Batch 4 Premium Icons
+import { IconBatteryCharging } from "@/registry/default/icon-battery-charging/icon-battery-charging";
+import { IconCloudRain } from "@/registry/default/icon-cloud-rain/icon-cloud-rain";
+import { IconCloudLightning } from "@/registry/default/icon-cloud-lightning/icon-cloud-lightning";
+import { IconSnowflake } from "@/registry/default/icon-snowflake/icon-snowflake";
+import { IconFlame } from "@/registry/default/icon-flame/icon-flame";
+import { IconPlane } from "@/registry/default/icon-plane/icon-plane";
+import { IconTruck } from "@/registry/default/icon-truck/icon-truck";
+import { IconScan } from "@/registry/default/icon-scan/icon-scan";
+import { IconCpu } from "@/registry/default/icon-cpu/icon-cpu";
+import { IconServer } from "@/registry/default/icon-server/icon-server";
+import { IconBot } from "@/registry/default/icon-bot/icon-bot";
+import { IconSmile } from "@/registry/default/icon-smile/icon-smile";
+import { IconFrown } from "@/registry/default/icon-frown/icon-frown";
+// Batch 5 Premium Icons
+import { IconAward } from "@/registry/default/icon-award/icon-award";
+import { IconBeaker } from "@/registry/default/icon-beaker/icon-beaker";
+import { IconBookOpen } from "@/registry/default/icon-book-open/icon-book-open";
+import { IconCoffee } from "@/registry/default/icon-coffee/icon-coffee";
+import { IconScissors } from "@/registry/default/icon-scissors/icon-scissors";
+import { IconUmbrella } from "@/registry/default/icon-umbrella/icon-umbrella";
 
 export const iconsRegistry = [
   {
@@ -260,9 +349,9 @@ export const iconsRegistry = [
   {
     name: "icon-anchor",
     component: IconAnchor,
-    color: "text-sky-400",
-    description: "Anchor with a weighted drop motion",
-    tags: ["anchor", "marine", "sea", "ship"],
+    color: "text-blue-200",
+    description: "Anchor with nautical swaying animation",
+    tags: ["anchor", "nautical", "sea", "ship"],
   },
   {
     name: "icon-angry",
@@ -1153,12 +1242,575 @@ export const iconsRegistry = [
     description: "Clock icon with ticking hands and gentle ring pulse",
     tags: ["clock", "time", "schedule", "navigation"],
   },
+  // Essential Action Icons
+  {
+    name: "icon-trash",
+    component: IconTrash,
+    color: "text-rose-500",
+    description: "Trash can with lid lifting animation",
+    tags: ["trash", "delete", "remove", "bin", "garbage"],
+  },
+  {
+    name: "icon-edit",
+    component: IconEdit,
+    color: "text-blue-400",
+    description: "Edit pencil with writing tilt motion",
+    tags: ["edit", "pencil", "write", "modify"],
+  },
+  {
+    name: "icon-check",
+    component: IconCheck,
+    color: "text-emerald-400",
+    description: "Checkmark with stroke draw animation",
+    tags: ["check", "done", "complete", "success"],
+  },
+  {
+    name: "icon-x",
+    component: IconX,
+    color: "text-rose-400",
+    description: "X mark with 90-degree rotation",
+    tags: ["x", "close", "cancel", "remove"],
+  },
+  {
+    name: "icon-copy",
+    component: IconCopy,
+    color: "text-white",
+    description: "Copy sheets separating on hover",
+    tags: ["copy", "duplicate", "clipboard"],
+  },
+  {
+    name: "icon-plus",
+    component: IconPlus,
+    color: "text-emerald-400",
+    description: "Plus sign with scale and rotate",
+    tags: ["plus", "add", "new", "create"],
+  },
+  {
+    name: "icon-minus",
+    component: IconMinus,
+    color: "text-rose-400",
+    description: "Minus sign with contracting animation",
+    tags: ["minus", "subtract", "remove", "reduce"],
+  },
+  {
+    name: "icon-search",
+    component: IconSearch,
+    color: "text-white",
+    description: "Magnifying glass with zoom pulse",
+    tags: ["search", "find", "magnify", "lookup"],
+  },
+  {
+    name: "icon-settings",
+    component: IconSettings,
+    color: "text-zinc-300",
+    description: "Gear rotating 45 degrees on hover",
+    tags: ["settings", "gear", "cog", "preferences"],
+  },
+  // Communication Icons
+  {
+    name: "icon-mail",
+    component: IconMail,
+    color: "text-sky-400",
+    description: "Envelope with flap opening animation",
+    tags: ["mail", "email", "message", "envelope"],
+  },
+  {
+    name: "icon-bell",
+    component: IconBell,
+    color: "text-amber-400",
+    description: "Bell with ringing shake animation",
+    tags: ["bell", "notification", "alert", "ring"],
+  },
+  {
+    name: "icon-send",
+    component: IconSend,
+    color: "text-sky-400",
+    description: "Paper plane launching diagonally",
+    tags: ["send", "submit", "message", "share"],
+  },
+  // File Icons
+  {
+    name: "icon-download",
+    component: IconDownload,
+    color: "text-emerald-400",
+    description: "Arrow dropping into download tray",
+    tags: ["download", "save", "get", "arrow"],
+  },
+  {
+    name: "icon-upload",
+    component: IconUpload,
+    color: "text-sky-400",
+    description: "Arrow rising from upload tray",
+    tags: ["upload", "send", "share", "arrow"],
+  },
+  // Media Icons
+  {
+    name: "icon-play",
+    component: IconPlay,
+    color: "text-emerald-400",
+    description: "Play triangle with scale up animation",
+    tags: ["play", "start", "media", "video"],
+  },
+  {
+    name: "icon-pause",
+    component: IconPause,
+    color: "text-amber-400",
+    description: "Pause bars separating on hover",
+    tags: ["pause", "stop", "media", "break"],
+  },
+  // UI Icons
+  {
+    name: "icon-eye",
+    component: IconEye,
+    color: "text-white",
+    description: "Eye with realistic blink animation",
+    tags: ["eye", "view", "visibility", "show"],
+  },
+  {
+    name: "icon-lock",
+    component: IconLock,
+    color: "text-amber-400",
+    description: "Lock with shackle lifting open",
+    tags: ["lock", "secure", "private", "password"],
+  },
+  {
+    name: "icon-unlock",
+    component: IconUnlock,
+    color: "text-emerald-400",
+    description: "Unlock with shackle dropping closed",
+    tags: ["unlock", "open", "access", "password"],
+  },
+  {
+    name: "icon-star",
+    component: IconStar,
+    color: "text-amber-400",
+    description: "Star with scale and rotate animation",
+    tags: ["star", "favorite", "rating", "bookmark"],
+  },
+  {
+    name: "icon-loader",
+    component: IconLoader,
+    color: "text-sky-400",
+    description: "Loader with continuous rotation",
+    tags: ["loader", "loading", "spinner", "wait"],
+  },
+  // Premium Icons
+  {
+    name: "icon-folder",
+    component: IconFolder,
+    color: "text-amber-400",
+    description: "Folder with flap opening and document peeking animation",
+    tags: ["folder", "file", "directory", "storage"],
+  },
+  {
+    name: "icon-file",
+    component: IconFile,
+    color: "text-slate-300",
+    description: "File with lift-up and corner fold animation",
+    tags: ["file", "document", "paper"],
+  },
+  {
+    name: "icon-refresh-cw",
+    component: IconRefreshCw,
+    color: "text-emerald-400",
+    description: "Refresh icon with clockwise rotation",
+    tags: ["refresh", "reload", "update", "sync"],
+  },
+  {
+    name: "icon-volume-2",
+    component: IconVolume2,
+    color: "text-slate-200",
+    description: "Speaker with pulsing sound waves",
+    tags: ["volume", "speaker", "audio", "sound"],
+  },
+  {
+    name: "icon-wifi",
+    component: IconWifi,
+    color: "text-sky-400",
+    description: "WiFi signal with radiating ripples",
+    tags: ["wifi", "network", "signal", "internet"],
+  },
+  {
+    name: "icon-calendar",
+    component: IconCalendar,
+    color: "text-rose-400",
+    description: "Calendar with page-flipping animation",
+    tags: ["calendar", "date", "event", "schedule"],
+  },
+  {
+    name: "icon-camera",
+    component: IconCamera,
+    color: "text-slate-300",
+    description: "Camera with shutter and flash animation",
+    tags: ["camera", "photo", "image", "capture"],
+  },
+  {
+    name: "icon-mic",
+    component: IconMic,
+    color: "text-white",
+    description: "Microphone with pulsing audio waves",
+    tags: ["mic", "microphone", "audio", "record"],
+  },
+  {
+    name: "icon-power",
+    component: IconPower,
+    color: "text-rose-500",
+    description: "Power button with on/off glow effect",
+    tags: ["power", "switch", "toggle", "on", "off"],
+  },
+  {
+    name: "icon-terminal",
+    component: IconTerminal,
+    color: "text-emerald-500",
+    description: "Terminal with blinking cursor and prompt shift",
+    tags: ["terminal", "code", "command", "prompt"],
+  },
+  {
+    name: "icon-share",
+    component: IconShare,
+    color: "text-sky-400",
+    description: "Share icon with nodes spreading outward",
+    tags: ["share", "nodes", "network", "social"],
+  },
+  {
+    name: "icon-bookmark",
+    component: IconBookmark,
+    color: "text-amber-400",
+    description: "Bookmark that folds down like on a page",
+    tags: ["bookmark", "favorite", "save"],
+  },
+  {
+    name: "icon-zap",
+    component: IconZap,
+    color: "text-yellow-400",
+    description: "Lightning bolt with electric flash effect",
+    tags: ["zap", "lightning", "energy", "flash", "power"],
+  },
+  {
+    name: "icon-user",
+    component: IconUser,
+    color: "text-slate-300",
+    description: "User icon with friendly head nod animation",
+    tags: ["user", "person", "profile", "account"],
+  },
+  {
+    name: "icon-log-in",
+    component: IconLogIn,
+    color: "text-emerald-400",
+    description: "Log in with arrow sliding through door",
+    tags: ["log-in", "signin", "enter", "door"],
+  },
+  {
+    name: "icon-log-out",
+    component: IconLogOut,
+    color: "text-rose-400",
+    description: "Log out with arrow exiting through door",
+    tags: ["log-out", "signout", "exit", "door"],
+  },
+  {
+    name: "icon-shopping-cart",
+    component: IconShoppingCart,
+    color: "text-slate-200",
+    description: "Shopping cart rolling with spinning wheels",
+    tags: ["cart", "shopping", "ecommerce", "buy"],
+  },
+  {
+    name: "icon-gift",
+    component: IconGift,
+    color: "text-rose-400",
+    description: "Gift box box that shakes and lid lifts",
+    tags: ["gift", "present", "box", "reward", "surprise"],
+  },
+  {
+    name: "icon-cloud",
+    component: IconCloud,
+    color: "text-sky-200",
+    description: "Cloud that floats gently like in the sky",
+    tags: ["cloud", "weather", "float", "sky"],
+  },
+  {
+    name: "icon-sun",
+    component: IconSun,
+    color: "text-amber-400",
+    description: "Sun rotating with radiating ray pulses",
+    tags: ["sun", "weather", "light", "day", "warmth"],
+  },
+  // Premium Icons Expansion
+  {
+    name: "icon-heart-handshake",
+    component: IconHeartHandshake,
+    color: "text-rose-400",
+    description: "Heart with pulsing and handshake animation",
+    tags: ["heart", "handshake", "partnership", "trust"],
+  },
+  {
+    name: "icon-thermometer",
+    component: IconThermometer,
+    color: "text-red-400",
+    description: "Thermometer with rising temperature animation",
+    tags: ["thermometer", "temperature", "temp", "hot"],
+  },
+  {
+    name: "icon-mouse-pointer-2",
+    component: IconMousePointer2,
+    color: "text-white",
+    description: "Mouse pointer with depth-click animation",
+    tags: ["mouse", "pointer", "cursor", "click"],
+  },
+  {
+    name: "icon-layers",
+    component: IconLayers,
+    color: "text-sky-300",
+    description: "Layers with vertical separation animation",
+    tags: ["layers", "stack", "sheets"],
+  },
+  {
+    name: "icon-database",
+    component: IconDatabase,
+    color: "text-slate-200",
+    description: "Database with infrastructure pulse animation",
+    tags: ["database", "storage", "server", "infra"],
+  },
+  {
+    name: "icon-shield-check",
+    component: IconShieldCheck,
+    color: "text-emerald-400",
+    description: "Shield with secure check-draw animation",
+    tags: ["shield", "check", "secure", "safe"],
+  },
+  {
+    name: "icon-key",
+    component: IconKey,
+    color: "text-amber-300",
+    description: "Key with unlocking rotation animation",
+    tags: ["key", "lock", "unlock", "access"],
+  },
+  {
+    name: "icon-briefcase",
+    component: IconBriefcase,
+    color: "text-amber-700",
+    description: "Briefcase with handle lift and bag shift animation",
+    tags: ["briefcase", "work", "job", "office"],
+  },
+  {
+    name: "icon-layout",
+    component: IconLayout,
+    color: "text-sky-400",
+    description: "Layout with masonry shifting animation",
+    tags: ["layout", "grid", "blocks", "masonry"],
+  },
+  {
+    name: "icon-palette",
+    component: IconPalette,
+    color: "text-white",
+    description: "Palette with playful dot-pulsing animation",
+    tags: ["palette", "color", "design", "art"],
+  },
+  // Batch 3 Premium Icons
+  {
+    name: "icon-globe",
+    component: IconGlobe,
+    color: "text-blue-400",
+    description: "Globe with world-spin animation",
+    tags: ["globe", "world", "earth", "network"],
+  },
+  {
+    name: "icon-music",
+    component: IconMusic,
+    color: "text-purple-400",
+    description: "Musical note with floating bounce animation",
+    tags: ["music", "note", "audio", "sound"],
+  },
+  {
+    name: "icon-monitor",
+    component: IconMonitor,
+    color: "text-slate-100",
+    description: "Monitor with screen wake-up glow animation",
+    tags: ["monitor", "screen", "computer", "display"],
+  },
+  {
+    name: "icon-smartphone",
+    component: IconSmartphone,
+    color: "text-slate-100",
+    description: "Smartphone with notification vibration animation",
+    tags: ["smartphone", "mobile", "phone", "device"],
+  },
+  {
+    name: "icon-tablet",
+    component: IconTablet,
+    color: "text-slate-100",
+    description: "Tablet with screen brightness pulse animation",
+    tags: ["tablet", "ipad", "device", "mobile"],
+  },
+  {
+    name: "icon-credit-card",
+    component: IconCreditCard,
+    color: "text-emerald-400",
+    description: "Credit card with payment slide and chip glow animation",
+    tags: ["credit-card", "card", "payment", "bank", "money"],
+  },
+  {
+    name: "icon-shopping-bag",
+    component: IconShoppingBag,
+    color: "text-amber-600",
+    description: "Shopping bag with natural swing animation",
+    tags: ["shopping-bag", "bag", "shop", "ecommerce", "cart"],
+  },
   {
     name: "icon-map-pin",
     component: IconMapPin,
+    color: "text-rose-500",
+    description: "Map pin with drop and bounce animation",
+    tags: ["map-pin", "pin", "location", "map", "gps"],
+  },
+  {
+    name: "icon-compass",
+    component: IconCompass,
+    color: "text-blue-500",
+    description: "Compass with needle search animation",
+    tags: ["compass", "navigation", "map", "north"],
+  },
+  {
+    name: "icon-hard-drive",
+    component: IconHardDrive,
+    color: "text-slate-300",
+    description: "Hard drive with activity LED animation",
+    tags: ["hard-drive", "storage", "disk", "server", "data"],
+  },
+  // Batch 4 Premium Icons
+  {
+    name: "icon-battery-charging",
+    component: IconBatteryCharging,
+    color: "text-emerald-400",
+    description: "Battery charging with pulsing bolt animation",
+    tags: ["battery", "charging", "power", "energy"],
+  },
+  {
+    name: "icon-cloud-rain",
+    component: IconCloudRain,
+    color: "text-sky-400",
+    description: "Cloud rain with sequential raindrop animation",
+    tags: ["cloud", "rain", "weather", "storm"],
+  },
+  {
+    name: "icon-cloud-lightning",
+    component: IconCloudLightning,
+    color: "text-yellow-400",
+    description: "Cloud lightning with realistic flash animation",
+    tags: ["cloud", "lightning", "weather", "storm"],
+  },
+  {
+    name: "icon-snowflake",
+    component: IconSnowflake,
+    color: "text-sky-200",
+    description: "Snowflake with slow rotation animation",
+    tags: ["snowflake", "winter", "cold", "weather"],
+  },
+  {
+    name: "icon-flame",
+    component: IconFlame,
+    color: "text-orange-500",
+    description: "Flame with flickering scale animation",
+    tags: ["flame", "fire", "hot", "burn"],
+  },
+  {
+    name: "icon-plane",
+    component: IconPlane,
+    color: "text-sky-300",
+    description: "Plane with takeoff flight animation",
+    tags: ["plane", "flight", "travel", "transport"],
+  },
+  {
+    name: "icon-truck",
+    component: IconTruck,
+    color: "text-amber-600",
+    description: "Truck with driving vibration and wheel rotation",
+    tags: ["truck", "delivery", "transport", "shipping"],
+  },
+  {
+    name: "icon-scan",
+    component: IconScan,
+    color: "text-sky-400",
+    description: "Scan with corner pulse and horizontal line flicker",
+    tags: ["scan", "qrcode", "barcode", "focus"],
+  },
+  {
+    name: "icon-cpu",
+    component: IconCpu,
+    color: "text-slate-400",
+    description: "CPU with processing circuitry animation",
+    tags: ["cpu", "processor", "chip", "computer"],
+  },
+  {
+    name: "icon-server",
+    component: IconServer,
+    color: "text-slate-300",
+    description: "Server with blinking activity LED animation",
+    tags: ["server", "data", "hosting", "storage"],
+  },
+  {
+    name: "icon-bot",
+    component: IconBot,
+    color: "text-sky-300",
+    description: "Bot with blinking eyes and head tilt animation",
+    tags: ["bot", "ai", "robot", "chat"],
+  },
+  {
+    name: "icon-smile",
+    component: IconSmile,
+    color: "text-amber-400",
+    description: "Smile with mouth-drawing animation",
+    tags: ["smile", "happy", "face", "emote"],
+  },
+  {
+    name: "icon-frown",
+    component: IconFrown,
     color: "text-rose-400",
-    description: "Map pin with lift and pulse ripple",
-    tags: ["map", "pin", "navigation", "location"],
+    description: "Frown with subtle rotation and mouth-shift",
+    tags: ["frown", "sad", "face", "emote"],
+  },
+  // Batch 5 Premium Icons
+  {
+    name: "icon-award",
+    component: IconAward,
+    color: "text-amber-300",
+    description: "Award with victory pulse and shine animation",
+    tags: ["award", "medal", "trophy", "success"],
+  },
+  {
+    name: "icon-beaker",
+    component: IconBeaker,
+    color: "text-emerald-300",
+    description: "Beaker with liquid rippling and bubbling animation",
+    tags: ["beaker", "science", "lab", "experiment"],
+  },
+  {
+    name: "icon-book-open",
+    component: IconBookOpen,
+    color: "text-amber-200",
+    description: "Book open with realistic page-flipping animation",
+    tags: ["book", "reading", "education", "knowledge"],
+  },
+  {
+    name: "icon-coffee",
+    component: IconCoffee,
+    color: "text-amber-800",
+    description: "Coffee with rising steam and gentle cup vibration",
+    tags: ["coffee", "cup", "drink", "warmth"],
+  },
+  {
+    name: "icon-scissors",
+    component: IconScissors,
+    color: "text-slate-200",
+    description: "Scissors with precise cutting blade rotation",
+    tags: ["scissors", "cut", "tool", "craft"],
+  },
+  {
+    name: "icon-umbrella",
+    component: IconUmbrella,
+    color: "text-rose-300",
+    description: "Umbrella with expanding canopy animation",
+    tags: ["umbrella", "weather", "rain", "shelter"],
   },
 ] as const;
 

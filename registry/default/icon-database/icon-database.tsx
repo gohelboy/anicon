@@ -2,31 +2,33 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMapPinProps extends React.SVGProps<SVGSVGElement> {
+export interface IconDatabaseProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0, scale: 1 },
-  hover: {
-    y: [0, -4, 0],
-    scale: [1, 1.05, 1],
+const layerVariants: Variants = {
+  rest: { scaleY: 1, y: 0 },
+  hover: (i: number) => ({
+    scaleY: [1, 1.05, 1],
+    y: i === 0 ? -2 : i === 2 ? 2 : 0,
     transition: {
-      duration: 0.6,
-      times: [0, 0.4, 1],
-      ease: "easeOut",
+      duration: 1,
+      repeat: Infinity,
+      repeatType: "mirror",
+      delay: i * 0.2,
+      ease: "easeInOut",
     },
-  },
+  }),
 };
 
-export function IconMapPin({
+export function IconDatabase({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconMapPinProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
+}: IconDatabaseProps) {
+  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -43,13 +45,13 @@ export function IconMapPin({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      variants={pinVariants}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible", originY: "22px" }}
-      {...restOptions}
+      style={{ overflow: "visible" }}
+      {...rest}
     >
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-      <circle cx="12" cy="10" r="3" />
+      <motion.ellipse cx="12" cy="5" rx="9" ry="3" variants={layerVariants} custom={0} />
+      <motion.path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" variants={layerVariants} custom={2} />
+      <motion.path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3" variants={layerVariants} custom={1} />
     </motion.svg>
   );
 }
