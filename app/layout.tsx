@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
@@ -30,6 +31,7 @@ export default function RootLayout({
     <html lang="en" className={dmSans.variable}>
       <body className="min-w-0 overflow-x-hidden font-sans antialiased">
         {children}
+        <Analytics />
       </body>
     </html>
   );
