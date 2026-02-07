@@ -11,6 +11,21 @@ import { IconActivitySquare } from "@/registry/default/icon-activity-square/icon
 import { IconAirVent } from "@/registry/default/icon-air-vent/icon-air-vent";
 import { IconAirplay } from "@/registry/default/icon-airplay/icon-airplay";
 import { IconAmphora } from "@/registry/default/icon-amphora/icon-amphora";
+import { IconArchive } from "@/registry/default/icon-archive/icon-archive";
+import { IconArchiveRestore } from "@/registry/default/icon-archive-restore/icon-archive-restore";
+import { IconArchiveX } from "@/registry/default/icon-archive-x/icon-archive-x";
+import { IconAreaChart } from "@/registry/default/icon-area-chart/icon-area-chart";
+import { IconArmchair } from "@/registry/default/icon-armchair/icon-armchair";
+import { IconArrowBigDown } from "@/registry/default/icon-arrow-big-down/icon-arrow-big-down";
+import { IconArrowBigDownDash } from "@/registry/default/icon-arrow-big-down-dash/icon-arrow-big-down-dash";
+import { IconArrowBigLeft } from "@/registry/default/icon-arrow-big-left/icon-arrow-big-left";
+import { IconArrowBigLeftDash } from "@/registry/default/icon-arrow-big-left-dash/icon-arrow-big-left-dash";
+import { IconArrowBigRight } from "@/registry/default/icon-arrow-big-right/icon-arrow-big-right";
+import { IconArrowBigRightDash } from "@/registry/default/icon-arrow-big-right-dash/icon-arrow-big-right-dash";
+import { IconArrowBigUp } from "@/registry/default/icon-arrow-big-up/icon-arrow-big-up";
+import { IconArrowBigUpDash } from "@/registry/default/icon-arrow-big-up-dash/icon-arrow-big-up-dash";
+import { IconArrowDown01 } from "@/registry/default/icon-arrow-down-0-1/icon-arrow-down-0-1";
+import { IconArrowDown01Alt } from "@/registry/default/icon-arrow-down-01/icon-arrow-down-01";
 import { IconAlarmClock } from "@/registry/default/icon-alarm-clock/icon-alarm-clock";
 import { IconAlarmClockCheck } from "@/registry/default/icon-alarm-clock-check/icon-alarm-clock-check";
 import { IconAlarmClockMinus } from "@/registry/default/icon-alarm-clock-minus/icon-alarm-clock-minus";
@@ -252,6 +267,111 @@ export const iconsRegistry = [
     color: "text-emerald-400",
     description: "Apple with a subtle stem tilt",
     tags: ["apple", "fruit", "food", "brand"],
+  },
+  {
+    name: "icon-archive",
+    component: IconArchive,
+    color: "text-zinc-300",
+    description: "Archive box with a lifting lid",
+    tags: ["archive", "box", "storage"],
+  },
+  {
+    name: "icon-archive-restore",
+    component: IconArchiveRestore,
+    color: "text-zinc-300",
+    description: "Archive restore with an upward arrow",
+    tags: ["archive", "restore", "upload"],
+  },
+  {
+    name: "icon-archive-x",
+    component: IconArchiveX,
+    color: "text-rose-400",
+    description: "Archive with a rotating X mark",
+    tags: ["archive", "delete", "remove"],
+  },
+  {
+    name: "icon-area-chart",
+    component: IconAreaChart,
+    color: "text-emerald-400",
+    description: "Area chart with a rising fill",
+    tags: ["chart", "area", "analytics"],
+  },
+  {
+    name: "icon-armchair",
+    component: IconArmchair,
+    color: "text-amber-300",
+    description: "Armchair with a soft cushion bounce",
+    tags: ["armchair", "chair", "furniture"],
+  },
+  {
+    name: "icon-arrow-big-down",
+    component: IconArrowBigDown,
+    color: "text-white",
+    description: "Big arrow down with a strong drop",
+    tags: ["arrow", "down", "direction"],
+  },
+  {
+    name: "icon-arrow-big-down-dash",
+    component: IconArrowBigDownDash,
+    color: "text-white",
+    description: "Big arrow down with a pulsing dash",
+    tags: ["arrow", "down", "direction", "dash"],
+  },
+  {
+    name: "icon-arrow-big-left",
+    component: IconArrowBigLeft,
+    color: "text-white",
+    description: "Big arrow left with a strong slide",
+    tags: ["arrow", "left", "direction"],
+  },
+  {
+    name: "icon-arrow-big-left-dash",
+    component: IconArrowBigLeftDash,
+    color: "text-white",
+    description: "Big arrow left with a pulsing dash",
+    tags: ["arrow", "left", "direction", "dash"],
+  },
+  {
+    name: "icon-arrow-big-right",
+    component: IconArrowBigRight,
+    color: "text-white",
+    description: "Big arrow right with a strong slide",
+    tags: ["arrow", "right", "direction"],
+  },
+  {
+    name: "icon-arrow-big-right-dash",
+    component: IconArrowBigRightDash,
+    color: "text-white",
+    description: "Big arrow right with a pulsing dash",
+    tags: ["arrow", "right", "direction", "dash"],
+  },
+  {
+    name: "icon-arrow-big-up",
+    component: IconArrowBigUp,
+    color: "text-white",
+    description: "Big arrow up with a strong lift",
+    tags: ["arrow", "up", "direction"],
+  },
+  {
+    name: "icon-arrow-big-up-dash",
+    component: IconArrowBigUpDash,
+    color: "text-white",
+    description: "Big arrow up with a pulsing dash",
+    tags: ["arrow", "up", "direction", "dash"],
+  },
+  {
+    name: "icon-arrow-down-0-1",
+    component: IconArrowDown01,
+    color: "text-white",
+    description: "Arrow down with 0-1 sorting motion",
+    tags: ["arrow", "down", "sort", "numbers"],
+  },
+  {
+    name: "icon-arrow-down-01",
+    component: IconArrowDown01Alt,
+    color: "text-white",
+    description: "Arrow down with 01 sorting motion",
+    tags: ["arrow", "down", "sort", "numbers"],
   },
   {
     name: "icon-album",
