@@ -31,7 +31,7 @@ export function IconsSearchBar({
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
-            strokeWidth="2"
+            strokeWidth={stroke}
             strokeLinecap="round"
             strokeLinejoin="round"
           >
