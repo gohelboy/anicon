@@ -2792,6 +2792,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-heart-handshake",
+      "type": "registry:component",
+      "title": "Animated Heart Handshake",
+      "description": "Heart handshake icon with pulsing and squeeze animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-heart-handshake/icon-heart-handshake.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-thermometer",
+      "type": "registry:component",
+      "title": "Animated Thermometer",
+      "description": "Thermometer icon with rising temperature animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-thermometer/icon-thermometer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-mouse-pointer-2",
+      "type": "registry:component",
+      "title": "Animated Mouse Pointer 2",
+      "description": "Mouse pointer icon with depth-click animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-mouse-pointer-2/icon-mouse-pointer-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-layers",
+      "type": "registry:component",
+      "title": "Animated Layers",
+      "description": "Layers icon with vertical separation animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-layers/icon-layers.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-database",
+      "type": "registry:component",
+      "title": "Animated Database",
+      "description": "Database icon with infrastructure pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-database/icon-database.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shield-check",
+      "type": "registry:component",
+      "title": "Animated Shield Check",
+      "description": "Shield check icon with secure drawing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shield-check/icon-shield-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-key",
+      "type": "registry:component",
+      "title": "Animated Key",
+      "description": "Key icon with unlocking rotation animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-key/icon-key.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-briefcase",
+      "type": "registry:component",
+      "title": "Animated Briefcase",
+      "description": "Briefcase icon with handle lift and bag shift animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-briefcase/icon-briefcase.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-layout",
+      "type": "registry:component",
+      "title": "Animated Layout",
+      "description": "Layout icon with masonry shifting animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-layout/icon-layout.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-palette",
+      "type": "registry:component",
+      "title": "Animated Palette",
+      "description": "Palette icon with playful dot pulsing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-palette/icon-palette.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

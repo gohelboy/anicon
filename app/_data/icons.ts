@@ -190,6 +190,17 @@ import { IconShoppingCart } from "@/registry/default/icon-shopping-cart/icon-sho
 import { IconGift } from "@/registry/default/icon-gift/icon-gift";
 import { IconCloud } from "@/registry/default/icon-cloud/icon-cloud";
 import { IconSun } from "@/registry/default/icon-sun/icon-sun";
+// Premium Icons Expansion
+import { IconHeartHandshake } from "@/registry/default/icon-heart-handshake/icon-heart-handshake";
+import { IconThermometer } from "@/registry/default/icon-thermometer/icon-thermometer";
+import { IconMousePointer2 } from "@/registry/default/icon-mouse-pointer-2/icon-mouse-pointer-2";
+import { IconLayers } from "@/registry/default/icon-layers/icon-layers";
+import { IconDatabase } from "@/registry/default/icon-database/icon-database";
+import { IconShieldCheck } from "@/registry/default/icon-shield-check/icon-shield-check";
+import { IconKey } from "@/registry/default/icon-key/icon-key";
+import { IconBriefcase } from "@/registry/default/icon-briefcase/icon-briefcase";
+import { IconLayout } from "@/registry/default/icon-layout/icon-layout";
+import { IconPalette } from "@/registry/default/icon-palette/icon-palette";
 
 export const iconsRegistry = [
   {
@@ -1499,6 +1510,77 @@ export const iconsRegistry = [
     color: "text-amber-400",
     description: "Sun rotating with radiating ray pulses",
     tags: ["sun", "weather", "light", "day", "warmth"],
+  },
+  // Premium Icons Expansion
+  {
+    name: "icon-heart-handshake",
+    component: IconHeartHandshake,
+    color: "text-rose-400",
+    description: "Heart with pulsing and handshake animation",
+    tags: ["heart", "handshake", "partnership", "trust"],
+  },
+  {
+    name: "icon-thermometer",
+    component: IconThermometer,
+    color: "text-red-400",
+    description: "Thermometer with rising temperature animation",
+    tags: ["thermometer", "temperature", "temp", "hot"],
+  },
+  {
+    name: "icon-mouse-pointer-2",
+    component: IconMousePointer2,
+    color: "text-white",
+    description: "Mouse pointer with depth-click animation",
+    tags: ["mouse", "pointer", "cursor", "click"],
+  },
+  {
+    name: "icon-layers",
+    component: IconLayers,
+    color: "text-sky-300",
+    description: "Layers with vertical separation animation",
+    tags: ["layers", "stack", "sheets"],
+  },
+  {
+    name: "icon-database",
+    component: IconDatabase,
+    color: "text-slate-200",
+    description: "Database with infrastructure pulse animation",
+    tags: ["database", "storage", "server", "infra"],
+  },
+  {
+    name: "icon-shield-check",
+    component: IconShieldCheck,
+    color: "text-emerald-400",
+    description: "Shield with secure check-draw animation",
+    tags: ["shield", "check", "secure", "safe"],
+  },
+  {
+    name: "icon-key",
+    component: IconKey,
+    color: "text-amber-300",
+    description: "Key with unlocking rotation animation",
+    tags: ["key", "lock", "unlock", "access"],
+  },
+  {
+    name: "icon-briefcase",
+    component: IconBriefcase,
+    color: "text-amber-700",
+    description: "Briefcase with handle lift and bag shift animation",
+    tags: ["briefcase", "work", "job", "office"],
+  },
+  {
+    name: "icon-layout",
+    component: IconLayout,
+    color: "text-sky-400",
+    description: "Layout with masonry shifting animation",
+    tags: ["layout", "grid", "blocks", "masonry"],
+  },
+  {
+    name: "icon-palette",
+    component: IconPalette,
+    color: "text-white",
+    description: "Palette with playful dot-pulsing animation",
+    tags: ["palette", "color", "design", "art"],
   },
 ] as const;
 
