@@ -21,6 +21,10 @@ export default function IconsPage() {
     setDrawerOpen(true);
   };
 
+  const filteredIcons = iconsRegistry.filter((icon) => {
+    return icon.name.toLowerCase().includes(search.toLowerCase());
+  });
+
   return (
     <div className="min-h-screen">
       <LandingNavClient />
@@ -47,13 +51,13 @@ export default function IconsPage() {
 
         <section className="px-4 py-8 sm:px-6 sm:py-12">
           <div className="mx-auto max-w-6xl">
-            {iconsRegistry.length > 0 ? (
+            {filteredIcons.length > 0 ? (
               <>
                 <p className="mb-4 text-sm text-(--muted-foreground) sm:mb-6">
-                  {iconsRegistry.length} icons
+                  {filteredIcons.length} icons
                 </p>
                 <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-8">
-                  {iconsRegistry.map((icon) => (
+                  {filteredIcons.map((icon) => (
                     <IconCardButton
                       key={icon.name}
                       icon={icon}
