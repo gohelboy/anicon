@@ -4097,6 +4097,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-at-sign",
+      "type": "registry:component",
+      "title": "Animated At Sign",
+      "description": "At-sign with spiral drawing and pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-at-sign/icon-at-sign.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hash",
+      "type": "registry:component",
+      "title": "Animated Hash",
+      "description": "Hash sign with grid-lock sliding animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hash/icon-hash.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bus",
+      "type": "registry:component",
+      "title": "Animated Bus",
+      "description": "Bus with road-trip vibration and light pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bus/icon-bus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-train-front",
+      "type": "registry:component",
+      "title": "Animated Train Front",
+      "description": "Train front with rails-wobble and light pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-train-front/icon-train-front.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bike",
+      "type": "registry:component",
+      "title": "Animated Bike",
+      "description": "Bike with wheel-spin and body bob animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bike/icon-bike.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-wrench",
+      "type": "registry:component",
+      "title": "Animated Wrench",
+      "description": "Wrench with interactive nut-turning animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-wrench/icon-wrench.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hammer",
+      "type": "registry:component",
+      "title": "Animated Hammer",
+      "description": "Hammer with strike and nail-hit animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hammer/icon-hammer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-utensils",
+      "type": "registry:component",
+      "title": "Animated Utensils",
+      "description": "Utensils with interactive dining-ready slide.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-utensils/icon-utensils.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pocket",
+      "type": "registry:component",
+      "title": "Animated Pocket",
+      "description": "Pocket with interactive content shift bob.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pocket/icon-pocket.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-map",
+      "type": "registry:component",
+      "title": "Animated Map",
+      "description": "Map with interactive unfold and slide effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-map/icon-map.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

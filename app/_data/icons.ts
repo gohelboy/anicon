@@ -286,6 +286,17 @@ import { IconCoins } from "@/registry/default/icon-coins/icon-coins";
 import { IconPackage } from "@/registry/default/icon-package/icon-package";
 import { IconClapperboard } from "@/registry/default/icon-clapperboard/icon-clapperboard";
 import { IconFrame } from "@/registry/default/icon-frame/icon-frame";
+// Batch 11 Lifestyle & Communication Icons
+import { IconAtSign } from "@/registry/default/icon-at-sign/icon-at-sign";
+import { IconHash } from "@/registry/default/icon-hash/icon-hash";
+import { IconBus } from "@/registry/default/icon-bus/icon-bus";
+import { IconTrainFront } from "@/registry/default/icon-train-front/icon-train-front";
+import { IconBike } from "@/registry/default/icon-bike/icon-bike";
+import { IconWrench } from "@/registry/default/icon-wrench/icon-wrench";
+import { IconHammer } from "@/registry/default/icon-hammer/icon-hammer";
+import { IconUtensils } from "@/registry/default/icon-utensils/icon-utensils";
+import { IconPocket } from "@/registry/default/icon-pocket/icon-pocket";
+import { IconMap } from "@/registry/default/icon-map/icon-map";
 
 export const iconsRegistry = [
   {
@@ -2208,6 +2219,76 @@ export const iconsRegistry = [
     color: "text-indigo-500",
     description: "Design frame with border drawing animation",
     tags: ["frame", "design", "layout", "border"],
+  },
+  {
+    name: "icon-at-sign",
+    component: IconAtSign,
+    color: "text-blue-500",
+    description: "At-sign with spiral drawing and pulse animation",
+    tags: ["at", "email", "mention", "communication"],
+  },
+  {
+    name: "icon-hash",
+    component: IconHash,
+    color: "text-zinc-500",
+    description: "Hash sign with grid-lock sliding animation",
+    tags: ["hash", "tag", "number", "social"],
+  },
+  {
+    name: "icon-bus",
+    component: IconBus,
+    color: "text-amber-500",
+    description: "Bus with road-trip vibration and light pulse",
+    tags: ["bus", "transport", "vehicle", "travel"],
+  },
+  {
+    name: "icon-train-front",
+    component: IconTrainFront,
+    color: "text-zinc-600",
+    description: "Train front with rails-wobble and light pulse",
+    tags: ["train", "transport", "vehicle", "travel"],
+  },
+  {
+    name: "icon-bike",
+    component: IconBike,
+    color: "text-emerald-500",
+    description: "Bike with wheel-spin and body bob animation",
+    tags: ["bike", "transport", "vehicle", "travel"],
+  },
+  {
+    name: "icon-wrench",
+    component: IconWrench,
+    color: "text-zinc-500",
+    description: "Wrench with interactive nut-turning animation",
+    tags: ["wrench", "tool", "fix", "repair"],
+  },
+  {
+    name: "icon-hammer",
+    component: IconHammer,
+    color: "text-orange-900",
+    description: "Hammer with strike and nail-hit animation",
+    tags: ["hammer", "tool", "build", "construction"],
+  },
+  {
+    name: "icon-utensils",
+    component: IconUtensils,
+    color: "text-rose-400",
+    description: "Utensils with interactive dining-ready slide",
+    tags: ["utensils", "food", "dining", "restaurant"],
+  },
+  {
+    name: "icon-pocket",
+    component: IconPocket,
+    color: "text-blue-400",
+    description: "Pocket with interactive content shift bob",
+    tags: ["pocket", "save", "later", "read"],
+  },
+  {
+    name: "icon-map",
+    component: IconMap,
+    color: "text-emerald-600",
+    description: "Map with interactive unfold and slide effect",
+    tags: ["map", "navigation", "travel", "location"],
   },
 ] as const;
 
