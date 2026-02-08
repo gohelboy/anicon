@@ -341,6 +341,17 @@ import { IconMessageSquareWarning } from "@/registry/default/icon-message-square
 import { IconOctagonX } from "@/registry/default/icon-octagon-x/icon-octagon-x";
 import { IconSiren } from "@/registry/default/icon-siren/icon-siren";
 import { IconBadgeAlert } from "@/registry/default/icon-badge-alert/icon-badge-alert";
+// Batch 16 Extended Alerts Icons
+import { IconCircleAlert } from "@/registry/default/icon-circle-alert/icon-circle-alert";
+import { IconClockAlert } from "@/registry/default/icon-clock-alert/icon-clock-alert";
+import { IconOctagonAlert } from "@/registry/default/icon-octagon-alert/icon-octagon-alert";
+import { IconTriangleAlert } from "@/registry/default/icon-triangle-alert/icon-triangle-alert";
+import { IconMailWarning } from "@/registry/default/icon-mail-warning/icon-mail-warning";
+import { IconBatteryWarning } from "@/registry/default/icon-battery-warning/icon-battery-warning";
+import { IconFlag } from "@/registry/default/icon-flag/icon-flag";
+import { IconFlagOff } from "@/registry/default/icon-flag-off/icon-flag-off";
+import { IconBookAlert } from "@/registry/default/icon-book-alert/icon-book-alert";
+import { IconFileAlert } from "@/registry/default/icon-file-alert/icon-file-alert";
 
 export const iconsRegistry = [
   {
@@ -2613,6 +2624,76 @@ export const iconsRegistry = [
     color: "text-rose-500",
     description: "Badge alert with interactive scale and pulse",
     tags: ["badge", "alert", "important", "warning"],
+  },
+  {
+    name: "icon-circle-alert",
+    component: IconCircleAlert,
+    color: "text-rose-500",
+    description: "Circle alert with interactive scale and pulse",
+    tags: ["circle", "alert", "warning", "caution"],
+  },
+  {
+    name: "icon-clock-alert",
+    component: IconClockAlert,
+    color: "text-amber-500",
+    description: "Clock alert with interactive ticking and warning pulse",
+    tags: ["clock", "alert", "time", "warning"],
+  },
+  {
+    name: "icon-octagon-alert",
+    component: IconOctagonAlert,
+    color: "text-rose-600",
+    description: "Octagon alert with interactive scale and bounce",
+    tags: ["octagon", "alert", "stop", "warning"],
+  },
+  {
+    name: "icon-triangle-alert",
+    component: IconTriangleAlert,
+    color: "text-amber-500",
+    description: "Triangle alert with interactive scale and caution pulse",
+    tags: ["triangle", "alert", "warning", "caution"],
+  },
+  {
+    name: "icon-mail-warning",
+    component: IconMailWarning,
+    color: "text-amber-600",
+    description: "Mail warning with interactive bounce and alert pulse",
+    tags: ["mail", "warning", "alert", "message"],
+  },
+  {
+    name: "icon-battery-warning",
+    component: IconBatteryWarning,
+    color: "text-rose-500",
+    description: "Battery warning with interactive oscillation and pulse",
+    tags: ["battery", "warning", "alert", "low"],
+  },
+  {
+    name: "icon-flag",
+    component: IconFlag,
+    color: "text-sky-500",
+    description: "Flag with interactive waver and pole vibration",
+    tags: ["flag", "signal", "mark", "report"],
+  },
+  {
+    name: "icon-flag-off",
+    component: IconFlagOff,
+    color: "text-rose-500",
+    description: "Flag off with interactive muted waver",
+    tags: ["flag", "off", "mute", "silent"],
+  },
+  {
+    name: "icon-book-alert",
+    component: IconBookAlert,
+    color: "text-amber-600",
+    description: "Book alert with interactive bounce and warning pulse",
+    tags: ["book", "alert", "warning", "info"],
+  },
+  {
+    name: "icon-file-alert",
+    component: IconFileAlert,
+    color: "text-rose-500",
+    description: "File alert with interactive bounce and caution pulse",
+    tags: ["file", "alert", "warning", "caution"],
   },
 ] as const;
 

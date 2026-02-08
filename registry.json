@@ -4847,6 +4847,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-circle-alert",
+      "type": "registry:component",
+      "title": "Animated Circle Alert",
+      "description": "Circle alert with interactive scale and pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-alert/icon-circle-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-alert",
+      "type": "registry:component",
+      "title": "Animated Clock Alert",
+      "description": "Clock alert with interactive ticking and warning pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-alert/icon-clock-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-octagon-alert",
+      "type": "registry:component",
+      "title": "Animated Octagon Alert",
+      "description": "Octagon alert with interactive scale and bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-octagon-alert/icon-octagon-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-triangle-alert",
+      "type": "registry:component",
+      "title": "Animated Triangle Alert",
+      "description": "Triangle alert with interactive scale and caution pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-triangle-alert/icon-triangle-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-mail-warning",
+      "type": "registry:component",
+      "title": "Animated Mail Warning",
+      "description": "Mail warning with interactive bounce and alert pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-mail-warning/icon-mail-warning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-battery-warning",
+      "type": "registry:component",
+      "title": "Animated Battery Warning",
+      "description": "Battery warning with interactive oscillation and pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-battery-warning/icon-battery-warning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-flag",
+      "type": "registry:component",
+      "title": "Animated Flag",
+      "description": "Flag with interactive waver and pole vibration.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-flag/icon-flag.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-flag-off",
+      "type": "registry:component",
+      "title": "Animated Flag Off",
+      "description": "Flag off with interactive muted waver.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-flag-off/icon-flag-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-book-alert",
+      "type": "registry:component",
+      "title": "Animated Book Alert",
+      "description": "Book alert with interactive bounce and warning pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-book-alert/icon-book-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-file-alert",
+      "type": "registry:component",
+      "title": "Animated File Alert",
+      "description": "File alert with interactive bounce and caution pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-file-alert/icon-file-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
