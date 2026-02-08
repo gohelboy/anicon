@@ -2,15 +2,15 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconTransgenderProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 const coreVariants: Variants = {
-  rest: { scale: 1 },
+  rest: { rotate: 0 },
   hover: {
-    scale: [1, 1.1, 1],
+    rotate: [0, -10, 10, 0],
     transition: {
       duration: 2,
       repeat: Infinity,
@@ -19,11 +19,10 @@ const coreVariants: Variants = {
   },
 };
 
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
+const armVariants: Variants = {
+  rest: { scale: 1 },
   hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
+    scale: [1, 1.1, 1],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -32,12 +31,12 @@ const rayVariants: Variants = {
   },
 };
 
-export function IconSun({
+export function IconTransgender({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconTransgenderProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,19 +58,21 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
-      />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
+      <motion.g variants={coreVariants} style={{ originX: "12px", originY: "12px" }}>
+        <circle cx="12" cy="12" r="4" />
+        <motion.g variants={armVariants}>
+          <path d="M12 16v6" />
+          <path d="M14 20h-4" />
+        </motion.g>
+        <motion.g variants={armVariants} transition={{ delay: 0.2 }}>
+          <path d="M18 2h4v4" />
+          <path d="m22 2-7.17 7.17" />
+        </motion.g>
+        <motion.g variants={armVariants} transition={{ delay: 0.4 }}>
+          <path d="m2 2 7.17 7.17" />
+          <path d="M2 5.355V2h3.357" />
+          <path d="M8 5 5 8" />
+        </motion.g>
       </motion.g>
     </motion.svg>
   );

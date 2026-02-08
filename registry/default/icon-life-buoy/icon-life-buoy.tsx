@@ -2,28 +2,28 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconLifeBuoyProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
-  rest: { scale: 1 },
+const buoyVariants: Variants = {
+  rest: { y: 0, rotate: 0 },
   hover: {
-    scale: [1, 1.1, 1],
+    y: [0, -2, 0],
+    rotate: [0, -5, 5, 0],
     transition: {
-      duration: 2,
+      duration: 3,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
+const ringVariants: Variants = {
+  rest: { scale: 1 },
   hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
+    scale: [1, 1.1, 1],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -32,12 +32,12 @@ const rayVariants: Variants = {
   },
 };
 
-export function IconSun({
+export function IconLifeBuoy({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconLifeBuoyProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,19 +59,16 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
-      />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
+      <motion.g variants={buoyVariants} style={{ originX: "12px", originY: "12px" }}>
+        <circle cx="12" cy="12" r="10" />
+        <path d="m4.93 4.93 4.24 4.24" />
+        <path d="m14.83 9.17 4.24-4.24" />
+        <path d="m14.83 14.83 4.24 4.24" />
+        <path d="m9.17 14.83-4.24 4.24" />
+        <motion.circle 
+          cx="12" cy="12" r="4" 
+          variants={ringVariants}
+        />
       </motion.g>
     </motion.svg>
   );

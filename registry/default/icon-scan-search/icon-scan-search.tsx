@@ -2,42 +2,42 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconScanSearchProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
+const magnifierVariants: Variants = {
   rest: { scale: 1 },
   hover: {
     scale: [1, 1.1, 1],
     transition: {
+      duration: 1,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const scanLineVariants: Variants = {
+  rest: { y: 0, opacity: 0 },
+  hover: {
+    y: [-4, 4, -4],
+    opacity: [0, 1, 0],
+    transition: {
       duration: 2,
       repeat: Infinity,
-      ease: "easeInOut",
+      ease: "linear",
     },
   },
 };
 
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
-  hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
-    transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-export function IconSun({
+export function IconScanSearch({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconScanSearchProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,20 +59,22 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
-      />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
+      <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+      <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+      <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+      <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+      
+      <motion.g variants={magnifierVariants} style={{ originX: "12px", originY: "12px" }}>
+        <circle cx="12" cy="12" r="3" />
+        <path d="m16 16-1.9-1.9" />
       </motion.g>
+
+      <motion.line 
+        x1="5" y1="12" x2="19" y2="12" 
+        stroke="currentColor" 
+        strokeWidth={1} 
+        variants={scanLineVariants}
+      />
     </motion.svg>
   );
 }

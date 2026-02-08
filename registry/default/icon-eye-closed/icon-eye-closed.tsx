@@ -2,42 +2,30 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconEyeClosedProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
-  rest: { scale: 1 },
+const lashesVariants: Variants = {
+  rest: { scaleY: 1, opacity: 1 },
   hover: {
-    scale: [1, 1.1, 1],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
-  hover: {
-    scale: [1, 1.2, 1],
+    scaleY: [1, 0.4, 1],
     opacity: [1, 0.7, 1],
     transition: {
-      duration: 1.5,
+      duration: 0.8,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-export function IconSun({
+export function IconEyeClosed({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconEyeClosedProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,19 +47,12 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
-      />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
+      <motion.g variants={lashesVariants} style={{ originY: "8px" }}>
+        <path d="m15 18-.722-3.25" />
+        <path d="M2 8a10.645 10.645 0 0 0 20 0" />
+        <path d="m20 15-1.726-2.05" />
+        <path d="m4 15 1.726-2.05" />
+        <path d="m9 18 .722-3.25" />
       </motion.g>
     </motion.svg>
   );

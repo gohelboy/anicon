@@ -2,17 +2,17 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconSunMoonProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
-  rest: { scale: 1 },
+const sunMoonVariants: Variants = {
+  rest: { rotate: 0 },
   hover: {
-    scale: [1, 1.1, 1],
+    rotate: [0, 45, 0],
     transition: {
-      duration: 2,
+      duration: 3,
       repeat: Infinity,
       ease: "easeInOut",
     },
@@ -20,10 +20,9 @@ const coreVariants: Variants = {
 };
 
 const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
+  rest: { opacity: 1 },
   hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
+    opacity: [1, 0.4, 1],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -32,12 +31,12 @@ const rayVariants: Variants = {
   },
 };
 
-export function IconSun({
+export function IconSunMoon({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconSunMoonProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,19 +58,21 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
-      />
-      <motion.g variants={rayVariants}>
+      <motion.g variants={sunMoonVariants} style={{ originX: "12px", originY: "12px" }}>
         <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
+        <path d="M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715" />
+        <motion.path 
+          d="M16 12a4 4 0 0 0-4-4" 
+          variants={rayVariants}
+        />
+        <motion.path 
+          d="m19 5-1.256 1.256" 
+          variants={rayVariants}
+        />
+        <motion.path 
+          d="M20 12h2" 
+          variants={rayVariants}
+        />
       </motion.g>
     </motion.svg>
   );

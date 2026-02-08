@@ -2,28 +2,15 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconEarProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
-  rest: { scale: 1 },
+const earVariants: Variants = {
+  rest: { rotate: 0 },
   hover: {
-    scale: [1, 1.1, 1],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
-  hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
+    rotate: [0, -5, 5, 0],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -32,12 +19,24 @@ const rayVariants: Variants = {
   },
 };
 
-export function IconSun({
+const innerVariants: Variants = {
+  rest: { scale: 1 },
+  hover: {
+    scale: [1, 1.05, 1],
+    transition: {
+      duration: 0.8,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconEar({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconEarProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,20 +58,16 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
+      <motion.path 
+        d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0" 
+        variants={earVariants}
+        style={{ originX: "12px", originY: "8.5px" }}
       />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
-      </motion.g>
+      <motion.path 
+        d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4" 
+        variants={innerVariants}
+        style={{ originX: "12.5px", originY: "11px" }}
+      />
     </motion.svg>
   );
 }

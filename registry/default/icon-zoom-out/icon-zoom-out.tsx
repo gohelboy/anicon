@@ -2,42 +2,41 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconZoomOutProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
+const magnifierVariants: Variants = {
   rest: { scale: 1 },
   hover: {
     scale: [1, 1.1, 1],
     transition: {
-      duration: 2,
+      duration: 1,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
+const minusVariants: Variants = {
+  rest: { x: 0 },
   hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
+    x: [-1, 1, -1],
     transition: {
-      duration: 1.5,
+      duration: 0.8,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-export function IconSun({
+export function IconZoomOut({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconZoomOutProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,19 +58,13 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
-      />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
+      <motion.g variants={magnifierVariants} style={{ originX: "11px", originY: "11px" }}>
+        <circle cx="11" cy="11" r="8" />
+        <line x1="21" x2="16.65" y1="21" y2="16.65" />
+        <motion.line 
+          x1="8" x2="14" y1="11" y2="11" 
+          variants={minusVariants}
+        />
       </motion.g>
     </motion.svg>
   );

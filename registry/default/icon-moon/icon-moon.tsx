@@ -2,14 +2,15 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconMoonProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
-  rest: { scale: 1 },
+const moonVariants: Variants = {
+  rest: { rotate: 0, scale: 1 },
   hover: {
+    rotate: [0, -10, 10, 0],
     scale: [1, 1.1, 1],
     transition: {
       duration: 2,
@@ -19,25 +20,12 @@ const coreVariants: Variants = {
   },
 };
 
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
-  hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
-    transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-export function IconSun({
+export function IconMoon({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconMoonProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,20 +47,11 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
+      <motion.path 
+        d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401" 
+        variants={moonVariants}
+        style={{ originX: "12px", originY: "12px" }}
       />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
-      </motion.g>
     </motion.svg>
   );
 }

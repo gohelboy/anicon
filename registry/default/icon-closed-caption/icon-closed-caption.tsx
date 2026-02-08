@@ -2,15 +2,27 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconClosedCaptionProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
+const textVariants: Variants = {
+  rest: { opacity: 1 },
+  hover: {
+    opacity: [1, 0.5, 1],
+    transition: {
+      duration: 1.2,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const boxVariants: Variants = {
   rest: { scale: 1 },
   hover: {
-    scale: [1, 1.1, 1],
+    scale: [1, 1.02, 1],
     transition: {
       duration: 2,
       repeat: Infinity,
@@ -19,25 +31,12 @@ const coreVariants: Variants = {
   },
 };
 
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
-  hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
-    transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-export function IconSun({
+export function IconClosedCaption({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconClosedCaptionProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,19 +58,14 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
+      <motion.rect 
+        x="2" y="5" width="20" height="14" rx="2" 
+        variants={boxVariants}
+        style={{ originX: "12px", originY: "12px" }}
       />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
+      <motion.g variants={textVariants}>
+        <path d="M10 9.17a3 3 0 1 0 0 5.66" />
+        <path d="M17 9.17a3 3 0 1 0 0 5.66" />
       </motion.g>
     </motion.svg>
   );

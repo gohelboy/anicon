@@ -1,18 +1,34 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 
 export interface IconAccessibilityProps extends React.SVGProps<SVGSVGElement> {
-  /** Size in pixels. Default 24 */
   size?: number;
-  /** Stroke width. Default 2 */
   strokeWidth?: number;
 }
 
-const poseVariants = {
+const limbVariants: Variants = {
   rest: { rotate: 0 },
-  hover: { rotate: 6 },
-  tap: { rotate: -6, scale: 0.98 },
+  hover: {
+    rotate: [0, -5, 5, 0],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+const headVariants: Variants = {
+  rest: { y: 0 },
+  hover: {
+    y: [0, -0.5, 0],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
 };
 
 export function IconAccessibility({
@@ -21,15 +37,9 @@ export function IconAccessibility({
   className,
   ...props
 }: IconAccessibilityProps) {
-  const {
-    onAnimationStart,
-    onAnimationEnd,
-    onDragStart,
-    onDrag,
-    onDragEnd,
-    ...rest
-  } = props;
+  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
+
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -44,17 +54,15 @@ export function IconAccessibility({
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
-      transition={{ type: "spring", stiffness: 360, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      {...rest}
+      style={{ overflow: "visible" }}
+      {...restOptions}
     >
-      <motion.g variants={poseVariants} style={{ originX: "50%", originY: "50%" }}>
-        <circle cx="16" cy="4" r="1" />
-        <path d="m18 19 1-7-6 1" />
-        <path d="m5 8 3-3 5.5 3-2.36 3.5" />
-        <path d="M4.24 14.5a5 5 0 0 0 6.88 6" />
-        <path d="M13.76 17.5a5 5 0 0 0-6.88-6" />
-      </motion.g>
+      <motion.circle 
+        cx="16" cy="4" r="1" 
+        variants={headVariants}
+      />
+      <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
     </motion.svg>
   );
 }

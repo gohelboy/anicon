@@ -353,6 +353,33 @@ import { IconFlagOff } from "@/registry/default/icon-flag-off/icon-flag-off";
 import { IconBookAlert } from "@/registry/default/icon-book-alert/icon-book-alert";
 import { IconFileAlert } from "@/registry/default/icon-file-alert/icon-file-alert";
 
+// Batch 17 Accessibility, Vision & Themes
+import { IconBaby } from "@/registry/default/icon-baby/icon-baby";
+import { IconBadgeInfo } from "@/registry/default/icon-badge-info/icon-badge-info";
+import { IconBadgeHelp } from "@/registry/default/icon-badge-help/icon-badge-help";
+import { IconCircleHelp } from "@/registry/default/icon-circle-help/icon-circle-help";
+import { IconClosedCaption } from "@/registry/default/icon-closed-caption/icon-closed-caption";
+import { IconContrast } from "@/registry/default/icon-contrast/icon-contrast";
+import { IconEar } from "@/registry/default/icon-ear/icon-ear";
+import { IconEarOff } from "@/registry/default/icon-ear-off/icon-ear-off";
+import { IconEyeClosed } from "@/registry/default/icon-eye-closed/icon-eye-closed";
+import { IconEyeOff } from "@/registry/default/icon-eye-off/icon-eye-off";
+import { IconGlasses } from "@/registry/default/icon-glasses/icon-glasses";
+import { IconHand } from "@/registry/default/icon-hand/icon-hand";
+import { IconLifeBuoy } from "@/registry/default/icon-life-buoy/icon-life-buoy";
+import { IconMoonStar } from "@/registry/default/icon-moon-star/icon-moon-star";
+import { IconMoonPlus } from "@/registry/default/icon-moon-plus/icon-moon-plus";
+import { IconPersonStanding } from "@/registry/default/icon-person-standing/icon-person-standing";
+import { IconScanEye } from "@/registry/default/icon-scan-eye/icon-scan-eye";
+import { IconScanSearch } from "@/registry/default/icon-scan-search/icon-scan-search";
+import { IconSpeech } from "@/registry/default/icon-speech/icon-speech";
+import { IconSunDim } from "@/registry/default/icon-sun-dim/icon-sun-dim";
+import { IconSunMedium } from "@/registry/default/icon-sun-medium/icon-sun-medium";
+import { IconSunMoon } from "@/registry/default/icon-sun-moon/icon-sun-moon";
+import { IconTransgender } from "@/registry/default/icon-transgender/icon-transgender";
+import { IconZoomIn } from "@/registry/default/icon-zoom-in/icon-zoom-in";
+import { IconZoomOut } from "@/registry/default/icon-zoom-out/icon-zoom-out";
+
 export const iconsRegistry = [
   {
     name: "icon-heart",
@@ -2694,6 +2721,181 @@ export const iconsRegistry = [
     color: "text-rose-500",
     description: "File alert with interactive bounce and caution pulse",
     tags: ["file", "alert", "warning", "caution"],
+  },
+  {
+    name: "icon-baby",
+    component: IconBaby,
+    color: "text-sky-300",
+    description: "Baby head with a gentle crib-rocking sway",
+    tags: ["baby", "child", "family", "infant"],
+  },
+  {
+    name: "icon-badge-info",
+    component: IconBadgeInfo,
+    color: "text-sky-400",
+    description: "Info badge with pulsing mark and scaling border",
+    tags: ["badge", "info", "notice", "alert"],
+  },
+  {
+    name: "icon-badge-help",
+    component: IconBadgeHelp,
+    color: "text-sky-400",
+    description: "Help badge with bouncing question mark",
+    tags: ["badge", "help", "question", "support"],
+  },
+  {
+    name: "icon-circle-help",
+    component: IconCircleHelp,
+    color: "text-sky-400",
+    description: "Circle help with bouncing question mark",
+    tags: ["circle", "help", "question", "support"],
+  },
+  {
+    name: "icon-closed-caption",
+    component: IconClosedCaption,
+    color: "text-white",
+    description: "Closed caption icon with text reveal pulse",
+    tags: ["cc", "caption", "accessibility", "video"],
+  },
+  {
+    name: "icon-contrast",
+    component: IconContrast,
+    color: "text-white",
+    description: "Contrast icon with 360-degree mode flip",
+    tags: ["contrast", "theme", "accessibility", "mode"],
+  },
+  {
+    name: "icon-ear",
+    component: IconEar,
+    color: "text-orange-200",
+    description: "Ear with a sound-catching tilt animation",
+    tags: ["ear", "hearing", "sound", "accessibility"],
+  },
+  {
+    name: "icon-ear-off",
+    component: IconEarOff,
+    color: "text-zinc-500",
+    description: "Muted ear with a vibrating slash",
+    tags: ["ear", "off", "hearing", "mute", "accessibility"],
+  },
+  {
+    name: "icon-eye-closed",
+    component: IconEyeClosed,
+    color: "text-white",
+    description: "Closed eye with sleepy blinking lashes",
+    tags: ["eye", "closed", "sleep", "vision"],
+  },
+  {
+    name: "icon-eye-off",
+    component: IconEyeOff,
+    color: "text-zinc-500",
+    description: "Muted vision with blinking and vibrating slash",
+    tags: ["eye", "off", "vision", "hidden"],
+  },
+  {
+    name: "icon-glasses",
+    component: IconGlasses,
+    color: "text-white",
+    description: "Glasses with a focus-pulse and frame lift",
+    tags: ["glasses", "vision", "spectacles", "accessibility"],
+  },
+  {
+    name: "icon-hand",
+    component: IconHand,
+    color: "text-orange-200",
+    description: "Hand with an interactive palm shake",
+    tags: ["hand", "palm", "wave", "gesture"],
+  },
+  {
+    name: "icon-life-buoy",
+    component: IconLifeBuoy,
+    color: "text-rose-400",
+    description: "Life buoy with a bobbing and rotating float",
+    tags: ["buoy", "safety", "help", "rescue"],
+  },
+  {
+    name: "icon-moon-star",
+    component: IconMoonStar,
+    color: "text-amber-200",
+    description: "Moon and star with a gentle night sway",
+    tags: ["moon", "star", "night", "sky", "theme"],
+  },
+  {
+    name: "icon-moon-plus",
+    component: IconMoonPlus,
+    color: "text-amber-200",
+    description: "Moon plus with a swaying crescent and rotating plus",
+    tags: ["moon", "plus", "add", "night", "theme"],
+  },
+  {
+    name: "icon-person-standing",
+    component: IconPersonStanding,
+    color: "text-white",
+    description: "Standing person with a subtle pose sway",
+    tags: ["person", "standing", "human", "pose"],
+  },
+  {
+    name: "icon-scan-eye",
+    component: IconScanEye,
+    color: "text-sky-400",
+    description: "Eye scan with a moving laser and blink",
+    tags: ["scan", "eye", "vision", "biometric"],
+  },
+  {
+    name: "icon-scan-search",
+    component: IconScanSearch,
+    color: "text-sky-400",
+    description: "Search scan with a moving laser and magnifier",
+    tags: ["scan", "search", "find", "layout"],
+  },
+  {
+    name: "icon-speech",
+    component: IconSpeech,
+    color: "text-white",
+    description: "Speech bubble with an interactive wave pulse",
+    tags: ["speech", "voice", "talk", "communication"],
+  },
+  {
+    name: "icon-sun-dim",
+    component: IconSunDim,
+    color: "text-amber-300",
+    description: "Dim sun with a soft light-pulse effect",
+    tags: ["sun", "dim", "light", "theme"],
+  },
+  {
+    name: "icon-sun-medium",
+    component: IconSunMedium,
+    color: "text-amber-400",
+    description: "Medium sun with a warm radiance pulse",
+    tags: ["sun", "medium", "light", "theme"],
+  },
+  {
+    name: "icon-sun-moon",
+    component: IconSunMoon,
+    color: "text-amber-400",
+    description: "Sun-Moon transition with a day-night cycle pulse",
+    tags: ["sun", "moon", "transition", "theme"],
+  },
+  {
+    name: "icon-transgender",
+    component: IconTransgender,
+    color: "text-pink-300",
+    description: "Transgender symbol with internal shifting motion",
+    tags: ["transgender", "gender", "identity", "accessibility"],
+  },
+  {
+    name: "icon-zoom-in",
+    component: IconZoomIn,
+    color: "text-white",
+    description: "Zoom in with a pulsing magnifier and rotating plus",
+    tags: ["zoom", "in", "expand", "magnify"],
+  },
+  {
+    name: "icon-zoom-out",
+    component: IconZoomOut,
+    color: "text-white",
+    description: "Zoom out with a pulsing magnifier and vibrating minus",
+    tags: ["zoom", "out", "contract", "magnify"],
   },
 ] as const;
 

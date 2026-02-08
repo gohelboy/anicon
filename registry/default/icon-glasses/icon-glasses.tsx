@@ -2,28 +2,15 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconGlassesProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
-  rest: { scale: 1 },
+const frameVariants: Variants = {
+  rest: { y: 0 },
   hover: {
-    scale: [1, 1.1, 1],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
-  hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
+    y: [0, -1, 0],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -32,12 +19,24 @@ const rayVariants: Variants = {
   },
 };
 
-export function IconSun({
+const lensVariants: Variants = {
+  rest: { opacity: 1 },
+  hover: {
+    opacity: [1, 0.6, 1],
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconGlasses({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconGlassesProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,19 +58,12 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
-      />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
+      <motion.g variants={frameVariants} style={{ originX: "12px", originY: "12px" }}>
+        <motion.circle cx="6" cy="15" r="4" variants={lensVariants} />
+        <motion.circle cx="18" cy="15" r="4" variants={lensVariants} />
+        <path d="M14 15a2 2 0 0 0-2-2 2 2 0 0 0-2 2" />
+        <path d="M2.5 13 5 7c.7-1.3 1.4-2 3-2" />
+        <path d="M21.5 13 19 7c-.7-1.3-1.5-2-3-2" />
       </motion.g>
     </motion.svg>
   );

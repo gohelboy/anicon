@@ -2,42 +2,42 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconInfoProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
+const circleVariants: Variants = {
   rest: { scale: 1 },
   hover: {
-    scale: [1, 1.1, 1],
+    scale: [1, 1.05, 1],
     transition: {
-      duration: 2,
+      duration: 1,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
+const infoVariants: Variants = {
+  rest: { opacity: 1, y: 0 },
   hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
+    opacity: [1, 0.5, 1],
+    y: [0, -0.5, 0],
     transition: {
-      duration: 1.5,
+      duration: 1,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-export function IconSun({
+export function IconInfo({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconInfoProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -60,18 +60,13 @@ export function IconSun({
       {...restOptions}
     >
       <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
+        cx="12" cy="12" r="10" 
+        variants={circleVariants}
+        style={{ originX: "12px", originY: "12px" }}
       />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
+      <motion.g variants={infoVariants} style={{ originX: "12px", originY: "12px" }}>
+        <path d="M12 16v-4" />
+        <path d="M12 8h.01" />
       </motion.g>
     </motion.svg>
   );

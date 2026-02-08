@@ -2,28 +2,28 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconSpeechProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
-  rest: { scale: 1 },
+const bubbleVariants: Variants = {
+  rest: { y: 0 },
   hover: {
-    scale: [1, 1.1, 1],
+    y: [0, -1, 0],
     transition: {
-      duration: 2,
+      duration: 1,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-const rayVariants: Variants = {
+const waveVariants: Variants = {
   rest: { scale: 1, opacity: 1 },
   hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
+    scale: [1, 1.1, 1],
+    opacity: [1, 0.4, 1],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -32,12 +32,12 @@ const rayVariants: Variants = {
   },
 };
 
-export function IconSun({
+export function IconSpeech({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconSpeechProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -59,20 +59,21 @@ export function IconSun({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
+      <motion.path 
+        d="M8.8 20v-4.1l1.9.2a2.3 2.3 0 0 0 2.164-2.1V8.3A5.37 5.37 0 0 0 2 8.25c0 2.8.656 3.054 1 4.55a5.77 5.77 0 0 1 .029 2.758L2 20" 
+        variants={bubbleVariants}
       />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
-      </motion.g>
+      <motion.path 
+        d="M19.8 17.8a7.5 7.5 0 0 0 .003-10.603" 
+        variants={waveVariants}
+        style={{ originX: "14px", originY: "12px" }}
+      />
+      <motion.path 
+        d="M17 15a3.5 3.5 0 0 0-.025-4.975" 
+        variants={waveVariants}
+        style={{ originX: "14px", originY: "12px" }}
+        transition={{ delay: 0.2 }}
+      />
     </motion.svg>
   );
 }

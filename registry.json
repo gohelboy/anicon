@@ -4997,6 +4997,381 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-baby",
+      "type": "registry:component",
+      "title": "Animated Baby",
+      "description": "Baby head with a gentle crib-rocking sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-baby/icon-baby.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-badge-info",
+      "type": "registry:component",
+      "title": "Animated Badge Info",
+      "description": "Info badge with pulsing mark and scaling border.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-badge-info/icon-badge-info.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-badge-help",
+      "type": "registry:component",
+      "title": "Animated Badge Help",
+      "description": "Help badge with bouncing question mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-badge-help/icon-badge-help.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-help",
+      "type": "registry:component",
+      "title": "Animated Circle Help",
+      "description": "Circle help with bouncing question mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-help/icon-circle-help.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-closed-caption",
+      "type": "registry:component",
+      "title": "Animated Closed Caption",
+      "description": "Closed caption icon with text reveal pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-closed-caption/icon-closed-caption.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-contrast",
+      "type": "registry:component",
+      "title": "Animated Contrast",
+      "description": "Contrast icon with 360-degree mode flip.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-contrast/icon-contrast.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ear",
+      "type": "registry:component",
+      "title": "Animated Ear",
+      "description": "Ear with a sound-catching tilt animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ear/icon-ear.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ear-off",
+      "type": "registry:component",
+      "title": "Animated Ear Off",
+      "description": "Muted ear with a vibrating slash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ear-off/icon-ear-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-eye-closed",
+      "type": "registry:component",
+      "title": "Animated Eye Closed",
+      "description": "Closed eye with sleepy blinking lashes.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-eye-closed/icon-eye-closed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-eye-off",
+      "type": "registry:component",
+      "title": "Animated Eye Off",
+      "description": "Muted vision with blinking and vibrating slash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-eye-off/icon-eye-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-glasses",
+      "type": "registry:component",
+      "title": "Animated Glasses",
+      "description": "Glasses with a focus-pulse and frame lift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-glasses/icon-glasses.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hand",
+      "type": "registry:component",
+      "title": "Animated Hand",
+      "description": "Hand with an interactive palm shake.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hand/icon-hand.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-life-buoy",
+      "type": "registry:component",
+      "title": "Animated Life Buoy",
+      "description": "Life buoy with a bobbing and rotating float.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-life-buoy/icon-life-buoy.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-moon-star",
+      "type": "registry:component",
+      "title": "Animated Moon Star",
+      "description": "Moon and star with a gentle night sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-moon-star/icon-moon-star.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-moon-plus",
+      "type": "registry:component",
+      "title": "Animated Moon Plus",
+      "description": "Moon plus with a swaying crescent and rotating plus.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-moon-plus/icon-moon-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-person-standing",
+      "type": "registry:component",
+      "title": "Animated Person Standing",
+      "description": "Standing person with a subtle pose sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-person-standing/icon-person-standing.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-scan-eye",
+      "type": "registry:component",
+      "title": "Animated Scan Eye",
+      "description": "Eye scan with a moving laser and blink.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-scan-eye/icon-scan-eye.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-scan-search",
+      "type": "registry:component",
+      "title": "Animated Scan Search",
+      "description": "Search scan with a moving laser and magnifier.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-scan-search/icon-scan-search.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-speech",
+      "type": "registry:component",
+      "title": "Animated Speech",
+      "description": "Speech bubble with an interactive wave pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-speech/icon-speech.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sun-dim",
+      "type": "registry:component",
+      "title": "Animated Sun Dim",
+      "description": "Dim sun with a soft light-pulse effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sun-dim/icon-sun-dim.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sun-medium",
+      "type": "registry:component",
+      "title": "Animated Sun Medium",
+      "description": "Medium sun with a warm radiance pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sun-medium/icon-sun-medium.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sun-moon",
+      "type": "registry:component",
+      "title": "Animated Sun Moon",
+      "description": "Sun-Moon transition with a day-night cycle pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sun-moon/icon-sun-moon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-transgender",
+      "type": "registry:component",
+      "title": "Animated Transgender",
+      "description": "Transgender symbol with internal shifting motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-transgender/icon-transgender.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-zoom-in",
+      "type": "registry:component",
+      "title": "Animated Zoom In",
+      "description": "Zoom in with a pulsing magnifier and rotating plus.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-zoom-in/icon-zoom-in.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-zoom-out",
+      "type": "registry:component",
+      "title": "Animated Zoom Out",
+      "description": "Zoom out with a pulsing magnifier and vibrating minus.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-zoom-out/icon-zoom-out.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

@@ -2,28 +2,15 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
+export interface IconPersonStandingProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const coreVariants: Variants = {
-  rest: { scale: 1 },
+const headVariants: Variants = {
+  rest: { y: 0 },
   hover: {
-    scale: [1, 1.1, 1],
-    transition: {
-      duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const rayVariants: Variants = {
-  rest: { scale: 1, opacity: 1 },
-  hover: {
-    scale: [1, 1.2, 1],
-    opacity: [1, 0.7, 1],
+    y: [0, -0.5, 0],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -32,12 +19,24 @@ const rayVariants: Variants = {
   },
 };
 
-export function IconSun({
+const bodyVariants: Variants = {
+  rest: { scaleY: 1 },
+  hover: {
+    scaleY: [1, 1.02, 1],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconPersonStanding({
   size = 24,
   strokeWidth = 2,
   className,
   ...props
-}: IconSunProps) {
+}: IconPersonStandingProps) {
   const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
@@ -60,18 +59,13 @@ export function IconSun({
       {...restOptions}
     >
       <motion.circle 
-        cx="12" cy="12" r="4" 
-        variants={coreVariants}
+        cx="12" cy="5" r="1" 
+        variants={headVariants}
       />
-      <motion.g variants={rayVariants}>
-        <path d="M12 2v2" />
-        <path d="M12 20v2" />
-        <path d="m4.93 4.93 1.41 1.41" />
-        <path d="m17.66 17.66 1.41 1.41" />
-        <path d="M2 12h2" />
-        <path d="M20 12h2" />
-        <path d="m6.34 17.66-1.41 1.41" />
-        <path d="m19.07 4.93-1.41 1.41" />
+      <motion.g variants={bodyVariants} style={{ originY: "20px" }}>
+        <path d="m9 20 3-6 3 6" />
+        <path d="m6 8 6 2 6-2" />
+        <path d="M12 10v4" />
       </motion.g>
     </motion.svg>
   );
