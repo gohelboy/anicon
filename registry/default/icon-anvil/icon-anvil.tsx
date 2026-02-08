@@ -1,32 +1,61 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 
 export interface IconAnvilProps extends React.SVGProps<SVGSVGElement> {
-  /** Size in pixels. Default 24 */
   size?: number;
-  /** Stroke width. Default 2 */
   strokeWidth?: number;
 }
 
-const topVariants = {
-  rest: { y: 0 },
-  hover: { y: -1.5 },
-  tap: { y: 1 },
+const topVariants: Variants = {
+  rest: { 
+    y: 0,
+    rotate: 0,
+    transition: {
+      type: "spring",
+      stiffness: 300,
+      damping: 15
+    }
+  },
+  hover: {
+    y: [0, -2, 0],
+    rotate: [0, -1, 1, 0],
+    transition: {
+      duration: 0.4,
+      repeat: Infinity,
+      repeatType: "mirror",
+      ease: "easeInOut",
+    },
+  },
 };
 
-const baseVariants = {
-  rest: { scaleX: 1 },
-  hover: { scaleX: 1.05 },
-  tap: { scaleX: 0.95 },
+const baseVariants: Variants = {
+  rest: { 
+    scaleX: 1,
+    transition: {
+      type: "spring",
+      stiffness: 300,
+      damping: 15
+    }
+  },
+  hover: {
+    scaleX: [1, 1.05, 1],
+    transition: {
+      duration: 0.4,
+      repeat: Infinity,
+      repeatType: "mirror",
+      ease: "easeInOut",
+    },
+  },
 };
 
-export function IconAnvil({
-  size = 24,
-  strokeWidth = 2,
+export function IconAnvil({ 
+  size = 24, 
+  strokeWidth = 2, 
   className,
-  ...props
+  ...props 
 }: IconAnvilProps) {
+  const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -35,7 +64,7 @@ export function IconAnvil({
     onDragEnd,
     ...rest
   } = props;
-  const prefersReducedMotion = useReducedMotion();
+
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -47,23 +76,24 @@ export function IconAnvil({
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial={prefersReducedMotion ? false : "rest"}
-      whileHover={prefersReducedMotion ? undefined : "hover"}
-      whileTap={prefersReducedMotion ? undefined : "tap"}
-      transition={{ type: "spring", stiffness: 320, damping: 18 }}
-      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
+      className={`select-none ${className ?? ""}`.trim()}
+      initial="rest"
+      whileHover="hover"
       {...rest}
     >
-      <motion.g variants={topVariants}>
+      <motion.g 
+        variants={prefersReducedMotion ? {} : topVariants}
+        style={{ originX: "12px", originY: "12px" }}
+      >
         <path d="M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4" />
         <path d="M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z" />
         <path d="M9 12v5" />
         <path d="M15 12v5" />
       </motion.g>
-      <motion.path
-        d="M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1"
-        variants={baseVariants}
-        style={{ originX: "50%", originY: "50%" }}
+      <motion.path 
+        d="M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1" 
+        variants={prefersReducedMotion ? {} : baseVariants}
+        style={{ originX: "12px", originY: "20px" }}
       />
     </motion.svg>
   );

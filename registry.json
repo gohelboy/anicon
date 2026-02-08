@@ -3362,6 +3362,2646 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-brain",
+      "type": "registry:component",
+      "title": "Animated Brain",
+      "description": "Brain with neural pulse and connection glow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-brain/icon-brain.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ghost",
+      "type": "registry:component",
+      "title": "Animated Ghost",
+      "description": "Ghost with hovering and blinking animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ghost/icon-ghost.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-graduation-cap",
+      "type": "registry:component",
+      "title": "Animated Graduation Cap",
+      "description": "Graduation cap with tassel swing and bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-graduation-cap/icon-graduation-cap.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-heart-pulse",
+      "type": "registry:component",
+      "title": "Animated Heart Pulse",
+      "description": "Heart pulse with rhythmic heartbeat and sparkline.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-heart-pulse/icon-heart-pulse.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-landmark",
+      "type": "registry:component",
+      "title": "Animated Landmark",
+      "description": "Landmark with pillar-rise and roof-move animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-landmark/icon-landmark.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-microscope",
+      "type": "registry:component",
+      "title": "Animated Microscope",
+      "description": "Microscope with focus adjustment and lens rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-microscope/icon-microscope.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-mountain",
+      "type": "registry:component",
+      "title": "Animated Mountain",
+      "description": "Mountain with subtle peak glow animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-mountain/icon-mountain.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pill",
+      "type": "registry:component",
+      "title": "Animated Pill",
+      "description": "Pill with rotation and opacity pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pill/icon-pill.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-telescope",
+      "type": "registry:component",
+      "title": "Animated Telescope",
+      "description": "Telescope with cosmic tilt and search rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-telescope/icon-telescope.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-volcano",
+      "type": "registry:component",
+      "title": "Animated Volcano",
+      "description": "Volcano with eruption pulse and rising ash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-volcano/icon-volcano.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-code-xml",
+      "type": "registry:component",
+      "title": "Animated Code Xml",
+      "description": "Code XML with syntax drawing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-code-xml/icon-code-xml.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-git-branch",
+      "type": "registry:component",
+      "title": "Animated Git Branch",
+      "description": "Git branch with node pulsing and line drawing.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-git-branch/icon-git-branch.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-git-pull-request",
+      "type": "registry:component",
+      "title": "Animated Git Pull Request",
+      "description": "Git pull request with collaboration circles pulsing.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-git-pull-request/icon-git-pull-request.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-webhook",
+      "type": "registry:component",
+      "title": "Animated Webhook",
+      "description": "Webhook with data hook sliding animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-webhook/icon-webhook.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-gauge",
+      "type": "registry:component",
+      "title": "Animated Gauge",
+      "description": "Gauge with performance needle rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-gauge/icon-gauge.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-chart-no-axes-column",
+      "type": "registry:component",
+      "title": "Animated Chart No Axes Column",
+      "description": "Column chart with data growth scaling animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-chart-no-axes-column/icon-chart-no-axes-column.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-component",
+      "type": "registry:component",
+      "title": "Animated Component",
+      "description": "Component with system pulse and layer scaling.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-component/icon-component.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-command",
+      "type": "registry:component",
+      "title": "Animated Command",
+      "description": "Command with action loop pulsing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-command/icon-command.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-braces",
+      "type": "registry:component",
+      "title": "Animated Braces",
+      "description": "Braces with code wrap sliding animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-braces/icon-braces.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bug",
+      "type": "registry:component",
+      "title": "Animated Bug",
+      "description": "Bug with debugging leg vibration and antennae wiggle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bug/icon-bug.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-blocks",
+      "type": "registry:component",
+      "title": "Animated Blocks",
+      "description": "Modular blocks with sequential scaling animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-blocks/icon-blocks.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-database-zap",
+      "type": "registry:component",
+      "title": "Animated Database Zap",
+      "description": "Database with power zap pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-database-zap/icon-database-zap.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-layers-2",
+      "type": "registry:component",
+      "title": "Animated Layers 2",
+      "description": "Stacked layers with lift-off animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-layers-2/icon-layers-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-mouse-pointer-click",
+      "type": "registry:component",
+      "title": "Animated Mouse Pointer Click",
+      "description": "Mouse pointer with interaction ripple effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-mouse-pointer-click/icon-mouse-pointer-click.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-rocket",
+      "type": "registry:component",
+      "title": "Animated Rocket",
+      "description": "Rocket ship with vibration and thrust animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-rocket/icon-rocket.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-settings-2",
+      "type": "registry:component",
+      "title": "Animated Settings 2",
+      "description": "Settings with rotating configuration nodes.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-settings-2/icon-settings-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shield-alert",
+      "type": "registry:component",
+      "title": "Animated Shield Alert",
+      "description": "Security shield with vibration alert animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shield-alert/icon-shield-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-workflow",
+      "type": "registry:component",
+      "title": "Animated Workflow",
+      "description": "Workflow process with drawing connectors.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-workflow/icon-workflow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sparkles",
+      "type": "registry:component",
+      "title": "Animated Sparkles",
+      "description": "Sparkles with sequential magic glow effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sparkles/icon-sparkles.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-layout-dashboard",
+      "type": "registry:component",
+      "title": "Animated Layout Dashboard",
+      "description": "Dashboard layout with widget setup expansion effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-layout-dashboard/icon-layout-dashboard.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-chart-pie",
+      "type": "registry:component",
+      "title": "Animated Chart Pie",
+      "description": "Pie chart with interactive data slice pop animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-chart-pie/icon-chart-pie.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-chart-area",
+      "type": "registry:component",
+      "title": "Animated Chart Area",
+      "description": "Area chart with market flow path drawing.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-chart-area/icon-chart-area.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-chart-line",
+      "type": "registry:component",
+      "title": "Animated Chart Line",
+      "description": "Line chart with sequential data trace effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-chart-line/icon-chart-line.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-trending-up",
+      "type": "registry:component",
+      "title": "Animated Trending Up",
+      "description": "Trending up arrow with bullish run trace.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-trending-up/icon-trending-up.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-trending-down",
+      "type": "registry:component",
+      "title": "Animated Trending Down",
+      "description": "Trending down arrow with bearish dip trace.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-trending-down/icon-trending-down.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-users",
+      "type": "registry:component",
+      "title": "Animated Users",
+      "description": "Multi-user icon with sequential social pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-users/icon-users.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-dollar-sign",
+      "type": "registry:component",
+      "title": "Animated Dollar Sign",
+      "description": "Dollar sign with stable floating animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-dollar-sign/icon-dollar-sign.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-wallet",
+      "type": "registry:component",
+      "title": "Animated Wallet",
+      "description": "Wallet with interactive pay-ready flap tilt.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-wallet/icon-wallet.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-panels-top-left",
+      "type": "registry:component",
+      "title": "Animated Panels Top Left",
+      "description": "Panels with layout shift sliding animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-panels-top-left/icon-panels-top-left.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-tag",
+      "type": "registry:component",
+      "title": "Animated Tag",
+      "description": "Price tag with playful label swing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-tag/icon-tag.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ticket",
+      "type": "registry:component",
+      "title": "Animated Ticket",
+      "description": "Ticket with event-ready bob and tilt animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ticket/icon-ticket.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-qr-code",
+      "type": "registry:component",
+      "title": "Animated Qr Code",
+      "description": "QR code with matrix pulse and flicker effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-qr-code/icon-qr-code.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-barcode",
+      "type": "registry:component",
+      "title": "Animated Barcode",
+      "description": "Barcode with interactive laser scan laser effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-barcode/icon-barcode.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-store",
+      "type": "registry:component",
+      "title": "Animated Store",
+      "description": "Storefront with interactive door swing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-store/icon-store.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-banknote",
+      "type": "registry:component",
+      "title": "Animated Banknote",
+      "description": "Banknote with currency ripple and pulse effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-banknote/icon-banknote.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-coins",
+      "type": "registry:component",
+      "title": "Animated Coins",
+      "description": "Coins stack with interactive jingle and sparkle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-coins/icon-coins.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-package",
+      "type": "registry:component",
+      "title": "Animated Package",
+      "description": "Package with interactive opening lid pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-package/icon-package.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clapperboard",
+      "type": "registry:component",
+      "title": "Animated Clapperboard",
+      "description": "Clapperboard with movie-start snap animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clapperboard/icon-clapperboard.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-frame",
+      "type": "registry:component",
+      "title": "Animated Frame",
+      "description": "Design frame with border drawing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-frame/icon-frame.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-at-sign",
+      "type": "registry:component",
+      "title": "Animated At Sign",
+      "description": "At-sign with spiral drawing and pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-at-sign/icon-at-sign.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hash",
+      "type": "registry:component",
+      "title": "Animated Hash",
+      "description": "Hash sign with grid-lock sliding animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hash/icon-hash.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bus",
+      "type": "registry:component",
+      "title": "Animated Bus",
+      "description": "Bus with road-trip vibration and light pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bus/icon-bus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-train-front",
+      "type": "registry:component",
+      "title": "Animated Train Front",
+      "description": "Train front with rails-wobble and light pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-train-front/icon-train-front.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bike",
+      "type": "registry:component",
+      "title": "Animated Bike",
+      "description": "Bike with wheel-spin and body bob animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bike/icon-bike.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-wrench",
+      "type": "registry:component",
+      "title": "Animated Wrench",
+      "description": "Wrench with interactive nut-turning animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-wrench/icon-wrench.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hammer",
+      "type": "registry:component",
+      "title": "Animated Hammer",
+      "description": "Hammer with strike and nail-hit animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hammer/icon-hammer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-utensils",
+      "type": "registry:component",
+      "title": "Animated Utensils",
+      "description": "Utensils with interactive dining-ready slide.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-utensils/icon-utensils.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pocket",
+      "type": "registry:component",
+      "title": "Animated Pocket",
+      "description": "Pocket with interactive content shift bob.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pocket/icon-pocket.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-map",
+      "type": "registry:component",
+      "title": "Animated Map",
+      "description": "Map with interactive unfold and slide effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-map/icon-map.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-skull",
+      "type": "registry:component",
+      "title": "Animated Skull",
+      "description": "Skull with interactive jaw chatter animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-skull/icon-skull.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-dices",
+      "type": "registry:component",
+      "title": "Animated Dices",
+      "description": "Dices with interactive rolling and rotation effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-dices/icon-dices.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-trophy",
+      "type": "registry:component",
+      "title": "Animated Trophy",
+      "description": "Trophy with interactive victory shine effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-trophy/icon-trophy.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-medal",
+      "type": "registry:component",
+      "title": "Animated Medal",
+      "description": "Medal with interactive award sway animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-medal/icon-medal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-target",
+      "type": "registry:component",
+      "title": "Animated Target",
+      "description": "Target with sequential bullseye pulse effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-target/icon-target.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-gem",
+      "type": "registry:component",
+      "title": "Animated Gem",
+      "description": "Gem with interactive diamond shimmer animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-gem/icon-gem.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-crown",
+      "type": "registry:component",
+      "title": "Animated Crown",
+      "description": "Crown with interactive royal tilt animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-crown/icon-crown.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-swords",
+      "type": "registry:component",
+      "title": "Animated Swords",
+      "description": "Swords with interactive crossing slash animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-swords/icon-swords.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-joystick",
+      "type": "registry:component",
+      "title": "Animated Joystick",
+      "description": "Joystick with interactive control stick tilt.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-joystick/icon-joystick.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-gamepad-2",
+      "type": "registry:component",
+      "title": "Animated Gamepad 2",
+      "description": "Gamepad with sequential button mash pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-gamepad-2/icon-gamepad-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-plus",
+      "type": "registry:component",
+      "title": "Animated User Plus",
+      "description": "User with interactive add/plus animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-plus/icon-user-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-minus",
+      "type": "registry:component",
+      "title": "Animated User Minus",
+      "description": "User with interactive remove/minus animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-minus/icon-user-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-check",
+      "type": "registry:component",
+      "title": "Animated User Check",
+      "description": "User with interactive verified/check animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-check/icon-user-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-cog",
+      "type": "registry:component",
+      "title": "Animated User Cog",
+      "description": "User with interactive settings/cog rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-cog/icon-user-cog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-pen",
+      "type": "registry:component",
+      "title": "Animated User Pen",
+      "description": "User with interactive edit/pen animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-pen/icon-user-pen.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-star",
+      "type": "registry:component",
+      "title": "Animated User Star",
+      "description": "User with interactive pro/star glow effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-star/icon-user-star.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-search",
+      "type": "registry:component",
+      "title": "Animated User Search",
+      "description": "User with interactive search/magnifier pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-search/icon-user-search.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-x",
+      "type": "registry:component",
+      "title": "Animated User X",
+      "description": "User with interactive block/x animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-x/icon-user-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-user",
+      "type": "registry:component",
+      "title": "Animated Circle User",
+      "description": "Circle user with interactive bounce animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-user/icon-circle-user.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-contact",
+      "type": "registry:component",
+      "title": "Animated Contact",
+      "description": "Contact book with interactive shift animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-contact/icon-contact.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round",
+      "type": "registry:component",
+      "title": "Animated User Round",
+      "description": "Round user profile with interactive pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round/icon-user-round.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-plus",
+      "type": "registry:component",
+      "title": "Animated User Round Plus",
+      "description": "Round user with interactive add/plus animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-plus/icon-user-round-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-minus",
+      "type": "registry:component",
+      "title": "Animated User Round Minus",
+      "description": "Round user with interactive remove/minus animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-minus/icon-user-round-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-check",
+      "type": "registry:component",
+      "title": "Animated User Round Check",
+      "description": "Round user with interactive verified/check animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-check/icon-user-round-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-cog",
+      "type": "registry:component",
+      "title": "Animated User Round Cog",
+      "description": "Round user with interactive settings/cog rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-cog/icon-user-round-cog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-pen",
+      "type": "registry:component",
+      "title": "Animated User Round Pen",
+      "description": "Round user with interactive edit/pen animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-pen/icon-user-round-pen.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-search",
+      "type": "registry:component",
+      "title": "Animated User Round Search",
+      "description": "Round user with interactive search pulse effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-search/icon-user-round-search.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-x",
+      "type": "registry:component",
+      "title": "Animated User Round X",
+      "description": "Round user with interactive block/x animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-x/icon-user-round-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shield-user",
+      "type": "registry:component",
+      "title": "Animated Shield User",
+      "description": "Shield user with interactive security pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shield-user/icon-shield-user.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-file-user",
+      "type": "registry:component",
+      "title": "Animated File User",
+      "description": "User file with interactive lift and pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-file-user/icon-file-user.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloud-alert",
+      "type": "registry:component",
+      "title": "Animated Cloud Alert",
+      "description": "Cloud alert with interactive storm warning animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-alert/icon-cloud-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-search-alert",
+      "type": "registry:component",
+      "title": "Animated Search Alert",
+      "description": "Search alert with interactive caution animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-search-alert/icon-search-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bell-electric",
+      "type": "registry:component",
+      "title": "Animated Bell Electric",
+      "description": "Electric bell with interactive alarm vibration.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bell-electric/icon-bell-electric.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-megaphone",
+      "type": "registry:component",
+      "title": "Animated Megaphone",
+      "description": "Megaphone with interactive announcement tilt.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-megaphone/icon-megaphone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-megaphone-off",
+      "type": "registry:component",
+      "title": "Animated Megaphone Off",
+      "description": "Megaphone off with interactive muted vibration.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-megaphone-off/icon-megaphone-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-message-circle-warning",
+      "type": "registry:component",
+      "title": "Animated Message Circle Warning",
+      "description": "Circle message warning with interactive bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-message-circle-warning/icon-message-circle-warning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-message-square-warning",
+      "type": "registry:component",
+      "title": "Animated Message Square Warning",
+      "description": "Square message warning with interactive bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-message-square-warning/icon-message-square-warning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-octagon-x",
+      "type": "registry:component",
+      "title": "Animated Octagon X",
+      "description": "Octagon X with interactive stop animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-octagon-x/icon-octagon-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-siren",
+      "type": "registry:component",
+      "title": "Animated Siren",
+      "description": "Siren with interactive flashing pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-siren/icon-siren.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-badge-alert",
+      "type": "registry:component",
+      "title": "Animated Badge Alert",
+      "description": "Badge alert with interactive scale and pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-badge-alert/icon-badge-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-alert",
+      "type": "registry:component",
+      "title": "Animated Circle Alert",
+      "description": "Circle alert with interactive scale and pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-alert/icon-circle-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-alert",
+      "type": "registry:component",
+      "title": "Animated Clock Alert",
+      "description": "Clock alert with interactive ticking and warning pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-alert/icon-clock-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-octagon-alert",
+      "type": "registry:component",
+      "title": "Animated Octagon Alert",
+      "description": "Octagon alert with interactive scale and bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-octagon-alert/icon-octagon-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-triangle-alert",
+      "type": "registry:component",
+      "title": "Animated Triangle Alert",
+      "description": "Triangle alert with interactive scale and caution pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-triangle-alert/icon-triangle-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-mail-warning",
+      "type": "registry:component",
+      "title": "Animated Mail Warning",
+      "description": "Mail warning with interactive bounce and alert pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-mail-warning/icon-mail-warning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-battery-warning",
+      "type": "registry:component",
+      "title": "Animated Battery Warning",
+      "description": "Battery warning with interactive oscillation and pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-battery-warning/icon-battery-warning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-flag",
+      "type": "registry:component",
+      "title": "Animated Flag",
+      "description": "Flag with interactive waver and pole vibration.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-flag/icon-flag.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-flag-off",
+      "type": "registry:component",
+      "title": "Animated Flag Off",
+      "description": "Flag off with interactive muted waver.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-flag-off/icon-flag-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-book-alert",
+      "type": "registry:component",
+      "title": "Animated Book Alert",
+      "description": "Book alert with interactive bounce and warning pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-book-alert/icon-book-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-file-alert",
+      "type": "registry:component",
+      "title": "Animated File Alert",
+      "description": "File alert with interactive bounce and caution pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-file-alert/icon-file-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-baby",
+      "type": "registry:component",
+      "title": "Animated Baby",
+      "description": "Baby head with a gentle crib-rocking sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-baby/icon-baby.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-badge-info",
+      "type": "registry:component",
+      "title": "Animated Badge Info",
+      "description": "Info badge with pulsing mark and scaling border.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-badge-info/icon-badge-info.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-badge-help",
+      "type": "registry:component",
+      "title": "Animated Badge Help",
+      "description": "Help badge with bouncing question mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-badge-help/icon-badge-help.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-help",
+      "type": "registry:component",
+      "title": "Animated Circle Help",
+      "description": "Circle help with bouncing question mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-help/icon-circle-help.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-closed-caption",
+      "type": "registry:component",
+      "title": "Animated Closed Caption",
+      "description": "Closed caption icon with text reveal pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-closed-caption/icon-closed-caption.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-contrast",
+      "type": "registry:component",
+      "title": "Animated Contrast",
+      "description": "Contrast icon with 360-degree mode flip.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-contrast/icon-contrast.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ear",
+      "type": "registry:component",
+      "title": "Animated Ear",
+      "description": "Ear with a sound-catching tilt animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ear/icon-ear.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ear-off",
+      "type": "registry:component",
+      "title": "Animated Ear Off",
+      "description": "Muted ear with a vibrating slash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ear-off/icon-ear-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-eye-closed",
+      "type": "registry:component",
+      "title": "Animated Eye Closed",
+      "description": "Closed eye with sleepy blinking lashes.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-eye-closed/icon-eye-closed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-eye-off",
+      "type": "registry:component",
+      "title": "Animated Eye Off",
+      "description": "Muted vision with blinking and vibrating slash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-eye-off/icon-eye-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-glasses",
+      "type": "registry:component",
+      "title": "Animated Glasses",
+      "description": "Glasses with a focus-pulse and frame lift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-glasses/icon-glasses.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hand",
+      "type": "registry:component",
+      "title": "Animated Hand",
+      "description": "Hand with an interactive palm shake.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hand/icon-hand.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-life-buoy",
+      "type": "registry:component",
+      "title": "Animated Life Buoy",
+      "description": "Life buoy with a bobbing and rotating float.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-life-buoy/icon-life-buoy.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-moon-star",
+      "type": "registry:component",
+      "title": "Animated Moon Star",
+      "description": "Moon and star with a gentle night sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-moon-star/icon-moon-star.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-moon-plus",
+      "type": "registry:component",
+      "title": "Animated Moon Plus",
+      "description": "Moon plus with a swaying crescent and rotating plus.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-moon-plus/icon-moon-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-person-standing",
+      "type": "registry:component",
+      "title": "Animated Person Standing",
+      "description": "Standing person with a subtle pose sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-person-standing/icon-person-standing.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-scan-eye",
+      "type": "registry:component",
+      "title": "Animated Scan Eye",
+      "description": "Eye scan with a moving laser and blink.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-scan-eye/icon-scan-eye.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-scan-search",
+      "type": "registry:component",
+      "title": "Animated Scan Search",
+      "description": "Search scan with a moving laser and magnifier.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-scan-search/icon-scan-search.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-speech",
+      "type": "registry:component",
+      "title": "Animated Speech",
+      "description": "Speech bubble with an interactive wave pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-speech/icon-speech.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sun-dim",
+      "type": "registry:component",
+      "title": "Animated Sun Dim",
+      "description": "Dim sun with a soft light-pulse effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sun-dim/icon-sun-dim.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sun-medium",
+      "type": "registry:component",
+      "title": "Animated Sun Medium",
+      "description": "Medium sun with a warm radiance pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sun-medium/icon-sun-medium.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sun-moon",
+      "type": "registry:component",
+      "title": "Animated Sun Moon",
+      "description": "Sun-Moon transition with a day-night cycle pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sun-moon/icon-sun-moon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-transgender",
+      "type": "registry:component",
+      "title": "Animated Transgender",
+      "description": "Transgender symbol with internal shifting motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-transgender/icon-transgender.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-zoom-in",
+      "type": "registry:component",
+      "title": "Animated Zoom In",
+      "description": "Zoom in with a pulsing magnifier and rotating plus.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-zoom-in/icon-zoom-in.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-zoom-out",
+      "type": "registry:component",
+      "title": "Animated Zoom Out",
+      "description": "Zoom out with a pulsing magnifier and vibrating minus.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-zoom-out/icon-zoom-out.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bird",
+      "type": "registry:component",
+      "title": "Animated Bird",
+      "description": "Bird with fluttering wings and gentle body sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bird/icon-bird.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-birdhouse",
+      "type": "registry:component",
+      "title": "Animated Birdhouse",
+      "description": "Birdhouse with a pulsing hole and house bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-birdhouse/icon-birdhouse.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bone",
+      "type": "registry:component",
+      "title": "Animated Bone",
+      "description": "Bone with a playful wagging rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bone/icon-bone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bug-off",
+      "type": "registry:component",
+      "title": "Animated Bug Off",
+      "description": "Bug off with a vibrating slash and bug shake.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bug-off/icon-bug-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bug-play",
+      "type": "registry:component",
+      "title": "Animated Bug Play",
+      "description": "Bug play with crawling motion and pulsing play button.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bug-play/icon-bug-play.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cat",
+      "type": "registry:component",
+      "title": "Animated Cat",
+      "description": "Cat with blinking eyes and a pulsing nose.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cat/icon-cat.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-dog",
+      "type": "registry:component",
+      "title": "Animated Dog",
+      "description": "Dog with head tilt, blinking eyes, and pulsing nose.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-dog/icon-dog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-egg",
+      "type": "registry:component",
+      "title": "Animated Egg",
+      "description": "Egg with a playful hatching wobble.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-egg/icon-egg.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-fish",
+      "type": "registry:component",
+      "title": "Animated Fish",
+      "description": "Fish with a realistic tail wag and body sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-fish/icon-fish.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-fish-off",
+      "type": "registry:component",
+      "title": "Animated Fish Off",
+      "description": "Fish off with a muted sway and vibrating slash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-fish-off/icon-fish-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-fish-symbol",
+      "type": "registry:component",
+      "title": "Animated Fish Symbol",
+      "description": "Fish symbol with a smooth swimming motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-fish-symbol/icon-fish-symbol.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-origami",
+      "type": "registry:component",
+      "title": "Animated Origami",
+      "description": "Origami with a subtle folding pulse effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-origami/icon-origami.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-panda",
+      "type": "registry:component",
+      "title": "Animated Panda",
+      "description": "Panda with blinking pupils and a gentle body sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-panda/icon-panda.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-paw-print",
+      "type": "registry:component",
+      "title": "Animated Paw Print",
+      "description": "Paw print with sequential pad-pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-paw-print/icon-paw-print.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-rabbit",
+      "type": "registry:component",
+      "title": "Animated Rabbit",
+      "description": "Rabbit with a soft ear-twitch and body sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-rabbit/icon-rabbit.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-rat",
+      "type": "registry:component",
+      "title": "Animated Rat",
+      "description": "Rat with a twitching tail and scurrying vibration.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-rat/icon-rat.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shell",
+      "type": "registry:component",
+      "title": "Animated Shell",
+      "description": "Shell with a continuous spiral rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shell/icon-shell.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shrimp",
+      "type": "registry:component",
+      "title": "Animated Shrimp",
+      "description": "Shrimp with snapping tail and body compression.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shrimp/icon-shrimp.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-snail",
+      "type": "registry:component",
+      "title": "Animated Snail",
+      "description": "Snail with sliding body and wiggling tentacles.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-snail/icon-snail.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-turtle",
+      "type": "registry:component",
+      "title": "Animated Turtle",
+      "description": "Turtle with a head peek and slow body sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-turtle/icon-turtle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-worm",
+      "type": "registry:component",
+      "title": "Animated Worm",
+      "description": "Worm with a characteristic inching motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-worm/icon-worm.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-brick-wall",
+      "type": "registry:component",
+      "title": "Animated Brick Wall",
+      "description": "Brick wall with sequential masonry-pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-brick-wall/icon-brick-wall.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-building",
+      "type": "registry:component",
+      "title": "Animated Building",
+      "description": "Office building with window illumination effects.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-building/icon-building.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-building-2",
+      "type": "registry:component",
+      "title": "Animated Building 2",
+      "description": "Modern building with staggered window lights.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-building-2/icon-building-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-castle",
+      "type": "registry:component",
+      "title": "Animated Castle",
+      "description": "Medieval castle with shifting towers and gate.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-castle/icon-castle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-church",
+      "type": "registry:component",
+      "title": "Animated Church",
+      "description": "Church icon with pulsing cross and door shift.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-church/icon-church.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cuboid",
+      "type": "registry:component",
+      "title": "Animated Cuboid",
+      "description": "3D cuboid with perspective and rotation animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cuboid/icon-cuboid.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-dam",
+      "type": "registry:component",
+      "title": "Animated Dam",
+      "description": "Hydroelectric dam with moving water waves.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-dam/icon-dam.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-factory",
+      "type": "registry:component",
+      "title": "Animated Factory",
+      "description": "Industrial factory with illuminating windows.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-factory/icon-factory.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-fence",
+      "type": "registry:component",
+      "title": "Animated Fence",
+      "description": "Wooden fence with drawing horizontal bars.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-fence/icon-fence.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hospital",
+      "type": "registry:component",
+      "title": "Animated Hospital",
+      "description": "Medical hospital with pulsing emergency cross.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hospital/icon-hospital.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hotel",
+      "type": "registry:component",
+      "title": "Animated Hotel",
+      "description": "Hotel building with illuminating window lights.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hotel/icon-hotel.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-house",
+      "type": "registry:component",
+      "title": "Animated House",
+      "description": "Standard house icon with moving door animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-house/icon-house.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-house-heart",
+      "type": "registry:component",
+      "title": "Animated House Heart",
+      "description": "House icon with a pulsing central heart.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-house-heart/icon-house-heart.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-house-plug",
+      "type": "registry:component",
+      "title": "Animated House Plug",
+      "description": "Energy-efficient house with pulsating plug.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-house-plug/icon-house-plug.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-house-plus",
+      "type": "registry:component",
+      "title": "Animated House Plus",
+      "description": "Expansion house icon with rotating plus sign.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-house-plus/icon-house-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-house-wifi",
+      "type": "registry:component",
+      "title": "Animated House Wifi",
+      "description": "Smart home icon with radiating wifi waves.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-house-wifi/icon-house-wifi.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-library",
+      "type": "registry:component",
+      "title": "Animated Library",
+      "description": "Library shelves with tilting book animations.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-library/icon-library.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-school",
+      "type": "registry:component",
+      "title": "Animated School",
+      "description": "School building with pulsing bell-circle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-school/icon-school.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-theater",
+      "type": "registry:component",
+      "title": "Animated Theater",
+      "description": "Theater icon with sliding stage curtains.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-theater/icon-theater.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-utility-pole",
+      "type": "registry:component",
+      "title": "Animated Utility Pole",
+      "description": "Utility pole with a subtle structural hum.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-utility-pole/icon-utility-pole.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-warehouse",
+      "type": "registry:component",
+      "title": "Animated Warehouse",
+      "description": "Industrial warehouse with roller door animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-warehouse/icon-warehouse.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

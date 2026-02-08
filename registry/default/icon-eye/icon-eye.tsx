@@ -3,45 +3,32 @@
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
 export interface IconEyeProps extends React.SVGProps<SVGSVGElement> {
-  /** Size in pixels. Default 24 */
   size?: number;
-  /** Stroke width. Default 2 */
   strokeWidth?: number;
 }
 
-const eyelidVariants: Variants = {
-  rest: { scaleY: 1 },
+const eyeVariants: Variants = {
+  rest: { scaleY: 1, opacity: 1 },
   hover: {
-    scaleY: [1, 0.05, 0.05, 1],
-    transition: { 
+    scaleY: [1, 0.3, 1],
+    transition: {
       duration: 0.4,
-      times: [0, 0.3, 0.5, 1],
-      ease: "easeInOut"
-    },
-  },
-  tap: {
-    scaleY: [1, 0.05, 0.05, 0.05, 1],
-    transition: { 
-      duration: 0.5,
-      times: [0, 0.2, 0.4, 0.6, 1],
+      times: [0, 0.5, 1],
+      ease: "easeInOut",
+      repeat: Infinity,
+      repeatDelay: 3,
     },
   },
 };
 
-const pupilVariants: Variants = {
-  rest: { scale: 1 },
+const irisVariants: Variants = {
+  rest: { x: 0, y: 0 },
   hover: {
-    scale: [1, 0, 0, 1],
-    transition: { 
-      duration: 0.4,
-      times: [0, 0.3, 0.5, 1],
-    },
-  },
-  tap: {
-    scale: [1, 0, 0, 0, 1],
-    transition: { 
-      duration: 0.5,
-      times: [0, 0.2, 0.4, 0.6, 1],
+    x: [0, -1.5, 1.5, 0],
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut",
     },
   },
 };
@@ -52,14 +39,7 @@ export function IconEye({
   className,
   ...props
 }: IconEyeProps) {
-  const {
-    onAnimationStart,
-    onAnimationEnd,
-    onDragStart,
-    onDrag,
-    onDragEnd,
-    ...rest
-  } = props;
+  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -78,22 +58,16 @@ export function IconEye({
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       style={{ overflow: "visible" }}
-      {...rest}
+      {...restOptions}
     >
-      {/* Eye shape - blinks via scaleY */}
-      <motion.g
-        variants={eyelidVariants}
-        style={{ originY: "50%", originX: "50%" }}
-      >
-        <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
-      </motion.g>
-      
-      {/* Pupil - disappears during blink */}
+      <motion.path 
+        d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" 
+        variants={eyeVariants}
+        style={{ originY: "12px" }}
+      />
       <motion.circle 
-        cx="12" 
-        cy="12" 
-        r="3" 
-        variants={pupilVariants}
+        cx="12" cy="12" r="3" 
+        variants={irisVariants}
       />
     </motion.svg>
   );

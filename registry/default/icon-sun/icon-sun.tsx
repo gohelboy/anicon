@@ -7,28 +7,28 @@ export interface IconSunProps extends React.SVGProps<SVGSVGElement> {
   strokeWidth?: number;
 }
 
-// Sun rotates slowly and radiates warmth
-const sunVariants: Variants = {
-  rest: { rotate: 0, scale: 1 },
+const coreVariants: Variants = {
+  rest: { scale: 1 },
   hover: {
-    rotate: 45,
-    scale: 1.1,
-    transition: { type: "spring", stiffness: 200, damping: 15 },
-  },
-  tap: {
-    rotate: 90,
-    scale: 1.15,
-    transition: { type: "spring", stiffness: 200, damping: 15 },
+    scale: [1, 1.1, 1],
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
   },
 };
 
-// Rays pulse outward
 const rayVariants: Variants = {
-  rest: { opacity: 1, scale: 1 },
+  rest: { scale: 1, opacity: 1 },
   hover: {
+    scale: [1, 1.2, 1],
     opacity: [1, 0.7, 1],
-    scale: [1, 1.1, 1],
-    transition: { duration: 0.8, repeat: Infinity, repeatType: "loop" },
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
   },
 };
 
@@ -38,7 +38,7 @@ export function IconSun({
   className,
   ...props
 }: IconSunProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;
+  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -46,24 +46,23 @@ export function IconSun({
       xmlns="http://www.w3.org/2000/svg"
       width={size}
       height={size}
-      viewBox="-3 -3 30 30"
+      viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      variants={sunVariants}
       initial={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       style={{ overflow: "visible" }}
-      {...rest}
+      {...restOptions}
     >
-      {/* Sun center */}
-      <circle cx="12" cy="12" r="4" />
-      
-      {/* Sun rays - pulse */}
+      <motion.circle 
+        cx="12" cy="12" r="4" 
+        variants={coreVariants}
+      />
       <motion.g variants={rayVariants}>
         <path d="M12 2v2" />
         <path d="M12 20v2" />

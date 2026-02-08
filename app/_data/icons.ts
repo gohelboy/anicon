@@ -232,6 +232,200 @@ import { IconBookOpen } from "@/registry/default/icon-book-open/icon-book-open";
 import { IconCoffee } from "@/registry/default/icon-coffee/icon-coffee";
 import { IconScissors } from "@/registry/default/icon-scissors/icon-scissors";
 import { IconUmbrella } from "@/registry/default/icon-umbrella/icon-umbrella";
+// Batch 6 Premium Icons
+import { IconBrain } from "@/registry/default/icon-brain/icon-brain";
+import { IconGhost } from "@/registry/default/icon-ghost/icon-ghost";
+import { IconGraduationCap } from "@/registry/default/icon-graduation-cap/icon-graduation-cap";
+import { IconHeartPulse } from "@/registry/default/icon-heart-pulse/icon-heart-pulse";
+import { IconLandmark } from "@/registry/default/icon-landmark/icon-landmark";
+import { IconMicroscope } from "@/registry/default/icon-microscope/icon-microscope";
+import { IconMountain } from "@/registry/default/icon-mountain/icon-mountain";
+import { IconPill } from "@/registry/default/icon-pill/icon-pill";
+import { IconTelescope } from "@/registry/default/icon-telescope/icon-telescope";
+import { IconVolcano } from "@/registry/default/icon-volcano/icon-volcano";
+// Batch 7 Tech Industry Icons
+import { IconCodeXml } from "@/registry/default/icon-code-xml/icon-code-xml";
+import { IconGitBranch } from "@/registry/default/icon-git-branch/icon-git-branch";
+import { IconGitPullRequest } from "@/registry/default/icon-git-pull-request/icon-git-pull-request";
+import { IconWebhook } from "@/registry/default/icon-webhook/icon-webhook";
+import { IconGauge } from "@/registry/default/icon-gauge/icon-gauge";
+import { IconChartNoAxesColumn } from "@/registry/default/icon-chart-no-axes-column/icon-chart-no-axes-column";
+import { IconComponent } from "@/registry/default/icon-component/icon-component";
+import { IconCommand } from "@/registry/default/icon-command/icon-command";
+import { IconBraces } from "@/registry/default/icon-braces/icon-braces";
+import { IconBug } from "@/registry/default/icon-bug/icon-bug";
+// Batch 8 Tech Industry Icons
+import { IconBlocks } from "@/registry/default/icon-blocks/icon-blocks";
+import { IconDatabaseZap } from "@/registry/default/icon-database-zap/icon-database-zap";
+import { IconLayers2 } from "@/registry/default/icon-layers-2/icon-layers-2";
+import { IconMousePointerClick } from "@/registry/default/icon-mouse-pointer-click/icon-mouse-pointer-click";
+import { IconRocket } from "@/registry/default/icon-rocket/icon-rocket";
+import { IconSettings2 } from "@/registry/default/icon-settings-2/icon-settings-2";
+import { IconShieldAlert } from "@/registry/default/icon-shield-alert/icon-shield-alert";
+import { IconWorkflow } from "@/registry/default/icon-workflow/icon-workflow";
+import { IconSparkles } from "@/registry/default/icon-sparkles/icon-sparkles";
+// Batch 9 Dashboard Icons
+import { IconLayoutDashboard } from "@/registry/default/icon-layout-dashboard/icon-layout-dashboard";
+import { IconChartPie } from "@/registry/default/icon-chart-pie/icon-chart-pie";
+import { IconChartArea } from "@/registry/default/icon-chart-area/icon-chart-area";
+import { IconChartLine } from "@/registry/default/icon-chart-line/icon-chart-line";
+import { IconTrendingUp } from "@/registry/default/icon-trending-up/icon-trending-up";
+import { IconTrendingDown } from "@/registry/default/icon-trending-down/icon-trending-down";
+import { IconUsers } from "@/registry/default/icon-users/icon-users";
+import { IconDollarSign } from "@/registry/default/icon-dollar-sign/icon-dollar-sign";
+import { IconWallet } from "@/registry/default/icon-wallet/icon-wallet";
+import { IconPanelsTopLeft } from "@/registry/default/icon-panels-top-left/icon-panels-top-left";
+// Batch 10 E-Commerce & Media Icons
+import { IconTag } from "@/registry/default/icon-tag/icon-tag";
+import { IconTicket } from "@/registry/default/icon-ticket/icon-ticket";
+import { IconQrCode } from "@/registry/default/icon-qr-code/icon-qr-code";
+import { IconBarcode } from "@/registry/default/icon-barcode/icon-barcode";
+import { IconStore } from "@/registry/default/icon-store/icon-store";
+import { IconBanknote } from "@/registry/default/icon-banknote/icon-banknote";
+import { IconCoins } from "@/registry/default/icon-coins/icon-coins";
+import { IconPackage } from "@/registry/default/icon-package/icon-package";
+import { IconClapperboard } from "@/registry/default/icon-clapperboard/icon-clapperboard";
+import { IconFrame } from "@/registry/default/icon-frame/icon-frame";
+// Batch 11 Lifestyle & Communication Icons
+import { IconAtSign } from "@/registry/default/icon-at-sign/icon-at-sign";
+import { IconHash } from "@/registry/default/icon-hash/icon-hash";
+import { IconBus } from "@/registry/default/icon-bus/icon-bus";
+import { IconTrainFront } from "@/registry/default/icon-train-front/icon-train-front";
+import { IconBike } from "@/registry/default/icon-bike/icon-bike";
+import { IconWrench } from "@/registry/default/icon-wrench/icon-wrench";
+import { IconHammer } from "@/registry/default/icon-hammer/icon-hammer";
+import { IconUtensils } from "@/registry/default/icon-utensils/icon-utensils";
+import { IconPocket } from "@/registry/default/icon-pocket/icon-pocket";
+import { IconMap } from "@/registry/default/icon-map/icon-map";
+// Batch 12 Gaming & Rewards Icons
+import { IconSkull } from "@/registry/default/icon-skull/icon-skull";
+import { IconDices } from "@/registry/default/icon-dices/icon-dices";
+import { IconTrophy } from "@/registry/default/icon-trophy/icon-trophy";
+import { IconMedal } from "@/registry/default/icon-medal/icon-medal";
+import { IconTarget } from "@/registry/default/icon-target/icon-target";
+import { IconGem } from "@/registry/default/icon-gem/icon-gem";
+import { IconCrown } from "@/registry/default/icon-crown/icon-crown";
+import { IconSwords } from "@/registry/default/icon-swords/icon-swords";
+import { IconJoystick } from "@/registry/default/icon-joystick/icon-joystick";
+import { IconGamepad2 } from "@/registry/default/icon-gamepad-2/icon-gamepad-2";
+// Batch 13 User Management Icons
+import { IconUserPlus } from "@/registry/default/icon-user-plus/icon-user-plus";
+import { IconUserMinus } from "@/registry/default/icon-user-minus/icon-user-minus";
+import { IconUserCheck } from "@/registry/default/icon-user-check/icon-user-check";
+import { IconUserCog } from "@/registry/default/icon-user-cog/icon-user-cog";
+import { IconUserPen } from "@/registry/default/icon-user-pen/icon-user-pen";
+import { IconUserStar } from "@/registry/default/icon-user-star/icon-user-star";
+import { IconUserSearch } from "@/registry/default/icon-user-search/icon-user-search";
+import { IconUserX } from "@/registry/default/icon-user-x/icon-user-x";
+import { IconCircleUser } from "@/registry/default/icon-circle-user/icon-circle-user";
+import { IconContact } from "@/registry/default/icon-contact/icon-contact";
+// Batch 14 Advanced User Icons
+import { IconUserRound } from "@/registry/default/icon-user-round/icon-user-round";
+import { IconUserRoundPlus } from "@/registry/default/icon-user-round-plus/icon-user-round-plus";
+import { IconUserRoundMinus } from "@/registry/default/icon-user-round-minus/icon-user-round-minus";
+import { IconUserRoundCheck } from "@/registry/default/icon-user-round-check/icon-user-round-check";
+import { IconUserRoundCog } from "@/registry/default/icon-user-round-cog/icon-user-round-cog";
+import { IconUserRoundPen } from "@/registry/default/icon-user-round-pen/icon-user-round-pen";
+import { IconUserRoundSearch } from "@/registry/default/icon-user-round-search/icon-user-round-search";
+import { IconUserRoundX } from "@/registry/default/icon-user-round-x/icon-user-round-x";
+import { IconShieldUser } from "@/registry/default/icon-shield-user/icon-shield-user";
+import { IconFileUser } from "@/registry/default/icon-file-user/icon-file-user";
+// Batch 15 Alerts & Notifications Icons
+import { IconCloudAlert } from "@/registry/default/icon-cloud-alert/icon-cloud-alert";
+import { IconSearchAlert } from "@/registry/default/icon-search-alert/icon-search-alert";
+import { IconBellElectric } from "@/registry/default/icon-bell-electric/icon-bell-electric";
+import { IconMegaphone } from "@/registry/default/icon-megaphone/icon-megaphone";
+import { IconMegaphoneOff } from "@/registry/default/icon-megaphone-off/icon-megaphone-off";
+import { IconMessageCircleWarning } from "@/registry/default/icon-message-circle-warning/icon-message-circle-warning";
+import { IconMessageSquareWarning } from "@/registry/default/icon-message-square-warning/icon-message-square-warning";
+import { IconOctagonX } from "@/registry/default/icon-octagon-x/icon-octagon-x";
+import { IconSiren } from "@/registry/default/icon-siren/icon-siren";
+import { IconBadgeAlert } from "@/registry/default/icon-badge-alert/icon-badge-alert";
+// Batch 16 Extended Alerts Icons
+import { IconCircleAlert } from "@/registry/default/icon-circle-alert/icon-circle-alert";
+import { IconClockAlert } from "@/registry/default/icon-clock-alert/icon-clock-alert";
+import { IconOctagonAlert } from "@/registry/default/icon-octagon-alert/icon-octagon-alert";
+import { IconTriangleAlert } from "@/registry/default/icon-triangle-alert/icon-triangle-alert";
+import { IconMailWarning } from "@/registry/default/icon-mail-warning/icon-mail-warning";
+import { IconBatteryWarning } from "@/registry/default/icon-battery-warning/icon-battery-warning";
+import { IconFlag } from "@/registry/default/icon-flag/icon-flag";
+import { IconFlagOff } from "@/registry/default/icon-flag-off/icon-flag-off";
+import { IconBookAlert } from "@/registry/default/icon-book-alert/icon-book-alert";
+import { IconFileAlert } from "@/registry/default/icon-file-alert/icon-file-alert";
+
+// Batch 17 Accessibility, Vision & Themes
+import { IconBaby } from "@/registry/default/icon-baby/icon-baby";
+import { IconBadgeInfo } from "@/registry/default/icon-badge-info/icon-badge-info";
+import { IconBadgeHelp } from "@/registry/default/icon-badge-help/icon-badge-help";
+import { IconCircleHelp } from "@/registry/default/icon-circle-help/icon-circle-help";
+import { IconClosedCaption } from "@/registry/default/icon-closed-caption/icon-closed-caption";
+import { IconContrast } from "@/registry/default/icon-contrast/icon-contrast";
+import { IconEar } from "@/registry/default/icon-ear/icon-ear";
+import { IconEarOff } from "@/registry/default/icon-ear-off/icon-ear-off";
+import { IconEyeClosed } from "@/registry/default/icon-eye-closed/icon-eye-closed";
+import { IconEyeOff } from "@/registry/default/icon-eye-off/icon-eye-off";
+import { IconGlasses } from "@/registry/default/icon-glasses/icon-glasses";
+import { IconHand } from "@/registry/default/icon-hand/icon-hand";
+import { IconLifeBuoy } from "@/registry/default/icon-life-buoy/icon-life-buoy";
+import { IconMoonStar } from "@/registry/default/icon-moon-star/icon-moon-star";
+import { IconMoonPlus } from "@/registry/default/icon-moon-plus/icon-moon-plus";
+import { IconPersonStanding } from "@/registry/default/icon-person-standing/icon-person-standing";
+import { IconScanEye } from "@/registry/default/icon-scan-eye/icon-scan-eye";
+import { IconScanSearch } from "@/registry/default/icon-scan-search/icon-scan-search";
+import { IconSpeech } from "@/registry/default/icon-speech/icon-speech";
+import { IconSunDim } from "@/registry/default/icon-sun-dim/icon-sun-dim";
+import { IconSunMedium } from "@/registry/default/icon-sun-medium/icon-sun-medium";
+import { IconSunMoon } from "@/registry/default/icon-sun-moon/icon-sun-moon";
+import { IconTransgender } from "@/registry/default/icon-transgender/icon-transgender";
+import { IconZoomIn } from "@/registry/default/icon-zoom-in/icon-zoom-in";
+import { IconZoomOut } from "@/registry/default/icon-zoom-out/icon-zoom-out";
+
+// Batch 18 Animals & Nature
+import { IconBird } from "@/registry/default/icon-bird/icon-bird";
+import { IconBirdhouse } from "@/registry/default/icon-birdhouse/icon-birdhouse";
+import { IconBone } from "@/registry/default/icon-bone/icon-bone";
+import { IconBugOff } from "@/registry/default/icon-bug-off/icon-bug-off";
+import { IconBugPlay } from "@/registry/default/icon-bug-play/icon-bug-play";
+import { IconCat } from "@/registry/default/icon-cat/icon-cat";
+import { IconDog } from "@/registry/default/icon-dog/icon-dog";
+import { IconEgg } from "@/registry/default/icon-egg/icon-egg";
+import { IconFish } from "@/registry/default/icon-fish/icon-fish";
+import { IconFishOff } from "@/registry/default/icon-fish-off/icon-fish-off";
+import { IconFishSymbol } from "@/registry/default/icon-fish-symbol/icon-fish-symbol";
+import { IconOrigami } from "@/registry/default/icon-origami/icon-origami";
+import { IconPanda } from "@/registry/default/icon-panda/icon-panda";
+import { IconPawPrint } from "@/registry/default/icon-paw-print/icon-paw-print";
+import { IconRabbit } from "@/registry/default/icon-rabbit/icon-rabbit";
+import { IconRat } from "@/registry/default/icon-rat/icon-rat";
+import { IconShrimp } from "@/registry/default/icon-shrimp/icon-shrimp";
+import { IconSnail } from "@/registry/default/icon-snail/icon-snail";
+
+// Batch 19 Architecture & Construction
+import { IconBrickWall } from "@/registry/default/icon-brick-wall/icon-brick-wall";
+import { IconBuilding } from "@/registry/default/icon-building/icon-building";
+import { IconBuilding2 } from "@/registry/default/icon-building-2/icon-building-2";
+import { IconCastle } from "@/registry/default/icon-castle/icon-castle";
+import { IconChurch } from "@/registry/default/icon-church/icon-church";
+import { IconCuboid } from "@/registry/default/icon-cuboid/icon-cuboid";
+import { IconDam } from "@/registry/default/icon-dam/icon-dam";
+import { IconFactory } from "@/registry/default/icon-factory/icon-factory";
+import { IconFence } from "@/registry/default/icon-fence/icon-fence";
+import { IconHospital } from "@/registry/default/icon-hospital/icon-hospital";
+import { IconHotel } from "@/registry/default/icon-hotel/icon-hotel";
+import { IconHouse } from "@/registry/default/icon-house/icon-house";
+import { IconHouseHeart } from "@/registry/default/icon-house-heart/icon-house-heart";
+import { IconHousePlug } from "@/registry/default/icon-house-plug/icon-house-plug";
+import { IconHousePlus } from "@/registry/default/icon-house-plus/icon-house-plus";
+import { IconHouseWifi } from "@/registry/default/icon-house-wifi/icon-house-wifi";
+import { IconLibrary } from "@/registry/default/icon-library/icon-library";
+import { IconSchool } from "@/registry/default/icon-school/icon-school";
+import { IconTheater } from "@/registry/default/icon-theater/icon-theater";
+import { IconUtilityPole } from "@/registry/default/icon-utility-pole/icon-utility-pole";
+import { IconWarehouse } from "@/registry/default/icon-warehouse/icon-warehouse";
+
+import { IconTurtle } from "@/registry/default/icon-turtle/icon-turtle";
+import { IconWorm } from "@/registry/default/icon-worm/icon-worm";
+import { IconShell } from "@/registry/default/icon-shell/icon-shell";
 
 export const iconsRegistry = [
   {
@@ -1811,6 +2005,1239 @@ export const iconsRegistry = [
     color: "text-rose-300",
     description: "Umbrella with expanding canopy animation",
     tags: ["umbrella", "weather", "rain", "shelter"],
+  },
+  {
+    name: "icon-brain",
+    component: IconBrain,
+    color: "text-pink-300",
+    description: "Brain with neural pulse and connection glow",
+    tags: ["brain", "intelligence", "ai", "mind"],
+  },
+  {
+    name: "icon-ghost",
+    component: IconGhost,
+    color: "text-zinc-100",
+    description: "Ghost with hovering and blinking animation",
+    tags: ["ghost", "spooky", "halloween", "spirit"],
+  },
+  {
+    name: "icon-graduation-cap",
+    component: IconGraduationCap,
+    color: "text-blue-400",
+    description: "Graduation cap with tassel swing and bounce",
+    tags: ["education", "school", "graduate", "cap"],
+  },
+  {
+    name: "icon-heart-pulse",
+    component: IconHeartPulse,
+    color: "text-rose-500",
+    description: "Heart pulse with rhythmic heartbeat and sparkline",
+    tags: ["heart", "pulse", "health", "medical"],
+  },
+  {
+    name: "icon-landmark",
+    component: IconLandmark,
+    color: "text-amber-300",
+    description: "Landmark with pillar-rise and roof-move animation",
+    tags: ["landmark", "building", "bank", "monument"],
+  },
+  {
+    name: "icon-microscope",
+    component: IconMicroscope,
+    color: "text-emerald-300",
+    description: "Microscope with focus adjustment and lens rotation",
+    tags: ["microscope", "science", "lab", "research"],
+  },
+  {
+    name: "icon-mountain",
+    component: IconMountain,
+    color: "text-slate-400",
+    description: "Mountain with subtle peak glow animation",
+    tags: ["mountain", "nature", "outdoor", "peak"],
+  },
+  {
+    name: "icon-pill",
+    component: IconPill,
+    color: "text-cyan-400",
+    description: "Pill with rotation and opacity pulse animation",
+    tags: ["pill", "medicine", "health", "capsule"],
+  },
+  {
+    name: "icon-telescope",
+    component: IconTelescope,
+    color: "text-indigo-400",
+    description: "Telescope with cosmic tilt and search rotation",
+    tags: ["telescope", "space", "astronomy", "search"],
+  },
+  {
+    name: "icon-volcano",
+    component: IconVolcano,
+    color: "text-orange-500",
+    description: "Volcano with eruption pulse and rising ash",
+    tags: ["volcano", "nature", "lava", "eruption"],
+  },
+  {
+    name: "icon-code-xml",
+    component: IconCodeXml,
+    color: "text-blue-500",
+    description: "Code XML with syntax drawing animation",
+    tags: ["code", "xml", "syntax", "brackets"],
+  },
+  {
+    name: "icon-git-branch",
+    component: IconGitBranch,
+    color: "text-orange-400",
+    description: "Git branch with node pulsing and line drawing",
+    tags: ["git", "branch", "vcs", "fork"],
+  },
+  {
+    name: "icon-git-pull-request",
+    component: IconGitPullRequest,
+    color: "text-indigo-400",
+    description: "Git pull request with collaboration circles pulsing",
+    tags: ["git", "pr", "collaboration", "vcs"],
+  },
+  {
+    name: "icon-webhook",
+    component: IconWebhook,
+    color: "text-emerald-400",
+    description: "Webhook with data hook sliding animation",
+    tags: ["webhook", "api", "integration", "hook"],
+  },
+  {
+    name: "icon-gauge",
+    component: IconGauge,
+    color: "text-rose-400",
+    description: "Gauge with performance needle rotation",
+    tags: ["gauge", "performance", "speed", "metric"],
+  },
+  {
+    name: "icon-chart-no-axes-column",
+    component: IconChartNoAxesColumn,
+    color: "text-blue-400",
+    description: "Column chart with data growth scaling animation",
+    tags: ["chart", "data", "stats", "graph"],
+  },
+  {
+    name: "icon-component",
+    component: IconComponent,
+    color: "text-indigo-300",
+    description: "Component with system pulse and layer scaling",
+    tags: ["component", "ui", "design", "system"],
+  },
+  {
+    name: "icon-command",
+    component: IconCommand,
+    color: "text-zinc-400",
+    description: "Command with action loop pulsing animation",
+    tags: ["command", "action", "keyboard", "mac"],
+  },
+  {
+    name: "icon-braces",
+    component: IconBraces,
+    color: "text-amber-400",
+    description: "Braces with code wrap sliding animation",
+    tags: ["braces", "code", "dev", "curly"],
+  },
+  {
+    name: "icon-bug",
+    component: IconBug,
+    color: "text-rose-500",
+    description: "Bug with debugging leg vibration and antennae wiggle",
+    tags: ["bug", "debug", "issue", "error"],
+  },
+  {
+    name: "icon-blocks",
+    component: IconBlocks,
+    color: "text-blue-400",
+    description: "Modular blocks with sequential scaling animation",
+    tags: ["blocks", "modules", "components", "system"],
+  },
+  {
+    name: "icon-database-zap",
+    component: IconDatabaseZap,
+    color: "text-amber-500",
+    description: "Database with power zap pulse animation",
+    tags: ["database", "storage", "performance", "zap"],
+  },
+  {
+    name: "icon-layers-2",
+    component: IconLayers2,
+    color: "text-indigo-400",
+    description: "Stacked layers with lift-off animation",
+    tags: ["layers", "stack", "design", "ui"],
+  },
+  {
+    name: "icon-mouse-pointer-click",
+    component: IconMousePointerClick,
+    color: "text-zinc-500",
+    description: "Mouse pointer with interaction ripple effect",
+    tags: ["mouse", "pointer", "click", "interaction"],
+  },
+  {
+    name: "icon-rocket",
+    component: IconRocket,
+    color: "text-orange-500",
+    description: "Rocket ship with vibration and thrust animation",
+    tags: ["rocket", "launch", "startup", "speed"],
+  },
+  {
+    name: "icon-settings-2",
+    component: IconSettings2,
+    color: "text-zinc-400",
+    description: "Settings with rotating configuration nodes",
+    tags: ["settings", "config", "options", "setup"],
+  },
+  {
+    name: "icon-shield-alert",
+    component: IconShieldAlert,
+    color: "text-rose-500",
+    description: "Security shield with vibration alert animation",
+    tags: ["shield", "security", "alert", "threat"],
+  },
+  {
+    name: "icon-workflow",
+    component: IconWorkflow,
+    color: "text-emerald-500",
+    description: "Workflow process with drawing connectors",
+    tags: ["workflow", "process", "automation", "steps"],
+  },
+  {
+    name: "icon-sparkles",
+    component: IconSparkles,
+    color: "text-amber-400",
+    description: "Sparkles with sequential magic glow effect",
+    tags: ["sparkles", "magic", "ai", "stars"],
+  },
+  {
+    name: "icon-layout-dashboard",
+    component: IconLayoutDashboard,
+    color: "text-blue-500",
+    description: "Dashboard layout with widget setup expansion effect",
+    tags: ["dashboard", "layout", "grid", "widgets"],
+  },
+  {
+    name: "icon-chart-pie",
+    component: IconChartPie,
+    color: "text-indigo-500",
+    description: "Pie chart with interactive data slice pop animation",
+    tags: ["chart", "pie", "data", "analytics"],
+  },
+  {
+    name: "icon-chart-area",
+    component: IconChartArea,
+    color: "text-emerald-500",
+    description: "Area chart with market flow path drawing",
+    tags: ["chart", "area", "data", "analytics"],
+  },
+  {
+    name: "icon-chart-line",
+    component: IconChartLine,
+    color: "text-blue-400",
+    description: "Line chart with sequential data trace effect",
+    tags: ["chart", "line", "data", "analytics"],
+  },
+  {
+    name: "icon-trending-up",
+    component: IconTrendingUp,
+    color: "text-emerald-400",
+    description: "Trending up arrow with bullish run trace",
+    tags: ["trending", "up", "bullish", "growth"],
+  },
+  {
+    name: "icon-trending-down",
+    component: IconTrendingDown,
+    color: "text-rose-400",
+    description: "Trending down arrow with bearish dip trace",
+    tags: ["trending", "down", "bearish", "loss"],
+  },
+  {
+    name: "icon-users",
+    component: IconUsers,
+    color: "text-zinc-500",
+    description: "Multi-user icon with sequential social pulse",
+    tags: ["users", "social", "team", "people"],
+  },
+  {
+    name: "icon-dollar-sign",
+    component: IconDollarSign,
+    color: "text-amber-500",
+    description: "Dollar sign with stable floating animation",
+    tags: ["dollar", "finance", "money", "currency"],
+  },
+  {
+    name: "icon-wallet",
+    component: IconWallet,
+    color: "text-orange-400",
+    description: "Wallet with interactive pay-ready flap tilt",
+    tags: ["wallet", "finance", "payment", "bank"],
+  },
+  {
+    name: "icon-panels-top-left",
+    component: IconPanelsTopLeft,
+    color: "text-blue-600",
+    description: "Panels with layout shift sliding animation",
+    tags: ["panels", "layout", "sidebar", "dashboard"],
+  },
+  {
+    name: "icon-tag",
+    component: IconTag,
+    color: "text-rose-500",
+    description: "Price tag with playful label swing animation",
+    tags: ["tag", "price", "commerce", "label"],
+  },
+  {
+    name: "icon-ticket",
+    component: IconTicket,
+    color: "text-amber-500",
+    description: "Ticket with event-ready bob and tilt animation",
+    tags: ["ticket", "event", "pass", "booking"],
+  },
+  {
+    name: "icon-qr-code",
+    component: IconQrCode,
+    color: "text-zinc-800",
+    description: "QR code with matrix pulse and flicker effect",
+    tags: ["qr", "code", "scan", "digital"],
+  },
+  {
+    name: "icon-barcode",
+    component: IconBarcode,
+    color: "text-zinc-900",
+    description: "Barcode with interactive laser scan laser effect",
+    tags: ["barcode", "scan", "product", "sku"],
+  },
+  {
+    name: "icon-store",
+    component: IconStore,
+    color: "text-blue-500",
+    description: "Storefront with interactive door swing animation",
+    tags: ["store", "shop", "commerce", "business"],
+  },
+  {
+    name: "icon-banknote",
+    component: IconBanknote,
+    color: "text-emerald-600",
+    description: "Banknote with currency ripple and pulse effect",
+    tags: ["banknote", "cash", "money", "finance"],
+  },
+  {
+    name: "icon-coins",
+    component: IconCoins,
+    color: "text-amber-400",
+    description: "Coins stack with interactive jingle and sparkle",
+    tags: ["coins", "cash", "money", "finance"],
+  },
+  {
+    name: "icon-package",
+    component: IconPackage,
+    color: "text-orange-600",
+    description: "Package with interactive opening lid pulse",
+    tags: ["package", "box", "shipping", "delivery"],
+  },
+  {
+    name: "icon-clapperboard",
+    component: IconClapperboard,
+    color: "text-zinc-900",
+    description: "Clapperboard with movie-start snap animation",
+    tags: ["clapperboard", "movie", "video", "production"],
+  },
+  {
+    name: "icon-frame",
+    component: IconFrame,
+    color: "text-indigo-500",
+    description: "Design frame with border drawing animation",
+    tags: ["frame", "design", "layout", "border"],
+  },
+  {
+    name: "icon-at-sign",
+    component: IconAtSign,
+    color: "text-blue-500",
+    description: "At-sign with spiral drawing and pulse animation",
+    tags: ["at", "email", "mention", "communication"],
+  },
+  {
+    name: "icon-hash",
+    component: IconHash,
+    color: "text-zinc-500",
+    description: "Hash sign with grid-lock sliding animation",
+    tags: ["hash", "tag", "number", "social"],
+  },
+  {
+    name: "icon-bus",
+    component: IconBus,
+    color: "text-amber-500",
+    description: "Bus with road-trip vibration and light pulse",
+    tags: ["bus", "transport", "vehicle", "travel"],
+  },
+  {
+    name: "icon-train-front",
+    component: IconTrainFront,
+    color: "text-zinc-600",
+    description: "Train front with rails-wobble and light pulse",
+    tags: ["train", "transport", "vehicle", "travel"],
+  },
+  {
+    name: "icon-bike",
+    component: IconBike,
+    color: "text-emerald-500",
+    description: "Bike with wheel-spin and body bob animation",
+    tags: ["bike", "transport", "vehicle", "travel"],
+  },
+  {
+    name: "icon-wrench",
+    component: IconWrench,
+    color: "text-zinc-500",
+    description: "Wrench with interactive nut-turning animation",
+    tags: ["wrench", "tool", "fix", "repair"],
+  },
+  {
+    name: "icon-hammer",
+    component: IconHammer,
+    color: "text-orange-900",
+    description: "Hammer with strike and nail-hit animation",
+    tags: ["hammer", "tool", "build", "construction"],
+  },
+  {
+    name: "icon-utensils",
+    component: IconUtensils,
+    color: "text-rose-400",
+    description: "Utensils with interactive dining-ready slide",
+    tags: ["utensils", "food", "dining", "restaurant"],
+  },
+  {
+    name: "icon-pocket",
+    component: IconPocket,
+    color: "text-blue-400",
+    description: "Pocket with interactive content shift bob",
+    tags: ["pocket", "save", "later", "read"],
+  },
+  {
+    name: "icon-map",
+    component: IconMap,
+    color: "text-emerald-600",
+    description: "Map with interactive unfold and slide effect",
+    tags: ["map", "navigation", "travel", "location"],
+  },
+  {
+    name: "icon-skull",
+    component: IconSkull,
+    color: "text-zinc-400",
+    description: "Skull with interactive jaw chatter animation",
+    tags: ["skull", "gaming", "dead", "spooky"],
+  },
+  {
+    name: "icon-dices",
+    component: IconDices,
+    color: "text-zinc-600",
+    description: "Dices with interactive rolling and rotation effect",
+    tags: ["dices", "gaming", "luck", "random"],
+  },
+  {
+    name: "icon-trophy",
+    component: IconTrophy,
+    color: "text-amber-400",
+    description: "Trophy with interactive victory shine effect",
+    tags: ["trophy", "achievement", "gaming", "win"],
+  },
+  {
+    name: "icon-medal",
+    component: IconMedal,
+    color: "text-amber-500",
+    description: "Medal with interactive award sway animation",
+    tags: ["medal", "achievement", "gaming", "award"],
+  },
+  {
+    name: "icon-target",
+    component: IconTarget,
+    color: "text-rose-600",
+    description: "Target with sequential bullseye pulse effect",
+    tags: ["target", "gaming", "goal", "accuracy"],
+  },
+  {
+    name: "icon-gem",
+    component: IconGem,
+    color: "text-blue-400",
+    description: "Gem with interactive diamond shimmer animation",
+    tags: ["gem", "diamond", "reward", "gaming"],
+  },
+  {
+    name: "icon-crown",
+    component: IconCrown,
+    color: "text-amber-500",
+    description: "Crown with interactive royal tilt animation",
+    tags: ["crown", "reward", "gaming", "king"],
+  },
+  {
+    name: "icon-swords",
+    component: IconSwords,
+    color: "text-zinc-500",
+    description: "Swords with interactive crossing slash animation",
+    tags: ["swords", "gaming", "battle", "combat"],
+  },
+  {
+    name: "icon-joystick",
+    component: IconJoystick,
+    color: "text-zinc-700",
+    description: "Joystick with interactive control stick tilt",
+    tags: ["joystick", "gaming", "control", "input"],
+  },
+  {
+    name: "icon-gamepad-2",
+    component: IconGamepad2,
+    color: "text-zinc-900",
+    description: "Gamepad with sequential button mash pulse",
+    tags: ["gamepad", "controller", "gaming", "input"],
+  },
+  {
+    name: "icon-user-plus",
+    component: IconUserPlus,
+    color: "text-blue-500",
+    description: "User with interactive add/plus animation",
+    tags: ["user", "add", "plus", "account"],
+  },
+  {
+    name: "icon-user-minus",
+    component: IconUserMinus,
+    color: "text-rose-500",
+    description: "User with interactive remove/minus animation",
+    tags: ["user", "remove", "minus", "account"],
+  },
+  {
+    name: "icon-user-check",
+    component: IconUserCheck,
+    color: "text-emerald-500",
+    description: "User with interactive verified/check animation",
+    tags: ["user", "check", "verified", "account"],
+  },
+  {
+    name: "icon-user-cog",
+    component: IconUserCog,
+    color: "text-zinc-600",
+    description: "User with interactive settings/cog rotation",
+    tags: ["user", "settings", "cog", "account"],
+  },
+  {
+    name: "icon-user-pen",
+    component: IconUserPen,
+    color: "text-amber-600",
+    description: "User with interactive edit/pen animation",
+    tags: ["user", "edit", "pen", "account"],
+  },
+  {
+    name: "icon-user-star",
+    component: IconUserStar,
+    color: "text-amber-500",
+    description: "User with interactive pro/star glow effect",
+    tags: ["user", "star", "pro", "account"],
+  },
+  {
+    name: "icon-user-search",
+    component: IconUserSearch,
+    color: "text-sky-500",
+    description: "User with interactive search/magnifier pulse",
+    tags: ["user", "search", "find", "account"],
+  },
+  {
+    name: "icon-user-x",
+    component: IconUserX,
+    color: "text-rose-600",
+    description: "User with interactive block/x animation",
+    tags: ["user", "block", "x", "account"],
+  },
+  {
+    name: "icon-circle-user",
+    component: IconCircleUser,
+    color: "text-zinc-700",
+    description: "Circle user with interactive bounce animation",
+    tags: ["user", "profile", "circle", "account"],
+  },
+  {
+    name: "icon-contact",
+    component: IconContact,
+    color: "text-zinc-800",
+    description: "Contact book with interactive shift animation",
+    tags: ["contact", "book", "user", "address"],
+  },
+  {
+    name: "icon-user-round",
+    component: IconUserRound,
+    color: "text-zinc-500",
+    description: "Round user profile with interactive pulse animation",
+    tags: ["user", "round", "profile", "account"],
+  },
+  {
+    name: "icon-user-round-plus",
+    component: IconUserRoundPlus,
+    color: "text-blue-500",
+    description: "Round user with interactive add/plus animation",
+    tags: ["user", "round", "add", "account"],
+  },
+  {
+    name: "icon-user-round-minus",
+    component: IconUserRoundMinus,
+    color: "text-rose-500",
+    description: "Round user with interactive remove/minus animation",
+    tags: ["user", "round", "remove", "account"],
+  },
+  {
+    name: "icon-user-round-check",
+    component: IconUserRoundCheck,
+    color: "text-emerald-500",
+    description: "Round user with interactive verified/check animation",
+    tags: ["user", "round", "check", "account"],
+  },
+  {
+    name: "icon-user-round-cog",
+    component: IconUserRoundCog,
+    color: "text-zinc-600",
+    description: "Round user with interactive settings/cog rotation",
+    tags: ["user", "round", "settings", "account"],
+  },
+  {
+    name: "icon-user-round-pen",
+    component: IconUserRoundPen,
+    color: "text-amber-600",
+    description: "Round user with interactive edit/pen animation",
+    tags: ["user", "round", "edit", "account"],
+  },
+  {
+    name: "icon-user-round-search",
+    component: IconUserRoundSearch,
+    color: "text-sky-500",
+    description: "Round user with interactive search pulse effect",
+    tags: ["user", "round", "search", "account"],
+  },
+  {
+    name: "icon-user-round-x",
+    component: IconUserRoundX,
+    color: "text-rose-600",
+    description: "Round user with interactive block/x animation",
+    tags: ["user", "round", "block", "account"],
+  },
+  {
+    name: "icon-shield-user",
+    component: IconShieldUser,
+    color: "text-indigo-600",
+    description: "Shield user with interactive security pulse",
+    tags: ["user", "shield", "security", "protection"],
+  },
+  {
+    name: "icon-file-user",
+    component: IconFileUser,
+    color: "text-zinc-700",
+    description: "User file with interactive lift and pulse",
+    tags: ["user", "file", "document", "profile"],
+  },
+  {
+    name: "icon-cloud-alert",
+    component: IconCloudAlert,
+    color: "text-sky-500",
+    description: "Cloud alert with interactive storm warning animation",
+    tags: ["cloud", "alert", "warning", "weather"],
+  },
+  {
+    name: "icon-search-alert",
+    component: IconSearchAlert,
+    color: "text-amber-500",
+    description: "Search alert with interactive caution animation",
+    tags: ["search", "alert", "warning", "caution"],
+  },
+  {
+    name: "icon-bell-electric",
+    component: IconBellElectric,
+    color: "text-rose-600",
+    description: "Electric bell with interactive alarm vibration",
+    tags: ["bell", "alarm", "alert", "electric"],
+  },
+  {
+    name: "icon-megaphone",
+    component: IconMegaphone,
+    color: "text-zinc-700",
+    description: "Megaphone with interactive announcement tilt",
+    tags: ["megaphone", "alert", "announce", "sound"],
+  },
+  {
+    name: "icon-megaphone-off",
+    component: IconMegaphoneOff,
+    color: "text-rose-500",
+    description: "Megaphone off with interactive muted vibration",
+    tags: ["megaphone", "off", "mute", "silent"],
+  },
+  {
+    name: "icon-message-circle-warning",
+    component: IconMessageCircleWarning,
+    color: "text-amber-600",
+    description: "Circle message warning with interactive bounce",
+    tags: ["message", "circle", "warning", "alert"],
+  },
+  {
+    name: "icon-message-square-warning",
+    component: IconMessageSquareWarning,
+    color: "text-amber-600",
+    description: "Square message warning with interactive bounce",
+    tags: ["message", "square", "warning", "alert"],
+  },
+  {
+    name: "icon-octagon-x",
+    component: IconOctagonX,
+    color: "text-rose-600",
+    description: "Octagon X with interactive stop animation",
+    tags: ["octagon", "x", "stop", "denied"],
+  },
+  {
+    name: "icon-siren",
+    component: IconSiren,
+    color: "text-blue-600",
+    description: "Siren with interactive flashing pulse",
+    tags: ["siren", "emergency", "alert", "flashing"],
+  },
+  {
+    name: "icon-badge-alert",
+    component: IconBadgeAlert,
+    color: "text-rose-500",
+    description: "Badge alert with interactive scale and pulse",
+    tags: ["badge", "alert", "important", "warning"],
+  },
+  {
+    name: "icon-circle-alert",
+    component: IconCircleAlert,
+    color: "text-rose-500",
+    description: "Circle alert with interactive scale and pulse",
+    tags: ["circle", "alert", "warning", "caution"],
+  },
+  {
+    name: "icon-clock-alert",
+    component: IconClockAlert,
+    color: "text-amber-500",
+    description: "Clock alert with interactive ticking and warning pulse",
+    tags: ["clock", "alert", "time", "warning"],
+  },
+  {
+    name: "icon-octagon-alert",
+    component: IconOctagonAlert,
+    color: "text-rose-600",
+    description: "Octagon alert with interactive scale and bounce",
+    tags: ["octagon", "alert", "stop", "warning"],
+  },
+  {
+    name: "icon-triangle-alert",
+    component: IconTriangleAlert,
+    color: "text-amber-500",
+    description: "Triangle alert with interactive scale and caution pulse",
+    tags: ["triangle", "alert", "warning", "caution"],
+  },
+  {
+    name: "icon-mail-warning",
+    component: IconMailWarning,
+    color: "text-amber-600",
+    description: "Mail warning with interactive bounce and alert pulse",
+    tags: ["mail", "warning", "alert", "message"],
+  },
+  {
+    name: "icon-battery-warning",
+    component: IconBatteryWarning,
+    color: "text-rose-500",
+    description: "Battery warning with interactive oscillation and pulse",
+    tags: ["battery", "warning", "alert", "low"],
+  },
+  {
+    name: "icon-flag",
+    component: IconFlag,
+    color: "text-sky-500",
+    description: "Flag with interactive waver and pole vibration",
+    tags: ["flag", "signal", "mark", "report"],
+  },
+  {
+    name: "icon-flag-off",
+    component: IconFlagOff,
+    color: "text-rose-500",
+    description: "Flag off with interactive muted waver",
+    tags: ["flag", "off", "mute", "silent"],
+  },
+  {
+    name: "icon-book-alert",
+    component: IconBookAlert,
+    color: "text-amber-600",
+    description: "Book alert with interactive bounce and warning pulse",
+    tags: ["book", "alert", "warning", "info"],
+  },
+  {
+    name: "icon-file-alert",
+    component: IconFileAlert,
+    color: "text-rose-500",
+    description: "File alert with interactive bounce and caution pulse",
+    tags: ["file", "alert", "warning", "caution"],
+  },
+  {
+    name: "icon-baby",
+    component: IconBaby,
+    color: "text-sky-300",
+    description: "Baby head with a gentle crib-rocking sway",
+    tags: ["baby", "child", "family", "infant"],
+  },
+  {
+    name: "icon-badge-info",
+    component: IconBadgeInfo,
+    color: "text-sky-400",
+    description: "Info badge with pulsing mark and scaling border",
+    tags: ["badge", "info", "notice", "alert"],
+  },
+  {
+    name: "icon-badge-help",
+    component: IconBadgeHelp,
+    color: "text-sky-400",
+    description: "Help badge with bouncing question mark",
+    tags: ["badge", "help", "question", "support"],
+  },
+  {
+    name: "icon-circle-help",
+    component: IconCircleHelp,
+    color: "text-sky-400",
+    description: "Circle help with bouncing question mark",
+    tags: ["circle", "help", "question", "support"],
+  },
+  {
+    name: "icon-closed-caption",
+    component: IconClosedCaption,
+    color: "text-white",
+    description: "Closed caption icon with text reveal pulse",
+    tags: ["cc", "caption", "accessibility", "video"],
+  },
+  {
+    name: "icon-contrast",
+    component: IconContrast,
+    color: "text-white",
+    description: "Contrast icon with 360-degree mode flip",
+    tags: ["contrast", "theme", "accessibility", "mode"],
+  },
+  {
+    name: "icon-ear",
+    component: IconEar,
+    color: "text-orange-200",
+    description: "Ear with a sound-catching tilt animation",
+    tags: ["ear", "hearing", "sound", "accessibility"],
+  },
+  {
+    name: "icon-ear-off",
+    component: IconEarOff,
+    color: "text-zinc-500",
+    description: "Muted ear with a vibrating slash",
+    tags: ["ear", "off", "hearing", "mute", "accessibility"],
+  },
+  {
+    name: "icon-eye-closed",
+    component: IconEyeClosed,
+    color: "text-white",
+    description: "Closed eye with sleepy blinking lashes",
+    tags: ["eye", "closed", "sleep", "vision"],
+  },
+  {
+    name: "icon-eye-off",
+    component: IconEyeOff,
+    color: "text-zinc-500",
+    description: "Muted vision with blinking and vibrating slash",
+    tags: ["eye", "off", "vision", "hidden"],
+  },
+  {
+    name: "icon-glasses",
+    component: IconGlasses,
+    color: "text-white",
+    description: "Glasses with a focus-pulse and frame lift",
+    tags: ["glasses", "vision", "spectacles", "accessibility"],
+  },
+  {
+    name: "icon-hand",
+    component: IconHand,
+    color: "text-orange-200",
+    description: "Hand with an interactive palm shake",
+    tags: ["hand", "palm", "wave", "gesture"],
+  },
+  {
+    name: "icon-life-buoy",
+    component: IconLifeBuoy,
+    color: "text-rose-400",
+    description: "Life buoy with a bobbing and rotating float",
+    tags: ["buoy", "safety", "help", "rescue"],
+  },
+  {
+    name: "icon-moon-star",
+    component: IconMoonStar,
+    color: "text-amber-200",
+    description: "Moon and star with a gentle night sway",
+    tags: ["moon", "star", "night", "sky", "theme"],
+  },
+  {
+    name: "icon-moon-plus",
+    component: IconMoonPlus,
+    color: "text-amber-200",
+    description: "Moon plus with a swaying crescent and rotating plus",
+    tags: ["moon", "plus", "add", "night", "theme"],
+  },
+  {
+    name: "icon-person-standing",
+    component: IconPersonStanding,
+    color: "text-white",
+    description: "Standing person with a subtle pose sway",
+    tags: ["person", "standing", "human", "pose"],
+  },
+  {
+    name: "icon-scan-eye",
+    component: IconScanEye,
+    color: "text-sky-400",
+    description: "Eye scan with a moving laser and blink",
+    tags: ["scan", "eye", "vision", "biometric"],
+  },
+  {
+    name: "icon-scan-search",
+    component: IconScanSearch,
+    color: "text-sky-400",
+    description: "Search scan with a moving laser and magnifier",
+    tags: ["scan", "search", "find", "layout"],
+  },
+  {
+    name: "icon-speech",
+    component: IconSpeech,
+    color: "text-white",
+    description: "Speech bubble with an interactive wave pulse",
+    tags: ["speech", "voice", "talk", "communication"],
+  },
+  {
+    name: "icon-sun-dim",
+    component: IconSunDim,
+    color: "text-amber-300",
+    description: "Dim sun with a soft light-pulse effect",
+    tags: ["sun", "dim", "light", "theme"],
+  },
+  {
+    name: "icon-sun-medium",
+    component: IconSunMedium,
+    color: "text-amber-400",
+    description: "Medium sun with a warm radiance pulse",
+    tags: ["sun", "medium", "light", "theme"],
+  },
+  {
+    name: "icon-sun-moon",
+    component: IconSunMoon,
+    color: "text-amber-400",
+    description: "Sun-Moon transition with a day-night cycle pulse",
+    tags: ["sun", "moon", "transition", "theme"],
+  },
+  {
+    name: "icon-transgender",
+    component: IconTransgender,
+    color: "text-pink-300",
+    description: "Transgender symbol with internal shifting motion",
+    tags: ["transgender", "gender", "identity", "accessibility"],
+  },
+  {
+    name: "icon-zoom-in",
+    component: IconZoomIn,
+    color: "text-white",
+    description: "Zoom in with a pulsing magnifier and rotating plus",
+    tags: ["zoom", "in", "expand", "magnify"],
+  },
+  {
+    name: "icon-zoom-out",
+    component: IconZoomOut,
+    color: "text-white",
+    description: "Zoom out with a pulsing magnifier and vibrating minus",
+    tags: ["zoom", "out", "contract", "magnify"],
+  },
+  {
+    name: "icon-bird",
+    component: IconBird,
+    color: "text-sky-300",
+    description: "Bird with fluttering wings and gentle body sway",
+    tags: ["bird", "nature", "animal", "fly"],
+  },
+  {
+    name: "icon-birdhouse",
+    component: IconBirdhouse,
+    color: "text-amber-200",
+    description: "Birdhouse with a pulsing hole and house bounce",
+    tags: ["birdhouse", "nature", "animal", "home"],
+  },
+  {
+    name: "icon-bone",
+    component: IconBone,
+    color: "text-zinc-200",
+    description: "Bone with a playful wagging rotation",
+    tags: ["bone", "dog", "animal", "pet"],
+  },
+  {
+    name: "icon-bug-off",
+    component: IconBugOff,
+    color: "text-rose-400",
+    description: "Bug off with a vibrating slash and bug shake",
+    tags: ["bug", "off", "nature", "animal", "insect"],
+  },
+  {
+    name: "icon-bug-play",
+    component: IconBugPlay,
+    color: "text-emerald-400",
+    description: "Bug play with crawling motion and pulsing play button",
+    tags: ["bug", "play", "nature", "animal", "insect"],
+  },
+  {
+    name: "icon-cat",
+    component: IconCat,
+    color: "text-orange-300",
+    description: "Cat with blinking eyes and a pulsing nose",
+    tags: ["cat", "animal", "pet", "meow"],
+  },
+  {
+    name: "icon-dog",
+    component: IconDog,
+    color: "text-amber-400",
+    description: "Dog with head tilt, blinking eyes, and pulsing nose",
+    tags: ["dog", "animal", "pet", "woof"],
+  },
+  {
+    name: "icon-egg",
+    component: IconEgg,
+    color: "text-zinc-100",
+    description: "Egg with a playful hatching wobble",
+    tags: ["egg", "nature", "animal", "birth"],
+  },
+  {
+    name: "icon-fish",
+    component: IconFish,
+    color: "text-sky-400",
+    description: "Fish with a realistic tail wag and body sway",
+    tags: ["fish", "nature", "animal", "swim"],
+  },
+  {
+    name: "icon-fish-off",
+    component: IconFishOff,
+    color: "text-rose-400",
+    description: "Fish off with a muted sway and vibrating slash",
+    tags: ["fish", "off", "nature", "animal", "swim"],
+  },
+  {
+    name: "icon-fish-symbol",
+    component: IconFishSymbol,
+    color: "text-sky-300",
+    description: "Fish symbol with a smooth swimming motion",
+    tags: ["fish", "symbol", "nature", "animal", "swim"],
+  },
+  {
+    name: "icon-origami",
+    component: IconOrigami,
+    color: "text-purple-300",
+    description: "Origami with a subtle folding pulse effect",
+    tags: ["origami", "paper", "art", "japan"],
+  },
+  {
+    name: "icon-panda",
+    component: IconPanda,
+    color: "text-white",
+    description: "Panda with blinking pupils and a gentle body sway",
+    tags: ["panda", "animal", "nature", "bear"],
+  },
+  {
+    name: "icon-paw-print",
+    component: IconPawPrint,
+    color: "text-amber-500",
+    description: "Paw print with sequential pad-pulse animation",
+    tags: ["paw", "print", "animal", "pet", "track"],
+  },
+  {
+    name: "icon-rabbit",
+    component: IconRabbit,
+    color: "text-zinc-300",
+    description: "Rabbit with a soft ear-twitch and body sway",
+    tags: ["rabbit", "animal", "nature", "bunny"],
+  },
+  {
+    name: "icon-rat",
+    component: IconRat,
+    color: "text-zinc-400",
+    description: "Rat with a twitching tail and scurrying vibration",
+    tags: ["rat", "animal", "nature", "rodent"],
+  },
+  {
+    name: "icon-shell",
+    component: IconShell,
+    color: "text-orange-200",
+    description: "Shell with a continuous spiral rotation",
+    tags: ["shell", "spiral", "nature", "ocean"],
+  },
+  {
+    name: "icon-shrimp",
+    component: IconShrimp,
+    color: "text-rose-300",
+    description: "Shrimp with snapping tail and body compression",
+    tags: ["shrimp", "animal", "nature", "sea"],
+  },
+  {
+    name: "icon-snail",
+    component: IconSnail,
+    color: "text-amber-200",
+    description: "Snail with sliding body and wiggling tentacles",
+    tags: ["snail", "animal", "nature", "shell"],
+  },
+
+  {
+    name: "icon-turtle",
+    component: IconTurtle,
+    color: "text-emerald-400",
+    description: "Turtle with a head peek and slow body sway",
+    tags: ["turtle", "animal", "nature", "shell"],
+  },
+  {
+    name: "icon-worm",
+    component: IconWorm,
+    color: "text-pink-300",
+    description: "Worm with a characteristic inching motion",
+    tags: ["worm", "animal", "nature", "earth"],
+  },
+  {
+    name: "icon-brick-wall",
+    component: IconBrickWall,
+    color: "text-orange-400",
+    description: "Brick wall with sequential masonry-pulse animation",
+    tags: ["bricks", "wall", "construction", "architecture"],
+  },
+  {
+    name: "icon-building",
+    component: IconBuilding,
+    color: "text-amber-200",
+    description: "Office building with window illumination effects",
+    tags: ["building", "business", "city", "office"],
+  },
+  {
+    name: "icon-building-2",
+    component: IconBuilding2,
+    color: "text-zinc-300",
+    description: "Modern building with staggered window lights",
+    tags: ["building", "architecture", "city", "modern"],
+  },
+  {
+    name: "icon-castle",
+    component: IconCastle,
+    color: "text-zinc-400",
+    description: "Medieval castle with shifting towers and gate",
+    tags: ["castle", "fort", "history", "medieval"],
+  },
+  {
+    name: "icon-church",
+    component: IconChurch,
+    color: "text-zinc-300",
+    description: "Church icon with pulsing cross and door shift",
+    tags: ["church", "religion", "chapel", "architecture"],
+  },
+  {
+    name: "icon-cuboid",
+    component: IconCuboid,
+    color: "text-sky-300",
+    description: "3D cuboid with perspective and rotation animation",
+    tags: ["cuboid", "box", "3d", "geometry"],
+  },
+  {
+    name: "icon-dam",
+    component: IconDam,
+    color: "text-sky-500",
+    description: "Hydroelectric dam with moving water waves",
+    tags: ["dam", "water", "power", "engineering"],
+  },
+  {
+    name: "icon-factory",
+    component: IconFactory,
+    color: "text-zinc-400",
+    description: "Industrial factory with illuminating windows",
+    tags: ["factory", "industrial", "manufacturing", "production"],
+  },
+  {
+    name: "icon-fence",
+    component: IconFence,
+    color: "text-amber-700",
+    description: "Wooden fence with drawing horizontal bars",
+    tags: ["fence", "garden", "border", "property"],
+  },
+  {
+    name: "icon-hospital",
+    component: IconHospital,
+    color: "text-red-500",
+    description: "Medical hospital with pulsing emergency cross",
+    tags: ["hospital", "medical", "health", "emergency"],
+  },
+  {
+    name: "icon-hotel",
+    component: IconHotel,
+    color: "text-amber-200",
+    description: "Hotel building with illuminating window lights",
+    tags: ["hotel", "travel", "accommodation", "stay"],
+  },
+  {
+    name: "icon-house",
+    component: IconHouse,
+    color: "text-white",
+    description: "Standard house icon with moving door animation",
+    tags: ["house", "home", "residence", "architecture"],
+  },
+  {
+    name: "icon-house-heart",
+    component: IconHouseHeart,
+    color: "text-rose-400",
+    description: "House icon with a pulsing central heart",
+    tags: ["home", "love", "heart", "residence", "family"],
+  },
+  {
+    name: "icon-house-plug",
+    component: IconHousePlug,
+    color: "text-yellow-400",
+    description: "Energy-efficient house with pulsating plug",
+    tags: ["home", "electricity", "energy", "smart", "house"],
+  },
+  {
+    name: "icon-house-plus",
+    component: IconHousePlus,
+    color: "text-emerald-400",
+    description: "Expansion house icon with rotating plus sign",
+    tags: ["home", "add", "expansion", "new", "house"],
+  },
+  {
+    name: "icon-house-wifi",
+    component: IconHouseWifi,
+    color: "text-sky-400",
+    description: "Smart home icon with radiating wifi waves",
+    tags: ["home", "wifi", "internet", "smart", "connection"],
+  },
+  {
+    name: "icon-library",
+    component: IconLibrary,
+    color: "text-amber-800",
+    description: "Library shelves with tilting book animations",
+    tags: ["library", "books", "education", "study"],
+  },
+  {
+    name: "icon-school",
+    component: IconSchool,
+    color: "text-amber-200",
+    description: "School building with pulsing bell-circle",
+    tags: ["school", "education", "learning", "academy"],
+  },
+  {
+    name: "icon-theater",
+    component: IconTheater,
+    color: "text-rose-600",
+    description: "Theater icon with sliding stage curtains",
+    tags: ["theater", "drama", "cinema", "performance"],
+  },
+  {
+    name: "icon-utility-pole",
+    component: IconUtilityPole,
+    color: "text-zinc-500",
+    description: "Utility pole with a subtle structural hum",
+    tags: ["utility", "power", "electricity", "infrastructure"],
+  },
+  {
+    name: "icon-warehouse",
+    component: IconWarehouse,
+    color: "text-zinc-400",
+    description: "Industrial warehouse with roller door animation",
+    tags: ["warehouse", "storage", "industrial", "shipping"],
   },
 ] as const;
 
