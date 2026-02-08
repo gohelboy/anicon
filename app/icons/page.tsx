@@ -55,7 +55,7 @@ export default function IconsPage() {
                 <p className="mb-4 text-sm text-(--muted-foreground) sm:mb-6">
                   {filteredIcons.length} icons
                 </p>
-                <div className="grid grid-cols-4 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-8">
+                <div className="grid grid-cols-4 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-10">
                   {filteredIcons.map((icon) => (
                     <IconCardButton
                       key={icon.name}

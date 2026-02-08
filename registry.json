@@ -4247,6 +4247,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-skull",
+      "type": "registry:component",
+      "title": "Animated Skull",
+      "description": "Skull with interactive jaw chatter animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-skull/icon-skull.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-dices",
+      "type": "registry:component",
+      "title": "Animated Dices",
+      "description": "Dices with interactive rolling and rotation effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-dices/icon-dices.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-trophy",
+      "type": "registry:component",
+      "title": "Animated Trophy",
+      "description": "Trophy with interactive victory shine effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-trophy/icon-trophy.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-medal",
+      "type": "registry:component",
+      "title": "Animated Medal",
+      "description": "Medal with interactive award sway animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-medal/icon-medal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-target",
+      "type": "registry:component",
+      "title": "Animated Target",
+      "description": "Target with sequential bullseye pulse effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-target/icon-target.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-gem",
+      "type": "registry:component",
+      "title": "Animated Gem",
+      "description": "Gem with interactive diamond shimmer animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-gem/icon-gem.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-crown",
+      "type": "registry:component",
+      "title": "Animated Crown",
+      "description": "Crown with interactive royal tilt animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-crown/icon-crown.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-swords",
+      "type": "registry:component",
+      "title": "Animated Swords",
+      "description": "Swords with interactive crossing slash animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-swords/icon-swords.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-joystick",
+      "type": "registry:component",
+      "title": "Animated Joystick",
+      "description": "Joystick with interactive control stick tilt.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-joystick/icon-joystick.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-gamepad-2",
+      "type": "registry:component",
+      "title": "Animated Gamepad 2",
+      "description": "Gamepad with sequential button mash pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-gamepad-2/icon-gamepad-2.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

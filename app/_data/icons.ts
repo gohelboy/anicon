@@ -297,6 +297,17 @@ import { IconHammer } from "@/registry/default/icon-hammer/icon-hammer";
 import { IconUtensils } from "@/registry/default/icon-utensils/icon-utensils";
 import { IconPocket } from "@/registry/default/icon-pocket/icon-pocket";
 import { IconMap } from "@/registry/default/icon-map/icon-map";
+// Batch 12 Gaming & Rewards Icons
+import { IconSkull } from "@/registry/default/icon-skull/icon-skull";
+import { IconDices } from "@/registry/default/icon-dices/icon-dices";
+import { IconTrophy } from "@/registry/default/icon-trophy/icon-trophy";
+import { IconMedal } from "@/registry/default/icon-medal/icon-medal";
+import { IconTarget } from "@/registry/default/icon-target/icon-target";
+import { IconGem } from "@/registry/default/icon-gem/icon-gem";
+import { IconCrown } from "@/registry/default/icon-crown/icon-crown";
+import { IconSwords } from "@/registry/default/icon-swords/icon-swords";
+import { IconJoystick } from "@/registry/default/icon-joystick/icon-joystick";
+import { IconGamepad2 } from "@/registry/default/icon-gamepad-2/icon-gamepad-2";
 
 export const iconsRegistry = [
   {
@@ -2289,6 +2300,76 @@ export const iconsRegistry = [
     color: "text-emerald-600",
     description: "Map with interactive unfold and slide effect",
     tags: ["map", "navigation", "travel", "location"],
+  },
+  {
+    name: "icon-skull",
+    component: IconSkull,
+    color: "text-zinc-400",
+    description: "Skull with interactive jaw chatter animation",
+    tags: ["skull", "gaming", "dead", "spooky"],
+  },
+  {
+    name: "icon-dices",
+    component: IconDices,
+    color: "text-zinc-600",
+    description: "Dices with interactive rolling and rotation effect",
+    tags: ["dices", "gaming", "luck", "random"],
+  },
+  {
+    name: "icon-trophy",
+    component: IconTrophy,
+    color: "text-amber-400",
+    description: "Trophy with interactive victory shine effect",
+    tags: ["trophy", "achievement", "gaming", "win"],
+  },
+  {
+    name: "icon-medal",
+    component: IconMedal,
+    color: "text-amber-500",
+    description: "Medal with interactive award sway animation",
+    tags: ["medal", "achievement", "gaming", "award"],
+  },
+  {
+    name: "icon-target",
+    component: IconTarget,
+    color: "text-rose-600",
+    description: "Target with sequential bullseye pulse effect",
+    tags: ["target", "gaming", "goal", "accuracy"],
+  },
+  {
+    name: "icon-gem",
+    component: IconGem,
+    color: "text-blue-400",
+    description: "Gem with interactive diamond shimmer animation",
+    tags: ["gem", "diamond", "reward", "gaming"],
+  },
+  {
+    name: "icon-crown",
+    component: IconCrown,
+    color: "text-amber-500",
+    description: "Crown with interactive royal tilt animation",
+    tags: ["crown", "reward", "gaming", "king"],
+  },
+  {
+    name: "icon-swords",
+    component: IconSwords,
+    color: "text-zinc-500",
+    description: "Swords with interactive crossing slash animation",
+    tags: ["swords", "gaming", "battle", "combat"],
+  },
+  {
+    name: "icon-joystick",
+    component: IconJoystick,
+    color: "text-zinc-700",
+    description: "Joystick with interactive control stick tilt",
+    tags: ["joystick", "gaming", "control", "input"],
+  },
+  {
+    name: "icon-gamepad-2",
+    component: IconGamepad2,
+    color: "text-zinc-900",
+    description: "Gamepad with sequential button mash pulse",
+    tags: ["gamepad", "controller", "gaming", "input"],
   },
 ] as const;
 
