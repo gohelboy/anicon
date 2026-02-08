@@ -308,6 +308,28 @@ import { IconCrown } from "@/registry/default/icon-crown/icon-crown";
 import { IconSwords } from "@/registry/default/icon-swords/icon-swords";
 import { IconJoystick } from "@/registry/default/icon-joystick/icon-joystick";
 import { IconGamepad2 } from "@/registry/default/icon-gamepad-2/icon-gamepad-2";
+// Batch 13 User Management Icons
+import { IconUserPlus } from "@/registry/default/icon-user-plus/icon-user-plus";
+import { IconUserMinus } from "@/registry/default/icon-user-minus/icon-user-minus";
+import { IconUserCheck } from "@/registry/default/icon-user-check/icon-user-check";
+import { IconUserCog } from "@/registry/default/icon-user-cog/icon-user-cog";
+import { IconUserPen } from "@/registry/default/icon-user-pen/icon-user-pen";
+import { IconUserStar } from "@/registry/default/icon-user-star/icon-user-star";
+import { IconUserSearch } from "@/registry/default/icon-user-search/icon-user-search";
+import { IconUserX } from "@/registry/default/icon-user-x/icon-user-x";
+import { IconCircleUser } from "@/registry/default/icon-circle-user/icon-circle-user";
+import { IconContact } from "@/registry/default/icon-contact/icon-contact";
+// Batch 14 Advanced User Icons
+import { IconUserRound } from "@/registry/default/icon-user-round/icon-user-round";
+import { IconUserRoundPlus } from "@/registry/default/icon-user-round-plus/icon-user-round-plus";
+import { IconUserRoundMinus } from "@/registry/default/icon-user-round-minus/icon-user-round-minus";
+import { IconUserRoundCheck } from "@/registry/default/icon-user-round-check/icon-user-round-check";
+import { IconUserRoundCog } from "@/registry/default/icon-user-round-cog/icon-user-round-cog";
+import { IconUserRoundPen } from "@/registry/default/icon-user-round-pen/icon-user-round-pen";
+import { IconUserRoundSearch } from "@/registry/default/icon-user-round-search/icon-user-round-search";
+import { IconUserRoundX } from "@/registry/default/icon-user-round-x/icon-user-round-x";
+import { IconShieldUser } from "@/registry/default/icon-shield-user/icon-shield-user";
+import { IconFileUser } from "@/registry/default/icon-file-user/icon-file-user";
 
 export const iconsRegistry = [
   {
@@ -2370,6 +2392,146 @@ export const iconsRegistry = [
     color: "text-zinc-900",
     description: "Gamepad with sequential button mash pulse",
     tags: ["gamepad", "controller", "gaming", "input"],
+  },
+  {
+    name: "icon-user-plus",
+    component: IconUserPlus,
+    color: "text-blue-500",
+    description: "User with interactive add/plus animation",
+    tags: ["user", "add", "plus", "account"],
+  },
+  {
+    name: "icon-user-minus",
+    component: IconUserMinus,
+    color: "text-rose-500",
+    description: "User with interactive remove/minus animation",
+    tags: ["user", "remove", "minus", "account"],
+  },
+  {
+    name: "icon-user-check",
+    component: IconUserCheck,
+    color: "text-emerald-500",
+    description: "User with interactive verified/check animation",
+    tags: ["user", "check", "verified", "account"],
+  },
+  {
+    name: "icon-user-cog",
+    component: IconUserCog,
+    color: "text-zinc-600",
+    description: "User with interactive settings/cog rotation",
+    tags: ["user", "settings", "cog", "account"],
+  },
+  {
+    name: "icon-user-pen",
+    component: IconUserPen,
+    color: "text-amber-600",
+    description: "User with interactive edit/pen animation",
+    tags: ["user", "edit", "pen", "account"],
+  },
+  {
+    name: "icon-user-star",
+    component: IconUserStar,
+    color: "text-amber-500",
+    description: "User with interactive pro/star glow effect",
+    tags: ["user", "star", "pro", "account"],
+  },
+  {
+    name: "icon-user-search",
+    component: IconUserSearch,
+    color: "text-sky-500",
+    description: "User with interactive search/magnifier pulse",
+    tags: ["user", "search", "find", "account"],
+  },
+  {
+    name: "icon-user-x",
+    component: IconUserX,
+    color: "text-rose-600",
+    description: "User with interactive block/x animation",
+    tags: ["user", "block", "x", "account"],
+  },
+  {
+    name: "icon-circle-user",
+    component: IconCircleUser,
+    color: "text-zinc-700",
+    description: "Circle user with interactive bounce animation",
+    tags: ["user", "profile", "circle", "account"],
+  },
+  {
+    name: "icon-contact",
+    component: IconContact,
+    color: "text-zinc-800",
+    description: "Contact book with interactive shift animation",
+    tags: ["contact", "book", "user", "address"],
+  },
+  {
+    name: "icon-user-round",
+    component: IconUserRound,
+    color: "text-zinc-500",
+    description: "Round user profile with interactive pulse animation",
+    tags: ["user", "round", "profile", "account"],
+  },
+  {
+    name: "icon-user-round-plus",
+    component: IconUserRoundPlus,
+    color: "text-blue-500",
+    description: "Round user with interactive add/plus animation",
+    tags: ["user", "round", "add", "account"],
+  },
+  {
+    name: "icon-user-round-minus",
+    component: IconUserRoundMinus,
+    color: "text-rose-500",
+    description: "Round user with interactive remove/minus animation",
+    tags: ["user", "round", "remove", "account"],
+  },
+  {
+    name: "icon-user-round-check",
+    component: IconUserRoundCheck,
+    color: "text-emerald-500",
+    description: "Round user with interactive verified/check animation",
+    tags: ["user", "round", "check", "account"],
+  },
+  {
+    name: "icon-user-round-cog",
+    component: IconUserRoundCog,
+    color: "text-zinc-600",
+    description: "Round user with interactive settings/cog rotation",
+    tags: ["user", "round", "settings", "account"],
+  },
+  {
+    name: "icon-user-round-pen",
+    component: IconUserRoundPen,
+    color: "text-amber-600",
+    description: "Round user with interactive edit/pen animation",
+    tags: ["user", "round", "edit", "account"],
+  },
+  {
+    name: "icon-user-round-search",
+    component: IconUserRoundSearch,
+    color: "text-sky-500",
+    description: "Round user with interactive search pulse effect",
+    tags: ["user", "round", "search", "account"],
+  },
+  {
+    name: "icon-user-round-x",
+    component: IconUserRoundX,
+    color: "text-rose-600",
+    description: "Round user with interactive block/x animation",
+    tags: ["user", "round", "block", "account"],
+  },
+  {
+    name: "icon-shield-user",
+    component: IconShieldUser,
+    color: "text-indigo-600",
+    description: "Shield user with interactive security pulse",
+    tags: ["user", "shield", "security", "protection"],
+  },
+  {
+    name: "icon-file-user",
+    component: IconFileUser,
+    color: "text-zinc-700",
+    description: "User file with interactive lift and pulse",
+    tags: ["user", "file", "document", "profile"],
   },
 ] as const;
 

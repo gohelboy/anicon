@@ -4397,6 +4397,306 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-user-plus",
+      "type": "registry:component",
+      "title": "Animated User Plus",
+      "description": "User with interactive add/plus animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-plus/icon-user-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-minus",
+      "type": "registry:component",
+      "title": "Animated User Minus",
+      "description": "User with interactive remove/minus animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-minus/icon-user-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-check",
+      "type": "registry:component",
+      "title": "Animated User Check",
+      "description": "User with interactive verified/check animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-check/icon-user-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-cog",
+      "type": "registry:component",
+      "title": "Animated User Cog",
+      "description": "User with interactive settings/cog rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-cog/icon-user-cog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-pen",
+      "type": "registry:component",
+      "title": "Animated User Pen",
+      "description": "User with interactive edit/pen animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-pen/icon-user-pen.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-star",
+      "type": "registry:component",
+      "title": "Animated User Star",
+      "description": "User with interactive pro/star glow effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-star/icon-user-star.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-search",
+      "type": "registry:component",
+      "title": "Animated User Search",
+      "description": "User with interactive search/magnifier pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-search/icon-user-search.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-x",
+      "type": "registry:component",
+      "title": "Animated User X",
+      "description": "User with interactive block/x animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-x/icon-user-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-user",
+      "type": "registry:component",
+      "title": "Animated Circle User",
+      "description": "Circle user with interactive bounce animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-user/icon-circle-user.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-contact",
+      "type": "registry:component",
+      "title": "Animated Contact",
+      "description": "Contact book with interactive shift animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-contact/icon-contact.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round",
+      "type": "registry:component",
+      "title": "Animated User Round",
+      "description": "Round user profile with interactive pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round/icon-user-round.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-plus",
+      "type": "registry:component",
+      "title": "Animated User Round Plus",
+      "description": "Round user with interactive add/plus animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-plus/icon-user-round-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-minus",
+      "type": "registry:component",
+      "title": "Animated User Round Minus",
+      "description": "Round user with interactive remove/minus animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-minus/icon-user-round-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-check",
+      "type": "registry:component",
+      "title": "Animated User Round Check",
+      "description": "Round user with interactive verified/check animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-check/icon-user-round-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-cog",
+      "type": "registry:component",
+      "title": "Animated User Round Cog",
+      "description": "Round user with interactive settings/cog rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-cog/icon-user-round-cog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-pen",
+      "type": "registry:component",
+      "title": "Animated User Round Pen",
+      "description": "Round user with interactive edit/pen animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-pen/icon-user-round-pen.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-search",
+      "type": "registry:component",
+      "title": "Animated User Round Search",
+      "description": "Round user with interactive search pulse effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-search/icon-user-round-search.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-round-x",
+      "type": "registry:component",
+      "title": "Animated User Round X",
+      "description": "Round user with interactive block/x animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-round-x/icon-user-round-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shield-user",
+      "type": "registry:component",
+      "title": "Animated Shield User",
+      "description": "Shield user with interactive security pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shield-user/icon-shield-user.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-file-user",
+      "type": "registry:component",
+      "title": "Animated File User",
+      "description": "User file with interactive lift and pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-file-user/icon-file-user.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
