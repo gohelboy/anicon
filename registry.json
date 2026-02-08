@@ -3512,6 +3512,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-code-xml",
+      "type": "registry:component",
+      "title": "Animated Code Xml",
+      "description": "Code XML with syntax drawing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-code-xml/icon-code-xml.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-git-branch",
+      "type": "registry:component",
+      "title": "Animated Git Branch",
+      "description": "Git branch with node pulsing and line drawing.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-git-branch/icon-git-branch.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-git-pull-request",
+      "type": "registry:component",
+      "title": "Animated Git Pull Request",
+      "description": "Git pull request with collaboration circles pulsing.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-git-pull-request/icon-git-pull-request.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-webhook",
+      "type": "registry:component",
+      "title": "Animated Webhook",
+      "description": "Webhook with data hook sliding animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-webhook/icon-webhook.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-gauge",
+      "type": "registry:component",
+      "title": "Animated Gauge",
+      "description": "Gauge with performance needle rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-gauge/icon-gauge.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-chart-no-axes-column",
+      "type": "registry:component",
+      "title": "Animated Chart No Axes Column",
+      "description": "Column chart with data growth scaling animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-chart-no-axes-column/icon-chart-no-axes-column.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-component",
+      "type": "registry:component",
+      "title": "Animated Component",
+      "description": "Component with system pulse and layer scaling.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-component/icon-component.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-command",
+      "type": "registry:component",
+      "title": "Animated Command",
+      "description": "Command with action loop pulsing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-command/icon-command.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-braces",
+      "type": "registry:component",
+      "title": "Animated Braces",
+      "description": "Braces with code wrap sliding animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-braces/icon-braces.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bug",
+      "type": "registry:component",
+      "title": "Animated Bug",
+      "description": "Bug with debugging leg vibration and antennae wiggle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bug/icon-bug.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

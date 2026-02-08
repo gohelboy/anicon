@@ -243,6 +243,17 @@ import { IconMountain } from "@/registry/default/icon-mountain/icon-mountain";
 import { IconPill } from "@/registry/default/icon-pill/icon-pill";
 import { IconTelescope } from "@/registry/default/icon-telescope/icon-telescope";
 import { IconVolcano } from "@/registry/default/icon-volcano/icon-volcano";
+// Batch 7 Tech Industry Icons
+import { IconCodeXml } from "@/registry/default/icon-code-xml/icon-code-xml";
+import { IconGitBranch } from "@/registry/default/icon-git-branch/icon-git-branch";
+import { IconGitPullRequest } from "@/registry/default/icon-git-pull-request/icon-git-pull-request";
+import { IconWebhook } from "@/registry/default/icon-webhook/icon-webhook";
+import { IconGauge } from "@/registry/default/icon-gauge/icon-gauge";
+import { IconChartNoAxesColumn } from "@/registry/default/icon-chart-no-axes-column/icon-chart-no-axes-column";
+import { IconComponent } from "@/registry/default/icon-component/icon-component";
+import { IconCommand } from "@/registry/default/icon-command/icon-command";
+import { IconBraces } from "@/registry/default/icon-braces/icon-braces";
+import { IconBug } from "@/registry/default/icon-bug/icon-bug";
 
 export const iconsRegistry = [
   {
@@ -1892,6 +1903,76 @@ export const iconsRegistry = [
     color: "text-orange-500",
     description: "Volcano with eruption pulse and rising ash",
     tags: ["volcano", "nature", "lava", "eruption"],
+  },
+  {
+    name: "icon-code-xml",
+    component: IconCodeXml,
+    color: "text-blue-500",
+    description: "Code XML with syntax drawing animation",
+    tags: ["code", "xml", "syntax", "brackets"],
+  },
+  {
+    name: "icon-git-branch",
+    component: IconGitBranch,
+    color: "text-orange-400",
+    description: "Git branch with node pulsing and line drawing",
+    tags: ["git", "branch", "vcs", "fork"],
+  },
+  {
+    name: "icon-git-pull-request",
+    component: IconGitPullRequest,
+    color: "text-indigo-400",
+    description: "Git pull request with collaboration circles pulsing",
+    tags: ["git", "pr", "collaboration", "vcs"],
+  },
+  {
+    name: "icon-webhook",
+    component: IconWebhook,
+    color: "text-emerald-400",
+    description: "Webhook with data hook sliding animation",
+    tags: ["webhook", "api", "integration", "hook"],
+  },
+  {
+    name: "icon-gauge",
+    component: IconGauge,
+    color: "text-rose-400",
+    description: "Gauge with performance needle rotation",
+    tags: ["gauge", "performance", "speed", "metric"],
+  },
+  {
+    name: "icon-chart-no-axes-column",
+    component: IconChartNoAxesColumn,
+    color: "text-blue-400",
+    description: "Column chart with data growth scaling animation",
+    tags: ["chart", "data", "stats", "graph"],
+  },
+  {
+    name: "icon-component",
+    component: IconComponent,
+    color: "text-indigo-300",
+    description: "Component with system pulse and layer scaling",
+    tags: ["component", "ui", "design", "system"],
+  },
+  {
+    name: "icon-command",
+    component: IconCommand,
+    color: "text-zinc-400",
+    description: "Command with action loop pulsing animation",
+    tags: ["command", "action", "keyboard", "mac"],
+  },
+  {
+    name: "icon-braces",
+    component: IconBraces,
+    color: "text-amber-400",
+    description: "Braces with code wrap sliding animation",
+    tags: ["braces", "code", "dev", "curly"],
+  },
+  {
+    name: "icon-bug",
+    component: IconBug,
+    color: "text-rose-500",
+    description: "Bug with debugging leg vibration and antennae wiggle",
+    tags: ["bug", "debug", "issue", "error"],
   },
 ] as const;
 
