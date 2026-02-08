@@ -380,6 +380,30 @@ import { IconTransgender } from "@/registry/default/icon-transgender/icon-transg
 import { IconZoomIn } from "@/registry/default/icon-zoom-in/icon-zoom-in";
 import { IconZoomOut } from "@/registry/default/icon-zoom-out/icon-zoom-out";
 
+// Batch 18 Animals & Nature
+import { IconBird } from "@/registry/default/icon-bird/icon-bird";
+import { IconBirdhouse } from "@/registry/default/icon-birdhouse/icon-birdhouse";
+import { IconBone } from "@/registry/default/icon-bone/icon-bone";
+import { IconBugOff } from "@/registry/default/icon-bug-off/icon-bug-off";
+import { IconBugPlay } from "@/registry/default/icon-bug-play/icon-bug-play";
+import { IconCat } from "@/registry/default/icon-cat/icon-cat";
+import { IconDog } from "@/registry/default/icon-dog/icon-dog";
+import { IconEgg } from "@/registry/default/icon-egg/icon-egg";
+import { IconFish } from "@/registry/default/icon-fish/icon-fish";
+import { IconFishOff } from "@/registry/default/icon-fish-off/icon-fish-off";
+import { IconFishSymbol } from "@/registry/default/icon-fish-symbol/icon-fish-symbol";
+import { IconOrigami } from "@/registry/default/icon-origami/icon-origami";
+import { IconPanda } from "@/registry/default/icon-panda/icon-panda";
+import { IconPawPrint } from "@/registry/default/icon-paw-print/icon-paw-print";
+import { IconRabbit } from "@/registry/default/icon-rabbit/icon-rabbit";
+import { IconRat } from "@/registry/default/icon-rat/icon-rat";
+import { IconShrimp } from "@/registry/default/icon-shrimp/icon-shrimp";
+import { IconSnail } from "@/registry/default/icon-snail/icon-snail";
+
+import { IconTurtle } from "@/registry/default/icon-turtle/icon-turtle";
+import { IconWorm } from "@/registry/default/icon-worm/icon-worm";
+import { IconShell } from "@/registry/default/icon-shell/icon-shell";
+
 export const iconsRegistry = [
   {
     name: "icon-heart",
@@ -2896,6 +2920,154 @@ export const iconsRegistry = [
     color: "text-white",
     description: "Zoom out with a pulsing magnifier and vibrating minus",
     tags: ["zoom", "out", "contract", "magnify"],
+  },
+  {
+    name: "icon-bird",
+    component: IconBird,
+    color: "text-sky-300",
+    description: "Bird with fluttering wings and gentle body sway",
+    tags: ["bird", "nature", "animal", "fly"],
+  },
+  {
+    name: "icon-birdhouse",
+    component: IconBirdhouse,
+    color: "text-amber-200",
+    description: "Birdhouse with a pulsing hole and house bounce",
+    tags: ["birdhouse", "nature", "animal", "home"],
+  },
+  {
+    name: "icon-bone",
+    component: IconBone,
+    color: "text-zinc-200",
+    description: "Bone with a playful wagging rotation",
+    tags: ["bone", "dog", "animal", "pet"],
+  },
+  {
+    name: "icon-bug-off",
+    component: IconBugOff,
+    color: "text-rose-400",
+    description: "Bug off with a vibrating slash and bug shake",
+    tags: ["bug", "off", "nature", "animal", "insect"],
+  },
+  {
+    name: "icon-bug-play",
+    component: IconBugPlay,
+    color: "text-emerald-400",
+    description: "Bug play with crawling motion and pulsing play button",
+    tags: ["bug", "play", "nature", "animal", "insect"],
+  },
+  {
+    name: "icon-cat",
+    component: IconCat,
+    color: "text-orange-300",
+    description: "Cat with blinking eyes and a pulsing nose",
+    tags: ["cat", "animal", "pet", "meow"],
+  },
+  {
+    name: "icon-dog",
+    component: IconDog,
+    color: "text-amber-400",
+    description: "Dog with head tilt, blinking eyes, and pulsing nose",
+    tags: ["dog", "animal", "pet", "woof"],
+  },
+  {
+    name: "icon-egg",
+    component: IconEgg,
+    color: "text-zinc-100",
+    description: "Egg with a playful hatching wobble",
+    tags: ["egg", "nature", "animal", "birth"],
+  },
+  {
+    name: "icon-fish",
+    component: IconFish,
+    color: "text-sky-400",
+    description: "Fish with a realistic tail wag and body sway",
+    tags: ["fish", "nature", "animal", "swim"],
+  },
+  {
+    name: "icon-fish-off",
+    component: IconFishOff,
+    color: "text-rose-400",
+    description: "Fish off with a muted sway and vibrating slash",
+    tags: ["fish", "off", "nature", "animal", "swim"],
+  },
+  {
+    name: "icon-fish-symbol",
+    component: IconFishSymbol,
+    color: "text-sky-300",
+    description: "Fish symbol with a smooth swimming motion",
+    tags: ["fish", "symbol", "nature", "animal", "swim"],
+  },
+  {
+    name: "icon-origami",
+    component: IconOrigami,
+    color: "text-purple-300",
+    description: "Origami with a subtle folding pulse effect",
+    tags: ["origami", "paper", "art", "japan"],
+  },
+  {
+    name: "icon-panda",
+    component: IconPanda,
+    color: "text-white",
+    description: "Panda with blinking pupils and a gentle body sway",
+    tags: ["panda", "animal", "nature", "bear"],
+  },
+  {
+    name: "icon-paw-print",
+    component: IconPawPrint,
+    color: "text-amber-500",
+    description: "Paw print with sequential pad-pulse animation",
+    tags: ["paw", "print", "animal", "pet", "track"],
+  },
+  {
+    name: "icon-rabbit",
+    component: IconRabbit,
+    color: "text-zinc-300",
+    description: "Rabbit with a soft ear-twitch and body sway",
+    tags: ["rabbit", "animal", "nature", "bunny"],
+  },
+  {
+    name: "icon-rat",
+    component: IconRat,
+    color: "text-zinc-400",
+    description: "Rat with a twitching tail and scurrying vibration",
+    tags: ["rat", "animal", "nature", "rodent"],
+  },
+  {
+    name: "icon-shell",
+    component: IconShell,
+    color: "text-orange-200",
+    description: "Shell with a continuous spiral rotation",
+    tags: ["shell", "spiral", "nature", "ocean"],
+  },
+  {
+    name: "icon-shrimp",
+    component: IconShrimp,
+    color: "text-rose-300",
+    description: "Shrimp with snapping tail and body compression",
+    tags: ["shrimp", "animal", "nature", "sea"],
+  },
+  {
+    name: "icon-snail",
+    component: IconSnail,
+    color: "text-amber-200",
+    description: "Snail with sliding body and wiggling tentacles",
+    tags: ["snail", "animal", "nature", "shell"],
+  },
+
+  {
+    name: "icon-turtle",
+    component: IconTurtle,
+    color: "text-emerald-400",
+    description: "Turtle with a head peek and slow body sway",
+    tags: ["turtle", "animal", "nature", "shell"],
+  },
+  {
+    name: "icon-worm",
+    component: IconWorm,
+    color: "text-pink-300",
+    description: "Worm with a characteristic inching motion",
+    tags: ["worm", "animal", "nature", "earth"],
   },
 ] as const;
 

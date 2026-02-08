@@ -5372,6 +5372,321 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-bird",
+      "type": "registry:component",
+      "title": "Animated Bird",
+      "description": "Bird with fluttering wings and gentle body sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bird/icon-bird.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-birdhouse",
+      "type": "registry:component",
+      "title": "Animated Birdhouse",
+      "description": "Birdhouse with a pulsing hole and house bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-birdhouse/icon-birdhouse.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bone",
+      "type": "registry:component",
+      "title": "Animated Bone",
+      "description": "Bone with a playful wagging rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bone/icon-bone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bug-off",
+      "type": "registry:component",
+      "title": "Animated Bug Off",
+      "description": "Bug off with a vibrating slash and bug shake.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bug-off/icon-bug-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bug-play",
+      "type": "registry:component",
+      "title": "Animated Bug Play",
+      "description": "Bug play with crawling motion and pulsing play button.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bug-play/icon-bug-play.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cat",
+      "type": "registry:component",
+      "title": "Animated Cat",
+      "description": "Cat with blinking eyes and a pulsing nose.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cat/icon-cat.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-dog",
+      "type": "registry:component",
+      "title": "Animated Dog",
+      "description": "Dog with head tilt, blinking eyes, and pulsing nose.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-dog/icon-dog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-egg",
+      "type": "registry:component",
+      "title": "Animated Egg",
+      "description": "Egg with a playful hatching wobble.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-egg/icon-egg.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-fish",
+      "type": "registry:component",
+      "title": "Animated Fish",
+      "description": "Fish with a realistic tail wag and body sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-fish/icon-fish.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-fish-off",
+      "type": "registry:component",
+      "title": "Animated Fish Off",
+      "description": "Fish off with a muted sway and vibrating slash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-fish-off/icon-fish-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-fish-symbol",
+      "type": "registry:component",
+      "title": "Animated Fish Symbol",
+      "description": "Fish symbol with a smooth swimming motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-fish-symbol/icon-fish-symbol.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-origami",
+      "type": "registry:component",
+      "title": "Animated Origami",
+      "description": "Origami with a subtle folding pulse effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-origami/icon-origami.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-panda",
+      "type": "registry:component",
+      "title": "Animated Panda",
+      "description": "Panda with blinking pupils and a gentle body sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-panda/icon-panda.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-paw-print",
+      "type": "registry:component",
+      "title": "Animated Paw Print",
+      "description": "Paw print with sequential pad-pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-paw-print/icon-paw-print.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-rabbit",
+      "type": "registry:component",
+      "title": "Animated Rabbit",
+      "description": "Rabbit with a soft ear-twitch and body sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-rabbit/icon-rabbit.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-rat",
+      "type": "registry:component",
+      "title": "Animated Rat",
+      "description": "Rat with a twitching tail and scurrying vibration.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-rat/icon-rat.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shell",
+      "type": "registry:component",
+      "title": "Animated Shell",
+      "description": "Shell with a continuous spiral rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shell/icon-shell.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shrimp",
+      "type": "registry:component",
+      "title": "Animated Shrimp",
+      "description": "Shrimp with snapping tail and body compression.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shrimp/icon-shrimp.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-snail",
+      "type": "registry:component",
+      "title": "Animated Snail",
+      "description": "Snail with sliding body and wiggling tentacles.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-snail/icon-snail.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-turtle",
+      "type": "registry:component",
+      "title": "Animated Turtle",
+      "description": "Turtle with a head peek and slow body sway.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-turtle/icon-turtle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-worm",
+      "type": "registry:component",
+      "title": "Animated Worm",
+      "description": "Worm with a characteristic inching motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-worm/icon-worm.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
