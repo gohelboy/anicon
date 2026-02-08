@@ -264,6 +264,17 @@ import { IconSettings2 } from "@/registry/default/icon-settings-2/icon-settings-
 import { IconShieldAlert } from "@/registry/default/icon-shield-alert/icon-shield-alert";
 import { IconWorkflow } from "@/registry/default/icon-workflow/icon-workflow";
 import { IconSparkles } from "@/registry/default/icon-sparkles/icon-sparkles";
+// Batch 9 Dashboard Icons
+import { IconLayoutDashboard } from "@/registry/default/icon-layout-dashboard/icon-layout-dashboard";
+import { IconChartPie } from "@/registry/default/icon-chart-pie/icon-chart-pie";
+import { IconChartArea } from "@/registry/default/icon-chart-area/icon-chart-area";
+import { IconChartLine } from "@/registry/default/icon-chart-line/icon-chart-line";
+import { IconTrendingUp } from "@/registry/default/icon-trending-up/icon-trending-up";
+import { IconTrendingDown } from "@/registry/default/icon-trending-down/icon-trending-down";
+import { IconUsers } from "@/registry/default/icon-users/icon-users";
+import { IconDollarSign } from "@/registry/default/icon-dollar-sign/icon-dollar-sign";
+import { IconWallet } from "@/registry/default/icon-wallet/icon-wallet";
+import { IconPanelsTopLeft } from "@/registry/default/icon-panels-top-left/icon-panels-top-left";
 
 export const iconsRegistry = [
   {
@@ -2046,6 +2057,75 @@ export const iconsRegistry = [
     color: "text-amber-400",
     description: "Sparkles with sequential magic glow effect",
     tags: ["sparkles", "magic", "ai", "stars"],
+  },
+  {
+    name: "icon-layout-dashboard",
+    component: IconLayoutDashboard,
+    color: "text-blue-500",
+    description: "Dashboard layout with widget setup expansion effect",
+    tags: ["dashboard", "layout", "grid", "widgets"],
+  },
+  {
+    name: "icon-chart-pie",
+    component: IconChartPie,
+    color: "text-indigo-500",
+    description: "Pie chart with interactive data slice pop animation",
+    tags: ["chart", "pie", "data", "analytics"],
+  },
+  {
+    name: "icon-chart-area",
+    component: IconChartArea,
+    color: "text-emerald-500",
+    description: "Area chart with market flow path drawing",
+    tags: ["chart", "area", "data", "analytics"],
+  },
+  {
+    name: "icon-chart-line",
+    component: IconChartLine,
+    color: "text-blue-400",
+    description: "Line chart with sequential data trace effect",
+    tags: ["chart", "line", "data", "analytics"],
+  },
+  {
+    name: "icon-trending-up",
+    component: IconTrendingUp,
+    color: "text-emerald-400",
+    description: "Trending up arrow with bullish run trace",
+    tags: ["trending", "up", "bullish", "growth"],
+  },
+  {
+    name: "icon-trending-down",
+    component: IconTrendingDown,
+    color: "text-rose-400",
+    description: "Trending down arrow with bearish dip trace",
+    tags: ["trending", "down", "bearish", "loss"],
+  },
+  {
+    name: "icon-users",
+    component: IconUsers,
+    color: "text-zinc-500",
+    description: "Multi-user icon with sequential social pulse",
+    tags: ["users", "social", "team", "people"],
+  },
+  {
+    name: "icon-dollar-sign",
+    component: IconDollarSign,
+    color: "text-amber-500",
+    description: "Dollar sign with stable floating animation",
+    tags: ["dollar", "finance", "money", "currency"],
+  },
+  {
+    name: "icon-wallet",
+    component: IconWallet,
+    color: "text-orange-400",
+    description: "Wallet with interactive pay-ready flap tilt",
+    tags: ["wallet", "finance", "payment", "bank"],
+  },
+  {
+    name: "icon-panels-top-left",
+    component: IconPanelsTopLeft,
+    color: "text-blue-600",
+    description: "Panels with layout shift sliding animation",
   },
 ] as const;
 

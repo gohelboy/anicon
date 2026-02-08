@@ -3797,6 +3797,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-layout-dashboard",
+      "type": "registry:component",
+      "title": "Animated Layout Dashboard",
+      "description": "Dashboard layout with widget setup expansion effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-layout-dashboard/icon-layout-dashboard.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-chart-pie",
+      "type": "registry:component",
+      "title": "Animated Chart Pie",
+      "description": "Pie chart with interactive data slice pop animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-chart-pie/icon-chart-pie.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-chart-area",
+      "type": "registry:component",
+      "title": "Animated Chart Area",
+      "description": "Area chart with market flow path drawing.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-chart-area/icon-chart-area.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-chart-line",
+      "type": "registry:component",
+      "title": "Animated Chart Line",
+      "description": "Line chart with sequential data trace effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-chart-line/icon-chart-line.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-trending-up",
+      "type": "registry:component",
+      "title": "Animated Trending Up",
+      "description": "Trending up arrow with bullish run trace.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-trending-up/icon-trending-up.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-trending-down",
+      "type": "registry:component",
+      "title": "Animated Trending Down",
+      "description": "Trending down arrow with bearish dip trace.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-trending-down/icon-trending-down.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-users",
+      "type": "registry:component",
+      "title": "Animated Users",
+      "description": "Multi-user icon with sequential social pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-users/icon-users.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-dollar-sign",
+      "type": "registry:component",
+      "title": "Animated Dollar Sign",
+      "description": "Dollar sign with stable floating animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-dollar-sign/icon-dollar-sign.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-wallet",
+      "type": "registry:component",
+      "title": "Animated Wallet",
+      "description": "Wallet with interactive pay-ready flap tilt.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-wallet/icon-wallet.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-panels-top-left",
+      "type": "registry:component",
+      "title": "Animated Panels Top Left",
+      "description": "Panels with layout shift sliding animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-panels-top-left/icon-panels-top-left.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
