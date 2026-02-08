@@ -4697,6 +4697,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-cloud-alert",
+      "type": "registry:component",
+      "title": "Animated Cloud Alert",
+      "description": "Cloud alert with interactive storm warning animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-alert/icon-cloud-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-search-alert",
+      "type": "registry:component",
+      "title": "Animated Search Alert",
+      "description": "Search alert with interactive caution animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-search-alert/icon-search-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bell-electric",
+      "type": "registry:component",
+      "title": "Animated Bell Electric",
+      "description": "Electric bell with interactive alarm vibration.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bell-electric/icon-bell-electric.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-megaphone",
+      "type": "registry:component",
+      "title": "Animated Megaphone",
+      "description": "Megaphone with interactive announcement tilt.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-megaphone/icon-megaphone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-megaphone-off",
+      "type": "registry:component",
+      "title": "Animated Megaphone Off",
+      "description": "Megaphone off with interactive muted vibration.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-megaphone-off/icon-megaphone-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-message-circle-warning",
+      "type": "registry:component",
+      "title": "Animated Message Circle Warning",
+      "description": "Circle message warning with interactive bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-message-circle-warning/icon-message-circle-warning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-message-square-warning",
+      "type": "registry:component",
+      "title": "Animated Message Square Warning",
+      "description": "Square message warning with interactive bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-message-square-warning/icon-message-square-warning.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-octagon-x",
+      "type": "registry:component",
+      "title": "Animated Octagon X",
+      "description": "Octagon X with interactive stop animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-octagon-x/icon-octagon-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-siren",
+      "type": "registry:component",
+      "title": "Animated Siren",
+      "description": "Siren with interactive flashing pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-siren/icon-siren.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-badge-alert",
+      "type": "registry:component",
+      "title": "Animated Badge Alert",
+      "description": "Badge alert with interactive scale and pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-badge-alert/icon-badge-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

@@ -330,6 +330,17 @@ import { IconUserRoundSearch } from "@/registry/default/icon-user-round-search/i
 import { IconUserRoundX } from "@/registry/default/icon-user-round-x/icon-user-round-x";
 import { IconShieldUser } from "@/registry/default/icon-shield-user/icon-shield-user";
 import { IconFileUser } from "@/registry/default/icon-file-user/icon-file-user";
+// Batch 15 Alerts & Notifications Icons
+import { IconCloudAlert } from "@/registry/default/icon-cloud-alert/icon-cloud-alert";
+import { IconSearchAlert } from "@/registry/default/icon-search-alert/icon-search-alert";
+import { IconBellElectric } from "@/registry/default/icon-bell-electric/icon-bell-electric";
+import { IconMegaphone } from "@/registry/default/icon-megaphone/icon-megaphone";
+import { IconMegaphoneOff } from "@/registry/default/icon-megaphone-off/icon-megaphone-off";
+import { IconMessageCircleWarning } from "@/registry/default/icon-message-circle-warning/icon-message-circle-warning";
+import { IconMessageSquareWarning } from "@/registry/default/icon-message-square-warning/icon-message-square-warning";
+import { IconOctagonX } from "@/registry/default/icon-octagon-x/icon-octagon-x";
+import { IconSiren } from "@/registry/default/icon-siren/icon-siren";
+import { IconBadgeAlert } from "@/registry/default/icon-badge-alert/icon-badge-alert";
 
 export const iconsRegistry = [
   {
@@ -2532,6 +2543,76 @@ export const iconsRegistry = [
     color: "text-zinc-700",
     description: "User file with interactive lift and pulse",
     tags: ["user", "file", "document", "profile"],
+  },
+  {
+    name: "icon-cloud-alert",
+    component: IconCloudAlert,
+    color: "text-sky-500",
+    description: "Cloud alert with interactive storm warning animation",
+    tags: ["cloud", "alert", "warning", "weather"],
+  },
+  {
+    name: "icon-search-alert",
+    component: IconSearchAlert,
+    color: "text-amber-500",
+    description: "Search alert with interactive caution animation",
+    tags: ["search", "alert", "warning", "caution"],
+  },
+  {
+    name: "icon-bell-electric",
+    component: IconBellElectric,
+    color: "text-rose-600",
+    description: "Electric bell with interactive alarm vibration",
+    tags: ["bell", "alarm", "alert", "electric"],
+  },
+  {
+    name: "icon-megaphone",
+    component: IconMegaphone,
+    color: "text-zinc-700",
+    description: "Megaphone with interactive announcement tilt",
+    tags: ["megaphone", "alert", "announce", "sound"],
+  },
+  {
+    name: "icon-megaphone-off",
+    component: IconMegaphoneOff,
+    color: "text-rose-500",
+    description: "Megaphone off with interactive muted vibration",
+    tags: ["megaphone", "off", "mute", "silent"],
+  },
+  {
+    name: "icon-message-circle-warning",
+    component: IconMessageCircleWarning,
+    color: "text-amber-600",
+    description: "Circle message warning with interactive bounce",
+    tags: ["message", "circle", "warning", "alert"],
+  },
+  {
+    name: "icon-message-square-warning",
+    component: IconMessageSquareWarning,
+    color: "text-amber-600",
+    description: "Square message warning with interactive bounce",
+    tags: ["message", "square", "warning", "alert"],
+  },
+  {
+    name: "icon-octagon-x",
+    component: IconOctagonX,
+    color: "text-rose-600",
+    description: "Octagon X with interactive stop animation",
+    tags: ["octagon", "x", "stop", "denied"],
+  },
+  {
+    name: "icon-siren",
+    component: IconSiren,
+    color: "text-blue-600",
+    description: "Siren with interactive flashing pulse",
+    tags: ["siren", "emergency", "alert", "flashing"],
+  },
+  {
+    name: "icon-badge-alert",
+    component: IconBadgeAlert,
+    color: "text-rose-500",
+    description: "Badge alert with interactive scale and pulse",
+    tags: ["badge", "alert", "important", "warning"],
   },
 ] as const;
 
