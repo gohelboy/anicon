@@ -232,6 +232,17 @@ import { IconBookOpen } from "@/registry/default/icon-book-open/icon-book-open";
 import { IconCoffee } from "@/registry/default/icon-coffee/icon-coffee";
 import { IconScissors } from "@/registry/default/icon-scissors/icon-scissors";
 import { IconUmbrella } from "@/registry/default/icon-umbrella/icon-umbrella";
+// Batch 6 Premium Icons
+import { IconBrain } from "@/registry/default/icon-brain/icon-brain";
+import { IconGhost } from "@/registry/default/icon-ghost/icon-ghost";
+import { IconGraduationCap } from "@/registry/default/icon-graduation-cap/icon-graduation-cap";
+import { IconHeartPulse } from "@/registry/default/icon-heart-pulse/icon-heart-pulse";
+import { IconLandmark } from "@/registry/default/icon-landmark/icon-landmark";
+import { IconMicroscope } from "@/registry/default/icon-microscope/icon-microscope";
+import { IconMountain } from "@/registry/default/icon-mountain/icon-mountain";
+import { IconPill } from "@/registry/default/icon-pill/icon-pill";
+import { IconTelescope } from "@/registry/default/icon-telescope/icon-telescope";
+import { IconVolcano } from "@/registry/default/icon-volcano/icon-volcano";
 
 export const iconsRegistry = [
   {
@@ -1811,6 +1822,76 @@ export const iconsRegistry = [
     color: "text-rose-300",
     description: "Umbrella with expanding canopy animation",
     tags: ["umbrella", "weather", "rain", "shelter"],
+  },
+  {
+    name: "icon-brain",
+    component: IconBrain,
+    color: "text-pink-300",
+    description: "Brain with neural pulse and connection glow",
+    tags: ["brain", "intelligence", "ai", "mind"],
+  },
+  {
+    name: "icon-ghost",
+    component: IconGhost,
+    color: "text-zinc-100",
+    description: "Ghost with hovering and blinking animation",
+    tags: ["ghost", "spooky", "halloween", "spirit"],
+  },
+  {
+    name: "icon-graduation-cap",
+    component: IconGraduationCap,
+    color: "text-blue-400",
+    description: "Graduation cap with tassel swing and bounce",
+    tags: ["education", "school", "graduate", "cap"],
+  },
+  {
+    name: "icon-heart-pulse",
+    component: IconHeartPulse,
+    color: "text-rose-500",
+    description: "Heart pulse with rhythmic heartbeat and sparkline",
+    tags: ["heart", "pulse", "health", "medical"],
+  },
+  {
+    name: "icon-landmark",
+    component: IconLandmark,
+    color: "text-amber-300",
+    description: "Landmark with pillar-rise and roof-move animation",
+    tags: ["landmark", "building", "bank", "monument"],
+  },
+  {
+    name: "icon-microscope",
+    component: IconMicroscope,
+    color: "text-emerald-300",
+    description: "Microscope with focus adjustment and lens rotation",
+    tags: ["microscope", "science", "lab", "research"],
+  },
+  {
+    name: "icon-mountain",
+    component: IconMountain,
+    color: "text-slate-400",
+    description: "Mountain with subtle peak glow animation",
+    tags: ["mountain", "nature", "outdoor", "peak"],
+  },
+  {
+    name: "icon-pill",
+    component: IconPill,
+    color: "text-cyan-400",
+    description: "Pill with rotation and opacity pulse animation",
+    tags: ["pill", "medicine", "health", "capsule"],
+  },
+  {
+    name: "icon-telescope",
+    component: IconTelescope,
+    color: "text-indigo-400",
+    description: "Telescope with cosmic tilt and search rotation",
+    tags: ["telescope", "space", "astronomy", "search"],
+  },
+  {
+    name: "icon-volcano",
+    component: IconVolcano,
+    color: "text-orange-500",
+    description: "Volcano with eruption pulse and rising ash",
+    tags: ["volcano", "nature", "lava", "eruption"],
   },
 ] as const;
 

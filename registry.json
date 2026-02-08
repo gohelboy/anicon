@@ -3362,6 +3362,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-brain",
+      "type": "registry:component",
+      "title": "Animated Brain",
+      "description": "Brain with neural pulse and connection glow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-brain/icon-brain.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ghost",
+      "type": "registry:component",
+      "title": "Animated Ghost",
+      "description": "Ghost with hovering and blinking animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ghost/icon-ghost.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-graduation-cap",
+      "type": "registry:component",
+      "title": "Animated Graduation Cap",
+      "description": "Graduation cap with tassel swing and bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-graduation-cap/icon-graduation-cap.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-heart-pulse",
+      "type": "registry:component",
+      "title": "Animated Heart Pulse",
+      "description": "Heart pulse with rhythmic heartbeat and sparkline.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-heart-pulse/icon-heart-pulse.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-landmark",
+      "type": "registry:component",
+      "title": "Animated Landmark",
+      "description": "Landmark with pillar-rise and roof-move animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-landmark/icon-landmark.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-microscope",
+      "type": "registry:component",
+      "title": "Animated Microscope",
+      "description": "Microscope with focus adjustment and lens rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-microscope/icon-microscope.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-mountain",
+      "type": "registry:component",
+      "title": "Animated Mountain",
+      "description": "Mountain with subtle peak glow animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-mountain/icon-mountain.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pill",
+      "type": "registry:component",
+      "title": "Animated Pill",
+      "description": "Pill with rotation and opacity pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pill/icon-pill.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-telescope",
+      "type": "registry:component",
+      "title": "Animated Telescope",
+      "description": "Telescope with cosmic tilt and search rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-telescope/icon-telescope.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-volcano",
+      "type": "registry:component",
+      "title": "Animated Volcano",
+      "description": "Volcano with eruption pulse and rising ash.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-volcano/icon-volcano.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
