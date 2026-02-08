@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { IconCardButton } from "./_components/icon-card-button";
-import { LandingNavClient } from "../_components/landing-nav-client";
+import { LandingNav } from "../_components/landing-nav";
 import type { IconEntry } from "../_data/icons";
+import { iconsRegistry } from "../_data/icons";
 import { EmptyIconsState } from "./_components/empty-icons-state";
+import { IconCardButton } from "./_components/icon-card-button";
 import { IconDetailDrawer } from "./_components/icon-detail-drawer";
 import { IconsSearchBar } from "./_components/icons-search-bar";
-import { iconsRegistry } from "../_data/icons";
 
 export default function IconsPage() {
   const [search, setSearch] = useState("");
@@ -27,7 +27,7 @@ export default function IconsPage() {
 
   return (
     <div className="min-h-screen">
-      <LandingNavClient />
+      <LandingNav />
       <main className="pt-24 pb-16 sm:pb-20">
         <section className="border-b border-(--card-border) px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-8">
           <div className="mx-auto max-w-4xl pt-8">
@@ -35,8 +35,7 @@ export default function IconsPage() {
               Icons
             </h1>
             <p className="mt-2 text-base text-(--muted-foreground) sm:mt-3 sm:text-lg">
-              Browse and search animated icons. Hover or tap to see Motion
-              animations.
+              Browse and search animated icons. Hover or tap to see Motion animations.
             </p>
             <IconsSearchBar
               search={search}
@@ -56,7 +55,7 @@ export default function IconsPage() {
                 <p className="mb-4 text-sm text-(--muted-foreground) sm:mb-6">
                   {filteredIcons.length} icons
                 </p>
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-8">
+                <div className="grid grid-cols-4 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-8">
                   {filteredIcons.map((icon) => (
                     <IconCardButton
                       key={icon.name}
