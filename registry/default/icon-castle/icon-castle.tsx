@@ -2,15 +2,14 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconAnvilProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCastleProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const topVariants: Variants = {
+const towerVariants: Variants = {
   rest: { 
     y: 0,
-    rotate: 0,
     transition: {
       type: "spring",
       stiffness: 300,
@@ -19,19 +18,17 @@ const topVariants: Variants = {
   },
   hover: {
     y: [0, -2, 0],
-    rotate: [0, -1, 1, 0],
     transition: {
-      duration: 0.4,
+      duration: 1.5,
       repeat: Infinity,
-      repeatType: "mirror",
       ease: "easeInOut",
     },
   },
 };
 
-const baseVariants: Variants = {
+const gateVariants: Variants = {
   rest: { 
-    scaleX: 1,
+    scaleY: 1,
     transition: {
       type: "spring",
       stiffness: 300,
@@ -39,22 +36,21 @@ const baseVariants: Variants = {
     }
   },
   hover: {
-    scaleX: [1, 1.05, 1],
+    scaleY: [1, 0.7, 1],
     transition: {
-      duration: 0.4,
+      duration: 1.5,
       repeat: Infinity,
-      repeatType: "mirror",
       ease: "easeInOut",
     },
   },
 };
 
-export function IconAnvil({ 
+export function IconCastle({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconAnvilProps) {
+}: IconCastleProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -81,20 +77,18 @@ export function IconAnvil({
       whileHover="hover"
       {...rest}
     >
-      <motion.g 
-        variants={prefersReducedMotion ? {} : topVariants}
-        style={{ originX: "12px", originY: "12px" }}
-      >
-        <path d="M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4" />
-        <path d="M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z" />
-        <path d="M9 12v5" />
-        <path d="M15 12v5" />
-      </motion.g>
+      <motion.path d="M10 5V3" variants={prefersReducedMotion ? {} : towerVariants} />
+      <motion.path d="M14 5V3" variants={prefersReducedMotion ? {} : towerVariants} />
       <motion.path 
-        d="M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1" 
-        variants={prefersReducedMotion ? {} : baseVariants}
-        style={{ originX: "12px", originY: "20px" }}
+        d="M15 21v-3a3 3 0 0 0-6 0v3" 
+        variants={prefersReducedMotion ? {} : gateVariants}
+        style={{ originX: "12px", originY: "21px" }}
       />
+      <motion.path d="M18 3v8" variants={prefersReducedMotion ? {} : towerVariants} />
+      <path d="M18 5H6" />
+      <path d="M22 11H2" />
+      <path d="M22 9v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9" />
+      <motion.path d="M6 3v8" variants={prefersReducedMotion ? {} : towerVariants} />
     </motion.svg>
   );
 }

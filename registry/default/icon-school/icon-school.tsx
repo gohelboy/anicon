@@ -2,15 +2,14 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconAnvilProps extends React.SVGProps<SVGSVGElement> {
+export interface IconSchoolProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const topVariants: Variants = {
+const bellVariants: Variants = {
   rest: { 
-    y: 0,
-    rotate: 0,
+    scale: 1,
     transition: {
       type: "spring",
       stiffness: 300,
@@ -18,43 +17,35 @@ const topVariants: Variants = {
     }
   },
   hover: {
-    y: [0, -2, 0],
-    rotate: [0, -1, 1, 0],
+    scale: [1, 1.2, 1],
     transition: {
-      duration: 0.4,
+      duration: 1,
       repeat: Infinity,
-      repeatType: "mirror",
       ease: "easeInOut",
     },
   },
 };
 
-const baseVariants: Variants = {
+const doorVariants: Variants = {
   rest: { 
-    scaleX: 1,
-    transition: {
-      type: "spring",
-      stiffness: 300,
-      damping: 15
-    }
+    scaleY: 1,
   },
   hover: {
-    scaleX: [1, 1.05, 1],
+    scaleY: [1, 0.6, 1],
     transition: {
-      duration: 0.4,
+      duration: 1.5,
       repeat: Infinity,
-      repeatType: "mirror",
       ease: "easeInOut",
     },
   },
 };
 
-export function IconAnvil({ 
+export function IconSchool({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconAnvilProps) {
+}: IconSchoolProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -81,19 +72,18 @@ export function IconAnvil({
       whileHover="hover"
       {...rest}
     >
-      <motion.g 
-        variants={prefersReducedMotion ? {} : topVariants}
-        style={{ originX: "12px", originY: "12px" }}
-      >
-        <path d="M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4" />
-        <path d="M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z" />
-        <path d="M9 12v5" />
-        <path d="M15 12v5" />
-      </motion.g>
       <motion.path 
-        d="M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1" 
-        variants={prefersReducedMotion ? {} : baseVariants}
-        style={{ originX: "12px", originY: "20px" }}
+        d="M14 21v-3a2 2 0 0 0-10 0v3" 
+        variants={prefersReducedMotion ? {} : doorVariants}
+        style={{ originY: "21px" }}
+      />
+      <path d="M18 5v16" />
+      <path d="m4 6 7.106-3.79a2 2 0 0 1 1.788 0L20 6" />
+      <path d="m6 11-3.52 2.147a1 1 0 0 0-.48.854V19a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-5a1 1 0 0 0-.48-.853L18 11" />
+      <path d="M6 5v16" />
+      <motion.circle 
+        cx="12" cy="9" r="2" 
+        variants={prefersReducedMotion ? {} : bellVariants} 
       />
     </motion.svg>
   );

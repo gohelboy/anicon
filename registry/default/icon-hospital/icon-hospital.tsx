@@ -2,27 +2,19 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconGraduationCapProps extends React.SVGProps<SVGSVGElement> {
+export interface IconHospitalProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const tasselVariants: Variants = {
-  rest: { rotate: 0 },
-  hover: {
-    rotate: [0, 15, -15, 10, -5, 0],
-    transition: {
-      duration: 1.2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
+const crossVariants: Variants = {
+  rest: { 
+    scale: 1,
+    opacity: 1,
   },
-};
-
-const capVariants: Variants = {
-  rest: { y: 0 },
   hover: {
-    y: [0, -1, 0],
+    scale: [1, 1.1, 1],
+    opacity: [1, 0.8, 1],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -31,12 +23,26 @@ const capVariants: Variants = {
   },
 };
 
-export function IconGraduationCap({ 
+const doorVariants: Variants = {
+  rest: { 
+    scaleY: 1,
+  },
+  hover: {
+    scaleY: [1, 0.6, 1],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconHospital({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconGraduationCapProps) {
+}: IconHospitalProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -63,16 +69,15 @@ export function IconGraduationCap({
       whileHover="hover"
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : capVariants}>
-        <path d="M22 10v6" />
-        <path d="M2 10l10-5 10 5-10 5z" />
-        <path d="M6 12v5c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-5" />
-      </motion.g>
+      <motion.path d="M12 7v4" variants={prefersReducedMotion ? {} : crossVariants} style={{ originX: "12px", originY: "9px" }} />
       <motion.path 
-        d="M22 10v6" 
-        variants={prefersReducedMotion ? {} : tasselVariants} 
-        style={{ originY: "10px" }}
+        d="M14 21v-3a2 2 0 0 0-4 0v3" 
+        variants={prefersReducedMotion ? {} : doorVariants}
+        style={{ originX: "12px", originY: "21px" }}
       />
+      <motion.path d="M14 9h-4" variants={prefersReducedMotion ? {} : crossVariants} style={{ originX: "12px", originY: "9px" }} />
+      <path d="M18 11h2a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2" />
+      <path d="M18 21V5a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16" />
     </motion.svg>
   );
 }

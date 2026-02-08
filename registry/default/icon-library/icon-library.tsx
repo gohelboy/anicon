@@ -2,41 +2,37 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconStoreProps extends React.SVGProps<SVGSVGElement> {
+export interface IconLibraryProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const awningVariants: Variants = {
-  rest: { y: 0 },
-  hover: {
-    y: [0, -1, 0],
+const bookVariants: Variants = {
+  rest: { 
+    rotate: 0,
+    transition: {
+      type: "spring",
+      stiffness: 300,
+      damping: 15
+    }
+  },
+  hover: (i: number) => ({
+    rotate: [0, -5, 5, 0],
     transition: {
       duration: 1.5,
       repeat: Infinity,
+      delay: i * 0.2,
       ease: "easeInOut",
     },
-  },
+  }),
 };
 
-const doorVariants: Variants = {
-  rest: { scaleY: 1 },
-  hover: {
-    scaleY: [1, 0.6, 1],
-    transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-export function IconStore({ 
+export function IconLibrary({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconStoreProps) {
+}: IconLibraryProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -64,15 +60,29 @@ export function IconStore({
       {...rest}
     >
       <motion.path 
-        d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5" 
-        variants={prefersReducedMotion ? {} : doorVariants}
-        style={{ originY: "21px" }}
+        d="m16 6 4 14" 
+        variants={prefersReducedMotion ? {} : bookVariants} 
+        custom={0}
+        style={{ originX: "20px", originY: "20px" }}
       />
       <motion.path 
-        d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244" 
-        variants={prefersReducedMotion ? {} : awningVariants}
+        d="M12 6v14" 
+        variants={prefersReducedMotion ? {} : bookVariants} 
+        custom={1}
+        style={{ originY: "20px" }}
       />
-      <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05" />
+      <motion.path 
+        d="M8 8v12" 
+        variants={prefersReducedMotion ? {} : bookVariants} 
+        custom={2}
+        style={{ originY: "20px" }}
+      />
+      <motion.path 
+        d="M4 4v16" 
+        variants={prefersReducedMotion ? {} : bookVariants} 
+        custom={3}
+        style={{ originY: "20px" }}
+      />
     </motion.svg>
   );
 }

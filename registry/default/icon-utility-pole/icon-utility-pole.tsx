@@ -2,41 +2,36 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconGraduationCapProps extends React.SVGProps<SVGSVGElement> {
+export interface IconUtilityPoleProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const tasselVariants: Variants = {
-  rest: { rotate: 0 },
-  hover: {
-    rotate: [0, 15, -15, 10, -5, 0],
+const poleVariants: Variants = {
+  rest: { 
+    rotate: 0,
     transition: {
-      duration: 1.2,
+      type: "spring",
+      stiffness: 300,
+      damping: 15
+    }
+  },
+  hover: {
+    rotate: [0, 1, -1, 0],
+    transition: {
+      duration: 0.2,
       repeat: Infinity,
-      ease: "easeInOut",
+      ease: "linear",
     },
   },
 };
 
-const capVariants: Variants = {
-  rest: { y: 0 },
-  hover: {
-    y: [0, -1, 0],
-    transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-export function IconGraduationCap({ 
+export function IconUtilityPole({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconGraduationCapProps) {
+}: IconUtilityPoleProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -63,16 +58,15 @@ export function IconGraduationCap({
       whileHover="hover"
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : capVariants}>
-        <path d="M22 10v6" />
-        <path d="M2 10l10-5 10 5-10 5z" />
-        <path d="M6 12v5c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-5" />
+      <motion.g variants={prefersReducedMotion ? {} : poleVariants} style={{ originX: "12px", originY: "22px" }}>
+        <path d="M12 2v20" />
+        <path d="M2 5h20" />
+        <path d="M3 3v2" />
+        <path d="M7 3v2" />
+        <path d="M17 3v2" />
+        <path d="M21 3v2" />
+        <path d="m19 5-7 7-7-7" />
       </motion.g>
-      <motion.path 
-        d="M22 10v6" 
-        variants={prefersReducedMotion ? {} : tasselVariants} 
-        style={{ originY: "10px" }}
-      />
     </motion.svg>
   );
 }

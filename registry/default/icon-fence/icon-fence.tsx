@@ -2,27 +2,19 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconGraduationCapProps extends React.SVGProps<SVGSVGElement> {
+export interface IconFenceProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const tasselVariants: Variants = {
-  rest: { rotate: 0 },
-  hover: {
-    rotate: [0, 15, -15, 10, -5, 0],
-    transition: {
-      duration: 1.2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
+const barVariants: Variants = {
+  rest: { 
+    pathLength: 1,
+    opacity: 1,
   },
-};
-
-const capVariants: Variants = {
-  rest: { y: 0 },
   hover: {
-    y: [0, -1, 0],
+    pathLength: [1, 0.8, 1],
+    opacity: [1, 0.7, 1],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -31,12 +23,12 @@ const capVariants: Variants = {
   },
 };
 
-export function IconGraduationCap({ 
+export function IconFence({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconGraduationCapProps) {
+}: IconFenceProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -63,16 +55,13 @@ export function IconGraduationCap({
       whileHover="hover"
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : capVariants}>
-        <path d="M22 10v6" />
-        <path d="M2 10l10-5 10 5-10 5z" />
-        <path d="M6 12v5c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-5" />
-      </motion.g>
-      <motion.path 
-        d="M22 10v6" 
-        variants={prefersReducedMotion ? {} : tasselVariants} 
-        style={{ originY: "10px" }}
-      />
+      <path d="M4 3 2 5v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z" />
+      <motion.path d="M6 8h4" variants={prefersReducedMotion ? {} : barVariants} />
+      <motion.path d="M6 18h4" variants={prefersReducedMotion ? {} : barVariants} />
+      <path d="m12 3-2 2v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z" />
+      <motion.path d="M14 8h4" variants={prefersReducedMotion ? {} : barVariants} />
+      <motion.path d="M14 18h4" variants={prefersReducedMotion ? {} : barVariants} />
+      <path d="m20 3-2 2v15c0 .6.4 1 1 1h2c.6 0 1-.4 1-1V5Z" />
     </motion.svg>
   );
 }

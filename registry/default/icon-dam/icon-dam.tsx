@@ -2,41 +2,36 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconGraduationCapProps extends React.SVGProps<SVGSVGElement> {
+export interface IconDamProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const tasselVariants: Variants = {
-  rest: { rotate: 0 },
-  hover: {
-    rotate: [0, 15, -15, 10, -5, 0],
+const waterVariants: Variants = {
+  rest: { 
+    x: 0,
     transition: {
-      duration: 1.2,
+      type: "spring",
+      stiffness: 300,
+      damping: 15
+    }
+  },
+  hover: {
+    x: [0, 1, -1, 0],
+    transition: {
+      duration: 2,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-const capVariants: Variants = {
-  rest: { y: 0 },
-  hover: {
-    y: [0, -1, 0],
-    transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-export function IconGraduationCap({ 
+export function IconDam({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconGraduationCapProps) {
+}: IconDamProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -63,16 +58,20 @@ export function IconGraduationCap({
       whileHover="hover"
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : capVariants}>
-        <path d="M22 10v6" />
-        <path d="M2 10l10-5 10 5-10 5z" />
-        <path d="M6 12v5c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-5" />
-      </motion.g>
       <motion.path 
-        d="M22 10v6" 
-        variants={prefersReducedMotion ? {} : tasselVariants} 
-        style={{ originY: "10px" }}
+        d="M11 11.31c1.17.56 1.54 1.69 3.5 1.69 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" 
+        variants={prefersReducedMotion ? {} : waterVariants}
       />
+      <motion.path 
+        d="M11.75 18c.35.5 1.45 1 2.75 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" 
+        variants={prefersReducedMotion ? {} : waterVariants}
+        transition={{ delay: 0.2 }}
+      />
+      <path d="M2 10h4" />
+      <path d="M2 14h4" />
+      <path d="M2 18h4" />
+      <path d="M2 6h4" />
+      <path d="M7 3a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1L10 4a1 1 0 0 0-1-1z" />
     </motion.svg>
   );
 }

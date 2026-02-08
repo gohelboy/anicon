@@ -400,6 +400,29 @@ import { IconRat } from "@/registry/default/icon-rat/icon-rat";
 import { IconShrimp } from "@/registry/default/icon-shrimp/icon-shrimp";
 import { IconSnail } from "@/registry/default/icon-snail/icon-snail";
 
+// Batch 19 Architecture & Construction
+import { IconBrickWall } from "@/registry/default/icon-brick-wall/icon-brick-wall";
+import { IconBuilding } from "@/registry/default/icon-building/icon-building";
+import { IconBuilding2 } from "@/registry/default/icon-building-2/icon-building-2";
+import { IconCastle } from "@/registry/default/icon-castle/icon-castle";
+import { IconChurch } from "@/registry/default/icon-church/icon-church";
+import { IconCuboid } from "@/registry/default/icon-cuboid/icon-cuboid";
+import { IconDam } from "@/registry/default/icon-dam/icon-dam";
+import { IconFactory } from "@/registry/default/icon-factory/icon-factory";
+import { IconFence } from "@/registry/default/icon-fence/icon-fence";
+import { IconHospital } from "@/registry/default/icon-hospital/icon-hospital";
+import { IconHotel } from "@/registry/default/icon-hotel/icon-hotel";
+import { IconHouse } from "@/registry/default/icon-house/icon-house";
+import { IconHouseHeart } from "@/registry/default/icon-house-heart/icon-house-heart";
+import { IconHousePlug } from "@/registry/default/icon-house-plug/icon-house-plug";
+import { IconHousePlus } from "@/registry/default/icon-house-plus/icon-house-plus";
+import { IconHouseWifi } from "@/registry/default/icon-house-wifi/icon-house-wifi";
+import { IconLibrary } from "@/registry/default/icon-library/icon-library";
+import { IconSchool } from "@/registry/default/icon-school/icon-school";
+import { IconTheater } from "@/registry/default/icon-theater/icon-theater";
+import { IconUtilityPole } from "@/registry/default/icon-utility-pole/icon-utility-pole";
+import { IconWarehouse } from "@/registry/default/icon-warehouse/icon-warehouse";
+
 import { IconTurtle } from "@/registry/default/icon-turtle/icon-turtle";
 import { IconWorm } from "@/registry/default/icon-worm/icon-worm";
 import { IconShell } from "@/registry/default/icon-shell/icon-shell";
@@ -3068,6 +3091,153 @@ export const iconsRegistry = [
     color: "text-pink-300",
     description: "Worm with a characteristic inching motion",
     tags: ["worm", "animal", "nature", "earth"],
+  },
+  {
+    name: "icon-brick-wall",
+    component: IconBrickWall,
+    color: "text-orange-400",
+    description: "Brick wall with sequential masonry-pulse animation",
+    tags: ["bricks", "wall", "construction", "architecture"],
+  },
+  {
+    name: "icon-building",
+    component: IconBuilding,
+    color: "text-amber-200",
+    description: "Office building with window illumination effects",
+    tags: ["building", "business", "city", "office"],
+  },
+  {
+    name: "icon-building-2",
+    component: IconBuilding2,
+    color: "text-zinc-300",
+    description: "Modern building with staggered window lights",
+    tags: ["building", "architecture", "city", "modern"],
+  },
+  {
+    name: "icon-castle",
+    component: IconCastle,
+    color: "text-zinc-400",
+    description: "Medieval castle with shifting towers and gate",
+    tags: ["castle", "fort", "history", "medieval"],
+  },
+  {
+    name: "icon-church",
+    component: IconChurch,
+    color: "text-zinc-300",
+    description: "Church icon with pulsing cross and door shift",
+    tags: ["church", "religion", "chapel", "architecture"],
+  },
+  {
+    name: "icon-cuboid",
+    component: IconCuboid,
+    color: "text-sky-300",
+    description: "3D cuboid with perspective and rotation animation",
+    tags: ["cuboid", "box", "3d", "geometry"],
+  },
+  {
+    name: "icon-dam",
+    component: IconDam,
+    color: "text-sky-500",
+    description: "Hydroelectric dam with moving water waves",
+    tags: ["dam", "water", "power", "engineering"],
+  },
+  {
+    name: "icon-factory",
+    component: IconFactory,
+    color: "text-zinc-400",
+    description: "Industrial factory with illuminating windows",
+    tags: ["factory", "industrial", "manufacturing", "production"],
+  },
+  {
+    name: "icon-fence",
+    component: IconFence,
+    color: "text-amber-700",
+    description: "Wooden fence with drawing horizontal bars",
+    tags: ["fence", "garden", "border", "property"],
+  },
+  {
+    name: "icon-hospital",
+    component: IconHospital,
+    color: "text-red-500",
+    description: "Medical hospital with pulsing emergency cross",
+    tags: ["hospital", "medical", "health", "emergency"],
+  },
+  {
+    name: "icon-hotel",
+    component: IconHotel,
+    color: "text-amber-200",
+    description: "Hotel building with illuminating window lights",
+    tags: ["hotel", "travel", "accommodation", "stay"],
+  },
+  {
+    name: "icon-house",
+    component: IconHouse,
+    color: "text-white",
+    description: "Standard house icon with moving door animation",
+    tags: ["house", "home", "residence", "architecture"],
+  },
+  {
+    name: "icon-house-heart",
+    component: IconHouseHeart,
+    color: "text-rose-400",
+    description: "House icon with a pulsing central heart",
+    tags: ["home", "love", "heart", "residence", "family"],
+  },
+  {
+    name: "icon-house-plug",
+    component: IconHousePlug,
+    color: "text-yellow-400",
+    description: "Energy-efficient house with pulsating plug",
+    tags: ["home", "electricity", "energy", "smart", "house"],
+  },
+  {
+    name: "icon-house-plus",
+    component: IconHousePlus,
+    color: "text-emerald-400",
+    description: "Expansion house icon with rotating plus sign",
+    tags: ["home", "add", "expansion", "new", "house"],
+  },
+  {
+    name: "icon-house-wifi",
+    component: IconHouseWifi,
+    color: "text-sky-400",
+    description: "Smart home icon with radiating wifi waves",
+    tags: ["home", "wifi", "internet", "smart", "connection"],
+  },
+  {
+    name: "icon-library",
+    component: IconLibrary,
+    color: "text-amber-800",
+    description: "Library shelves with tilting book animations",
+    tags: ["library", "books", "education", "study"],
+  },
+  {
+    name: "icon-school",
+    component: IconSchool,
+    color: "text-amber-200",
+    description: "School building with pulsing bell-circle",
+    tags: ["school", "education", "learning", "academy"],
+  },
+  {
+    name: "icon-theater",
+    component: IconTheater,
+    color: "text-rose-600",
+    description: "Theater icon with sliding stage curtains",
+    tags: ["theater", "drama", "cinema", "performance"],
+  },
+  {
+    name: "icon-utility-pole",
+    component: IconUtilityPole,
+    color: "text-zinc-500",
+    description: "Utility pole with a subtle structural hum",
+    tags: ["utility", "power", "electricity", "infrastructure"],
+  },
+  {
+    name: "icon-warehouse",
+    component: IconWarehouse,
+    color: "text-zinc-400",
+    description: "Industrial warehouse with roller door animation",
+    tags: ["warehouse", "storage", "industrial", "shipping"],
   },
 ] as const;
 

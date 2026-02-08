@@ -2,41 +2,32 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconGraduationCapProps extends React.SVGProps<SVGSVGElement> {
+export interface IconFactoryProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const tasselVariants: Variants = {
-  rest: { rotate: 0 },
-  hover: {
-    rotate: [0, 15, -15, 10, -5, 0],
+const windowVariants: Variants = {
+  rest: { 
+    opacity: 1,
+  },
+  hover: (i: number) => ({
+    opacity: [1, 0.3, 1],
     transition: {
       duration: 1.2,
       repeat: Infinity,
+      delay: i * 0.2,
       ease: "easeInOut",
     },
-  },
+  }),
 };
 
-const capVariants: Variants = {
-  rest: { y: 0 },
-  hover: {
-    y: [0, -1, 0],
-    transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-export function IconGraduationCap({ 
+export function IconFactory({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconGraduationCapProps) {
+}: IconFactoryProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -63,16 +54,10 @@ export function IconGraduationCap({
       whileHover="hover"
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : capVariants}>
-        <path d="M22 10v6" />
-        <path d="M2 10l10-5 10 5-10 5z" />
-        <path d="M6 12v5c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-5" />
-      </motion.g>
-      <motion.path 
-        d="M22 10v6" 
-        variants={prefersReducedMotion ? {} : tasselVariants} 
-        style={{ originY: "10px" }}
-      />
+      <motion.path d="M12 16h.01" variants={prefersReducedMotion ? {} : windowVariants} custom={0} />
+      <motion.path d="M16 16h.01" variants={prefersReducedMotion ? {} : windowVariants} custom={1} />
+      <motion.path d="M8 16h.01" variants={prefersReducedMotion ? {} : windowVariants} custom={2} />
+      <path d="M3 19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.5a.5.5 0 0 0-.769-.422l-4.462 2.844A.5.5 0 0 1 15 10.5v-2a.5.5 0 0 0-.769-.422L9.77 10.922A.5.5 0 0 1 9 10.5V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z" />
     </motion.svg>
   );
 }

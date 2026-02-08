@@ -2,41 +2,32 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconGraduationCapProps extends React.SVGProps<SVGSVGElement> {
+export interface IconHouseWifiProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const tasselVariants: Variants = {
-  rest: { rotate: 0 },
-  hover: {
-    rotate: [0, 15, -15, 10, -5, 0],
+const wifiVariants: Variants = {
+  rest: { 
+    opacity: 1,
+  },
+  hover: (i: number) => ({
+    opacity: [1, 0, 1],
     transition: {
-      duration: 1.2,
+      duration: 1,
       repeat: Infinity,
+      delay: i * 0.2,
       ease: "easeInOut",
     },
-  },
+  }),
 };
 
-const capVariants: Variants = {
-  rest: { y: 0 },
-  hover: {
-    y: [0, -1, 0],
-    transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-export function IconGraduationCap({ 
+export function IconHouseWifi({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconGraduationCapProps) {
+}: IconHouseWifiProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -63,16 +54,10 @@ export function IconGraduationCap({
       whileHover="hover"
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : capVariants}>
-        <path d="M22 10v6" />
-        <path d="M2 10l10-5 10 5-10 5z" />
-        <path d="M6 12v5c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-5" />
-      </motion.g>
-      <motion.path 
-        d="M22 10v6" 
-        variants={prefersReducedMotion ? {} : tasselVariants} 
-        style={{ originY: "10px" }}
-      />
+      <motion.path d="M9.5 13.866a4 4 0 0 1 5 .01" variants={prefersReducedMotion ? {} : wifiVariants} custom={1} />
+      <motion.path d="M12 17h.01" variants={prefersReducedMotion ? {} : wifiVariants} custom={0} />
+      <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+      <motion.path d="M7 10.754a8 8 0 0 1 10 0" variants={prefersReducedMotion ? {} : wifiVariants} custom={2} />
     </motion.svg>
   );
 }

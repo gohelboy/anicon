@@ -2,27 +2,19 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconGraduationCapProps extends React.SVGProps<SVGSVGElement> {
+export interface IconHousePlusProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const tasselVariants: Variants = {
-  rest: { rotate: 0 },
-  hover: {
-    rotate: [0, 15, -15, 10, -5, 0],
-    transition: {
-      duration: 1.2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
+const plusVariants: Variants = {
+  rest: { 
+    rotate: 0,
+    scale: 1,
   },
-};
-
-const capVariants: Variants = {
-  rest: { y: 0 },
   hover: {
-    y: [0, -1, 0],
+    rotate: [0, 90, 180],
+    scale: [1, 1.1, 1],
     transition: {
       duration: 1.5,
       repeat: Infinity,
@@ -31,12 +23,12 @@ const capVariants: Variants = {
   },
 };
 
-export function IconGraduationCap({ 
+export function IconHousePlus({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconGraduationCapProps) {
+}: IconHousePlusProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -63,16 +55,12 @@ export function IconGraduationCap({
       whileHover="hover"
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : capVariants}>
-        <path d="M22 10v6" />
-        <path d="M2 10l10-5 10 5-10 5z" />
-        <path d="M6 12v5c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2v-5" />
+      <path d="M12.35 21H5a2 2 0 0 1-2-2v-9a2 2 0 0 1 .71-1.53l7-6a2 2 0 0 1 2.58 0l7 6A2 2 0 0 1 21 10v2.35" />
+      <path d="M14.8 12.4A1 1 0 0 0 14 12h-4a1 1 0 0 0-1 1v8" />
+      <motion.g variants={prefersReducedMotion ? {} : plusVariants} style={{ originX: "18px", originY: "18px" }}>
+        <path d="M15 18h6" />
+        <path d="M18 15v6" />
       </motion.g>
-      <motion.path 
-        d="M22 10v6" 
-        variants={prefersReducedMotion ? {} : tasselVariants} 
-        style={{ originY: "10px" }}
-      />
     </motion.svg>
   );
 }
