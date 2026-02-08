@@ -254,6 +254,16 @@ import { IconComponent } from "@/registry/default/icon-component/icon-component"
 import { IconCommand } from "@/registry/default/icon-command/icon-command";
 import { IconBraces } from "@/registry/default/icon-braces/icon-braces";
 import { IconBug } from "@/registry/default/icon-bug/icon-bug";
+// Batch 8 Tech Industry Icons
+import { IconBlocks } from "@/registry/default/icon-blocks/icon-blocks";
+import { IconDatabaseZap } from "@/registry/default/icon-database-zap/icon-database-zap";
+import { IconLayers2 } from "@/registry/default/icon-layers-2/icon-layers-2";
+import { IconMousePointerClick } from "@/registry/default/icon-mouse-pointer-click/icon-mouse-pointer-click";
+import { IconRocket } from "@/registry/default/icon-rocket/icon-rocket";
+import { IconSettings2 } from "@/registry/default/icon-settings-2/icon-settings-2";
+import { IconShieldAlert } from "@/registry/default/icon-shield-alert/icon-shield-alert";
+import { IconWorkflow } from "@/registry/default/icon-workflow/icon-workflow";
+import { IconSparkles } from "@/registry/default/icon-sparkles/icon-sparkles";
 
 export const iconsRegistry = [
   {
@@ -1973,6 +1983,69 @@ export const iconsRegistry = [
     color: "text-rose-500",
     description: "Bug with debugging leg vibration and antennae wiggle",
     tags: ["bug", "debug", "issue", "error"],
+  },
+  {
+    name: "icon-blocks",
+    component: IconBlocks,
+    color: "text-blue-400",
+    description: "Modular blocks with sequential scaling animation",
+    tags: ["blocks", "modules", "components", "system"],
+  },
+  {
+    name: "icon-database-zap",
+    component: IconDatabaseZap,
+    color: "text-amber-500",
+    description: "Database with power zap pulse animation",
+    tags: ["database", "storage", "performance", "zap"],
+  },
+  {
+    name: "icon-layers-2",
+    component: IconLayers2,
+    color: "text-indigo-400",
+    description: "Stacked layers with lift-off animation",
+    tags: ["layers", "stack", "design", "ui"],
+  },
+  {
+    name: "icon-mouse-pointer-click",
+    component: IconMousePointerClick,
+    color: "text-zinc-500",
+    description: "Mouse pointer with interaction ripple effect",
+    tags: ["mouse", "pointer", "click", "interaction"],
+  },
+  {
+    name: "icon-rocket",
+    component: IconRocket,
+    color: "text-orange-500",
+    description: "Rocket ship with vibration and thrust animation",
+    tags: ["rocket", "launch", "startup", "speed"],
+  },
+  {
+    name: "icon-settings-2",
+    component: IconSettings2,
+    color: "text-zinc-400",
+    description: "Settings with rotating configuration nodes",
+    tags: ["settings", "config", "options", "setup"],
+  },
+  {
+    name: "icon-shield-alert",
+    component: IconShieldAlert,
+    color: "text-rose-500",
+    description: "Security shield with vibration alert animation",
+    tags: ["shield", "security", "alert", "threat"],
+  },
+  {
+    name: "icon-workflow",
+    component: IconWorkflow,
+    color: "text-emerald-500",
+    description: "Workflow process with drawing connectors",
+    tags: ["workflow", "process", "automation", "steps"],
+  },
+  {
+    name: "icon-sparkles",
+    component: IconSparkles,
+    color: "text-amber-400",
+    description: "Sparkles with sequential magic glow effect",
+    tags: ["sparkles", "magic", "ai", "stars"],
   },
 ] as const;
 

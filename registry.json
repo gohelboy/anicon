@@ -3662,6 +3662,141 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-blocks",
+      "type": "registry:component",
+      "title": "Animated Blocks",
+      "description": "Modular blocks with sequential scaling animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-blocks/icon-blocks.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-database-zap",
+      "type": "registry:component",
+      "title": "Animated Database Zap",
+      "description": "Database with power zap pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-database-zap/icon-database-zap.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-layers-2",
+      "type": "registry:component",
+      "title": "Animated Layers 2",
+      "description": "Stacked layers with lift-off animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-layers-2/icon-layers-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-mouse-pointer-click",
+      "type": "registry:component",
+      "title": "Animated Mouse Pointer Click",
+      "description": "Mouse pointer with interaction ripple effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-mouse-pointer-click/icon-mouse-pointer-click.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-rocket",
+      "type": "registry:component",
+      "title": "Animated Rocket",
+      "description": "Rocket ship with vibration and thrust animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-rocket/icon-rocket.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-settings-2",
+      "type": "registry:component",
+      "title": "Animated Settings 2",
+      "description": "Settings with rotating configuration nodes.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-settings-2/icon-settings-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shield-alert",
+      "type": "registry:component",
+      "title": "Animated Shield Alert",
+      "description": "Security shield with vibration alert animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shield-alert/icon-shield-alert.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-workflow",
+      "type": "registry:component",
+      "title": "Animated Workflow",
+      "description": "Workflow process with drawing connectors.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-workflow/icon-workflow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sparkles",
+      "type": "registry:component",
+      "title": "Animated Sparkles",
+      "description": "Sparkles with sequential magic glow effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sparkles/icon-sparkles.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
