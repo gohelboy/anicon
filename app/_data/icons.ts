@@ -275,6 +275,17 @@ import { IconUsers } from "@/registry/default/icon-users/icon-users";
 import { IconDollarSign } from "@/registry/default/icon-dollar-sign/icon-dollar-sign";
 import { IconWallet } from "@/registry/default/icon-wallet/icon-wallet";
 import { IconPanelsTopLeft } from "@/registry/default/icon-panels-top-left/icon-panels-top-left";
+// Batch 10 E-Commerce & Media Icons
+import { IconTag } from "@/registry/default/icon-tag/icon-tag";
+import { IconTicket } from "@/registry/default/icon-ticket/icon-ticket";
+import { IconQrCode } from "@/registry/default/icon-qr-code/icon-qr-code";
+import { IconBarcode } from "@/registry/default/icon-barcode/icon-barcode";
+import { IconStore } from "@/registry/default/icon-store/icon-store";
+import { IconBanknote } from "@/registry/default/icon-banknote/icon-banknote";
+import { IconCoins } from "@/registry/default/icon-coins/icon-coins";
+import { IconPackage } from "@/registry/default/icon-package/icon-package";
+import { IconClapperboard } from "@/registry/default/icon-clapperboard/icon-clapperboard";
+import { IconFrame } from "@/registry/default/icon-frame/icon-frame";
 
 export const iconsRegistry = [
   {
@@ -2126,6 +2137,77 @@ export const iconsRegistry = [
     component: IconPanelsTopLeft,
     color: "text-blue-600",
     description: "Panels with layout shift sliding animation",
+    tags: ["panels", "layout", "sidebar", "dashboard"],
+  },
+  {
+    name: "icon-tag",
+    component: IconTag,
+    color: "text-rose-500",
+    description: "Price tag with playful label swing animation",
+    tags: ["tag", "price", "commerce", "label"],
+  },
+  {
+    name: "icon-ticket",
+    component: IconTicket,
+    color: "text-amber-500",
+    description: "Ticket with event-ready bob and tilt animation",
+    tags: ["ticket", "event", "pass", "booking"],
+  },
+  {
+    name: "icon-qr-code",
+    component: IconQrCode,
+    color: "text-zinc-800",
+    description: "QR code with matrix pulse and flicker effect",
+    tags: ["qr", "code", "scan", "digital"],
+  },
+  {
+    name: "icon-barcode",
+    component: IconBarcode,
+    color: "text-zinc-900",
+    description: "Barcode with interactive laser scan laser effect",
+    tags: ["barcode", "scan", "product", "sku"],
+  },
+  {
+    name: "icon-store",
+    component: IconStore,
+    color: "text-blue-500",
+    description: "Storefront with interactive door swing animation",
+    tags: ["store", "shop", "commerce", "business"],
+  },
+  {
+    name: "icon-banknote",
+    component: IconBanknote,
+    color: "text-emerald-600",
+    description: "Banknote with currency ripple and pulse effect",
+    tags: ["banknote", "cash", "money", "finance"],
+  },
+  {
+    name: "icon-coins",
+    component: IconCoins,
+    color: "text-amber-400",
+    description: "Coins stack with interactive jingle and sparkle",
+    tags: ["coins", "cash", "money", "finance"],
+  },
+  {
+    name: "icon-package",
+    component: IconPackage,
+    color: "text-orange-600",
+    description: "Package with interactive opening lid pulse",
+    tags: ["package", "box", "shipping", "delivery"],
+  },
+  {
+    name: "icon-clapperboard",
+    component: IconClapperboard,
+    color: "text-zinc-900",
+    description: "Clapperboard with movie-start snap animation",
+    tags: ["clapperboard", "movie", "video", "production"],
+  },
+  {
+    name: "icon-frame",
+    component: IconFrame,
+    color: "text-indigo-500",
+    description: "Design frame with border drawing animation",
+    tags: ["frame", "design", "layout", "border"],
   },
 ] as const;
 

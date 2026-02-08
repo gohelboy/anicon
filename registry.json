@@ -3947,6 +3947,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-tag",
+      "type": "registry:component",
+      "title": "Animated Tag",
+      "description": "Price tag with playful label swing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-tag/icon-tag.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ticket",
+      "type": "registry:component",
+      "title": "Animated Ticket",
+      "description": "Ticket with event-ready bob and tilt animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ticket/icon-ticket.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-qr-code",
+      "type": "registry:component",
+      "title": "Animated Qr Code",
+      "description": "QR code with matrix pulse and flicker effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-qr-code/icon-qr-code.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-barcode",
+      "type": "registry:component",
+      "title": "Animated Barcode",
+      "description": "Barcode with interactive laser scan laser effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-barcode/icon-barcode.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-store",
+      "type": "registry:component",
+      "title": "Animated Store",
+      "description": "Storefront with interactive door swing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-store/icon-store.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-banknote",
+      "type": "registry:component",
+      "title": "Animated Banknote",
+      "description": "Banknote with currency ripple and pulse effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-banknote/icon-banknote.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-coins",
+      "type": "registry:component",
+      "title": "Animated Coins",
+      "description": "Coins stack with interactive jingle and sparkle.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-coins/icon-coins.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-package",
+      "type": "registry:component",
+      "title": "Animated Package",
+      "description": "Package with interactive opening lid pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-package/icon-package.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clapperboard",
+      "type": "registry:component",
+      "title": "Animated Clapperboard",
+      "description": "Clapperboard with movie-start snap animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clapperboard/icon-clapperboard.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-frame",
+      "type": "registry:component",
+      "title": "Animated Frame",
+      "description": "Design frame with border drawing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-frame/icon-frame.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
