@@ -2,33 +2,36 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMoonProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCloudRainWindProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const moonVariants: Variants = {
+const rainVariants: Variants = {
   rest: { 
-    rotate: 0,
-    scale: 1,
+    x: 0,
+    y: 0,
+    opacity: 1,
   },
-  hover: {
-    rotate: [0, -10, 0],
-    scale: [1, 1.05, 1],
+  hover: (i: number) => ({
+    x: -2,
+    y: 5,
+    opacity: [1, 0, 0, 1],
     transition: {
-      duration: 2,
+      duration: 1.2,
       repeat: Infinity,
-      ease: "easeInOut",
+      delay: i * 0.2,
+      ease: "easeIn",
     },
-  },
+  }),
 };
 
-export function IconMoon({ 
+export function IconCloudRainWind({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconMoonProps) {
+}: IconCloudRainWindProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -55,10 +58,21 @@ export function IconMoon({
       whileHover="hover"
       {...rest}
     >
+      <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
       <motion.path 
-        d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" 
-        variants={prefersReducedMotion ? {} : moonVariants}
-        style={{ originX: "12px", originY: "12px" }}
+        d="m9.2 22 3-7" 
+        variants={prefersReducedMotion ? {} : rainVariants} 
+        custom={0}
+      />
+      <motion.path 
+        d="m9 13-3 7" 
+        variants={prefersReducedMotion ? {} : rainVariants} 
+        custom={1}
+      />
+      <motion.path 
+        d="m17 13-3 7" 
+        variants={prefersReducedMotion ? {} : rainVariants} 
+        custom={2}
       />
     </motion.svg>
   );

@@ -6002,6 +6002,321 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-cloud-drizzle",
+      "type": "registry:component",
+      "title": "Animated Cloud Drizzle",
+      "description": "Cloud with gentle drizzle animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-drizzle/icon-cloud-drizzle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloud-fog",
+      "type": "registry:component",
+      "title": "Animated Cloud Fog",
+      "description": "Cloud with drifting fog animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-fog/icon-cloud-fog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloud-off",
+      "type": "registry:component",
+      "title": "Animated Cloud Off",
+      "description": "Cloud with cross-out animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-off/icon-cloud-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloud-rain-wind",
+      "type": "registry:component",
+      "title": "Animated Cloud Rain Wind",
+      "description": "Cloud with rain and wind animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-rain-wind/icon-cloud-rain-wind.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloud-snow",
+      "type": "registry:component",
+      "title": "Animated Cloud Snow",
+      "description": "Cloud with falling snow animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-snow/icon-cloud-snow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloud-sun",
+      "type": "registry:component",
+      "title": "Animated Cloud Sun",
+      "description": "Cloud with sun revealing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-sun/icon-cloud-sun.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloud-sun-rain",
+      "type": "registry:component",
+      "title": "Animated Cloud Sun Rain",
+      "description": "Cloud with sun and rain animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloud-sun-rain/icon-cloud-sun-rain.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cloudy",
+      "type": "registry:component",
+      "title": "Animated Cloudy",
+      "description": "Cloud with drifting animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cloudy/icon-cloudy.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-droplets",
+      "type": "registry:component",
+      "title": "Animated Droplets",
+      "description": "Droplets with falling animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-droplets/icon-droplets.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-haze",
+      "type": "registry:component",
+      "title": "Animated Haze",
+      "description": "Haze with shimmering animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-haze/icon-haze.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-moon",
+      "type": "registry:component",
+      "title": "Animated Moon",
+      "description": "Moon with subtle sway animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-moon/icon-moon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-rainbow",
+      "type": "registry:component",
+      "title": "Animated Rainbow",
+      "description": "Rainbow with arc drawing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-rainbow/icon-rainbow.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sunrise",
+      "type": "registry:component",
+      "title": "Animated Sunrise",
+      "description": "Sunrise with rising sun animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sunrise/icon-sunrise.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sunset",
+      "type": "registry:component",
+      "title": "Animated Sunset",
+      "description": "Sunset with setting sun animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sunset/icon-sunset.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-thermometer-snowflake",
+      "type": "registry:component",
+      "title": "Animated Thermometer Snowflake",
+      "description": "Thermometer with snowflake animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-thermometer-snowflake/icon-thermometer-snowflake.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-thermometer-sun",
+      "type": "registry:component",
+      "title": "Animated Thermometer Sun",
+      "description": "Thermometer with sun animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-thermometer-sun/icon-thermometer-sun.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-tornado",
+      "type": "registry:component",
+      "title": "Animated Tornado",
+      "description": "Tornado with spinning animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-tornado/icon-tornado.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-umbrella-off",
+      "type": "registry:component",
+      "title": "Animated Umbrella Off",
+      "description": "Umbrella with cross-out animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-umbrella-off/icon-umbrella-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-waves",
+      "type": "registry:component",
+      "title": "Animated Waves",
+      "description": "Waves with flowing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-waves/icon-waves.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-wind",
+      "type": "registry:component",
+      "title": "Animated Wind",
+      "description": "Wind with blowing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-wind/icon-wind.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-zap-off",
+      "type": "registry:component",
+      "title": "Animated Zap Off",
+      "description": "Lightning with cross-out animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-zap-off/icon-zap-off.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

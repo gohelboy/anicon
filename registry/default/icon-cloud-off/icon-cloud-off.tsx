@@ -2,33 +2,33 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMoonProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCloudOffProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const moonVariants: Variants = {
+const slashVariants: Variants = {
   rest: { 
-    rotate: 0,
-    scale: 1,
+    pathLength: 1,
+    opacity: 1,
   },
   hover: {
-    rotate: [0, -10, 0],
-    scale: [1, 1.05, 1],
+    pathLength: [1, 0.5, 1],
+    opacity: [1, 0.5, 1],
     transition: {
-      duration: 2,
+      duration: 1.5,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-export function IconMoon({ 
+export function IconCloudOff({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconMoonProps) {
+}: IconCloudOffProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -55,11 +55,10 @@ export function IconMoon({
       whileHover="hover"
       {...rest}
     >
-      <motion.path 
-        d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" 
-        variants={prefersReducedMotion ? {} : moonVariants}
-        style={{ originX: "12px", originY: "12px" }}
-      />
+      <motion.path d="m2 2 20 20" variants={prefersReducedMotion ? {} : slashVariants} />
+      <path d="M5.782 5.782A7 7 0 0 0 9 19h8.5a4.5 4.5 0 0 0 1.307-.193" />
+      <path d="M21.532 16.5A4.5 4.5 0 0 0 17.5 10c-.235 0-.463.029-.683.084" />
+      <path d="M11.359 6.236A6 6 0 0 1 15 4a6 6 0 0 1 6 6" />
     </motion.svg>
   );
 }

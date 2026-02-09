@@ -2,33 +2,32 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMoonProps extends React.SVGProps<SVGSVGElement> {
+export interface IconTornadoProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const moonVariants: Variants = {
+const tornadoVariants: Variants = {
   rest: { 
-    rotate: 0,
-    scale: 1,
+    x: 0,
   },
-  hover: {
-    rotate: [0, -10, 0],
-    scale: [1, 1.05, 1],
+  hover: (i: number) => ({
+    x: [-3, 3, -3],
     transition: {
-      duration: 2,
+      duration: 0.5,
       repeat: Infinity,
-      ease: "easeInOut",
+      delay: i * 0.1,
+      ease: "linear",
     },
-  },
+  }),
 };
 
-export function IconMoon({ 
+export function IconTornado({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconMoonProps) {
+}: IconTornadoProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -55,11 +54,11 @@ export function IconMoon({
       whileHover="hover"
       {...rest}
     >
-      <motion.path 
-        d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" 
-        variants={prefersReducedMotion ? {} : moonVariants}
-        style={{ originX: "12px", originY: "12px" }}
-      />
+      <motion.path d="M21 4H3" variants={prefersReducedMotion ? {} : tornadoVariants} custom={0} />
+      <motion.path d="M18 8H6" variants={prefersReducedMotion ? {} : tornadoVariants} custom={1} />
+      <motion.path d="M19 12H9" variants={prefersReducedMotion ? {} : tornadoVariants} custom={2} />
+      <motion.path d="M16 16h-6" variants={prefersReducedMotion ? {} : tornadoVariants} custom={3} />
+      <motion.path d="M11 20H9" variants={prefersReducedMotion ? {} : tornadoVariants} custom={4} />
     </motion.svg>
   );
 }
