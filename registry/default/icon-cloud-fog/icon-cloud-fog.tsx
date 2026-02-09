@@ -2,33 +2,32 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMoonProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCloudFogProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const moonVariants: Variants = {
+const fogVariants: Variants = {
   rest: { 
-    rotate: 0,
-    scale: 1,
+    x: 0,
   },
-  hover: {
-    rotate: [0, -10, 0],
-    scale: [1, 1.05, 1],
+  hover: (i: number) => ({
+    x: [0, 4, 0],
     transition: {
-      duration: 2,
+      duration: 3,
       repeat: Infinity,
+      delay: i * 0.5,
       ease: "easeInOut",
     },
-  },
+  }),
 };
 
-export function IconMoon({ 
+export function IconCloudFog({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconMoonProps) {
+}: IconCloudFogProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -55,10 +54,16 @@ export function IconMoon({
       whileHover="hover"
       {...rest}
     >
+      <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
       <motion.path 
-        d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" 
-        variants={prefersReducedMotion ? {} : moonVariants}
-        style={{ originX: "12px", originY: "12px" }}
+        d="M16 17H7" 
+        variants={prefersReducedMotion ? {} : fogVariants} 
+        custom={0}
+      />
+      <motion.path 
+        d="M17 21H9" 
+        variants={prefersReducedMotion ? {} : fogVariants} 
+        custom={1}
       />
     </motion.svg>
   );

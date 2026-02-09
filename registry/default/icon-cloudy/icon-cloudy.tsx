@@ -2,33 +2,31 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMoonProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCloudyProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const moonVariants: Variants = {
+const cloudVariants: Variants = {
   rest: { 
-    rotate: 0,
-    scale: 1,
+    x: 0,
   },
   hover: {
-    rotate: [0, -10, 0],
-    scale: [1, 1.05, 1],
+    x: [-2, 2, -2],
     transition: {
-      duration: 2,
+      duration: 3,
       repeat: Infinity,
       ease: "easeInOut",
     },
   },
 };
 
-export function IconMoon({ 
+export function IconCloudy({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconMoonProps) {
+}: IconCloudyProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -56,9 +54,17 @@ export function IconMoon({
       {...rest}
     >
       <motion.path 
-        d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" 
-        variants={prefersReducedMotion ? {} : moonVariants}
-        style={{ originX: "12px", originY: "12px" }}
+        d="M17.5 12a1 1 0 1 1 0 9H9.006a7 7 0 1 1 6.702-9z" 
+        variants={prefersReducedMotion ? {} : cloudVariants}
+      />
+      <motion.path 
+        d="M21.832 9A3 3 0 0 0 19 7h-2.207a5.5 5.5 0 0 0-10.72.61" 
+        animate={prefersReducedMotion ? {} : { x: [2, -2, 2] }}
+        transition={{
+          duration: 3,
+          repeat: Infinity,
+          ease: "easeInOut",
+        }}
       />
     </motion.svg>
   );

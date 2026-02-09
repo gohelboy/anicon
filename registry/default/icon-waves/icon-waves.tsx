@@ -2,33 +2,32 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconMoonProps extends React.SVGProps<SVGSVGElement> {
+export interface IconWavesProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const moonVariants: Variants = {
+const waveVariants: Variants = {
   rest: { 
-    rotate: 0,
-    scale: 1,
+    x: 0,
   },
-  hover: {
-    rotate: [0, -10, 0],
-    scale: [1, 1.05, 1],
+  hover: (i: number) => ({
+    x: [-3, 3, -3],
     transition: {
-      duration: 2,
+      duration: 3,
       repeat: Infinity,
+      delay: i * 0.4,
       ease: "easeInOut",
     },
-  },
+  }),
 };
 
-export function IconMoon({ 
+export function IconWaves({ 
   size = 24, 
   strokeWidth = 2, 
   className,
   ...props 
-}: IconMoonProps) {
+}: IconWavesProps) {
   const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
@@ -56,9 +55,19 @@ export function IconMoon({
       {...rest}
     >
       <motion.path 
-        d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" 
-        variants={prefersReducedMotion ? {} : moonVariants}
-        style={{ originX: "12px", originY: "12px" }}
+        d="M2 6c.6.5 1.2 1 2.5 1C7 7 7 5 9.5 5c2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" 
+        variants={prefersReducedMotion ? {} : waveVariants} 
+        custom={0} 
+      />
+      <motion.path 
+        d="M2 12c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" 
+        variants={prefersReducedMotion ? {} : waveVariants} 
+        custom={1} 
+      />
+      <motion.path 
+        d="M2 18c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.6 0 2.4 2 5 2 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1" 
+        variants={prefersReducedMotion ? {} : waveVariants} 
+        custom={2} 
       />
     </motion.svg>
   );

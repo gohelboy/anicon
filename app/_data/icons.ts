@@ -1,105 +1,24 @@
-import { IconArrowDown } from "@/registry/default/icon-arrow-down/icon-arrow-down";
-import { IconArrowLeft } from "@/registry/default/icon-arrow-left/icon-arrow-left";
-import { IconArrowRight } from "@/registry/default/icon-arrow-right/icon-arrow-right";
-import { IconArrowUp } from "@/registry/default/icon-arrow-up/icon-arrow-up";
 import { IconAArrowDown } from "@/registry/default/icon-a-arrow-down/icon-a-arrow-down";
 import { IconAArrowUp } from "@/registry/default/icon-a-arrow-up/icon-a-arrow-up";
 import { IconALargeSmall } from "@/registry/default/icon-a-large-small/icon-a-large-small";
 import { IconAccessibility } from "@/registry/default/icon-accessibility/icon-accessibility";
-import { IconActivity } from "@/registry/default/icon-activity/icon-activity";
 import { IconActivitySquare } from "@/registry/default/icon-activity-square/icon-activity-square";
+import { IconActivity } from "@/registry/default/icon-activity/icon-activity";
 import { IconAirVent } from "@/registry/default/icon-air-vent/icon-air-vent";
 import { IconAirplay } from "@/registry/default/icon-airplay/icon-airplay";
-import { IconAmphora } from "@/registry/default/icon-amphora/icon-amphora";
-import { IconArchive } from "@/registry/default/icon-archive/icon-archive";
-import { IconArchiveRestore } from "@/registry/default/icon-archive-restore/icon-archive-restore";
-import { IconArchiveX } from "@/registry/default/icon-archive-x/icon-archive-x";
-import { IconAreaChart } from "@/registry/default/icon-area-chart/icon-area-chart";
-import { IconArmchair } from "@/registry/default/icon-armchair/icon-armchair";
-import { IconArrowBigDown } from "@/registry/default/icon-arrow-big-down/icon-arrow-big-down";
-import { IconArrowBigDownDash } from "@/registry/default/icon-arrow-big-down-dash/icon-arrow-big-down-dash";
-import { IconArrowBigLeft } from "@/registry/default/icon-arrow-big-left/icon-arrow-big-left";
-import { IconArrowBigLeftDash } from "@/registry/default/icon-arrow-big-left-dash/icon-arrow-big-left-dash";
-import { IconArrowBigRight } from "@/registry/default/icon-arrow-big-right/icon-arrow-big-right";
-import { IconArrowBigRightDash } from "@/registry/default/icon-arrow-big-right-dash/icon-arrow-big-right-dash";
-import { IconArrowBigUp } from "@/registry/default/icon-arrow-big-up/icon-arrow-big-up";
-import { IconArrowBigUpDash } from "@/registry/default/icon-arrow-big-up-dash/icon-arrow-big-up-dash";
-import { IconArrowDown10 } from "@/registry/default/icon-arrow-down-1-0/icon-arrow-down-1-0";
-import { IconArrowDown10Alt } from "@/registry/default/icon-arrow-down-10/icon-arrow-down-10";
-import { IconArrowDownAZ } from "@/registry/default/icon-arrow-down-a-z/icon-arrow-down-a-z";
-import { IconArrowDownAZAlt } from "@/registry/default/icon-arrow-down-az/icon-arrow-down-az";
-import { IconArrowDown01 } from "@/registry/default/icon-arrow-down-0-1/icon-arrow-down-0-1";
-import { IconArrowDown01Alt } from "@/registry/default/icon-arrow-down-01/icon-arrow-down-01";
-import { IconArrowDownCircle } from "@/registry/default/icon-arrow-down-circle/icon-arrow-down-circle";
-import { IconArrowDownFromLine } from "@/registry/default/icon-arrow-down-from-line/icon-arrow-down-from-line";
-import { IconArrowDownLeft } from "@/registry/default/icon-arrow-down-left/icon-arrow-down-left";
-import { IconArrowDownLeftFromCircle } from "@/registry/default/icon-arrow-down-left-from-circle/icon-arrow-down-left-from-circle";
-import { IconArrowDownLeftFromSquare } from "@/registry/default/icon-arrow-down-left-from-square/icon-arrow-down-left-from-square";
-import { IconArrowDownLeftSquare } from "@/registry/default/icon-arrow-down-left-square/icon-arrow-down-left-square";
-import { IconArrowDownNarrowWide } from "@/registry/default/icon-arrow-down-narrow-wide/icon-arrow-down-narrow-wide";
-import { IconArrowDownRight } from "@/registry/default/icon-arrow-down-right/icon-arrow-down-right";
-import { IconArrowDownRightFromCircle } from "@/registry/default/icon-arrow-down-right-from-circle/icon-arrow-down-right-from-circle";
-import { IconArrowDownRightFromSquare } from "@/registry/default/icon-arrow-down-right-from-square/icon-arrow-down-right-from-square";
-import { IconArrowDownRightSquare } from "@/registry/default/icon-arrow-down-right-square/icon-arrow-down-right-square";
-import { IconArrowDownSquare } from "@/registry/default/icon-arrow-down-square/icon-arrow-down-square";
-import { IconArrowDownToDot } from "@/registry/default/icon-arrow-down-to-dot/icon-arrow-down-to-dot";
-import { IconArrowDownToLine } from "@/registry/default/icon-arrow-down-to-line/icon-arrow-down-to-line";
-import { IconArrowDownUp } from "@/registry/default/icon-arrow-down-up/icon-arrow-down-up";
-import { IconArrowDownWideNarrow } from "@/registry/default/icon-arrow-down-wide-narrow/icon-arrow-down-wide-narrow";
-import { IconArrowDownZA } from "@/registry/default/icon-arrow-down-z-a/icon-arrow-down-z-a";
-import { IconArrowDownZAAlt } from "@/registry/default/icon-arrow-down-za/icon-arrow-down-za";
-import { IconArrowLeftCircle } from "@/registry/default/icon-arrow-left-circle/icon-arrow-left-circle";
-import { IconArrowLeftFromLine } from "@/registry/default/icon-arrow-left-from-line/icon-arrow-left-from-line";
-import { IconArrowLeftRight } from "@/registry/default/icon-arrow-left-right/icon-arrow-left-right";
-import { IconArrowLeftSquare } from "@/registry/default/icon-arrow-left-square/icon-arrow-left-square";
-import { IconArrowLeftToLine } from "@/registry/default/icon-arrow-left-to-line/icon-arrow-left-to-line";
-import { IconArrowRightCircle } from "@/registry/default/icon-arrow-right-circle/icon-arrow-right-circle";
-import { IconArrowRightFromLine } from "@/registry/default/icon-arrow-right-from-line/icon-arrow-right-from-line";
-import { IconArrowRightLeft } from "@/registry/default/icon-arrow-right-left/icon-arrow-right-left";
-import { IconArrowRightSquare } from "@/registry/default/icon-arrow-right-square/icon-arrow-right-square";
-import { IconArrowRightToLine } from "@/registry/default/icon-arrow-right-to-line/icon-arrow-right-to-line";
-import { IconArrowUp01 } from "@/registry/default/icon-arrow-up-0-1/icon-arrow-up-0-1";
-import { IconArrowUp01Alt } from "@/registry/default/icon-arrow-up-01/icon-arrow-up-01";
-import { IconArrowUp10 } from "@/registry/default/icon-arrow-up-1-0/icon-arrow-up-1-0";
-import { IconArrowUp10Alt } from "@/registry/default/icon-arrow-up-10/icon-arrow-up-10";
-import { IconArrowUpAZ } from "@/registry/default/icon-arrow-up-a-z/icon-arrow-up-a-z";
-import { IconArrowUpAZAlt } from "@/registry/default/icon-arrow-up-az/icon-arrow-up-az";
-import { IconArrowUpCircle } from "@/registry/default/icon-arrow-up-circle/icon-arrow-up-circle";
-import { IconArrowUpDown } from "@/registry/default/icon-arrow-up-down/icon-arrow-up-down";
-import { IconArrowUpFromDot } from "@/registry/default/icon-arrow-up-from-dot/icon-arrow-up-from-dot";
-import { IconArrowUpFromLine } from "@/registry/default/icon-arrow-up-from-line/icon-arrow-up-from-line";
-import { IconArrowUpLeft } from "@/registry/default/icon-arrow-up-left/icon-arrow-up-left";
-import { IconArrowUpLeftFromCircle } from "@/registry/default/icon-arrow-up-left-from-circle/icon-arrow-up-left-from-circle";
-import { IconArrowUpLeftFromSquare } from "@/registry/default/icon-arrow-up-left-from-square/icon-arrow-up-left-from-square";
-import { IconArrowUpLeftSquare } from "@/registry/default/icon-arrow-up-left-square/icon-arrow-up-left-square";
-import { IconArrowUpNarrowWide } from "@/registry/default/icon-arrow-up-narrow-wide/icon-arrow-up-narrow-wide";
-import { IconArrowUpRight } from "@/registry/default/icon-arrow-up-right/icon-arrow-up-right";
-import { IconArrowUpRightFromCircle } from "@/registry/default/icon-arrow-up-right-from-circle/icon-arrow-up-right-from-circle";
-import { IconArrowUpRightFromSquare } from "@/registry/default/icon-arrow-up-right-from-square/icon-arrow-up-right-from-square";
-import { IconArrowUpRightSquare } from "@/registry/default/icon-arrow-up-right-square/icon-arrow-up-right-square";
-import { IconArrowUpSquare } from "@/registry/default/icon-arrow-up-square/icon-arrow-up-square";
-import { IconAlarmClock } from "@/registry/default/icon-alarm-clock/icon-alarm-clock";
 import { IconAlarmClockCheck } from "@/registry/default/icon-alarm-clock-check/icon-alarm-clock-check";
 import { IconAlarmClockMinus } from "@/registry/default/icon-alarm-clock-minus/icon-alarm-clock-minus";
 import { IconAlarmClockOff } from "@/registry/default/icon-alarm-clock-off/icon-alarm-clock-off";
 import { IconAlarmClockPlus } from "@/registry/default/icon-alarm-clock-plus/icon-alarm-clock-plus";
+import { IconAlarmClock } from "@/registry/default/icon-alarm-clock/icon-alarm-clock";
 import { IconAlarmSmoke } from "@/registry/default/icon-alarm-smoke/icon-alarm-smoke";
-import { IconAnchor } from "@/registry/default/icon-anchor/icon-anchor";
-import { IconAngry } from "@/registry/default/icon-angry/icon-angry";
-import { IconAnnoyed } from "@/registry/default/icon-annoyed/icon-annoyed";
-import { IconAntenna } from "@/registry/default/icon-antenna/icon-antenna";
-import { IconAnvil } from "@/registry/default/icon-anvil/icon-anvil";
-import { IconAperture } from "@/registry/default/icon-aperture/icon-aperture";
-import { IconAppWindow } from "@/registry/default/icon-app-window/icon-app-window";
-import { IconAppWindowMac } from "@/registry/default/icon-app-window-mac/icon-app-window-mac";
-import { IconApple } from "@/registry/default/icon-apple/icon-apple";
 import { IconAlbum } from "@/registry/default/icon-album/icon-album";
 import { IconAlertCircle } from "@/registry/default/icon-alert-circle/icon-alert-circle";
 import { IconAlertOctagon } from "@/registry/default/icon-alert-octagon/icon-alert-octagon";
 import { IconAlertTriangle } from "@/registry/default/icon-alert-triangle/icon-alert-triangle";
-import { IconAlignCenter } from "@/registry/default/icon-align-center/icon-align-center";
 import { IconAlignCenterHorizontal } from "@/registry/default/icon-align-center-horizontal/icon-align-center-horizontal";
 import { IconAlignCenterVertical } from "@/registry/default/icon-align-center-vertical/icon-align-center-vertical";
+import { IconAlignCenter } from "@/registry/default/icon-align-center/icon-align-center";
 import { IconAlignEndHorizontal } from "@/registry/default/icon-align-end-horizontal/icon-align-end-horizontal";
 import { IconAlignEndVertical } from "@/registry/default/icon-align-end-vertical/icon-align-end-vertical";
 import { IconAlignHorizontalDistributeCenter } from "@/registry/default/icon-align-horizontal-distribute-center/icon-align-horizontal-distribute-center";
@@ -126,6 +45,87 @@ import { IconAlignVerticalSpaceBetween } from "@/registry/default/icon-align-ver
 import { IconAmbulance } from "@/registry/default/icon-ambulance/icon-ambulance";
 import { IconAmpersand } from "@/registry/default/icon-ampersand/icon-ampersand";
 import { IconAmpersands } from "@/registry/default/icon-ampersands/icon-ampersands";
+import { IconAmphora } from "@/registry/default/icon-amphora/icon-amphora";
+import { IconAnchor } from "@/registry/default/icon-anchor/icon-anchor";
+import { IconAngry } from "@/registry/default/icon-angry/icon-angry";
+import { IconAnnoyed } from "@/registry/default/icon-annoyed/icon-annoyed";
+import { IconAntenna } from "@/registry/default/icon-antenna/icon-antenna";
+import { IconAnvil } from "@/registry/default/icon-anvil/icon-anvil";
+import { IconAperture } from "@/registry/default/icon-aperture/icon-aperture";
+import { IconAppWindowMac } from "@/registry/default/icon-app-window-mac/icon-app-window-mac";
+import { IconAppWindow } from "@/registry/default/icon-app-window/icon-app-window";
+import { IconApple } from "@/registry/default/icon-apple/icon-apple";
+import { IconArchiveRestore } from "@/registry/default/icon-archive-restore/icon-archive-restore";
+import { IconArchiveX } from "@/registry/default/icon-archive-x/icon-archive-x";
+import { IconArchive } from "@/registry/default/icon-archive/icon-archive";
+import { IconAreaChart } from "@/registry/default/icon-area-chart/icon-area-chart";
+import { IconArmchair } from "@/registry/default/icon-armchair/icon-armchair";
+import { IconArrowBigDownDash } from "@/registry/default/icon-arrow-big-down-dash/icon-arrow-big-down-dash";
+import { IconArrowBigDown } from "@/registry/default/icon-arrow-big-down/icon-arrow-big-down";
+import { IconArrowBigLeftDash } from "@/registry/default/icon-arrow-big-left-dash/icon-arrow-big-left-dash";
+import { IconArrowBigLeft } from "@/registry/default/icon-arrow-big-left/icon-arrow-big-left";
+import { IconArrowBigRightDash } from "@/registry/default/icon-arrow-big-right-dash/icon-arrow-big-right-dash";
+import { IconArrowBigRight } from "@/registry/default/icon-arrow-big-right/icon-arrow-big-right";
+import { IconArrowBigUpDash } from "@/registry/default/icon-arrow-big-up-dash/icon-arrow-big-up-dash";
+import { IconArrowBigUp } from "@/registry/default/icon-arrow-big-up/icon-arrow-big-up";
+import { IconArrowDown01 } from "@/registry/default/icon-arrow-down-0-1/icon-arrow-down-0-1";
+import { IconArrowDown01Alt } from "@/registry/default/icon-arrow-down-01/icon-arrow-down-01";
+import { IconArrowDown10 } from "@/registry/default/icon-arrow-down-1-0/icon-arrow-down-1-0";
+import { IconArrowDown10Alt } from "@/registry/default/icon-arrow-down-10/icon-arrow-down-10";
+import { IconArrowDownAZ } from "@/registry/default/icon-arrow-down-a-z/icon-arrow-down-a-z";
+import { IconArrowDownAZAlt } from "@/registry/default/icon-arrow-down-az/icon-arrow-down-az";
+import { IconArrowDownCircle } from "@/registry/default/icon-arrow-down-circle/icon-arrow-down-circle";
+import { IconArrowDownFromLine } from "@/registry/default/icon-arrow-down-from-line/icon-arrow-down-from-line";
+import { IconArrowDownLeftFromCircle } from "@/registry/default/icon-arrow-down-left-from-circle/icon-arrow-down-left-from-circle";
+import { IconArrowDownLeftFromSquare } from "@/registry/default/icon-arrow-down-left-from-square/icon-arrow-down-left-from-square";
+import { IconArrowDownLeftSquare } from "@/registry/default/icon-arrow-down-left-square/icon-arrow-down-left-square";
+import { IconArrowDownLeft } from "@/registry/default/icon-arrow-down-left/icon-arrow-down-left";
+import { IconArrowDownNarrowWide } from "@/registry/default/icon-arrow-down-narrow-wide/icon-arrow-down-narrow-wide";
+import { IconArrowDownRightFromCircle } from "@/registry/default/icon-arrow-down-right-from-circle/icon-arrow-down-right-from-circle";
+import { IconArrowDownRightFromSquare } from "@/registry/default/icon-arrow-down-right-from-square/icon-arrow-down-right-from-square";
+import { IconArrowDownRightSquare } from "@/registry/default/icon-arrow-down-right-square/icon-arrow-down-right-square";
+import { IconArrowDownRight } from "@/registry/default/icon-arrow-down-right/icon-arrow-down-right";
+import { IconArrowDownSquare } from "@/registry/default/icon-arrow-down-square/icon-arrow-down-square";
+import { IconArrowDownToDot } from "@/registry/default/icon-arrow-down-to-dot/icon-arrow-down-to-dot";
+import { IconArrowDownToLine } from "@/registry/default/icon-arrow-down-to-line/icon-arrow-down-to-line";
+import { IconArrowDownUp } from "@/registry/default/icon-arrow-down-up/icon-arrow-down-up";
+import { IconArrowDownWideNarrow } from "@/registry/default/icon-arrow-down-wide-narrow/icon-arrow-down-wide-narrow";
+import { IconArrowDownZA } from "@/registry/default/icon-arrow-down-z-a/icon-arrow-down-z-a";
+import { IconArrowDownZAAlt } from "@/registry/default/icon-arrow-down-za/icon-arrow-down-za";
+import { IconArrowDown } from "@/registry/default/icon-arrow-down/icon-arrow-down";
+import { IconArrowLeftCircle } from "@/registry/default/icon-arrow-left-circle/icon-arrow-left-circle";
+import { IconArrowLeftFromLine } from "@/registry/default/icon-arrow-left-from-line/icon-arrow-left-from-line";
+import { IconArrowLeftRight } from "@/registry/default/icon-arrow-left-right/icon-arrow-left-right";
+import { IconArrowLeftSquare } from "@/registry/default/icon-arrow-left-square/icon-arrow-left-square";
+import { IconArrowLeftToLine } from "@/registry/default/icon-arrow-left-to-line/icon-arrow-left-to-line";
+import { IconArrowLeft } from "@/registry/default/icon-arrow-left/icon-arrow-left";
+import { IconArrowRightCircle } from "@/registry/default/icon-arrow-right-circle/icon-arrow-right-circle";
+import { IconArrowRightFromLine } from "@/registry/default/icon-arrow-right-from-line/icon-arrow-right-from-line";
+import { IconArrowRightLeft } from "@/registry/default/icon-arrow-right-left/icon-arrow-right-left";
+import { IconArrowRightSquare } from "@/registry/default/icon-arrow-right-square/icon-arrow-right-square";
+import { IconArrowRightToLine } from "@/registry/default/icon-arrow-right-to-line/icon-arrow-right-to-line";
+import { IconArrowRight } from "@/registry/default/icon-arrow-right/icon-arrow-right";
+import { IconArrowUp01 } from "@/registry/default/icon-arrow-up-0-1/icon-arrow-up-0-1";
+import { IconArrowUp01Alt } from "@/registry/default/icon-arrow-up-01/icon-arrow-up-01";
+import { IconArrowUp10 } from "@/registry/default/icon-arrow-up-1-0/icon-arrow-up-1-0";
+import { IconArrowUp10Alt } from "@/registry/default/icon-arrow-up-10/icon-arrow-up-10";
+import { IconArrowUpAZ } from "@/registry/default/icon-arrow-up-a-z/icon-arrow-up-a-z";
+import { IconArrowUpAZAlt } from "@/registry/default/icon-arrow-up-az/icon-arrow-up-az";
+import { IconArrowUpCircle } from "@/registry/default/icon-arrow-up-circle/icon-arrow-up-circle";
+import { IconArrowUpDown } from "@/registry/default/icon-arrow-up-down/icon-arrow-up-down";
+import { IconArrowUpFromDot } from "@/registry/default/icon-arrow-up-from-dot/icon-arrow-up-from-dot";
+import { IconArrowUpFromLine } from "@/registry/default/icon-arrow-up-from-line/icon-arrow-up-from-line";
+import { IconArrowUpLeftFromCircle } from "@/registry/default/icon-arrow-up-left-from-circle/icon-arrow-up-left-from-circle";
+import { IconArrowUpLeftFromSquare } from "@/registry/default/icon-arrow-up-left-from-square/icon-arrow-up-left-from-square";
+import { IconArrowUpLeftSquare } from "@/registry/default/icon-arrow-up-left-square/icon-arrow-up-left-square";
+import { IconArrowUpLeft } from "@/registry/default/icon-arrow-up-left/icon-arrow-up-left";
+import { IconArrowUpNarrowWide } from "@/registry/default/icon-arrow-up-narrow-wide/icon-arrow-up-narrow-wide";
+import { IconArrowUpRightFromCircle } from "@/registry/default/icon-arrow-up-right-from-circle/icon-arrow-up-right-from-circle";
+import { IconArrowUpRightFromSquare } from "@/registry/default/icon-arrow-up-right-from-square/icon-arrow-up-right-from-square";
+import { IconArrowUpRightSquare } from "@/registry/default/icon-arrow-up-right-square/icon-arrow-up-right-square";
+import { IconArrowUpRight } from "@/registry/default/icon-arrow-up-right/icon-arrow-up-right";
+import { IconArrowUpSquare } from "@/registry/default/icon-arrow-up-square/icon-arrow-up-square";
+import { IconArrowUp } from "@/registry/default/icon-arrow-up/icon-arrow-up";
 import { IconChevronDown } from "@/registry/default/icon-chevron-down/icon-chevron-down";
 import { IconChevronLeft } from "@/registry/default/icon-chevron-left/icon-chevron-left";
 import { IconChevronRight } from "@/registry/default/icon-chevron-right/icon-chevron-right";
@@ -134,97 +134,97 @@ import { IconClock } from "@/registry/default/icon-clock/icon-clock";
 import { IconHeart } from "@/registry/default/icon-heart/icon-heart";
 import { IconHome } from "@/registry/default/icon-home/icon-home";
 import { IconMapPin } from "@/registry/default/icon-map-pin/icon-map-pin";
-import { IconMenu } from "@/registry/default/icon-menu/icon-menu";
 import { IconMenuBento } from "@/registry/default/icon-menu-bento/icon-menu-bento";
-import { IconMenuDots } from "@/registry/default/icon-menu-dots/icon-menu-dots";
 import { IconMenuDotsVertical } from "@/registry/default/icon-menu-dots-vertical/icon-menu-dots-vertical";
+import { IconMenuDots } from "@/registry/default/icon-menu-dots/icon-menu-dots";
 import { IconMenuGrid } from "@/registry/default/icon-menu-grid/icon-menu-grid";
 import { IconMenuList } from "@/registry/default/icon-menu-list/icon-menu-list";
 import { IconMenuSliders } from "@/registry/default/icon-menu-sliders/icon-menu-sliders";
 import { IconMenuTabs } from "@/registry/default/icon-menu-tabs/icon-menu-tabs";
+import { IconMenu } from "@/registry/default/icon-menu/icon-menu";
 import { IconSparkle } from "@/registry/default/icon-sparkle/icon-sparkle";
 // Essential Action Icons
-import { IconTrash } from "@/registry/default/icon-trash/icon-trash";
-import { IconEdit } from "@/registry/default/icon-edit/icon-edit";
 import { IconCheck } from "@/registry/default/icon-check/icon-check";
-import { IconX } from "@/registry/default/icon-x/icon-x";
 import { IconCopy } from "@/registry/default/icon-copy/icon-copy";
-import { IconPlus } from "@/registry/default/icon-plus/icon-plus";
+import { IconEdit } from "@/registry/default/icon-edit/icon-edit";
 import { IconMinus } from "@/registry/default/icon-minus/icon-minus";
+import { IconPlus } from "@/registry/default/icon-plus/icon-plus";
 import { IconSearch } from "@/registry/default/icon-search/icon-search";
 import { IconSettings } from "@/registry/default/icon-settings/icon-settings";
+import { IconTrash } from "@/registry/default/icon-trash/icon-trash";
+import { IconX } from "@/registry/default/icon-x/icon-x";
 // Communication Icons
-import { IconMail } from "@/registry/default/icon-mail/icon-mail";
 import { IconBell } from "@/registry/default/icon-bell/icon-bell";
+import { IconMail } from "@/registry/default/icon-mail/icon-mail";
 import { IconSend } from "@/registry/default/icon-send/icon-send";
 // File Icons
 import { IconDownload } from "@/registry/default/icon-download/icon-download";
 import { IconUpload } from "@/registry/default/icon-upload/icon-upload";
 // Media Icons
-import { IconPlay } from "@/registry/default/icon-play/icon-play";
 import { IconPause } from "@/registry/default/icon-pause/icon-pause";
+import { IconPlay } from "@/registry/default/icon-play/icon-play";
 // UI Icons
 import { IconEye } from "@/registry/default/icon-eye/icon-eye";
-import { IconLock } from "@/registry/default/icon-lock/icon-lock";
-import { IconUnlock } from "@/registry/default/icon-unlock/icon-unlock";
-import { IconStar } from "@/registry/default/icon-star/icon-star";
 import { IconLoader } from "@/registry/default/icon-loader/icon-loader";
+import { IconLock } from "@/registry/default/icon-lock/icon-lock";
+import { IconStar } from "@/registry/default/icon-star/icon-star";
+import { IconUnlock } from "@/registry/default/icon-unlock/icon-unlock";
 // Premium Icons
-import { IconFolder } from "@/registry/default/icon-folder/icon-folder";
-import { IconFile } from "@/registry/default/icon-file/icon-file";
-import { IconRefreshCw } from "@/registry/default/icon-refresh-cw/icon-refresh-cw";
-import { IconVolume2 } from "@/registry/default/icon-volume-2/icon-volume-2";
-import { IconWifi } from "@/registry/default/icon-wifi/icon-wifi";
+import { IconBookmark } from "@/registry/default/icon-bookmark/icon-bookmark";
 import { IconCalendar } from "@/registry/default/icon-calendar/icon-calendar";
 import { IconCamera } from "@/registry/default/icon-camera/icon-camera";
-import { IconMic } from "@/registry/default/icon-mic/icon-mic";
-import { IconPower } from "@/registry/default/icon-power/icon-power";
-import { IconTerminal } from "@/registry/default/icon-terminal/icon-terminal";
-import { IconShare } from "@/registry/default/icon-share/icon-share";
-import { IconBookmark } from "@/registry/default/icon-bookmark/icon-bookmark";
-import { IconZap } from "@/registry/default/icon-zap/icon-zap";
-import { IconUser } from "@/registry/default/icon-user/icon-user";
+import { IconCloud } from "@/registry/default/icon-cloud/icon-cloud";
+import { IconFile } from "@/registry/default/icon-file/icon-file";
+import { IconFolder } from "@/registry/default/icon-folder/icon-folder";
+import { IconGift } from "@/registry/default/icon-gift/icon-gift";
 import { IconLogIn } from "@/registry/default/icon-log-in/icon-log-in";
 import { IconLogOut } from "@/registry/default/icon-log-out/icon-log-out";
+import { IconMic } from "@/registry/default/icon-mic/icon-mic";
+import { IconPower } from "@/registry/default/icon-power/icon-power";
+import { IconRefreshCw } from "@/registry/default/icon-refresh-cw/icon-refresh-cw";
+import { IconShare } from "@/registry/default/icon-share/icon-share";
 import { IconShoppingCart } from "@/registry/default/icon-shopping-cart/icon-shopping-cart";
-import { IconGift } from "@/registry/default/icon-gift/icon-gift";
-import { IconCloud } from "@/registry/default/icon-cloud/icon-cloud";
 import { IconSun } from "@/registry/default/icon-sun/icon-sun";
+import { IconTerminal } from "@/registry/default/icon-terminal/icon-terminal";
+import { IconUser } from "@/registry/default/icon-user/icon-user";
+import { IconVolume2 } from "@/registry/default/icon-volume-2/icon-volume-2";
+import { IconWifi } from "@/registry/default/icon-wifi/icon-wifi";
+import { IconZap } from "@/registry/default/icon-zap/icon-zap";
 // Premium Icons Expansion
-import { IconHeartHandshake } from "@/registry/default/icon-heart-handshake/icon-heart-handshake";
-import { IconThermometer } from "@/registry/default/icon-thermometer/icon-thermometer";
-import { IconMousePointer2 } from "@/registry/default/icon-mouse-pointer-2/icon-mouse-pointer-2";
-import { IconLayers } from "@/registry/default/icon-layers/icon-layers";
-import { IconDatabase } from "@/registry/default/icon-database/icon-database";
-import { IconShieldCheck } from "@/registry/default/icon-shield-check/icon-shield-check";
-import { IconKey } from "@/registry/default/icon-key/icon-key";
 import { IconBriefcase } from "@/registry/default/icon-briefcase/icon-briefcase";
+import { IconDatabase } from "@/registry/default/icon-database/icon-database";
+import { IconHeartHandshake } from "@/registry/default/icon-heart-handshake/icon-heart-handshake";
+import { IconKey } from "@/registry/default/icon-key/icon-key";
+import { IconLayers } from "@/registry/default/icon-layers/icon-layers";
 import { IconLayout } from "@/registry/default/icon-layout/icon-layout";
+import { IconMousePointer2 } from "@/registry/default/icon-mouse-pointer-2/icon-mouse-pointer-2";
 import { IconPalette } from "@/registry/default/icon-palette/icon-palette";
+import { IconShieldCheck } from "@/registry/default/icon-shield-check/icon-shield-check";
+import { IconThermometer } from "@/registry/default/icon-thermometer/icon-thermometer";
 // Batch 3 Premium Icons
+import { IconCompass } from "@/registry/default/icon-compass/icon-compass";
+import { IconCreditCard } from "@/registry/default/icon-credit-card/icon-credit-card";
 import { IconGlobe } from "@/registry/default/icon-globe/icon-globe";
-import { IconMusic } from "@/registry/default/icon-music/icon-music";
+import { IconHardDrive } from "@/registry/default/icon-hard-drive/icon-hard-drive";
 import { IconMonitor } from "@/registry/default/icon-monitor/icon-monitor";
+import { IconMusic } from "@/registry/default/icon-music/icon-music";
+import { IconShoppingBag } from "@/registry/default/icon-shopping-bag/icon-shopping-bag";
 import { IconSmartphone } from "@/registry/default/icon-smartphone/icon-smartphone";
 import { IconTablet } from "@/registry/default/icon-tablet/icon-tablet";
-import { IconCreditCard } from "@/registry/default/icon-credit-card/icon-credit-card";
-import { IconShoppingBag } from "@/registry/default/icon-shopping-bag/icon-shopping-bag";
-import { IconCompass } from "@/registry/default/icon-compass/icon-compass";
-import { IconHardDrive } from "@/registry/default/icon-hard-drive/icon-hard-drive";
 // Batch 4 Premium Icons
 import { IconBatteryCharging } from "@/registry/default/icon-battery-charging/icon-battery-charging";
-import { IconCloudRain } from "@/registry/default/icon-cloud-rain/icon-cloud-rain";
-import { IconCloudLightning } from "@/registry/default/icon-cloud-lightning/icon-cloud-lightning";
-import { IconSnowflake } from "@/registry/default/icon-snowflake/icon-snowflake";
-import { IconFlame } from "@/registry/default/icon-flame/icon-flame";
-import { IconPlane } from "@/registry/default/icon-plane/icon-plane";
-import { IconTruck } from "@/registry/default/icon-truck/icon-truck";
-import { IconScan } from "@/registry/default/icon-scan/icon-scan";
-import { IconCpu } from "@/registry/default/icon-cpu/icon-cpu";
-import { IconServer } from "@/registry/default/icon-server/icon-server";
 import { IconBot } from "@/registry/default/icon-bot/icon-bot";
-import { IconSmile } from "@/registry/default/icon-smile/icon-smile";
+import { IconCloudLightning } from "@/registry/default/icon-cloud-lightning/icon-cloud-lightning";
+import { IconCloudRain } from "@/registry/default/icon-cloud-rain/icon-cloud-rain";
+import { IconCpu } from "@/registry/default/icon-cpu/icon-cpu";
+import { IconFlame } from "@/registry/default/icon-flame/icon-flame";
 import { IconFrown } from "@/registry/default/icon-frown/icon-frown";
+import { IconPlane } from "@/registry/default/icon-plane/icon-plane";
+import { IconScan } from "@/registry/default/icon-scan/icon-scan";
+import { IconServer } from "@/registry/default/icon-server/icon-server";
+import { IconSmile } from "@/registry/default/icon-smile/icon-smile";
+import { IconSnowflake } from "@/registry/default/icon-snowflake/icon-snowflake";
+import { IconTruck } from "@/registry/default/icon-truck/icon-truck";
 // Batch 5 Premium Icons
 import { IconAward } from "@/registry/default/icon-award/icon-award";
 import { IconBeaker } from "@/registry/default/icon-beaker/icon-beaker";
@@ -244,16 +244,16 @@ import { IconPill } from "@/registry/default/icon-pill/icon-pill";
 import { IconTelescope } from "@/registry/default/icon-telescope/icon-telescope";
 import { IconVolcano } from "@/registry/default/icon-volcano/icon-volcano";
 // Batch 7 Tech Industry Icons
+import { IconBraces } from "@/registry/default/icon-braces/icon-braces";
+import { IconBug } from "@/registry/default/icon-bug/icon-bug";
+import { IconChartNoAxesColumn } from "@/registry/default/icon-chart-no-axes-column/icon-chart-no-axes-column";
 import { IconCodeXml } from "@/registry/default/icon-code-xml/icon-code-xml";
+import { IconCommand } from "@/registry/default/icon-command/icon-command";
+import { IconComponent } from "@/registry/default/icon-component/icon-component";
+import { IconGauge } from "@/registry/default/icon-gauge/icon-gauge";
 import { IconGitBranch } from "@/registry/default/icon-git-branch/icon-git-branch";
 import { IconGitPullRequest } from "@/registry/default/icon-git-pull-request/icon-git-pull-request";
 import { IconWebhook } from "@/registry/default/icon-webhook/icon-webhook";
-import { IconGauge } from "@/registry/default/icon-gauge/icon-gauge";
-import { IconChartNoAxesColumn } from "@/registry/default/icon-chart-no-axes-column/icon-chart-no-axes-column";
-import { IconComponent } from "@/registry/default/icon-component/icon-component";
-import { IconCommand } from "@/registry/default/icon-command/icon-command";
-import { IconBraces } from "@/registry/default/icon-braces/icon-braces";
-import { IconBug } from "@/registry/default/icon-bug/icon-bug";
 // Batch 8 Tech Industry Icons
 import { IconBlocks } from "@/registry/default/icon-blocks/icon-blocks";
 import { IconDatabaseZap } from "@/registry/default/icon-database-zap/icon-database-zap";
@@ -262,113 +262,113 @@ import { IconMousePointerClick } from "@/registry/default/icon-mouse-pointer-cli
 import { IconRocket } from "@/registry/default/icon-rocket/icon-rocket";
 import { IconSettings2 } from "@/registry/default/icon-settings-2/icon-settings-2";
 import { IconShieldAlert } from "@/registry/default/icon-shield-alert/icon-shield-alert";
-import { IconWorkflow } from "@/registry/default/icon-workflow/icon-workflow";
 import { IconSparkles } from "@/registry/default/icon-sparkles/icon-sparkles";
+import { IconWorkflow } from "@/registry/default/icon-workflow/icon-workflow";
 // Batch 9 Dashboard Icons
-import { IconLayoutDashboard } from "@/registry/default/icon-layout-dashboard/icon-layout-dashboard";
-import { IconChartPie } from "@/registry/default/icon-chart-pie/icon-chart-pie";
 import { IconChartArea } from "@/registry/default/icon-chart-area/icon-chart-area";
 import { IconChartLine } from "@/registry/default/icon-chart-line/icon-chart-line";
-import { IconTrendingUp } from "@/registry/default/icon-trending-up/icon-trending-up";
-import { IconTrendingDown } from "@/registry/default/icon-trending-down/icon-trending-down";
-import { IconUsers } from "@/registry/default/icon-users/icon-users";
+import { IconChartPie } from "@/registry/default/icon-chart-pie/icon-chart-pie";
 import { IconDollarSign } from "@/registry/default/icon-dollar-sign/icon-dollar-sign";
-import { IconWallet } from "@/registry/default/icon-wallet/icon-wallet";
+import { IconLayoutDashboard } from "@/registry/default/icon-layout-dashboard/icon-layout-dashboard";
 import { IconPanelsTopLeft } from "@/registry/default/icon-panels-top-left/icon-panels-top-left";
+import { IconTrendingDown } from "@/registry/default/icon-trending-down/icon-trending-down";
+import { IconTrendingUp } from "@/registry/default/icon-trending-up/icon-trending-up";
+import { IconUsers } from "@/registry/default/icon-users/icon-users";
+import { IconWallet } from "@/registry/default/icon-wallet/icon-wallet";
 // Batch 10 E-Commerce & Media Icons
+import { IconBanknote } from "@/registry/default/icon-banknote/icon-banknote";
+import { IconBarcode } from "@/registry/default/icon-barcode/icon-barcode";
+import { IconClapperboard } from "@/registry/default/icon-clapperboard/icon-clapperboard";
+import { IconCoins } from "@/registry/default/icon-coins/icon-coins";
+import { IconFrame } from "@/registry/default/icon-frame/icon-frame";
+import { IconPackage } from "@/registry/default/icon-package/icon-package";
+import { IconQrCode } from "@/registry/default/icon-qr-code/icon-qr-code";
+import { IconStore } from "@/registry/default/icon-store/icon-store";
 import { IconTag } from "@/registry/default/icon-tag/icon-tag";
 import { IconTicket } from "@/registry/default/icon-ticket/icon-ticket";
-import { IconQrCode } from "@/registry/default/icon-qr-code/icon-qr-code";
-import { IconBarcode } from "@/registry/default/icon-barcode/icon-barcode";
-import { IconStore } from "@/registry/default/icon-store/icon-store";
-import { IconBanknote } from "@/registry/default/icon-banknote/icon-banknote";
-import { IconCoins } from "@/registry/default/icon-coins/icon-coins";
-import { IconPackage } from "@/registry/default/icon-package/icon-package";
-import { IconClapperboard } from "@/registry/default/icon-clapperboard/icon-clapperboard";
-import { IconFrame } from "@/registry/default/icon-frame/icon-frame";
 // Batch 11 Lifestyle & Communication Icons
 import { IconAtSign } from "@/registry/default/icon-at-sign/icon-at-sign";
-import { IconHash } from "@/registry/default/icon-hash/icon-hash";
-import { IconBus } from "@/registry/default/icon-bus/icon-bus";
-import { IconTrainFront } from "@/registry/default/icon-train-front/icon-train-front";
 import { IconBike } from "@/registry/default/icon-bike/icon-bike";
-import { IconWrench } from "@/registry/default/icon-wrench/icon-wrench";
+import { IconBus } from "@/registry/default/icon-bus/icon-bus";
 import { IconHammer } from "@/registry/default/icon-hammer/icon-hammer";
-import { IconUtensils } from "@/registry/default/icon-utensils/icon-utensils";
-import { IconPocket } from "@/registry/default/icon-pocket/icon-pocket";
+import { IconHash } from "@/registry/default/icon-hash/icon-hash";
 import { IconMap } from "@/registry/default/icon-map/icon-map";
+import { IconPocket } from "@/registry/default/icon-pocket/icon-pocket";
+import { IconTrainFront } from "@/registry/default/icon-train-front/icon-train-front";
+import { IconUtensils } from "@/registry/default/icon-utensils/icon-utensils";
+import { IconWrench } from "@/registry/default/icon-wrench/icon-wrench";
 // Batch 12 Gaming & Rewards Icons
-import { IconSkull } from "@/registry/default/icon-skull/icon-skull";
-import { IconDices } from "@/registry/default/icon-dices/icon-dices";
-import { IconTrophy } from "@/registry/default/icon-trophy/icon-trophy";
-import { IconMedal } from "@/registry/default/icon-medal/icon-medal";
-import { IconTarget } from "@/registry/default/icon-target/icon-target";
-import { IconGem } from "@/registry/default/icon-gem/icon-gem";
 import { IconCrown } from "@/registry/default/icon-crown/icon-crown";
-import { IconSwords } from "@/registry/default/icon-swords/icon-swords";
-import { IconJoystick } from "@/registry/default/icon-joystick/icon-joystick";
+import { IconDices } from "@/registry/default/icon-dices/icon-dices";
 import { IconGamepad2 } from "@/registry/default/icon-gamepad-2/icon-gamepad-2";
+import { IconGem } from "@/registry/default/icon-gem/icon-gem";
+import { IconJoystick } from "@/registry/default/icon-joystick/icon-joystick";
+import { IconMedal } from "@/registry/default/icon-medal/icon-medal";
+import { IconSkull } from "@/registry/default/icon-skull/icon-skull";
+import { IconSwords } from "@/registry/default/icon-swords/icon-swords";
+import { IconTarget } from "@/registry/default/icon-target/icon-target";
+import { IconTrophy } from "@/registry/default/icon-trophy/icon-trophy";
 // Batch 13 User Management Icons
-import { IconUserPlus } from "@/registry/default/icon-user-plus/icon-user-plus";
-import { IconUserMinus } from "@/registry/default/icon-user-minus/icon-user-minus";
-import { IconUserCheck } from "@/registry/default/icon-user-check/icon-user-check";
-import { IconUserCog } from "@/registry/default/icon-user-cog/icon-user-cog";
-import { IconUserPen } from "@/registry/default/icon-user-pen/icon-user-pen";
-import { IconUserStar } from "@/registry/default/icon-user-star/icon-user-star";
-import { IconUserSearch } from "@/registry/default/icon-user-search/icon-user-search";
-import { IconUserX } from "@/registry/default/icon-user-x/icon-user-x";
 import { IconCircleUser } from "@/registry/default/icon-circle-user/icon-circle-user";
 import { IconContact } from "@/registry/default/icon-contact/icon-contact";
+import { IconUserCheck } from "@/registry/default/icon-user-check/icon-user-check";
+import { IconUserCog } from "@/registry/default/icon-user-cog/icon-user-cog";
+import { IconUserMinus } from "@/registry/default/icon-user-minus/icon-user-minus";
+import { IconUserPen } from "@/registry/default/icon-user-pen/icon-user-pen";
+import { IconUserPlus } from "@/registry/default/icon-user-plus/icon-user-plus";
+import { IconUserSearch } from "@/registry/default/icon-user-search/icon-user-search";
+import { IconUserStar } from "@/registry/default/icon-user-star/icon-user-star";
+import { IconUserX } from "@/registry/default/icon-user-x/icon-user-x";
 // Batch 14 Advanced User Icons
-import { IconUserRound } from "@/registry/default/icon-user-round/icon-user-round";
-import { IconUserRoundPlus } from "@/registry/default/icon-user-round-plus/icon-user-round-plus";
-import { IconUserRoundMinus } from "@/registry/default/icon-user-round-minus/icon-user-round-minus";
+import { IconFileUser } from "@/registry/default/icon-file-user/icon-file-user";
+import { IconShieldUser } from "@/registry/default/icon-shield-user/icon-shield-user";
 import { IconUserRoundCheck } from "@/registry/default/icon-user-round-check/icon-user-round-check";
 import { IconUserRoundCog } from "@/registry/default/icon-user-round-cog/icon-user-round-cog";
+import { IconUserRoundMinus } from "@/registry/default/icon-user-round-minus/icon-user-round-minus";
 import { IconUserRoundPen } from "@/registry/default/icon-user-round-pen/icon-user-round-pen";
+import { IconUserRoundPlus } from "@/registry/default/icon-user-round-plus/icon-user-round-plus";
 import { IconUserRoundSearch } from "@/registry/default/icon-user-round-search/icon-user-round-search";
 import { IconUserRoundX } from "@/registry/default/icon-user-round-x/icon-user-round-x";
-import { IconShieldUser } from "@/registry/default/icon-shield-user/icon-shield-user";
-import { IconFileUser } from "@/registry/default/icon-file-user/icon-file-user";
+import { IconUserRound } from "@/registry/default/icon-user-round/icon-user-round";
 // Batch 15 Alerts & Notifications Icons
-import { IconCloudAlert } from "@/registry/default/icon-cloud-alert/icon-cloud-alert";
-import { IconSearchAlert } from "@/registry/default/icon-search-alert/icon-search-alert";
+import { IconBadgeAlert } from "@/registry/default/icon-badge-alert/icon-badge-alert";
 import { IconBellElectric } from "@/registry/default/icon-bell-electric/icon-bell-electric";
-import { IconMegaphone } from "@/registry/default/icon-megaphone/icon-megaphone";
+import { IconCloudAlert } from "@/registry/default/icon-cloud-alert/icon-cloud-alert";
 import { IconMegaphoneOff } from "@/registry/default/icon-megaphone-off/icon-megaphone-off";
+import { IconMegaphone } from "@/registry/default/icon-megaphone/icon-megaphone";
 import { IconMessageCircleWarning } from "@/registry/default/icon-message-circle-warning/icon-message-circle-warning";
 import { IconMessageSquareWarning } from "@/registry/default/icon-message-square-warning/icon-message-square-warning";
 import { IconOctagonX } from "@/registry/default/icon-octagon-x/icon-octagon-x";
+import { IconSearchAlert } from "@/registry/default/icon-search-alert/icon-search-alert";
 import { IconSiren } from "@/registry/default/icon-siren/icon-siren";
-import { IconBadgeAlert } from "@/registry/default/icon-badge-alert/icon-badge-alert";
 // Batch 16 Extended Alerts Icons
+import { IconBatteryWarning } from "@/registry/default/icon-battery-warning/icon-battery-warning";
+import { IconBookAlert } from "@/registry/default/icon-book-alert/icon-book-alert";
 import { IconCircleAlert } from "@/registry/default/icon-circle-alert/icon-circle-alert";
 import { IconClockAlert } from "@/registry/default/icon-clock-alert/icon-clock-alert";
+import { IconFileAlert } from "@/registry/default/icon-file-alert/icon-file-alert";
+import { IconFlagOff } from "@/registry/default/icon-flag-off/icon-flag-off";
+import { IconFlag } from "@/registry/default/icon-flag/icon-flag";
+import { IconMailWarning } from "@/registry/default/icon-mail-warning/icon-mail-warning";
 import { IconOctagonAlert } from "@/registry/default/icon-octagon-alert/icon-octagon-alert";
 import { IconTriangleAlert } from "@/registry/default/icon-triangle-alert/icon-triangle-alert";
-import { IconMailWarning } from "@/registry/default/icon-mail-warning/icon-mail-warning";
-import { IconBatteryWarning } from "@/registry/default/icon-battery-warning/icon-battery-warning";
-import { IconFlag } from "@/registry/default/icon-flag/icon-flag";
-import { IconFlagOff } from "@/registry/default/icon-flag-off/icon-flag-off";
-import { IconBookAlert } from "@/registry/default/icon-book-alert/icon-book-alert";
-import { IconFileAlert } from "@/registry/default/icon-file-alert/icon-file-alert";
 
 // Batch 17 Accessibility, Vision & Themes
 import { IconBaby } from "@/registry/default/icon-baby/icon-baby";
-import { IconBadgeInfo } from "@/registry/default/icon-badge-info/icon-badge-info";
 import { IconBadgeHelp } from "@/registry/default/icon-badge-help/icon-badge-help";
+import { IconBadgeInfo } from "@/registry/default/icon-badge-info/icon-badge-info";
 import { IconCircleHelp } from "@/registry/default/icon-circle-help/icon-circle-help";
 import { IconClosedCaption } from "@/registry/default/icon-closed-caption/icon-closed-caption";
 import { IconContrast } from "@/registry/default/icon-contrast/icon-contrast";
-import { IconEar } from "@/registry/default/icon-ear/icon-ear";
 import { IconEarOff } from "@/registry/default/icon-ear-off/icon-ear-off";
+import { IconEar } from "@/registry/default/icon-ear/icon-ear";
 import { IconEyeClosed } from "@/registry/default/icon-eye-closed/icon-eye-closed";
 import { IconEyeOff } from "@/registry/default/icon-eye-off/icon-eye-off";
 import { IconGlasses } from "@/registry/default/icon-glasses/icon-glasses";
 import { IconHand } from "@/registry/default/icon-hand/icon-hand";
 import { IconLifeBuoy } from "@/registry/default/icon-life-buoy/icon-life-buoy";
-import { IconMoonStar } from "@/registry/default/icon-moon-star/icon-moon-star";
 import { IconMoonPlus } from "@/registry/default/icon-moon-plus/icon-moon-plus";
+import { IconMoonStar } from "@/registry/default/icon-moon-star/icon-moon-star";
 import { IconPersonStanding } from "@/registry/default/icon-person-standing/icon-person-standing";
 import { IconScanEye } from "@/registry/default/icon-scan-eye/icon-scan-eye";
 import { IconScanSearch } from "@/registry/default/icon-scan-search/icon-scan-search";
@@ -389,9 +389,9 @@ import { IconBugPlay } from "@/registry/default/icon-bug-play/icon-bug-play";
 import { IconCat } from "@/registry/default/icon-cat/icon-cat";
 import { IconDog } from "@/registry/default/icon-dog/icon-dog";
 import { IconEgg } from "@/registry/default/icon-egg/icon-egg";
-import { IconFish } from "@/registry/default/icon-fish/icon-fish";
 import { IconFishOff } from "@/registry/default/icon-fish-off/icon-fish-off";
 import { IconFishSymbol } from "@/registry/default/icon-fish-symbol/icon-fish-symbol";
+import { IconFish } from "@/registry/default/icon-fish/icon-fish";
 import { IconOrigami } from "@/registry/default/icon-origami/icon-origami";
 import { IconPanda } from "@/registry/default/icon-panda/icon-panda";
 import { IconPawPrint } from "@/registry/default/icon-paw-print/icon-paw-print";
@@ -402,30 +402,50 @@ import { IconSnail } from "@/registry/default/icon-snail/icon-snail";
 
 // Batch 19 Architecture & Construction
 import { IconBrickWall } from "@/registry/default/icon-brick-wall/icon-brick-wall";
-import { IconBuilding } from "@/registry/default/icon-building/icon-building";
 import { IconBuilding2 } from "@/registry/default/icon-building-2/icon-building-2";
+import { IconBuilding } from "@/registry/default/icon-building/icon-building";
 import { IconCastle } from "@/registry/default/icon-castle/icon-castle";
 import { IconChurch } from "@/registry/default/icon-church/icon-church";
+import { IconCloudDrizzle } from "@/registry/default/icon-cloud-drizzle/icon-cloud-drizzle";
+import { IconCloudFog } from "@/registry/default/icon-cloud-fog/icon-cloud-fog";
+import { IconCloudOff } from "@/registry/default/icon-cloud-off/icon-cloud-off";
+import { IconCloudRainWind } from "@/registry/default/icon-cloud-rain-wind/icon-cloud-rain-wind";
+import { IconCloudSnow } from "@/registry/default/icon-cloud-snow/icon-cloud-snow";
+import { IconCloudSunRain } from "@/registry/default/icon-cloud-sun-rain/icon-cloud-sun-rain";
+import { IconCloudSun } from "@/registry/default/icon-cloud-sun/icon-cloud-sun";
+import { IconCloudy } from "@/registry/default/icon-cloudy/icon-cloudy";
 import { IconCuboid } from "@/registry/default/icon-cuboid/icon-cuboid";
 import { IconDam } from "@/registry/default/icon-dam/icon-dam";
+import { IconDroplets } from "@/registry/default/icon-droplets/icon-droplets";
 import { IconFactory } from "@/registry/default/icon-factory/icon-factory";
 import { IconFence } from "@/registry/default/icon-fence/icon-fence";
+import { IconHaze } from "@/registry/default/icon-haze/icon-haze";
 import { IconHospital } from "@/registry/default/icon-hospital/icon-hospital";
 import { IconHotel } from "@/registry/default/icon-hotel/icon-hotel";
-import { IconHouse } from "@/registry/default/icon-house/icon-house";
 import { IconHouseHeart } from "@/registry/default/icon-house-heart/icon-house-heart";
 import { IconHousePlug } from "@/registry/default/icon-house-plug/icon-house-plug";
 import { IconHousePlus } from "@/registry/default/icon-house-plus/icon-house-plus";
 import { IconHouseWifi } from "@/registry/default/icon-house-wifi/icon-house-wifi";
+import { IconHouse } from "@/registry/default/icon-house/icon-house";
 import { IconLibrary } from "@/registry/default/icon-library/icon-library";
+import { IconMoon } from "@/registry/default/icon-moon/icon-moon";
+import { IconRainbow } from "@/registry/default/icon-rainbow/icon-rainbow";
 import { IconSchool } from "@/registry/default/icon-school/icon-school";
+import { IconShell } from "@/registry/default/icon-shell/icon-shell";
+import { IconSunrise } from "@/registry/default/icon-sunrise/icon-sunrise";
+import { IconSunset } from "@/registry/default/icon-sunset/icon-sunset";
 import { IconTheater } from "@/registry/default/icon-theater/icon-theater";
+import { IconThermometerSnowflake } from "@/registry/default/icon-thermometer-snowflake/icon-thermometer-snowflake";
+import { IconThermometerSun } from "@/registry/default/icon-thermometer-sun/icon-thermometer-sun";
+import { IconTornado } from "@/registry/default/icon-tornado/icon-tornado";
+import { IconTurtle } from "@/registry/default/icon-turtle/icon-turtle";
+import { IconUmbrellaOff } from "@/registry/default/icon-umbrella-off/icon-umbrella-off";
 import { IconUtilityPole } from "@/registry/default/icon-utility-pole/icon-utility-pole";
 import { IconWarehouse } from "@/registry/default/icon-warehouse/icon-warehouse";
-
-import { IconTurtle } from "@/registry/default/icon-turtle/icon-turtle";
+import { IconWaves } from "@/registry/default/icon-waves/icon-waves";
+import { IconWind } from "@/registry/default/icon-wind/icon-wind";
 import { IconWorm } from "@/registry/default/icon-worm/icon-worm";
-import { IconShell } from "@/registry/default/icon-shell/icon-shell";
+import { IconZapOff } from "@/registry/default/icon-zap-off/icon-zap-off";
 
 export const iconsRegistry = [
   {
@@ -3238,6 +3258,153 @@ export const iconsRegistry = [
     color: "text-zinc-400",
     description: "Industrial warehouse with roller door animation",
     tags: ["warehouse", "storage", "industrial", "shipping"],
+  },
+  {
+    name: "icon-cloud-drizzle",
+    component: IconCloudDrizzle,
+    color: "text-sky-300",
+    description: "Cloud with gentle drizzle animation",
+    tags: ["cloud", "drizzle", "rain", "weather"],
+  },
+  {
+    name: "icon-cloud-fog",
+    component: IconCloudFog,
+    color: "text-zinc-300",
+    description: "Cloud with drifting fog animation",
+    tags: ["cloud", "fog", "mist", "weather"],
+  },
+  {
+    name: "icon-cloud-off",
+    component: IconCloudOff,
+    color: "text-zinc-400",
+    description: "Cloud with cross-out animation",
+    tags: ["cloud", "off", "disabled", "weather"],
+  },
+  {
+    name: "icon-cloud-rain-wind",
+    component: IconCloudRainWind,
+    color: "text-sky-400",
+    description: "Cloud with rain and wind animation",
+    tags: ["cloud", "rain", "wind", "storm", "weather"],
+  },
+  {
+    name: "icon-cloud-snow",
+    component: IconCloudSnow,
+    color: "text-slate-200",
+    description: "Cloud with falling snow animation",
+    tags: ["cloud", "snow", "winter", "weather"],
+  },
+  {
+    name: "icon-cloud-sun",
+    component: IconCloudSun,
+    color: "text-amber-200",
+    description: "Cloud with sun revealing animation",
+    tags: ["cloud", "sun", "day", "weather"],
+  },
+  {
+    name: "icon-cloud-sun-rain",
+    component: IconCloudSunRain,
+    color: "text-amber-300",
+    description: "Cloud with sun and rain animation",
+    tags: ["cloud", "sun", "rain", "day", "weather"],
+  },
+  {
+    name: "icon-cloudy",
+    component: IconCloudy,
+    color: "text-zinc-300",
+    description: "Cloud with drifting animation",
+    tags: ["cloud", "overcast", "weather"],
+  },
+  {
+    name: "icon-droplets",
+    component: IconDroplets,
+    color: "text-sky-400",
+    description: "Droplets with falling animation",
+    tags: ["droplets", "rain", "water", "weather"],
+  },
+  {
+    name: "icon-haze",
+    component: IconHaze,
+    color: "text-orange-200",
+    description: "Haze with shimmering animation",
+    tags: ["haze", "fog", "sun", "weather"],
+  },
+  {
+    name: "icon-moon",
+    component: IconMoon,
+    color: "text-zinc-200",
+    description: "Moon with subtle sway animation",
+    tags: ["moon", "night", "space", "weather"],
+  },
+  {
+    name: "icon-rainbow",
+    component: IconRainbow,
+    color: "text-purple-300",
+    description: "Rainbow with arc drawing animation",
+    tags: ["rainbow", "sky", "weather", "color"],
+  },
+  {
+    name: "icon-sunrise",
+    component: IconSunrise,
+    color: "text-orange-300",
+    description: "Sunrise with rising sun animation",
+    tags: ["sunrise", "morning", "sun", "weather"],
+  },
+  {
+    name: "icon-sunset",
+    component: IconSunset,
+    color: "text-orange-400",
+    description: "Sunset with setting sun animation",
+    tags: ["sunset", "evening", "sun", "weather"],
+  },
+  {
+    name: "icon-thermometer-snowflake",
+    component: IconThermometerSnowflake,
+    color: "text-blue-300",
+    description: "Thermometer with snowflake animation",
+    tags: ["thermometer", "cold", "temperature", "weather"],
+  },
+  {
+    name: "icon-thermometer-sun",
+    component: IconThermometerSun,
+    color: "text-red-300",
+    description: "Thermometer with sun animation",
+    tags: ["thermometer", "hot", "temperature", "weather"],
+  },
+  {
+    name: "icon-tornado",
+    component: IconTornado,
+    color: "text-zinc-500",
+    description: "Tornado with spinning animation",
+    tags: ["tornado", "storm", "wind", "weather"],
+  },
+  {
+    name: "icon-umbrella-off",
+    component: IconUmbrellaOff,
+    color: "text-zinc-400",
+    description: "Umbrella with cross-out animation",
+    tags: ["umbrella", "off", "disabled", "weather"],
+  },
+  {
+    name: "icon-waves",
+    component: IconWaves,
+    color: "text-blue-400",
+    description: "Waves with flowing animation",
+    tags: ["waves", "water", "sea", "weather"],
+  },
+  {
+    name: "icon-wind",
+    component: IconWind,
+    color: "text-slate-300",
+    description: "Wind with blowing animation",
+    tags: ["wind", "air", "weather"],
+  },
+  {
+    name: "icon-zap-off",
+    component: IconZapOff,
+    color: "text-yellow-400",
+    description: "Lightning with cross-out animation",
+    tags: ["zap", "lightning", "off", "weather"],
   },
 ] as const;
 
