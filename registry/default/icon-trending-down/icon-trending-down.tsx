@@ -39,7 +39,14 @@ export function IconTrendingDown({
   className,
   ...props
 }: IconTrendingDownProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
+  const {
+    onAnimationStart,
+    onAnimationEnd,
+    onDragStart,
+    onDrag,
+    onDragEnd,
+    ...restOptions
+  } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -60,8 +67,14 @@ export function IconTrendingDown({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.path d="M16 17h6v-6" variants={arrowVariants} />
-      <motion.path d="m22 17-8.5-8.5-5 5L2 7" variants={pathVariants} />
+      <motion.path
+        d="M16 17h6v-6"
+        variants={prefersReducedMotion ? {} : arrowVariants}
+      />
+      <motion.path
+        d="m22 17-8.5-8.5-5 5L2 7"
+        variants={prefersReducedMotion ? {} : pathVariants}
+      />
     </motion.svg>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 
 export interface IconArrowDownFromLineProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -9,19 +9,37 @@ export interface IconArrowDownFromLineProps extends React.SVGProps<SVGSVGElement
   strokeWidth?: number;
 }
 
-const lineVariants = {
-  rest: { scaleX: 1 },
-  hover: { scaleX: 1.1 },
-  tap: { scaleX: 0.95 },
-};
-
-const arrowVariants = {
+const arrowVariants: Variants = {
   rest: { y: 0 },
-  hover: { y: 2 },
-  tap: { y: 4 },
+  hover: {
+    y: [0, 2, 0],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
 };
 
-export function IconArrowDownFromLine({ size = 24, strokeWidth = 2, className, ...props }: IconArrowDownFromLineProps) {
+const lineVariants: Variants = {
+  rest: { scaleX: 1, opacity: 1 },
+  hover: {
+    scaleX: [1, 1.1, 1],
+    opacity: [1, 0.8, 1],
+    transition: {
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconArrowDownFromLine({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  ...props
+}: IconArrowDownFromLineProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -42,15 +60,19 @@ export function IconArrowDownFromLine({ size = 24, strokeWidth = 2, className, .
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial={prefersReducedMotion ? false : "rest"}
-      whileHover={prefersReducedMotion ? undefined : "hover"}
+      initial="rest"
+      whileHover="hover"
       whileTap={prefersReducedMotion ? undefined : "tap"}
       transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.path d="M19 3H5" variants={lineVariants} style={{ originX: "50%", originY: "50%" }} />
-      <motion.g variants={arrowVariants}>
+      <motion.path
+        d="M19 3H5"
+        variants={prefersReducedMotion ? {} : lineVariants}
+        style={{ originX: "50%", originY: "50%" }}
+      />
+      <motion.g variants={prefersReducedMotion ? {} : arrowVariants}>
         <path d="M12 21V7" />
         <path d="m6 15 6 6 6-6" />
       </motion.g>

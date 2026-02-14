@@ -6317,6 +6317,1311 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-calendar-arrow-down",
+      "type": "registry:component",
+      "title": "Animated Calendar Arrow Down",
+      "description": "Calendar Arrow Down icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-arrow-down/icon-calendar-arrow-down.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-arrow-up",
+      "type": "registry:component",
+      "title": "Animated Calendar Arrow Up",
+      "description": "Calendar Arrow Up icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-arrow-up/icon-calendar-arrow-up.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-check",
+      "type": "registry:component",
+      "title": "Animated Calendar Check",
+      "description": "Calendar Check icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-check/icon-calendar-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-check-2",
+      "type": "registry:component",
+      "title": "Animated Calendar Check 2",
+      "description": "Calendar Check 2 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-check-2/icon-calendar-check-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-clock",
+      "type": "registry:component",
+      "title": "Animated Calendar Clock",
+      "description": "Calendar Clock icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-clock/icon-calendar-clock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-cog",
+      "type": "registry:component",
+      "title": "Animated Calendar Cog",
+      "description": "Calendar Cog icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-cog/icon-calendar-cog.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-days",
+      "type": "registry:component",
+      "title": "Animated Calendar Days",
+      "description": "Calendar Days icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-days/icon-calendar-days.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-fold",
+      "type": "registry:component",
+      "title": "Animated Calendar Fold",
+      "description": "Calendar Fold icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-fold/icon-calendar-fold.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-heart",
+      "type": "registry:component",
+      "title": "Animated Calendar Heart",
+      "description": "Calendar Heart icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-heart/icon-calendar-heart.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-minus",
+      "type": "registry:component",
+      "title": "Animated Calendar Minus",
+      "description": "Calendar Minus icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-minus/icon-calendar-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-minus-2",
+      "type": "registry:component",
+      "title": "Animated Calendar Minus 2",
+      "description": "Calendar Minus 2 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-minus-2/icon-calendar-minus-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-off",
+      "type": "registry:component",
+      "title": "Animated Calendar Off",
+      "description": "Calendar Off icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-off/icon-calendar-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-plus",
+      "type": "registry:component",
+      "title": "Animated Calendar Plus",
+      "description": "Calendar Plus icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-plus/icon-calendar-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-plus-2",
+      "type": "registry:component",
+      "title": "Animated Calendar Plus 2",
+      "description": "Calendar Plus 2 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-plus-2/icon-calendar-plus-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-range",
+      "type": "registry:component",
+      "title": "Animated Calendar Range",
+      "description": "Calendar Range icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-range/icon-calendar-range.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-search",
+      "type": "registry:component",
+      "title": "Animated Calendar Search",
+      "description": "Calendar Search icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-search/icon-calendar-search.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-x",
+      "type": "registry:component",
+      "title": "Animated Calendar X",
+      "description": "Calendar X icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-x/icon-calendar-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-calendar-x-2",
+      "type": "registry:component",
+      "title": "Animated Calendar X 2",
+      "description": "Calendar X 2 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-calendar-x-2/icon-calendar-x-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-1",
+      "type": "registry:component",
+      "title": "Animated Clock 1",
+      "description": "Clock 1 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-1/icon-clock-1.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-2",
+      "type": "registry:component",
+      "title": "Animated Clock 2",
+      "description": "Clock 2 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-2/icon-clock-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-3",
+      "type": "registry:component",
+      "title": "Animated Clock 3",
+      "description": "Clock 3 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-3/icon-clock-3.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-4",
+      "type": "registry:component",
+      "title": "Animated Clock 4",
+      "description": "Clock 4 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-4/icon-clock-4.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-5",
+      "type": "registry:component",
+      "title": "Animated Clock 5",
+      "description": "Clock 5 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-5/icon-clock-5.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-6",
+      "type": "registry:component",
+      "title": "Animated Clock 6",
+      "description": "Clock 6 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-6/icon-clock-6.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-7",
+      "type": "registry:component",
+      "title": "Animated Clock 7",
+      "description": "Clock 7 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-7/icon-clock-7.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-8",
+      "type": "registry:component",
+      "title": "Animated Clock 8",
+      "description": "Clock 8 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-8/icon-clock-8.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-9",
+      "type": "registry:component",
+      "title": "Animated Clock 9",
+      "description": "Clock 9 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-9/icon-clock-9.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-10",
+      "type": "registry:component",
+      "title": "Animated Clock 10",
+      "description": "Clock 10 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-10/icon-clock-10.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-11",
+      "type": "registry:component",
+      "title": "Animated Clock 11",
+      "description": "Clock 11 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-11/icon-clock-11.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-12",
+      "type": "registry:component",
+      "title": "Animated Clock 12",
+      "description": "Clock 12 icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-12/icon-clock-12.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-arrow-down",
+      "type": "registry:component",
+      "title": "Animated Clock Arrow Down",
+      "description": "Clock Arrow Down icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-arrow-down/icon-clock-arrow-down.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clock-arrow-up",
+      "type": "registry:component",
+      "title": "Animated Clock Arrow Up",
+      "description": "Clock Arrow Up icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clock-arrow-up/icon-clock-arrow-up.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clipboard-list",
+      "type": "registry:component",
+      "title": "Animated Clipboard List",
+      "description": "Clipboard List icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clipboard-list/icon-clipboard-list.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-list",
+      "type": "registry:component",
+      "title": "Animated List",
+      "description": "List icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-list/icon-list.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-list-check",
+      "type": "registry:component",
+      "title": "Animated List Check",
+      "description": "List Check icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-list-check/icon-list-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hourglass",
+      "type": "registry:component",
+      "title": "Animated Hourglass",
+      "description": "Hourglass icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hourglass/icon-hourglass.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-timer",
+      "type": "registry:component",
+      "title": "Animated Timer",
+      "description": "Timer icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-timer/icon-timer.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-timer-off",
+      "type": "registry:component",
+      "title": "Animated Timer Off",
+      "description": "Timer Off icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-timer-off/icon-timer-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-timer-reset",
+      "type": "registry:component",
+      "title": "Animated Timer Reset",
+      "description": "Timer Reset icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-timer-reset/icon-timer-reset.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-notebook",
+      "type": "registry:component",
+      "title": "Animated Notebook",
+      "description": "Notebook icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-notebook/icon-notebook.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-notebook-pen",
+      "type": "registry:component",
+      "title": "Animated Notebook Pen",
+      "description": "Notebook Pen icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-notebook-pen/icon-notebook-pen.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-notebook-tabs",
+      "type": "registry:component",
+      "title": "Animated Notebook Tabs",
+      "description": "Notebook Tabs icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-notebook-tabs/icon-notebook-tabs.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-notebook-text",
+      "type": "registry:component",
+      "title": "Animated Notebook Text",
+      "description": "Notebook Text icon with semantic animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-notebook-text/icon-notebook-text.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-asterisk",
+      "type": "registry:component",
+      "title": "Animated Asterisk",
+      "description": "Asterisk with a springy spin",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-asterisk/icon-asterisk.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-baseline",
+      "type": "registry:component",
+      "title": "Animated Baseline",
+      "description": "Baseline with a pulsing underline",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-baseline/icon-baseline.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-binary",
+      "type": "registry:component",
+      "title": "Animated Binary",
+      "description": "Binary data with shifting 0s and 1s",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-binary/icon-binary.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bold",
+      "type": "registry:component",
+      "title": "Animated Bold",
+      "description": "Bold text icon with a strong bop",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bold/icon-bold.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-underline",
+      "type": "registry:component",
+      "title": "Animated Underline",
+      "description": "Underline with a pulsing line",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-underline/icon-underline.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-badge",
+      "type": "registry:component",
+      "title": "IconBadge",
+      "description": "Badge icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-badge/icon-badge.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-box",
+      "type": "registry:component",
+      "title": "IconBox",
+      "description": "Box icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-box/icon-box.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-boxes",
+      "type": "registry:component",
+      "title": "IconBoxes",
+      "description": "Boxes icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-boxes/icon-boxes.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle",
+      "type": "registry:component",
+      "title": "IconCircle",
+      "description": "Circle icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle/icon-circle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-dashed",
+      "type": "registry:component",
+      "title": "IconCircleDashed",
+      "description": "CircleDashed icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-dashed/icon-circle-dashed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-dot",
+      "type": "registry:component",
+      "title": "IconCircleDot",
+      "description": "CircleDot icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-dot/icon-circle-dot.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-dot-dashed",
+      "type": "registry:component",
+      "title": "IconCircleDotDashed",
+      "description": "CircleDotDashed icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-dot-dashed/icon-circle-dot-dashed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-slash",
+      "type": "registry:component",
+      "title": "IconCircleSlash",
+      "description": "CircleSlash icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-slash/icon-circle-slash.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-slash-2",
+      "type": "registry:component",
+      "title": "IconCircleSlash2",
+      "description": "CircleSlash2 icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-slash-2/icon-circle-slash-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-circle-off",
+      "type": "registry:component",
+      "title": "IconCircleOff",
+      "description": "CircleOff icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-circle-off/icon-circle-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-dot",
+      "type": "registry:component",
+      "title": "IconDot",
+      "description": "Dot icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-dot/icon-dot.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-clover",
+      "type": "registry:component",
+      "title": "IconClover",
+      "description": "Clover icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-clover/icon-clover.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cone",
+      "type": "registry:component",
+      "title": "IconCone",
+      "description": "Cone icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cone/icon-cone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cross",
+      "type": "registry:component",
+      "title": "IconCross",
+      "description": "Cross icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cross/icon-cross.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cylinder",
+      "type": "registry:component",
+      "title": "IconCylinder",
+      "description": "Cylinder icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cylinder/icon-cylinder.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-diameter",
+      "type": "registry:component",
+      "title": "IconDiameter",
+      "description": "Diameter icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-diameter/icon-diameter.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-diamond",
+      "type": "registry:component",
+      "title": "IconDiamond",
+      "description": "Diamond icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-diamond/icon-diamond.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hexagon",
+      "type": "registry:component",
+      "title": "IconHexagon",
+      "description": "Hexagon icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hexagon/icon-hexagon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-infinity",
+      "type": "registry:component",
+      "title": "IconInfinity",
+      "description": "Infinity icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-infinity/icon-infinity.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-octagon",
+      "type": "registry:component",
+      "title": "IconOctagon",
+      "description": "Octagon icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-octagon/icon-octagon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-octagon-pause",
+      "type": "registry:component",
+      "title": "IconOctagonPause",
+      "description": "OctagonPause icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-octagon-pause/icon-octagon-pause.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pentagon",
+      "type": "registry:component",
+      "title": "IconPentagon",
+      "description": "Pentagon icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pentagon/icon-pentagon.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pyramid",
+      "type": "registry:component",
+      "title": "IconPyramid",
+      "description": "Pyramid icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pyramid/icon-pyramid.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-radius",
+      "type": "registry:component",
+      "title": "IconRadius",
+      "description": "Radius icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-radius/icon-radius.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-rectangle-horizontal",
+      "type": "registry:component",
+      "title": "IconRectangleHorizontal",
+      "description": "RectangleHorizontal icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-rectangle-horizontal/icon-rectangle-horizontal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-rectangle-vertical",
+      "type": "registry:component",
+      "title": "IconRectangleVertical",
+      "description": "RectangleVertical icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-rectangle-vertical/icon-rectangle-vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shapes",
+      "type": "registry:component",
+      "title": "IconShapes",
+      "description": "Shapes icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shapes/icon-shapes.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shield",
+      "type": "registry:component",
+      "title": "IconShield",
+      "description": "Shield icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shield/icon-shield.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-spade",
+      "type": "registry:component",
+      "title": "IconSpade",
+      "description": "Spade icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-spade/icon-spade.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-square",
+      "type": "registry:component",
+      "title": "IconSquare",
+      "description": "Square icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-square/icon-square.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-square-dashed",
+      "type": "registry:component",
+      "title": "IconSquareDashed",
+      "description": "SquareDashed icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-square-dashed/icon-square-dashed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-square-dot",
+      "type": "registry:component",
+      "title": "IconSquareDot",
+      "description": "SquareDot icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-square-dot/icon-square-dot.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-tangent",
+      "type": "registry:component",
+      "title": "IconTangent",
+      "description": "Tangent icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-tangent/icon-tangent.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-torus",
+      "type": "registry:component",
+      "title": "IconTorus",
+      "description": "Torus icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-torus/icon-torus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-triangle",
+      "type": "registry:component",
+      "title": "IconTriangle",
+      "description": "Triangle icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-triangle/icon-triangle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-triangle-right",
+      "type": "registry:component",
+      "title": "IconTriangleRight",
+      "description": "TriangleRight icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-triangle-right/icon-triangle-right.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-unfold-horizontal",
+      "type": "registry:component",
+      "title": "IconUnfoldHorizontal",
+      "description": "UnfoldHorizontal icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-unfold-horizontal/icon-unfold-horizontal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-unfold-vertical",
+      "type": "registry:component",
+      "title": "IconUnfoldVertical",
+      "description": "UnfoldVertical icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-unfold-vertical/icon-unfold-vertical.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-variable",
+      "type": "registry:component",
+      "title": "IconVariable",
+      "description": "Variable icon with premium animation",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-variable/icon-variable.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

@@ -21,7 +21,12 @@ const dashVariants = {
   tap: { scaleX: 0.9 },
 };
 
-export function IconArrowBigDownDash({ size = 24, strokeWidth = 2, className, ...props }: IconArrowBigDownDashProps) {
+export function IconArrowBigDownDash({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  ...props
+}: IconArrowBigDownDashProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -49,8 +54,15 @@ export function IconArrowBigDownDash({ size = 24, strokeWidth = 2, className, ..
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.path d="M15 5H9" variants={dashVariants} style={{ originX: "50%", originY: "50%" }} />
-      <motion.path d="M15 9v3h4l-7 7-7-7h4V9z" variants={arrowVariants} />
+      <motion.path
+        d="M15 5H9"
+        variants={prefersReducedMotion ? {} : dashVariants}
+        style={{ originX: "50%", originY: "50%" }}
+      />
+      <motion.path
+        d="M15 9v3h4l-7 7-7-7h4V9z"
+        variants={prefersReducedMotion ? {} : arrowVariants}
+      />
     </motion.svg>
   );
 }
