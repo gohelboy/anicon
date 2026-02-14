@@ -1,8 +1,8 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type SVGMotionProps } from "framer-motion";
 
-export interface IconBoxProps extends React.SVGProps<SVGSVGElement> {
+export interface IconBoxProps extends SVGMotionProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
@@ -19,7 +19,7 @@ const floatVariants = {
       ease: "easeInOut"
     }
   }
-};
+} as any;
 
 export function IconBox({ size = 24, strokeWidth = 2, className, ...props }: IconBoxProps) {
   const {

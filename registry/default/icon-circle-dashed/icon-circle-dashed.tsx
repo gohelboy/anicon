@@ -1,8 +1,8 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type SVGMotionProps } from "framer-motion";
 
-export interface IconCircleDashedProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCircleDashedProps extends SVGMotionProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
@@ -18,7 +18,7 @@ const spinVariants = {
       ease: "linear"
     }
   }
-};
+} as any;
 
 export function IconCircleDashed({ size = 24, strokeWidth = 2, className, ...props }: IconCircleDashedProps) {
   const {

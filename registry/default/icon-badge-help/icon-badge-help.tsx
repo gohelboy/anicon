@@ -1,8 +1,8 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type SVGMotionProps } from "framer-motion";
 
-export interface IconBadgeHelpProps extends React.SVGProps<SVGSVGElement> {
+export interface IconBadgeHelpProps extends SVGMotionProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }

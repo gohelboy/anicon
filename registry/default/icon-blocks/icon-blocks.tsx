@@ -1,12 +1,11 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type SVGMotionProps, type Variants } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconBlocksProps extends SVGMotionProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
-
 
 const floatVariants = {
   rest: { y: 0 },
@@ -19,7 +18,7 @@ const floatVariants = {
       ease: "easeInOut"
     }
   }
-};
+} as any;
 
 export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
   const {

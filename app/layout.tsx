@@ -1,13 +1,6 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata, Viewport } from "next";
-import { DM_Sans } from "next/font/google";
 import "./globals.css";
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  variable: "--font-dm-sans",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Anicon – Animated Icons Registry",
@@ -28,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={dmSans.variable}>
+    <html lang="en" className="">
       <body className="min-w-0 overflow-x-hidden font-sans antialiased">
         {children}
         <Analytics />
