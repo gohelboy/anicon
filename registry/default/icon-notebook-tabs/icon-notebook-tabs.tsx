@@ -7,11 +7,15 @@ export interface IconNotebookTabsProps extends React.SVGProps<SVGSVGElement> {
   strokeWidth?: number;
 }
 
-const lineVariants: Variants = {
+const ringVariants: Variants = {
   rest: { x: 0 },
   hover: { 
-    x: 2,
-    transition: { type: "spring", stiffness: 300, damping: 10 }
+    x: [0, 2, 0],
+    transition: { 
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }
   },
 };
 
@@ -60,10 +64,10 @@ export function IconNotebookTabs({
       <path d="M15 2v20" />
       
       {/* Left Lines */}
-      <motion.path variants={prefersReducedMotion ? {} : lineVariants} transition={{ delay: 0.1 }} d="M2 6h4" />
-      <motion.path variants={prefersReducedMotion ? {} : lineVariants} transition={{ delay: 0.2 }} d="M2 10h4" />
-      <motion.path variants={prefersReducedMotion ? {} : lineVariants} transition={{ delay: 0.3 }} d="M2 14h4" />
-      <motion.path variants={prefersReducedMotion ? {} : lineVariants} transition={{ delay: 0.4 }} d="M2 18h4" />
+      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.1 }} d="M2 6h4" />
+      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.2 }} d="M2 10h4" />
+      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.3 }} d="M2 14h4" />
+      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.4 }} d="M2 18h4" />
       
       {/* Side Tabs */}
       <motion.path variants={prefersReducedMotion ? {} : tabVariants} transition={{ delay: 0.1 }} d="M15 7h5" />

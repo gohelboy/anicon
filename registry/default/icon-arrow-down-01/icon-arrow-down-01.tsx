@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 
 export interface IconArrowDown01AltProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -9,16 +9,37 @@ export interface IconArrowDown01AltProps extends React.SVGProps<SVGSVGElement> {
   strokeWidth?: number;
 }
 
-const arrowVariants = {
+
+
+
+
+
+
+
+
+const arrowVariants: Variants = {
   rest: { y: 0 },
-  hover: { y: 2 },
-  tap: { y: 4 },
+  hover: { 
+    y: [0, 2, 0],
+    transition: { 
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }
+  },
 };
 
-const numberVariants = {
-  rest: { x: 0 },
-  hover: { x: 1 },
-  tap: { x: -1 },
+const indicatorVariants: Variants = {
+  rest: { x: 0, opacity: 1 },
+  hover: { 
+    x: [0, 2, 0],
+    opacity: [1, 0.8, 1],
+    transition: { 
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }
+  },
 };
 
 export function IconArrowDown01Alt({ size = 24, strokeWidth = 2, className, ...props }: IconArrowDown01AltProps) {
@@ -42,18 +63,18 @@ export function IconArrowDown01Alt({ size = 24, strokeWidth = 2, className, ...p
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial={prefersReducedMotion ? false : "rest"}
-      whileHover={prefersReducedMotion ? undefined : "hover"}
-      whileTap={prefersReducedMotion ? undefined : "tap"}
-      transition={{ type: "spring", stiffness: 320, damping: 18 }}
+      initial="rest"
+      whileHover="hover"
+      
+      
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={arrowVariants}>
+      <motion.g variants={prefersReducedMotion ? {} : arrowVariants} >
         <path d="m3 16 4 4 4-4" />
         <path d="M7 20V4" />
       </motion.g>
-      <motion.g variants={numberVariants}>
+      <motion.g variants={prefersReducedMotion ? {} : indicatorVariants} >
         <rect x="15" y="4" width="4" height="6" ry="2" />
         <path d="M17 20v-6h-2" />
         <path d="M15 20h4" />

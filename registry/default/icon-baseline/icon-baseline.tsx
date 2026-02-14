@@ -2,38 +2,43 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconAArrowUpProps extends React.SVGProps<SVGSVGElement> {
-  /** Size in pixels. Default 24 */
+export interface IconBaselineProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
-  /** Stroke width. Default 2 */
   strokeWidth?: number;
 }
+
+const lineVariants: Variants = {
+  rest: { scaleX: 1, opacity: 1 },
+  hover: { 
+    scaleX: [1, 1.2, 1],
+    opacity: [1, 0.5, 1],
+    transition: { 
+      duration: 1,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }
+  },
+};
 
 const aVariants: Variants = {
   rest: { y: 0 },
   hover: { 
-    y: [0, 1, 0],
-    transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  },
-};
-
-const arrowVariants: Variants = {
-  rest: { y: 0 },
-  hover: { 
     y: [0, -2, 0],
     transition: { 
-      duration: 1.5,
+      duration: 1,
       repeat: Infinity,
       ease: "easeInOut"
     }
   },
 };
 
-export function IconAArrowUp({ size = 24, strokeWidth = 2, className, ...props }: IconAArrowUpProps) {
+export function IconBaseline({ 
+  size = 24, 
+  strokeWidth = 2, 
+  className,
+  ...props 
+}: IconBaselineProps) {
+  const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -42,7 +47,6 @@ export function IconAArrowUp({ size = 24, strokeWidth = 2, className, ...props }
     onDragEnd,
     ...rest
   } = props;
-  const prefersReducedMotion = useReducedMotion();
 
   return (
     <motion.svg
@@ -55,19 +59,20 @@ export function IconAArrowUp({ size = 24, strokeWidth = 2, className, ...props }
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
+      className={`select-none ${className ?? ""}`.trim()}
       initial="rest"
       whileHover="hover"
-      className={`select-none ${className ?? ""}`.trim()}
       {...rest}
     >
       <motion.g variants={prefersReducedMotion ? {} : aVariants}>
-        <path d="M3.5 13h6" />
-        <path d="m2 16 4.5-9 4.5 9" />
+        <path d="m6 16 6-12 6 12" />
+        <path d="M8 12h8" />
       </motion.g>
-      <motion.g variants={prefersReducedMotion ? {} : arrowVariants}>
-        <path d="M18 16V7" />
-        <path d="m14 11 4-4 4 4" />
-      </motion.g>
+      <motion.path 
+        d="M4 20h16" 
+        variants={prefersReducedMotion ? {} : lineVariants}
+        style={{ originX: "12px" }}
+      />
     </motion.svg>
   );
 }

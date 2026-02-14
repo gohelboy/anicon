@@ -2,31 +2,30 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconArrowUpProps extends React.SVGProps<SVGSVGElement> {
-  /** Size in pixels. Default 24 */
+export interface IconBoldProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
-  /** Stroke width. Default 2 */
   strokeWidth?: number;
 }
 
-const arrowVariants: Variants = {
-  rest: { y: 0 },
+const boldVariants: Variants = {
+  rest: { scale: 1 },
   hover: { 
-    y: [0, -2, 0],
+    scale: [1, 1.05, 1],
     transition: { 
-      duration: 1.5,
+      duration: 0.8,
       repeat: Infinity,
       ease: "easeInOut"
     }
   },
 };
 
-export function IconArrowUp({
-  size = 24,
-  strokeWidth = 2,
+export function IconBold({ 
+  size = 24, 
+  strokeWidth = 2, 
   className,
-  ...props
-}: IconArrowUpProps) {
+  ...props 
+}: IconBoldProps) {
+  const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -35,7 +34,6 @@ export function IconArrowUp({
     onDragEnd,
     ...rest
   } = props;
-  const prefersReducedMotion = useReducedMotion();
 
   return (
     <motion.svg
@@ -48,15 +46,21 @@ export function IconArrowUp({
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
+      className={`select-none ${className ?? ""}`.trim()}
       initial="rest"
       whileHover="hover"
-      className={`select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : arrowVariants}>
-        <path d="m18 12-6-6-6 6" />
-        <path d="M12 18V6" />
-      </motion.g>
+      <motion.path 
+        d="M6 12h9a4 4 0 0 1 0 8H6v-8Z" 
+        variants={prefersReducedMotion ? {} : boldVariants}
+        style={{ originX: "6px" }}
+      />
+      <motion.path 
+        d="M6 4h8a4 4 0 0 1 0 8H6V4Z" 
+        variants={prefersReducedMotion ? {} : boldVariants}
+        style={{ originX: "6px" }}
+      />
     </motion.svg>
   );
 }

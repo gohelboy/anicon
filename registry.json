@@ -6962,6 +6962,81 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-asterisk",
+      "type": "registry:component",
+      "title": "Animated Asterisk",
+      "description": "Asterisk with a springy spin",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-asterisk/icon-asterisk.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-baseline",
+      "type": "registry:component",
+      "title": "Animated Baseline",
+      "description": "Baseline with a pulsing underline",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-baseline/icon-baseline.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-binary",
+      "type": "registry:component",
+      "title": "Animated Binary",
+      "description": "Binary data with shifting 0s and 1s",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-binary/icon-binary.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bold",
+      "type": "registry:component",
+      "title": "Animated Bold",
+      "description": "Bold text icon with a strong bop",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bold/icon-bold.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-underline",
+      "type": "registry:component",
+      "title": "Animated Underline",
+      "description": "Underline with a pulsing line",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-underline/icon-underline.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

@@ -2,31 +2,31 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconArrowDownProps extends React.SVGProps<SVGSVGElement> {
-  /** Size in pixels. Default 24 */
+export interface IconAsteriskProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
-  /** Stroke width. Default 2 */
   strokeWidth?: number;
 }
 
-const arrowVariants: Variants = {
-  rest: { y: 0 },
+const asteriskVariants: Variants = {
+  rest: { rotate: 0, scale: 1 },
   hover: { 
-    y: [0, 2, 0],
+    rotate: 180,
+    scale: 1.2,
     transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
+      type: "spring",
+      stiffness: 300,
+      damping: 15
     }
   },
 };
 
-export function IconArrowDown({
-  size = 24,
-  strokeWidth = 2,
+export function IconAsterisk({ 
+  size = 24, 
+  strokeWidth = 2, 
   className,
-  ...props
-}: IconArrowDownProps) {
+  ...props 
+}: IconAsteriskProps) {
+  const prefersReducedMotion = useReducedMotion();
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -35,7 +35,6 @@ export function IconArrowDown({
     onDragEnd,
     ...rest
   } = props;
-  const prefersReducedMotion = useReducedMotion();
 
   return (
     <motion.svg
@@ -48,14 +47,18 @@ export function IconArrowDown({
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
+      className={`select-none ${className ?? ""}`.trim()}
       initial="rest"
       whileHover="hover"
-      className={`select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : arrowVariants}>
-        <path d="m6 12 6 6 6-6" />
+      <motion.g 
+        variants={prefersReducedMotion ? {} : asteriskVariants}
+        style={{ originX: "12px", originY: "12px" }}
+      >
         <path d="M12 6v12" />
+        <path d="M17.196 9 6.804 15" />
+        <path d="M6.804 9 17.196 15" />
       </motion.g>
     </motion.svg>
   );

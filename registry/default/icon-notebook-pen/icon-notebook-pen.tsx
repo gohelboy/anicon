@@ -7,14 +7,14 @@ export interface IconNotebookPenProps extends React.SVGProps<SVGSVGElement> {
   strokeWidth?: number;
 }
 
-const lineVariants: Variants = {
+const ringVariants: Variants = {
   rest: { x: 0 },
   hover: { 
-    x: 2,
+    x: [0, 2, 0],
     transition: { 
-      type: "spring",
-      stiffness: 300,
-      damping: 10
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut"
     }
   },
 };
@@ -70,10 +70,10 @@ export function IconNotebookPen({
       {...rest}
     >
       <path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4" />
-      <motion.path variants={prefersReducedMotion ? {} : lineVariants} transition={{ delay: 0.1 }} d="M2 6h4" />
-      <motion.path variants={prefersReducedMotion ? {} : lineVariants} transition={{ delay: 0.2 }} d="M2 10h4" />
-      <motion.path variants={prefersReducedMotion ? {} : lineVariants} transition={{ delay: 0.3 }} d="M2 14h4" />
-      <motion.path variants={prefersReducedMotion ? {} : lineVariants} transition={{ delay: 0.4 }} d="M2 18h4" />
+      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.1 }} d="M2 6h4" />
+      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.2 }} d="M2 10h4" />
+      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.3 }} d="M2 14h4" />
+      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.4 }} d="M2 18h4" />
       <motion.path 
         d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z" 
         variants={prefersReducedMotion ? {} : penVariants}

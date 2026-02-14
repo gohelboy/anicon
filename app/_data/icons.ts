@@ -401,11 +401,48 @@ import { IconShrimp } from "@/registry/default/icon-shrimp/icon-shrimp";
 import { IconSnail } from "@/registry/default/icon-snail/icon-snail";
 
 // Batch 19 Architecture & Construction
+import { IconAsterisk } from "@/registry/default/icon-asterisk/icon-asterisk";
+import { IconBaseline } from "@/registry/default/icon-baseline/icon-baseline";
+import { IconBinary } from "@/registry/default/icon-binary/icon-binary";
+import { IconBold } from "@/registry/default/icon-bold/icon-bold";
 import { IconBrickWall } from "@/registry/default/icon-brick-wall/icon-brick-wall";
 import { IconBuilding2 } from "@/registry/default/icon-building-2/icon-building-2";
 import { IconBuilding } from "@/registry/default/icon-building/icon-building";
+import { IconCalendarArrowDown } from "@/registry/default/icon-calendar-arrow-down/icon-calendar-arrow-down";
+import { IconCalendarArrowUp } from "@/registry/default/icon-calendar-arrow-up/icon-calendar-arrow-up";
+import { IconCalendarCheck2 } from "@/registry/default/icon-calendar-check-2/icon-calendar-check-2";
+import { IconCalendarCheck } from "@/registry/default/icon-calendar-check/icon-calendar-check";
+import { IconCalendarClock } from "@/registry/default/icon-calendar-clock/icon-calendar-clock";
+import { IconCalendarCog } from "@/registry/default/icon-calendar-cog/icon-calendar-cog";
+import { IconCalendarDays } from "@/registry/default/icon-calendar-days/icon-calendar-days";
+import { IconCalendarFold } from "@/registry/default/icon-calendar-fold/icon-calendar-fold";
+import { IconCalendarHeart } from "@/registry/default/icon-calendar-heart/icon-calendar-heart";
+import { IconCalendarMinus2 } from "@/registry/default/icon-calendar-minus-2/icon-calendar-minus-2";
+import { IconCalendarMinus } from "@/registry/default/icon-calendar-minus/icon-calendar-minus";
+import { IconCalendarOff } from "@/registry/default/icon-calendar-off/icon-calendar-off";
+import { IconCalendarPlus2 } from "@/registry/default/icon-calendar-plus-2/icon-calendar-plus-2";
+import { IconCalendarPlus } from "@/registry/default/icon-calendar-plus/icon-calendar-plus";
+import { IconCalendarRange } from "@/registry/default/icon-calendar-range/icon-calendar-range";
+import { IconCalendarSearch } from "@/registry/default/icon-calendar-search/icon-calendar-search";
+import { IconCalendarX2 } from "@/registry/default/icon-calendar-x-2/icon-calendar-x-2";
+import { IconCalendarX } from "@/registry/default/icon-calendar-x/icon-calendar-x";
 import { IconCastle } from "@/registry/default/icon-castle/icon-castle";
 import { IconChurch } from "@/registry/default/icon-church/icon-church";
+import { IconClipboardList } from "@/registry/default/icon-clipboard-list/icon-clipboard-list";
+import { IconClock1 } from "@/registry/default/icon-clock-1/icon-clock-1";
+import { IconClock10 } from "@/registry/default/icon-clock-10/icon-clock-10";
+import { IconClock11 } from "@/registry/default/icon-clock-11/icon-clock-11";
+import { IconClock12 } from "@/registry/default/icon-clock-12/icon-clock-12";
+import { IconClock2 } from "@/registry/default/icon-clock-2/icon-clock-2";
+import { IconClock3 } from "@/registry/default/icon-clock-3/icon-clock-3";
+import { IconClock4 } from "@/registry/default/icon-clock-4/icon-clock-4";
+import { IconClock5 } from "@/registry/default/icon-clock-5/icon-clock-5";
+import { IconClock6 } from "@/registry/default/icon-clock-6/icon-clock-6";
+import { IconClock7 } from "@/registry/default/icon-clock-7/icon-clock-7";
+import { IconClock8 } from "@/registry/default/icon-clock-8/icon-clock-8";
+import { IconClock9 } from "@/registry/default/icon-clock-9/icon-clock-9";
+import { IconClockArrowDown } from "@/registry/default/icon-clock-arrow-down/icon-clock-arrow-down";
+import { IconClockArrowUp } from "@/registry/default/icon-clock-arrow-up/icon-clock-arrow-up";
 import { IconCloudDrizzle } from "@/registry/default/icon-cloud-drizzle/icon-cloud-drizzle";
 import { IconCloudFog } from "@/registry/default/icon-cloud-fog/icon-cloud-fog";
 import { IconCloudOff } from "@/registry/default/icon-cloud-off/icon-cloud-off";
@@ -422,13 +459,20 @@ import { IconFence } from "@/registry/default/icon-fence/icon-fence";
 import { IconHaze } from "@/registry/default/icon-haze/icon-haze";
 import { IconHospital } from "@/registry/default/icon-hospital/icon-hospital";
 import { IconHotel } from "@/registry/default/icon-hotel/icon-hotel";
+import { IconHourglass } from "@/registry/default/icon-hourglass/icon-hourglass";
 import { IconHouseHeart } from "@/registry/default/icon-house-heart/icon-house-heart";
 import { IconHousePlug } from "@/registry/default/icon-house-plug/icon-house-plug";
 import { IconHousePlus } from "@/registry/default/icon-house-plus/icon-house-plus";
 import { IconHouseWifi } from "@/registry/default/icon-house-wifi/icon-house-wifi";
 import { IconHouse } from "@/registry/default/icon-house/icon-house";
 import { IconLibrary } from "@/registry/default/icon-library/icon-library";
+import { IconListCheck } from "@/registry/default/icon-list-check/icon-list-check";
+import { IconList } from "@/registry/default/icon-list/icon-list";
 import { IconMoon } from "@/registry/default/icon-moon/icon-moon";
+import { IconNotebookPen } from "@/registry/default/icon-notebook-pen/icon-notebook-pen";
+import { IconNotebookTabs } from "@/registry/default/icon-notebook-tabs/icon-notebook-tabs";
+import { IconNotebookText } from "@/registry/default/icon-notebook-text/icon-notebook-text";
+import { IconNotebook } from "@/registry/default/icon-notebook/icon-notebook";
 import { IconRainbow } from "@/registry/default/icon-rainbow/icon-rainbow";
 import { IconSchool } from "@/registry/default/icon-school/icon-school";
 import { IconShell } from "@/registry/default/icon-shell/icon-shell";
@@ -437,58 +481,19 @@ import { IconSunset } from "@/registry/default/icon-sunset/icon-sunset";
 import { IconTheater } from "@/registry/default/icon-theater/icon-theater";
 import { IconThermometerSnowflake } from "@/registry/default/icon-thermometer-snowflake/icon-thermometer-snowflake";
 import { IconThermometerSun } from "@/registry/default/icon-thermometer-sun/icon-thermometer-sun";
+import { IconTimerOff } from "@/registry/default/icon-timer-off/icon-timer-off";
+import { IconTimerReset } from "@/registry/default/icon-timer-reset/icon-timer-reset";
+import { IconTimer } from "@/registry/default/icon-timer/icon-timer";
 import { IconTornado } from "@/registry/default/icon-tornado/icon-tornado";
 import { IconTurtle } from "@/registry/default/icon-turtle/icon-turtle";
 import { IconUmbrellaOff } from "@/registry/default/icon-umbrella-off/icon-umbrella-off";
+import { IconUnderline } from "@/registry/default/icon-underline/icon-underline";
 import { IconUtilityPole } from "@/registry/default/icon-utility-pole/icon-utility-pole";
 import { IconWarehouse } from "@/registry/default/icon-warehouse/icon-warehouse";
 import { IconWaves } from "@/registry/default/icon-waves/icon-waves";
 import { IconWind } from "@/registry/default/icon-wind/icon-wind";
 import { IconWorm } from "@/registry/default/icon-worm/icon-worm";
 import { IconZapOff } from "@/registry/default/icon-zap-off/icon-zap-off";
-import { IconCalendarArrowDown } from "@/registry/default/icon-calendar-arrow-down/icon-calendar-arrow-down";
-import { IconCalendarArrowUp } from "@/registry/default/icon-calendar-arrow-up/icon-calendar-arrow-up";
-import { IconCalendarCheck } from "@/registry/default/icon-calendar-check/icon-calendar-check";
-import { IconCalendarCheck2 } from "@/registry/default/icon-calendar-check-2/icon-calendar-check-2";
-import { IconCalendarClock } from "@/registry/default/icon-calendar-clock/icon-calendar-clock";
-import { IconCalendarCog } from "@/registry/default/icon-calendar-cog/icon-calendar-cog";
-import { IconCalendarDays } from "@/registry/default/icon-calendar-days/icon-calendar-days";
-import { IconCalendarFold } from "@/registry/default/icon-calendar-fold/icon-calendar-fold";
-import { IconCalendarHeart } from "@/registry/default/icon-calendar-heart/icon-calendar-heart";
-import { IconCalendarMinus } from "@/registry/default/icon-calendar-minus/icon-calendar-minus";
-import { IconCalendarMinus2 } from "@/registry/default/icon-calendar-minus-2/icon-calendar-minus-2";
-import { IconCalendarOff } from "@/registry/default/icon-calendar-off/icon-calendar-off";
-import { IconCalendarPlus } from "@/registry/default/icon-calendar-plus/icon-calendar-plus";
-import { IconCalendarPlus2 } from "@/registry/default/icon-calendar-plus-2/icon-calendar-plus-2";
-import { IconCalendarRange } from "@/registry/default/icon-calendar-range/icon-calendar-range";
-import { IconCalendarSearch } from "@/registry/default/icon-calendar-search/icon-calendar-search";
-import { IconCalendarX } from "@/registry/default/icon-calendar-x/icon-calendar-x";
-import { IconCalendarX2 } from "@/registry/default/icon-calendar-x-2/icon-calendar-x-2";
-import { IconClock1 } from "@/registry/default/icon-clock-1/icon-clock-1";
-import { IconClock2 } from "@/registry/default/icon-clock-2/icon-clock-2";
-import { IconClock3 } from "@/registry/default/icon-clock-3/icon-clock-3";
-import { IconClock4 } from "@/registry/default/icon-clock-4/icon-clock-4";
-import { IconClock5 } from "@/registry/default/icon-clock-5/icon-clock-5";
-import { IconClock6 } from "@/registry/default/icon-clock-6/icon-clock-6";
-import { IconClock7 } from "@/registry/default/icon-clock-7/icon-clock-7";
-import { IconClock8 } from "@/registry/default/icon-clock-8/icon-clock-8";
-import { IconClock9 } from "@/registry/default/icon-clock-9/icon-clock-9";
-import { IconClock10 } from "@/registry/default/icon-clock-10/icon-clock-10";
-import { IconClock11 } from "@/registry/default/icon-clock-11/icon-clock-11";
-import { IconClock12 } from "@/registry/default/icon-clock-12/icon-clock-12";
-import { IconClockArrowDown } from "@/registry/default/icon-clock-arrow-down/icon-clock-arrow-down";
-import { IconClockArrowUp } from "@/registry/default/icon-clock-arrow-up/icon-clock-arrow-up";
-import { IconClipboardList } from "@/registry/default/icon-clipboard-list/icon-clipboard-list";
-import { IconList } from "@/registry/default/icon-list/icon-list";
-import { IconListCheck } from "@/registry/default/icon-list-check/icon-list-check";
-import { IconHourglass } from "@/registry/default/icon-hourglass/icon-hourglass";
-import { IconTimer } from "@/registry/default/icon-timer/icon-timer";
-import { IconTimerOff } from "@/registry/default/icon-timer-off/icon-timer-off";
-import { IconTimerReset } from "@/registry/default/icon-timer-reset/icon-timer-reset";
-import { IconNotebook } from "@/registry/default/icon-notebook/icon-notebook";
-import { IconNotebookPen } from "@/registry/default/icon-notebook-pen/icon-notebook-pen";
-import { IconNotebookTabs } from "@/registry/default/icon-notebook-tabs/icon-notebook-tabs";
-import { IconNotebookText } from "@/registry/default/icon-notebook-text/icon-notebook-text";
 
 export const iconsRegistry = [
   {
@@ -3454,231 +3459,231 @@ export const iconsRegistry = [
     component: IconCalendarArrowDown,
     color: "text-blue-400",
     description: "Calendar Arrow Down icon with semantic animation",
-    tags: ["calendar","arrow","down"],
+    tags: ["calendar", "arrow", "down"],
   },
   {
     name: "icon-calendar-arrow-up",
     component: IconCalendarArrowUp,
     color: "text-blue-400",
     description: "Calendar Arrow Up icon with semantic animation",
-    tags: ["calendar","arrow","up"],
+    tags: ["calendar", "arrow", "up"],
   },
   {
     name: "icon-calendar-check",
     component: IconCalendarCheck,
     color: "text-emerald-400",
     description: "Calendar Check icon with semantic animation",
-    tags: ["calendar","check"],
+    tags: ["calendar", "check"],
   },
   {
     name: "icon-calendar-check-2",
     component: IconCalendarCheck2,
     color: "text-emerald-400",
     description: "Calendar Check 2 icon with semantic animation",
-    tags: ["calendar","check","2"],
+    tags: ["calendar", "check", "2"],
   },
   {
     name: "icon-calendar-clock",
     component: IconCalendarClock,
     color: "text-zinc-400",
     description: "Calendar Clock icon with semantic animation",
-    tags: ["calendar","clock"],
+    tags: ["calendar", "clock"],
   },
   {
     name: "icon-calendar-cog",
     component: IconCalendarCog,
     color: "text-blue-400",
     description: "Calendar Cog icon with semantic animation",
-    tags: ["calendar","cog"],
+    tags: ["calendar", "cog"],
   },
   {
     name: "icon-calendar-days",
     component: IconCalendarDays,
     color: "text-blue-400",
     description: "Calendar Days icon with semantic animation",
-    tags: ["calendar","days"],
+    tags: ["calendar", "days"],
   },
   {
     name: "icon-calendar-fold",
     component: IconCalendarFold,
     color: "text-blue-400",
     description: "Calendar Fold icon with semantic animation",
-    tags: ["calendar","fold"],
+    tags: ["calendar", "fold"],
   },
   {
     name: "icon-calendar-heart",
     component: IconCalendarHeart,
     color: "text-blue-400",
     description: "Calendar Heart icon with semantic animation",
-    tags: ["calendar","heart"],
+    tags: ["calendar", "heart"],
   },
   {
     name: "icon-calendar-minus",
     component: IconCalendarMinus,
     color: "text-blue-400",
     description: "Calendar Minus icon with semantic animation",
-    tags: ["calendar","minus"],
+    tags: ["calendar", "minus"],
   },
   {
     name: "icon-calendar-minus-2",
     component: IconCalendarMinus2,
     color: "text-blue-400",
     description: "Calendar Minus 2 icon with semantic animation",
-    tags: ["calendar","minus","2"],
+    tags: ["calendar", "minus", "2"],
   },
   {
     name: "icon-calendar-off",
     component: IconCalendarOff,
     color: "text-blue-400",
     description: "Calendar Off icon with semantic animation",
-    tags: ["calendar","off"],
+    tags: ["calendar", "off"],
   },
   {
     name: "icon-calendar-plus",
     component: IconCalendarPlus,
     color: "text-blue-400",
     description: "Calendar Plus icon with semantic animation",
-    tags: ["calendar","plus"],
+    tags: ["calendar", "plus"],
   },
   {
     name: "icon-calendar-plus-2",
     component: IconCalendarPlus2,
     color: "text-blue-400",
     description: "Calendar Plus 2 icon with semantic animation",
-    tags: ["calendar","plus","2"],
+    tags: ["calendar", "plus", "2"],
   },
   {
     name: "icon-calendar-range",
     component: IconCalendarRange,
     color: "text-blue-400",
     description: "Calendar Range icon with semantic animation",
-    tags: ["calendar","range"],
+    tags: ["calendar", "range"],
   },
   {
     name: "icon-calendar-search",
     component: IconCalendarSearch,
     color: "text-blue-400",
     description: "Calendar Search icon with semantic animation",
-    tags: ["calendar","search"],
+    tags: ["calendar", "search"],
   },
   {
     name: "icon-calendar-x",
     component: IconCalendarX,
     color: "text-blue-400",
     description: "Calendar X icon with semantic animation",
-    tags: ["calendar","x"],
+    tags: ["calendar", "x"],
   },
   {
     name: "icon-calendar-x-2",
     component: IconCalendarX2,
     color: "text-blue-400",
     description: "Calendar X 2 icon with semantic animation",
-    tags: ["calendar","x","2"],
+    tags: ["calendar", "x", "2"],
   },
   {
     name: "icon-clock-1",
     component: IconClock1,
     color: "text-zinc-400",
     description: "Clock 1 icon with semantic animation",
-    tags: ["clock","1"],
+    tags: ["clock", "1"],
   },
   {
     name: "icon-clock-2",
     component: IconClock2,
     color: "text-zinc-400",
     description: "Clock 2 icon with semantic animation",
-    tags: ["clock","2"],
+    tags: ["clock", "2"],
   },
   {
     name: "icon-clock-3",
     component: IconClock3,
     color: "text-zinc-400",
     description: "Clock 3 icon with semantic animation",
-    tags: ["clock","3"],
+    tags: ["clock", "3"],
   },
   {
     name: "icon-clock-4",
     component: IconClock4,
     color: "text-zinc-400",
     description: "Clock 4 icon with semantic animation",
-    tags: ["clock","4"],
+    tags: ["clock", "4"],
   },
   {
     name: "icon-clock-5",
     component: IconClock5,
     color: "text-zinc-400",
     description: "Clock 5 icon with semantic animation",
-    tags: ["clock","5"],
+    tags: ["clock", "5"],
   },
   {
     name: "icon-clock-6",
     component: IconClock6,
     color: "text-zinc-400",
     description: "Clock 6 icon with semantic animation",
-    tags: ["clock","6"],
+    tags: ["clock", "6"],
   },
   {
     name: "icon-clock-7",
     component: IconClock7,
     color: "text-zinc-400",
     description: "Clock 7 icon with semantic animation",
-    tags: ["clock","7"],
+    tags: ["clock", "7"],
   },
   {
     name: "icon-clock-8",
     component: IconClock8,
     color: "text-zinc-400",
     description: "Clock 8 icon with semantic animation",
-    tags: ["clock","8"],
+    tags: ["clock", "8"],
   },
   {
     name: "icon-clock-9",
     component: IconClock9,
     color: "text-zinc-400",
     description: "Clock 9 icon with semantic animation",
-    tags: ["clock","9"],
+    tags: ["clock", "9"],
   },
   {
     name: "icon-clock-10",
     component: IconClock10,
     color: "text-zinc-400",
     description: "Clock 10 icon with semantic animation",
-    tags: ["clock","10"],
+    tags: ["clock", "10"],
   },
   {
     name: "icon-clock-11",
     component: IconClock11,
     color: "text-zinc-400",
     description: "Clock 11 icon with semantic animation",
-    tags: ["clock","11"],
+    tags: ["clock", "11"],
   },
   {
     name: "icon-clock-12",
     component: IconClock12,
     color: "text-zinc-400",
     description: "Clock 12 icon with semantic animation",
-    tags: ["clock","12"],
+    tags: ["clock", "12"],
   },
   {
     name: "icon-clock-arrow-down",
     component: IconClockArrowDown,
     color: "text-zinc-400",
     description: "Clock Arrow Down icon with semantic animation",
-    tags: ["clock","arrow","down"],
+    tags: ["clock", "arrow", "down"],
   },
   {
     name: "icon-clock-arrow-up",
     component: IconClockArrowUp,
     color: "text-zinc-400",
     description: "Clock Arrow Up icon with semantic animation",
-    tags: ["clock","arrow","up"],
+    tags: ["clock", "arrow", "up"],
   },
   {
     name: "icon-clipboard-list",
     component: IconClipboardList,
     color: "text-white",
     description: "Clipboard List icon with semantic animation",
-    tags: ["clipboard","list"],
+    tags: ["clipboard", "list"],
   },
   {
     name: "icon-list",
@@ -3692,7 +3697,7 @@ export const iconsRegistry = [
     component: IconListCheck,
     color: "text-emerald-400",
     description: "List Check icon with semantic animation",
-    tags: ["list","check"],
+    tags: ["list", "check"],
   },
   {
     name: "icon-hourglass",
@@ -3713,14 +3718,14 @@ export const iconsRegistry = [
     component: IconTimerOff,
     color: "text-red-400",
     description: "Timer Off icon with semantic animation",
-    tags: ["timer","off"],
+    tags: ["timer", "off"],
   },
   {
     name: "icon-timer-reset",
     component: IconTimerReset,
     color: "text-red-400",
     description: "Timer Reset icon with semantic animation",
-    tags: ["timer","reset"],
+    tags: ["timer", "reset"],
   },
   {
     name: "icon-notebook",
@@ -3734,21 +3739,56 @@ export const iconsRegistry = [
     component: IconNotebookPen,
     color: "text-white",
     description: "Notebook Pen icon with semantic animation",
-    tags: ["notebook","pen"],
+    tags: ["notebook", "pen"],
   },
   {
     name: "icon-notebook-tabs",
     component: IconNotebookTabs,
     color: "text-white",
     description: "Notebook Tabs icon with semantic animation",
-    tags: ["notebook","tabs"],
+    tags: ["notebook", "tabs"],
   },
   {
     name: "icon-notebook-text",
     component: IconNotebookText,
     color: "text-white",
     description: "Notebook Text icon with semantic animation",
-    tags: ["notebook","text"],
+    tags: ["notebook", "text"],
+  },
+  {
+    name: "icon-bold",
+    component: IconBold,
+    color: "text-white",
+    description: "Bold text icon with a strong bop",
+    tags: ["text", "bold", "format"],
+  },
+  {
+    name: "icon-binary",
+    component: IconBinary,
+    color: "text-white",
+    description: "Binary data with shifting 0s and 1s",
+    tags: ["data", "binary", "code"],
+  },
+  {
+    name: "icon-asterisk",
+    component: IconAsterisk,
+    color: "text-white",
+    description: "Asterisk with a springy spin",
+    tags: ["asterisk", "star", "symbol"],
+  },
+  {
+    name: "icon-baseline",
+    component: IconBaseline,
+    color: "text-white",
+    description: "Baseline with a pulsing underline",
+    tags: ["text", "format", "baseline"],
+  },
+  {
+    name: "icon-underline",
+    component: IconUnderline,
+    color: "text-white",
+    description: "Underline with a pulsing line",
+    tags: ["text", "format", "underline"],
   },
 ] as const;
 
