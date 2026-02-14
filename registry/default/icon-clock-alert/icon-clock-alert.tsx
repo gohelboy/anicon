@@ -63,20 +63,16 @@ export function IconClockAlert({
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial="rest"
-      whileHover="hover"
-      className={`select-none ${className ?? ""}`.trim()}
+      initial={prefersReducedMotion ? false : "rest"}
+      whileHover={prefersReducedMotion ? undefined : "hover"}
+      whileTap={prefersReducedMotion ? undefined : "tap"}
+      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       style={{ overflow: "visible" }}
       {...restOptions}
     >
       <motion.g variants={clockVariants} style={{ originX: "12px", originY: "12px" }}>
         <path d="M21.25 8.2A10 10 0 1 0 16 21.16" />
-        <path d="M12 6v6" />
-        <motion.path 
-          d="M12 12l4 2" 
-          variants={prefersReducedMotion ? {} : handVariants} 
-          style={{ originX: "12px", originY: "12px" }} 
-        />
+        <motion.path d="M12 6v6l4 2" variants={handVariants} style={{ originX: "12px", originY: "12px" }} />
       </motion.g>
       <motion.g variants={exclamationVariants} style={{ originX: "20px", originY: "16px" }}>
         <path d="M20 12v5" />

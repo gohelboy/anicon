@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconArrowUpNarrowWideProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -9,41 +9,16 @@ export interface IconArrowUpNarrowWideProps extends React.SVGProps<SVGSVGElement
   strokeWidth?: number;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-const arrowVariants: Variants = {
+const arrowVariants = {
   rest: { y: 0 },
-  hover: { 
-    y: [0, -2, 0],
-    transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  },
+  hover: { y: -2 },
+  tap: { y: -4 },
 };
 
-const indicatorVariants: Variants = {
-  rest: { x: 0, opacity: 1 },
-  hover: { 
-    x: [0, 2, 0],
-    opacity: [1, 0.8, 1],
-    transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  },
+const barVariants = {
+  rest: { scaleX: 1 },
+  hover: { scaleX: 1.08 },
+  tap: { scaleX: 0.95 },
 };
 
 export function IconArrowUpNarrowWide({ size = 24, strokeWidth = 2, className, ...props }: IconArrowUpNarrowWideProps) {
@@ -67,18 +42,18 @@ export function IconArrowUpNarrowWide({ size = 24, strokeWidth = 2, className, .
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial="rest"
-      whileHover="hover"
-      
-      
+      initial={prefersReducedMotion ? false : "rest"}
+      whileHover={prefersReducedMotion ? undefined : "hover"}
+      whileTap={prefersReducedMotion ? undefined : "tap"}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : arrowVariants} >
+      <motion.g variants={arrowVariants}>
         <path d="m3 8 4-4 4 4" />
         <path d="M7 4v16" />
       </motion.g>
-      <motion.g variants={prefersReducedMotion ? {} : indicatorVariants}  style={{ originX: 0 }}>
+      <motion.g variants={barVariants} style={{ originX: 0 }}>
         <path d="M11 12h4" />
         <path d="M11 16h7" />
         <path d="M11 20h10" />
