@@ -10,22 +10,9 @@ export interface IconAtSignProps extends React.SVGProps<SVGSVGElement> {
 const spiralVariants: Variants = {
   rest: { pathLength: 1, opacity: 1 },
   hover: {
-    pathLength: [1, 0, 1],
-    opacity: [1, 0.6, 1],
+    pathLength: [1, 0.8, 1],
     transition: {
       duration: 2,
-      repeat: Infinity,
-      ease: "easeInOut",
-    },
-  },
-};
-
-const circleVariants: Variants = {
-  rest: { scale: 1 },
-  hover: {
-    scale: [1, 1.2, 1],
-    transition: {
-      duration: 1.5,
       repeat: Infinity,
       ease: "easeInOut",
     },
@@ -59,7 +46,7 @@ export function IconAtSign({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.circle cx="12" cy="12" r="4" style={{ originX: "12px", originY: "12px" }} variants={prefersReducedMotion ? {} : circleVariants} />
+      <motion.circle cx="12" cy="12" r="4" style={{ originX: "12px", originY: "12px" }} />
       <motion.path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" variants={spiralVariants} />
     </motion.svg>
   );

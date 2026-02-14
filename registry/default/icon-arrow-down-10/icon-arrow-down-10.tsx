@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconArrowDown10AltProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -9,37 +9,16 @@ export interface IconArrowDown10AltProps extends React.SVGProps<SVGSVGElement> {
   strokeWidth?: number;
 }
 
-
-
-
-
-
-
-
-
-const arrowVariants: Variants = {
+const arrowVariants = {
   rest: { y: 0 },
-  hover: { 
-    y: [0, 2, 0],
-    transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  },
+  hover: { y: 2 },
+  tap: { y: 4 },
 };
 
-const indicatorVariants: Variants = {
-  rest: { x: 0, opacity: 1 },
-  hover: { 
-    x: [0, 2, 0],
-    opacity: [1, 0.8, 1],
-    transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  },
+const numberVariants = {
+  rest: { x: 0 },
+  hover: { x: 1 },
+  tap: { x: -1 },
 };
 
 export function IconArrowDown10Alt({ size = 24, strokeWidth = 2, className, ...props }: IconArrowDown10AltProps) {
@@ -63,18 +42,18 @@ export function IconArrowDown10Alt({ size = 24, strokeWidth = 2, className, ...p
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial="rest"
-      whileHover="hover"
-      
-      
+      initial={prefersReducedMotion ? false : "rest"}
+      whileHover={prefersReducedMotion ? undefined : "hover"}
+      whileTap={prefersReducedMotion ? undefined : "tap"}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : arrowVariants} >
+      <motion.g variants={arrowVariants}>
         <path d="m3 16 4 4 4-4" />
         <path d="M7 20V4" />
       </motion.g>
-      <motion.g variants={prefersReducedMotion ? {} : indicatorVariants} >
+      <motion.g variants={numberVariants}>
         <path d="M17 10V4h-2" />
         <path d="M15 10h4" />
         <rect x="15" y="14" width="4" height="6" ry="2" />

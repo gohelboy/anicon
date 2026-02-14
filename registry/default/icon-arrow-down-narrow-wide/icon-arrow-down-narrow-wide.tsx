@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconArrowDownNarrowWideProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -9,41 +9,16 @@ export interface IconArrowDownNarrowWideProps extends React.SVGProps<SVGSVGEleme
   strokeWidth?: number;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-const arrowVariants: Variants = {
+const arrowVariants = {
   rest: { y: 0 },
-  hover: { 
-    y: [0, 2, 0],
-    transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  },
+  hover: { y: 2 },
+  tap: { y: 4 },
 };
 
-const indicatorVariants: Variants = {
-  rest: { x: 0, opacity: 1 },
-  hover: { 
-    x: [0, 2, 0],
-    opacity: [1, 0.8, 1],
-    transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  },
+const barsVariants = {
+  rest: { x: 0 },
+  hover: { x: 1 },
+  tap: { x: -1 },
 };
 
 export function IconArrowDownNarrowWide({ size = 24, strokeWidth = 2, className, ...props }: IconArrowDownNarrowWideProps) {
@@ -67,18 +42,18 @@ export function IconArrowDownNarrowWide({ size = 24, strokeWidth = 2, className,
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial="rest"
-      whileHover="hover"
-      
-      
+      initial={prefersReducedMotion ? false : "rest"}
+      whileHover={prefersReducedMotion ? undefined : "hover"}
+      whileTap={prefersReducedMotion ? undefined : "tap"}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : arrowVariants} >
+      <motion.g variants={arrowVariants}>
         <path d="m3 16 4 4 4-4" />
         <path d="M7 20V4" />
       </motion.g>
-      <motion.g variants={prefersReducedMotion ? {} : indicatorVariants} >
+      <motion.g variants={barsVariants}>
         <path d="M11 4h4" />
         <path d="M11 8h7" />
         <path d="M11 12h10" />

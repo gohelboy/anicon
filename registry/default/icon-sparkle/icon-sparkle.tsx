@@ -3,32 +3,27 @@
 import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconSparkleProps extends React.SVGProps<SVGSVGElement> {
+  /** Size in pixels. Default 24 */
   size?: number;
+  /** Stroke width. Default 2 */
   strokeWidth?: number;
 }
 
-
-const twinkleVariants = {
-  rest: { opacity: 1, scale: 1 },
-  hover: {
-    opacity: 0.7,
-    scale: 1.1,
-    transition: {
-      duration: 0.5,
-      repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut"
-    }
-  }
-};
-
-export function IconSparkle({ size = 24, strokeWidth = 2, className, ...props }: IconSparkleProps) {
+export function IconSparkle({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  ...props
+}: IconSparkleProps) {
   const {
     onAnimationStart,
+    onAnimationEnd,
+    onDragStart,
+    onDrag,
+    onDragEnd,
     ...rest
   } = props;
   const prefersReducedMotion = useReducedMotion();
-
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -40,18 +35,13 @@ export function IconSparkle({ size = 24, strokeWidth = 2, className, ...props }:
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial={prefersReducedMotion ? false : "rest"}
-      animate={prefersReducedMotion ? false : "rest"}
-      whileHover={prefersReducedMotion ? undefined : "hover"}
-      whileTap={prefersReducedMotion ? undefined : "tap"}
+      whileHover={{ scale: 1.15, rotate: 12 }}
+      whileTap={{ scale: 0.9 }}
+      transition={{ type: "spring", stiffness: 400, damping: 17 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={twinkleVariants}
       {...rest}
     >
-      <motion.path 
-        key="0"
-        d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
-         />
+      <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
     </motion.svg>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconAmpersandsProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -9,19 +9,16 @@ export interface IconAmpersandsProps extends React.SVGProps<SVGSVGElement> {
   strokeWidth?: number;
 }
 
-const ampersandVariants: Variants = {
-  rest: { pathLength: 1, opacity: 1, scale: 1 },
-  hover: { 
-    pathLength: [1, 0, 1],
-    opacity: [1, 0.8, 1],
-    scale: [1, 1.05, 1],
-    transition: { 
-      duration: 1.5,
-      ease: "easeInOut",
-      repeat: Infinity,
-      repeatDelay: 1
-    }
-  },
+const leftVariants = {
+  rest: { scale: 1, x: 0 },
+  hover: { scale: 1.05, x: -0.5 },
+  tap: { scale: 0.95, x: 0.5 },
+};
+
+const rightVariants = {
+  rest: { scale: 1, x: 0 },
+  hover: { scale: 1.05, x: 0.5 },
+  tap: { scale: 0.95, x: -0.5 },
 };
 
 export function IconAmpersands({
@@ -39,7 +36,6 @@ export function IconAmpersands({
     ...rest
   } = props;
   const prefersReducedMotion = useReducedMotion();
-
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
@@ -51,21 +47,22 @@ export function IconAmpersands({
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial="rest"
-      whileHover="hover"
-      className={`select-none ${className ?? ""}`.trim()}
+      initial={prefersReducedMotion ? false : "rest"}
+      whileHover={prefersReducedMotion ? undefined : "hover"}
+      whileTap={prefersReducedMotion ? undefined : "tap"}
+      transition={{ type: "spring", stiffness: 320, damping: 18 }}
+      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
       <motion.path
         d="M10 17c-5-3-7-7-7-9a2 2 0 0 1 4 0c0 2.5-5 2.5-5 6 0 1.7 1.3 3 3 3 2.8 0 5-2.2 5-5"
-        variants={prefersReducedMotion ? {} : ampersandVariants}
-        style={{ originX: "6px", originY: "12px" }}
+        variants={leftVariants}
+        style={{ originX: "30%", originY: "60%" }}
       />
       <motion.path
         d="M22 17c-5-3-7-7-7-9a2 2 0 0 1 4 0c0 2.5-5 2.5-5 6 0 1.7 1.3 3 3 3 2.8 0 5-2.2 5-5"
-        variants={prefersReducedMotion ? {} : ampersandVariants}
-        transition={{ delay: 0.2 }}
-        style={{ originX: "18px", originY: "12px" }}
+        variants={rightVariants}
+        style={{ originX: "70%", originY: "60%" }}
       />
     </motion.svg>
   );

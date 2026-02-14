@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconArrowUpFromLineProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -9,33 +9,16 @@ export interface IconArrowUpFromLineProps extends React.SVGProps<SVGSVGElement> 
   strokeWidth?: number;
 }
 
-
-
-
-
-const arrowVariants: Variants = {
+const arrowVariants = {
   rest: { y: 0 },
-  hover: { 
-    y: [0, -2, 0],
-    transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  },
+  hover: { y: -2 },
+  tap: { y: -4 },
 };
 
-const lineVariants: Variants = {
-  rest: { scaleX: 1, opacity: 1 },
-  hover: { 
-    scaleX: [1, 1.1, 1],
-    opacity: [1, 0.8, 1],
-    transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  },
+const lineVariants = {
+  rest: { scaleX: 1 },
+  hover: { scaleX: 1.08 },
+  tap: { scaleX: 0.96 },
 };
 
 export function IconArrowUpFromLine({ size = 24, strokeWidth = 2, className, ...props }: IconArrowUpFromLineProps) {
@@ -59,8 +42,8 @@ export function IconArrowUpFromLine({ size = 24, strokeWidth = 2, className, ...
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial="rest"
-      whileHover="hover"
+      initial={prefersReducedMotion ? false : "rest"}
+      whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
