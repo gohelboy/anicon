@@ -35,7 +35,7 @@ export function IconsSearchBar({
           placeholder="Search icons..."
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
-          className="w-full h-10 border border-[var(--card-border)] bg-[var(--surface)] pl-9 pr-3 text-sm text-white placeholder:text-[var(--muted)] focus:border-[var(--accent)]/50 focus:outline-none focus:ring-1 focus:ring-[var(--accent)]/30"
+          className="w-full h-11 border border-[var(--card-border)] bg-[var(--surface)] pl-9 pr-3 text-sm text-white placeholder:text-[var(--muted)] focus:border-[var(--accent)]/50 focus:outline-none focus:ring-1 focus:ring-[var(--accent)]/30"
           aria-label="Search icons"
           autoComplete="off"
         />
@@ -44,8 +44,8 @@ export function IconsSearchBar({
       {/* Controls row */}
       <div className="flex items-center gap-2">
         {/* Stroke slider */}
-        <div className="flex h-10 shrink-0 items-center gap-2 border border-[var(--card-border)] bg-[var(--surface)] px-3">
-          <span className="text-[10px] font-medium uppercase tracking-wider text-[var(--muted)] whitespace-nowrap">
+        <div className="flex h-11 shrink-0 items-center gap-2 border border-[var(--card-border)] bg-[var(--surface)] px-3">
+          <span className="text-[11px] font-medium uppercase tracking-wider text-[var(--muted)] whitespace-nowrap sm:text-xs">
             Stroke
           </span>
           <input
@@ -55,9 +55,9 @@ export function IconsSearchBar({
             step="0.1"
             value={stroke}
             onChange={(e) => onStrokeChange(parseFloat(e.target.value))}
-            className="h-0.5 w-16 cursor-pointer appearance-none bg-white/10 accent-[var(--accent)] sm:w-20"
+            className="h-1 w-20 cursor-pointer appearance-none bg-white/10 accent-[var(--accent)] sm:w-24"
           />
-          <span className="w-5 text-right font-mono text-[10px] text-[var(--accent)]">
+          <span className="w-5 text-right font-mono text-[11px] text-[var(--accent)] sm:text-xs">
             {stroke.toFixed(1)}
           </span>
         </div>
@@ -65,7 +65,7 @@ export function IconsSearchBar({
         {/* Color picker */}
         <label
           title="Icon color"
-          className="relative flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center overflow-hidden border border-[var(--card-border)] bg-[var(--surface)] hover:border-[var(--card-border-hover)] focus-within:ring-1 focus-within:ring-[var(--accent)]/30"
+          className="relative flex h-11 w-11 shrink-0 cursor-pointer items-center justify-center overflow-hidden border border-[var(--card-border)] bg-[var(--surface)] hover:border-[var(--card-border-hover)] focus-within:ring-1 focus-within:ring-[var(--accent)]/30"
         >
           <input
             type="color"

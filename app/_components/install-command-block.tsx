@@ -32,10 +32,10 @@ export function InstallCommandBlock({
 
   return (
     <div
-      className={`overflow-hidden border border-[var(--card-border)] bg-[var(--surface)] ${className}`.trim()}
+      className={`min-w-0 overflow-hidden border border-[var(--card-border)] bg-[var(--surface)] ${className}`.trim()}
     >
       {/* Header bar */}
-      <div className="flex items-center justify-between gap-2 border-b border-[var(--card-border)] px-4 py-2.5">
+      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--card-border)] px-3 py-2 sm:px-4 sm:py-2.5">
         {/* Dots */}
         <div className="flex items-center gap-1.5" aria-hidden>
           <span className="h-2.5 w-2.5 rounded-full bg-[var(--accent)]/30" />
@@ -50,7 +50,7 @@ export function InstallCommandBlock({
               key={pm}
               type="button"
               onClick={() => setPackageManager(pm)}
-              className={`px-2.5 py-1 text-xs font-medium transition ${
+              className={`px-3 py-2 text-xs font-medium transition ${
                 packageManager === pm
                   ? "bg-[var(--accent)] text-zinc-900"
                   : "text-[var(--muted-foreground)] hover:text-white"
@@ -65,7 +65,7 @@ export function InstallCommandBlock({
         <button
           type="button"
           onClick={copyToClipboard}
-          className="flex h-7 w-7 items-center justify-center text-[var(--muted-foreground)] transition hover:text-white"
+          className="flex h-10 w-10 items-center justify-center text-[var(--muted-foreground)] transition hover:text-white shrink-0"
           aria-label="Copy command"
         >
           {copied ? (
@@ -82,12 +82,14 @@ export function InstallCommandBlock({
       </div>
 
       {/* Command */}
-      <pre className="install-code overflow-x-auto px-4 py-4 text-sm leading-relaxed text-[var(--muted-foreground)] sm:px-6 sm:py-5">
-        <code className="break-all">
-          <span className="text-[var(--accent)] select-none">$ </span>
-          {command}
-        </code>
-      </pre>
+      <div className="overflow-x-auto px-3 py-3 sm:px-6 sm:py-5">
+        <pre className="install-code text-[13px] leading-relaxed text-[var(--muted-foreground)] sm:text-sm">
+          <code>
+            <span className="text-[var(--accent)] select-none">$ </span>
+            {command}
+          </code>
+        </pre>
+      </div>
 
       {showFootnote && (
         <p className="border-t border-[var(--card-border)] px-4 py-3 text-xs text-[var(--muted)] sm:px-6">

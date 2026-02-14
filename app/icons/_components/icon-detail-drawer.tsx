@@ -90,7 +90,7 @@ function IconDetailContent({
               {icon.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="border border-[var(--card-border)] bg-white/[0.03] px-2 py-0.5 text-[10px] font-medium text-[var(--muted-foreground)]"
+                  className="border border-[var(--card-border)] bg-white/[0.03] px-2.5 py-1 text-[11px] font-medium text-[var(--muted-foreground)] sm:text-xs"
                 >
                   {tag}
                 </span>

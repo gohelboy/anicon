@@ -54,6 +54,22 @@ body {
   }
 }
 
+/* Safe area padding for notched devices */
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+/* Prevent zoom on input focus (iOS) */
+@media screen and (max-width: 640px) {
+  input[type="search"],
+  input[type="text"],
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
 /* ── Animations ────────────────────────────────────────────────────── */
 @keyframes fade-up {
   from {

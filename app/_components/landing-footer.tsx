@@ -20,16 +20,16 @@ export function LandingFooter() {
         </p>
         <nav
           aria-label="Footer links"
-          className="flex items-center gap-5 text-xs text-[var(--muted)]"
+          className="flex items-center gap-4 text-xs text-[var(--muted)]"
         >
-          <a href="/icons" className="transition hover:text-white">
+          <a href="/icons" className="inline-flex min-h-[44px] items-center transition hover:text-white">
             Icons
           </a>
           <a
             href="https://github.com/gohelboy/anicon"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition hover:text-white"
+            className="inline-flex min-h-[44px] items-center transition hover:text-white"
           >
             GitHub
           </a>

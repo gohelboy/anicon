@@ -63,7 +63,7 @@ export function LandingInstall() {
           </div>
 
           {/* Right: terminal */}
-          <div className="lg:pt-2">
+          <div className="min-w-0 lg:pt-2">
             <InstallCommandBlock
               commandUrl={DEFAULT_ICON_URL}
               className="w-full"

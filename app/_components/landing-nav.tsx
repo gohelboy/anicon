@@ -6,11 +6,11 @@ export function LandingNav() {
       className="fixed left-0 right-0 top-0 z-50 border-b border-[var(--card-border)] bg-[var(--background)]/80 backdrop-blur-xl"
       role="banner"
     >
-      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-5 sm:px-8">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between px-4 sm:px-8">
         {/* Logo */}
         <a
           href="/"
-          className="flex items-center gap-2 font-bold tracking-tight"
+          className="flex min-h-[44px] items-center gap-2 font-bold tracking-tight"
           aria-label="Anicon home"
         >
           <span className="text-[var(--accent)] text-lg">&#9670;</span>
@@ -20,17 +20,17 @@ export function LandingNav() {
         {/* Nav links */}
         <nav
           aria-label="Main navigation"
-          className="flex items-center gap-1 sm:gap-2 text-sm text-[var(--muted-foreground)]"
+          className="flex items-center gap-0 sm:gap-1 text-sm text-[var(--muted-foreground)]"
         >
           <a
             href="/icons"
-            className="relative px-3 py-2 transition-colors hover:text-white"
+            className="relative flex min-h-[44px] items-center px-3 transition-colors hover:text-white"
           >
             Icons
           </a>
           <a
             href="#install"
-            className="relative px-3 py-2 transition-colors hover:text-white hidden sm:inline-flex"
+            className="relative min-h-[44px] items-center px-3 transition-colors hover:text-white hidden sm:flex"
           >
             Install
           </a>
@@ -39,7 +39,7 @@ export function LandingNav() {
             href={`https://github.com/${GITHUB_REPO}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 border border-[var(--card-border)] bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-[var(--muted-foreground)] transition hover:border-[var(--card-border-hover)] hover:text-white"
+            className="inline-flex min-h-[44px] items-center gap-1.5 border border-[var(--card-border)] bg-white/[0.03] px-3 text-xs font-medium text-[var(--muted-foreground)] transition hover:border-[var(--card-border-hover)] hover:text-white"
             aria-label="Anicon GitHub repository"
           >
             <svg

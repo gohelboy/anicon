@@ -35,7 +35,7 @@ export function EmptyIconsState({ onClearSearch }: EmptyIconsStateProps) {
       <button
         type="button"
         onClick={onClearSearch}
-        className="mt-5 h-9 border border-[var(--accent)] bg-[var(--accent)] px-4 text-xs font-semibold text-zinc-900 transition hover:bg-[var(--accent-hover)]"
+        className="mt-5 h-11 border border-[var(--accent)] bg-[var(--accent)] px-5 text-sm font-semibold text-zinc-900 transition hover:bg-[var(--accent-hover)]"
       >
         Clear search
       </button>

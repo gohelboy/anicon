@@ -31,7 +31,7 @@ export default function IconsPage() {
 
       <main className="pt-14">
         {/* Header */}
-        <section className="border-b border-[var(--card-border)] px-5 pb-0 pt-10 sm:px-8 sm:pt-14">
+        <section className="border-b border-[var(--card-border)] px-4 pb-0 pt-10 sm:px-8 sm:pt-14">
           <div className="mx-auto max-w-6xl">
             <div className="flex items-baseline gap-3">
               <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
@@ -47,7 +47,7 @@ export default function IconsPage() {
             </p>
 
             {/* Sticky search bar */}
-            <div className="sticky top-14 z-40 -mx-5 bg-[var(--background)]/90 backdrop-blur-lg px-5 py-4 sm:-mx-8 sm:px-8">
+            <div className="sticky top-14 z-40 -mx-4 bg-[var(--background)]/90 backdrop-blur-lg px-4 py-3 sm:-mx-8 sm:px-8 sm:py-4">
               <IconsSearchBar
                 search={search}
                 onSearchChange={setSearch}
@@ -61,7 +61,7 @@ export default function IconsPage() {
         </section>
 
         {/* Grid */}
-        <section className="px-5 py-8 sm:px-8 sm:py-10">
+        <section className="px-4 py-6 sm:px-8 sm:py-10">
           <div className="mx-auto max-w-6xl">
             {filteredIcons.length > 0 ? (
               <>
@@ -75,7 +75,7 @@ export default function IconsPage() {
                     </span>
                   )}
                 </p>
-                <div className="grid grid-cols-4 gap-2.5 sm:grid-cols-5 sm:gap-3 md:grid-cols-7 lg:grid-cols-10">
+                <div className="grid grid-cols-3 gap-2 sm:grid-cols-4 sm:gap-3 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-10">
                   {filteredIcons.map((icon) => (
                     <IconCardButton
                       key={icon.name}

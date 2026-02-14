@@ -31,7 +31,7 @@ function ShowcaseCard({
           animate={isHovered ? "hover" : "rest"}
         />
       </div>
-      <code className="truncate max-w-full text-[10px] font-medium text-[var(--muted-foreground)] group-hover:text-[var(--accent)] transition-colors sm:text-xs">
+      <code className="truncate max-w-full text-[11px] font-medium text-[var(--muted-foreground)] group-hover:text-[var(--accent)] transition-colors sm:text-xs">
         {name.replace("icon-", "")}
       </code>
     </div>
@@ -75,7 +75,7 @@ export function IconsShowcase() {
 
         {/* Icon grid */}
         <div
-          className="mt-10 grid grid-cols-3 gap-3 sm:mt-12 sm:grid-cols-4 sm:gap-4 md:grid-cols-6"
+          className="mt-10 grid grid-cols-2 gap-3 sm:mt-12 sm:grid-cols-3 sm:gap-4 md:grid-cols-4 lg:grid-cols-6"
           role="list"
         >
           {icons.map(({ name, component, color }) => (
