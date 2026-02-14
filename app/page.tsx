@@ -7,13 +7,15 @@ import { LandingNav } from "./_components/landing-nav";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <>
       <LandingNav />
-      <LandingHero />
-      <IconsShowcase />
-      <LandingInstall />
-      <LandingFeatures />
+      <main className="min-h-screen">
+        <LandingHero />
+        <IconsShowcase />
+        <LandingInstall />
+        <LandingFeatures />
+      </main>
       <LandingFooter />
-    </main>
+    </>
   );
 }

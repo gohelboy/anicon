@@ -1,4 +1,12 @@
-export const REGISTRY_BASE = "https://your-registry-url.com/r";
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://an-icon.vercel.app";
+
+export const SITE_NAME = "Anicon";
+
+export const SITE_DESCRIPTION =
+  "Open-source animated icon registry for React. Install 500+ Motion-powered SVG icons like shadcn components with one CLI command.";
+
+export const REGISTRY_BASE = "https://an-icon.vercel.app/r";
 
 export const installCommandsByPm = {
   pnpm: (url: string) => `pnpm dlx shadcn@latest add ${url}`,
