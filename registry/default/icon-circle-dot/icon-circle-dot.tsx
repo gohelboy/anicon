@@ -2,26 +2,25 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCircleDotProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 
-const floatVariants = {
-  rest: { y: 0 },
+const drawVariants = {
+  rest: { pathLength: 1, opacity: 1 },
   hover: {
-    y: -4,
+    pathLength: [0, 1],
+    opacity: 1,
     transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut"
+      pathLength: { duration: 0.6, ease: "easeInOut" },
+      opacity: { duration: 0.01 }
     }
   }
 };
 
-export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+export function IconCircleDot({ size = 24, strokeWidth = 2, className, ...props }: IconCircleDotProps) {
   const {
     onAnimationStart,
     ...rest
@@ -44,17 +43,17 @@ export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: 
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={floatVariants}
+      
       {...rest}
     >
-      <motion.rect 
+      <motion.circle 
         key="0"
-        width="7" height="7" x="14" y="3" rx="1"
-         />
-      <motion.path 
+        cx="12" cy="12" r="10"
+        variants={drawVariants} custom={0} />
+      <motion.circle 
         key="1"
-        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
-         />
+        cx="12" cy="12" r="1"
+        variants={drawVariants} custom={1} />
     </motion.svg>
   );
 }

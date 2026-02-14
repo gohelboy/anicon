@@ -2,26 +2,25 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconTriangleDashedProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 
-const floatVariants = {
-  rest: { y: 0 },
+const spinVariants = {
+  rest: { rotate: 0 },
   hover: {
-    y: -4,
+    rotate: 360,
     transition: {
-      duration: 1.5,
+      duration: 4,
       repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut"
+      ease: "linear"
     }
   }
 };
 
-export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+export function IconTriangleDashed({ size = 24, strokeWidth = 2, className, ...props }: IconTriangleDashedProps) {
   const {
     onAnimationStart,
     ...rest
@@ -44,16 +43,12 @@ export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: 
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={floatVariants}
+      variants={spinVariants}
       {...rest}
     >
-      <motion.rect 
-        key="0"
-        width="7" height="7" x="14" y="3" rx="1"
-         />
       <motion.path 
-        key="1"
-        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
+        key="0"
+        d="M13.73 4a2 2 0 0 0-3.46 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"
          />
     </motion.svg>
   );

@@ -2,26 +2,25 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconPentagonProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 
-const floatVariants = {
-  rest: { y: 0 },
+const drawVariants = {
+  rest: { pathLength: 1, opacity: 1 },
   hover: {
-    y: -4,
+    pathLength: [0, 1],
+    opacity: 1,
     transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut"
+      pathLength: { duration: 0.6, ease: "easeInOut" },
+      opacity: { duration: 0.01 }
     }
   }
 };
 
-export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+export function IconPentagon({ size = 24, strokeWidth = 2, className, ...props }: IconPentagonProps) {
   const {
     onAnimationStart,
     ...rest
@@ -44,17 +43,13 @@ export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: 
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={floatVariants}
+      
       {...rest}
     >
-      <motion.rect 
-        key="0"
-        width="7" height="7" x="14" y="3" rx="1"
-         />
       <motion.path 
-        key="1"
-        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
-         />
+        key="0"
+        d="M10.83 2.38a2 2 0 0 1 2.34 0l8 5.74a2 2 0 0 1 .73 2.25l-3.04 9.26a2 2 0 0 1-1.9 1.37H7.04a2 2 0 0 1-1.9-1.37L2.1 10.37a2 2 0 0 1 .73-2.25z"
+        variants={drawVariants} custom={0} />
     </motion.svg>
   );
 }

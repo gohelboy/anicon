@@ -2,26 +2,25 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconTangentProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 
-const floatVariants = {
-  rest: { y: 0 },
+const drawVariants = {
+  rest: { pathLength: 1, opacity: 1 },
   hover: {
-    y: -4,
+    pathLength: [0, 1],
+    opacity: 1,
     transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut"
+      pathLength: { duration: 0.6, ease: "easeInOut" },
+      opacity: { duration: 0.01 }
     }
   }
 };
 
-export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+export function IconTangent({ size = 24, strokeWidth = 2, className, ...props }: IconTangentProps) {
   const {
     onAnimationStart,
     ...rest
@@ -44,17 +43,25 @@ export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: 
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={floatVariants}
+      
       {...rest}
     >
-      <motion.rect 
+      <motion.circle 
         key="0"
-        width="7" height="7" x="14" y="3" rx="1"
-         />
+        cx="17" cy="4" r="2"
+        variants={drawVariants} custom={0} />
       <motion.path 
         key="1"
-        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
-         />
+        d="M15.59 5.41 5.41 15.59"
+        variants={drawVariants} custom={1} />
+      <motion.circle 
+        key="2"
+        cx="4" cy="17" r="2"
+        variants={drawVariants} custom={2} />
+      <motion.path 
+        key="3"
+        d="M12 22s-4-9-1.5-11.5S22 12 22 12"
+        variants={drawVariants} custom={3} />
     </motion.svg>
   );
 }

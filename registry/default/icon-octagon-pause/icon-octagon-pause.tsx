@@ -2,26 +2,24 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconOctagonPauseProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 
-const floatVariants = {
-  rest: { y: 0 },
+const shakeVariants = {
+  rest: { x: 0 },
   hover: {
-    y: -4,
+    x: [0, -3, 3, -2, 2, 0],
     transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      repeatType: "reverse",
+      duration: 0.5,
       ease: "easeInOut"
     }
   }
 };
 
-export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+export function IconOctagonPause({ size = 24, strokeWidth = 2, className, ...props }: IconOctagonPauseProps) {
   const {
     onAnimationStart,
     ...rest
@@ -44,16 +42,20 @@ export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: 
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={floatVariants}
+      variants={shakeVariants}
       {...rest}
     >
-      <motion.rect 
+      <motion.path 
         key="0"
-        width="7" height="7" x="14" y="3" rx="1"
+        d="M10 15V9"
          />
       <motion.path 
         key="1"
-        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
+        d="M14 15V9"
+         />
+      <motion.path 
+        key="2"
+        d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z"
          />
     </motion.svg>
   );

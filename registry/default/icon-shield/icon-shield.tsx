@@ -2,26 +2,24 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconShieldProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 
-const floatVariants = {
-  rest: { y: 0 },
+const wiggleVariants = {
+  rest: { rotate: 0 },
   hover: {
-    y: -4,
+    rotate: [0, -10, 10, -5, 5, 0],
     transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      repeatType: "reverse",
+      duration: 0.5,
       ease: "easeInOut"
     }
   }
 };
 
-export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+export function IconShield({ size = 24, strokeWidth = 2, className, ...props }: IconShieldProps) {
   const {
     onAnimationStart,
     ...rest
@@ -44,16 +42,12 @@ export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: 
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={floatVariants}
+      variants={wiggleVariants}
       {...rest}
     >
-      <motion.rect 
-        key="0"
-        width="7" height="7" x="14" y="3" rx="1"
-         />
       <motion.path 
-        key="1"
-        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
+        key="0"
+        d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
          />
     </motion.svg>
   );

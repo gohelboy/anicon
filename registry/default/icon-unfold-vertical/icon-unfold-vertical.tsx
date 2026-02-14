@@ -2,26 +2,25 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconUnfoldVerticalProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 
-const floatVariants = {
-  rest: { y: 0 },
+const expandVVariants = {
+  rest: { scaleY: 1 },
   hover: {
-    y: -4,
+    scaleY: 1.2,
     transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut"
+      type: "spring",
+      stiffness: 300,
+      damping: 10
     }
   }
 };
 
-export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+export function IconUnfoldVertical({ size = 24, strokeWidth = 2, className, ...props }: IconUnfoldVerticalProps) {
   const {
     onAnimationStart,
     ...rest
@@ -44,16 +43,40 @@ export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: 
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={floatVariants}
+      variants={expandVVariants}
       {...rest}
     >
-      <motion.rect 
+      <motion.path 
         key="0"
-        width="7" height="7" x="14" y="3" rx="1"
+        d="M12 22v-6"
          />
       <motion.path 
         key="1"
-        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
+        d="M12 8V2"
+         />
+      <motion.path 
+        key="2"
+        d="M4 12H2"
+         />
+      <motion.path 
+        key="3"
+        d="M10 12H8"
+         />
+      <motion.path 
+        key="4"
+        d="M16 12h-2"
+         />
+      <motion.path 
+        key="5"
+        d="M22 12h-2"
+         />
+      <motion.path 
+        key="6"
+        d="m15 19-3 3-3-3"
+         />
+      <motion.path 
+        key="7"
+        d="m15 5-3-3-3 3"
          />
     </motion.svg>
   );

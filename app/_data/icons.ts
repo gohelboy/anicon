@@ -495,6 +495,46 @@ import { IconWind } from "@/registry/default/icon-wind/icon-wind";
 import { IconWorm } from "@/registry/default/icon-worm/icon-worm";
 import { IconZapOff } from "@/registry/default/icon-zap-off/icon-zap-off";
 
+import { IconBadge } from "@/registry/default/icon-badge/icon-badge";
+import { IconBox } from "@/registry/default/icon-box/icon-box";
+import { IconBoxes } from "@/registry/default/icon-boxes/icon-boxes";
+import { IconCircle } from "@/registry/default/icon-circle/icon-circle";
+import { IconCircleDashed } from "@/registry/default/icon-circle-dashed/icon-circle-dashed";
+import { IconCircleDot } from "@/registry/default/icon-circle-dot/icon-circle-dot";
+import { IconCircleDotDashed } from "@/registry/default/icon-circle-dot-dashed/icon-circle-dot-dashed";
+import { IconCircleSlash } from "@/registry/default/icon-circle-slash/icon-circle-slash";
+import { IconCircleSlash2 } from "@/registry/default/icon-circle-slash-2/icon-circle-slash-2";
+import { IconCircleOff } from "@/registry/default/icon-circle-off/icon-circle-off";
+import { IconDot } from "@/registry/default/icon-dot/icon-dot";
+import { IconClover } from "@/registry/default/icon-clover/icon-clover";
+import { IconCone } from "@/registry/default/icon-cone/icon-cone";
+import { IconCross } from "@/registry/default/icon-cross/icon-cross";
+import { IconCylinder } from "@/registry/default/icon-cylinder/icon-cylinder";
+import { IconDiameter } from "@/registry/default/icon-diameter/icon-diameter";
+import { IconDiamond } from "@/registry/default/icon-diamond/icon-diamond";
+import { IconHexagon } from "@/registry/default/icon-hexagon/icon-hexagon";
+import { IconInfinity } from "@/registry/default/icon-infinity/icon-infinity";
+import { IconOctagon } from "@/registry/default/icon-octagon/icon-octagon";
+import { IconOctagonPause } from "@/registry/default/icon-octagon-pause/icon-octagon-pause";
+import { IconPentagon } from "@/registry/default/icon-pentagon/icon-pentagon";
+import { IconPyramid } from "@/registry/default/icon-pyramid/icon-pyramid";
+import { IconRadius } from "@/registry/default/icon-radius/icon-radius";
+import { IconRectangleHorizontal } from "@/registry/default/icon-rectangle-horizontal/icon-rectangle-horizontal";
+import { IconRectangleVertical } from "@/registry/default/icon-rectangle-vertical/icon-rectangle-vertical";
+import { IconShapes } from "@/registry/default/icon-shapes/icon-shapes";
+import { IconShield } from "@/registry/default/icon-shield/icon-shield";
+import { IconSpade } from "@/registry/default/icon-spade/icon-spade";
+import { IconSquare } from "@/registry/default/icon-square/icon-square";
+import { IconSquareDashed } from "@/registry/default/icon-square-dashed/icon-square-dashed";
+import { IconSquareDot } from "@/registry/default/icon-square-dot/icon-square-dot";
+import { IconTangent } from "@/registry/default/icon-tangent/icon-tangent";
+import { IconTorus } from "@/registry/default/icon-torus/icon-torus";
+import { IconTriangle } from "@/registry/default/icon-triangle/icon-triangle";
+import { IconTriangleDashed } from "@/registry/default/icon-triangle-dashed/icon-triangle-dashed";
+import { IconTriangleRight } from "@/registry/default/icon-triangle-right/icon-triangle-right";
+import { IconUnfoldHorizontal } from "@/registry/default/icon-unfold-horizontal/icon-unfold-horizontal";
+import { IconUnfoldVertical } from "@/registry/default/icon-unfold-vertical/icon-unfold-vertical";
+import { IconVariable } from "@/registry/default/icon-variable/icon-variable";
 export const iconsRegistry = [
   {
     name: "icon-heart",
@@ -1504,7 +1544,6 @@ export const iconsRegistry = [
     description: "Clock icon with ticking hands and gentle ring pulse",
     tags: ["clock", "time", "schedule", "navigation"],
   },
-  // Essential Action Icons
   {
     name: "icon-trash",
     component: IconTrash,
@@ -1568,7 +1607,6 @@ export const iconsRegistry = [
     description: "Gear rotating 45 degrees on hover",
     tags: ["settings", "gear", "cog", "preferences"],
   },
-  // Communication Icons
   {
     name: "icon-mail",
     component: IconMail,
@@ -1590,7 +1628,6 @@ export const iconsRegistry = [
     description: "Paper plane launching diagonally",
     tags: ["send", "submit", "message", "share"],
   },
-  // File Icons
   {
     name: "icon-download",
     component: IconDownload,
@@ -1605,7 +1642,6 @@ export const iconsRegistry = [
     description: "Arrow rising from upload tray",
     tags: ["upload", "send", "share", "arrow"],
   },
-  // Media Icons
   {
     name: "icon-play",
     component: IconPlay,
@@ -1620,7 +1656,6 @@ export const iconsRegistry = [
     description: "Pause bars separating on hover",
     tags: ["pause", "stop", "media", "break"],
   },
-  // UI Icons
   {
     name: "icon-eye",
     component: IconEye,
@@ -1656,7 +1691,6 @@ export const iconsRegistry = [
     description: "Loader with continuous rotation",
     tags: ["loader", "loading", "spinner", "wait"],
   },
-  // Premium Icons
   {
     name: "icon-folder",
     component: IconFolder,
@@ -1797,7 +1831,6 @@ export const iconsRegistry = [
     description: "Sun rotating with radiating ray pulses",
     tags: ["sun", "weather", "light", "day", "warmth"],
   },
-  // Premium Icons Expansion
   {
     name: "icon-heart-handshake",
     component: IconHeartHandshake,
@@ -1868,7 +1901,6 @@ export const iconsRegistry = [
     description: "Palette with playful dot-pulsing animation",
     tags: ["palette", "color", "design", "art"],
   },
-  // Batch 3 Premium Icons
   {
     name: "icon-globe",
     component: IconGlobe,
@@ -1939,7 +1971,6 @@ export const iconsRegistry = [
     description: "Hard drive with activity LED animation",
     tags: ["hard-drive", "storage", "disk", "server", "data"],
   },
-  // Batch 4 Premium Icons
   {
     name: "icon-battery-charging",
     component: IconBatteryCharging,
@@ -2031,7 +2062,6 @@ export const iconsRegistry = [
     description: "Frown with subtle rotation and mouth-shift",
     tags: ["frown", "sad", "face", "emote"],
   },
-  // Batch 5 Premium Icons
   {
     name: "icon-award",
     component: IconAward,
@@ -3145,7 +3175,6 @@ export const iconsRegistry = [
     description: "Snail with sliding body and wiggling tentacles",
     tags: ["snail", "animal", "nature", "shell"],
   },
-
   {
     name: "icon-turtle",
     component: IconTurtle,
@@ -3789,6 +3818,286 @@ export const iconsRegistry = [
     color: "text-white",
     description: "Underline with a pulsing line",
     tags: ["text", "format", "underline"],
+  },
+  {
+    name: "icon-badge",
+    component: IconBadge,
+    color: "text-white",
+    description: "Badge icon with premium animation",
+    tags: ["badge", "shape", "geometry"],
+  },
+  {
+    name: "icon-box",
+    component: IconBox,
+    color: "text-white",
+    description: "Box icon with premium animation",
+    tags: ["box", "shape", "geometry"],
+  },
+  {
+    name: "icon-boxes",
+    component: IconBoxes,
+    color: "text-white",
+    description: "Boxes icon with premium animation",
+    tags: ["boxes", "shape", "geometry"],
+  },
+  {
+    name: "icon-circle",
+    component: IconCircle,
+    color: "text-white",
+    description: "Circle icon with premium animation",
+    tags: ["circle", "shape", "geometry"],
+  },
+  {
+    name: "icon-circle-dashed",
+    component: IconCircleDashed,
+    color: "text-white",
+    description: "CircleDashed icon with premium animation",
+    tags: ["circle-dashed", "shape", "geometry"],
+  },
+  {
+    name: "icon-circle-dot",
+    component: IconCircleDot,
+    color: "text-white",
+    description: "CircleDot icon with premium animation",
+    tags: ["circle-dot", "shape", "geometry"],
+  },
+  {
+    name: "icon-circle-dot-dashed",
+    component: IconCircleDotDashed,
+    color: "text-white",
+    description: "CircleDotDashed icon with premium animation",
+    tags: ["circle-dot-dashed", "shape", "geometry"],
+  },
+  {
+    name: "icon-circle-slash",
+    component: IconCircleSlash,
+    color: "text-white",
+    description: "CircleSlash icon with premium animation",
+    tags: ["circle-slash", "shape", "geometry"],
+  },
+  {
+    name: "icon-circle-slash-2",
+    component: IconCircleSlash2,
+    color: "text-white",
+    description: "CircleSlash2 icon with premium animation",
+    tags: ["circle-slash-2", "shape", "geometry"],
+  },
+  {
+    name: "icon-circle-off",
+    component: IconCircleOff,
+    color: "text-white",
+    description: "CircleOff icon with premium animation",
+    tags: ["circle-off", "shape", "geometry"],
+  },
+  {
+    name: "icon-dot",
+    component: IconDot,
+    color: "text-white",
+    description: "Dot icon with premium animation",
+    tags: ["dot", "shape", "geometry"],
+  },
+  {
+    name: "icon-clover",
+    component: IconClover,
+    color: "text-white",
+    description: "Clover icon with premium animation",
+    tags: ["clover", "shape", "geometry"],
+  },
+  {
+    name: "icon-cone",
+    component: IconCone,
+    color: "text-white",
+    description: "Cone icon with premium animation",
+    tags: ["cone", "shape", "geometry"],
+  },
+  {
+    name: "icon-cross",
+    component: IconCross,
+    color: "text-white",
+    description: "Cross icon with premium animation",
+    tags: ["cross", "shape", "geometry"],
+  },
+  {
+    name: "icon-cylinder",
+    component: IconCylinder,
+    color: "text-white",
+    description: "Cylinder icon with premium animation",
+    tags: ["cylinder", "shape", "geometry"],
+  },
+  {
+    name: "icon-diameter",
+    component: IconDiameter,
+    color: "text-white",
+    description: "Diameter icon with premium animation",
+    tags: ["diameter", "shape", "geometry"],
+  },
+  {
+    name: "icon-diamond",
+    component: IconDiamond,
+    color: "text-white",
+    description: "Diamond icon with premium animation",
+    tags: ["diamond", "shape", "geometry"],
+  },
+  {
+    name: "icon-hexagon",
+    component: IconHexagon,
+    color: "text-white",
+    description: "Hexagon icon with premium animation",
+    tags: ["hexagon", "shape", "geometry"],
+  },
+  {
+    name: "icon-infinity",
+    component: IconInfinity,
+    color: "text-white",
+    description: "Infinity icon with premium animation",
+    tags: ["infinity", "shape", "geometry"],
+  },
+  {
+    name: "icon-octagon",
+    component: IconOctagon,
+    color: "text-white",
+    description: "Octagon icon with premium animation",
+    tags: ["octagon", "shape", "geometry"],
+  },
+  {
+    name: "icon-octagon-pause",
+    component: IconOctagonPause,
+    color: "text-white",
+    description: "OctagonPause icon with premium animation",
+    tags: ["octagon-pause", "shape", "geometry"],
+  },
+  {
+    name: "icon-pentagon",
+    component: IconPentagon,
+    color: "text-white",
+    description: "Pentagon icon with premium animation",
+    tags: ["pentagon", "shape", "geometry"],
+  },
+  {
+    name: "icon-pyramid",
+    component: IconPyramid,
+    color: "text-white",
+    description: "Pyramid icon with premium animation",
+    tags: ["pyramid", "shape", "geometry"],
+  },
+  {
+    name: "icon-radius",
+    component: IconRadius,
+    color: "text-white",
+    description: "Radius icon with premium animation",
+    tags: ["radius", "shape", "geometry"],
+  },
+  {
+    name: "icon-rectangle-horizontal",
+    component: IconRectangleHorizontal,
+    color: "text-white",
+    description: "RectangleHorizontal icon with premium animation",
+    tags: ["rectangle-horizontal", "shape", "geometry"],
+  },
+  {
+    name: "icon-rectangle-vertical",
+    component: IconRectangleVertical,
+    color: "text-white",
+    description: "RectangleVertical icon with premium animation",
+    tags: ["rectangle-vertical", "shape", "geometry"],
+  },
+  {
+    name: "icon-shapes",
+    component: IconShapes,
+    color: "text-white",
+    description: "Shapes icon with premium animation",
+    tags: ["shapes", "shape", "geometry"],
+  },
+  {
+    name: "icon-shield",
+    component: IconShield,
+    color: "text-white",
+    description: "Shield icon with premium animation",
+    tags: ["shield", "shape", "geometry"],
+  },
+  {
+    name: "icon-spade",
+    component: IconSpade,
+    color: "text-white",
+    description: "Spade icon with premium animation",
+    tags: ["spade", "shape", "geometry"],
+  },
+  {
+    name: "icon-square",
+    component: IconSquare,
+    color: "text-white",
+    description: "Square icon with premium animation",
+    tags: ["square", "shape", "geometry"],
+  },
+  {
+    name: "icon-square-dashed",
+    component: IconSquareDashed,
+    color: "text-white",
+    description: "SquareDashed icon with premium animation",
+    tags: ["square-dashed", "shape", "geometry"],
+  },
+  {
+    name: "icon-square-dot",
+    component: IconSquareDot,
+    color: "text-white",
+    description: "SquareDot icon with premium animation",
+    tags: ["square-dot", "shape", "geometry"],
+  },
+  {
+    name: "icon-tangent",
+    component: IconTangent,
+    color: "text-white",
+    description: "Tangent icon with premium animation",
+    tags: ["tangent", "shape", "geometry"],
+  },
+  {
+    name: "icon-torus",
+    component: IconTorus,
+    color: "text-white",
+    description: "Torus icon with premium animation",
+    tags: ["torus", "shape", "geometry"],
+  },
+  {
+    name: "icon-triangle",
+    component: IconTriangle,
+    color: "text-white",
+    description: "Triangle icon with premium animation",
+    tags: ["triangle", "shape", "geometry"],
+  },
+  {
+    name: "icon-triangle-dashed",
+    component: IconTriangleDashed,
+    color: "text-white",
+    description: "TriangleDashed icon with premium animation",
+    tags: ["triangle-dashed", "shape", "geometry"],
+  },
+  {
+    name: "icon-triangle-right",
+    component: IconTriangleRight,
+    color: "text-white",
+    description: "TriangleRight icon with premium animation",
+    tags: ["triangle-right", "shape", "geometry"],
+  },
+  {
+    name: "icon-unfold-horizontal",
+    component: IconUnfoldHorizontal,
+    color: "text-white",
+    description: "UnfoldHorizontal icon with premium animation",
+    tags: ["unfold-horizontal", "shape", "geometry"],
+  },
+  {
+    name: "icon-unfold-vertical",
+    component: IconUnfoldVertical,
+    color: "text-white",
+    description: "UnfoldVertical icon with premium animation",
+    tags: ["unfold-vertical", "shape", "geometry"],
+  },
+  {
+    name: "icon-variable",
+    component: IconVariable,
+    color: "text-white",
+    description: "Variable icon with premium animation",
+    tags: ["variable", "shape", "geometry"],
   },
 ] as const;
 

@@ -2,26 +2,25 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCircleDashedProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 
-const floatVariants = {
-  rest: { y: 0 },
+const spinVariants = {
+  rest: { rotate: 0 },
   hover: {
-    y: -4,
+    rotate: 360,
     transition: {
-      duration: 1.5,
+      duration: 4,
       repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut"
+      ease: "linear"
     }
   }
 };
 
-export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+export function IconCircleDashed({ size = 24, strokeWidth = 2, className, ...props }: IconCircleDashedProps) {
   const {
     onAnimationStart,
     ...rest
@@ -44,16 +43,40 @@ export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: 
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={floatVariants}
+      variants={spinVariants}
       {...rest}
     >
-      <motion.rect 
+      <motion.path 
         key="0"
-        width="7" height="7" x="14" y="3" rx="1"
+        d="M10.1 2.182a10 10 0 0 1 3.8 0"
          />
       <motion.path 
         key="1"
-        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
+        d="M13.9 21.818a10 10 0 0 1-3.8 0"
+         />
+      <motion.path 
+        key="2"
+        d="M17.609 3.721a10 10 0 0 1 2.69 2.7"
+         />
+      <motion.path 
+        key="3"
+        d="M2.182 13.9a10 10 0 0 1 0-3.8"
+         />
+      <motion.path 
+        key="4"
+        d="M20.279 17.609a10 10 0 0 1-2.7 2.69"
+         />
+      <motion.path 
+        key="5"
+        d="M21.818 10.1a10 10 0 0 1 0 3.8"
+         />
+      <motion.path 
+        key="6"
+        d="M3.721 6.391a10 10 0 0 1 2.7-2.69"
+         />
+      <motion.path 
+        key="7"
+        d="M6.391 20.279a10 10 0 0 1-2.69-2.7"
          />
     </motion.svg>
   );

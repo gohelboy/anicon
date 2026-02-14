@@ -2,26 +2,25 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconRadiusProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 
-const floatVariants = {
-  rest: { y: 0 },
+const drawVariants = {
+  rest: { pathLength: 1, opacity: 1 },
   hover: {
-    y: -4,
+    pathLength: [0, 1],
+    opacity: 1,
     transition: {
-      duration: 1.5,
-      repeat: Infinity,
-      repeatType: "reverse",
-      ease: "easeInOut"
+      pathLength: { duration: 0.6, ease: "easeInOut" },
+      opacity: { duration: 0.01 }
     }
   }
 };
 
-export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+export function IconRadius({ size = 24, strokeWidth = 2, className, ...props }: IconRadiusProps) {
   const {
     onAnimationStart,
     ...rest
@@ -44,17 +43,25 @@ export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: 
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={floatVariants}
+      
       {...rest}
     >
-      <motion.rect 
-        key="0"
-        width="7" height="7" x="14" y="3" rx="1"
-         />
       <motion.path 
+        key="0"
+        d="M20.34 17.52a10 10 0 1 0-2.82 2.82"
+        variants={drawVariants} custom={0} />
+      <motion.circle 
         key="1"
-        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
-         />
+        cx="19" cy="19" r="2"
+        variants={drawVariants} custom={1} />
+      <motion.path 
+        key="2"
+        d="m13.41 13.41 4.18 4.18"
+        variants={drawVariants} custom={2} />
+      <motion.circle 
+        key="3"
+        cx="12" cy="12" r="2"
+        variants={drawVariants} custom={3} />
     </motion.svg>
   );
 }

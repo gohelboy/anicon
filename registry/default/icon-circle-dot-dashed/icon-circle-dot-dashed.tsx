@@ -2,24 +2,25 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconOctagonAlertProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCircleDotDashedProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
 
-const shakeVariants = {
-  rest: { x: 0 },
+const spinVariants = {
+  rest: { rotate: 0 },
   hover: {
-    x: [0, -3, 3, -2, 2, 0],
+    rotate: 360,
     transition: {
-      duration: 0.5,
-      ease: "easeInOut"
+      duration: 4,
+      repeat: Infinity,
+      ease: "linear"
     }
   }
 };
 
-export function IconOctagonAlert({ size = 24, strokeWidth = 2, className, ...props }: IconOctagonAlertProps) {
+export function IconCircleDotDashed({ size = 24, strokeWidth = 2, className, ...props }: IconCircleDotDashedProps) {
   const {
     onAnimationStart,
     ...rest
@@ -42,20 +43,44 @@ export function IconOctagonAlert({ size = 24, strokeWidth = 2, className, ...pro
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={shakeVariants}
+      variants={spinVariants}
       {...rest}
     >
       <motion.path 
         key="0"
-        d="M12 16h.01"
+        d="M10.1 2.18a9.93 9.93 0 0 1 3.8 0"
          />
       <motion.path 
         key="1"
-        d="M12 8v4"
+        d="M17.6 3.71a9.95 9.95 0 0 1 2.69 2.7"
          />
       <motion.path 
         key="2"
-        d="M15.312 2a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586l-4.688-4.688A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2z"
+        d="M21.82 10.1a9.93 9.93 0 0 1 0 3.8"
+         />
+      <motion.path 
+        key="3"
+        d="M20.29 17.6a9.95 9.95 0 0 1-2.7 2.69"
+         />
+      <motion.path 
+        key="4"
+        d="M13.9 21.82a9.94 9.94 0 0 1-3.8 0"
+         />
+      <motion.path 
+        key="5"
+        d="M6.4 20.29a9.95 9.95 0 0 1-2.69-2.7"
+         />
+      <motion.path 
+        key="6"
+        d="M2.18 13.9a9.93 9.93 0 0 1 0-3.8"
+         />
+      <motion.path 
+        key="7"
+        d="M3.71 6.4a9.95 9.95 0 0 1 2.7-2.69"
+         />
+      <motion.circle 
+        key="8"
+        cx="12" cy="12" r="1"
          />
     </motion.svg>
   );

@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 
-export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCylinderProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
@@ -21,7 +21,7 @@ const floatVariants = {
   }
 };
 
-export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+export function IconCylinder({ size = 24, strokeWidth = 2, className, ...props }: IconCylinderProps) {
   const {
     onAnimationStart,
     ...rest
@@ -47,13 +47,13 @@ export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: 
       variants={floatVariants}
       {...rest}
     >
-      <motion.rect 
+      <motion.ellipse 
         key="0"
-        width="7" height="7" x="14" y="3" rx="1"
+        cx="12" cy="5" rx="9" ry="3"
          />
       <motion.path 
         key="1"
-        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
+        d="M3 5v14a9 3 0 0 0 18 0V5"
          />
     </motion.svg>
   );
