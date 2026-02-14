@@ -39,7 +39,14 @@ export function IconTrendingUp({
   className,
   ...props
 }: IconTrendingUpProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
+  const {
+    onAnimationStart,
+    onAnimationEnd,
+    onDragStart,
+    onDrag,
+    onDragEnd,
+    ...restOptions
+  } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -60,7 +67,10 @@ export function IconTrendingUp({
       style={{ overflow: "visible" }}
       {...restOptions}
     >
-      <motion.path d="M16 7h6v6" variants={arrowVariants} />
+      <motion.path
+        d="M16 7h6v6"
+        variants={prefersReducedMotion ? {} : arrowVariants}
+      />
       <motion.path d="m22 7-8.5 8.5-5-5L2 17" variants={pathVariants} />
     </motion.svg>
   );

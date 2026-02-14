@@ -9,36 +9,37 @@ export interface IconArrowDownFromLineProps extends React.SVGProps<SVGSVGElement
   strokeWidth?: number;
 }
 
-
-
-
-
 const arrowVariants: Variants = {
   rest: { y: 0 },
-  hover: { 
+  hover: {
     y: [0, 2, 0],
-    transition: { 
+    transition: {
       duration: 1.5,
       repeat: Infinity,
-      ease: "easeInOut"
-    }
+      ease: "easeInOut",
+    },
   },
 };
 
 const lineVariants: Variants = {
   rest: { scaleX: 1, opacity: 1 },
-  hover: { 
+  hover: {
     scaleX: [1, 1.1, 1],
     opacity: [1, 0.8, 1],
-    transition: { 
+    transition: {
       duration: 1.5,
       repeat: Infinity,
-      ease: "easeInOut"
-    }
+      ease: "easeInOut",
+    },
   },
 };
 
-export function IconArrowDownFromLine({ size = 24, strokeWidth = 2, className, ...props }: IconArrowDownFromLineProps) {
+export function IconArrowDownFromLine({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  ...props
+}: IconArrowDownFromLineProps) {
   const {
     onAnimationStart,
     onAnimationEnd,
@@ -66,8 +67,12 @@ export function IconArrowDownFromLine({ size = 24, strokeWidth = 2, className, .
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.path d="M19 3H5" variants={lineVariants} style={{ originX: "50%", originY: "50%" }} />
-      <motion.g variants={prefersReducedMotion ? {} : arrowVariants} variants={arrowVariants}>
+      <motion.path
+        d="M19 3H5"
+        variants={prefersReducedMotion ? {} : lineVariants}
+        style={{ originX: "50%", originY: "50%" }}
+      />
+      <motion.g variants={prefersReducedMotion ? {} : arrowVariants}>
         <path d="M12 21V7" />
         <path d="m6 15 6 6 6-6" />
       </motion.g>
