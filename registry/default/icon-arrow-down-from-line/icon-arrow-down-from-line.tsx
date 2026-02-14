@@ -49,8 +49,8 @@ export function IconArrowDownFromLine({ size = 24, strokeWidth = 2, className, .
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.path d="M19 3H5" variants={prefersReducedMotion ? {} :lineVariants} style={{ originX: "50%", originY: "50%" }} />
-      <motion.g variants={prefersReducedMotion ? {} : arrowVariants}>
+      <motion.path d="M19 3H5" variants={lineVariants} style={{ originX: "50%", originY: "50%" }} />
+      <motion.g variants={arrowVariants}>
         <path d="M12 21V7" />
         <path d="m6 15 6 6 6-6" />
       </motion.g>
