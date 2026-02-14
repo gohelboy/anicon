@@ -1,29 +1,44 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 
 export interface IconTriangleAlertProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-
-const shakeVariants = {
-  rest: { x: 0 },
+const triangleVariants: Variants = {
+  rest: { scale: 1 },
   hover: {
-    x: [0, -3, 3, -2, 2, 0],
+    scale: [1, 1.05, 1],
     transition: {
-      duration: 0.5,
-      ease: "easeInOut"
-    }
-  }
+      duration: 1,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
 };
 
-export function IconTriangleAlert({ size = 24, strokeWidth = 2, className, ...props }: IconTriangleAlertProps) {
-  const {
-    onAnimationStart,
-    ...rest
-  } = props;
+const exclamationVariants: Variants = {
+  rest: { opacity: 1, scale: 1 },
+  hover: {
+    opacity: [1, 0.4, 1],
+    scale: [1, 1.2, 1],
+    transition: {
+      duration: 0.8,
+      repeat: Infinity,
+      ease: "easeInOut",
+    },
+  },
+};
+
+export function IconTriangleAlert({
+  size = 24,
+  strokeWidth = 2,
+  className,
+  ...props
+}: IconTriangleAlertProps) {
+  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -38,25 +53,21 @@ export function IconTriangleAlert({ size = 24, strokeWidth = 2, className, ...pr
       strokeLinecap="round"
       strokeLinejoin="round"
       initial={prefersReducedMotion ? false : "rest"}
-      animate={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      variants={shakeVariants}
-      {...rest}
+      style={{ overflow: "visible" }}
+      {...restOptions}
     >
       <motion.path 
-        key="0"
-        d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"
-         />
-      <motion.path 
-        key="1"
-        d="M12 9v4"
-         />
-      <motion.path 
-        key="2"
-        d="M12 17h.01"
-         />
+        d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" 
+        variants={triangleVariants}
+        style={{ originX: "12px", originY: "14px" }}
+      />
+      <motion.g variants={exclamationVariants} style={{ originX: "12px", originY: "12px" }}>
+        <path d="M12 9v4" />
+        <path d="M12 17h.01" />
+      </motion.g>
     </motion.svg>
   );
 }

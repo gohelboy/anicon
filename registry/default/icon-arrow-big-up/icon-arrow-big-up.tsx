@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconArrowBigUpProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -9,17 +9,10 @@ export interface IconArrowBigUpProps extends React.SVGProps<SVGSVGElement> {
   strokeWidth?: number;
 }
 
-const arrowVariants: Variants = {
-  rest: { y: 0, scale: 1 },
-  hover: { 
-    y: [0, -2, 0],
-    scale: [1, 1.05, 1],
-    transition: { 
-      duration: 1.5,
-      repeat: Infinity,
-      ease: "easeInOut"
-    }
-  },
+const arrowVariants = {
+  rest: { y: 0 },
+  hover: { y: -2 },
+  tap: { y: -4 },
 };
 
 export function IconArrowBigUp({ size = 24, strokeWidth = 2, className, ...props }: IconArrowBigUpProps) {
@@ -43,14 +36,14 @@ export function IconArrowBigUp({ size = 24, strokeWidth = 2, className, ...props
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial="rest"
-      whileHover="hover"
+      initial={prefersReducedMotion ? false : "rest"}
+      whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.path d="M9 18v-6H5l7-7 7 7h-4v6H9z" variants={prefersReducedMotion ? {} : arrowVariants} />
+      <motion.path d="M9 18v-6H5l7-7 7 7h-4v6H9z" variants={arrowVariants} />
     </motion.svg>
   );
 }

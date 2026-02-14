@@ -9,28 +9,22 @@ export interface IconClockProps extends React.SVGProps<SVGSVGElement> {
   strokeWidth?: number;
 }
 
+const ringVariants = {
+  rest: { scale: 1, opacity: 1 },
+  hover: { scale: 1.02, opacity: 0.9 },
+  tap: { scale: 0.97 },
+};
+
 const minuteHandVariants = {
   rest: { rotate: 0 },
-  hover: { 
-    rotate: 360,
-    transition: { 
-      duration: 2,
-      ease: "linear",
-      repeat: Infinity
-    }
-  },
+  hover: { rotate: 90 },
+  tap: { rotate: -30 },
 };
 
 const hourHandVariants = {
   rest: { rotate: 0 },
-  hover: { 
-    rotate: 360,
-    transition: { 
-      duration: 12,
-      ease: "linear",
-      repeat: Infinity
-    }
-  },
+  hover: { rotate: 30 },
+  tap: { rotate: -15 },
 };
 
 export function IconClock({ size = 24, strokeWidth = 2, className, ...props }: IconClockProps) {
@@ -54,23 +48,27 @@ export function IconClock({ size = 24, strokeWidth = 2, className, ...props }: I
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial="rest"
-      whileHover="hover"
-      className={`select-none ${className ?? ""}`.trim()}
+      initial={prefersReducedMotion ? false : "rest"}
+      whileHover={prefersReducedMotion ? undefined : "hover"}
+      whileTap={prefersReducedMotion ? undefined : "tap"}
+      transition={{ type: "spring", stiffness: 360, damping: 18 }}
+      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <circle cx="12" cy="12" r="9" />
-      <motion.line
-        x1="12" y1="12" x2="12" y2="8"
-        
-        style={{ originX: "12px", originY: "12px" }}
-      />
-      <motion.line
-        x1="12" y1="12" x2="16" y2="14"
-        variants={prefersReducedMotion ? {} : minuteHandVariants}
-        style={{ originX: "12px", originY: "12px" }}
-      />
-      <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" />
+      <motion.circle cx="12" cy="12" r="9" variants={ringVariants} />
+      <motion.g
+        variants={hourHandVariants}
+        style={{ originX: "50%", originY: "50%" }}
+      >
+        <path d="M12 12V9" />
+      </motion.g>
+      <motion.g
+        variants={minuteHandVariants}
+        style={{ originX: "50%", originY: "50%" }}
+      >
+        <path d="M12 12L15 13.5" />
+      </motion.g>
+      <circle cx="12" cy="12" r="1" fill="currentColor" stroke="none" />
     </motion.svg>
   );
 }
