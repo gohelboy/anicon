@@ -18,23 +18,14 @@ export function IconsSearchBar({
   onStrokeChange,
 }: IconsSearchBarProps) {
   return (
-    <div className="mt-6 flex flex-col gap-2 sm:mt-8 sm:flex-row sm:gap-2">
+    <div className="flex flex-col gap-2 sm:flex-row sm:gap-2">
+      {/* Search */}
       <div className="relative flex-1 min-w-0">
         <span
-          className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted-foreground)] sm:left-4"
+          className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-[var(--muted)]"
           aria-hidden
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={stroke}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <circle cx="11" cy="11" r="8" />
             <path d="m21 21-4.3-4.3" />
           </svg>
@@ -44,44 +35,51 @@ export function IconsSearchBar({
           placeholder="Search icons..."
           value={search}
           onChange={(e) => onSearchChange(e.target.value)}
-          className="w-full min-h-[44px] rounded-none border border-[var(--card-border)] bg-[var(--card)] py-3 pl-10 pr-10 text-base text-white placeholder:text-[var(--muted-foreground)] focus:border-[var(--accent)] focus:outline-none focus:ring-1 focus:ring-[var(--accent)] sm:pl-12 sm:pr-12"
+          className="w-full h-10 border border-[var(--card-border)] bg-[var(--surface)] pl-9 pr-3 text-sm text-white placeholder:text-[var(--muted)] focus:border-[var(--accent)]/50 focus:outline-none focus:ring-1 focus:ring-[var(--accent)]/30"
           aria-label="Search icons"
           autoComplete="off"
         />
       </div>
 
-      <div className="flex min-h-[44px] shrink-0 items-center gap-2 rounded-none border border-[var(--card-border)] bg-[var(--card)] px-3 py-1.5">
-        <span className="text-xs font-medium text-white/50 whitespace-nowrap">Stroke</span>
-        <input
-          type="range"
-          min="0.5"
-          max="3"
-          step="0.1"
-          value={stroke}
-          onChange={(e) => onStrokeChange(parseFloat(e.target.value))}
-          className="h-1 w-20 sm:w-24 cursor-pointer appearance-none rounded-full bg-white/10 accent-[var(--accent)] hover:bg-white/20 focus:outline-none"
-        />
-        <span className="w-6 text-right font-mono text-xs text-[var(--accent)]">
-          {stroke.toFixed(1)}
-        </span>
-      </div>
+      {/* Controls row */}
+      <div className="flex items-center gap-2">
+        {/* Stroke slider */}
+        <div className="flex h-10 shrink-0 items-center gap-2 border border-[var(--card-border)] bg-[var(--surface)] px-3">
+          <span className="text-[10px] font-medium uppercase tracking-wider text-[var(--muted)] whitespace-nowrap">
+            Stroke
+          </span>
+          <input
+            type="range"
+            min="0.5"
+            max="3"
+            step="0.1"
+            value={stroke}
+            onChange={(e) => onStrokeChange(parseFloat(e.target.value))}
+            className="h-0.5 w-16 cursor-pointer appearance-none bg-white/10 accent-[var(--accent)] sm:w-20"
+          />
+          <span className="w-5 text-right font-mono text-[10px] text-[var(--accent)]">
+            {stroke.toFixed(1)}
+          </span>
+        </div>
 
-      <label
-        title="Icon color"
-        className="relative flex min-h-[44px] w-11 min-w-[44px] shrink-0 cursor-pointer items-center justify-center overflow-hidden rounded-none border border-[var(--card-border)] bg-[var(--card)] hover:border-zinc-500 focus-within:ring-2 focus-within:ring-[var(--accent)] focus-within:ring-offset-2 focus-within:ring-offset-[var(--background)]"
-      >
-        <input
-          type="color"
-          value={iconColor}
-          onChange={(e) => onIconColorChange(e.target.value)}
-          className="h-full w-full cursor-pointer opacity-0"
-          aria-label="Icon color"
-        />
-        <span
-          className="pointer-events-none absolute h-5 w-5 rounded-none border border-white/30"
-          style={{ backgroundColor: iconColor }}
-        />
-      </label>
+        {/* Color picker */}
+        <label
+          title="Icon color"
+          className="relative flex h-10 w-10 shrink-0 cursor-pointer items-center justify-center overflow-hidden border border-[var(--card-border)] bg-[var(--surface)] hover:border-[var(--card-border-hover)] focus-within:ring-1 focus-within:ring-[var(--accent)]/30"
+        >
+          <input
+            type="color"
+            value={iconColor}
+            onChange={(e) => onIconColorChange(e.target.value)}
+            className="absolute inset-0 cursor-pointer opacity-0"
+            aria-label="Icon color"
+          />
+          <span
+            className="pointer-events-none h-5 w-5 border border-white/20"
+            style={{ backgroundColor: iconColor }}
+          />
+        </label>
+      </div>
     </div>
   );
 }

@@ -2,18 +2,14 @@
 
 import { useState } from "react";
 import {
-  REGISTRY_BASE,
   installCommandsByPm,
   PACKAGE_MANAGERS,
   type PackageManager,
 } from "@/lib/constants";
 
 export interface InstallCommandBlockProps {
-  /** Full registry item URL, e.g. `${REGISTRY_BASE}/icon-heart.json` */
   commandUrl: string;
-  /** Optional fixed width class. Default: w-[42rem] max-w-full */
   className?: string;
-  /** Show the "CLI copies..." footnote. Default true */
   showFootnote?: boolean;
 }
 
@@ -36,46 +32,67 @@ export function InstallCommandBlock({
 
   return (
     <div
-      className={`overflow-hidden rounded-none border border-[var(--card-border)] bg-[var(--card)] ${className}`.trim()}
+      className={`overflow-hidden border border-[var(--card-border)] bg-[var(--surface)] ${className}`.trim()}
     >
-      <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--card-border)] px-3 py-2 sm:px-4 sm:py-3">
-        <div className="flex items-center gap-2" aria-hidden>
-          <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
-          <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
-          <span className="h-2.5 w-2.5 rounded-full bg-zinc-600" />
+      {/* Header bar */}
+      <div className="flex items-center justify-between gap-2 border-b border-[var(--card-border)] px-4 py-2.5">
+        {/* Dots */}
+        <div className="flex items-center gap-1.5" aria-hidden>
+          <span className="h-2.5 w-2.5 rounded-full bg-[var(--accent)]/30" />
+          <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
+          <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
         </div>
-        <div className="flex items-center gap-1 rounded-none border border-[var(--card-border)] bg-white/5 p-0.5">
+
+        {/* Package manager tabs */}
+        <div className="flex items-center gap-0.5 border border-[var(--card-border)] bg-black/30 p-0.5">
           {PACKAGE_MANAGERS.map((pm) => (
             <button
               key={pm}
               type="button"
               onClick={() => setPackageManager(pm)}
-              className={`min-h-[36px] rounded-none px-2 py-1.5 text-xs font-medium transition sm:min-h-[44px] sm:px-3 ${
+              className={`px-2.5 py-1 text-xs font-medium transition ${
                 packageManager === pm
                   ? "bg-[var(--accent)] text-zinc-900"
-                  : "text-[var(--muted-foreground)] hover:bg-white/10 hover:text-white"
+                  : "text-[var(--muted-foreground)] hover:text-white"
               }`}
             >
               {pm}
             </button>
           ))}
         </div>
+
+        {/* Copy button */}
         <button
           type="button"
           onClick={copyToClipboard}
-          className="min-h-[36px] rounded-none border border-[var(--card-border)] bg-white/5 px-2 py-1.5 text-xs font-medium text-[var(--muted-foreground)] transition hover:bg-white/10 hover:text-white sm:min-h-[44px] sm:px-3"
+          className="flex h-7 w-7 items-center justify-center text-[var(--muted-foreground)] transition hover:text-white"
+          aria-label="Copy command"
         >
-          {copied ? "Copied!" : "Copy"}
+          {copied ? (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M20 6 9 17l-5-5" />
+            </svg>
+          ) : (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <rect width="14" height="14" x="8" y="8" rx="2" />
+              <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+            </svg>
+          )}
         </button>
       </div>
-      <pre className="install-code overflow-x-auto p-4 text-sm leading-relaxed text-[var(--muted-foreground)] sm:p-6">
-        <code className="break-all">{command}</code>
+
+      {/* Command */}
+      <pre className="install-code overflow-x-auto px-4 py-4 text-sm leading-relaxed text-[var(--muted-foreground)] sm:px-6 sm:py-5">
+        <code className="break-all">
+          <span className="text-[var(--accent)] select-none">$ </span>
+          {command}
+        </code>
       </pre>
+
       {showFootnote && (
-        <p className="px-3 pb-4 pt-2 text-sm text-[var(--muted-foreground)] sm:px-4">
+        <p className="border-t border-[var(--card-border)] px-4 py-3 text-xs text-[var(--muted)] sm:px-6">
           The CLI copies the component and adds{" "}
-          <code className="rounded bg-white/5 px-1.5 py-0.5">motion</code> if
-          needed.
+          <code className="bg-white/5 px-1 py-0.5">motion</code> if needed.
         </p>
       )}
     </div>

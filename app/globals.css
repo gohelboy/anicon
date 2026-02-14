@@ -1,20 +1,29 @@
 @import "tailwindcss";
 
-/* Maia / zinc / yellow preset (shadcn create style) */
+/* ── Design tokens ─────────────────────────────────────────────────── */
 :root {
   --background: #09090b;
   --foreground: #fafafa;
+
   --muted: #71717a;
   --muted-foreground: #a1a1aa;
-  --accent: #eab308;
-  --accent-soft: rgba(234, 179, 8, 0.15);
+
+  --accent: #facc15;
+  --accent-hover: #fde047;
+  --accent-soft: rgba(250, 204, 21, 0.12);
+  --accent-glow: rgba(250, 204, 21, 0.08);
+
+  --surface: #0f0f11;
   --card: #18181b;
-  --card-border: #27272a;
+  --card-border: rgba(255, 255, 255, 0.06);
+  --card-border-hover: rgba(255, 255, 255, 0.12);
+
   --radius: 0px;
   --ring: var(--accent);
   --ring-offset: #09090b;
+
   --gradient-start: #09090b;
-  --gradient-mid: #18181b;
+  --gradient-mid: #0f0f11;
   --gradient-end: #0c0a09;
 }
 
@@ -22,6 +31,7 @@
   --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
+/* ── Base ──────────────────────────────────────────────────────────── */
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
@@ -35,7 +45,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Better touch targets and tap highlight on mobile */
+/* Better touch targets */
 @media (pointer: coarse) {
   a,
   button {
@@ -44,23 +54,121 @@ body {
   }
 }
 
-/* Subtle mesh/gradient background */
+/* ── Animations ────────────────────────────────────────────────────── */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.5s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out both;
+}
+
+/* Staggered entrance delays */
+.delay-1 { animation-delay: 0.05s; }
+.delay-2 { animation-delay: 0.1s; }
+.delay-3 { animation-delay: 0.15s; }
+.delay-4 { animation-delay: 0.2s; }
+.delay-5 { animation-delay: 0.25s; }
+.delay-6 { animation-delay: 0.3s; }
+.delay-7 { animation-delay: 0.35s; }
+.delay-8 { animation-delay: 0.4s; }
+
+/* ── Backgrounds ───────────────────────────────────────────────────── */
 .landing-bg {
   background:
-    radial-gradient(
-      ellipse 80% 50% at 50% -20%,
-      var(--accent-soft),
-      transparent
-    ),
-    radial-gradient(
-      ellipse 60% 40% at 80% 100%,
-      rgba(234, 179, 8, 0.08),
-      transparent
-    ),
+    radial-gradient(ellipse 60% 40% at 50% -10%, var(--accent-soft), transparent),
+    radial-gradient(ellipse 40% 30% at 80% 100%, var(--accent-glow), transparent),
     var(--background);
 }
 
-/* Code block styling */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* ── Card utilities ────────────────────────────────────────────────── */
+.icon-card {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.icon-card:hover {
+  border-color: var(--card-border-hover);
+  box-shadow: 0 0 0 1px var(--card-border-hover), 0 4px 24px -4px rgba(0, 0, 0, 0.4);
+}
+
+.glow-card {
+  position: relative;
+  transition: border-color 0.2s ease;
+}
+
+.glow-card:hover {
+  border-color: var(--card-border-hover);
+}
+
+.glow-card::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  background: linear-gradient(
+    135deg,
+    var(--accent-glow),
+    transparent 50%,
+    var(--accent-glow)
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.glow-card:hover::after {
+  opacity: 1;
+}
+
+/* ── Code block styling ────────────────────────────────────────────── */
 .install-code {
   font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
 }

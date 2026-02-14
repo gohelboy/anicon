@@ -28,7 +28,7 @@ export function IconDetailDrawer({
 }: IconDetailDrawerProps) {
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
-      <DrawerContent className="border-[var(--card-border)] bg-[var(--card)] text-white">
+      <DrawerContent className="border-[var(--card-border)] bg-[var(--background)] text-white">
         {selectedIcon && (
           <IconDetailContent
             icon={selectedIcon}
@@ -55,28 +55,32 @@ function IconDetailContent({
 
   return (
     <div
-      className="mx-auto w-full max-w-2xl px-4 pb-8 sm:px-6"
+      className="mx-auto w-full max-w-2xl px-5 pb-8 sm:px-8"
       style={{ paddingBottom: "max(2rem, env(safe-area-inset-bottom))" }}
     >
-      <DrawerHeader>
-        <div className="flex flex-col items-center gap-4 sm:flex-row sm:items-start sm:gap-6">
-          <div className="flex shrink-0 items-center justify-center rounded-none border border-[var(--card-border)] bg-black/20 p-3 sm:p-4">
+      <DrawerHeader className="px-0">
+        <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start sm:gap-6">
+          {/* Icon preview */}
+          <div className="flex shrink-0 items-center justify-center border border-[var(--card-border)] bg-[var(--surface)] p-5 sm:p-6">
             <span style={{ color: iconColor }}>
-              <IconComponent size={56} strokeWidth={strokeWidth} />
+              <IconComponent size={64} strokeWidth={strokeWidth} />
             </span>
           </div>
+
+          {/* Info */}
           <div className="min-w-0 flex-1 text-center sm:text-left">
             <DrawerTitle className="text-lg text-white sm:text-xl">
               <code className="text-[var(--accent)] break-all">{icon.name}</code>
             </DrawerTitle>
-            <DrawerDescription className="mt-2 text-sm text-[var(--muted-foreground)] sm:text-base">
+            <DrawerDescription className="mt-2 text-sm text-[var(--muted-foreground)]">
               {icon.description}
             </DrawerDescription>
+            {/* Tags */}
             <div className="mt-3 flex flex-wrap justify-center gap-1.5 sm:justify-start">
               {icon.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="rounded-none border border-[var(--card-border)] bg-white/5 px-2 py-0.5 text-xs text-[var(--muted-foreground)]"
+                  className="border border-[var(--card-border)] bg-white/[0.03] px-2 py-0.5 text-[10px] font-medium text-[var(--muted-foreground)]"
                 >
                   {tag}
                 </span>
@@ -85,11 +89,13 @@ function IconDetailContent({
           </div>
         </div>
       </DrawerHeader>
-      <div className="mt-4 sm:mt-6">
+
+      {/* Install command */}
+      <div className="mt-5 sm:mt-6">
         <InstallCommandBlock
           commandUrl={commandUrl}
-          className="w-full max-w-[42rem]"
-          showFootnote={true}
+          className="w-full"
+          showFootnote
         />
       </div>
     </div>

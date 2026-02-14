@@ -21,41 +21,61 @@ export default function IconsPage() {
     setDrawerOpen(true);
   };
 
-  const filteredIcons = iconsRegistry.filter((icon) => {
-    return icon.name.toLowerCase().includes(search.toLowerCase());
-  });
+  const filteredIcons = iconsRegistry.filter((icon) =>
+    icon.name.toLowerCase().includes(search.toLowerCase())
+  );
 
   return (
     <div className="min-h-screen">
       <LandingNav />
-      <main className="pt-24 pb-16 sm:pb-20">
-        <section className="border-b border-(--card-border) px-4 pb-12 pt-6 sm:px-6 sm:pb-16 sm:pt-8">
-          <div className="mx-auto max-w-4xl pt-8">
-            <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">
-              Icons
-            </h1>
-            <p className="mt-2 text-base text-(--muted-foreground) sm:mt-3 sm:text-lg">
-              Browse and search animated icons. Hover or tap to see Motion animations.
+
+      <main className="pt-14">
+        {/* Header */}
+        <section className="border-b border-[var(--card-border)] px-5 pb-0 pt-10 sm:px-8 sm:pt-14">
+          <div className="mx-auto max-w-6xl">
+            <div className="flex items-baseline gap-3">
+              <h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+                Icons
+              </h1>
+              <span className="inline-flex items-center border border-[var(--card-border)] bg-[var(--surface)] px-2 py-0.5 text-xs font-medium text-[var(--muted-foreground)]">
+                {iconsRegistry.length}
+              </span>
+            </div>
+            <p className="mt-2 text-sm text-[var(--muted-foreground)] sm:text-base">
+              Browse and search animated icons. Hover or tap to preview
+              animations.
             </p>
-            <IconsSearchBar
-              search={search}
-              onSearchChange={setSearch}
-              iconColor={iconColor}
-              onIconColorChange={setIconColor}
-              stroke={stroke}
-              onStrokeChange={setStroke}
-            />
+
+            {/* Sticky search bar */}
+            <div className="sticky top-14 z-40 -mx-5 bg-[var(--background)]/90 backdrop-blur-lg px-5 py-4 sm:-mx-8 sm:px-8">
+              <IconsSearchBar
+                search={search}
+                onSearchChange={setSearch}
+                iconColor={iconColor}
+                onIconColorChange={setIconColor}
+                stroke={stroke}
+                onStrokeChange={setStroke}
+              />
+            </div>
           </div>
         </section>
 
-        <section className="px-4 py-8 sm:px-6 sm:py-12">
+        {/* Grid */}
+        <section className="px-5 py-8 sm:px-8 sm:py-10">
           <div className="mx-auto max-w-6xl">
             {filteredIcons.length > 0 ? (
               <>
-                <p className="mb-4 text-sm text-(--muted-foreground) sm:mb-6">
-                  {filteredIcons.length} icons
+                <p className="mb-4 text-xs text-[var(--muted)] sm:mb-5">
+                  {filteredIcons.length} icon{filteredIcons.length !== 1 && "s"}
+                  {search && (
+                    <span>
+                      {" "}matching &ldquo;
+                      <span className="text-[var(--muted-foreground)]">{search}</span>
+                      &rdquo;
+                    </span>
+                  )}
                 </p>
-                <div className="grid grid-cols-4 gap-3 sm:grid-cols-4 sm:gap-4 md:grid-cols-5 lg:grid-cols-10">
+                <div className="grid grid-cols-4 gap-2.5 sm:grid-cols-5 sm:gap-3 md:grid-cols-7 lg:grid-cols-10">
                   {filteredIcons.map((icon) => (
                     <IconCardButton
                       key={icon.name}

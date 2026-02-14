@@ -6,32 +6,36 @@ export interface EmptyIconsStateProps {
 
 export function EmptyIconsState({ onClearSearch }: EmptyIconsStateProps) {
   return (
-    <div className="flex flex-col items-center justify-center rounded-none border border-dashed border-[var(--card-border)] bg-[var(--card)]/50 px-4 py-12 text-center sm:py-20">
-      <div className="mb-4 rounded-none border border-[var(--card-border)] bg-black/20 p-4">
+    <div className="flex flex-col items-center justify-center border border-dashed border-[var(--card-border)] px-5 py-16 text-center sm:py-24">
+      {/* Illustration */}
+      <div className="mb-5 border border-[var(--card-border)] bg-[var(--surface)] p-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="40"
-          height="40"
+          width="48"
+          height="48"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          strokeWidth="1.5"
+          strokeWidth="1"
           strokeLinecap="round"
           strokeLinejoin="round"
-          className="text-[var(--muted-foreground)]"
+          className="text-[var(--muted)]"
         >
           <circle cx="11" cy="11" r="8" />
           <path d="m21 21-4.3-4.3" />
+          <path d="M8 11h6" />
         </svg>
       </div>
-      <h2 className="text-lg font-bold text-white">No icons found</h2>
-      <p className="mt-2 max-w-sm text-sm text-[var(--muted-foreground)]">
-        Try a different search term or browse all icons by clearing the search.
+
+      <h2 className="text-base font-semibold text-white">No icons found</h2>
+      <p className="mt-1.5 max-w-xs text-sm text-[var(--muted-foreground)]">
+        Try a different search term, or clear the filter to browse all icons.
       </p>
+
       <button
         type="button"
         onClick={onClearSearch}
-        className="mt-4 min-h-[44px] min-w-[44px] rounded-none border border-[var(--accent)] bg-[var(--accent)] px-4 py-2 text-sm font-bold text-zinc-900 transition hover:bg-yellow-400"
+        className="mt-5 h-9 border border-[var(--accent)] bg-[var(--accent)] px-4 text-xs font-semibold text-zinc-900 transition hover:bg-[var(--accent-hover)]"
       >
         Clear search
       </button>
