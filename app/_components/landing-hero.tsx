@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { IconHeart } from "@/registry/default/icon-heart/icon-heart";
 import { IconSparkle } from "@/registry/default/icon-sparkle/icon-sparkle";
 import { IconStar } from "@/registry/default/icon-star/icon-star";
@@ -15,6 +16,39 @@ const HERO_ICONS = [
   { Icon: IconRocket, color: "text-sky-400", name: "rocket" },
   { Icon: IconSearch, color: "text-emerald-400", name: "search" },
 ];
+
+function HeroIconCard({
+  Icon,
+  color,
+  name,
+  delayClass,
+}: {
+  Icon: React.ComponentType<any>;
+  color: string;
+  name: string;
+  delayClass: string;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className={`animate-fade-up ${delayClass} icon-card flex items-center justify-center border border-[var(--card-border)] bg-[var(--surface)] p-3.5 sm:p-5 cursor-default`}
+    >
+      <Icon
+        size={32}
+        className={`${color} sm:hidden`}
+        animate={isHovered ? "hover" : "rest"}
+      />
+      <Icon
+        size={44}
+        className={`${color} hidden sm:block`}
+        animate={isHovered ? "hover" : "rest"}
+      />
+    </div>
+  );
+}
 
 export function LandingHero() {
   return (
@@ -65,13 +99,13 @@ export function LandingHero() {
         {/* Icon strip */}
         <div className="animate-fade-up delay-4 mt-14 flex items-center justify-center gap-3 sm:mt-20 sm:gap-4">
           {HERO_ICONS.map(({ Icon, color, name }, i) => (
-            <div
+            <HeroIconCard
               key={name}
-              className={`animate-fade-up delay-${i + 3} icon-card flex items-center justify-center border border-[var(--card-border)] bg-[var(--surface)] p-3.5 sm:p-5`}
-            >
-              <Icon size={32} className={`${color} sm:hidden`} />
-              <Icon size={44} className={`${color} hidden sm:block`} />
-            </div>
+              Icon={Icon}
+              color={color}
+              name={name}
+              delayClass={`delay-${i + 3}`}
+            />
           ))}
         </div>
       </div>

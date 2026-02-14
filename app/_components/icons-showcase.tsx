@@ -1,8 +1,42 @@
 "use client";
 
+import { useState } from "react";
 import { iconsRegistry } from "@/app/_data/icons";
 
 const MAX_LANDING_ICONS = 12;
+
+function ShowcaseCard({
+  name,
+  component: Icon,
+  color,
+}: {
+  name: string;
+  component: React.ComponentType<any>;
+  color: string;
+}) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  return (
+    <div
+      role="listitem"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="icon-card group flex flex-col items-center gap-3 border border-[var(--card-border)] bg-[var(--surface)] p-4 sm:p-5 cursor-default"
+    >
+      <div className="flex items-center justify-center">
+        <Icon
+          size={36}
+          className={color}
+          aria-hidden="true"
+          animate={isHovered ? "hover" : "rest"}
+        />
+      </div>
+      <code className="truncate max-w-full text-[10px] font-medium text-[var(--muted-foreground)] group-hover:text-[var(--accent)] transition-colors sm:text-xs">
+        {name.replace("icon-", "")}
+      </code>
+    </div>
+  );
+}
 
 export function IconsShowcase() {
   const icons = iconsRegistry.slice(0, MAX_LANDING_ICONS);
@@ -44,19 +78,13 @@ export function IconsShowcase() {
           className="mt-10 grid grid-cols-3 gap-3 sm:mt-12 sm:grid-cols-4 sm:gap-4 md:grid-cols-6"
           role="list"
         >
-          {icons.map(({ name, component: Icon, color }) => (
-            <div
+          {icons.map(({ name, component, color }) => (
+            <ShowcaseCard
               key={name}
-              role="listitem"
-              className="icon-card group flex flex-col items-center gap-3 border border-[var(--card-border)] bg-[var(--surface)] p-4 sm:p-5"
-            >
-              <div className="flex items-center justify-center">
-                <Icon size={36} className={color} aria-hidden="true" />
-              </div>
-              <code className="truncate max-w-full text-[10px] font-medium text-[var(--muted-foreground)] group-hover:text-[var(--accent)] transition-colors sm:text-xs">
-                {name.replace("icon-", "")}
-              </code>
-            </div>
+              name={name}
+              component={component}
+              color={color}
+            />
           ))}
         </div>
       </div>

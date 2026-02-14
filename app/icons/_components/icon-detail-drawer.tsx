@@ -10,6 +10,7 @@ import {
 import { InstallCommandBlock } from "@/app/_components/install-command-block";
 import { REGISTRY_BASE } from "@/lib/constants";
 import type { IconEntry } from "@/app/_data/icons";
+import { useState } from "react";
 
 export interface IconDetailDrawerProps {
   open: boolean;
@@ -52,6 +53,7 @@ function IconDetailContent({
 }) {
   const IconComponent = icon.component;
   const commandUrl = `${REGISTRY_BASE}/${icon.name}.json`;
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
@@ -61,9 +63,17 @@ function IconDetailContent({
       <DrawerHeader className="px-0">
         <div className="flex flex-col items-center gap-5 sm:flex-row sm:items-start sm:gap-6">
           {/* Icon preview */}
-          <div className="flex shrink-0 items-center justify-center border border-[var(--card-border)] bg-[var(--surface)] p-5 sm:p-6">
+          <div
+            className="flex shrink-0 items-center justify-center border border-[var(--card-border)] bg-[var(--surface)] p-5 sm:p-6 cursor-default"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
             <span style={{ color: iconColor }}>
-              <IconComponent size={64} strokeWidth={strokeWidth} />
+              <IconComponent
+                size={64}
+                strokeWidth={strokeWidth}
+                animate={isHovered ? "hover" : "rest"}
+              />
             </span>
           </div>
 
