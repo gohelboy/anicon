@@ -66,11 +66,11 @@ export function IconArrowUpFromLine({ size = 24, strokeWidth = 2, className, ...
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={prefersReducedMotion ? {} : arrowVariants} variants={arrowVariants}>
+      <motion.g variants={prefersReducedMotion ? {} : arrowVariants}>
         <path d="m18 9-6-6-6 6" />
         <path d="M12 3v14" />
       </motion.g>
-      <motion.path d="M5 21h14" variants={prefersReducedMotion ? {} : lineVariants} style={{ originX: "12px" }} variants={lineVariants} style={{ originX: 0.5 }} />
+      <motion.path d="M5 21h14" variants={prefersReducedMotion ? {} : lineVariants} style={{ originX: "50%", originY: "50%" }} />
     </motion.svg>
   );
 }
