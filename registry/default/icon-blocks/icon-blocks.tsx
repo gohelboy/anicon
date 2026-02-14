@@ -1,34 +1,31 @@
 "use client";
 
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 
 export interface IconBlocksProps extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const blockVariants: Variants = {
-  rest: { scale: 1, x: 0, y: 0 },
-  hover: (i: number) => ({
-    scale: [1, 1.05, 1],
-    x: i === 0 ? [0, -1, 0] : 0,
-    y: i === 1 ? [0, -1, 0] : 0,
+
+const floatVariants = {
+  rest: { y: 0 },
+  hover: {
+    y: -4,
     transition: {
       duration: 1.5,
       repeat: Infinity,
-      delay: i * 0.3,
-      ease: "easeInOut",
-    },
-  }),
+      repeatType: "reverse",
+      ease: "easeInOut"
+    }
+  }
 };
 
-export function IconBlocks({
-  size = 24,
-  strokeWidth = 2,
-  className,
-  ...props
-}: IconBlocksProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;
+export function IconBlocks({ size = 24, strokeWidth = 2, className, ...props }: IconBlocksProps) {
+  const {
+    onAnimationStart,
+    ...rest
+  } = props;
   const prefersReducedMotion = useReducedMotion();
 
   return (
@@ -43,26 +40,21 @@ export function IconBlocks({
       strokeLinecap="round"
       strokeLinejoin="round"
       initial={prefersReducedMotion ? false : "rest"}
+      animate={prefersReducedMotion ? false : "rest"}
       whileHover={prefersReducedMotion ? undefined : "hover"}
       whileTap={prefersReducedMotion ? undefined : "tap"}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
-      style={{ overflow: "visible" }}
-      {...restOptions}
+      variants={floatVariants}
+      {...rest}
     >
-      <motion.path 
-        d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2" 
-        variants={blockVariants}
-        custom={0}
-      />
       <motion.rect 
-        x="14" 
-        y="2" 
-        width="8" 
-        height="8" 
-        rx="1" 
-        variants={blockVariants}
-        custom={1}
-      />
+        key="0"
+        width="7" height="7" x="14" y="3" rx="1"
+         />
+      <motion.path 
+        key="1"
+        d="M10 21V8a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1H3"
+         />
     </motion.svg>
   );
 }
