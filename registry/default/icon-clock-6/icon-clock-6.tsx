@@ -2,31 +2,38 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconCalendarProps extends React.SVGProps<SVGSVGElement> {
+export interface IconClock6Props extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
 
-const pinVariants: Variants = {
-  rest: { y: 0 },
+const handVariants: Variants = {
+  rest: { rotate: 0 },
   hover: { 
-    y: [0, -2, 0],
+    rotate: 360,
     transition: { 
-      duration: 0.5,
-      repeat: Infinity,
-      repeatDelay: 1
+      duration: 3,
+      ease: "linear",
+      repeat: Infinity
     }
   },
 };
 
-export function IconCalendar({
-  size = 24,
-  strokeWidth = 2,
+export function IconClock6({ 
+  size = 24, 
+  strokeWidth = 2, 
   className,
-  ...props
-}: IconCalendarProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;
+  ...props 
+}: IconClock6Props) {
   const prefersReducedMotion = useReducedMotion();
+  const {
+    onAnimationStart,
+    onAnimationEnd,
+    onDragStart,
+    onDrag,
+    onDragEnd,
+    ...rest
+  } = props;
 
   return (
     <motion.svg
@@ -44,10 +51,13 @@ export function IconCalendar({
       whileHover="hover"
       {...rest}
     >
-      <rect width="18" height="18" x="3" y="4" rx="2" />
-      <path d="M3 10h18" />
-      <motion.path d="M8 2v4" variants={prefersReducedMotion ? {} : pinVariants} />
-      <motion.path d="M16 2v4" variants={prefersReducedMotion ? {} : pinVariants} />
+      <path d="M12 6v6" />
+      <motion.path 
+        d="M12 12v4" 
+        variants={prefersReducedMotion ? {} : handVariants} 
+        style={{ originX: "12px", originY: "12px" }} 
+      />
+      <circle cx="12" cy="12" r="10" />
     </motion.svg>
   );
 }

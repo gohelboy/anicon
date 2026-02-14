@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 
-export interface IconCalendarProps extends React.SVGProps<SVGSVGElement> {
+export interface IconCalendarX2Props extends React.SVGProps<SVGSVGElement> {
   size?: number;
   strokeWidth?: number;
 }
@@ -19,14 +19,33 @@ const pinVariants: Variants = {
   },
 };
 
-export function IconCalendar({
-  size = 24,
-  strokeWidth = 2,
+const xVariants: Variants = {
+  rest: { pathLength: 0, opacity: 0 },
+  hover: { 
+    pathLength: 1, 
+    opacity: 1,
+    transition: { 
+      duration: 0.4,
+      ease: "easeOut"
+    }
+  },
+};
+
+export function IconCalendarX2({ 
+  size = 24, 
+  strokeWidth = 2, 
   className,
-  ...props
-}: IconCalendarProps) {
-  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;
+  ...props 
+}: IconCalendarX2Props) {
   const prefersReducedMotion = useReducedMotion();
+  const {
+    onAnimationStart,
+    onAnimationEnd,
+    onDragStart,
+    onDrag,
+    onDragEnd,
+    ...rest
+  } = props;
 
   return (
     <motion.svg
@@ -44,10 +63,22 @@ export function IconCalendar({
       whileHover="hover"
       {...rest}
     >
-      <rect width="18" height="18" x="3" y="4" rx="2" />
+      <path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8" />
       <path d="M3 10h18" />
       <motion.path d="M8 2v4" variants={prefersReducedMotion ? {} : pinVariants} />
       <motion.path d="M16 2v4" variants={prefersReducedMotion ? {} : pinVariants} />
+      
+      {/* X drawing */}
+      <motion.path 
+        d="m17 22 5-5" 
+        variants={prefersReducedMotion ? {} : xVariants}
+        transition={{ delay: 0.1 }}
+      />
+      <motion.path 
+        d="m17 17 5 5" 
+        variants={prefersReducedMotion ? {} : xVariants}
+        transition={{ delay: 0.3 }}
+      />
     </motion.svg>
   );
 }
