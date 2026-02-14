@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-circle-dot-dashed",
+  "type": "registry:component",
+  "title": "IconCircleDotDashed",
+  "description": "CircleDotDashed icon with premium animation",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-circle-dot-dashed/icon-circle-dot-dashed.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type SVGMotionProps } from \"framer-motion\";\r\n\r\nexport interface IconCircleDotDashedProps extends SVGMotionProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\n\r\nconst spinVariants = {\r\n  rest: { rotate: 0 },\r\n  hover: {\r\n    rotate: 360,\r\n    transition: {\r\n      duration: 4,\r\n      repeat: Infinity,\r\n      ease: \"linear\"\r\n    }\r\n  }\r\n} as any;\r\n\r\nexport function IconCircleDotDashed({ size = 24, strokeWidth = 2, className, ...props }: IconCircleDotDashedProps) {\r\n  const {\r\n    onAnimationStart,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      animate={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      variants={spinVariants}\r\n      {...rest}\r\n    >\r\n      <motion.path \r\n        key=\"0\"\r\n        d=\"M10.1 2.18a9.93 9.93 0 0 1 3.8 0\"\r\n         />\r\n      <motion.path \r\n        key=\"1\"\r\n        d=\"M17.6 3.71a9.95 9.95 0 0 1 2.69 2.7\"\r\n         />\r\n      <motion.path \r\n        key=\"2\"\r\n        d=\"M21.82 10.1a9.93 9.93 0 0 1 0 3.8\"\r\n         />\r\n      <motion.path \r\n        key=\"3\"\r\n        d=\"M20.29 17.6a9.95 9.95 0 0 1-2.7 2.69\"\r\n         />\r\n      <motion.path \r\n        key=\"4\"\r\n        d=\"M13.9 21.82a9.94 9.94 0 0 1-3.8 0\"\r\n         />\r\n      <motion.path \r\n        key=\"5\"\r\n        d=\"M6.4 20.29a9.95 9.95 0 0 1-2.69-2.7\"\r\n         />\r\n      <motion.path \r\n        key=\"6\"\r\n        d=\"M2.18 13.9a9.93 9.93 0 0 1 0-3.8\"\r\n         />\r\n      <motion.path \r\n        key=\"7\"\r\n        d=\"M3.71 6.4a9.95 9.95 0 0 1 2.7-2.69\"\r\n         />\r\n      <motion.circle \r\n        key=\"8\"\r\n        cx=\"12\" cy=\"12\" r=\"1\"\r\n         />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-sparkles",
+  "type": "registry:component",
+  "title": "Animated Sparkles",
+  "description": "Sparkles with sequential magic glow effect.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-sparkles/icon-sparkles.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconSparklesProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst sparkleVariants: Variants = {\r\n  rest: { scale: 1, rotate: 0, opacity: 1 },\r\n  hover: (i: number) => ({\r\n    scale: [1, 1.05, 1],\r\n    rotate: [0, 5, -5, 0],\r\n    opacity: [1, 0.7, 1],\r\n    transition: {\r\n      duration: 2.5,\r\n      repeat: Infinity,\r\n      delay: i * 0.5,\r\n      ease: \"easeInOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconSparkles({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconSparklesProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.path \r\n        d=\"M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z\" \r\n        variants={sparkleVariants}\r\n        custom={0}\r\n        style={{ originX: \"12px\", originY: \"12px\" }}\r\n      />\r\n      <motion.path d=\"M20 2v4\" variants={sparkleVariants} custom={1} style={{ originX: \"20px\", originY: \"4px\" }} />\r\n      <motion.path d=\"M22 4h-4\" variants={sparkleVariants} custom={2} style={{ originX: \"20px\", originY: \"4px\" }} />\r\n      <motion.circle cx=\"4\" cy=\"20\" r=\"2\" variants={sparkleVariants} custom={3} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

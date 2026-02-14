@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-search",
+  "type": "registry:component",
+  "title": "Animated Search",
+  "description": "Magnifying glass with zoom pulse.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-search/icon-search.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconSearchProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst searchVariants: Variants = {\r\n  rest: { scale: 1, x: 0, y: 0 },\r\n  hover: {\r\n    scale: 1.1,\r\n    x: -1,\r\n    y: -1,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 17 },\r\n  },\r\n  tap: {\r\n    scale: 0.95,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 17 },\r\n  },\r\n};\r\n\r\nexport function IconSearch({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconSearchProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      variants={searchVariants}\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <circle cx=\"11\" cy=\"11\" r=\"8\" />\r\n      <path d=\"m21 21-4.3-4.3\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

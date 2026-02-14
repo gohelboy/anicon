@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-mouse-pointer-click",
+  "type": "registry:component",
+  "title": "Animated Mouse Pointer Click",
+  "description": "Mouse pointer with interaction ripple effect.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-mouse-pointer-click/icon-mouse-pointer-click.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconMousePointerClickProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst pointerVariants: Variants = {\r\n  rest: { scale: 1, x: 0, y: 0 },\r\n  hover: {\r\n    scale: [1, 0.95, 1],\r\n    x: [0, 1, 0],\r\n    y: [0, 1, 0],\r\n    transition: {\r\n      duration: 0.4,\r\n      repeat: Infinity,\r\n      repeatType: \"reverse\",\r\n    },\r\n  },\r\n};\r\n\r\nconst rippleVariants: Variants = {\r\n  rest: { opacity: 0, scale: 0.8 },\r\n  hover: (i: number) => ({\r\n    opacity: [0, 1, 0],\r\n    scale: [0.8, 1.2, 1],\r\n    transition: {\r\n      duration: 1,\r\n      repeat: Infinity,\r\n      delay: i * 0.2,\r\n      ease: \"easeOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconMousePointerClick({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconMousePointerClickProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.path d=\"M14 4.1 12 6\" variants={rippleVariants} custom={0} />\r\n      <motion.path d=\"m5.1 8-2.9-.8\" variants={rippleVariants} custom={1} />\r\n      <motion.path d=\"m6 12-1.9 2\" variants={rippleVariants} custom={2} />\r\n      <motion.path d=\"M7.2 2.2 8 5.1\" variants={rippleVariants} custom={3} />\r\n      <motion.path \r\n        d=\"M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z\" \r\n        variants={pointerVariants}\r\n        style={{ originX: \"10px\", originY: \"10px\" }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

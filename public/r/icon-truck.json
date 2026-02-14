@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-truck",
+  "type": "registry:component",
+  "title": "Animated Truck",
+  "description": "Truck with driving vibration and wheel rotation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-truck/icon-truck.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconTruckProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst bodyVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: {\r\n    y: [0, -0.5, 0],\r\n    transition: {\r\n      duration: 0.2,\r\n      repeat: Infinity,\r\n      ease: \"linear\",\r\n    },\r\n  },\r\n};\r\n\r\nconst wheelVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: {\r\n    rotate: 360,\r\n    transition: {\r\n      duration: 1,\r\n      repeat: Infinity,\r\n      ease: \"linear\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconTruck({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconTruckProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.g variants={bodyVariants}>\r\n        <path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\" />\r\n        <path d=\"M15 18H9\" />\r\n        <path d=\"M19 18h2a1 1 0 0 0 1-1v-5h-4l-2 3\" />\r\n      </motion.g>\r\n      <motion.circle cx=\"7\" cy=\"18\" r=\"2\" variants={wheelVariants} />\r\n      <motion.circle cx=\"17\" cy=\"18\" r=\"2\" variants={wheelVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

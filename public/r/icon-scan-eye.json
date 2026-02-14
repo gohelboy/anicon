@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-scan-eye",
+  "type": "registry:component",
+  "title": "Animated Scan Eye",
+  "description": "Eye scan with a moving laser and blink.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-scan-eye/icon-scan-eye.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconScanEyeProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst eyeVariants: Variants = {\r\n  rest: { scaleY: 1 },\r\n  hover: {\r\n    scaleY: [1, 0.2, 1],\r\n    transition: {\r\n      duration: 0.4,\r\n      times: [0, 0.5, 1],\r\n      ease: \"easeInOut\",\r\n      repeat: Infinity,\r\n      repeatDelay: 3,\r\n    },\r\n  },\r\n};\r\n\r\nconst scanLineVariants: Variants = {\r\n  rest: { y: 0, opacity: 0 },\r\n  hover: {\r\n    y: [-4, 4, -4],\r\n    opacity: [0, 1, 0],\r\n    transition: {\r\n      duration: 2,\r\n      repeat: Infinity,\r\n      ease: \"linear\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconScanEye({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconScanEyeProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <path d=\"M3 7V5a2 2 0 0 1 2-2h2\" />\r\n      <path d=\"M17 3h2a2 2 0 0 1 2 2v2\" />\r\n      <path d=\"M21 17v2a2 2 0 0 1-2 2h-2\" />\r\n      <path d=\"M7 21H5a2 2 0 0 1-2-2v-2\" />\r\n      \r\n      <motion.g variants={eyeVariants} style={{ originY: \"12px\" }}>\r\n        <circle cx=\"12\" cy=\"12\" r=\"1\" />\r\n        <path d=\"M18.944 12.33a1 1 0 0 0 0-.66 7.5 7.5 0 0 0-13.888 0 1 1 0 0 0 0 .66 7.5 7.5 0 0 0 13.888 0\" />\r\n      </motion.g>\r\n      \r\n      <motion.line \r\n        x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\" \r\n        stroke=\"currentColor\" \r\n        strokeWidth={1} \r\n        variants={scanLineVariants}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

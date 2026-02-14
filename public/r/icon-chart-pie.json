@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-chart-pie",
+  "type": "registry:component",
+  "title": "Animated Chart Pie",
+  "description": "Pie chart with interactive data slice pop animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-chart-pie/icon-chart-pie.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconChartPieProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst sliceVariants: Variants = {\r\n  rest: { x: 0, y: 0, scale: 1 },\r\n  hover: {\r\n    x: 2,\r\n    y: -2,\r\n    scale: 1.05,\r\n    transition: {\r\n      duration: 0.4,\r\n      ease: \"easeOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst baseVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: {\r\n    scale: 0.98,\r\n    transition: {\r\n      duration: 0.4,\r\n      ease: \"easeOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconChartPie({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconChartPieProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.path \r\n        d=\"M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z\" \r\n        variants={sliceVariants}\r\n      />\r\n      <motion.path \r\n        d=\"M21.21 15.89A10 10 0 1 1 8 2.83\" \r\n        variants={baseVariants}\r\n        style={{ originX: \"12px\", originY: \"12px\" }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

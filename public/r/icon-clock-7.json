@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-clock-7",
+  "type": "registry:component",
+  "title": "Animated Clock 7",
+  "description": "Clock 7 icon with semantic animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-clock-7/icon-clock-7.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconClock7Props extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst handVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: { \r\n    rotate: 360,\r\n    transition: { \r\n      duration: 3,\r\n      ease: \"linear\",\r\n      repeat: Infinity\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconClock7({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconClock7Props) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\" whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <path d=\"M12 6v6\" />\r\n      <motion.path \r\n        d=\"M12 12l-2 4\" \r\n        variants={prefersReducedMotion ? {} : handVariants} \r\n        style={{ originX: \"12px\", originY: \"12px\" }} \r\n      />\r\n      <circle cx=\"12\" cy=\"12\" r=\"10\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

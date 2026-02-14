@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-coffee",
+  "type": "registry:component",
+  "title": "Animated Coffee",
+  "description": "Coffee with rising steam and gentle cup vibration.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-coffee/icon-coffee.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconCoffeeProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst steamVariants: Variants = {\r\n  rest: { y: 0, opacity: 1 },\r\n  hover: (i: number) => ({\r\n    y: [0, -4, -8],\r\n    opacity: [0, 1, 0],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      delay: i * 0.4,\r\n      ease: \"linear\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconCoffee({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconCoffeeProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      {/* Cup - No vibration as requested */}\r\n      <path d=\"M17 11h.3a3.7 3.7 0 1 1 0 7.4h-.3\" />\r\n      <path d=\"M2 11h15a2 2 0 0 1 2 2v2a5 5 0 0 1-5 5H4a2 2 0 0 1-2-2Z\" />\r\n      \r\n      {/* Steam lines */}\r\n      <motion.path d=\"M6 2v4\" variants={steamVariants} custom={0} />\r\n      <motion.path d=\"M10 2v4\" variants={steamVariants} custom={1} />\r\n      <motion.path d=\"M14 2v4\" variants={steamVariants} custom={2} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

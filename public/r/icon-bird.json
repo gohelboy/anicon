@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-bird",
+  "type": "registry:component",
+  "title": "Animated Bird",
+  "description": "Bird with fluttering wings and gentle body sway.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-bird/icon-bird.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconBirdProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst eyeVariants: Variants = {\r\n  rest: { \r\n    scaleY: 1,\r\n    transition: {\r\n      duration: 0.1\r\n    }\r\n  },\r\n  hover: {\r\n    scaleY: [1, 0.1, 1],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      times: [0, 0.1, 0.2],\r\n      repeatDelay: 2\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconBird({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconBirdProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <g>\r\n        {/* Eye */}\r\n        <motion.circle \r\n          cx=\"16\" \r\n          cy=\"7\" \r\n          r=\".5\" \r\n          fill=\"currentColor\" \r\n          variants={prefersReducedMotion ? {} : eyeVariants}\r\n          style={{ originX: \"16px\", originY: \"7px\" }}\r\n        />\r\n        \r\n        {/* Body */}\r\n        <path d=\"M3.4 18H12a8 8 0 0 0 8-8V7a4 4 0 0 0-7.28-2.3L2 20\" />\r\n        \r\n        {/* Leg 1 */}\r\n        <path d=\"M10 18v3\" />\r\n        \r\n        {/* Leg 2 */}\r\n        <path d=\"M14 17.75V21\" />\r\n\r\n        {/* Beak */}\r\n        <path d=\"m20 7 2 .5-2 .5\" />\r\n        \r\n        {/* Wing */}\r\n        <path d=\"M7 18a6 6 0 0 0 3.84-10.61\" />\r\n      </g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

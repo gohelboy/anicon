@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-baseline",
+  "type": "registry:component",
+  "title": "Animated Baseline",
+  "description": "Baseline with a pulsing underline",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-baseline/icon-baseline.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconBaselineProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst lineVariants: Variants = {\r\n  rest: { scaleX: 1, opacity: 1 },\r\n  hover: { \r\n    scaleX: [1, 1.2, 1],\r\n    opacity: [1, 0.5, 1],\r\n    transition: { \r\n      duration: 1,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\"\r\n    }\r\n  },\r\n};\r\n\r\nconst aVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: { \r\n    y: [0, -2, 0],\r\n    transition: { \r\n      duration: 1,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\"\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconBaseline({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconBaselineProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.g variants={prefersReducedMotion ? {} : aVariants}>\r\n        <path d=\"m6 16 6-12 6 12\" />\r\n        <path d=\"M8 12h8\" />\r\n      </motion.g>\r\n      <motion.path \r\n        d=\"M4 20h16\" \r\n        variants={prefersReducedMotion ? {} : lineVariants}\r\n        style={{ originX: \"12px\" }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-credit-card",
+  "type": "registry:component",
+  "title": "Animated Credit Card",
+  "description": "Credit card with payment slide and chip glow animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-credit-card/icon-credit-card.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconCreditCardProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst cardVariants: Variants = {\r\n  rest: { x: 0, scale: 1 },\r\n  hover: {\r\n    x: 2,\r\n    scale: 1.02,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 400,\r\n      damping: 17,\r\n    },\r\n  },\r\n};\r\n\r\nconst chipVariants: Variants = {\r\n  rest: { opacity: 0.5 },\r\n  hover: {\r\n    opacity: [0.5, 1, 0.5],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconCreditCard({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconCreditCardProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      variants={cardVariants}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <rect width=\"20\" height=\"14\" x=\"2\" y=\"5\" rx=\"2\" />\r\n      <line x1=\"2\" x2=\"22\" y1=\"10\" y2=\"10\" />\r\n      {/* Chip detail */}\r\n      <motion.rect \r\n        x=\"5\" \r\n        y=\"14\" \r\n        width=\"4\" \r\n        height=\"3\" \r\n        rx=\"0.5\" \r\n        fill=\"currentColor\"\r\n        variants={chipVariants}\r\n        stroke=\"none\"\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

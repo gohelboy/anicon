@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-align-center",
+  "type": "registry:component",
+  "title": "Animated Align Center",
+  "description": "Align center bars with a gentle bounce.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-align-center/icon-align-center.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconAlignCenterProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst topVariants = {\r\n  rest: { scaleX: 0.9, y: 0 },\r\n  hover: { scaleX: 0.8, y: 1 },\r\n  tap: { scaleX: 0.95, y: -1 },\r\n};\r\n\r\nconst midVariants = {\r\n  rest: { scaleX: 1 },\r\n  hover: { scaleX: 1.08 },\r\n  tap: { scaleX: 0.94 },\r\n};\r\n\r\nconst bottomVariants = {\r\n  rest: { scaleX: 0.9, y: 0 },\r\n  hover: { scaleX: 0.8, y: -1 },\r\n  tap: { scaleX: 0.95, y: 1 },\r\n};\r\n\r\nexport function IconAlignCenter({ size = 24, strokeWidth = 2, className, ...props }: IconAlignCenterProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      transition={{ type: \"spring\", stiffness: 300, damping: 16 }}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"M21 6H3\" variants={topVariants} style={{ originX: \"50%\", originY: \"50%\" }} />\r\n      <motion.path d=\"M17 12H7\" variants={midVariants} style={{ originX: \"50%\", originY: \"50%\" }} />\r\n      <motion.path d=\"M19 18H5\" variants={bottomVariants} style={{ originX: \"50%\", originY: \"50%\" }} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

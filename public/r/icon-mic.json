@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-mic",
+  "type": "registry:component",
+  "title": "Animated Mic",
+  "description": "Microphone with pulsing audio waves.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-mic/icon-mic.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconMicProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\n// Microphone pulses like receiving audio\r\nconst micVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: {\r\n    scale: [1, 1.05, 0.98, 1.03, 1],\r\n    transition: { duration: 0.5, repeat: Infinity, repeatType: \"loop\" },\r\n  },\r\n};\r\n\r\n// Sound waves emanate\r\nconst waveVariants: Variants = {\r\n  rest: { opacity: 0, scale: 0.8 },\r\n  hover: {\r\n    opacity: [0, 0.8, 0],\r\n    scale: [0.8, 1.2, 1.4],\r\n    transition: { duration: 0.8, repeat: Infinity, repeatType: \"loop\" },\r\n  },\r\n};\r\n\r\nexport function IconMic({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconMicProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"-4 -4 32 32\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      {/* Sound wave rings */}\r\n      <motion.circle \r\n        cx=\"12\" \r\n        cy=\"8\" \r\n        r=\"8\" \r\n        variants={waveVariants}\r\n        fill=\"none\"\r\n        strokeWidth={1}\r\n      />\r\n      \r\n      {/* Microphone body - pulses */}\r\n      <motion.g variants={micVariants}>\r\n        <path d=\"M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z\" />\r\n        <path d=\"M19 10v2a7 7 0 0 1-14 0v-2\" />\r\n        <line x1=\"12\" x2=\"12\" y1=\"19\" y2=\"22\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-workflow",
+  "type": "registry:component",
+  "title": "Animated Workflow",
+  "description": "Workflow process with drawing connectors.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-workflow/icon-workflow.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconWorkflowProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst pathVariants: Variants = {\r\n  rest: { pathLength: 1 },\r\n  hover: {\r\n    pathLength: [1, 0, 1],\r\n    transition: {\r\n      duration: 1.2,\r\n      ease: \"easeInOut\",\r\n      repeat: Infinity,\r\n      repeatDelay: 0.5,\r\n    },\r\n  },\r\n};\r\n\r\nconst rectVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: (i: number) => ({\r\n    scale: [1, 1.1, 1],\r\n    transition: {\r\n      duration: 0.6,\r\n      delay: i * 0.3,\r\n      ease: \"easeInOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconWorkflow({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconWorkflowProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.rect width=\"8\" height=\"8\" x=\"3\" y=\"3\" rx=\"2\" variants={rectVariants} custom={0} />\r\n      <motion.path d=\"M7 11v4a2 2 0 0 0 2 2h4\" variants={pathVariants} />\r\n      <motion.rect width=\"8\" height=\"8\" x=\"13\" y=\"13\" rx=\"2\" variants={rectVariants} custom={1} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

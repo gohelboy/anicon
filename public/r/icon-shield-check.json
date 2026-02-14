@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-shield-check",
+  "type": "registry:component",
+  "title": "Animated Shield Check",
+  "description": "Shield with secure check-draw animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-shield-check/icon-shield-check.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconShieldCheckProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst shieldVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: {\r\n    scale: [1, 1.05, 1],\r\n    transition: { duration: 0.4, ease: \"easeInOut\" },\r\n  },\r\n};\r\n\r\nconst checkVariants: Variants = {\r\n  rest: { pathLength: 1, opacity: 1 },\r\n  hover: {\r\n    pathLength: [0, 1],\r\n    opacity: [0, 1],\r\n    transition: { duration: 0.5, ease: \"easeOut\", delay: 0.1 },\r\n  },\r\n};\r\n\r\nexport function IconShieldCheck({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconShieldCheckProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <motion.path\r\n        d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10\"\r\n        variants={shieldVariants}\r\n        style={{ originX: \"50%\", originY: \"50%\" }}\r\n      />\r\n      <motion.path\r\n        d=\"m9 12 2 2 4-4\"\r\n        variants={checkVariants}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

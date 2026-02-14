@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-loader",
+  "type": "registry:component",
+  "title": "Animated Loader",
+  "description": "Loader with continuous rotation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-loader/icon-loader.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconLoaderProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nexport function IconLoader({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconLoaderProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      animate={prefersReducedMotion ? {} : { rotate: 360 }}\r\n      transition={\r\n        prefersReducedMotion\r\n          ? {}\r\n          : {\r\n              repeat: Infinity,\r\n              duration: 1,\r\n              ease: \"linear\",\r\n            }\r\n      }\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <path d=\"M12 2v4\" />\r\n      <path d=\"m16.2 7.8 2.9-2.9\" />\r\n      <path d=\"M18 12h4\" />\r\n      <path d=\"m16.2 16.2 2.9 2.9\" />\r\n      <path d=\"M12 18v4\" />\r\n      <path d=\"m4.9 19.1 2.9-2.9\" />\r\n      <path d=\"M2 12h4\" />\r\n      <path d=\"m4.9 4.9 2.9 2.9\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

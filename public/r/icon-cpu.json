@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-cpu",
+  "type": "registry:component",
+  "title": "Animated Cpu",
+  "description": "CPU with processing circuitry animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-cpu/icon-cpu.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconCpuProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst chipVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: {\r\n    scale: 1.05,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 400,\r\n      damping: 10,\r\n    },\r\n  },\r\n};\r\n\r\nconst lineVariants: Variants = {\r\n  rest: { pathLength: 1, opacity: 1 },\r\n  hover: (i: number) => ({\r\n    pathLength: [0, 1],\r\n    opacity: [0.4, 1, 0.4],\r\n    transition: {\r\n      duration: 1,\r\n      repeat: Infinity,\r\n      delay: i * 0.1,\r\n      ease: \"easeInOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconCpu({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconCpuProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.rect \r\n        width=\"12\" \r\n        height=\"12\" \r\n        x=\"6\" \r\n        y=\"6\" \r\n        rx=\"2\" \r\n        variants={chipVariants}\r\n      />\r\n      {/* Circuit lines */}\r\n      <motion.path d=\"M9 18v3\" variants={lineVariants} custom={0} />\r\n      <motion.path d=\"M15 18v3\" variants={lineVariants} custom={1} />\r\n      <motion.path d=\"M18 9h3\" variants={lineVariants} custom={2} />\r\n      <motion.path d=\"M18 15h3\" variants={lineVariants} custom={3} />\r\n      <motion.path d=\"M9 3v3\" variants={lineVariants} custom={4} />\r\n      <motion.path d=\"M15 3v3\" variants={lineVariants} custom={5} />\r\n      <motion.path d=\"M3 9h3\" variants={lineVariants} custom={6} />\r\n      <motion.path d=\"M3 15h3\" variants={lineVariants} custom={7} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

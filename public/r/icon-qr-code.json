@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-qr-code",
+  "type": "registry:component",
+  "title": "Animated Qr Code",
+  "description": "QR code with matrix pulse and flicker effect.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-qr-code/icon-qr-code.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconQrCodeProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst rectVariants: Variants = {\r\n  rest: { scale: 1, opacity: 1 },\r\n  hover: {\r\n    scale: [1, 1.1, 1],\r\n    opacity: [1, 0.8, 1],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst bitVariants: Variants = {\r\n  rest: { opacity: 1 },\r\n  hover: (i: number) => ({\r\n    opacity: [1, 0.4, 1],\r\n    transition: {\r\n      duration: 0.8,\r\n      repeat: Infinity,\r\n      delay: i * 0.1,\r\n      ease: \"easeInOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconQrCode({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconQrCodeProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.rect width=\"5\" height=\"5\" x=\"3\" y=\"3\" rx=\"1\" variants={rectVariants} style={{ originX: \"5.5px\", originY: \"5.5px\" }} />\r\n      <motion.rect width=\"5\" height=\"5\" x=\"16\" y=\"3\" rx=\"1\" variants={rectVariants} style={{ originX: \"18.5px\", originY: \"5.5px\" }} />\r\n      <motion.rect width=\"5\" height=\"5\" x=\"3\" y=\"16\" rx=\"1\" variants={rectVariants} style={{ originX: \"5.5px\", originY: \"18.5px\" }} />\r\n      <motion.path d=\"M21 16h-3a2 2 0 0 0-2 2v3\" variants={bitVariants} custom={0} />\r\n      <motion.path d=\"M21 21v.01\" variants={bitVariants} custom={1} />\r\n      <motion.path d=\"M12 7v3a2 2 0 0 1-2 2H7\" variants={bitVariants} custom={2} />\r\n      <motion.path d=\"M3 12h.01\" variants={bitVariants} custom={3} />\r\n      <motion.path d=\"M12 3h.01\" variants={bitVariants} custom={4} />\r\n      <motion.path d=\"M12 16v.01\" variants={bitVariants} custom={5} />\r\n      <motion.path d=\"M16 12h1\" variants={bitVariants} custom={6} />\r\n      <motion.path d=\"M21 12v.01\" variants={bitVariants} custom={7} />\r\n      <motion.path d=\"M12 21v-1\" variants={bitVariants} custom={8} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

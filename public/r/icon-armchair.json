@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-armchair",
+  "type": "registry:component",
+  "title": "Animated Armchair",
+  "description": "Armchair with a soft cushion bounce.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-armchair/icon-armchair.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconArmchairProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst backVariants = {\r\n  rest: { y: 0 },\r\n  hover: { y: -1 },\r\n  tap: { y: 1 },\r\n};\r\n\r\nconst seatVariants = {\r\n  rest: { scaleY: 1 },\r\n  hover: { scaleY: 1.03 },\r\n  tap: { scaleY: 0.97 },\r\n};\r\n\r\nconst legVariants = {\r\n  rest: { y: 0 },\r\n  hover: { y: 1 },\r\n  tap: { y: -1 },\r\n};\r\n\r\nexport function IconArmchair({ size = 24, strokeWidth = 2, className, ...props }: IconArmchairProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      transition={{ type: \"spring\", stiffness: 320, damping: 18 }}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3\" variants={backVariants} />\r\n      <motion.path\r\n        d=\"M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V11a2 2 0 0 0-4 0z\"\r\n        variants={seatVariants}\r\n        style={{ originX: \"50%\", originY: \"70%\" }}\r\n      />\r\n      <motion.path d=\"M5 18v2\" variants={legVariants} />\r\n      <motion.path d=\"M19 18v2\" variants={legVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

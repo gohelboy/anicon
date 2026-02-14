@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-coins",
+  "type": "registry:component",
+  "title": "Animated Coins",
+  "description": "Coins stack with interactive jingle and sparkle.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-coins/icon-coins.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconCoinsProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst coinVariants: Variants = {\r\n  rest: { x: 0, y: 0 },\r\n  hover: (i: number) => ({\r\n    x: [0, i === 0 ? 1 : -1, 0],\r\n    y: [0, -1, 0],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      delay: i * 0.3,\r\n      ease: \"easeInOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nconst sparkleVariants: Variants = {\r\n  rest: { scale: 0, opacity: 0 },\r\n  hover: {\r\n    scale: [0, 1, 0],\r\n    opacity: [0, 1, 0],\r\n    transition: {\r\n      duration: 1,\r\n      repeat: Infinity,\r\n      repeatDelay: 1,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconCoins({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconCoinsProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.circle cx=\"8\" cy=\"8\" r=\"6\" variants={coinVariants} custom={0} />\r\n      <motion.path d=\"M18.09 10.37A6 6 0 1 1 10.34 18\" variants={coinVariants} custom={1} />\r\n      <path d=\"M7 6h1v4\" />\r\n      <path d=\"m16.71 13.88.7.71-2.82 2.82\" />\r\n      \r\n      {/* Sparkle effect */}\r\n      <motion.path \r\n        d=\"M20 4l1 1-1 1-1-1z\" \r\n        fill=\"currentColor\" \r\n        stroke=\"none\"\r\n        variants={sparkleVariants}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-rabbit",
+  "type": "registry:component",
+  "title": "Animated Rabbit",
+  "description": "Rabbit with a soft ear-twitch and body sway.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-rabbit/icon-rabbit.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconRabbitProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst earVariants: Variants = {\r\n  rest: { \r\n    rotate: 0,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 300,\r\n      damping: 15\r\n    }\r\n  },\r\n  hover: {\r\n    rotate: [0, -5, 5, 0],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst rabbitVariants: Variants = {\r\n  rest: { \r\n    y: 0,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 300,\r\n      damping: 15\r\n    }\r\n  },\r\n  hover: {\r\n    y: [0, -1, 0],\r\n    transition: {\r\n      duration: 2,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconRabbit({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconRabbitProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.g variants={prefersReducedMotion ? {} : rabbitVariants}>\r\n        <path d=\"M13 16a3 3 0 0 1 2.24 5\" />\r\n        <path d=\"M18 12h.01\" />\r\n        <path d=\"M18 21h-8a4 4 0 0 1-4-4 7 7 0 0 1 7-7h.2L9.6 6.4a1 1 0 1 1 2.8-2.8L15.8 7h.2c3.3 0 6 2.7 6 6v1a2 2 0 0 1-2 2h-1a3 3 0 0 0-3 3\" />\r\n        <motion.path \r\n          d=\"M20 8.54V4a2 2 0 1 0-4 0v3\" \r\n          variants={prefersReducedMotion ? {} : earVariants} \r\n          style={{ originX: \"18px\", originY: \"7px\" }}\r\n        />\r\n        <path d=\"M7.612 12.524a3 3 0 1 0-1.6 4.3\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-house-heart",
+  "type": "registry:component",
+  "title": "Animated House Heart",
+  "description": "House icon with a pulsing central heart.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-house-heart/icon-house-heart.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconHouseHeartProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst heartVariants: Variants = {\r\n  rest: { \r\n    scale: 1,\r\n  },\r\n  hover: {\r\n    scale: [1, 1.2, 1],\r\n    transition: {\r\n      duration: 0.8,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconHouseHeart({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconHouseHeartProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.path \r\n        d=\"M8.62 13.8A2.25 2.25 0 1 1 12 10.836a2.25 2.25 0 1 1 3.38 2.966l-2.626 2.856a.998.998 0 0 1-1.507 0z\" \r\n        variants={prefersReducedMotion ? {} : heartVariants}\r\n        style={{ originX: \"12px\", originY: \"13.8px\" }}\r\n      />\r\n      <path d=\"M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

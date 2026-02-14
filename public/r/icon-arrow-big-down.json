@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-arrow-big-down",
+  "type": "registry:component",
+  "title": "Animated Arrow Big Down",
+  "description": "Big arrow down with a strong drop.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-arrow-big-down/icon-arrow-big-down.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconArrowBigDownProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst arrowVariants: Variants = {\r\n  rest: { y: 0, scale: 1 },\r\n  hover: { \r\n    y: [0, 2, 0],\r\n    scale: [1, 1.05, 1],\r\n    transition: { \r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\"\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconArrowBigDown({ size = 24, strokeWidth = 2, className, ...props }: IconArrowBigDownProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      transition={{ type: \"spring\", stiffness: 320, damping: 18 }}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"M15 6v6h4l-7 7-7-7h4V6h6z\" variants={prefersReducedMotion ? {} : arrowVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

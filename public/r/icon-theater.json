@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-theater",
+  "type": "registry:component",
+  "title": "Animated Theater",
+  "description": "Theater icon with sliding stage curtains.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-theater/icon-theater.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconTheaterProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst curtainVariants: Variants = {\r\n  rest: { \r\n    x: 0,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 300,\r\n      damping: 15\r\n    }\r\n  },\r\n  hover: (i: number) => ({\r\n    x: i === 0 ? -2 : 2,\r\n    transition: {\r\n      duration: 0.8,\r\n      repeat: Infinity,\r\n      repeatType: \"mirror\",\r\n      ease: \"easeInOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconTheater({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconTheaterProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"M2 10s3-3 3-8\" variants={prefersReducedMotion ? {} : curtainVariants} custom={0} />\r\n      <motion.path d=\"M22 10s-3-3-3-8\" variants={prefersReducedMotion ? {} : curtainVariants} custom={1} />\r\n      <motion.path d=\"M10 2c0 4.4-3.6 8-8 8\" variants={prefersReducedMotion ? {} : curtainVariants} custom={0} />\r\n      <motion.path d=\"M14 2c0 4.4 3.6 8 8 8\" variants={prefersReducedMotion ? {} : curtainVariants} custom={1} />\r\n      <motion.path d=\"M2 10s2 2 2 5\" variants={prefersReducedMotion ? {} : curtainVariants} custom={0} />\r\n      <motion.path d=\"M22 10s-2 2-2 5\" variants={prefersReducedMotion ? {} : curtainVariants} custom={1} />\r\n      <path d=\"M8 15h8\" />\r\n      <path d=\"M2 22v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1\" />\r\n      <path d=\"M14 22v-1a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

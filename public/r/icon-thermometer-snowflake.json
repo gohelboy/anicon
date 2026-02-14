@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-thermometer-snowflake",
+  "type": "registry:component",
+  "title": "Animated Thermometer Snowflake",
+  "description": "Thermometer with snowflake animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-thermometer-snowflake/icon-thermometer-snowflake.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconThermometerSnowflakeProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\n\r\nexport function IconThermometerSnowflake({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconThermometerSnowflakeProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.g style={{ originX: \"7px\", originY: \"12px\" }}>\r\n         <path d=\"m10 20-1.25-2.5L6 18\" />\r\n         <path d=\"M10 4 8.75 6.5 6 6\" />\r\n         <path d=\"M10.585 15H10\" />\r\n         <path d=\"M2 12h6.5L10 9\" />\r\n         <path d=\"m4 10 1.5 2L4 14\" />\r\n         <path d=\"m7 21 3-6-1.5-3\" />\r\n         <path d=\"m7 3 3 6h2\" />\r\n      </motion.g>\r\n      <path d=\"M20 14.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z\" />\r\n      \r\n      {/* Liquid inside - Drop low for cold */}\r\n      <motion.line\r\n        x1=\"18\"\r\n        y1=\"18\"\r\n        x2=\"18\"\r\n        y2=\"10\" // Default height\r\n        strokeWidth={strokeWidth}\r\n        stroke=\"currentColor\" \r\n        strokeLinecap=\"round\"\r\n        initial={{ y2: 10 }} // Start slightly filled\r\n        variants={{\r\n            rest: { y2: 10 },\r\n            hover: { \r\n                y2: 13, // Drop down (y increases downwards)\r\n                transition: { duration: 0.8, ease: \"easeOut\" }\r\n            }\r\n        }}\r\n      />\r\n      \r\n      {/* Bulb base fill */}\r\n      <circle cx=\"18\" cy=\"18\" r=\"2\" fill=\"currentColor\" stroke=\"none\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

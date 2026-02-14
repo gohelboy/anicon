@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-menu-grid",
+  "type": "registry:component",
+  "title": "Animated Menu Grid",
+  "description": "Grid menu with staggered tile motion.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-menu-grid/icon-menu-grid.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconMenuGridProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst cellVariants = {\r\n  rest: (index: number) => ({\r\n    scale: 1,\r\n    rotate: 0,\r\n    transition: { delay: index * 0.04 },\r\n  }),\r\n  hover: (index: number) => ({\r\n    scale: 1.15,\r\n    rotate: index % 2 === 0 ? 6 : -6,\r\n    transition: { delay: index * 0.04, type: \"spring\", stiffness: 420 },\r\n  }),\r\n  tap: { scale: 0.92 },\r\n};\r\n\r\nconst cells = [\r\n  { x: 6, y: 6 },\r\n  { x: 12, y: 6 },\r\n  { x: 18, y: 6 },\r\n  { x: 6, y: 12 },\r\n  { x: 12, y: 12 },\r\n  { x: 18, y: 12 },\r\n  { x: 6, y: 18 },\r\n  { x: 12, y: 18 },\r\n  { x: 18, y: 18 },\r\n];\r\n\r\nexport function IconMenuGrid({ size = 24, strokeWidth = 2, className, ...props }: IconMenuGridProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"currentColor\"\r\n      stroke=\"none\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      {cells.map((cell, index) => (\r\n        <motion.rect\r\n          key={`${cell.x}-${cell.y}`}\r\n          x={cell.x - 1}\r\n          y={cell.y - 1}\r\n          width=\"2\"\r\n          height=\"2\"\r\n          rx=\"0.6\"\r\n          variants={cellVariants}\r\n          custom={index}\r\n        />\r\n      ))}\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

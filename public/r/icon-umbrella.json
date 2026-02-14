@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-umbrella",
+  "type": "registry:component",
+  "title": "Animated Umbrella",
+  "description": "Umbrella with expanding canopy animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-umbrella/icon-umbrella.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconUmbrellaProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst canopyVariants: Variants = {\r\n  rest: { scaleX: 1, scaleY: 1 },\r\n  hover: {\r\n    scaleX: [1, 1.05, 1],\r\n    scaleY: [1, 0.95, 1],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst handleVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: {\r\n    y: [0, -1, 0],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst rainVariants: Variants = {\r\n  rest: { y: -10, opacity: 0 },\r\n  hover: (i: number) => ({\r\n    y: [-10, 0, 5],\r\n    opacity: [0, 1, 0],\r\n    transition: {\r\n      duration: 1,\r\n      repeat: Infinity,\r\n      delay: i * 0.3,\r\n      ease: \"linear\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconUmbrella({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconUmbrellaProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      {/* Rainfall */}\r\n      <motion.path d=\"M8 2v2\" variants={rainVariants} custom={0} />\r\n      <motion.path d=\"M12 0v2\" variants={rainVariants} custom={1} />\r\n      <motion.path d=\"M16 2v2\" variants={rainVariants} custom={2} />\r\n\r\n      {/* Umbrella */}\r\n      <motion.path \r\n        d=\"M22 12a10.06 10.06 0 0 0-20 0Z\" \r\n        variants={canopyVariants} \r\n        style={{ originY: \"12px\" }} \r\n      />\r\n      <motion.path \r\n        d=\"M12 12v8a2 2 0 0 0 4 0\" \r\n        variants={handleVariants} \r\n      />\r\n      <path d=\"M12 2v1\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-menu-list",
+  "type": "registry:component",
+  "title": "Animated Menu List",
+  "description": "List menu with animated bullets and lines.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-menu-list/icon-menu-list.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconMenuListProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst lineVariants = {\r\n  rest: (index: number) => ({\r\n    x: 0,\r\n    opacity: 1,\r\n    transition: { delay: index * 0.05 },\r\n  }),\r\n  hover: (index: number) => ({\r\n    x: 2,\r\n    opacity: 0.95,\r\n    transition: { delay: index * 0.05, type: \"spring\", stiffness: 500 },\r\n  }),\r\n  tap: { scaleX: 0.95 },\r\n};\r\n\r\nconst bulletVariants = {\r\n  rest: (index: number) => ({ scale: 1 }),\r\n  hover: (index: number) => ({\r\n    scale: 1.15,\r\n    transition: { delay: index * 0.05, type: \"spring\", stiffness: 500 },\r\n  }),\r\n  tap: { scale: 0.9 },\r\n};\r\n\r\nexport function IconMenuList({ size = 24, strokeWidth = 2, className, ...props }: IconMenuListProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.circle cx=\"5\" cy=\"7\" r=\"1.5\" variants={bulletVariants} custom={0} />\r\n      <motion.circle cx=\"5\" cy=\"12\" r=\"1.5\" variants={bulletVariants} custom={1} />\r\n      <motion.circle cx=\"5\" cy=\"17\" r=\"1.5\" variants={bulletVariants} custom={2} />\r\n      <motion.line x1=\"9\" y1=\"7\" x2=\"19\" y2=\"7\" variants={lineVariants} custom={0} />\r\n      <motion.line x1=\"9\" y1=\"12\" x2=\"19\" y2=\"12\" variants={lineVariants} custom={1} />\r\n      <motion.line x1=\"9\" y1=\"17\" x2=\"19\" y2=\"17\" variants={lineVariants} custom={2} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

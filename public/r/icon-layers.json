@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-layers",
+  "type": "registry:component",
+  "title": "Animated Layers",
+  "description": "Layers with vertical separation animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-layers/icon-layers.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconLayersProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst topLayerVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: {\r\n    y: -4,\r\n    transition: { type: \"spring\", stiffness: 300, damping: 15 },\r\n  },\r\n};\r\n\r\nconst middleLayerVariants: Variants = {\r\n  rest: { y: 0, opacity: 1 },\r\n  hover: {\r\n    y: -2,\r\n    opacity: 0.8,\r\n    transition: { type: \"spring\", stiffness: 300, damping: 15, delay: 0.05 },\r\n  },\r\n};\r\n\r\nconst bottomLayerVariants: Variants = {\r\n  rest: { opacity: 1 },\r\n  hover: {\r\n    opacity: 0.6,\r\n    transition: { duration: 0.2 },\r\n  },\r\n};\r\n\r\nexport function IconLayers({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconLayersProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.27a1 1 0 0 0 0 1.46l8.57 4.09a2 2 0 0 0 1.66 0l8.57-4.09a1 1 0 0 0 0-1.46Z\" variants={topLayerVariants} />\r\n      <motion.path d=\"m2 12 10 4.76L22 12\" variants={middleLayerVariants} />\r\n      <motion.path d=\"m2 17 10 4.76L22 17\" variants={bottomLayerVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

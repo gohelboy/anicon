@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-anvil",
+  "type": "registry:component",
+  "title": "Animated Anvil",
+  "description": "Anvil with a heavy strike bounce.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-anvil/icon-anvil.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconAnvilProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst topVariants: Variants = {\r\n  rest: { \r\n    y: 0,\r\n    rotate: 0,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 300,\r\n      damping: 15\r\n    }\r\n  },\r\n  hover: {\r\n    y: [0, -2, 0],\r\n    rotate: [0, -1, 1, 0],\r\n    transition: {\r\n      duration: 0.4,\r\n      repeat: Infinity,\r\n      repeatType: \"mirror\",\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst baseVariants: Variants = {\r\n  rest: { \r\n    scaleX: 1,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 300,\r\n      damping: 15\r\n    }\r\n  },\r\n  hover: {\r\n    scaleX: [1, 1.05, 1],\r\n    transition: {\r\n      duration: 0.4,\r\n      repeat: Infinity,\r\n      repeatType: \"mirror\",\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconAnvil({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconAnvilProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.g \r\n        variants={prefersReducedMotion ? {} : topVariants}\r\n        style={{ originX: \"12px\", originY: \"12px\" }}\r\n      >\r\n        <path d=\"M7 10H6a4 4 0 0 1-4-4 1 1 0 0 1 1-1h4\" />\r\n        <path d=\"M7 5a1 1 0 0 1 1-1h13a1 1 0 0 1 1 1 7 7 0 0 1-7 7H8a1 1 0 0 1-1-1z\" />\r\n        <path d=\"M9 12v5\" />\r\n        <path d=\"M15 12v5\" />\r\n      </motion.g>\r\n      <motion.path \r\n        d=\"M5 20a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3 1 1 0 0 1-1 1H6a1 1 0 0 1-1-1\" \r\n        variants={prefersReducedMotion ? {} : baseVariants}\r\n        style={{ originX: \"12px\", originY: \"20px\" }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

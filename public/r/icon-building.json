@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-building",
+  "type": "registry:component",
+  "title": "Animated Building",
+  "description": "Office building with window illumination effects.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-building/icon-building.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconBuildingProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst windowVariants: Variants = {\r\n  rest: { \r\n    opacity: 1,\r\n  },\r\n  hover: (i: number) => ({\r\n    opacity: [1, 0.4, 1],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      delay: i * 0.2,\r\n      ease: \"easeInOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconBuilding({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconBuildingProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <rect width=\"16\" height=\"20\" x=\"4\" y=\"2\" rx=\"2\" ry=\"2\" />\r\n      <motion.path d=\"M9 22v-4h6v4\" variants={prefersReducedMotion ? {} : windowVariants} custom={0} />\r\n      <motion.path d=\"M8 6h.01\" variants={prefersReducedMotion ? {} : windowVariants} custom={1} />\r\n      <motion.path d=\"M16 6h.01\" variants={prefersReducedMotion ? {} : windowVariants} custom={2} />\r\n      <motion.path d=\"M12 6h.01\" variants={prefersReducedMotion ? {} : windowVariants} custom={3} />\r\n      <motion.path d=\"M12 10h.01\" variants={prefersReducedMotion ? {} : windowVariants} custom={4} />\r\n      <motion.path d=\"M12 14h.01\" variants={prefersReducedMotion ? {} : windowVariants} custom={5} />\r\n      <motion.path d=\"M16 10h.01\" variants={prefersReducedMotion ? {} : windowVariants} custom={6} />\r\n      <motion.path d=\"M16 14h.01\" variants={prefersReducedMotion ? {} : windowVariants} custom={7} />\r\n      <motion.path d=\"M8 10h.01\" variants={prefersReducedMotion ? {} : windowVariants} custom={8} />\r\n      <motion.path d=\"M8 14h.01\" variants={prefersReducedMotion ? {} : windowVariants} custom={9} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-palette",
+  "type": "registry:component",
+  "title": "Animated Palette",
+  "description": "Palette with playful dot-pulsing animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-palette/icon-palette.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconPaletteProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst dotVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: (i: number) => ({\r\n    scale: [1, 1.5, 1],\r\n    transition: {\r\n      duration: 0.6,\r\n      repeat: Infinity,\r\n      delay: i * 0.1,\r\n      ease: \"easeInOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconPalette({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconPaletteProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      {/* Official Lucide Palette Path */}\r\n      <path d=\"M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.688-1.688h1.906c3.106 0 5.625-2.519 5.625-5.625 0-4.826-4.102-8.75-9-8.75Z\" />\r\n      \r\n      {/* Official Color Spots */}\r\n      <motion.path d=\"M13.5 7a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z\" variants={dotVariants} custom={0} fill=\"currentColor\" />\r\n      <motion.path d=\"M17.5 11a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z\" variants={dotVariants} custom={1} fill=\"currentColor\" />\r\n      <motion.path d=\"M8.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z\" variants={dotVariants} custom={2} fill=\"currentColor\" />\r\n      <motion.path d=\"M6.5 13a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z\" variants={dotVariants} custom={3} fill=\"currentColor\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

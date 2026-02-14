@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-settings-2",
+  "type": "registry:component",
+  "title": "Animated Settings 2",
+  "description": "Settings with rotating configuration nodes.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-settings-2/icon-settings-2.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconSettings2Props extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst knobVariant1: Variants = {\r\n  rest: { x: 0 },\r\n  hover: {\r\n    x: [0, -2, 2, 0],\r\n    transition: {\r\n      duration: 3,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst knobVariant2: Variants = {\r\n  rest: { x: 0 },\r\n  hover: {\r\n    x: [0, 2, -2, 0],\r\n    transition: {\r\n      duration: 3,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst railVariant1: Variants = {\r\n  rest: { d: \"M14 17H5\" },\r\n  hover: {\r\n    d: [\"M14 17H5\", \"M12 17H5\", \"M16 17H5\", \"M14 17H5\"],\r\n    transition: {\r\n      duration: 3,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst railVariant2: Variants = {\r\n  rest: { d: \"M19 7h-9\" },\r\n  hover: {\r\n    d: [\"M19 7h-9\", \"M21 7h-9\", \"M17 7h-9\", \"M19 7h-9\"],\r\n    transition: {\r\n      duration: 3,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconSettings2({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconSettings2Props) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.path d=\"M14 17H5\" variants={railVariant1} />\r\n      <motion.path d=\"M19 7h-9\" variants={railVariant2} />\r\n      <motion.circle \r\n        cx=\"17\" \r\n        cy=\"17\" \r\n        r=\"3\" \r\n        variants={knobVariant1}\r\n        style={{ originX: \"17px\", originY: \"17px\" }}\r\n      />\r\n      <motion.circle \r\n        cx=\"7\" \r\n        cy=\"7\" \r\n        r=\"3\" \r\n        variants={knobVariant2}\r\n        style={{ originX: \"7px\", originY: \"7px\" }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

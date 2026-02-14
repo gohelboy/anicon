@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-shrimp",
+  "type": "registry:component",
+  "title": "Animated Shrimp",
+  "description": "Shrimp with snapping tail and body compression.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-shrimp/icon-shrimp.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconShrimpProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst shrimpVariants: Variants = {\r\n  rest: { \r\n    scaleX: 1,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 300,\r\n      damping: 15\r\n    }\r\n  },\r\n  hover: {\r\n    scaleX: [1, 0.95, 1],\r\n    transition: {\r\n      duration: 1,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst tailVariants: Variants = {\r\n  rest: { \r\n    rotate: 0,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 300,\r\n      damping: 15\r\n    }\r\n  },\r\n  hover: {\r\n    rotate: [0, -10, 0],\r\n    transition: {\r\n      duration: 0.6,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconShrimp({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconShrimpProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.g variants={prefersReducedMotion ? {} : shrimpVariants}>\r\n        <path d=\"M11 12h.01\" />\r\n        <motion.path \r\n          d=\"M13 22c.5-.5 1.12-1 2.5-1-1.38 0-2-.5-2.5-1\" \r\n          variants={prefersReducedMotion ? {} : tailVariants} \r\n          style={{ originX: \"13px\", originY: \"22px\" }}\r\n        />\r\n        <path d=\"M14 2a3.28 3.28 0 0 1-3.227 1.798l-6.17-.561A2.387 2.387 0 1 0 4.387 8H15.5a1 1 0 0 1 0 13 1 1 0 0 0 0-5H12a7 7 0 0 1-7-7V8\" />\r\n        <path d=\"M14 8a8.5 8.5 0 0 1 0 8\" />\r\n        <path d=\"M16 16c2 0 4.5-4 4-6\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

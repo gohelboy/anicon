@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-mail",
+  "type": "registry:component",
+  "title": "Animated Mail",
+  "description": "Envelope with flap opening animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-mail/icon-mail.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconMailProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst flapVariants: Variants = {\r\n  rest: { rotateX: 0 },\r\n  hover: {\r\n    rotateX: -25,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 17 },\r\n  },\r\n  tap: {\r\n    rotateX: -40,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 17 },\r\n  },\r\n};\r\n\r\nexport function IconMail({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconMailProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ perspective: 100 }}\r\n      {...rest}\r\n    >\r\n      {/* Envelope body - static */}\r\n      <rect width=\"20\" height=\"16\" x=\"2\" y=\"4\" rx=\"2\" />\r\n      {/* Envelope flap - animated */}\r\n      <motion.path\r\n        d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"\r\n        variants={flapVariants}\r\n        style={{ originX: \"50%\", originY: \"0%\", transformStyle: \"preserve-3d\" }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

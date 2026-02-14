@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-monitor",
+  "type": "registry:component",
+  "title": "Animated Monitor",
+  "description": "Monitor with screen wake-up glow animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-monitor/icon-monitor.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconMonitorProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst screenVariants: Variants = {\r\n  rest: { opacity: 1, scale: 1 },\r\n  hover: {\r\n    scale: 1.02,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 400,\r\n      damping: 17,\r\n    },\r\n  },\r\n};\r\n\r\nconst glowVariants: Variants = {\r\n  rest: { opacity: 0 },\r\n  hover: {\r\n    opacity: [0, 0.2, 0],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconMonitor({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconMonitorProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.rect \r\n        width=\"20\" \r\n        height=\"14\" \r\n        x=\"2\" \r\n        y=\"3\" \r\n        rx=\"2\" \r\n        variants={screenVariants}\r\n      />\r\n      {/* Screen Glow */}\r\n      <motion.rect \r\n        width=\"16\" \r\n        height=\"10\" \r\n        x=\"4\" \r\n        y=\"5\" \r\n        rx=\"1\" \r\n        fill=\"currentColor\"\r\n        variants={glowVariants}\r\n        stroke=\"none\"\r\n      />\r\n      <path d=\"M8 21h8\" />\r\n      <path d=\"M12 17v4\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

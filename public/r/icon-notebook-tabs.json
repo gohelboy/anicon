@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-notebook-tabs",
+  "type": "registry:component",
+  "title": "Animated Notebook Tabs",
+  "description": "Notebook Tabs icon with semantic animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-notebook-tabs/icon-notebook-tabs.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconNotebookTabsProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst ringVariants: Variants = {\r\n  rest: { x: 0 },\r\n  hover: { \r\n    x: [0, 2, 0],\r\n    transition: { \r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\"\r\n    }\r\n  },\r\n};\r\n\r\nconst tabVariants: Variants = {\r\n  rest: { opacity: 1, x: 0 },\r\n  hover: { \r\n    opacity: [1, 0.5, 1],\r\n    x: [0, 1, 0],\r\n    transition: { duration: 0.6, repeat: Infinity }\r\n  },\r\n};\r\n\r\nexport function IconNotebookTabs({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconNotebookTabsProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <rect width=\"16\" height=\"20\" x=\"4\" y=\"2\" rx=\"2\" />\r\n      <path d=\"M15 2v20\" />\r\n      \r\n      {/* Left Lines */}\r\n      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.1 }} d=\"M2 6h4\" />\r\n      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.2 }} d=\"M2 10h4\" />\r\n      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.3 }} d=\"M2 14h4\" />\r\n      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.4 }} d=\"M2 18h4\" />\r\n      \r\n      {/* Side Tabs */}\r\n      <motion.path variants={prefersReducedMotion ? {} : tabVariants} transition={{ delay: 0.1 }} d=\"M15 7h5\" />\r\n      <motion.path variants={prefersReducedMotion ? {} : tabVariants} transition={{ delay: 0.3 }} d=\"M15 12h5\" />\r\n      <motion.path variants={prefersReducedMotion ? {} : tabVariants} transition={{ delay: 0.5 }} d=\"M15 17h5\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

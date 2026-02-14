@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-bike",
+  "type": "registry:component",
+  "title": "Animated Bike",
+  "description": "Bike with wheel-spin and body bob animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-bike/icon-bike.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconBikeProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst wheelVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: {\r\n    rotate: 360,\r\n    transition: {\r\n      duration: 2,\r\n      repeat: Infinity,\r\n      ease: \"linear\",\r\n    },\r\n  },\r\n};\r\n\r\nconst bodyVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: {\r\n    y: [0, -0.5, 0],\r\n    transition: {\r\n      duration: 1,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconBike({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconBikeProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.circle cx=\"18.5\" cy=\"17.5\" r=\"3.5\" variants={wheelVariants} style={{ originX: \"18.5px\", originY: \"17.5px\" }} />\r\n      <motion.circle cx=\"5.5\" cy=\"17.5\" r=\"3.5\" variants={wheelVariants} style={{ originX: \"5.5px\", originY: \"17.5px\" }} />\r\n      <circle cx=\"15\" cy=\"5\" r=\"1\" />\r\n      <motion.path d=\"M12 17.5V14l-3-3 4-3 2 3h2\" variants={bodyVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

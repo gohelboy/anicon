@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-tornado",
+  "type": "registry:component",
+  "title": "Animated Tornado",
+  "description": "Tornado with spinning animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-tornado/icon-tornado.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconTornadoProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst tornadoVariants: Variants = {\r\n  rest: { \r\n    x: 0,\r\n  },\r\n  hover: (i: number) => ({\r\n    x: [-3, 3, -3],\r\n    transition: {\r\n      duration: 0.5,\r\n      repeat: Infinity,\r\n      delay: i * 0.1,\r\n      ease: \"linear\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconTornado({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconTornadoProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"M21 4H3\" variants={prefersReducedMotion ? {} : tornadoVariants} custom={0} />\r\n      <motion.path d=\"M18 8H6\" variants={prefersReducedMotion ? {} : tornadoVariants} custom={1} />\r\n      <motion.path d=\"M19 12H9\" variants={prefersReducedMotion ? {} : tornadoVariants} custom={2} />\r\n      <motion.path d=\"M16 16h-6\" variants={prefersReducedMotion ? {} : tornadoVariants} custom={3} />\r\n      <motion.path d=\"M11 20H9\" variants={prefersReducedMotion ? {} : tornadoVariants} custom={4} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

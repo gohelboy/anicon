@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-calendar-search",
+  "type": "registry:component",
+  "title": "Animated Calendar Search",
+  "description": "Calendar Search icon with semantic animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-calendar-search/icon-calendar-search.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconCalendarSearchProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst pinVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: { \r\n    y: [0, -2, 0],\r\n    transition: { \r\n      duration: 0.5,\r\n      repeat: Infinity,\r\n      repeatDelay: 1\r\n    }\r\n  },\r\n};\r\n\r\nconst searchVariants: Variants = {\r\n  rest: { x: 0, y: 0 },\r\n  hover: { \r\n    x: [0, -2, 2, -1, 0],\r\n    y: [0, 1, -2, 1, 0],\r\n    transition: { \r\n      duration: 2,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\"\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconCalendarSearch({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconCalendarSearchProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"M16 2v4\" variants={prefersReducedMotion ? {} : pinVariants} />\r\n      <motion.path d=\"M8 2v4\" variants={prefersReducedMotion ? {} : pinVariants} />\r\n      <path d=\"M3 10h18\" />\r\n      <path d=\"M21 11.75V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h7.25\" />\r\n      \r\n      {/* Search Lens Group */}\r\n      <motion.g variants={prefersReducedMotion ? {} : searchVariants}>\r\n        <path d=\"m22 22-1.875-1.875\" />\r\n        <circle cx=\"18\" cy=\"18\" r=\"3\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

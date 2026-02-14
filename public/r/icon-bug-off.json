@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-bug-off",
+  "type": "registry:component",
+  "title": "Animated Bug Off",
+  "description": "Bug off with a vibrating slash and bug shake.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-bug-off/icon-bug-off.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconBugOffProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst slashVariants: Variants = {\r\n  rest: { \r\n    pathLength: 1,\r\n    opacity: 1,\r\n    transition: {\r\n      duration: 0.3\r\n    }\r\n  },\r\n  hover: {\r\n    x: [0, -1, 1, -1, 1, 0],\r\n    transition: {\r\n      duration: 0.4,\r\n      repeat: Infinity,\r\n      ease: \"linear\",\r\n    },\r\n  },\r\n};\r\n\r\nconst bugVariants: Variants = {\r\n  rest: { \r\n    rotate: 0,\r\n    transition: {\r\n      type: \"spring\",\r\n      stiffness: 300,\r\n      damping: 15\r\n    }\r\n  },\r\n  hover: {\r\n    rotate: [0, -2, 2, -2, 2, 0],\r\n    transition: {\r\n      duration: 0.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconBugOff({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconBugOffProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.g variants={prefersReducedMotion ? {} : bugVariants} style={{ originX: \"12px\", originY: \"12px\" }}>\r\n        <path d=\"M12 20v-8\" />\r\n        <path d=\"M12.656 7H14a4 4 0 0 1 4 4v1.344\" />\r\n        <path d=\"M14.12 3.88 16 2\" />\r\n        <path d=\"M17.123 17.123A6 6 0 0 1 6 14v-3a4 4 0 0 1 1.72-3.287\" />\r\n        <path d=\"M21 5a4 4 0 0 1-3.55 3.97\" />\r\n        <path d=\"M22 13h-3.344\" />\r\n        <path d=\"M3 21a4 4 0 0 1 3.81-4\" />\r\n        <path d=\"M3 5a4 4 0 0 0 3.55 3.97\" />\r\n        <path d=\"M6 13H2\" />\r\n        <path d=\"m8 2 1.88 1.88\" />\r\n        <path d=\"M9.712 4.06A3 3 0 0 1 15 6v1.13\" />\r\n      </motion.g>\r\n      <motion.path \r\n        d=\"m2 2 20 20\" \r\n        variants={prefersReducedMotion ? {} : slashVariants}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

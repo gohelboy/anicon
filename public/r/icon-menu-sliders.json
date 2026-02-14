@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-menu-sliders",
+  "type": "registry:component",
+  "title": "Animated Menu Sliders",
+  "description": "Slider menu with animated knobs.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-menu-sliders/icon-menu-sliders.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconMenuSlidersProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst knobVariants = {\r\n  rest: (index: number) => ({\r\n    x: 0,\r\n    transition: { delay: index * 0.05 },\r\n  }),\r\n  hover: (index: number) => ({\r\n    x: index % 2 === 0 ? 2 : -2,\r\n    transition: { delay: index * 0.05, type: \"spring\", stiffness: 500 },\r\n  }),\r\n  tap: { scale: 0.9 },\r\n};\r\n\r\nexport function IconMenuSliders({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconMenuSlidersProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <line x1=\"4\" y1=\"6\" x2=\"20\" y2=\"6\" />\r\n      <line x1=\"4\" y1=\"12\" x2=\"20\" y2=\"12\" />\r\n      <line x1=\"4\" y1=\"18\" x2=\"20\" y2=\"18\" />\r\n      <motion.circle cx=\"9\" cy=\"6\" r=\"2\" variants={knobVariants} custom={0} />\r\n      <motion.circle cx=\"15\" cy=\"12\" r=\"2\" variants={knobVariants} custom={1} />\r\n      <motion.circle cx=\"11\" cy=\"18\" r=\"2\" variants={knobVariants} custom={2} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-swords",
+  "type": "registry:component",
+  "title": "Animated Swords",
+  "description": "Swords with interactive crossing slash animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-swords/icon-swords.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconSwordsProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst leftSwordVariants: Variants = {\r\n  rest: { x: 0, y: 0, rotate: 0 },\r\n  hover: {\r\n    x: [0, -1, 1, 0],\r\n    y: [0, -1, 1, 0],\r\n    rotate: [0, -2, 2, 0],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst rightSwordVariants: Variants = {\r\n  rest: { x: 0, y: 0, rotate: 0 },\r\n  hover: {\r\n    x: [0, 1, -1, 0],\r\n    y: [0, -1, 1, 0],\r\n    rotate: [0, 2, -2, 0],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconSwords({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconSwordsProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.g variants={leftSwordVariants} style={{ originX: \"6px\", originY: \"6px\" }}>\r\n        <polyline points=\"14.5 17.5 3 6 3 3 6 3 17.5 14.5\" />\r\n        <line x1=\"13\" x2=\"19\" y1=\"19\" y2=\"13\" />\r\n        <line x1=\"16\" x2=\"20\" y1=\"16\" y2=\"20\" />\r\n        <line x1=\"19\" x2=\"21\" y1=\"21\" y2=\"19\" />\r\n      </motion.g>\r\n      <motion.g variants={rightSwordVariants} style={{ originX: \"18px\", originY: \"3px\" }}>\r\n        <polyline points=\"14.5 6.5 18 3 21 3 21 6 17.5 9.5\" />\r\n        <line x1=\"5\" x2=\"9\" y1=\"14\" y2=\"18\" />\r\n        <line x1=\"7\" x2=\"4\" y1=\"17\" y2=\"20\" />\r\n        <line x1=\"3\" x2=\"5\" y1=\"19\" y2=\"21\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

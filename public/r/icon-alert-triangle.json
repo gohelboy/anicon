@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-alert-triangle",
+  "type": "registry:component",
+  "title": "Animated Alert Triangle",
+  "description": "Alert triangle with lively warning mark.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-alert-triangle/icon-alert-triangle.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconAlertTriangleProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst triangleVariants = {\r\n  rest: { rotate: 0, scale: 1 },\r\n  hover: { rotate: -2, scale: 1.04 },\r\n  tap: { rotate: 2, scale: 0.96 },\r\n};\r\n\r\nconst markVariants = {\r\n  rest: { y: 0 },\r\n  hover: { y: -1.5 },\r\n  tap: { y: 1.5 },\r\n};\r\n\r\nconst dotVariants = {\r\n  rest: { scale: 1 },\r\n  hover: { scale: 1.25 },\r\n  tap: { scale: 0.85 },\r\n};\r\n\r\nexport function IconAlertTriangle({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconAlertTriangleProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      transition={{ type: \"spring\", stiffness: 320, damping: 16 }}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.path\r\n        d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"\r\n        variants={triangleVariants}\r\n        style={{ originX: \"50%\", originY: \"60%\" }}\r\n      />\r\n      <motion.path d=\"M12 9v4\" variants={markVariants} />\r\n      <motion.path d=\"M12 17h.01\" variants={dotVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

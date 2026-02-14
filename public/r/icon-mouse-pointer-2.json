@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-mouse-pointer-2",
+  "type": "registry:component",
+  "title": "Animated Mouse Pointer 2",
+  "description": "Mouse pointer with depth-click animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-mouse-pointer-2/icon-mouse-pointer-2.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconMousePointer2Props extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst pointerVariants: Variants = {\r\n  rest: { rotate: 0, scale: 1 },\r\n  hover: {\r\n    rotate: [0, -5, 5, 0],\r\n    scale: 1.1,\r\n    transition: {\r\n      duration: 0.5,\r\n      type: \"spring\",\r\n      stiffness: 400,\r\n      damping: 10,\r\n    },\r\n  },\r\n  tap: {\r\n    scale: 0.95,\r\n  },\r\n};\r\n\r\nconst tailVariants: Variants = {\r\n  rest: { pathLength: 1, opacity: 1 },\r\n  hover: {\r\n    pathLength: [0, 1],\r\n    opacity: [0, 1],\r\n    transition: { duration: 0.3, ease: \"easeInOut\" },\r\n  },\r\n};\r\n\r\nexport function IconMousePointer2({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconMousePointer2Props) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      {/* Official Lucide Mouse Pointer 2 Paths */}\r\n      <motion.path \r\n        d=\"m4 4 7.07 16.97 2.51-7.39 7.39-2.51L4 4z\" \r\n        variants={pointerVariants}\r\n        style={{ originX: \"4px\", originY: \"4px\" }}\r\n      />\r\n      <motion.path \r\n        d=\"m13.41 13.41 6.59 6.59\" \r\n        variants={tailVariants}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-power",
+  "type": "registry:component",
+  "title": "Animated Power",
+  "description": "Power button with on/off glow effect.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-power/icon-power.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconPowerProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\n// Power button flash on/off\r\nconst powerVariants: Variants = {\r\n  rest: { opacity: 1, scale: 1 },\r\n  hover: {\r\n    opacity: [1, 0.3, 1],\r\n    scale: [1, 0.97, 1],\r\n    transition: { duration: 0.4, ease: \"easeInOut\" },\r\n  },\r\n  tap: {\r\n    opacity: [1, 0, 1],\r\n    scale: [1, 0.95, 1.05, 1],\r\n    transition: { duration: 0.3 },\r\n  },\r\n};\r\n\r\n// Power line draws\r\nconst lineVariants: Variants = {\r\n  rest: { pathLength: 1 },\r\n  hover: {\r\n    pathLength: [1, 0.3, 1],\r\n    transition: { duration: 0.4 },\r\n  },\r\n};\r\n\r\nexport function IconPower({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconPowerProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      variants={powerVariants}\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <path d=\"M18.36 6.64a9 9 0 1 1-12.73 0\" />\r\n      <motion.line x1=\"12\" x2=\"12\" y1=\"2\" y2=\"12\" variants={lineVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

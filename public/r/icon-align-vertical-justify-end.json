@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-align-vertical-justify-end",
+  "type": "registry:component",
+  "title": "Animated Align Vertical Justify End",
+  "description": "Justify vertical end with blocks dropping down.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-align-vertical-justify-end/icon-align-vertical-justify-end.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconAlignVerticalJustifyEndProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst topVariants = {\r\n  rest: { y: 0 },\r\n  hover: { y: 1.5 },\r\n  tap: { y: -1 },\r\n};\r\n\r\nconst bottomVariants = {\r\n  rest: { y: 0 },\r\n  hover: { y: 2 },\r\n  tap: { y: -1 },\r\n};\r\n\r\nconst guideVariants = {\r\n  rest: { opacity: 0.6 },\r\n  hover: { opacity: 1 },\r\n  tap: { opacity: 0.5 },\r\n};\r\n\r\nexport function IconAlignVerticalJustifyEnd({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconAlignVerticalJustifyEndProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      transition={{ type: \"spring\", stiffness: 320, damping: 18 }}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.rect width=\"10\" height=\"6\" x=\"7\" y=\"2\" rx=\"2\" variants={topVariants} />\r\n      <motion.rect width=\"14\" height=\"6\" x=\"5\" y=\"12\" rx=\"2\" variants={bottomVariants} />\r\n      <motion.path d=\"M2 22h20\" variants={guideVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-timer",
+  "type": "registry:component",
+  "title": "Animated Timer",
+  "description": "Timer icon with semantic animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-timer/icon-timer.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconTimerProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst buttonVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: { \r\n    y: 1,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 10 }\r\n  },\r\n};\r\n\r\nconst handVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: { \r\n    rotate: 360,\r\n    transition: { \r\n      duration: 2,\r\n      ease: \"linear\",\r\n      repeat: Infinity\r\n    }\r\n  },\r\n};\r\n\r\nconst circleVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: { \r\n    scale: 1.02,\r\n    transition: { \r\n      duration: 0.8,\r\n      repeat: Infinity,\r\n      repeatType: \"mirror\"\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconTimer({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconTimerProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.line x1=\"10\" x2=\"14\" y1=\"2\" y2=\"2\" variants={prefersReducedMotion ? {} : buttonVariants} />\r\n      <motion.line \r\n        x1=\"12\" x2=\"15\" y1=\"14\" y2=\"11\" \r\n        variants={prefersReducedMotion ? {} : handVariants}\r\n        style={{ originX: \"12px\", originY: \"14px\" }}\r\n      />\r\n      <motion.circle cx=\"12\" cy=\"14\" r=\"8\" variants={prefersReducedMotion ? {} : circleVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

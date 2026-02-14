@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-calendar-clock",
+  "type": "registry:component",
+  "title": "Animated Calendar Clock",
+  "description": "Calendar Clock icon with semantic animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-calendar-clock/icon-calendar-clock.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconCalendarClockProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst pinVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: { \r\n    y: [0, -2, 0],\r\n    transition: { \r\n      duration: 0.5,\r\n      repeat: Infinity,\r\n      repeatDelay: 1\r\n    }\r\n  },\r\n};\r\n\r\nconst handVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: { \r\n    rotate: 360,\r\n    transition: { \r\n      duration: 3,\r\n      ease: \"linear\",\r\n      repeat: Infinity\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconCalendarClock({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconCalendarClockProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"M16 2v4\" variants={prefersReducedMotion ? {} : pinVariants} />\r\n      <motion.path d=\"M8 2v4\" variants={prefersReducedMotion ? {} : pinVariants} />\r\n      <path d=\"M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5\" />\r\n      <path d=\"M3 10h18\" />\r\n      <circle cx=\"16\" cy=\"16\" r=\"6\" />\r\n      <path d=\"M16 14v2\" />\r\n      <motion.path \r\n        d=\"M16 16l1.6 1\" \r\n        variants={prefersReducedMotion ? {} : handVariants}\r\n        style={{ originX: \"16px\", originY: \"16px\" }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

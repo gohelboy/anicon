@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-calendar-fold",
+  "type": "registry:component",
+  "title": "Animated Calendar Fold",
+  "description": "Calendar Fold icon with semantic animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-calendar-fold/icon-calendar-fold.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconCalendarFoldProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst pinVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: { \r\n    y: [0, -2, 0],\r\n    transition: { \r\n      duration: 0.5,\r\n      repeat: Infinity,\r\n      repeatDelay: 1\r\n    }\r\n  },\r\n};\r\n\r\nconst foldVariants: Variants = {\r\n  rest: { scale: 1, x: 0, y: 0 },\r\n  hover: { \r\n    scale: [1, 1.1, 1],\r\n    x: [0, -1, 0],\r\n    y: [0, 1, 0],\r\n    transition: { \r\n      duration: 1,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\"\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconCalendarFold({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconCalendarFoldProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <path d=\"M3 20a2 2 0 0 0 2 2h10a2.4 2.4 0 0 0 1.706-.706l3.588-3.588A2.4 2.4 0 0 0 21 16V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z\" />\r\n      <path d=\"M3 10h18\" />\r\n      <motion.path d=\"M8 2v4\" variants={prefersReducedMotion ? {} : pinVariants} />\r\n      <motion.path d=\"M16 2v4\" variants={prefersReducedMotion ? {} : pinVariants} />\r\n      <motion.path \r\n        d=\"M15 22v-5a1 1 0 0 1 1-1h5\" \r\n        variants={prefersReducedMotion ? {} : foldVariants}\r\n        style={{ originX: \"21px\", originY: \"22px\" }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

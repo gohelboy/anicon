@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-thermometer-sun",
+  "type": "registry:component",
+  "title": "Animated Thermometer Sun",
+  "description": "Thermometer with sun animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-thermometer-sun/icon-thermometer-sun.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconThermometerSunProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nexport function IconThermometerSun({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconThermometerSunProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.g  style={{ originX: \"6px\", originY: \"11px\" }}>\r\n        <path d=\"M12 2v2\" />\r\n        <path d=\"M12 8a4 4 0 0 0-1.645 7.647\" />\r\n        <path d=\"M2 12h2\" />\r\n        <path d=\"m4.93 4.93 1.41 1.41\" />\r\n        <path d=\"m6.34 17.66-1.41 1.41\" />\r\n      </motion.g>\r\n      <path d=\"M20 14.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z\" />\r\n\r\n      {/* Liquid inside - Rise high for hot */}\r\n      <motion.line\r\n        x1=\"18\" // Center of the thermometer tube\r\n        y1=\"18\" // Bottom of the liquid column (near bulb)\r\n        x2=\"18\"\r\n        y2=\"10\" // Default top of the liquid column\r\n        strokeWidth={strokeWidth}\r\n        stroke=\"currentColor\" \r\n        strokeLinecap=\"round\"\r\n        initial={{ y2: 10 }}\r\n        variants={{\r\n            rest: { y2: 10 },\r\n            hover: { \r\n                y2: 5, // Rise up (y decreases upwards)\r\n                transition: { duration: 0.8, ease: \"easeOut\" }\r\n            }\r\n        }}\r\n      />\r\n      \r\n      {/* Bulb base fill */}\r\n      <circle cx=\"18\" cy=\"18\" r=\"2\" fill=\"currentColor\" stroke=\"none\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

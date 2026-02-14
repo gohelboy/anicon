@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-clock",
+  "type": "registry:component",
+  "title": "Animated Clock",
+  "description": "Clock icon with ticking hands and gentle ring pulse.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-clock/icon-clock.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconClockProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst minuteHandVariants = {\r\n  rest: { rotate: 0 },\r\n  hover: { \r\n    rotate: 360,\r\n    transition: { \r\n      duration: 2,\r\n      ease: \"linear\",\r\n      repeat: Infinity\r\n    }\r\n  },\r\n};\r\n\r\nconst hourHandVariants = {\r\n  rest: { rotate: 0 },\r\n  hover: { \r\n    rotate: 360,\r\n    transition: { \r\n      duration: 12,\r\n      ease: \"linear\",\r\n      repeat: Infinity\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconClock({ size = 24, strokeWidth = 2, className, ...props }: IconClockProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <circle cx=\"12\" cy=\"12\" r=\"9\" />\r\n      <motion.line\r\n        x1=\"12\" y1=\"12\" x2=\"12\" y2=\"8\"\r\n        \r\n        style={{ originX: \"12px\", originY: \"12px\" }}\r\n      />\r\n      <motion.line\r\n        x1=\"12\" y1=\"12\" x2=\"16\" y2=\"14\"\r\n        variants={prefersReducedMotion ? {} : minuteHandVariants}\r\n        style={{ originX: \"12px\", originY: \"12px\" }}\r\n      />\r\n      <circle cx=\"12\" cy=\"12\" r=\"1.5\" fill=\"currentColor\" stroke=\"none\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

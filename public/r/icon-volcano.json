@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-volcano",
+  "type": "registry:component",
+  "title": "Animated Volcano",
+  "description": "Volcano with eruption pulse and rising ash.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-volcano/icon-volcano.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconVolcanoProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst smokeVariants: Variants = {\r\n  rest: { y: 0, opacity: 0 },\r\n  hover: (i: number) => ({\r\n    y: [0, -6, -12],\r\n    opacity: [0, 1, 0, 0],\r\n    transition: {\r\n      duration: 2,\r\n      repeat: Infinity,\r\n      delay: i * 0.5,\r\n      ease: \"linear\",\r\n    },\r\n  }),\r\n};\r\n\r\nconst lavaVariants: Variants = {\r\n  rest: { pathLength: 1, opacity: 1 },\r\n  hover: {\r\n    opacity: [1, 0.6, 1],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconVolcano({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconVolcanoProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      {/* Smoke Lines */}\r\n      <motion.path d=\"M12 4V2\" variants={smokeVariants} custom={0} />\r\n      <motion.path d=\"M9 6v-2\" variants={smokeVariants} custom={1} />\r\n      <motion.path d=\"M15 6v-2\" variants={smokeVariants} custom={2} />\r\n\r\n      {/* Volcano Body */}\r\n      <path d=\"M2 22h20\" />\r\n      <path d=\"M7 22l4-14h2l4 14\" />\r\n      \r\n      {/* Lava/Crater Lip */}\r\n      <motion.path d=\"M11 8h2\" variants={lavaVariants} stroke=\"currentColor\" strokeWidth={strokeWidth + 0.5} />\r\n      \r\n      {/* Side Slopes Detail */}\r\n      <path d=\"M17 22l-2-7\" />\r\n      <path d=\"M7 22l2-7\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

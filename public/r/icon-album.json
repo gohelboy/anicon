@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-album",
+  "type": "registry:component",
+  "title": "Animated Album",
+  "description": "Album icon with folding highlight.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-album/icon-album.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconAlbumProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst coverVariants = {\r\n  rest: { scale: 1 },\r\n  hover: { scale: 1.02 },\r\n  tap: { scale: 0.98 },\r\n};\r\n\r\nconst foldVariants = {\r\n  rest: { y: 0 },\r\n  hover: { y: -1.5 },\r\n  tap: { y: 1 },\r\n};\r\n\r\nexport function IconAlbum({ size = 24, strokeWidth = 2, className, ...props }: IconAlbumProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      transition={{ type: \"spring\", stiffness: 360, damping: 18 }}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.rect\r\n        width=\"18\"\r\n        height=\"18\"\r\n        x=\"3\"\r\n        y=\"3\"\r\n        rx=\"2\"\r\n        ry=\"2\"\r\n        variants={coverVariants}\r\n      />\r\n      <motion.polyline points=\"11 3 11 11 14 8 17 11 17 3\" variants={foldVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

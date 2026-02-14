@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-gift",
+  "type": "registry:component",
+  "title": "Animated Gift",
+  "description": "Gift box box that shakes and lid lifts.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-gift/icon-gift.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconGiftProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\n// Gift box shakes with anticipation, ribbon unwraps\r\nconst boxVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: {\r\n    rotate: [0, -3, 3, -2, 2, 0],\r\n    transition: { duration: 0.4, ease: \"easeInOut\" },\r\n  },\r\n};\r\n\r\n// Lid lifts like unwrapping\r\nconst lidVariants: Variants = {\r\n  rest: { y: 0, rotate: 0 },\r\n  hover: {\r\n    y: -4,\r\n    rotate: -5,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 17 },\r\n  },\r\n  tap: {\r\n    y: -6,\r\n    rotate: -8,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 17 },\r\n  },\r\n};\r\n\r\nexport function IconGift({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconGiftProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"-2 -6 28 32\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      {/* Gift box body - shakes */}\r\n      <motion.g variants={boxVariants}>\r\n        <path d=\"M20 12v10H4V12\" />\r\n        <path d=\"M12 22V8\" />\r\n      </motion.g>\r\n      \r\n      {/* Lid + ribbon bow - lifts up */}\r\n      <motion.g variants={lidVariants} style={{ originX: \"50%\", originY: \"100%\" }}>\r\n        <rect width=\"20\" height=\"5\" x=\"2\" y=\"7\" />\r\n        <path d=\"M12 8a4 4 0 0 0-4-4c-1.5 0-2.5 1-3 2 2 0 5 1 7 2\" />\r\n        <path d=\"M12 8a4 4 0 0 1 4-4c1.5 0 2.5 1 3 2-2 0-5 1-7 2\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

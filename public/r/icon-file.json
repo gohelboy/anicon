@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-file",
+  "type": "registry:component",
+  "title": "Animated File",
+  "description": "File with lift-up and corner fold animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-file/icon-file.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconFileProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst fileVariants: Variants = {\r\n  rest: { y: 0, scale: 1, rotate: 0 },\r\n  hover: { \r\n    y: -4, \r\n    scale: 1.02, \r\n    rotate: -1,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 17 } \r\n  },\r\n  tap: { scale: 0.95 },\r\n};\r\n\r\nconst lineVariants: Variants = {\r\n  rest: { pathLength: 1, opacity: 1 },\r\n  hover: {\r\n    pathLength: [0, 1],\r\n    opacity: [0, 1],\r\n    transition: { duration: 0.4, ease: \"easeInOut\" },\r\n  },\r\n};\r\n\r\nexport function IconFile({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconFileProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      variants={fileVariants}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      {/* Proper File Path with slanted corner */}\r\n      <path d=\"M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z\" />\r\n      <polyline points=\"14 2 14 8 20 8\" />\r\n      \r\n      {/* Content lines that \"draw\" on hover */}\r\n      <motion.path d=\"M8 13h8\" variants={lineVariants} />\r\n      <motion.path d=\"M8 17h8\" variants={lineVariants} />\r\n      <motion.path d=\"M8 9h2\" variants={lineVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

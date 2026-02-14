@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-terminal",
+  "type": "registry:component",
+  "title": "Animated Terminal",
+  "description": "Terminal with blinking cursor and prompt shift.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-terminal/icon-terminal.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconTerminalProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\n// Cursor blinks like a real terminal\r\nconst cursorVariants: Variants = {\r\n  rest: { opacity: 1 },\r\n  hover: {\r\n    opacity: [1, 0, 1, 0, 1],\r\n    transition: { duration: 1.2, repeat: Infinity, repeatType: \"loop\" },\r\n  },\r\n};\r\n\r\n// Prompt arrow shifts like typing\r\nconst promptVariants: Variants = {\r\n  rest: { x: 0 },\r\n  hover: {\r\n    x: [0, 2, 0],\r\n    transition: { duration: 0.5, repeat: Infinity, repeatType: \"loop\", repeatDelay: 0.5 },\r\n  },\r\n};\r\n\r\nexport function IconTerminal({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconTerminalProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      {/* Terminal prompt > */}\r\n      <motion.polyline points=\"4 17 10 11 4 5\" variants={promptVariants} />\r\n      \r\n      {/* Cursor line - blinks */}\r\n      <motion.line x1=\"12\" x2=\"20\" y1=\"19\" y2=\"19\" variants={cursorVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

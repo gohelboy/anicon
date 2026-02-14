@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-share",
+  "type": "registry:component",
+  "title": "Animated Share",
+  "description": "Share icon with nodes spreading outward.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-share/icon-share.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconShareProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\n// Share nodes spread outward\r\nconst node1Variants: Variants = {\r\n  rest: { x: 0, y: 0, scale: 1 },\r\n  hover: {\r\n    x: 2,\r\n    y: -3,\r\n    scale: 1.15,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 15 },\r\n  },\r\n};\r\n\r\nconst node2Variants: Variants = {\r\n  rest: { x: 0, y: 0, scale: 1 },\r\n  hover: {\r\n    x: 2,\r\n    y: 3,\r\n    scale: 1.15,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 15, delay: 0.05 },\r\n  },\r\n};\r\n\r\nconst centerVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: {\r\n    scale: [1, 1.2, 1],\r\n    transition: { duration: 0.3 },\r\n  },\r\n};\r\n\r\nexport function IconShare({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconShareProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"-4 -4 32 32\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      {/* Center node - pulses */}\r\n      <motion.circle cx=\"6\" cy=\"12\" r=\"3\" variants={centerVariants} />\r\n      \r\n      {/* Top node - spreads up-right */}\r\n      <motion.circle cx=\"18\" cy=\"6\" r=\"3\" variants={node1Variants} />\r\n      \r\n      {/* Bottom node - spreads down-right */}\r\n      <motion.circle cx=\"18\" cy=\"18\" r=\"3\" variants={node2Variants} />\r\n      \r\n      {/* Connection lines */}\r\n      <line x1=\"8.59\" x2=\"15.42\" y1=\"10.51\" y2=\"7.49\" />\r\n      <line x1=\"8.59\" x2=\"15.42\" y1=\"13.49\" y2=\"16.51\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

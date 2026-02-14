@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-cloud-sun",
+  "type": "registry:component",
+  "title": "Animated Cloud Sun",
+  "description": "Cloud with sun revealing animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-cloud-sun/icon-cloud-sun.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconCloudSunProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst sunVariants: Variants = {\r\n  rest: { \r\n    rotate: 0,\r\n    opacity: 1,\r\n  },\r\n  hover: {\r\n    rotate: [0, 90],\r\n    transition: {\r\n      duration: 4,\r\n      repeat: Infinity,\r\n      ease: \"linear\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconCloudSun({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconCloudSunProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.g variants={prefersReducedMotion ? {} : sunVariants} style={{ originX: \"13px\", originY: \"13px\" }}>\r\n        <path d=\"M12 2v2\" />\r\n        <path d=\"m4.93 4.93 1.41 1.41\" />\r\n        <path d=\"M20 12h2\" />\r\n        <path d=\"m19.07 4.93-1.41 1.41\" />\r\n      </motion.g>\r\n      <path d=\"M15.947 12.65a4 4 0 0 0-5.925-4.128\" />\r\n      <path d=\"M13 22H7a5 5 0 1 1 4.9-6H13a3 3 0 0 1 0 6Z\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

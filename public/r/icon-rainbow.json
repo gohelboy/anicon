@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-rainbow",
+  "type": "registry:component",
+  "title": "Animated Rainbow",
+  "description": "Rainbow with arc drawing animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-rainbow/icon-rainbow.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconRainbowProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst arcVariants: Variants = {\r\n  rest: { \r\n    pathLength: 1,\r\n    opacity: 1,\r\n  },\r\n  hover: (i: number) => ({\r\n    pathLength: [1, 0, 1],\r\n    opacity: [1, 0.5, 1],\r\n    transition: {\r\n      duration: 2,\r\n      delay: i * 0.2,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconRainbow({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconRainbowProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"M22 17a10 10 0 0 0-20 0\" variants={prefersReducedMotion ? {} : arcVariants} custom={2} />\r\n      <motion.path d=\"M6 17a6 6 0 0 1 12 0\" variants={prefersReducedMotion ? {} : arcVariants} custom={1} />\r\n      <motion.path d=\"M10 17a2 2 0 0 1 4 0\" variants={prefersReducedMotion ? {} : arcVariants} custom={0} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

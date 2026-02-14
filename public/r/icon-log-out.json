@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-log-out",
+  "type": "registry:component",
+  "title": "Animated Log Out",
+  "description": "Log out with arrow exiting through door.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-log-out/icon-log-out.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconLogOutProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\n// Arrow slides out through the door\r\nconst arrowVariants: Variants = {\r\n  rest: { x: 0 },\r\n  hover: {\r\n    x: 4,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 17 },\r\n  },\r\n  tap: {\r\n    x: 6,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 17 },\r\n  },\r\n};\r\n\r\n// Door closes slightly\r\nconst doorVariants: Variants = {\r\n  rest: { scaleX: 1 },\r\n  hover: {\r\n    scaleX: 0.95,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 17 },\r\n  },\r\n};\r\n\r\nexport function IconLogOut({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconLogOutProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"-2 0 28 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      {/* Door frame */}\r\n      <motion.path d=\"M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4\" variants={doorVariants} style={{ originX: \"0%\" }} />\r\n      \r\n      {/* Arrow exiting */}\r\n      <motion.g variants={arrowVariants}>\r\n        <polyline points=\"16 17 21 12 16 7\" />\r\n        <line x1=\"21\" x2=\"9\" y1=\"12\" y2=\"12\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-chart-no-axes-column",
+  "type": "registry:component",
+  "title": "Animated Chart No Axes Column",
+  "description": "Column chart with data growth scaling animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-chart-no-axes-column/icon-chart-no-axes-column.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconChartNoAxesColumnProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst barVariants: Variants = {\r\n  rest: { scaleY: 1, originY: 1 },\r\n  hover: (i: number) => ({\r\n    scaleY: [1, 1.2, 1],\r\n    transition: {\r\n      duration: 0.6,\r\n      delay: i * 0.1,\r\n      ease: \"easeInOut\",\r\n      repeat: Infinity,\r\n      repeatDelay: 0.5,\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconChartNoAxesColumn({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconChartNoAxesColumnProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.path d=\"M5 21v-6\" variants={barVariants} custom={0} />\r\n      <motion.path d=\"M12 21V3\" variants={barVariants} custom={1} />\r\n      <motion.path d=\"M19 21V9\" variants={barVariants} custom={2} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

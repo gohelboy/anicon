@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-clipboard-list",
+  "type": "registry:component",
+  "title": "Animated Clipboard List",
+  "description": "Clipboard List icon with semantic animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-clipboard-list/icon-clipboard-list.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconClipboardListProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst clipVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: { \r\n    y: -2,\r\n    transition: { type: \"spring\", stiffness: 400, damping: 10 }\r\n  },\r\n};\r\n\r\nconst lineVariants: Variants = {\r\n  rest: { x: 0, opacity: 1 },\r\n  hover: { \r\n    x: [0, 2, 0],\r\n    transition: { duration: 0.4, ease: \"easeInOut\" }\r\n  },\r\n};\r\n\r\nexport function IconClipboardList({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconClipboardListProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\" />\r\n      <motion.rect \r\n        width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\" ry=\"1\" \r\n        variants={prefersReducedMotion ? {} : clipVariants} \r\n      />\r\n      \r\n      {/* List Items */}\r\n      <motion.g variants={prefersReducedMotion ? {} : lineVariants} transition={{ delay: 0.1 }}>\r\n        <path d=\"M12 11h4\" />\r\n        <path d=\"M8 11h.01\" />\r\n      </motion.g>\r\n      <motion.g variants={prefersReducedMotion ? {} : lineVariants} transition={{ delay: 0.2 }}>\r\n        <path d=\"M12 16h4\" />\r\n        <path d=\"M8 16h.01\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

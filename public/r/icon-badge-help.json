@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-badge-help",
+  "type": "registry:component",
+  "title": "Animated Badge Help",
+  "description": "Help badge with bouncing question mark.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-badge-help/icon-badge-help.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type SVGMotionProps } from \"framer-motion\";\r\n\r\nexport interface IconBadgeHelpProps extends SVGMotionProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\n\r\nconst wiggleVariants = {\r\n  rest: { rotate: 0 },\r\n  hover: {\r\n    rotate: [0, -10, 10, -5, 5, 0],\r\n    transition: {\r\n      duration: 0.5,\r\n      ease: \"easeInOut\"\r\n    }\r\n  }\r\n};\r\n\r\nexport function IconBadgeHelp({ size = 24, strokeWidth = 2, className, ...props }: IconBadgeHelpProps) {\r\n  const {\r\n    onAnimationStart,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      animate={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      variants={wiggleVariants}\r\n      {...rest}\r\n    >\r\n      <motion.path \r\n        key=\"0\"\r\n        d=\"M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z\"\r\n         />\r\n      <motion.path \r\n        key=\"1\"\r\n        d=\"M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3\"\r\n         />\r\n      <motion.line \r\n        key=\"2\"\r\n        x1=\"12\" x2=\"12.01\" y1=\"17\" y2=\"17\"\r\n         />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

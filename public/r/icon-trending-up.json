@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-trending-up",
+  "type": "registry:component",
+  "title": "Animated Trending Up",
+  "description": "Trending up arrow with bullish run trace.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-trending-up/icon-trending-up.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconTrendingUpProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst pathVariants: Variants = {\r\n  rest: { pathLength: 1 },\r\n  hover: {\r\n    pathLength: [1, 0, 1],\r\n    transition: {\r\n      duration: 1.5,\r\n      ease: \"easeInOut\",\r\n      repeat: Infinity,\r\n      repeatDelay: 0.5,\r\n    },\r\n  },\r\n};\r\n\r\nconst arrowVariants: Variants = {\r\n  rest: { x: 0, y: 0 },\r\n  hover: {\r\n    x: [0, 2, 0],\r\n    y: [0, -2, 0],\r\n    transition: {\r\n      duration: 0.8,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconTrendingUp({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconTrendingUpProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...restOptions\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.path\r\n        d=\"M16 7h6v6\"\r\n        variants={prefersReducedMotion ? {} : arrowVariants}\r\n      />\r\n      <motion.path d=\"m22 7-8.5 8.5-5-5L2 17\" variants={pathVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

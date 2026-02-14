@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-calendar-x-2",
+  "type": "registry:component",
+  "title": "Animated Calendar X 2",
+  "description": "Calendar X 2 icon with semantic animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-calendar-x-2/icon-calendar-x-2.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconCalendarX2Props extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst pinVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: { \r\n    y: [0, -2, 0],\r\n    transition: { \r\n      duration: 0.5,\r\n      repeat: Infinity,\r\n      repeatDelay: 1\r\n    }\r\n  },\r\n};\r\n\r\nconst xVariants: Variants = {\r\n  rest: { pathLength: 0, opacity: 0 },\r\n  hover: { \r\n    pathLength: 1, \r\n    opacity: 1,\r\n    transition: { \r\n      duration: 0.4,\r\n      ease: \"easeOut\"\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconCalendarX2({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconCalendarX2Props) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <path d=\"M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8\" />\r\n      <path d=\"M3 10h18\" />\r\n      <motion.path d=\"M8 2v4\" variants={prefersReducedMotion ? {} : pinVariants} />\r\n      <motion.path d=\"M16 2v4\" variants={prefersReducedMotion ? {} : pinVariants} />\r\n      \r\n      {/* X drawing */}\r\n      <motion.path \r\n        d=\"m17 22 5-5\" \r\n        variants={prefersReducedMotion ? {} : xVariants}\r\n        transition={{ delay: 0.1 }}\r\n      />\r\n      <motion.path \r\n        d=\"m17 17 5 5\" \r\n        variants={prefersReducedMotion ? {} : xVariants}\r\n        transition={{ delay: 0.3 }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

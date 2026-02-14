@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-arrow-down-10",
+  "type": "registry:component",
+  "title": "Animated Arrow Down 10",
+  "description": "Arrow down with 10 sorting motion.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-arrow-down-10/icon-arrow-down-10.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconArrowDown10AltProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\nconst arrowVariants: Variants = {\r\n  rest: { y: 0 },\r\n  hover: { \r\n    y: [0, 2, 0],\r\n    transition: { \r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\"\r\n    }\r\n  },\r\n};\r\n\r\nconst indicatorVariants: Variants = {\r\n  rest: { x: 0, opacity: 1 },\r\n  hover: { \r\n    x: [0, 2, 0],\r\n    opacity: [1, 0.8, 1],\r\n    transition: { \r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\"\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconArrowDown10Alt({ size = 24, strokeWidth = 2, className, ...props }: IconArrowDown10AltProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      \r\n      \r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.g variants={prefersReducedMotion ? {} : arrowVariants} >\r\n        <path d=\"m3 16 4 4 4-4\" />\r\n        <path d=\"M7 20V4\" />\r\n      </motion.g>\r\n      <motion.g variants={prefersReducedMotion ? {} : indicatorVariants} >\r\n        <path d=\"M17 10V4h-2\" />\r\n        <path d=\"M15 10h4\" />\r\n        <rect x=\"15\" y=\"14\" width=\"4\" height=\"6\" ry=\"2\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

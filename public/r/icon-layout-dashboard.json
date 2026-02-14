@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-layout-dashboard",
+  "type": "registry:component",
+  "title": "Animated Layout Dashboard",
+  "description": "Dashboard layout with widget setup expansion effect.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-layout-dashboard/icon-layout-dashboard.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconLayoutDashboardProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst rectVariants: Variants = {\r\n  rest: { scale: 1, opacity: 1 },\r\n  hover: (i: number) => ({\r\n    scale: [1, 1.1, 1],\r\n    opacity: [1, 0.8, 1],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      delay: i * 0.2,\r\n      ease: \"easeInOut\",\r\n    },\r\n  }),\r\n};\r\n\r\nexport function IconLayoutDashboard({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconLayoutDashboardProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...restOptions } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...restOptions}\r\n    >\r\n      <motion.rect width=\"7\" height=\"9\" x=\"3\" y=\"3\" rx=\"1\" variants={rectVariants} custom={0} style={{ originX: \"6.5px\", originY: \"7.5px\" }} />\r\n      <motion.rect width=\"7\" height=\"5\" x=\"14\" y=\"3\" rx=\"1\" variants={rectVariants} custom={1} style={{ originX: \"17.5px\", originY: \"5.5px\" }} />\r\n      <motion.rect width=\"7\" height=\"9\" x=\"14\" y=\"12\" rx=\"1\" variants={rectVariants} custom={2} style={{ originX: \"17.5px\", originY: \"16.5px\" }} />\r\n      <motion.rect width=\"7\" height=\"5\" x=\"3\" y=\"16\" rx=\"1\" variants={rectVariants} custom={3} style={{ originX: \"6.5px\", originY: \"18.5px\" }} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

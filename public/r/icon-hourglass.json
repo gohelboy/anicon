@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-hourglass",
+  "type": "registry:component",
+  "title": "Animated Hourglass",
+  "description": "Hourglass icon with semantic animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-hourglass/icon-hourglass.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconHourglassProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst containerVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: { \r\n    rotate: 180,\r\n    transition: { \r\n      type: \"spring\",\r\n      stiffness: 260,\r\n      damping: 20\r\n    }\r\n  },\r\n};\r\n\r\nconst sandVariants: Variants = {\r\n  rest: { \r\n    y: 0,\r\n    opacity: 0\r\n  },\r\n  hover: { \r\n    y: [0, 15],\r\n    opacity: [0, 1, 0],\r\n    transition: { \r\n      duration: 1,\r\n      repeat: Infinity,\r\n      ease: \"linear\"\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconHourglass({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconHourglassProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <div className=\"relative inline-block\">\r\n      <motion.svg\r\n        xmlns=\"http://www.w3.org/2000/svg\"\r\n        width={size}\r\n        height={size}\r\n        viewBox=\"0 0 24 24\"\r\n        fill=\"none\"\r\n        stroke=\"currentColor\"\r\n        strokeWidth={strokeWidth}\r\n        strokeLinecap=\"round\"\r\n        strokeLinejoin=\"round\"\r\n        className={`select-none ${className ?? \"\"}`.trim()}\r\n        initial=\"rest\"\r\n        whileHover=\"hover\"\r\n        variants={prefersReducedMotion ? {} : containerVariants}\r\n        {...rest}\r\n      >\r\n        <path d=\"M5 22h14\" />\r\n        <path d=\"M5 2h14\" />\r\n        <path d=\"M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22\" />\r\n        <path d=\"M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2\" />\r\n        \r\n        {/* Sand particles */}\r\n        <motion.circle cx=\"12\" cy=\"7\" r=\"0.5\" fill=\"currentColor\" variants={sandVariants} />\r\n        <motion.circle cx=\"12\" cy=\"7\" r=\"0.5\" fill=\"currentColor\" variants={sandVariants} transition={{ delay: 0.3 }} />\r\n        <motion.circle cx=\"12\" cy=\"7\" r=\"0.5\" fill=\"currentColor\" variants={sandVariants} transition={{ delay: 0.6 }} />\r\n      </motion.svg>\r\n    </div>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

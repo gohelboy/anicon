@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-home",
+  "type": "registry:component",
+  "title": "Animated Home",
+  "description": "Home icon with a playful roof lift and door bounce.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-home/icon-home.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconHomeProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst roofVariants = {\r\n  rest: { y: 0, rotate: 0 },\r\n  hover: { y: -1.5, rotate: -2 },\r\n  tap: { scale: 0.95 },\r\n};\r\n\r\nconst doorVariants = {\r\n  rest: { scaleY: 1 },\r\n  hover: { scaleY: 0.85 },\r\n  tap: { scale: 0.9 },\r\n};\r\n\r\nexport function IconHome({ size = 24, strokeWidth = 2, className, ...props }: IconHomeProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      transition={{ type: \"spring\", stiffness: 420, damping: 18 }}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.path\r\n        d=\"M3 11 12 4 21 11\"\r\n        variants={roofVariants}\r\n      />\r\n      <motion.path d=\"M5 10v10h14V10\" variants={roofVariants} />\r\n      <motion.path\r\n        d=\"M10 20v-6h4v6\"\r\n        variants={doorVariants}\r\n        style={{ originY: 1, originX: 0.5 }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

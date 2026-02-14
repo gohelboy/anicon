@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-sunrise",
+  "type": "registry:component",
+  "title": "Animated Sunrise",
+  "description": "Sunrise with rising sun animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-sunrise/icon-sunrise.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconSunriseProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst sunVariants: Variants = {\r\n  rest: { \r\n    y: 0,\r\n    opacity: 1,\r\n  },\r\n  hover: {\r\n    y: -3,\r\n    opacity: [1, 0.8, 1],\r\n    transition: {\r\n      duration: 2,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst arrowVariants: Variants = {\r\n  rest: { \r\n    y: 0,\r\n  },\r\n  hover: {\r\n    y: [-2, 0, -2],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconSunrise({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconSunriseProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <path d=\"M12 2v8\" />\r\n      <path d=\"m4.93 10.93 1.41 1.41\" />\r\n      <path d=\"M2 18h2\" />\r\n      <path d=\"M20 18h2\" />\r\n      <path d=\"m19.07 10.93-1.41 1.41\" />\r\n      <path d=\"M22 22H2\" />\r\n      <motion.path d=\"m8 6 4-4 4 4\" variants={prefersReducedMotion ? {} : arrowVariants} />\r\n      <motion.path d=\"M16 18a4 4 0 0 0-8 0\" variants={prefersReducedMotion ? {} : sunVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

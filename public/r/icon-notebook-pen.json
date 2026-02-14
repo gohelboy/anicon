@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-notebook-pen",
+  "type": "registry:component",
+  "title": "Animated Notebook Pen",
+  "description": "Notebook Pen icon with semantic animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-notebook-pen/icon-notebook-pen.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconNotebookPenProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst ringVariants: Variants = {\r\n  rest: { x: 0 },\r\n  hover: { \r\n    x: [0, 2, 0],\r\n    transition: { \r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\"\r\n    }\r\n  },\r\n};\r\n\r\nconst penVariants: Variants = {\r\n  rest: { \r\n    rotate: 0, \r\n    x: 0, \r\n    y: 0 \r\n  },\r\n  hover: { \r\n    rotate: [-5, 5, -5],\r\n    x: [0, -1, 1, 0],\r\n    y: [0, 1, -1, 0],\r\n    transition: { \r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\"\r\n    }\r\n  },\r\n};\r\n\r\nexport function IconNotebookPen({ \r\n  size = 24, \r\n  strokeWidth = 2, \r\n  className,\r\n  ...props \r\n}: IconNotebookPenProps) {\r\n  const prefersReducedMotion = useReducedMotion();\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      className={`select-none ${className ?? \"\"}`.trim()}\r\n      initial=\"rest\"\r\n      whileHover=\"hover\"\r\n      {...rest}\r\n    >\r\n      <path d=\"M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4\" />\r\n      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.1 }} d=\"M2 6h4\" />\r\n      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.2 }} d=\"M2 10h4\" />\r\n      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.3 }} d=\"M2 14h4\" />\r\n      <motion.path variants={prefersReducedMotion ? {} : ringVariants} transition={{ delay: 0.4 }} d=\"M2 18h4\" />\r\n      <motion.path \r\n        d=\"M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z\" \r\n        variants={prefersReducedMotion ? {} : penVariants}\r\n        style={{ originX: \"15px\", originY: \"10px\" }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

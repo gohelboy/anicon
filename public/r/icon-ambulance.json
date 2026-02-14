@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-ambulance",
+  "type": "registry:component",
+  "title": "Animated Ambulance",
+  "description": "Ambulance with pulsing medical cross and rolling wheels.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-ambulance/icon-ambulance.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion } from \"framer-motion\";\r\n\r\nexport interface IconAmbulanceProps extends React.SVGProps<SVGSVGElement> {\r\n  /** Size in pixels. Default 24 */\r\n  size?: number;\r\n  /** Stroke width. Default 2 */\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst bodyVariants = {\r\n  rest: { y: 0 },\r\n  hover: { y: -1 },\r\n  tap: { y: 1 },\r\n};\r\n\r\nconst plusVariants = {\r\n  rest: { scale: 1 },\r\n  hover: { scale: 1.15 },\r\n  tap: { scale: 0.9 },\r\n};\r\n\r\nconst wheelVariants = {\r\n  rest: { rotate: 0 },\r\n  hover: { rotate: 20 },\r\n  tap: { rotate: -20 },\r\n};\r\n\r\nexport function IconAmbulance({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconAmbulanceProps) {\r\n  const {\r\n    onAnimationStart,\r\n    onAnimationEnd,\r\n    onDragStart,\r\n    onDrag,\r\n    onDragEnd,\r\n    ...rest\r\n  } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      transition={{ type: \"spring\", stiffness: 320, damping: 18 }}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.g variants={bodyVariants}>\r\n        <path d=\"M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2\" />\r\n        <path d=\"M9 18h6\" />\r\n        <motion.g variants={plusVariants} style={{ originX: \"50%\", originY: \"50%\" }}>\r\n          <path d=\"M10 10H6\" />\r\n          <path d=\"M8 8v4\" />\r\n        </motion.g>\r\n      </motion.g>\r\n      <motion.circle cx=\"7\" cy=\"18\" r=\"2\" variants={wheelVariants} style={{ originX: \"50%\", originY: \"50%\" }} />\r\n      <motion.circle cx=\"17\" cy=\"18\" r=\"2\" variants={wheelVariants} style={{ originX: \"50%\", originY: \"50%\" }} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}
