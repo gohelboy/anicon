@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 
 export interface IconArrowUpFromLineProps extends React.SVGProps<SVGSVGElement> {
   /** Size in pixels. Default 24 */
@@ -9,16 +9,33 @@ export interface IconArrowUpFromLineProps extends React.SVGProps<SVGSVGElement> 
   strokeWidth?: number;
 }
 
-const arrowVariants = {
+
+
+
+
+const arrowVariants: Variants = {
   rest: { y: 0 },
-  hover: { y: -2 },
-  tap: { y: -4 },
+  hover: { 
+    y: [0, -2, 0],
+    transition: { 
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }
+  },
 };
 
-const lineVariants = {
-  rest: { scaleX: 1 },
-  hover: { scaleX: 1.08 },
-  tap: { scaleX: 0.96 },
+const lineVariants: Variants = {
+  rest: { scaleX: 1, opacity: 1 },
+  hover: { 
+    scaleX: [1, 1.1, 1],
+    opacity: [1, 0.8, 1],
+    transition: { 
+      duration: 1.5,
+      repeat: Infinity,
+      ease: "easeInOut"
+    }
+  },
 };
 
 export function IconArrowUpFromLine({ size = 24, strokeWidth = 2, className, ...props }: IconArrowUpFromLineProps) {
@@ -42,18 +59,18 @@ export function IconArrowUpFromLine({ size = 24, strokeWidth = 2, className, ...
       strokeWidth={strokeWidth}
       strokeLinecap="round"
       strokeLinejoin="round"
-      initial={prefersReducedMotion ? false : "rest"}
-      whileHover={prefersReducedMotion ? undefined : "hover"}
+      initial="rest"
+      whileHover="hover"
       whileTap={prefersReducedMotion ? undefined : "tap"}
       transition={{ type: "spring", stiffness: 320, damping: 18 }}
       className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? ""}`.trim()}
       {...rest}
     >
-      <motion.g variants={arrowVariants}>
+      <motion.g variants={prefersReducedMotion ? {} : arrowVariants} variants={arrowVariants}>
         <path d="m18 9-6-6-6 6" />
         <path d="M12 3v14" />
       </motion.g>
-      <motion.path d="M5 21h14" variants={lineVariants} style={{ originX: 0.5 }} />
+      <motion.path d="M5 21h14" variants={prefersReducedMotion ? {} : lineVariants} style={{ originX: "12px" }} variants={lineVariants} style={{ originX: 0.5 }} />
     </motion.svg>
   );
 }
