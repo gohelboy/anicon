@@ -535,6 +535,37 @@ import { IconTriangleRight } from "@/registry/default/icon-triangle-right/icon-t
 import { IconUnfoldHorizontal } from "@/registry/default/icon-unfold-horizontal/icon-unfold-horizontal";
 import { IconUnfoldVertical } from "@/registry/default/icon-unfold-vertical/icon-unfold-vertical";
 import { IconVariable } from "@/registry/default/icon-variable/icon-variable";
+import { IconFingerprint } from "@/registry/default/icon-fingerprint/icon-fingerprint";
+import { IconLeaf } from "@/registry/default/icon-leaf/icon-leaf";
+import { IconTreePine } from "@/registry/default/icon-tree-pine/icon-tree-pine";
+import { IconFlower2 } from "@/registry/default/icon-flower-2/icon-flower-2";
+import { IconSword } from "@/registry/default/icon-sword/icon-sword";
+import { IconMagnet } from "@/registry/default/icon-magnet/icon-magnet";
+import { IconSatellite } from "@/registry/default/icon-satellite/icon-satellite";
+import { IconGuitar } from "@/registry/default/icon-guitar/icon-guitar";
+import { IconLamp } from "@/registry/default/icon-lamp/icon-lamp";
+import { IconCherry } from "@/registry/default/icon-cherry/icon-cherry";
+import { IconCookie } from "@/registry/default/icon-cookie/icon-cookie";
+import { IconIceCreamCone } from "@/registry/default/icon-ice-cream-cone/icon-ice-cream-cone";
+import { IconSandwich } from "@/registry/default/icon-sandwich/icon-sandwich";
+import { IconTreeDeciduous } from "@/registry/default/icon-tree-deciduous/icon-tree-deciduous";
+import { IconFlower } from "@/registry/default/icon-flower/icon-flower";
+import { IconDrum } from "@/registry/default/icon-drum/icon-drum";
+import { IconPiano } from "@/registry/default/icon-piano/icon-piano";
+import { IconDumbbell } from "@/registry/default/icon-dumbbell/icon-dumbbell";
+import { IconCandy } from "@/registry/default/icon-candy/icon-candy";
+import { IconPizza } from "@/registry/default/icon-pizza/icon-pizza";
+import { IconCake } from "@/registry/default/icon-cake/icon-cake";
+import { IconLink } from "@/registry/default/icon-link/icon-link";
+import { IconWifiOff } from "@/registry/default/icon-wifi-off/icon-wifi-off";
+import { IconBluetooth } from "@/registry/default/icon-bluetooth/icon-bluetooth";
+import { IconRss } from "@/registry/default/icon-rss/icon-rss";
+import { IconPodcast } from "@/registry/default/icon-podcast/icon-podcast";
+import { IconSignal } from "@/registry/default/icon-signal/icon-signal";
+import { IconRouter } from "@/registry/default/icon-router/icon-router";
+import { IconCast } from "@/registry/default/icon-cast/icon-cast";
+import { IconPhone } from "@/registry/default/icon-phone/icon-phone";
+import { IconVideo } from "@/registry/default/icon-video/icon-video";
 export const iconsRegistry = [
   {
     name: "icon-heart",
@@ -4098,6 +4129,223 @@ export const iconsRegistry = [
     color: "text-white",
     description: "Variable icon with premium animation",
     tags: ["variable", "shape", "geometry"],
+  },
+  {
+    name: "icon-fingerprint",
+    component: IconFingerprint,
+    color: "text-white",
+    description: "Fingerprint with scanning line-draw animation",
+    tags: ["fingerprint", "security", "identity", "biometric", "auth"],
+  },
+  {
+    name: "icon-leaf",
+    component: IconLeaf,
+    color: "text-white",
+    description: "Leaf with gentle sway animation",
+    tags: ["leaf", "nature", "plant", "eco"],
+  },
+  {
+    name: "icon-tree-pine",
+    component: IconTreePine,
+    color: "text-white",
+    description: "Pine tree with subtle wind sway animation",
+    tags: ["tree", "pine", "nature", "forest"],
+  },
+  {
+    name: "icon-flower-2",
+    component: IconFlower2,
+    color: "text-white",
+    description: "Flower with bloom petal animation",
+    tags: ["flower", "nature", "garden", "bloom"],
+  },
+  {
+    name: "icon-sword",
+    component: IconSword,
+    color: "text-white",
+    description: "Sword with slash swing animation",
+    tags: ["sword", "weapon", "game", "battle"],
+  },
+  {
+    name: "icon-magnet",
+    component: IconMagnet,
+    color: "text-white",
+    description: "Magnet with pull attract pulse animation",
+    tags: ["magnet", "attract", "physics", "force"],
+  },
+  {
+    name: "icon-satellite",
+    component: IconSatellite,
+    color: "text-white",
+    description: "Satellite with orbit and signal animation",
+    tags: ["satellite", "space", "signal", "communication"],
+  },
+  {
+    name: "icon-guitar",
+    component: IconGuitar,
+    color: "text-white",
+    description: "Guitar with strum vibration animation",
+    tags: ["guitar", "music", "instrument", "string"],
+  },
+  {
+    name: "icon-lamp",
+    component: IconLamp,
+    color: "text-white",
+    description: "Lamp with glow flicker animation",
+    tags: ["lamp", "light", "desk", "household"],
+  },
+  {
+    name: "icon-cherry",
+    component: IconCherry,
+    color: "text-white",
+    description: "Cherry with pendulum swing animation",
+    tags: ["cherry", "fruit", "food", "berry"],
+  },
+  {
+    name: "icon-cookie",
+    component: IconCookie,
+    color: "text-white",
+    description: "Cookie with wobble shake animation",
+    tags: ["cookie", "food", "snack", "biscuit"],
+  },
+  {
+    name: "icon-ice-cream-cone",
+    component: IconIceCreamCone,
+    color: "text-white",
+    description: "Ice cream cone with wobble and melt animation",
+    tags: ["ice-cream", "cone", "dessert", "food", "sweet"],
+  },
+  {
+    name: "icon-sandwich",
+    component: IconSandwich,
+    color: "text-white",
+    description: "Sandwich with bounce animation",
+    tags: ["sandwich", "food", "bread", "lunch"],
+  },
+  {
+    name: "icon-tree-deciduous",
+    component: IconTreeDeciduous,
+    color: "text-white",
+    description: "Deciduous tree with wind sway animation",
+    tags: ["tree", "nature", "forest", "deciduous"],
+  },
+  {
+    name: "icon-flower",
+    component: IconFlower,
+    color: "text-white",
+    description: "Flower with spinning petal animation",
+    tags: ["flower", "nature", "garden", "petal"],
+  },
+  {
+    name: "icon-drum",
+    component: IconDrum,
+    color: "text-white",
+    description: "Drum with drumstick hit animation",
+    tags: ["drum", "music", "instrument", "percussion"],
+  },
+  {
+    name: "icon-piano",
+    component: IconPiano,
+    color: "text-white",
+    description: "Piano with key press animation",
+    tags: ["piano", "music", "instrument", "keyboard"],
+  },
+  {
+    name: "icon-dumbbell",
+    component: IconDumbbell,
+    color: "text-white",
+    description: "Dumbbell with lift and tilt animation",
+    tags: ["dumbbell", "fitness", "gym", "workout", "exercise"],
+  },
+  {
+    name: "icon-candy",
+    component: IconCandy,
+    color: "text-white",
+    description: "Candy with spin and wrapper crinkle animation",
+    tags: ["candy", "sweet", "food", "wrapper"],
+  },
+  {
+    name: "icon-pizza",
+    component: IconPizza,
+    color: "text-white",
+    description: "Pizza slice with tilt and topping bounce animation",
+    tags: ["pizza", "food", "slice", "italian"],
+  },
+  {
+    name: "icon-cake",
+    component: IconCake,
+    color: "text-white",
+    description: "Cake with candle flame flicker animation",
+    tags: ["cake", "birthday", "dessert", "candle", "celebration"],
+  },
+  {
+    name: "icon-link",
+    component: IconLink,
+    color: "text-white",
+    description: "Link with chain pull animation",
+    tags: ["link", "url", "hyperlink", "chain", "internet"],
+  },
+  {
+    name: "icon-wifi-off",
+    component: IconWifiOff,
+    color: "text-white",
+    description: "Wifi off with fading waves and slash animation",
+    tags: ["wifi", "off", "disconnected", "internet", "network"],
+  },
+  {
+    name: "icon-bluetooth",
+    component: IconBluetooth,
+    color: "text-white",
+    description: "Bluetooth with pulse scale animation",
+    tags: ["bluetooth", "wireless", "connection", "pairing"],
+  },
+  {
+    name: "icon-rss",
+    component: IconRss,
+    color: "text-white",
+    description: "RSS with radiating wave draw animation",
+    tags: ["rss", "feed", "subscribe", "broadcast", "internet"],
+  },
+  {
+    name: "icon-podcast",
+    component: IconPodcast,
+    color: "text-white",
+    description: "Podcast with pulsing signal rings animation",
+    tags: ["podcast", "audio", "broadcast", "microphone", "media"],
+  },
+  {
+    name: "icon-signal",
+    component: IconSignal,
+    color: "text-white",
+    description: "Signal bars with staggered bounce animation",
+    tags: ["signal", "strength", "bars", "network", "reception"],
+  },
+  {
+    name: "icon-router",
+    component: IconRouter,
+    color: "text-white",
+    description: "Router with broadcasting waves and LED blink animation",
+    tags: ["router", "wifi", "network", "internet", "modem"],
+  },
+  {
+    name: "icon-cast",
+    component: IconCast,
+    color: "text-white",
+    description: "Cast with radiating connection waves animation",
+    tags: ["cast", "chromecast", "screen", "streaming", "broadcast"],
+  },
+  {
+    name: "icon-phone",
+    component: IconPhone,
+    color: "text-white",
+    description: "Phone with ringing vibration animation",
+    tags: ["phone", "call", "telephone", "ring", "communication"],
+  },
+  {
+    name: "icon-video",
+    component: IconVideo,
+    color: "text-white",
+    description: "Video camera with recording pulse animation",
+    tags: ["video", "camera", "record", "call", "streaming"],
   },
 ] as const;
 

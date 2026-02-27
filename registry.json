@@ -7622,6 +7622,401 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-fingerprint",
+      "type": "registry:component",
+      "title": "Animated Fingerprint",
+      "description": "Fingerprint icon with scanning line-draw animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-fingerprint/icon-fingerprint.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-leaf",
+      "type": "registry:component",
+      "title": "Animated Leaf",
+      "description": "Leaf icon with gentle sway animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-leaf/icon-leaf.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-tree-pine",
+      "type": "registry:component",
+      "title": "Animated Tree Pine",
+      "description": "Pine tree icon with subtle wind sway animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-tree-pine/icon-tree-pine.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-flower-2",
+      "type": "registry:component",
+      "title": "Animated Flower",
+      "description": "Flower icon with bloom petal animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-flower-2/icon-flower-2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sword",
+      "type": "registry:component",
+      "title": "Animated Sword",
+      "description": "Sword icon with slash swing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sword/icon-sword.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-magnet",
+      "type": "registry:component",
+      "title": "Animated Magnet",
+      "description": "Magnet icon with pull attract pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-magnet/icon-magnet.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-satellite",
+      "type": "registry:component",
+      "title": "Animated Satellite",
+      "description": "Satellite icon with orbit and signal animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-satellite/icon-satellite.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-guitar",
+      "type": "registry:component",
+      "title": "Animated Guitar",
+      "description": "Guitar icon with strum vibration animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-guitar/icon-guitar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-lamp",
+      "type": "registry:component",
+      "title": "Animated Lamp",
+      "description": "Lamp icon with glow flicker animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-lamp/icon-lamp.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cherry",
+      "type": "registry:component",
+      "title": "Animated Cherry",
+      "description": "Cherry icon with pendulum swing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cherry/icon-cherry.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cookie",
+      "type": "registry:component",
+      "title": "Animated Cookie",
+      "description": "Cookie icon with wobble shake animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cookie/icon-cookie.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ice-cream-cone",
+      "type": "registry:component",
+      "title": "Animated Ice Cream Cone",
+      "description": "Ice cream cone icon with wobble and melt animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ice-cream-cone/icon-ice-cream-cone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sandwich",
+      "type": "registry:component",
+      "title": "Animated Sandwich",
+      "description": "Sandwich icon with bounce animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sandwich/icon-sandwich.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-tree-deciduous",
+      "type": "registry:component",
+      "title": "Animated Tree",
+      "description": "Deciduous tree icon with wind sway animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-tree-deciduous/icon-tree-deciduous.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-flower",
+      "type": "registry:component",
+      "title": "Animated Flower",
+      "description": "Flower icon with spinning petal animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-flower/icon-flower.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-drum",
+      "type": "registry:component",
+      "title": "Animated Drum",
+      "description": "Drum icon with drumstick hit animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-drum/icon-drum.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-piano",
+      "type": "registry:component",
+      "title": "Animated Piano",
+      "description": "Piano icon with key press animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-piano/icon-piano.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-dumbbell",
+      "type": "registry:component",
+      "title": "Animated Dumbbell",
+      "description": "Dumbbell icon with lift and tilt animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-dumbbell/icon-dumbbell.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-candy",
+      "type": "registry:component",
+      "title": "Animated Candy",
+      "description": "Candy icon with spin and wrapper crinkle animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-candy/icon-candy.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pizza",
+      "type": "registry:component",
+      "title": "Animated Pizza",
+      "description": "Pizza slice icon with tilt and topping bounce animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pizza/icon-pizza.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cake",
+      "type": "registry:component",
+      "title": "Animated Cake",
+      "description": "Cake icon with candle flame flicker animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cake/icon-cake.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-link",
+      "type": "registry:component",
+      "title": "Animated Link",
+      "description": "Link icon with chain pull animation.",
+      "dependencies": ["motion"],
+      "files": [{ "path": "registry/default/icon-link/icon-link.tsx", "type": "registry:component" }]
+    },
+    {
+      "name": "icon-wifi-off",
+      "type": "registry:component",
+      "title": "Animated Wifi Off",
+      "description": "Wifi off icon with fading waves and slash draw animation.",
+      "dependencies": ["motion"],
+      "files": [{ "path": "registry/default/icon-wifi-off/icon-wifi-off.tsx", "type": "registry:component" }]
+    },
+    {
+      "name": "icon-bluetooth",
+      "type": "registry:component",
+      "title": "Animated Bluetooth",
+      "description": "Bluetooth icon with pulse scale animation.",
+      "dependencies": ["motion"],
+      "files": [{ "path": "registry/default/icon-bluetooth/icon-bluetooth.tsx", "type": "registry:component" }]
+    },
+    {
+      "name": "icon-rss",
+      "type": "registry:component",
+      "title": "Animated RSS",
+      "description": "RSS icon with radiating wave draw animation.",
+      "dependencies": ["motion"],
+      "files": [{ "path": "registry/default/icon-rss/icon-rss.tsx", "type": "registry:component" }]
+    },
+    {
+      "name": "icon-podcast",
+      "type": "registry:component",
+      "title": "Animated Podcast",
+      "description": "Podcast icon with pulsing signal rings animation.",
+      "dependencies": ["motion"],
+      "files": [{ "path": "registry/default/icon-podcast/icon-podcast.tsx", "type": "registry:component" }]
+    },
+    {
+      "name": "icon-signal",
+      "type": "registry:component",
+      "title": "Animated Signal",
+      "description": "Signal bars icon with staggered bounce animation.",
+      "dependencies": ["motion"],
+      "files": [{ "path": "registry/default/icon-signal/icon-signal.tsx", "type": "registry:component" }]
+    },
+    {
+      "name": "icon-router",
+      "type": "registry:component",
+      "title": "Animated Router",
+      "description": "Router icon with broadcasting waves and LED blink animation.",
+      "dependencies": ["motion"],
+      "files": [{ "path": "registry/default/icon-router/icon-router.tsx", "type": "registry:component" }]
+    },
+    {
+      "name": "icon-cast",
+      "type": "registry:component",
+      "title": "Animated Cast",
+      "description": "Cast icon with radiating connection waves animation.",
+      "dependencies": ["motion"],
+      "files": [{ "path": "registry/default/icon-cast/icon-cast.tsx", "type": "registry:component" }]
+    },
+    {
+      "name": "icon-phone",
+      "type": "registry:component",
+      "title": "Animated Phone",
+      "description": "Phone icon with ringing vibration animation.",
+      "dependencies": ["motion"],
+      "files": [{ "path": "registry/default/icon-phone/icon-phone.tsx", "type": "registry:component" }]
+    },
+    {
+      "name": "icon-video",
+      "type": "registry:component",
+      "title": "Animated Video",
+      "description": "Video camera icon with recording pulse animation.",
+      "dependencies": ["motion"],
+      "files": [{ "path": "registry/default/icon-video/icon-video.tsx", "type": "registry:component" }]
     }
   ]
 }
