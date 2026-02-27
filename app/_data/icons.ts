@@ -577,6 +577,18 @@ import { IconWandSparkles } from "@/registry/default/icon-wand-sparkles/icon-wan
 import { IconHeadset } from "@/registry/default/icon-headset/icon-headset";
 import { IconCandyCane } from "@/registry/default/icon-candy-cane/icon-candy-cane";
 import { IconAtom } from "@/registry/default/icon-atom/icon-atom";
+// Batch 21 Premium Icons
+import { IconLampDesk } from "@/registry/default/icon-lamp-desk/icon-lamp-desk";
+import { IconHandMetal } from "@/registry/default/icon-hand-metal/icon-hand-metal";
+import { IconTent } from "@/registry/default/icon-tent/icon-tent";
+import { IconFerrisWheel } from "@/registry/default/icon-ferris-wheel/icon-ferris-wheel";
+import { IconSprayCan } from "@/registry/default/icon-spray-can/icon-spray-can";
+import { IconFootprints } from "@/registry/default/icon-footprints/icon-footprints";
+import { IconMicVocal } from "@/registry/default/icon-mic-vocal/icon-mic-vocal";
+import { IconCctv } from "@/registry/default/icon-cctv/icon-cctv";
+import { IconDice6 } from "@/registry/default/icon-dice-6/icon-dice-6";
+import { IconShipWheel } from "@/registry/default/icon-ship-wheel/icon-ship-wheel";
+
 
 export const iconsRegistry = [
   {
@@ -4428,6 +4440,76 @@ export const iconsRegistry = [
     color: "text-cyan-400",
     description: "Atom with counter-rotating electron orbits",
     tags: ["atom", "science", "physics", "molecule", "energy"],
+  },
+  {
+    name: "icon-lamp-desk",
+    component: IconLampDesk,
+    color: "text-amber-300",
+    description: "Desk lamp with articulating head and warm glow",
+    tags: ["lamp", "desk", "light", "office", "study"],
+  },
+  {
+    name: "icon-hand-metal",
+    component: IconHandMetal,
+    color: "text-rose-500",
+    description: "Rock hand sign with headbang shake",
+    tags: ["hand", "metal", "rock", "music", "gesture"],
+  },
+  {
+    name: "icon-tent",
+    component: IconTent,
+    color: "text-emerald-400",
+    description: "Camping tent with wind-blown fabric",
+    tags: ["tent", "camping", "outdoor", "nature", "travel"],
+  },
+  {
+    name: "icon-ferris-wheel",
+    component: IconFerrisWheel,
+    color: "text-violet-400",
+    description: "Ferris wheel with smooth continuous spin",
+    tags: ["ferris", "wheel", "amusement", "park", "carnival"],
+  },
+  {
+    name: "icon-spray-can",
+    component: IconSprayCan,
+    color: "text-sky-400",
+    description: "Spray can with bursting particle effects",
+    tags: ["spray", "can", "paint", "graffiti", "art"],
+  },
+  {
+    name: "icon-footprints",
+    component: IconFootprints,
+    color: "text-amber-200",
+    description: "Footprints with alternating walking step rhythm",
+    tags: ["footprints", "walk", "steps", "tracking", "trail"],
+  },
+  {
+    name: "icon-mic-vocal",
+    component: IconMicVocal,
+    color: "text-pink-400",
+    description: "Vocal microphone with singing sway motion",
+    tags: ["mic", "vocal", "sing", "music", "karaoke"],
+  },
+  {
+    name: "icon-cctv",
+    component: IconCctv,
+    color: "text-zinc-300",
+    description: "CCTV camera with surveillance panning",
+    tags: ["cctv", "camera", "security", "surveillance", "monitor"],
+  },
+  {
+    name: "icon-dice-6",
+    component: IconDice6,
+    color: "text-white",
+    description: "Dice with rolling spin and dot reveal",
+    tags: ["dice", "game", "random", "chance", "roll"],
+  },
+  {
+    name: "icon-ship-wheel",
+    component: IconShipWheel,
+    color: "text-amber-400",
+    description: "Ship wheel with captain's steering rotation",
+    tags: ["ship", "wheel", "nautical", "helm", "sailing"],
   },
 ] as const;
 

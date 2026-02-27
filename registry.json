@@ -8252,6 +8252,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-lamp-desk",
+      "type": "registry:component",
+      "title": "Animated Lamp Desk",
+      "description": "Desk lamp with articulating head and warm glow.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-lamp-desk/icon-lamp-desk.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hand-metal",
+      "type": "registry:component",
+      "title": "Animated Hand Metal",
+      "description": "Rock hand sign with headbang shake.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hand-metal/icon-hand-metal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-tent",
+      "type": "registry:component",
+      "title": "Animated Tent",
+      "description": "Camping tent with wind-blown fabric.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-tent/icon-tent.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ferris-wheel",
+      "type": "registry:component",
+      "title": "Animated Ferris Wheel",
+      "description": "Ferris wheel with smooth continuous spin.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ferris-wheel/icon-ferris-wheel.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-spray-can",
+      "type": "registry:component",
+      "title": "Animated Spray Can",
+      "description": "Spray can with bursting particle effects.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-spray-can/icon-spray-can.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-footprints",
+      "type": "registry:component",
+      "title": "Animated Footprints",
+      "description": "Footprints with alternating walking step rhythm.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-footprints/icon-footprints.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-mic-vocal",
+      "type": "registry:component",
+      "title": "Animated Mic Vocal",
+      "description": "Vocal microphone with singing sway motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-mic-vocal/icon-mic-vocal.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-cctv",
+      "type": "registry:component",
+      "title": "Animated Cctv",
+      "description": "CCTV camera with surveillance panning.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cctv/icon-cctv.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-dice-6",
+      "type": "registry:component",
+      "title": "Animated Dice 6",
+      "description": "Dice with rolling spin and dot reveal.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-dice-6/icon-dice-6.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ship-wheel",
+      "type": "registry:component",
+      "title": "Animated Ship Wheel",
+      "description": "Ship wheel with captain's steering rotation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ship-wheel/icon-ship-wheel.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
