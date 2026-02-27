@@ -566,6 +566,18 @@ import { IconRouter } from "@/registry/default/icon-router/icon-router";
 import { IconCast } from "@/registry/default/icon-cast/icon-cast";
 import { IconPhone } from "@/registry/default/icon-phone/icon-phone";
 import { IconVideo } from "@/registry/default/icon-video/icon-video";
+// Batch 20 Premium Icons
+import { IconSyringe } from "@/registry/default/icon-syringe/icon-syringe";
+import { IconSatelliteDish } from "@/registry/default/icon-satellite-dish/icon-satellite-dish";
+import { IconSailboat } from "@/registry/default/icon-sailboat/icon-sailboat";
+import { IconPickaxe } from "@/registry/default/icon-pickaxe/icon-pickaxe";
+import { IconBinoculars } from "@/registry/default/icon-binoculars/icon-binoculars";
+import { IconPaintbrush } from "@/registry/default/icon-paintbrush/icon-paintbrush";
+import { IconWandSparkles } from "@/registry/default/icon-wand-sparkles/icon-wand-sparkles";
+import { IconHeadset } from "@/registry/default/icon-headset/icon-headset";
+import { IconCandyCane } from "@/registry/default/icon-candy-cane/icon-candy-cane";
+import { IconAtom } from "@/registry/default/icon-atom/icon-atom";
+
 export const iconsRegistry = [
   {
     name: "icon-heart",
@@ -4346,6 +4358,76 @@ export const iconsRegistry = [
     color: "text-white",
     description: "Video camera with recording pulse animation",
     tags: ["video", "camera", "record", "call", "streaming"],
+  },
+  {
+    name: "icon-syringe",
+    component: IconSyringe,
+    color: "text-emerald-400",
+    description: "Syringe with plunging injection animation",
+    tags: ["syringe", "medical", "health", "injection", "vaccine"],
+  },
+  {
+    name: "icon-satellite-dish",
+    component: IconSatelliteDish,
+    color: "text-sky-400",
+    description: "Satellite dish with radiating signal waves",
+    tags: ["satellite", "dish", "signal", "broadcast", "antenna"],
+  },
+  {
+    name: "icon-sailboat",
+    component: IconSailboat,
+    color: "text-blue-300",
+    description: "Sailboat rocking gently on ocean waves",
+    tags: ["sailboat", "boat", "ocean", "sea", "travel"],
+  },
+  {
+    name: "icon-pickaxe",
+    component: IconPickaxe,
+    color: "text-amber-400",
+    description: "Pickaxe with mining swing animation",
+    tags: ["pickaxe", "mining", "tool", "dig", "craft"],
+  },
+  {
+    name: "icon-binoculars",
+    component: IconBinoculars,
+    color: "text-zinc-300",
+    description: "Binoculars scanning left and right",
+    tags: ["binoculars", "search", "look", "explore", "scout"],
+  },
+  {
+    name: "icon-paintbrush",
+    component: IconPaintbrush,
+    color: "text-pink-400",
+    description: "Paintbrush with creative stroke animation",
+    tags: ["paintbrush", "art", "design", "creative", "draw"],
+  },
+  {
+    name: "icon-wand-sparkles",
+    component: IconWandSparkles,
+    color: "text-violet-400",
+    description: "Magic wand with twinkling sparkle effects",
+    tags: ["wand", "magic", "sparkle", "effect", "generate"],
+  },
+  {
+    name: "icon-headset",
+    component: IconHeadset,
+    color: "text-white",
+    description: "Headset with subtle audio bounce",
+    tags: ["headset", "audio", "support", "call", "gaming"],
+  },
+  {
+    name: "icon-candy-cane",
+    component: IconCandyCane,
+    color: "text-rose-400",
+    description: "Candy cane with shimmering stripe animation",
+    tags: ["candy", "cane", "sweet", "holiday", "christmas"],
+  },
+  {
+    name: "icon-atom",
+    component: IconAtom,
+    color: "text-cyan-400",
+    description: "Atom with counter-rotating electron orbits",
+    tags: ["atom", "science", "physics", "molecule", "energy"],
   },
 ] as const;
 

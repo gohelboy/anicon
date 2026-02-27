@@ -6964,10 +6964,40 @@
       ]
     },
     {
+      "name": "icon-bold",
+      "type": "registry:component",
+      "title": "Animated Bold",
+      "description": "Bold text icon with a strong bop.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bold/icon-bold.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-binary",
+      "type": "registry:component",
+      "title": "Animated Binary",
+      "description": "Binary data with shifting 0s and 1s.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-binary/icon-binary.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-asterisk",
       "type": "registry:component",
       "title": "Animated Asterisk",
-      "description": "Asterisk with a springy spin",
+      "description": "Asterisk with a springy spin.",
       "dependencies": [
         "motion"
       ],
@@ -6982,7 +7012,7 @@
       "name": "icon-baseline",
       "type": "registry:component",
       "title": "Animated Baseline",
-      "description": "Baseline with a pulsing underline",
+      "description": "Baseline with a pulsing underline.",
       "dependencies": [
         "motion"
       ],
@@ -6994,40 +7024,10 @@
       ]
     },
     {
-      "name": "icon-binary",
-      "type": "registry:component",
-      "title": "Animated Binary",
-      "description": "Binary data with shifting 0s and 1s",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-binary/icon-binary.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-bold",
-      "type": "registry:component",
-      "title": "Animated Bold",
-      "description": "Bold text icon with a strong bop",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-bold/icon-bold.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
       "name": "icon-underline",
       "type": "registry:component",
       "title": "Animated Underline",
-      "description": "Underline with a pulsing line",
+      "description": "Underline with a pulsing line.",
       "dependencies": [
         "motion"
       ],
@@ -7041,8 +7041,8 @@
     {
       "name": "icon-badge",
       "type": "registry:component",
-      "title": "IconBadge",
-      "description": "Badge icon with premium animation",
+      "title": "Animated Badge",
+      "description": "Badge icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7056,8 +7056,8 @@
     {
       "name": "icon-box",
       "type": "registry:component",
-      "title": "IconBox",
-      "description": "Box icon with premium animation",
+      "title": "Animated Box",
+      "description": "Box icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7071,8 +7071,8 @@
     {
       "name": "icon-boxes",
       "type": "registry:component",
-      "title": "IconBoxes",
-      "description": "Boxes icon with premium animation",
+      "title": "Animated Boxes",
+      "description": "Boxes icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7086,8 +7086,8 @@
     {
       "name": "icon-circle",
       "type": "registry:component",
-      "title": "IconCircle",
-      "description": "Circle icon with premium animation",
+      "title": "Animated Circle",
+      "description": "Circle icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7101,8 +7101,8 @@
     {
       "name": "icon-circle-dashed",
       "type": "registry:component",
-      "title": "IconCircleDashed",
-      "description": "CircleDashed icon with premium animation",
+      "title": "Animated Circle Dashed",
+      "description": "CircleDashed icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7116,8 +7116,8 @@
     {
       "name": "icon-circle-dot",
       "type": "registry:component",
-      "title": "IconCircleDot",
-      "description": "CircleDot icon with premium animation",
+      "title": "Animated Circle Dot",
+      "description": "CircleDot icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7131,8 +7131,8 @@
     {
       "name": "icon-circle-dot-dashed",
       "type": "registry:component",
-      "title": "IconCircleDotDashed",
-      "description": "CircleDotDashed icon with premium animation",
+      "title": "Animated Circle Dot Dashed",
+      "description": "CircleDotDashed icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7146,8 +7146,8 @@
     {
       "name": "icon-circle-slash",
       "type": "registry:component",
-      "title": "IconCircleSlash",
-      "description": "CircleSlash icon with premium animation",
+      "title": "Animated Circle Slash",
+      "description": "CircleSlash icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7161,8 +7161,8 @@
     {
       "name": "icon-circle-slash-2",
       "type": "registry:component",
-      "title": "IconCircleSlash2",
-      "description": "CircleSlash2 icon with premium animation",
+      "title": "Animated Circle Slash 2",
+      "description": "CircleSlash2 icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7176,8 +7176,8 @@
     {
       "name": "icon-circle-off",
       "type": "registry:component",
-      "title": "IconCircleOff",
-      "description": "CircleOff icon with premium animation",
+      "title": "Animated Circle Off",
+      "description": "CircleOff icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7191,8 +7191,8 @@
     {
       "name": "icon-dot",
       "type": "registry:component",
-      "title": "IconDot",
-      "description": "Dot icon with premium animation",
+      "title": "Animated Dot",
+      "description": "Dot icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7206,8 +7206,8 @@
     {
       "name": "icon-clover",
       "type": "registry:component",
-      "title": "IconClover",
-      "description": "Clover icon with premium animation",
+      "title": "Animated Clover",
+      "description": "Clover icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7221,8 +7221,8 @@
     {
       "name": "icon-cone",
       "type": "registry:component",
-      "title": "IconCone",
-      "description": "Cone icon with premium animation",
+      "title": "Animated Cone",
+      "description": "Cone icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7236,8 +7236,8 @@
     {
       "name": "icon-cross",
       "type": "registry:component",
-      "title": "IconCross",
-      "description": "Cross icon with premium animation",
+      "title": "Animated Cross",
+      "description": "Cross icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7251,8 +7251,8 @@
     {
       "name": "icon-cylinder",
       "type": "registry:component",
-      "title": "IconCylinder",
-      "description": "Cylinder icon with premium animation",
+      "title": "Animated Cylinder",
+      "description": "Cylinder icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7266,8 +7266,8 @@
     {
       "name": "icon-diameter",
       "type": "registry:component",
-      "title": "IconDiameter",
-      "description": "Diameter icon with premium animation",
+      "title": "Animated Diameter",
+      "description": "Diameter icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7281,8 +7281,8 @@
     {
       "name": "icon-diamond",
       "type": "registry:component",
-      "title": "IconDiamond",
-      "description": "Diamond icon with premium animation",
+      "title": "Animated Diamond",
+      "description": "Diamond icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7296,8 +7296,8 @@
     {
       "name": "icon-hexagon",
       "type": "registry:component",
-      "title": "IconHexagon",
-      "description": "Hexagon icon with premium animation",
+      "title": "Animated Hexagon",
+      "description": "Hexagon icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7311,8 +7311,8 @@
     {
       "name": "icon-infinity",
       "type": "registry:component",
-      "title": "IconInfinity",
-      "description": "Infinity icon with premium animation",
+      "title": "Animated Infinity",
+      "description": "Infinity icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7326,8 +7326,8 @@
     {
       "name": "icon-octagon",
       "type": "registry:component",
-      "title": "IconOctagon",
-      "description": "Octagon icon with premium animation",
+      "title": "Animated Octagon",
+      "description": "Octagon icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7341,8 +7341,8 @@
     {
       "name": "icon-octagon-pause",
       "type": "registry:component",
-      "title": "IconOctagonPause",
-      "description": "OctagonPause icon with premium animation",
+      "title": "Animated Octagon Pause",
+      "description": "OctagonPause icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7356,8 +7356,8 @@
     {
       "name": "icon-pentagon",
       "type": "registry:component",
-      "title": "IconPentagon",
-      "description": "Pentagon icon with premium animation",
+      "title": "Animated Pentagon",
+      "description": "Pentagon icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7371,8 +7371,8 @@
     {
       "name": "icon-pyramid",
       "type": "registry:component",
-      "title": "IconPyramid",
-      "description": "Pyramid icon with premium animation",
+      "title": "Animated Pyramid",
+      "description": "Pyramid icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7386,8 +7386,8 @@
     {
       "name": "icon-radius",
       "type": "registry:component",
-      "title": "IconRadius",
-      "description": "Radius icon with premium animation",
+      "title": "Animated Radius",
+      "description": "Radius icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7401,8 +7401,8 @@
     {
       "name": "icon-rectangle-horizontal",
       "type": "registry:component",
-      "title": "IconRectangleHorizontal",
-      "description": "RectangleHorizontal icon with premium animation",
+      "title": "Animated Rectangle Horizontal",
+      "description": "RectangleHorizontal icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7416,8 +7416,8 @@
     {
       "name": "icon-rectangle-vertical",
       "type": "registry:component",
-      "title": "IconRectangleVertical",
-      "description": "RectangleVertical icon with premium animation",
+      "title": "Animated Rectangle Vertical",
+      "description": "RectangleVertical icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7431,8 +7431,8 @@
     {
       "name": "icon-shapes",
       "type": "registry:component",
-      "title": "IconShapes",
-      "description": "Shapes icon with premium animation",
+      "title": "Animated Shapes",
+      "description": "Shapes icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7446,8 +7446,8 @@
     {
       "name": "icon-shield",
       "type": "registry:component",
-      "title": "IconShield",
-      "description": "Shield icon with premium animation",
+      "title": "Animated Shield",
+      "description": "Shield icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7461,8 +7461,8 @@
     {
       "name": "icon-spade",
       "type": "registry:component",
-      "title": "IconSpade",
-      "description": "Spade icon with premium animation",
+      "title": "Animated Spade",
+      "description": "Spade icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7476,8 +7476,8 @@
     {
       "name": "icon-square",
       "type": "registry:component",
-      "title": "IconSquare",
-      "description": "Square icon with premium animation",
+      "title": "Animated Square",
+      "description": "Square icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7491,8 +7491,8 @@
     {
       "name": "icon-square-dashed",
       "type": "registry:component",
-      "title": "IconSquareDashed",
-      "description": "SquareDashed icon with premium animation",
+      "title": "Animated Square Dashed",
+      "description": "SquareDashed icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7506,8 +7506,8 @@
     {
       "name": "icon-square-dot",
       "type": "registry:component",
-      "title": "IconSquareDot",
-      "description": "SquareDot icon with premium animation",
+      "title": "Animated Square Dot",
+      "description": "SquareDot icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7521,8 +7521,8 @@
     {
       "name": "icon-tangent",
       "type": "registry:component",
-      "title": "IconTangent",
-      "description": "Tangent icon with premium animation",
+      "title": "Animated Tangent",
+      "description": "Tangent icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7536,8 +7536,8 @@
     {
       "name": "icon-torus",
       "type": "registry:component",
-      "title": "IconTorus",
-      "description": "Torus icon with premium animation",
+      "title": "Animated Torus",
+      "description": "Torus icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7551,8 +7551,8 @@
     {
       "name": "icon-triangle",
       "type": "registry:component",
-      "title": "IconTriangle",
-      "description": "Triangle icon with premium animation",
+      "title": "Animated Triangle",
+      "description": "Triangle icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7564,10 +7564,25 @@
       ]
     },
     {
+      "name": "icon-triangle-dashed",
+      "type": "registry:component",
+      "title": "Animated Triangle Dashed",
+      "description": "TriangleDashed icon with premium animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-triangle-dashed/icon-triangle-dashed.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "icon-triangle-right",
       "type": "registry:component",
-      "title": "IconTriangleRight",
-      "description": "TriangleRight icon with premium animation",
+      "title": "Animated Triangle Right",
+      "description": "TriangleRight icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7581,8 +7596,8 @@
     {
       "name": "icon-unfold-horizontal",
       "type": "registry:component",
-      "title": "IconUnfoldHorizontal",
-      "description": "UnfoldHorizontal icon with premium animation",
+      "title": "Animated Unfold Horizontal",
+      "description": "UnfoldHorizontal icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7596,8 +7611,8 @@
     {
       "name": "icon-unfold-vertical",
       "type": "registry:component",
-      "title": "IconUnfoldVertical",
-      "description": "UnfoldVertical icon with premium animation",
+      "title": "Animated Unfold Vertical",
+      "description": "UnfoldVertical icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7611,8 +7626,8 @@
     {
       "name": "icon-variable",
       "type": "registry:component",
-      "title": "IconVariable",
-      "description": "Variable icon with premium animation",
+      "title": "Animated Variable",
+      "description": "Variable icon with premium animation.",
       "dependencies": [
         "motion"
       ],
@@ -7627,7 +7642,7 @@
       "name": "icon-fingerprint",
       "type": "registry:component",
       "title": "Animated Fingerprint",
-      "description": "Fingerprint icon with scanning line-draw animation.",
+      "description": "Fingerprint with scanning line-draw animation.",
       "dependencies": [
         "motion"
       ],
@@ -7642,7 +7657,7 @@
       "name": "icon-leaf",
       "type": "registry:component",
       "title": "Animated Leaf",
-      "description": "Leaf icon with gentle sway animation.",
+      "description": "Leaf with gentle sway animation.",
       "dependencies": [
         "motion"
       ],
@@ -7657,7 +7672,7 @@
       "name": "icon-tree-pine",
       "type": "registry:component",
       "title": "Animated Tree Pine",
-      "description": "Pine tree icon with subtle wind sway animation.",
+      "description": "Pine tree with subtle wind sway animation.",
       "dependencies": [
         "motion"
       ],
@@ -7671,8 +7686,8 @@
     {
       "name": "icon-flower-2",
       "type": "registry:component",
-      "title": "Animated Flower",
-      "description": "Flower icon with bloom petal animation.",
+      "title": "Animated Flower 2",
+      "description": "Flower with bloom petal animation.",
       "dependencies": [
         "motion"
       ],
@@ -7687,7 +7702,7 @@
       "name": "icon-sword",
       "type": "registry:component",
       "title": "Animated Sword",
-      "description": "Sword icon with slash swing animation.",
+      "description": "Sword with slash swing animation.",
       "dependencies": [
         "motion"
       ],
@@ -7702,7 +7717,7 @@
       "name": "icon-magnet",
       "type": "registry:component",
       "title": "Animated Magnet",
-      "description": "Magnet icon with pull attract pulse animation.",
+      "description": "Magnet with pull attract pulse animation.",
       "dependencies": [
         "motion"
       ],
@@ -7717,7 +7732,7 @@
       "name": "icon-satellite",
       "type": "registry:component",
       "title": "Animated Satellite",
-      "description": "Satellite icon with orbit and signal animation.",
+      "description": "Satellite with orbit and signal animation.",
       "dependencies": [
         "motion"
       ],
@@ -7732,7 +7747,7 @@
       "name": "icon-guitar",
       "type": "registry:component",
       "title": "Animated Guitar",
-      "description": "Guitar icon with strum vibration animation.",
+      "description": "Guitar with strum vibration animation.",
       "dependencies": [
         "motion"
       ],
@@ -7747,7 +7762,7 @@
       "name": "icon-lamp",
       "type": "registry:component",
       "title": "Animated Lamp",
-      "description": "Lamp icon with glow flicker animation.",
+      "description": "Lamp with glow flicker animation.",
       "dependencies": [
         "motion"
       ],
@@ -7762,7 +7777,7 @@
       "name": "icon-cherry",
       "type": "registry:component",
       "title": "Animated Cherry",
-      "description": "Cherry icon with pendulum swing animation.",
+      "description": "Cherry with pendulum swing animation.",
       "dependencies": [
         "motion"
       ],
@@ -7777,7 +7792,7 @@
       "name": "icon-cookie",
       "type": "registry:component",
       "title": "Animated Cookie",
-      "description": "Cookie icon with wobble shake animation.",
+      "description": "Cookie with wobble shake animation.",
       "dependencies": [
         "motion"
       ],
@@ -7792,7 +7807,7 @@
       "name": "icon-ice-cream-cone",
       "type": "registry:component",
       "title": "Animated Ice Cream Cone",
-      "description": "Ice cream cone icon with wobble and melt animation.",
+      "description": "Ice cream cone with wobble and melt animation.",
       "dependencies": [
         "motion"
       ],
@@ -7807,7 +7822,7 @@
       "name": "icon-sandwich",
       "type": "registry:component",
       "title": "Animated Sandwich",
-      "description": "Sandwich icon with bounce animation.",
+      "description": "Sandwich with bounce animation.",
       "dependencies": [
         "motion"
       ],
@@ -7821,8 +7836,8 @@
     {
       "name": "icon-tree-deciduous",
       "type": "registry:component",
-      "title": "Animated Tree",
-      "description": "Deciduous tree icon with wind sway animation.",
+      "title": "Animated Tree Deciduous",
+      "description": "Deciduous tree with wind sway animation.",
       "dependencies": [
         "motion"
       ],
@@ -7837,7 +7852,7 @@
       "name": "icon-flower",
       "type": "registry:component",
       "title": "Animated Flower",
-      "description": "Flower icon with spinning petal animation.",
+      "description": "Flower with spinning petal animation.",
       "dependencies": [
         "motion"
       ],
@@ -7852,7 +7867,7 @@
       "name": "icon-drum",
       "type": "registry:component",
       "title": "Animated Drum",
-      "description": "Drum icon with drumstick hit animation.",
+      "description": "Drum with drumstick hit animation.",
       "dependencies": [
         "motion"
       ],
@@ -7867,7 +7882,7 @@
       "name": "icon-piano",
       "type": "registry:component",
       "title": "Animated Piano",
-      "description": "Piano icon with key press animation.",
+      "description": "Piano with key press animation.",
       "dependencies": [
         "motion"
       ],
@@ -7882,7 +7897,7 @@
       "name": "icon-dumbbell",
       "type": "registry:component",
       "title": "Animated Dumbbell",
-      "description": "Dumbbell icon with lift and tilt animation.",
+      "description": "Dumbbell with lift and tilt animation.",
       "dependencies": [
         "motion"
       ],
@@ -7897,7 +7912,7 @@
       "name": "icon-candy",
       "type": "registry:component",
       "title": "Animated Candy",
-      "description": "Candy icon with spin and wrapper crinkle animation.",
+      "description": "Candy with spin and wrapper crinkle animation.",
       "dependencies": [
         "motion"
       ],
@@ -7912,7 +7927,7 @@
       "name": "icon-pizza",
       "type": "registry:component",
       "title": "Animated Pizza",
-      "description": "Pizza slice icon with tilt and topping bounce animation.",
+      "description": "Pizza slice with tilt and topping bounce animation.",
       "dependencies": [
         "motion"
       ],
@@ -7927,7 +7942,7 @@
       "name": "icon-cake",
       "type": "registry:component",
       "title": "Animated Cake",
-      "description": "Cake icon with candle flame flicker animation.",
+      "description": "Cake with candle flame flicker animation.",
       "dependencies": [
         "motion"
       ],
@@ -7942,81 +7957,301 @@
       "name": "icon-link",
       "type": "registry:component",
       "title": "Animated Link",
-      "description": "Link icon with chain pull animation.",
-      "dependencies": ["motion"],
-      "files": [{ "path": "registry/default/icon-link/icon-link.tsx", "type": "registry:component" }]
+      "description": "Link with chain pull animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-link/icon-link.tsx",
+          "type": "registry:component"
+        }
+      ]
     },
     {
       "name": "icon-wifi-off",
       "type": "registry:component",
       "title": "Animated Wifi Off",
-      "description": "Wifi off icon with fading waves and slash draw animation.",
-      "dependencies": ["motion"],
-      "files": [{ "path": "registry/default/icon-wifi-off/icon-wifi-off.tsx", "type": "registry:component" }]
+      "description": "Wifi off with fading waves and slash animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-wifi-off/icon-wifi-off.tsx",
+          "type": "registry:component"
+        }
+      ]
     },
     {
       "name": "icon-bluetooth",
       "type": "registry:component",
       "title": "Animated Bluetooth",
-      "description": "Bluetooth icon with pulse scale animation.",
-      "dependencies": ["motion"],
-      "files": [{ "path": "registry/default/icon-bluetooth/icon-bluetooth.tsx", "type": "registry:component" }]
+      "description": "Bluetooth with pulse scale animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bluetooth/icon-bluetooth.tsx",
+          "type": "registry:component"
+        }
+      ]
     },
     {
       "name": "icon-rss",
       "type": "registry:component",
-      "title": "Animated RSS",
-      "description": "RSS icon with radiating wave draw animation.",
-      "dependencies": ["motion"],
-      "files": [{ "path": "registry/default/icon-rss/icon-rss.tsx", "type": "registry:component" }]
+      "title": "Animated Rss",
+      "description": "RSS with radiating wave draw animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-rss/icon-rss.tsx",
+          "type": "registry:component"
+        }
+      ]
     },
     {
       "name": "icon-podcast",
       "type": "registry:component",
       "title": "Animated Podcast",
-      "description": "Podcast icon with pulsing signal rings animation.",
-      "dependencies": ["motion"],
-      "files": [{ "path": "registry/default/icon-podcast/icon-podcast.tsx", "type": "registry:component" }]
+      "description": "Podcast with pulsing signal rings animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-podcast/icon-podcast.tsx",
+          "type": "registry:component"
+        }
+      ]
     },
     {
       "name": "icon-signal",
       "type": "registry:component",
       "title": "Animated Signal",
-      "description": "Signal bars icon with staggered bounce animation.",
-      "dependencies": ["motion"],
-      "files": [{ "path": "registry/default/icon-signal/icon-signal.tsx", "type": "registry:component" }]
+      "description": "Signal bars with staggered bounce animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-signal/icon-signal.tsx",
+          "type": "registry:component"
+        }
+      ]
     },
     {
       "name": "icon-router",
       "type": "registry:component",
       "title": "Animated Router",
-      "description": "Router icon with broadcasting waves and LED blink animation.",
-      "dependencies": ["motion"],
-      "files": [{ "path": "registry/default/icon-router/icon-router.tsx", "type": "registry:component" }]
+      "description": "Router with broadcasting waves and LED blink animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-router/icon-router.tsx",
+          "type": "registry:component"
+        }
+      ]
     },
     {
       "name": "icon-cast",
       "type": "registry:component",
       "title": "Animated Cast",
-      "description": "Cast icon with radiating connection waves animation.",
-      "dependencies": ["motion"],
-      "files": [{ "path": "registry/default/icon-cast/icon-cast.tsx", "type": "registry:component" }]
+      "description": "Cast with radiating connection waves animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-cast/icon-cast.tsx",
+          "type": "registry:component"
+        }
+      ]
     },
     {
       "name": "icon-phone",
       "type": "registry:component",
       "title": "Animated Phone",
-      "description": "Phone icon with ringing vibration animation.",
-      "dependencies": ["motion"],
-      "files": [{ "path": "registry/default/icon-phone/icon-phone.tsx", "type": "registry:component" }]
+      "description": "Phone with ringing vibration animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-phone/icon-phone.tsx",
+          "type": "registry:component"
+        }
+      ]
     },
     {
       "name": "icon-video",
       "type": "registry:component",
       "title": "Animated Video",
-      "description": "Video camera icon with recording pulse animation.",
-      "dependencies": ["motion"],
-      "files": [{ "path": "registry/default/icon-video/icon-video.tsx", "type": "registry:component" }]
+      "description": "Video camera with recording pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-video/icon-video.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-syringe",
+      "type": "registry:component",
+      "title": "Animated Syringe",
+      "description": "Syringe with plunging injection animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-syringe/icon-syringe.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-satellite-dish",
+      "type": "registry:component",
+      "title": "Animated Satellite Dish",
+      "description": "Satellite dish with radiating signal waves.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-satellite-dish/icon-satellite-dish.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sailboat",
+      "type": "registry:component",
+      "title": "Animated Sailboat",
+      "description": "Sailboat rocking gently on ocean waves.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sailboat/icon-sailboat.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pickaxe",
+      "type": "registry:component",
+      "title": "Animated Pickaxe",
+      "description": "Pickaxe with mining swing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pickaxe/icon-pickaxe.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-binoculars",
+      "type": "registry:component",
+      "title": "Animated Binoculars",
+      "description": "Binoculars scanning left and right.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-binoculars/icon-binoculars.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-paintbrush",
+      "type": "registry:component",
+      "title": "Animated Paintbrush",
+      "description": "Paintbrush with creative stroke animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-paintbrush/icon-paintbrush.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-wand-sparkles",
+      "type": "registry:component",
+      "title": "Animated Wand Sparkles",
+      "description": "Magic wand with twinkling sparkle effects.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-wand-sparkles/icon-wand-sparkles.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-headset",
+      "type": "registry:component",
+      "title": "Animated Headset",
+      "description": "Headset with subtle audio bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-headset/icon-headset.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-candy-cane",
+      "type": "registry:component",
+      "title": "Animated Candy Cane",
+      "description": "Candy cane with shimmering stripe animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-candy-cane/icon-candy-cane.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-atom",
+      "type": "registry:component",
+      "title": "Animated Atom",
+      "description": "Atom with counter-rotating electron orbits.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-atom/icon-atom.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
