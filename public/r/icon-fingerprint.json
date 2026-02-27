@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-fingerprint",
+  "type": "registry:component",
+  "title": "Animated Fingerprint",
+  "description": "Fingerprint icon with scanning line-draw animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-fingerprint/icon-fingerprint.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconFingerprintProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst scanVariants: Variants = {\r\n  rest: { opacity: 1 },\r\n  hover: {\r\n    opacity: [1, 0.4, 1],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst lineVariants = (delay: number): Variants => ({\r\n  rest: { pathLength: 1, opacity: 1 },\r\n  hover: {\r\n    pathLength: [0, 1],\r\n    opacity: [0.3, 1],\r\n    transition: {\r\n      duration: 1.2,\r\n      delay,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n});\r\n\r\nexport function IconFingerprint({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconFingerprintProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      variants={scanVariants}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"M12 10a2 2 0 0 0-2 2c0 1.02-.1 2.51-.26 4\" variants={lineVariants(0)} />\r\n      <motion.path d=\"M14 13.12c0 2.38 0 6.38-1 8.88\" variants={lineVariants(0.1)} />\r\n      <motion.path d=\"M17.29 21.02c.12-.6.43-2.3.5-3.02\" variants={lineVariants(0.2)} />\r\n      <motion.path d=\"M2 12a10 10 0 0 1 18-6\" variants={lineVariants(0.3)} />\r\n      <motion.path d=\"M2 16h.01\" variants={lineVariants(0.4)} />\r\n      <motion.path d=\"M21.8 16c.2-2 .131-5.354 0-6\" variants={lineVariants(0.5)} />\r\n      <motion.path d=\"M5 19.5C5.5 18 6 15 6 12a6 6 0 0 1 .34-2\" variants={lineVariants(0.15)} />\r\n      <motion.path d=\"M8.65 22c.21-.66.45-1.32.57-2\" variants={lineVariants(0.25)} />\r\n      <motion.path d=\"M9 6.8a6 6 0 0 1 9 5.2v2\" variants={lineVariants(0.35)} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

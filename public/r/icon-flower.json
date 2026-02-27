@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-flower",
+  "type": "registry:component",
+  "title": "Animated Flower",
+  "description": "Flower icon with spinning petal animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-flower/icon-flower.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconFlowerProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst spinVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: {\r\n    rotate: [0, 360],\r\n    transition: {\r\n      duration: 3,\r\n      repeat: Infinity,\r\n      ease: \"linear\",\r\n    },\r\n  },\r\n};\r\n\r\nconst centerVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: {\r\n    scale: [1, 1.2, 1],\r\n    transition: {\r\n      duration: 0.8,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconFlower({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconFlowerProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <motion.circle cx=\"12\" cy=\"12\" r=\"3\" variants={centerVariants} />\r\n      <motion.g variants={spinVariants} style={{ originX: \"12px\", originY: \"12px\" }}>\r\n        <path d=\"M12 16.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 1 1 4.5 4.5 4.5 4.5 0 1 1-4.5 4.5\" />\r\n        <path d=\"M12 7.5V9\" />\r\n        <path d=\"M7.5 12H9\" />\r\n        <path d=\"M16.5 12H15\" />\r\n        <path d=\"M12 16.5V15\" />\r\n        <path d=\"m8 8 1.88 1.88\" />\r\n        <path d=\"M14.12 9.88 16 8\" />\r\n        <path d=\"m8 16 1.88-1.88\" />\r\n        <path d=\"M14.12 14.12 16 16\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

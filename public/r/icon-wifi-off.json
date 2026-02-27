@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-wifi-off",
+  "type": "registry:component",
+  "title": "Animated Wifi Off",
+  "description": "Wifi off icon with fading waves and slash draw animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-wifi-off/icon-wifi-off.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconWifiOffProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst waveVariants: Variants = {\r\n  rest: { opacity: 1 },\r\n  hover: {\r\n    opacity: [1, 0.3, 1],\r\n    transition: {\r\n      duration: 1,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst slashVariants: Variants = {\r\n  rest: { pathLength: 1 },\r\n  hover: {\r\n    pathLength: [0, 1],\r\n    transition: {\r\n      duration: 0.6,\r\n      ease: \"easeOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconWifiOff({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconWifiOffProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <path d=\"M12 20h.01\" />\r\n      <motion.path d=\"M8.5 16.429a5 5 0 0 1 7 0\" variants={waveVariants} />\r\n      <motion.path d=\"M5 12.859a10 10 0 0 1 5.17-2.69\" variants={waveVariants} />\r\n      <motion.path d=\"M19 12.859a10 10 0 0 0-2.007-1.523\" variants={waveVariants} />\r\n      <motion.path d=\"M2 8.82a15 15 0 0 1 4.177-2.643\" variants={waveVariants} />\r\n      <motion.path d=\"M22 8.82a15 15 0 0 0-11.288-3.764\" variants={waveVariants} />\r\n      <motion.path d=\"m2 2 20 20\" variants={slashVariants} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}
