@@ -3,7 +3,7 @@
   "name": "icon-cake",
   "type": "registry:component",
   "title": "Animated Cake",
-  "description": "Cake icon with candle flame flicker animation.",
+  "description": "Cake with candle flame flicker animation.",
   "dependencies": [
     "motion"
   ],

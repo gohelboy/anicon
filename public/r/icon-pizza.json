@@ -3,7 +3,7 @@
   "name": "icon-pizza",
   "type": "registry:component",
   "title": "Animated Pizza",
-  "description": "Pizza slice icon with tilt and topping bounce animation.",
+  "description": "Pizza slice with tilt and topping bounce animation.",
   "dependencies": [
     "motion"
   ],

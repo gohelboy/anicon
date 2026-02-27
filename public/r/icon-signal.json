@@ -3,7 +3,7 @@
   "name": "icon-signal",
   "type": "registry:component",
   "title": "Animated Signal",
-  "description": "Signal bars icon with staggered bounce animation.",
+  "description": "Signal bars with staggered bounce animation.",
   "dependencies": [
     "motion"
   ],

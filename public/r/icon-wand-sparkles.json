@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-wand-sparkles",
+  "type": "registry:component",
+  "title": "Animated Wand Sparkles",
+  "description": "Magic wand with twinkling sparkle effects.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-wand-sparkles/icon-wand-sparkles.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconWandSparklesProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst wandVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: {\r\n    rotate: [0, -8, 8, -4, 0],\r\n    transition: {\r\n      duration: 0.6,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst sparkleVariants = (delay: number): Variants => ({\r\n  rest: { opacity: 1, scale: 1 },\r\n  hover: {\r\n    opacity: [0, 1, 0],\r\n    scale: [0.5, 1.4, 0.5],\r\n    transition: {\r\n      duration: 0.8,\r\n      delay,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n});\r\n\r\nexport function IconWandSparkles({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconWandSparklesProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      {/* Wand body */}\r\n      <motion.g variants={wandVariants} style={{ originX: \"12px\", originY: \"12px\" }}>\r\n        <path d=\"m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72\" />\r\n        <path d=\"m14 7 3 3\" />\r\n      </motion.g>\r\n      {/* Sparkles */}\r\n      <motion.path d=\"M5 6v4\" variants={sparkleVariants(0)} />\r\n      <motion.path d=\"M19 14v4\" variants={sparkleVariants(0.2)} />\r\n      <motion.path d=\"M10 2v2\" variants={sparkleVariants(0.4)} />\r\n      <motion.path d=\"M7 8H3\" variants={sparkleVariants(0)} />\r\n      <motion.path d=\"M21 16h-4\" variants={sparkleVariants(0.2)} />\r\n      <motion.path d=\"M11 3H9\" variants={sparkleVariants(0.4)} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

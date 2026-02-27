@@ -3,7 +3,7 @@
   "name": "icon-flower",
   "type": "registry:component",
   "title": "Animated Flower",
-  "description": "Flower icon with spinning petal animation.",
+  "description": "Flower with spinning petal animation.",
   "dependencies": [
     "motion"
   ],

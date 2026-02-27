@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-satellite-dish",
+  "type": "registry:component",
+  "title": "Animated Satellite Dish",
+  "description": "Satellite dish with radiating signal waves.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-satellite-dish/icon-satellite-dish.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconSatelliteDishProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst dishVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: {\r\n    scale: [1, 1.05, 1],\r\n    transition: { duration: 0.5, ease: \"easeInOut\" },\r\n  },\r\n};\r\n\r\nconst signalVariants = (delay: number): Variants => ({\r\n  rest: { pathLength: 1, opacity: 1 },\r\n  hover: {\r\n    pathLength: [0, 1],\r\n    opacity: [0, 1],\r\n    transition: {\r\n      duration: 0.8,\r\n      delay,\r\n      repeat: Infinity,\r\n      ease: \"easeOut\",\r\n    },\r\n  },\r\n});\r\n\r\nexport function IconSatelliteDish({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconSatelliteDishProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <motion.path d=\"M4 10a7.31 7.31 0 0 0 10 10Z\" variants={dishVariants} />\r\n      <path d=\"m9 15 3-3\" />\r\n      <motion.path d=\"M17 13a6 6 0 0 0-6-6\" variants={signalVariants(0)} />\r\n      <motion.path d=\"M21 13A10 10 0 0 0 11 3\" variants={signalVariants(0.3)} />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

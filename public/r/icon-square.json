@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-square",
   "type": "registry:component",
-  "title": "IconSquare",
-  "description": "Square icon with premium animation",
+  "title": "Animated Square",
+  "description": "Square icon with premium animation.",
   "dependencies": [
     "motion"
   ],

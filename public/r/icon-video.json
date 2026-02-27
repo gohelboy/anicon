@@ -3,7 +3,7 @@
   "name": "icon-video",
   "type": "registry:component",
   "title": "Animated Video",
-  "description": "Video camera icon with recording pulse animation.",
+  "description": "Video camera with recording pulse animation.",
   "dependencies": [
     "motion"
   ],

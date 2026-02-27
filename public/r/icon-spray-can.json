@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-spray-can",
+  "type": "registry:component",
+  "title": "Animated Spray Can",
+  "description": "Spray can with bursting particle effects.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-spray-can/icon-spray-can.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconSprayCanProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst sprayVariants = (delay: number): Variants => ({\r\n  rest: { opacity: 1, scale: 1 },\r\n  hover: {\r\n    opacity: [0, 1, 0],\r\n    scale: [0.5, 1.2, 0.5],\r\n    transition: {\r\n      duration: 0.8,\r\n      delay,\r\n      repeat: Infinity,\r\n      ease: \"easeOut\",\r\n    },\r\n  },\r\n});\r\n\r\nconst canVariants: Variants = {\r\n  rest: { x: 0 },\r\n  hover: {\r\n    x: [0, -0.5, 0.5, 0],\r\n    transition: { duration: 0.15, repeat: Infinity },\r\n  },\r\n};\r\n\r\nexport function IconSprayCan({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconSprayCanProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      {/* Spray particles */}\r\n      <motion.path d=\"M3 3h.01\" variants={sprayVariants(0)} />\r\n      <motion.path d=\"M7 5h.01\" variants={sprayVariants(0.1)} />\r\n      <motion.path d=\"M11 7h.01\" variants={sprayVariants(0.2)} />\r\n      <motion.path d=\"M3 7h.01\" variants={sprayVariants(0.15)} />\r\n      <motion.path d=\"M7 9h.01\" variants={sprayVariants(0.25)} />\r\n      <motion.path d=\"M3 11h.01\" variants={sprayVariants(0.3)} />\r\n      {/* Can body */}\r\n      <motion.g variants={canVariants}>\r\n        <rect width=\"4\" height=\"4\" x=\"15\" y=\"5\" />\r\n        <path d=\"m19 9 2 2v10c0 .6-.4 1-1 1h-6c-.6 0-1-.4-1-1V11l2-2\" />\r\n        <path d=\"m13 14 8-2\" />\r\n        <path d=\"m13 19 8-2\" />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

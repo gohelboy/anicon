@@ -3,7 +3,7 @@
   "name": "icon-lamp",
   "type": "registry:component",
   "title": "Animated Lamp",
-  "description": "Lamp icon with glow flicker animation.",
+  "description": "Lamp with glow flicker animation.",
   "dependencies": [
     "motion"
   ],

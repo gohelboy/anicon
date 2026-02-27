@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-box",
   "type": "registry:component",
-  "title": "IconBox",
-  "description": "Box icon with premium animation",
+  "title": "Animated Box",
+  "description": "Box icon with premium animation.",
   "dependencies": [
     "motion"
   ],

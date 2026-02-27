@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-radius",
   "type": "registry:component",
-  "title": "IconRadius",
-  "description": "Radius icon with premium animation",
+  "title": "Animated Radius",
+  "description": "Radius icon with premium animation.",
   "dependencies": [
     "motion"
   ],

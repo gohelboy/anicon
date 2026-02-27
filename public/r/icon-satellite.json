@@ -3,7 +3,7 @@
   "name": "icon-satellite",
   "type": "registry:component",
   "title": "Animated Satellite",
-  "description": "Satellite icon with orbit and signal animation.",
+  "description": "Satellite with orbit and signal animation.",
   "dependencies": [
     "motion"
   ],

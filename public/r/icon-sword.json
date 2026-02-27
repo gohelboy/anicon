@@ -3,7 +3,7 @@
   "name": "icon-sword",
   "type": "registry:component",
   "title": "Animated Sword",
-  "description": "Sword icon with slash swing animation.",
+  "description": "Sword with slash swing animation.",
   "dependencies": [
     "motion"
   ],

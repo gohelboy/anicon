@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-hexagon",
   "type": "registry:component",
-  "title": "IconHexagon",
-  "description": "Hexagon icon with premium animation",
+  "title": "Animated Hexagon",
+  "description": "Hexagon icon with premium animation.",
   "dependencies": [
     "motion"
   ],

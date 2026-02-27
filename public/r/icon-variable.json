@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-variable",
   "type": "registry:component",
-  "title": "IconVariable",
-  "description": "Variable icon with premium animation",
+  "title": "Animated Variable",
+  "description": "Variable icon with premium animation.",
   "dependencies": [
     "motion"
   ],

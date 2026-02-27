@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-octagon-pause",
   "type": "registry:component",
-  "title": "IconOctagonPause",
-  "description": "OctagonPause icon with premium animation",
+  "title": "Animated Octagon Pause",
+  "description": "OctagonPause icon with premium animation.",
   "dependencies": [
     "motion"
   ],

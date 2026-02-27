@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-unfold-vertical",
   "type": "registry:component",
-  "title": "IconUnfoldVertical",
-  "description": "UnfoldVertical icon with premium animation",
+  "title": "Animated Unfold Vertical",
+  "description": "UnfoldVertical icon with premium animation.",
   "dependencies": [
     "motion"
   ],

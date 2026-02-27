@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-circle",
   "type": "registry:component",
-  "title": "IconCircle",
-  "description": "Circle icon with premium animation",
+  "title": "Animated Circle",
+  "description": "Circle icon with premium animation.",
   "dependencies": [
     "motion"
   ],

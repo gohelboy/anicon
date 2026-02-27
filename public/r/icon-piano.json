@@ -3,7 +3,7 @@
   "name": "icon-piano",
   "type": "registry:component",
   "title": "Animated Piano",
-  "description": "Piano icon with key press animation.",
+  "description": "Piano with key press animation.",
   "dependencies": [
     "motion"
   ],

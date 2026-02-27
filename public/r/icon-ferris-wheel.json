@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-ferris-wheel",
+  "type": "registry:component",
+  "title": "Animated Ferris Wheel",
+  "description": "Ferris wheel with smooth continuous spin.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-ferris-wheel/icon-ferris-wheel.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconFerrisWheelProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst wheelVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: {\r\n    rotate: 360,\r\n    transition: {\r\n      duration: 6,\r\n      repeat: Infinity,\r\n      ease: \"linear\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconFerrisWheel({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconFerrisWheelProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <motion.g variants={wheelVariants} style={{ originX: \"12px\", originY: \"12px\" }}>\r\n        <circle cx=\"12\" cy=\"12\" r=\"2\" />\r\n        <path d=\"M12 2v4\" />\r\n        <path d=\"m6.8 15-3.5 2\" />\r\n        <path d=\"m20.7 7-3.5 2\" />\r\n        <path d=\"M6.8 9 3.3 7\" />\r\n        <path d=\"m20.7 17-3.5-2\" />\r\n        <path d=\"M18 18.7a9 9 0 1 0-12 0\" />\r\n      </motion.g>\r\n      {/* Static stand */}\r\n      <path d=\"m9 22 3-8 3 8\" />\r\n      <path d=\"M8 22h8\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "name": "icon-bold",
   "type": "registry:component",
   "title": "Animated Bold",
-  "description": "Bold text icon with a strong bop",
+  "description": "Bold text icon with a strong bop.",
   "dependencies": [
     "motion"
   ],

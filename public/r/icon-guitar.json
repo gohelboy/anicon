@@ -3,7 +3,7 @@
   "name": "icon-guitar",
   "type": "registry:component",
   "title": "Animated Guitar",
-  "description": "Guitar icon with strum vibration animation.",
+  "description": "Guitar with strum vibration animation.",
   "dependencies": [
     "motion"
   ],

@@ -3,7 +3,7 @@
   "name": "icon-binary",
   "type": "registry:component",
   "title": "Animated Binary",
-  "description": "Binary data with shifting 0s and 1s",
+  "description": "Binary data with shifting 0s and 1s.",
   "dependencies": [
     "motion"
   ],

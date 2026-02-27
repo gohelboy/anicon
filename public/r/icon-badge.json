@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-badge",
   "type": "registry:component",
-  "title": "IconBadge",
-  "description": "Badge icon with premium animation",
+  "title": "Animated Badge",
+  "description": "Badge icon with premium animation.",
   "dependencies": [
     "motion"
   ],

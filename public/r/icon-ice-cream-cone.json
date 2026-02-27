@@ -3,7 +3,7 @@
   "name": "icon-ice-cream-cone",
   "type": "registry:component",
   "title": "Animated Ice Cream Cone",
-  "description": "Ice cream cone icon with wobble and melt animation.",
+  "description": "Ice cream cone with wobble and melt animation.",
   "dependencies": [
     "motion"
   ],

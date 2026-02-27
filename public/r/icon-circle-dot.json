@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-circle-dot",
   "type": "registry:component",
-  "title": "IconCircleDot",
-  "description": "CircleDot icon with premium animation",
+  "title": "Animated Circle Dot",
+  "description": "CircleDot icon with premium animation.",
   "dependencies": [
     "motion"
   ],

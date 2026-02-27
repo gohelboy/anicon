@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-cone",
   "type": "registry:component",
-  "title": "IconCone",
-  "description": "Cone icon with premium animation",
+  "title": "Animated Cone",
+  "description": "Cone icon with premium animation.",
   "dependencies": [
     "motion"
   ],

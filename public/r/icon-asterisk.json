@@ -3,7 +3,7 @@
   "name": "icon-asterisk",
   "type": "registry:component",
   "title": "Animated Asterisk",
-  "description": "Asterisk with a springy spin",
+  "description": "Asterisk with a springy spin.",
   "dependencies": [
     "motion"
   ],

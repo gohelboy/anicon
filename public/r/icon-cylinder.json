@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-cylinder",
   "type": "registry:component",
-  "title": "IconCylinder",
-  "description": "Cylinder icon with premium animation",
+  "title": "Animated Cylinder",
+  "description": "Cylinder icon with premium animation.",
   "dependencies": [
     "motion"
   ],

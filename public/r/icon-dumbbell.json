@@ -3,7 +3,7 @@
   "name": "icon-dumbbell",
   "type": "registry:component",
   "title": "Animated Dumbbell",
-  "description": "Dumbbell icon with lift and tilt animation.",
+  "description": "Dumbbell with lift and tilt animation.",
   "dependencies": [
     "motion"
   ],

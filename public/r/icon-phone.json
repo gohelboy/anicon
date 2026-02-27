@@ -3,7 +3,7 @@
   "name": "icon-phone",
   "type": "registry:component",
   "title": "Animated Phone",
-  "description": "Phone icon with ringing vibration animation.",
+  "description": "Phone with ringing vibration animation.",
   "dependencies": [
     "motion"
   ],

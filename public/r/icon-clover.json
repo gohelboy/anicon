@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-clover",
   "type": "registry:component",
-  "title": "IconClover",
-  "description": "Clover icon with premium animation",
+  "title": "Animated Clover",
+  "description": "Clover icon with premium animation.",
   "dependencies": [
     "motion"
   ],

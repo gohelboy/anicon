@@ -3,7 +3,7 @@
   "name": "icon-baseline",
   "type": "registry:component",
   "title": "Animated Baseline",
-  "description": "Baseline with a pulsing underline",
+  "description": "Baseline with a pulsing underline.",
   "dependencies": [
     "motion"
   ],

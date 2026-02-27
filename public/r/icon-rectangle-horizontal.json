@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-rectangle-horizontal",
   "type": "registry:component",
-  "title": "IconRectangleHorizontal",
-  "description": "RectangleHorizontal icon with premium animation",
+  "title": "Animated Rectangle Horizontal",
+  "description": "RectangleHorizontal icon with premium animation.",
   "dependencies": [
     "motion"
   ],

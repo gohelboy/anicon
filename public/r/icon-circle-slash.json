@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-circle-slash",
   "type": "registry:component",
-  "title": "IconCircleSlash",
-  "description": "CircleSlash icon with premium animation",
+  "title": "Animated Circle Slash",
+  "description": "CircleSlash icon with premium animation.",
   "dependencies": [
     "motion"
   ],

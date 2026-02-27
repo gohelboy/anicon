@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-tree-deciduous",
   "type": "registry:component",
-  "title": "Animated Tree",
-  "description": "Deciduous tree icon with wind sway animation.",
+  "title": "Animated Tree Deciduous",
+  "description": "Deciduous tree with wind sway animation.",
   "dependencies": [
     "motion"
   ],

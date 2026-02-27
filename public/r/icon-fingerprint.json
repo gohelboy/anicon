@@ -3,7 +3,7 @@
   "name": "icon-fingerprint",
   "type": "registry:component",
   "title": "Animated Fingerprint",
-  "description": "Fingerprint icon with scanning line-draw animation.",
+  "description": "Fingerprint with scanning line-draw animation.",
   "dependencies": [
     "motion"
   ],

@@ -3,7 +3,7 @@
   "name": "icon-wifi-off",
   "type": "registry:component",
   "title": "Animated Wifi Off",
-  "description": "Wifi off icon with fading waves and slash draw animation.",
+  "description": "Wifi off with fading waves and slash animation.",
   "dependencies": [
     "motion"
   ],

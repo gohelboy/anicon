@@ -3,7 +3,7 @@
   "name": "icon-tree-pine",
   "type": "registry:component",
   "title": "Animated Tree Pine",
-  "description": "Pine tree icon with subtle wind sway animation.",
+  "description": "Pine tree with subtle wind sway animation.",
   "dependencies": [
     "motion"
   ],

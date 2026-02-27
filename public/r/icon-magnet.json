@@ -3,7 +3,7 @@
   "name": "icon-magnet",
   "type": "registry:component",
   "title": "Animated Magnet",
-  "description": "Magnet icon with pull attract pulse animation.",
+  "description": "Magnet with pull attract pulse animation.",
   "dependencies": [
     "motion"
   ],

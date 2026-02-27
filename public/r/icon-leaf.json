@@ -3,7 +3,7 @@
   "name": "icon-leaf",
   "type": "registry:component",
   "title": "Animated Leaf",
-  "description": "Leaf icon with gentle sway animation.",
+  "description": "Leaf with gentle sway animation.",
   "dependencies": [
     "motion"
   ],

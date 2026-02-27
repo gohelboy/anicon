@@ -3,7 +3,7 @@
   "name": "icon-bluetooth",
   "type": "registry:component",
   "title": "Animated Bluetooth",
-  "description": "Bluetooth icon with pulse scale animation.",
+  "description": "Bluetooth with pulse scale animation.",
   "dependencies": [
     "motion"
   ],

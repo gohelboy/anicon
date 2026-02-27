@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-atom",
+  "type": "registry:component",
+  "title": "Animated Atom",
+  "description": "Atom with counter-rotating electron orbits.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-atom/icon-atom.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconAtomProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst orbit1Variants: Variants = {\r\n  rest: { opacity: 1 },\r\n  hover: {\r\n    rotate: 360,\r\n    transition: {\r\n      duration: 3,\r\n      repeat: Infinity,\r\n      ease: \"linear\",\r\n    },\r\n  },\r\n};\r\n\r\nconst orbit2Variants: Variants = {\r\n  rest: { opacity: 1 },\r\n  hover: {\r\n    rotate: -360,\r\n    transition: {\r\n      duration: 4,\r\n      repeat: Infinity,\r\n      ease: \"linear\",\r\n    },\r\n  },\r\n};\r\n\r\nconst nucleusVariants: Variants = {\r\n  rest: { scale: 1 },\r\n  hover: {\r\n    scale: [1, 1.4, 1],\r\n    transition: {\r\n      duration: 1,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nexport function IconAtom({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconAtomProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <motion.circle cx=\"12\" cy=\"12\" r=\"1\" variants={nucleusVariants} />\r\n      <motion.path \r\n        d=\"M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z\" \r\n        variants={orbit1Variants}\r\n        style={{ originX: \"12px\", originY: \"12px\" }}\r\n      />\r\n      <motion.path \r\n        d=\"M15.7 15.7c4.52-4.54 6.54-9.87 4.5-11.9-2.03-2.04-7.36-.02-11.9 4.5-4.52 4.54-6.54 9.87-4.5 11.9 2.03 2.04 7.36.02 11.9-4.5Z\" \r\n        variants={orbit2Variants}\r\n        style={{ originX: \"12px\", originY: \"12px\" }}\r\n      />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

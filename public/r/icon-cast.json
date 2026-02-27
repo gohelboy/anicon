@@ -3,7 +3,7 @@
   "name": "icon-cast",
   "type": "registry:component",
   "title": "Animated Cast",
-  "description": "Cast icon with radiating connection waves animation.",
+  "description": "Cast with radiating connection waves animation.",
   "dependencies": [
     "motion"
   ],

@@ -3,7 +3,7 @@
   "name": "icon-drum",
   "type": "registry:component",
   "title": "Animated Drum",
-  "description": "Drum icon with drumstick hit animation.",
+  "description": "Drum with drumstick hit animation.",
   "dependencies": [
     "motion"
   ],

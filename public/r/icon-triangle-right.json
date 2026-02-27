@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-triangle-right",
   "type": "registry:component",
-  "title": "IconTriangleRight",
-  "description": "TriangleRight icon with premium animation",
+  "title": "Animated Triangle Right",
+  "description": "TriangleRight icon with premium animation.",
   "dependencies": [
     "motion"
   ],

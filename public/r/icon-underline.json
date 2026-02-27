@@ -3,7 +3,7 @@
   "name": "icon-underline",
   "type": "registry:component",
   "title": "Animated Underline",
-  "description": "Underline with a pulsing line",
+  "description": "Underline with a pulsing line.",
   "dependencies": [
     "motion"
   ],

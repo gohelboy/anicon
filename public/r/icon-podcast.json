@@ -3,7 +3,7 @@
   "name": "icon-podcast",
   "type": "registry:component",
   "title": "Animated Podcast",
-  "description": "Podcast icon with pulsing signal rings animation.",
+  "description": "Podcast with pulsing signal rings animation.",
   "dependencies": [
     "motion"
   ],

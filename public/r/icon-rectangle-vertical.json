@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-rectangle-vertical",
   "type": "registry:component",
-  "title": "IconRectangleVertical",
-  "description": "RectangleVertical icon with premium animation",
+  "title": "Animated Rectangle Vertical",
+  "description": "RectangleVertical icon with premium animation.",
   "dependencies": [
     "motion"
   ],

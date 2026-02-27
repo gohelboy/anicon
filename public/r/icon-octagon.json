@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-octagon",
   "type": "registry:component",
-  "title": "IconOctagon",
-  "description": "Octagon icon with premium animation",
+  "title": "Animated Octagon",
+  "description": "Octagon icon with premium animation.",
   "dependencies": [
     "motion"
   ],

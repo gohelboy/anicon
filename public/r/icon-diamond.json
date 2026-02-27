@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-diamond",
   "type": "registry:component",
-  "title": "IconDiamond",
-  "description": "Diamond icon with premium animation",
+  "title": "Animated Diamond",
+  "description": "Diamond icon with premium animation.",
   "dependencies": [
     "motion"
   ],

@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-tangent",
   "type": "registry:component",
-  "title": "IconTangent",
-  "description": "Tangent icon with premium animation",
+  "title": "Animated Tangent",
+  "description": "Tangent icon with premium animation.",
   "dependencies": [
     "motion"
   ],

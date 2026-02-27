@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-cross",
   "type": "registry:component",
-  "title": "IconCross",
-  "description": "Cross icon with premium animation",
+  "title": "Animated Cross",
+  "description": "Cross icon with premium animation.",
   "dependencies": [
     "motion"
   ],

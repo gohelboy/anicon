@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-tent",
+  "type": "registry:component",
+  "title": "Animated Tent",
+  "description": "Camping tent with wind-blown fabric.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-tent/icon-tent.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconTentProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst fabricVariants: Variants = {\r\n  rest: { scaleX: 1 },\r\n  hover: {\r\n    scaleX: [1, 1.02, 0.98, 1],\r\n    transition: {\r\n      duration: 2,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst flagVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: {\r\n    rotate: [0, 3, -3, 0],\r\n    transition: { duration: 1, repeat: Infinity, ease: \"easeInOut\" },\r\n  },\r\n};\r\n\r\nexport function IconTent({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconTentProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <motion.g variants={fabricVariants} style={{ originX: \"12px\", originY: \"21px\" }}>\r\n        <motion.path d=\"M3.5 21 14 3\" variants={flagVariants} style={{ originX: \"14px\", originY: \"3px\" }} />\r\n        <path d=\"M20.5 21 10 3\" />\r\n        <path d=\"M15.5 21 12 15l-3.5 6\" />\r\n      </motion.g>\r\n      <path d=\"M2 21h20\" />\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "name": "icon-siren",
   "type": "registry:component",
   "title": "Animated Siren",
-  "description": "Siren with interactive flashing pulse.",
+  "description": "Emergency siren with flashing light rays.",
   "dependencies": [
     "motion"
   ],

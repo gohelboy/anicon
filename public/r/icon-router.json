@@ -3,7 +3,7 @@
   "name": "icon-router",
   "type": "registry:component",
   "title": "Animated Router",
-  "description": "Router icon with broadcasting waves and LED blink animation.",
+  "description": "Router with broadcasting waves and LED blink animation.",
   "dependencies": [
     "motion"
   ],

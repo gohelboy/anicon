@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-candy-cane",
+  "type": "registry:component",
+  "title": "Animated Candy Cane",
+  "description": "Candy cane with shimmering stripe animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-candy-cane/icon-candy-cane.tsx",
+      "content": "\"use client\";\r\n\r\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\r\n\r\nexport interface IconCandyCaneProps extends React.SVGProps<SVGSVGElement> {\r\n  size?: number;\r\n  strokeWidth?: number;\r\n}\r\n\r\nconst swayVariants: Variants = {\r\n  rest: { rotate: 0 },\r\n  hover: {\r\n    rotate: [0, 5, -5, 3, 0],\r\n    transition: {\r\n      duration: 1.5,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n};\r\n\r\nconst stripeVariants = (delay: number): Variants => ({\r\n  rest: { opacity: 1 },\r\n  hover: {\r\n    opacity: [1, 0.3, 1],\r\n    transition: {\r\n      duration: 0.6,\r\n      delay,\r\n      repeat: Infinity,\r\n      ease: \"easeInOut\",\r\n    },\r\n  },\r\n});\r\n\r\nexport function IconCandyCane({\r\n  size = 24,\r\n  strokeWidth = 2,\r\n  className,\r\n  ...props\r\n}: IconCandyCaneProps) {\r\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\r\n  const prefersReducedMotion = useReducedMotion();\r\n\r\n  return (\r\n    <motion.svg\r\n      xmlns=\"http://www.w3.org/2000/svg\"\r\n      width={size}\r\n      height={size}\r\n      viewBox=\"0 0 24 24\"\r\n      fill=\"none\"\r\n      stroke=\"currentColor\"\r\n      strokeWidth={strokeWidth}\r\n      strokeLinecap=\"round\"\r\n      strokeLinejoin=\"round\"\r\n      initial={prefersReducedMotion ? false : \"rest\"}\r\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\r\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\r\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\r\n      style={{ overflow: \"visible\" }}\r\n      {...rest}\r\n    >\r\n      <motion.g variants={swayVariants} style={{ originX: \"14px\", originY: \"4px\" }}>\r\n        <path d=\"M5.7 21a2 2 0 0 1-3.5-2l8.6-14a6 6 0 0 1 10.4 6 2 2 0 1 1-3.464-2 2 2 0 1 0-3.464-2Z\" />\r\n        <motion.path d=\"M17.75 7 15 2.1\" variants={stripeVariants(0)} />\r\n        <motion.path d=\"M10.9 4.8 13 9\" variants={stripeVariants(0.15)} />\r\n        <motion.path d=\"m7.9 9.7 2 4.4\" variants={stripeVariants(0.3)} />\r\n        <motion.path d=\"M4.9 14.7 7 18.9\" variants={stripeVariants(0.45)} />\r\n      </motion.g>\r\n    </motion.svg>\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

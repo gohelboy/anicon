@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-flower-2",
   "type": "registry:component",
-  "title": "Animated Flower",
-  "description": "Flower icon with bloom petal animation.",
+  "title": "Animated Flower 2",
+  "description": "Flower with bloom petal animation.",
   "dependencies": [
     "motion"
   ],

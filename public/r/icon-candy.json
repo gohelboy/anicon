@@ -3,7 +3,7 @@
   "name": "icon-candy",
   "type": "registry:component",
   "title": "Animated Candy",
-  "description": "Candy icon with spin and wrapper crinkle animation.",
+  "description": "Candy with spin and wrapper crinkle animation.",
   "dependencies": [
     "motion"
   ],

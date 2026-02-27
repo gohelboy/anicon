@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-torus",
   "type": "registry:component",
-  "title": "IconTorus",
-  "description": "Torus icon with premium animation",
+  "title": "Animated Torus",
+  "description": "Torus icon with premium animation.",
   "dependencies": [
     "motion"
   ],

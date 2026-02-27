@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-spade",
   "type": "registry:component",
-  "title": "IconSpade",
-  "description": "Spade icon with premium animation",
+  "title": "Animated Spade",
+  "description": "Spade icon with premium animation.",
   "dependencies": [
     "motion"
   ],

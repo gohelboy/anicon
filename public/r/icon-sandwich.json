@@ -3,7 +3,7 @@
   "name": "icon-sandwich",
   "type": "registry:component",
   "title": "Animated Sandwich",
-  "description": "Sandwich icon with bounce animation.",
+  "description": "Sandwich with bounce animation.",
   "dependencies": [
     "motion"
   ],

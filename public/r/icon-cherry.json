@@ -3,7 +3,7 @@
   "name": "icon-cherry",
   "type": "registry:component",
   "title": "Animated Cherry",
-  "description": "Cherry icon with pendulum swing animation.",
+  "description": "Cherry with pendulum swing animation.",
   "dependencies": [
     "motion"
   ],

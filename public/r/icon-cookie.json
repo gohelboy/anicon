@@ -3,7 +3,7 @@
   "name": "icon-cookie",
   "type": "registry:component",
   "title": "Animated Cookie",
-  "description": "Cookie icon with wobble shake animation.",
+  "description": "Cookie with wobble shake animation.",
   "dependencies": [
     "motion"
   ],

@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-rss",
   "type": "registry:component",
-  "title": "Animated RSS",
-  "description": "RSS icon with radiating wave draw animation.",
+  "title": "Animated Rss",
+  "description": "RSS with radiating wave draw animation.",
   "dependencies": [
     "motion"
   ],

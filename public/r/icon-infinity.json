@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-infinity",
   "type": "registry:component",
-  "title": "IconInfinity",
-  "description": "Infinity icon with premium animation",
+  "title": "Animated Infinity",
+  "description": "Infinity icon with premium animation.",
   "dependencies": [
     "motion"
   ],

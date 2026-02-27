@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-circle-dashed",
   "type": "registry:component",
-  "title": "IconCircleDashed",
-  "description": "CircleDashed icon with premium animation",
+  "title": "Animated Circle Dashed",
+  "description": "CircleDashed icon with premium animation.",
   "dependencies": [
     "motion"
   ],

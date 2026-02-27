@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-square-dot",
   "type": "registry:component",
-  "title": "IconSquareDot",
-  "description": "SquareDot icon with premium animation",
+  "title": "Animated Square Dot",
+  "description": "SquareDot icon with premium animation.",
   "dependencies": [
     "motion"
   ],

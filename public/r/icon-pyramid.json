@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-pyramid",
   "type": "registry:component",
-  "title": "IconPyramid",
-  "description": "Pyramid icon with premium animation",
+  "title": "Animated Pyramid",
+  "description": "Pyramid icon with premium animation.",
   "dependencies": [
     "motion"
   ],

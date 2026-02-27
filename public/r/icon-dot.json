@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-dot",
   "type": "registry:component",
-  "title": "IconDot",
-  "description": "Dot icon with premium animation",
+  "title": "Animated Dot",
+  "description": "Dot icon with premium animation.",
   "dependencies": [
     "motion"
   ],

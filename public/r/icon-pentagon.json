@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-pentagon",
   "type": "registry:component",
-  "title": "IconPentagon",
-  "description": "Pentagon icon with premium animation",
+  "title": "Animated Pentagon",
+  "description": "Pentagon icon with premium animation.",
   "dependencies": [
     "motion"
   ],

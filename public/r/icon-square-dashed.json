@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-square-dashed",
   "type": "registry:component",
-  "title": "IconSquareDashed",
-  "description": "SquareDashed icon with premium animation",
+  "title": "Animated Square Dashed",
+  "description": "SquareDashed icon with premium animation.",
   "dependencies": [
     "motion"
   ],

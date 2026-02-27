@@ -3,7 +3,7 @@
   "name": "icon-link",
   "type": "registry:component",
   "title": "Animated Link",
-  "description": "Link icon with chain pull animation.",
+  "description": "Link with chain pull animation.",
   "dependencies": [
     "motion"
   ],

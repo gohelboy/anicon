@@ -2,8 +2,8 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "icon-unfold-horizontal",
   "type": "registry:component",
-  "title": "IconUnfoldHorizontal",
-  "description": "UnfoldHorizontal icon with premium animation",
+  "title": "Animated Unfold Horizontal",
+  "description": "UnfoldHorizontal icon with premium animation.",
   "dependencies": [
     "motion"
   ],
