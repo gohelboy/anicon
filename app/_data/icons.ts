@@ -588,6 +588,15 @@ import { IconMicVocal } from "@/registry/default/icon-mic-vocal/icon-mic-vocal";
 import { IconCctv } from "@/registry/default/icon-cctv/icon-cctv";
 import { IconDice6 } from "@/registry/default/icon-dice-6/icon-dice-6";
 import { IconShipWheel } from "@/registry/default/icon-ship-wheel/icon-ship-wheel";
+// Batch 22 Premium Icons
+import { IconAxe } from "@/registry/default/icon-axe/icon-axe";
+import { IconShovel } from "@/registry/default/icon-shovel/icon-shovel";
+import { IconPuzzle } from "@/registry/default/icon-puzzle/icon-puzzle";
+import { IconLollipop } from "@/registry/default/icon-lollipop/icon-lollipop";
+import { IconMartini } from "@/registry/default/icon-martini/icon-martini";
+import { IconRadar } from "@/registry/default/icon-radar/icon-radar";
+import { IconPlaneTakeoff } from "@/registry/default/icon-plane-takeoff/icon-plane-takeoff";
+import { IconVenetianMask } from "@/registry/default/icon-venetian-mask/icon-venetian-mask";
 
 
 export const iconsRegistry = [
@@ -4510,6 +4519,62 @@ export const iconsRegistry = [
     color: "text-amber-400",
     description: "Ship wheel with captain's steering rotation",
     tags: ["ship", "wheel", "nautical", "helm", "sailing"],
+  },
+  {
+    name: "icon-axe",
+    component: IconAxe,
+    color: "text-zinc-300",
+    description: "Axe with powerful chopping swing",
+    tags: ["axe", "chop", "tool", "lumber", "wood"],
+  },
+  {
+    name: "icon-shovel",
+    component: IconShovel,
+    color: "text-amber-300",
+    description: "Shovel with digging motion animation",
+    tags: ["shovel", "dig", "garden", "tool", "earth"],
+  },
+  {
+    name: "icon-puzzle",
+    component: IconPuzzle,
+    color: "text-violet-400",
+    description: "Puzzle piece with fitting wiggle animation",
+    tags: ["puzzle", "game", "piece", "jigsaw", "solve"],
+  },
+  {
+    name: "icon-lollipop",
+    component: IconLollipop,
+    color: "text-pink-400",
+    description: "Lollipop with spinning candy swirl",
+    tags: ["lollipop", "candy", "sweet", "sugar", "treat"],
+  },
+  {
+    name: "icon-martini",
+    component: IconMartini,
+    color: "text-sky-300",
+    description: "Martini glass with elegant swaying motion",
+    tags: ["martini", "drink", "cocktail", "bar", "glass"],
+  },
+  {
+    name: "icon-radar",
+    component: IconRadar,
+    color: "text-emerald-400",
+    description: "Radar with rotating sweep and pulsing rings",
+    tags: ["radar", "scan", "detect", "signal", "sonar"],
+  },
+  {
+    name: "icon-plane-takeoff",
+    component: IconPlaneTakeoff,
+    color: "text-sky-400",
+    description: "Plane ascending with takeoff liftoff",
+    tags: ["plane", "takeoff", "flight", "travel", "airport"],
+  },
+  {
+    name: "icon-venetian-mask",
+    component: IconVenetianMask,
+    color: "text-amber-400",
+    description: "Venetian mask with mysterious reveal and blinking eyes",
+    tags: ["mask", "venetian", "theater", "carnival", "mystery"],
   },
 ] as const;
 

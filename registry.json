@@ -8402,6 +8402,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-axe",
+      "type": "registry:component",
+      "title": "Animated Axe",
+      "description": "Axe with powerful chopping swing.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-axe/icon-axe.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shovel",
+      "type": "registry:component",
+      "title": "Animated Shovel",
+      "description": "Shovel with digging motion animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shovel/icon-shovel.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-puzzle",
+      "type": "registry:component",
+      "title": "Animated Puzzle",
+      "description": "Puzzle piece with fitting wiggle animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-puzzle/icon-puzzle.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-lollipop",
+      "type": "registry:component",
+      "title": "Animated Lollipop",
+      "description": "Lollipop with spinning candy swirl.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-lollipop/icon-lollipop.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-siren",
+      "type": "registry:component",
+      "title": "Animated Siren",
+      "description": "Emergency siren with flashing light rays.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-siren/icon-siren.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-martini",
+      "type": "registry:component",
+      "title": "Animated Martini",
+      "description": "Martini glass with elegant swaying motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-martini/icon-martini.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-megaphone",
+      "type": "registry:component",
+      "title": "Animated Megaphone",
+      "description": "Megaphone with shaking announcement blast.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-megaphone/icon-megaphone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-radar",
+      "type": "registry:component",
+      "title": "Animated Radar",
+      "description": "Radar with rotating sweep and pulsing rings.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-radar/icon-radar.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-plane-takeoff",
+      "type": "registry:component",
+      "title": "Animated Plane Takeoff",
+      "description": "Plane ascending with takeoff liftoff.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-plane-takeoff/icon-plane-takeoff.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-venetian-mask",
+      "type": "registry:component",
+      "title": "Animated Venetian Mask",
+      "description": "Venetian mask with mysterious reveal and blinking eyes.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-venetian-mask/icon-venetian-mask.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
