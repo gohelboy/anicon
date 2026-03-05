@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-table-grid",
+  "type": "registry:component",
+  "title": "Animated Table Grid",
+  "description": "Table grid with responsive cell pulse animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-table-grid/icon-table-grid.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconTableGridProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst cellVariants = (delay: number): Variants => ({\n  rest: { scale: 1 },\n  hover: { scale: [1, 1.06, 1], transition: { duration: 0.35, delay, ease: \"easeInOut\" } },\n});\n\nexport function IconTableGrid({ size = 24, strokeWidth = 2, className, ...props }: IconTableGridProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg xmlns=\"http://www.w3.org/2000/svg\" width={size} height={size} viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth={strokeWidth} strokeLinecap=\"round\" strokeLinejoin=\"round\" initial={prefersReducedMotion ? false : \"rest\"} whileHover={prefersReducedMotion ? undefined : \"hover\"} whileTap={prefersReducedMotion ? undefined : \"tap\"} className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()} style={{ overflow: \"visible\" }} {...rest}>\n      <rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\" />\n      <motion.path d=\"M3 9h18\" variants={cellVariants(0)} />\n      <motion.path d=\"M3 14h18\" variants={cellVariants(0.05)} />\n      <motion.path d=\"M9 4v16\" variants={cellVariants(0.1)} />\n      <motion.path d=\"M15 4v16\" variants={cellVariants(0.15)} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

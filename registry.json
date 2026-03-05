@@ -8972,6 +8972,186 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-filter-x",
+      "type": "registry:component",
+      "title": "Animated Filter X",
+      "description": "Filter clear action with animated dismiss cross.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-filter-x/icon-filter-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-filter-check",
+      "type": "registry:component",
+      "title": "Animated Filter Check",
+      "description": "Filter apply state with confirmation check animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-filter-check/icon-filter-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-layout-kanban",
+      "type": "registry:component",
+      "title": "Animated Layout Kanban",
+      "description": "Kanban board layout with active column motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-layout-kanban/icon-layout-kanban.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-layout-columns",
+      "type": "registry:component",
+      "title": "Animated Layout Columns",
+      "description": "Two-column layout with pane shift animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-layout-columns/icon-layout-columns.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-table-grid",
+      "type": "registry:component",
+      "title": "Animated Table Grid",
+      "description": "Table grid with responsive cell pulse animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-table-grid/icon-table-grid.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-table-rows",
+      "type": "registry:component",
+      "title": "Animated Table Rows",
+      "description": "Table rows view with progressive row highlight.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-table-rows/icon-table-rows.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-tag-plus",
+      "type": "registry:component",
+      "title": "Animated Tag Plus",
+      "description": "Tag add action with plus emphasis animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-tag-plus/icon-tag-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-tag-minus",
+      "type": "registry:component",
+      "title": "Animated Tag Minus",
+      "description": "Tag remove action with minus emphasis animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-tag-minus/icon-tag-minus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-badge-x",
+      "type": "registry:component",
+      "title": "Animated Badge X",
+      "description": "Badge reject state with rotating close mark.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-badge-x/icon-badge-x.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-inbox-dot",
+      "type": "registry:component",
+      "title": "Animated Inbox Dot",
+      "description": "Inbox with unread dot pulse notification.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-inbox-dot/icon-inbox-dot.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-shield",
+      "type": "registry:component",
+      "title": "Animated User Shield",
+      "description": "Protected user profile with shield animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-shield/icon-user-shield.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-user-lock",
+      "type": "registry:component",
+      "title": "Animated User Lock",
+      "description": "User access lock with auth lock pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-user-lock/icon-user-lock.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

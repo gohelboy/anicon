@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-tag-plus",
+  "type": "registry:component",
+  "title": "Animated Tag Plus",
+  "description": "Tag add action with plus emphasis animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-tag-plus/icon-tag-plus.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconTagPlusProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst tagVariants: Variants = {\n  rest: { rotate: 0 },\n  hover: { rotate: [0, -5, 0], transition: { duration: 0.6, ease: \"easeInOut\" } },\n};\n\nconst plusVariants: Variants = {\n  rest: { scale: 1 },\n  hover: { scale: [1, 1.2, 1], transition: { duration: 0.5, ease: \"easeInOut\" } },\n};\n\nexport function IconTagPlus({ size = 24, strokeWidth = 2, className, ...props }: IconTagPlusProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg xmlns=\"http://www.w3.org/2000/svg\" width={size} height={size} viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth={strokeWidth} strokeLinecap=\"round\" strokeLinejoin=\"round\" initial={prefersReducedMotion ? false : \"rest\"} whileHover={prefersReducedMotion ? undefined : \"hover\"} whileTap={prefersReducedMotion ? undefined : \"tap\"} className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()} style={{ overflow: \"visible\" }} {...rest}>\n      <motion.path d=\"M11 4H6a2 2 0 0 0-2 2v5l8 8 8-8-7-7z\" variants={tagVariants} style={{ originX: \"12px\", originY: \"11px\" }} />\n      <path d=\"M7.5 7.5h.01\" />\n      <motion.path d=\"M14 8v4\" variants={plusVariants} />\n      <motion.path d=\"M12 10h4\" variants={plusVariants} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

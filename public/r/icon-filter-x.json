@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-filter-x",
+  "type": "registry:component",
+  "title": "Animated Filter X",
+  "description": "Filter clear action with animated dismiss cross.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-filter-x/icon-filter-x.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconFilterXProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst funnelVariants: Variants = {\n  rest: { y: 0 },\n  hover: { y: [0, -1, 0], transition: { duration: 0.6, ease: \"easeInOut\" } },\n};\n\nconst xVariants: Variants = {\n  rest: { rotate: 0 },\n  hover: { rotate: [0, 90], transition: { duration: 0.35, ease: \"easeInOut\" } },\n};\n\nexport function IconFilterX({ size = 24, strokeWidth = 2, className, ...props }: IconFilterXProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg xmlns=\"http://www.w3.org/2000/svg\" width={size} height={size} viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth={strokeWidth} strokeLinecap=\"round\" strokeLinejoin=\"round\" initial={prefersReducedMotion ? false : \"rest\"} whileHover={prefersReducedMotion ? undefined : \"hover\"} whileTap={prefersReducedMotion ? undefined : \"tap\"} className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()} style={{ overflow: \"visible\" }} {...rest}>\n      <motion.path d=\"M4 5h16l-6 7v6l-4-2v-4Z\" variants={funnelVariants} />\n      <motion.path d=\"m16 9 4 4\" variants={xVariants} style={{ originX: \"18px\", originY: \"11px\" }} />\n      <motion.path d=\"m20 9-4 4\" variants={xVariants} style={{ originX: \"18px\", originY: \"11px\" }} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

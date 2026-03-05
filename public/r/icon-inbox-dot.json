@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-inbox-dot",
+  "type": "registry:component",
+  "title": "Animated Inbox Dot",
+  "description": "Inbox with unread dot pulse notification.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-inbox-dot/icon-inbox-dot.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconInboxDotProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst inboxVariants: Variants = {\n  rest: { y: 0 },\n  hover: { y: [0, -1.2, 0], transition: { duration: 0.6, ease: \"easeInOut\" } },\n};\n\nconst dotVariants: Variants = {\n  rest: { scale: 1, opacity: 1 },\n  hover: { scale: [1, 1.3, 1], opacity: [0.6, 1, 0.6], transition: { duration: 0.8, repeat: Infinity, ease: \"easeInOut\" } },\n};\n\nexport function IconInboxDot({ size = 24, strokeWidth = 2, className, ...props }: IconInboxDotProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg xmlns=\"http://www.w3.org/2000/svg\" width={size} height={size} viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth={strokeWidth} strokeLinecap=\"round\" strokeLinejoin=\"round\" initial={prefersReducedMotion ? false : \"rest\"} whileHover={prefersReducedMotion ? undefined : \"hover\"} whileTap={prefersReducedMotion ? undefined : \"tap\"} className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()} style={{ overflow: \"visible\" }} {...rest}>\n      <motion.path d=\"M4 6h16v10a2 2 0 0 1-2 2h-4l-2-2-2 2H6a2 2 0 0 1-2-2z\" variants={inboxVariants} />\n      <motion.circle cx=\"18\" cy=\"6\" r=\"2\" variants={dotVariants} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

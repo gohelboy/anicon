@@ -628,6 +628,18 @@ import { IconPin } from "@/registry/default/icon-pin/icon-pin";
 import { IconPinOff } from "@/registry/default/icon-pin-off/icon-pin-off";
 import { IconShieldLock } from "@/registry/default/icon-shield-lock/icon-shield-lock";
 import { IconNotificationDot } from "@/registry/default/icon-notification-dot/icon-notification-dot";
+import { IconFilterX } from "@/registry/default/icon-filter-x/icon-filter-x";
+import { IconFilterCheck } from "@/registry/default/icon-filter-check/icon-filter-check";
+import { IconLayoutKanban } from "@/registry/default/icon-layout-kanban/icon-layout-kanban";
+import { IconLayoutColumns } from "@/registry/default/icon-layout-columns/icon-layout-columns";
+import { IconTableGrid } from "@/registry/default/icon-table-grid/icon-table-grid";
+import { IconTableRows } from "@/registry/default/icon-table-rows/icon-table-rows";
+import { IconTagPlus } from "@/registry/default/icon-tag-plus/icon-tag-plus";
+import { IconTagMinus } from "@/registry/default/icon-tag-minus/icon-tag-minus";
+import { IconBadgeX } from "@/registry/default/icon-badge-x/icon-badge-x";
+import { IconInboxDot } from "@/registry/default/icon-inbox-dot/icon-inbox-dot";
+import { IconUserShield } from "@/registry/default/icon-user-shield/icon-user-shield";
+import { IconUserLock } from "@/registry/default/icon-user-lock/icon-user-lock";
 export const iconsRegistry = [
   {
     name: "icon-heart",
@@ -4814,10 +4826,96 @@ export const iconsRegistry = [
     color: "text-orange-300",
     description: "Notification bell with unread status pulse",
     tags: ["notification", "bell", "unread", "alert", "badge"],
+  },
+  {
+    name: "icon-filter-x",
+    component: IconFilterX,
+    color: "text-zinc-300",
+    description: "Filter clear action with animated dismiss cross",
+    tags: ["filter", "clear", "remove", "search", "web"],
+  },
+  {
+    name: "icon-filter-check",
+    component: IconFilterCheck,
+    color: "text-emerald-300",
+    description: "Filter apply state with confirmation check animation",
+    tags: ["filter", "applied", "check", "refine", "results"],
+  },
+  {
+    name: "icon-layout-kanban",
+    component: IconLayoutKanban,
+    color: "text-violet-300",
+    description: "Kanban board layout with active column motion",
+    tags: ["kanban", "board", "layout", "tasks", "productivity"],
+  },
+  {
+    name: "icon-layout-columns",
+    component: IconLayoutColumns,
+    color: "text-sky-300",
+    description: "Two-column layout with pane shift animation",
+    tags: ["columns", "layout", "split", "dashboard", "ui"],
+  },
+  {
+    name: "icon-table-grid",
+    component: IconTableGrid,
+    color: "text-white",
+    description: "Table grid with responsive cell pulse animation",
+    tags: ["table", "grid", "data", "rows", "columns"],
+  },
+  {
+    name: "icon-table-rows",
+    component: IconTableRows,
+    color: "text-white",
+    description: "Table rows view with progressive row highlight",
+    tags: ["table", "rows", "list", "data", "view"],
+  },
+  {
+    name: "icon-tag-plus",
+    component: IconTagPlus,
+    color: "text-orange-300",
+    description: "Tag add action with plus emphasis animation",
+    tags: ["tag", "add", "label", "category", "metadata"],
+  },
+  {
+    name: "icon-tag-minus",
+    component: IconTagMinus,
+    color: "text-zinc-300",
+    description: "Tag remove action with minus emphasis animation",
+    tags: ["tag", "remove", "label", "category", "metadata"],
+  },
+  {
+    name: "icon-badge-x",
+    component: IconBadgeX,
+    color: "text-rose-300",
+    description: "Badge reject state with rotating close mark",
+    tags: ["badge", "reject", "close", "status", "validation"],
+  },
+  {
+    name: "icon-inbox-dot",
+    component: IconInboxDot,
+    color: "text-blue-300",
+    description: "Inbox with unread dot pulse notification",
+    tags: ["inbox", "unread", "mail", "dot", "notification"],
+  },
+  {
+    name: "icon-user-shield",
+    component: IconUserShield,
+    color: "text-cyan-300",
+    description: "Protected user profile with shield animation",
+    tags: ["user", "shield", "security", "account", "protection"],
+  },
+  {
+    name: "icon-user-lock",
+    component: IconUserLock,
+    color: "text-indigo-300",
+    description: "User access lock with auth lock pulse",
+    tags: ["user", "lock", "auth", "permissions", "security"],
   },
 ] as const;
 
 export type IconEntry = (typeof iconsRegistry)[number];
+
+
 
 
 

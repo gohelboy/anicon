@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-user-shield",
+  "type": "registry:component",
+  "title": "Animated User Shield",
+  "description": "Protected user profile with shield animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-user-shield/icon-user-shield.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconUserShieldProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst userVariants: Variants = {\n  rest: { y: 0 },\n  hover: { y: [0, -1, 0], transition: { duration: 0.6, ease: \"easeInOut\" } },\n};\n\nconst shieldVariants: Variants = {\n  rest: { scale: 1 },\n  hover: { scale: [1, 1.08, 1], transition: { duration: 0.65, ease: \"easeInOut\" } },\n};\n\nexport function IconUserShield({ size = 24, strokeWidth = 2, className, ...props }: IconUserShieldProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg xmlns=\"http://www.w3.org/2000/svg\" width={size} height={size} viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" strokeWidth={strokeWidth} strokeLinecap=\"round\" strokeLinejoin=\"round\" initial={prefersReducedMotion ? false : \"rest\"} whileHover={prefersReducedMotion ? undefined : \"hover\"} whileTap={prefersReducedMotion ? undefined : \"tap\"} className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()} style={{ overflow: \"visible\" }} {...rest}>\n      <motion.circle cx=\"8\" cy=\"8\" r=\"3\" variants={userVariants} />\n      <motion.path d=\"M3 18a5 5 0 0 1 10 0\" variants={userVariants} />\n      <motion.path d=\"M16 10 12.5 12v3.5c0 2.7 1.8 4.3 3.5 5 1.7-.7 3.5-2.3 3.5-5V12z\" variants={shieldVariants} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}
