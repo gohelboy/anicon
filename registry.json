@@ -8822,6 +8822,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-filter",
+      "type": "registry:component",
+      "title": "Animated Filter",
+      "description": "Filter funnel with concise refine animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-filter/icon-filter.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-sort",
+      "type": "registry:component",
+      "title": "Animated Sort",
+      "description": "Sort arrows with bidirectional motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-sort/icon-sort.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-grid-2x2",
+      "type": "registry:component",
+      "title": "Animated Grid 2x2",
+      "description": "Grid 2x2 layout with interactive cell pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-grid-2x2/icon-grid-2x2.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-list-bullets",
+      "type": "registry:component",
+      "title": "Animated List Bullets",
+      "description": "Bulleted list with row highlight animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-list-bullets/icon-list-bullets.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bookmark-plus",
+      "type": "registry:component",
+      "title": "Animated Bookmark Plus",
+      "description": "Bookmark add action with rotating plus cue.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bookmark-plus/icon-bookmark-plus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-bookmark-check",
+      "type": "registry:component",
+      "title": "Animated Bookmark Check",
+      "description": "Bookmark saved state with check confirm animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-bookmark-check/icon-bookmark-check.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pin",
+      "type": "registry:component",
+      "title": "Animated Pin",
+      "description": "Pin action with subtle tack bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pin/icon-pin.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-pin-off",
+      "type": "registry:component",
+      "title": "Animated Pin Off",
+      "description": "Unpin action with clean slash reveal.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-pin-off/icon-pin-off.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-shield-lock",
+      "type": "registry:component",
+      "title": "Animated Shield Lock",
+      "description": "Security shield with lock reinforcement animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-shield-lock/icon-shield-lock.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-notification-dot",
+      "type": "registry:component",
+      "title": "Animated Notification Dot",
+      "description": "Notification bell with unread status pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-notification-dot/icon-notification-dot.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

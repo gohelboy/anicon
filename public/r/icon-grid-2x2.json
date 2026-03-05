@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-grid-2x2",
+  "type": "registry:component",
+  "title": "Animated Grid 2x2",
+  "description": "Grid 2x2 layout with interactive cell pulse.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-grid-2x2/icon-grid-2x2.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconGrid2x2Props extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst cellVariants = (delay: number): Variants => ({\n  rest: { scale: 1 },\n  hover: {\n    scale: [1, 1.08, 1],\n    transition: { duration: 0.35, delay, ease: \"easeInOut\" },\n  },\n});\n\nexport function IconGrid2x2({ size = 24, strokeWidth = 2, className, ...props }: IconGrid2x2Props) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.rect x=\"4\" y=\"4\" width=\"7\" height=\"7\" rx=\"1\" variants={cellVariants(0)} />\n      <motion.rect x=\"13\" y=\"4\" width=\"7\" height=\"7\" rx=\"1\" variants={cellVariants(0.05)} />\n      <motion.rect x=\"4\" y=\"13\" width=\"7\" height=\"7\" rx=\"1\" variants={cellVariants(0.1)} />\n      <motion.rect x=\"13\" y=\"13\" width=\"7\" height=\"7\" rx=\"1\" variants={cellVariants(0.15)} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

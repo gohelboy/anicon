@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-list-bullets",
+  "type": "registry:component",
+  "title": "Animated List Bullets",
+  "description": "Bulleted list with row highlight animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-list-bullets/icon-list-bullets.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconListBulletsProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst rowVariants = (delay: number): Variants => ({\n  rest: { x: 0 },\n  hover: {\n    x: [0, 1.5, 0],\n    transition: { duration: 0.4, delay, ease: \"easeInOut\" },\n  },\n});\n\nexport function IconListBullets({ size = 24, strokeWidth = 2, className, ...props }: IconListBulletsProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.path d=\"M5 7h.01\" variants={rowVariants(0)} />\n      <motion.path d=\"M9 7h10\" variants={rowVariants(0)} />\n      <motion.path d=\"M5 12h.01\" variants={rowVariants(0.05)} />\n      <motion.path d=\"M9 12h10\" variants={rowVariants(0.05)} />\n      <motion.path d=\"M5 17h.01\" variants={rowVariants(0.1)} />\n      <motion.path d=\"M9 17h10\" variants={rowVariants(0.1)} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

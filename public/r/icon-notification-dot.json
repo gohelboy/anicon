@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-notification-dot",
+  "type": "registry:component",
+  "title": "Animated Notification Dot",
+  "description": "Notification bell with unread status pulse.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-notification-dot/icon-notification-dot.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconNotificationDotProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst bellVariants: Variants = {\n  rest: { rotate: 0 },\n  hover: {\n    rotate: [0, -10, 10, -7, 7, 0],\n    transition: { duration: 0.55, ease: \"easeInOut\" },\n  },\n};\n\nconst dotVariants: Variants = {\n  rest: { scale: 1, opacity: 1 },\n  hover: {\n    scale: [1, 1.25, 1],\n    opacity: [0.7, 1, 0.7],\n    transition: { duration: 0.8, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconNotificationDot({ size = 24, strokeWidth = 2, className, ...props }: IconNotificationDotProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.g variants={bellVariants} style={{ originX: \"12px\", originY: \"8px\" }}>\n        <path d=\"M6 9a6 6 0 0 1 12 0c0 6 2.5 8 2.5 8h-17S6 15 6 9\" />\n        <path d=\"M10 20a2 2 0 0 0 4 0\" />\n      </motion.g>\n      <motion.circle cx=\"18\" cy=\"6\" r=\"2\" variants={dotVariants} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

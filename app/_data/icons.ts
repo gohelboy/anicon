@@ -618,6 +618,16 @@ import { IconHarp } from "@/registry/default/icon-harp/icon-harp";
 import { IconPaperBoat } from "@/registry/default/icon-paper-boat/icon-paper-boat";
 import { IconYoyo } from "@/registry/default/icon-yoyo/icon-yoyo";
 import { IconSnowglobe } from "@/registry/default/icon-snowglobe/icon-snowglobe";
+import { IconFilter } from "@/registry/default/icon-filter/icon-filter";
+import { IconSort } from "@/registry/default/icon-sort/icon-sort";
+import { IconGrid2x2 } from "@/registry/default/icon-grid-2x2/icon-grid-2x2";
+import { IconListBullets } from "@/registry/default/icon-list-bullets/icon-list-bullets";
+import { IconBookmarkPlus } from "@/registry/default/icon-bookmark-plus/icon-bookmark-plus";
+import { IconBookmarkCheck } from "@/registry/default/icon-bookmark-check/icon-bookmark-check";
+import { IconPin } from "@/registry/default/icon-pin/icon-pin";
+import { IconPinOff } from "@/registry/default/icon-pin-off/icon-pin-off";
+import { IconShieldLock } from "@/registry/default/icon-shield-lock/icon-shield-lock";
+import { IconNotificationDot } from "@/registry/default/icon-notification-dot/icon-notification-dot";
 export const iconsRegistry = [
   {
     name: "icon-heart",
@@ -4735,6 +4745,79 @@ export const iconsRegistry = [
     description: "Snowglobe shake with drifting snow particles",
     tags: ["snowglobe", "winter", "snow", "holiday", "glass"],
   },
+  {
+    name: "icon-filter",
+    component: IconFilter,
+    color: "text-white",
+    description: "Filter funnel with concise refine animation",
+    tags: ["filter", "refine", "search", "web", "table"],
+  },
+  {
+    name: "icon-sort",
+    component: IconSort,
+    color: "text-white",
+    description: "Sort arrows with bidirectional motion",
+    tags: ["sort", "order", "ascending", "descending", "list"],
+  },
+  {
+    name: "icon-grid-2x2",
+    component: IconGrid2x2,
+    color: "text-white",
+    description: "Grid 2x2 layout with interactive cell pulse",
+    tags: ["grid", "layout", "view", "dashboard", "cards"],
+  },
+  {
+    name: "icon-list-bullets",
+    component: IconListBullets,
+    color: "text-white",
+    description: "Bulleted list with row highlight animation",
+    tags: ["list", "bullets", "menu", "items", "content"],
+  },
+  {
+    name: "icon-bookmark-plus",
+    component: IconBookmarkPlus,
+    color: "text-yellow-300",
+    description: "Bookmark add action with rotating plus cue",
+    tags: ["bookmark", "save", "add", "favorite", "web"],
+  },
+  {
+    name: "icon-bookmark-check",
+    component: IconBookmarkCheck,
+    color: "text-emerald-300",
+    description: "Bookmark saved state with check confirm animation",
+    tags: ["bookmark", "saved", "check", "favorite", "state"],
+  },
+  {
+    name: "icon-pin",
+    component: IconPin,
+    color: "text-rose-300",
+    description: "Pin action with subtle tack bounce",
+    tags: ["pin", "pinned", "important", "sticky", "ui"],
+  },
+  {
+    name: "icon-pin-off",
+    component: IconPinOff,
+    color: "text-zinc-300",
+    description: "Unpin action with clean slash reveal",
+    tags: ["pin", "unpin", "off", "remove", "ui"],
+  },
+  {
+    name: "icon-shield-lock",
+    component: IconShieldLock,
+    color: "text-cyan-300",
+    description: "Security shield with lock reinforcement animation",
+    tags: ["shield", "lock", "security", "privacy", "auth"],
+  },
+  {
+    name: "icon-notification-dot",
+    component: IconNotificationDot,
+    color: "text-orange-300",
+    description: "Notification bell with unread status pulse",
+    tags: ["notification", "bell", "unread", "alert", "badge"],
+  },
 ] as const;
 
 export type IconEntry = (typeof iconsRegistry)[number];
+
+
+
