@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-snowglobe",
+  "type": "registry:component",
+  "title": "Animated Snowglobe",
+  "description": "Snowglobe shake with drifting snow particles.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-snowglobe/icon-snowglobe.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconSnowglobeProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst globeVariants: Variants = {\n  rest: { rotate: 0 },\n  hover: {\n    rotate: [0, -5, 5, -3, 3, 0],\n    transition: { duration: 0.7, ease: \"easeInOut\" },\n  },\n};\n\nconst flakeVariants = (delay: number): Variants => ({\n  rest: { y: 0, opacity: 1 },\n  hover: {\n    y: [0, 2, -1, 1],\n    opacity: [1, 0.5, 1],\n    transition: { duration: 1.1, delay, repeat: Infinity, ease: \"easeInOut\" },\n  },\n});\n\nexport function IconSnowglobe({ size = 24, strokeWidth = 2, className, ...props }: IconSnowglobeProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.g variants={globeVariants} style={{ originX: \"12px\", originY: \"12px\" }}>\n        <path d=\"M5 14a7 7 0 0 1 14 0\" />\n        <path d=\"M7 14h10\" />\n        <path d=\"M8 20h8\" />\n        <path d=\"M6 20h12\" />\n      </motion.g>\n      <motion.path d=\"M10 11h.01\" variants={flakeVariants(0)} />\n      <motion.path d=\"M12 9h.01\" variants={flakeVariants(0.15)} />\n      <motion.path d=\"M14 11h.01\" variants={flakeVariants(0.3)} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -8672,6 +8672,156 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "icon-lotus",
+      "type": "registry:component",
+      "title": "Animated Lotus",
+      "description": "Lotus bloom with opening petal animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-lotus/icon-lotus.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-keyhole",
+      "type": "registry:component",
+      "title": "Animated Keyhole",
+      "description": "Keyhole lock with subtle security pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-keyhole/icon-keyhole.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-katana",
+      "type": "registry:component",
+      "title": "Animated Katana",
+      "description": "Katana blade with sharp slash swing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-katana/icon-katana.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-campfire",
+      "type": "registry:component",
+      "title": "Animated Campfire",
+      "description": "Campfire flame with natural flicker motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-campfire/icon-campfire.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-drone",
+      "type": "registry:component",
+      "title": "Animated Drone",
+      "description": "Drone quadcopter with spinning propeller animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-drone/icon-drone.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-ufo-beam",
+      "type": "registry:component",
+      "title": "Animated Ufo Beam",
+      "description": "UFO craft with pulsing tractor beam effect.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-ufo-beam/icon-ufo-beam.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-harp",
+      "type": "registry:component",
+      "title": "Animated Harp",
+      "description": "Harp with vibrating strings animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-harp/icon-harp.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-paper-boat",
+      "type": "registry:component",
+      "title": "Animated Paper Boat",
+      "description": "Paper boat floating with wave motion.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-paper-boat/icon-paper-boat.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-yoyo",
+      "type": "registry:component",
+      "title": "Animated Yoyo",
+      "description": "Yoyo drop-and-return string animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-yoyo/icon-yoyo.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-snowglobe",
+      "type": "registry:component",
+      "title": "Animated Snowglobe",
+      "description": "Snowglobe shake with drifting snow particles.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-snowglobe/icon-snowglobe.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }

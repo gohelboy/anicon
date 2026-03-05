@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-paper-boat",
+  "type": "registry:component",
+  "title": "Animated Paper Boat",
+  "description": "Paper boat floating with wave motion.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-paper-boat/icon-paper-boat.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconPaperBoatProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst boatVariants: Variants = {\n  rest: { rotate: 0, y: 0 },\n  hover: {\n    rotate: [0, -5, 5, -3, 0],\n    y: [0, -1, 1, 0],\n    transition: { duration: 1.1, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nconst waveVariants: Variants = {\n  rest: { pathLength: 1, opacity: 1 },\n  hover: {\n    pathLength: [0.4, 1, 0.4],\n    opacity: [0.6, 1, 0.6],\n    transition: { duration: 1.1, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconPaperBoat({ size = 24, strokeWidth = 2, className, ...props }: IconPaperBoatProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.g variants={boatVariants} style={{ originX: \"12px\", originY: \"14px\" }}>\n        <path d=\"m4 14 8-7 8 7Z\" />\n        <path d=\"m12 7 1.6 7H10.4Z\" />\n      </motion.g>\n      <motion.path d=\"M4 18c2-1 4 1 6 0s4-1 6 0 4-1 4-1\" variants={waveVariants} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

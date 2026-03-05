@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-lotus",
+  "type": "registry:component",
+  "title": "Animated Lotus",
+  "description": "Lotus bloom with opening petal animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-lotus/icon-lotus.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconLotusProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst petalVariants: Variants = {\n  rest: { scale: 1, y: 0 },\n  hover: {\n    scale: [0.95, 1.08, 1],\n    y: [1, -1, 0],\n    transition: { duration: 0.9, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconLotus({ size = 24, strokeWidth = 2, className, ...props }: IconLotusProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.g variants={petalVariants} style={{ originX: \"12px\", originY: \"15px\" }}>\n        <path d=\"M12 7c1.5 2.2 1.5 4.8 0 7-1.5-2.2-1.5-4.8 0-7Z\" />\n        <path d=\"M9 9c1.9 1.3 2.9 3.2 3 5.4-2.2-.3-3.9-1.5-5-3.4.5-1 1.1-1.6 2-2Z\" />\n        <path d=\"M15 9c-1.9 1.3-2.9 3.2-3 5.4 2.2-.3 3.9-1.5 5-3.4-.5-1-1.1-1.6-2-2Z\" />\n      </motion.g>\n      <path d=\"M6 18c2.5-1.2 9.5-1.2 12 0\" />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

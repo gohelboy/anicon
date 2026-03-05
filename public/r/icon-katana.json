@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-katana",
+  "type": "registry:component",
+  "title": "Animated Katana",
+  "description": "Katana blade with sharp slash swing animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-katana/icon-katana.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconKatanaProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst bladeVariants: Variants = {\n  rest: { rotate: 0, x: 0 },\n  hover: {\n    rotate: [0, -14, 0],\n    x: [0, -1.5, 0],\n    transition: { duration: 0.45, ease: \"easeInOut\" },\n  },\n  tap: {\n    rotate: -18,\n    x: -2,\n    transition: { duration: 0.12, ease: \"easeOut\" },\n  },\n};\n\nexport function IconKatana({ size = 24, strokeWidth = 2, className, ...props }: IconKatanaProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.g variants={bladeVariants} style={{ originX: \"18px\", originY: \"18px\" }}>\n        <path d=\"m4 6 10 10\" />\n        <path d=\"m6 4 12 12\" />\n        <path d=\"m15 15 3-3 2 2-3 3\" />\n        <path d=\"m18 18 2 2\" />\n      </motion.g>\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

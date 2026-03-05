@@ -608,6 +608,16 @@ import { IconMoonStars } from "@/registry/default/icon-moon-stars/icon-moon-star
 import { IconScroll } from "@/registry/default/icon-scroll/icon-scroll";
 import { IconMeteorShower } from "@/registry/default/icon-meteor-shower/icon-meteor-shower";
 import { IconLighthouseBeam } from "@/registry/default/icon-lighthouse-beam/icon-lighthouse-beam";
+import { IconLotus } from "@/registry/default/icon-lotus/icon-lotus";
+import { IconKeyhole } from "@/registry/default/icon-keyhole/icon-keyhole";
+import { IconKatana } from "@/registry/default/icon-katana/icon-katana";
+import { IconCampfire } from "@/registry/default/icon-campfire/icon-campfire";
+import { IconDrone } from "@/registry/default/icon-drone/icon-drone";
+import { IconUfoBeam } from "@/registry/default/icon-ufo-beam/icon-ufo-beam";
+import { IconHarp } from "@/registry/default/icon-harp/icon-harp";
+import { IconPaperBoat } from "@/registry/default/icon-paper-boat/icon-paper-boat";
+import { IconYoyo } from "@/registry/default/icon-yoyo/icon-yoyo";
+import { IconSnowglobe } from "@/registry/default/icon-snowglobe/icon-snowglobe";
 export const iconsRegistry = [
   {
     name: "icon-heart",
@@ -4654,6 +4664,76 @@ export const iconsRegistry = [
     color: "text-blue-300",
     description: "Lighthouse with sweeping beam and tower bob animation",
     tags: ["lighthouse", "beam", "ocean", "signal", "coast"],
+  },
+  {
+    name: "icon-lotus",
+    component: IconLotus,
+    color: "text-pink-300",
+    description: "Lotus bloom with opening petal animation",
+    tags: ["lotus", "flower", "zen", "nature", "bloom"],
+  },
+  {
+    name: "icon-keyhole",
+    component: IconKeyhole,
+    color: "text-zinc-300",
+    description: "Keyhole lock with subtle security pulse",
+    tags: ["keyhole", "lock", "security", "privacy", "auth"],
+  },
+  {
+    name: "icon-katana",
+    component: IconKatana,
+    color: "text-slate-300",
+    description: "Katana blade with sharp slash swing animation",
+    tags: ["katana", "sword", "blade", "combat", "samurai"],
+  },
+  {
+    name: "icon-campfire",
+    component: IconCampfire,
+    color: "text-amber-400",
+    description: "Campfire flame with natural flicker motion",
+    tags: ["campfire", "fire", "camp", "outdoor", "warmth"],
+  },
+  {
+    name: "icon-drone",
+    component: IconDrone,
+    color: "text-cyan-300",
+    description: "Drone quadcopter with spinning propeller animation",
+    tags: ["drone", "uav", "flight", "aerial", "tech"],
+  },
+  {
+    name: "icon-ufo-beam",
+    component: IconUfoBeam,
+    color: "text-violet-300",
+    description: "UFO craft with pulsing tractor beam effect",
+    tags: ["ufo", "alien", "beam", "space", "scifi"],
+  },
+  {
+    name: "icon-harp",
+    component: IconHarp,
+    color: "text-amber-200",
+    description: "Harp with vibrating strings animation",
+    tags: ["harp", "music", "instrument", "strings", "melody"],
+  },
+  {
+    name: "icon-paper-boat",
+    component: IconPaperBoat,
+    color: "text-blue-300",
+    description: "Paper boat floating with wave motion",
+    tags: ["paper-boat", "boat", "origami", "water", "float"],
+  },
+  {
+    name: "icon-yoyo",
+    component: IconYoyo,
+    color: "text-fuchsia-300",
+    description: "Yoyo drop-and-return string animation",
+    tags: ["yoyo", "toy", "string", "play", "trick"],
+  },
+  {
+    name: "icon-snowglobe",
+    component: IconSnowglobe,
+    color: "text-sky-200",
+    description: "Snowglobe shake with drifting snow particles",
+    tags: ["snowglobe", "winter", "snow", "holiday", "glass"],
   },
 ] as const;
 

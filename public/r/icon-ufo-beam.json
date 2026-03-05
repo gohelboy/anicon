@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-ufo-beam",
+  "type": "registry:component",
+  "title": "Animated Ufo Beam",
+  "description": "UFO craft with pulsing tractor beam effect.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-ufo-beam/icon-ufo-beam.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconUfoBeamProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst ufoVariants: Variants = {\n  rest: { y: 0 },\n  hover: {\n    y: [0, -2, 0],\n    transition: { duration: 1.2, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nconst beamVariants: Variants = {\n  rest: { opacity: 0.5, scaleY: 0.85 },\n  hover: {\n    opacity: [0.4, 0.9, 0.4],\n    scaleY: [0.8, 1.15, 0.8],\n    transition: { duration: 0.9, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconUfoBeam({ size = 24, strokeWidth = 2, className, ...props }: IconUfoBeamProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.path d=\"M8 10a4 2 0 0 1 8 0\" variants={ufoVariants} />\n      <motion.path d=\"M5 10h14\" variants={ufoVariants} />\n      <path d=\"M7 10c0 2 2 3 5 3s5-1 5-3\" />\n      <motion.path d=\"M12 13v6\" variants={beamVariants} style={{ originX: \"12px\", originY: \"13px\" }} />\n      <motion.path d=\"M10 19h4\" variants={beamVariants} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

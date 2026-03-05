@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-yoyo",
+  "type": "registry:component",
+  "title": "Animated Yoyo",
+  "description": "Yoyo drop-and-return string animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-yoyo/icon-yoyo.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconYoyoProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst stringVariants: Variants = {\n  rest: { pathLength: 1 },\n  hover: {\n    pathLength: [0.6, 1, 0.6],\n    transition: { duration: 0.9, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nconst yoyoVariants: Variants = {\n  rest: { y: 0 },\n  hover: {\n    y: [0, 4, 0],\n    transition: { duration: 0.9, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconYoyo({ size = 24, strokeWidth = 2, className, ...props }: IconYoyoProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.path d=\"M12 4c0 2 2 2 2 4\" variants={stringVariants} />\n      <motion.path d=\"M14 8v4\" variants={stringVariants} />\n      <motion.g variants={yoyoVariants}>\n        <circle cx=\"14\" cy=\"14\" r=\"4\" />\n        <circle cx=\"14\" cy=\"14\" r=\"1\" />\n      </motion.g>\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}
