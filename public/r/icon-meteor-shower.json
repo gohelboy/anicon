@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-meteor-shower",
+  "type": "registry:component",
+  "title": "Animated Meteor Shower",
+  "description": "Meteor shower with diagonal streak and star shimmer.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-meteor-shower/icon-meteor-shower.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconMeteorShowerProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst meteorVariants = (delay: number): Variants => ({\n  rest: { x: 0, y: 0, opacity: 1 },\n  hover: {\n    x: [-2, 2],\n    y: [-2, 2],\n    opacity: [0, 1, 0],\n    transition: {\n      duration: 1,\n      delay,\n      repeat: Infinity,\n      ease: \"easeInOut\",\n    },\n  },\n});\n\nconst starVariants: Variants = {\n  rest: { scale: 1 },\n  hover: {\n    scale: [1, 1.2, 1],\n    transition: { duration: 0.9, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconMeteorShower({\n  size = 24,\n  strokeWidth = 2,\n  className,\n  ...props\n}: IconMeteorShowerProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.path d=\"m16 4 4 4\" variants={meteorVariants(0)} />\n      <motion.path d=\"m13 6 4 4\" variants={meteorVariants(0.2)} />\n      <motion.path d=\"m9 10 6 6\" variants={meteorVariants(0.35)} />\n      <motion.g variants={starVariants}>\n        <path d=\"M4 5h.01\" />\n        <path d=\"M7 8h.01\" />\n        <path d=\"M5 11h.01\" />\n      </motion.g>\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

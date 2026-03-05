@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-fireworks",
+  "type": "registry:component",
+  "title": "Animated Fireworks",
+  "description": "Fireworks burst with sparkling expansion animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-fireworks/icon-fireworks.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconFireworksProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst burstVariants: Variants = {\n  rest: { scale: 1, opacity: 1 },\n  hover: {\n    scale: [0.8, 1.25, 1],\n    opacity: [0.5, 1, 0.8],\n    transition: { duration: 0.8, repeat: Infinity, ease: \"easeOut\" },\n  },\n};\n\nconst sparkVariants: Variants = {\n  rest: { y: 0, opacity: 1 },\n  hover: {\n    y: [0, -2, 0],\n    opacity: [1, 0.4, 1],\n    transition: { duration: 0.7, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconFireworks({\n  size = 24,\n  strokeWidth = 2,\n  className,\n  ...props\n}: IconFireworksProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.g variants={burstVariants} style={{ originX: \"8px\", originY: \"8px\" }}>\n        <path d=\"M8 3v3\" />\n        <path d=\"M8 10v3\" />\n        <path d=\"M3 8h3\" />\n        <path d=\"M10 8h3\" />\n        <path d=\"m4.5 4.5 2.1 2.1\" />\n        <path d=\"m9.4 9.4 2.1 2.1\" />\n        <path d=\"m11.5 4.5-2.1 2.1\" />\n        <path d=\"m6.6 9.4-2.1 2.1\" />\n      </motion.g>\n      <motion.g variants={sparkVariants}>\n        <path d=\"M16 13v2\" />\n        <path d=\"M16 18v2\" />\n        <path d=\"M14 16h-2\" />\n        <path d=\"M18 16h2\" />\n      </motion.g>\n      <path d=\"m6 20 2-3\" />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

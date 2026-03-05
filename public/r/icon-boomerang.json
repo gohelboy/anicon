@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-boomerang",
+  "type": "registry:component",
+  "title": "Animated Boomerang",
+  "description": "Boomerang with curved throw-and-return swing animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-boomerang/icon-boomerang.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconBoomerangProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst boomerangVariants: Variants = {\n  rest: { rotate: 0, scale: 1 },\n  hover: {\n    rotate: [0, -24, 18, -10, 0],\n    scale: [1, 1.04, 1],\n    transition: { duration: 0.7, ease: \"easeInOut\" },\n  },\n  tap: {\n    rotate: -28,\n    scale: 0.96,\n    transition: { duration: 0.15, ease: \"easeOut\" },\n  },\n};\n\nexport function IconBoomerang({\n  size = 24,\n  strokeWidth = 2,\n  className,\n  ...props\n}: IconBoomerangProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.g variants={boomerangVariants} style={{ originX: \"12px\", originY: \"12px\" }}>\n        <path d=\"m6 9 5-5 3 3-5 5\" />\n        <path d=\"m10 13 7-7 3 3-7 7\" />\n      </motion.g>\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-teacup",
+  "type": "registry:component",
+  "title": "Animated Teacup",
+  "description": "Teacup with rising steam and warm cup bounce.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-teacup/icon-teacup.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconTeacupProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst steamVariants: Variants = {\n  rest: { y: 0, opacity: 1 },\n  hover: {\n    y: [-1, -4, -1],\n    opacity: [0.7, 1, 0.7],\n    transition: { duration: 1.2, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nconst cupVariants: Variants = {\n  rest: { y: 0 },\n  hover: {\n    y: [0, -1, 0],\n    transition: { duration: 0.8, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconTeacup({\n  size = 24,\n  strokeWidth = 2,\n  className,\n  ...props\n}: IconTeacupProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.path d=\"M8 4c0 1.4-1 1.4-1 2.8\" variants={steamVariants} />\n      <motion.path d=\"M12 4c0 1.4-1 1.4-1 2.8\" variants={steamVariants} />\n      <motion.g variants={cupVariants}>\n        <path d=\"M4 11h12v2a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z\" />\n        <path d=\"M16 12h2a2 2 0 0 1 0 4h-2\" />\n        <path d=\"M3 20h15\" />\n      </motion.g>\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

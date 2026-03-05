@@ -1,4 +1,4 @@
-import { IconAArrowDown } from "@/registry/default/icon-a-arrow-down/icon-a-arrow-down";
+﻿import { IconAArrowDown } from "@/registry/default/icon-a-arrow-down/icon-a-arrow-down";
 import { IconAArrowUp } from "@/registry/default/icon-a-arrow-up/icon-a-arrow-up";
 import { IconALargeSmall } from "@/registry/default/icon-a-large-small/icon-a-large-small";
 import { IconAccessibility } from "@/registry/default/icon-accessibility/icon-accessibility";
@@ -598,7 +598,16 @@ import { IconRadar } from "@/registry/default/icon-radar/icon-radar";
 import { IconPlaneTakeoff } from "@/registry/default/icon-plane-takeoff/icon-plane-takeoff";
 import { IconVenetianMask } from "@/registry/default/icon-venetian-mask/icon-venetian-mask";
 
-
+import { IconBoomerang } from "@/registry/default/icon-boomerang/icon-boomerang";
+import { IconHourglassFlip } from "@/registry/default/icon-hourglass-flip/icon-hourglass-flip";
+import { IconCompassRose } from "@/registry/default/icon-compass-rose/icon-compass-rose";
+import { IconFireworks } from "@/registry/default/icon-fireworks/icon-fireworks";
+import { IconVinylRecord } from "@/registry/default/icon-vinyl-record/icon-vinyl-record";
+import { IconTeacup } from "@/registry/default/icon-teacup/icon-teacup";
+import { IconMoonStars } from "@/registry/default/icon-moon-stars/icon-moon-stars";
+import { IconScroll } from "@/registry/default/icon-scroll/icon-scroll";
+import { IconMeteorShower } from "@/registry/default/icon-meteor-shower/icon-meteor-shower";
+import { IconLighthouseBeam } from "@/registry/default/icon-lighthouse-beam/icon-lighthouse-beam";
 export const iconsRegistry = [
   {
     name: "icon-heart",
@@ -4575,6 +4584,76 @@ export const iconsRegistry = [
     color: "text-amber-400",
     description: "Venetian mask with mysterious reveal and blinking eyes",
     tags: ["mask", "venetian", "theater", "carnival", "mystery"],
+  },
+  {
+    name: "icon-boomerang",
+    component: IconBoomerang,
+    color: "text-emerald-300",
+    description: "Boomerang with curved throw-and-return swing animation",
+    tags: ["boomerang", "throw", "return", "sport", "arc"],
+  },
+  {
+    name: "icon-hourglass-flip",
+    component: IconHourglassFlip,
+    color: "text-amber-300",
+    description: "Hourglass with smooth flipping and sand drift animation",
+    tags: ["hourglass", "time", "timer", "flip", "sand"],
+  },
+  {
+    name: "icon-compass-rose",
+    component: IconCompassRose,
+    color: "text-cyan-300",
+    description: "Compass rose with orienting rotation and center pulse",
+    tags: ["compass", "rose", "navigation", "direction", "travel"],
+  },
+  {
+    name: "icon-fireworks",
+    component: IconFireworks,
+    color: "text-rose-400",
+    description: "Fireworks burst with sparkling expansion animation",
+    tags: ["fireworks", "celebration", "burst", "festival", "spark"],
+  },
+  {
+    name: "icon-vinyl-record",
+    component: IconVinylRecord,
+    color: "text-zinc-300",
+    description: "Vinyl record with spinning platter and tonearm drop",
+    tags: ["vinyl", "record", "music", "turntable", "audio"],
+  },
+  {
+    name: "icon-teacup",
+    component: IconTeacup,
+    color: "text-orange-300",
+    description: "Teacup with rising steam and warm cup bounce",
+    tags: ["teacup", "tea", "drink", "steam", "cafe"],
+  },
+  {
+    name: "icon-moon-stars",
+    component: IconMoonStars,
+    color: "text-indigo-300",
+    description: "Moon and stars with soft twinkle and crescent tilt",
+    tags: ["moon", "stars", "night", "sleep", "sky"],
+  },
+  {
+    name: "icon-scroll",
+    component: IconScroll,
+    color: "text-yellow-300",
+    description: "Scroll with parchment roll and text reveal animation",
+    tags: ["scroll", "document", "paper", "history", "manuscript"],
+  },
+  {
+    name: "icon-meteor-shower",
+    component: IconMeteorShower,
+    color: "text-sky-300",
+    description: "Meteor shower with diagonal streak and star shimmer",
+    tags: ["meteor", "shower", "space", "comet", "astronomy"],
+  },
+  {
+    name: "icon-lighthouse-beam",
+    component: IconLighthouseBeam,
+    color: "text-blue-300",
+    description: "Lighthouse with sweeping beam and tower bob animation",
+    tags: ["lighthouse", "beam", "ocean", "signal", "coast"],
   },
 ] as const;
 

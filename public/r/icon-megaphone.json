@@ -3,7 +3,7 @@
   "name": "icon-megaphone",
   "type": "registry:component",
   "title": "Animated Megaphone",
-  "description": "Megaphone with shaking announcement blast.",
+  "description": "Megaphone with interactive announcement tilt.",
   "dependencies": [
     "motion"
   ],

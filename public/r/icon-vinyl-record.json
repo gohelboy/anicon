@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-vinyl-record",
+  "type": "registry:component",
+  "title": "Animated Vinyl Record",
+  "description": "Vinyl record with spinning platter and tonearm drop.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-vinyl-record/icon-vinyl-record.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconVinylRecordProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst diskVariants: Variants = {\n  rest: { rotate: 0 },\n  hover: {\n    rotate: 360,\n    transition: { duration: 1.6, repeat: Infinity, ease: \"linear\" },\n  },\n};\n\nconst needleVariants: Variants = {\n  rest: { rotate: 0 },\n  hover: {\n    rotate: [0, 10, 7],\n    transition: { duration: 0.6, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconVinylRecord({\n  size = 24,\n  strokeWidth = 2,\n  className,\n  ...props\n}: IconVinylRecordProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.g variants={diskVariants} style={{ originX: \"10px\", originY: \"14px\" }}>\n        <circle cx=\"10\" cy=\"14\" r=\"7\" />\n        <circle cx=\"10\" cy=\"14\" r=\"3\" />\n        <circle cx=\"10\" cy=\"14\" r=\"1\" />\n      </motion.g>\n      <motion.g variants={needleVariants} style={{ originX: \"18px\", originY: \"6px\" }}>\n        <path d=\"M18 4v7\" />\n        <path d=\"m18 11-3 3\" />\n      </motion.g>\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

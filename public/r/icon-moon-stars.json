@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-moon-stars",
+  "type": "registry:component",
+  "title": "Animated Moon Stars",
+  "description": "Moon and stars with soft twinkle and crescent tilt.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-moon-stars/icon-moon-stars.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconMoonStarsProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst moonVariants: Variants = {\n  rest: { rotate: 0 },\n  hover: {\n    rotate: [0, -8, 0],\n    transition: { duration: 0.9, ease: \"easeInOut\" },\n  },\n};\n\nconst starVariants: Variants = {\n  rest: { scale: 1, opacity: 1 },\n  hover: {\n    scale: [1, 1.35, 1],\n    opacity: [0.6, 1, 0.6],\n    transition: { duration: 1, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconMoonStars({\n  size = 24,\n  strokeWidth = 2,\n  className,\n  ...props\n}: IconMoonStarsProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.path\n        d=\"M14.5 3a8 8 0 1 0 6.5 12.6A7 7 0 1 1 14.5 3\"\n        variants={moonVariants}\n        style={{ originX: \"12px\", originY: \"12px\" }}\n      />\n      <motion.path d=\"M7 5v2\" variants={starVariants} />\n      <motion.path d=\"M6 6h2\" variants={starVariants} />\n      <motion.path d=\"M18 7v2\" variants={starVariants} />\n      <motion.path d=\"M17 8h2\" variants={starVariants} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}

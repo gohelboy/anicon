@@ -8464,21 +8464,6 @@
       ]
     },
     {
-      "name": "icon-siren",
-      "type": "registry:component",
-      "title": "Animated Siren",
-      "description": "Emergency siren with flashing light rays.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-siren/icon-siren.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
       "name": "icon-martini",
       "type": "registry:component",
       "title": "Animated Martini",
@@ -8489,21 +8474,6 @@
       "files": [
         {
           "path": "registry/default/icon-martini/icon-martini.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
-      "name": "icon-megaphone",
-      "type": "registry:component",
-      "title": "Animated Megaphone",
-      "description": "Megaphone with shaking announcement blast.",
-      "dependencies": [
-        "motion"
-      ],
-      "files": [
-        {
-          "path": "registry/default/icon-megaphone/icon-megaphone.tsx",
           "type": "registry:component"
         }
       ]
@@ -8549,6 +8519,156 @@
       "files": [
         {
           "path": "registry/default/icon-venetian-mask/icon-venetian-mask.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-boomerang",
+      "type": "registry:component",
+      "title": "Animated Boomerang",
+      "description": "Boomerang with curved throw-and-return swing animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-boomerang/icon-boomerang.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-hourglass-flip",
+      "type": "registry:component",
+      "title": "Animated Hourglass Flip",
+      "description": "Hourglass with smooth flipping and sand drift animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-hourglass-flip/icon-hourglass-flip.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-compass-rose",
+      "type": "registry:component",
+      "title": "Animated Compass Rose",
+      "description": "Compass rose with orienting rotation and center pulse.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-compass-rose/icon-compass-rose.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-fireworks",
+      "type": "registry:component",
+      "title": "Animated Fireworks",
+      "description": "Fireworks burst with sparkling expansion animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-fireworks/icon-fireworks.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-vinyl-record",
+      "type": "registry:component",
+      "title": "Animated Vinyl Record",
+      "description": "Vinyl record with spinning platter and tonearm drop.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-vinyl-record/icon-vinyl-record.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-teacup",
+      "type": "registry:component",
+      "title": "Animated Teacup",
+      "description": "Teacup with rising steam and warm cup bounce.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-teacup/icon-teacup.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-moon-stars",
+      "type": "registry:component",
+      "title": "Animated Moon Stars",
+      "description": "Moon and stars with soft twinkle and crescent tilt.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-moon-stars/icon-moon-stars.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-scroll",
+      "type": "registry:component",
+      "title": "Animated Scroll",
+      "description": "Scroll with parchment roll and text reveal animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-scroll/icon-scroll.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-meteor-shower",
+      "type": "registry:component",
+      "title": "Animated Meteor Shower",
+      "description": "Meteor shower with diagonal streak and star shimmer.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-meteor-shower/icon-meteor-shower.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "icon-lighthouse-beam",
+      "type": "registry:component",
+      "title": "Animated Lighthouse Beam",
+      "description": "Lighthouse with sweeping beam and tower bob animation.",
+      "dependencies": [
+        "motion"
+      ],
+      "files": [
+        {
+          "path": "registry/default/icon-lighthouse-beam/icon-lighthouse-beam.tsx",
           "type": "registry:component"
         }
       ]

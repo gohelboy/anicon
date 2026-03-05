@@ -1,0 +1,17 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "icon-hourglass-flip",
+  "type": "registry:component",
+  "title": "Animated Hourglass Flip",
+  "description": "Hourglass with smooth flipping and sand drift animation.",
+  "dependencies": [
+    "motion"
+  ],
+  "files": [
+    {
+      "path": "registry/default/icon-hourglass-flip/icon-hourglass-flip.tsx",
+      "content": "﻿\"use client\";\n\nimport { motion, useReducedMotion, type Variants } from \"framer-motion\";\n\nexport interface IconHourglassFlipProps extends React.SVGProps<SVGSVGElement> {\n  size?: number;\n  strokeWidth?: number;\n}\n\nconst frameVariants: Variants = {\n  rest: { rotate: 0 },\n  hover: {\n    rotate: [0, 180],\n    transition: { duration: 1.2, ease: \"easeInOut\" },\n  },\n};\n\nconst sandVariants: Variants = {\n  rest: { y: 0, opacity: 1 },\n  hover: {\n    y: [0, 3, 0],\n    opacity: [1, 0.5, 1],\n    transition: { duration: 1.2, repeat: Infinity, ease: \"easeInOut\" },\n  },\n};\n\nexport function IconHourglassFlip({\n  size = 24,\n  strokeWidth = 2,\n  className,\n  ...props\n}: IconHourglassFlipProps) {\n  const { onAnimationStart, onAnimationEnd, onDragStart, onDrag, onDragEnd, ...rest } = props;\n  const prefersReducedMotion = useReducedMotion();\n\n  return (\n    <motion.svg\n      xmlns=\"http://www.w3.org/2000/svg\"\n      width={size}\n      height={size}\n      viewBox=\"0 0 24 24\"\n      fill=\"none\"\n      stroke=\"currentColor\"\n      strokeWidth={strokeWidth}\n      strokeLinecap=\"round\"\n      strokeLinejoin=\"round\"\n      initial={prefersReducedMotion ? false : \"rest\"}\n      whileHover={prefersReducedMotion ? undefined : \"hover\"}\n      whileTap={prefersReducedMotion ? undefined : \"tap\"}\n      className={`outline-none focus:outline-none focus:ring-0 select-none ${className ?? \"\"}`.trim()}\n      style={{ overflow: \"visible\" }}\n      {...rest}\n    >\n      <motion.g variants={frameVariants} style={{ originX: \"12px\", originY: \"12px\" }}>\n        <path d=\"M6 2h12\" />\n        <path d=\"M6 22h12\" />\n        <path d=\"M8 2c0 6 8 6 8 10s-8 4-8 10\" />\n        <path d=\"M16 2c0 6-8 6-8 10s8 4 8 10\" />\n      </motion.g>\n      <motion.path d=\"M11 12h2\" variants={sandVariants} />\n    </motion.svg>\n  );\n}\r\n",
+      "type": "registry:component"
+    }
+  ]
+}
